@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>교보문고 3과제 - 퍼블리싱 현황판</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="Robots" content="noindex, nofollow" />
+	<meta name="msapplication-TileColor" content="#000000">
+	<!-- front ui
+    ================================================== -->
+	<link rel="stylesheet" type="text/css" href="wsg/ia_resources/fonts/nanumsquare.css">
+	<link rel="stylesheet" type="text/css" href="wsg/ia_resources/glim.css">
+	<script src="wsg/ia_resources/jquery-3.6.0.min.js"></script>
+	<script src="wsg/ia_resources/glim.js"></script>
+</head>
+<body data-theme-color="#ff3399">
+	<div class="ia_wrapper">
+		<div class="ia_header_wrapper">
+			<div class="ia_section">
+				<h1 class="ia_h1">프로젝트명 - 퍼블리싱 현황판</h1>
+				<!--s : PC Case-->
+				<div class="ia_guide_link">
+					<a href="index_ink.html" class="is_active">PC</a>
+					<a href="index_mok.html">MO</a>
+					<a href="./index.html">퍼블리싱가이드</a>
+				</div>
+				<!--e : PC Case-->
+				<!--s : Mobile Case-->
+				<nav class="ia_header_guide_mobile" onclick="javascript:funcIAMenuDropdown();">
+					<button type="button" class="g_node_title">WeB-OOO</button>
+					<ul>
+						<li class="is_current">
+							<a href="../../mobile/html/index.html">MOBILE-OOO</a>
+						</li>
+					</ul>
+				</nav>
+				<!--e : Mobile Case-->
+			</div>
+		</div>
+		<div class="ia_container">
+			<div class="ia_content">
+				<div class="ia_content_body">
+					<!-- Note -->
+					<section class="ia_section">
+						<div class="ia_note_wrap">
+							<div class="ia_box ia_box_note">
+								<div class="ia_box_header">
+									<h4 class="ia_h4">Note</h4>
+								</div>
+								<div class="ia_box_body">
+									<ul class="ia_desc">
+										<li>※ 유형 표시방법 - Html, LP : Layer Popup, WP : Window Popup</li>
+										<li>※ IA 기준으로 목록 업데이트 필요</li>
+										<li>1. 진척관리 - 최초 완료표시 기준으로 날짜를 표시</li>
+										<li>2. 수정관리 - 최조 완료표시 날짜에 [YY-MM-DD/&lt;br&gt;YY-MM-DD]수정날짜를 추가한다.</li>
+										<li>3. 결함관리 - 신규/수정/삭제 이슈가 있는 경우 소스코드와 비고란에 동일한 주석문구를 표시한다. (주석표기 예시 - 181130 홍길동 작업내용 수정)</li>
+										<li>4. 최초 완료시 상태항목에 [완료]</li>
+										<li>5. 상태값에 [완료] 문구 등록시 완료페이지로 표시됨.</li>
+										<li>6. Row 컬러 상태
+											<span class="state row_done_new">최신완료 </span>
+											<span class="state row_done_update">기존완료지만 추가수정됨 </span>
+											<span class="state row_done">이전완료 </span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //Note -->
+					<!-- Total -->
+					<section class="ia_section">
+						<div class="ia_section_body">
+							<div class="ia_h4 ia_total_legend">
+								<span class="item c_last_date"><em>최종수정일 : </em><em class="value">1</em> /</span>
+								<span class="item c_total"><em>총 페이지 : </em><em class="value">30</em> /</span>
+								<span class="item c_done"><em>총 완료 : </em><em class="value">1</em> (</span>
+								<span class="item c_done_new"><em>신규완료 : </em><em class="value">1</em> /</span>
+								<span class="item c_done_update"><em>수정완료 : </em><em class="value">1</em> )</span>
+							</div>
+							<div class="ia_graph">
+								<ul class="graph"></ul>
+							</div>
+						</div>
+					</section>
+					<!-- //Total -->
+					<!-- Guide -->
+					<section class="ia_section ia_section_list">
+						<div class="ia_section_header">
+							<h2 class="ia_h2"><a href="#this" class="ui_accordion_toggle">Guide</a></h2>
+							<div class="ia_legend">
+								<span class="item"><em>총 페이지 : </em><em class="legend_total">30</em> /</span>
+								<span class="item c_done"><em>완료 : </em><em class="legend_complete">1</em> /</span>
+								<span class="item"><em>진척률 : </em><em class="legend_process">3%</em></span>
+							</div>
+						</div>
+						<div class="ia_section_body">
+							<div class="ia_tbl_wrap">
+								<table>
+									<caption></caption>
+									<thead>
+										<tr>
+											<th scope="col">번호</th>
+											<th scope="col" class="col_1depth">1Depth</th>
+											<th scope="col" class="col_2depth">2Depth</th>
+											<th scope="col" class="col_3depth">3Depth</th>
+											<th scope="col">URL</th>
+											<th scope="col" class="col_date">날짜</th>
+											<th scope="col">상태</th>
+											<th scope="col">비고<a href="#" class="btn_memo_all">Comment Toggle</a>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Layout</td>
+											<td class="col_2depth" data-label="2Depth">메인</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/01_layout_01_main.html"
+												   target="_blank">html/ink/pc_guide/01_layout_01_main.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Layout</td>
+											<td class="col_2depth" data-label="2Depth">서브</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/01_layout_02_sub.html"
+												   target="_blank">html/ink/pc_guide/01_layout_02_sub.html</a>
+												<br />- Header(SCR-BIZ01-01-P001)
+												<br />- GNB(SCR-BIZ01-02-P001)
+												<br />- 버거메뉴(SCR-BIZ01-02-P002)
+												<br />- 서비스 전체보기(SCR-BIZ01-02-P003)
+												<br />- 분야 전체보기(SCR-BIZ01-02-P004)
+												<br />- 윙배너(SCR-BIZ01-02-P101)
+											</td>
+											<td class="col_date" data-label="날짜">21-11-23 / <br />21-12-07</td>
+											<td class="col_complete" data-label="상태">완료</td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con">
+													[211130 교보문고 3과제수정]
+													<br />- textlist guide 수정, custom_scroll 가로형 삭제, 테이블가이드 수정
+													<br>
+													<br />[211203 교보문고 3과제수정]
+													<br />- 클로버 별점 플러그인 업데이트로 인한 스크립트 "krajee-gly/theme.min.js" 추가
+													<br>
+													<br />[211130 교보문고 3과제수정]
+													<br />- blurfy 추가로 blurify.js src 전페이지 공통추가
+													<br>
+													<br />[211207 교보문고 3과제수정]
+													<br />- header masonry plugin 추가로 masonry.pkgd.min.js src 전페이지 공통추가
+													<br />- footer 교보문고 링크 src 오탈자 전페이지 수정
+													<br />- 브랜드 노출 영역 핫트랙스, 매장안내 노출 순서 전페이지 공통 수정
+													<br />- 브랜드 노출 영역 eBook fill color 전페이지 공통 수정
+													<br />- 회원혜택, 헤더, gnb, 버거메뉴, 커튼배너, 윙배너, 최근 본 컨텐츠 버튼 추가 작업
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Layout</td>
+											<td class="col_2depth" data-label="2Depth">aside</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/01_layout_03_aside.html"
+												   target="_blank">html/ink/pc_guide/01_layout_03_aside.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Layout</td>
+											<td class="col_2depth" data-label="2Depth">상품상세</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/01_layout_04_prod_detail.html"
+												   target="_blank">html/ink/pc_guide/01_layout_04_prod_detail.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Layout</td>
+											<td class="col_2depth" data-label="2Depth">회원 - 로그인</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/01_layout_05_member_login.html"
+												   target="_blank">html/ink/pc_guide/01_layout_05_member_login.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Layout</td>
+											<td class="col_2depth" data-label="2Depth">북캐스트</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/01_layout_06_book_cast.html"
+												   target="_blank">html/ink/pc_guide/01_layout_06_book_cast.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Popup</td>
+											<td class="col_2depth" data-label="2Depth">모달/레이어 팝업</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/02_popup_01_common.html"
+												   target="_blank">html/ink/pc_guide/02_popup_01_common.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Popup</td>
+											<td class="col_2depth" data-label="2Depth">윈도우 팝업</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/02_popup_02_window.html"
+												   target="_blank">html/ink/pc_guide/02_popup_02_window.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Popup</td>
+											<td class="col_2depth" data-label="2Depth">토스트 팝업</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/02_popup_03_toast.html"
+												   target="_blank">html/ink/pc_guide/02_popup_03_toast.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Popup</td>
+											<td class="col_2depth" data-label="2Depth">툴팁</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/02_popup_04_tooltip.html"
+												   target="_blank">html/ink/pc_guide/02_popup_04_tooltip.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Components</td>
+											<td class="col_2depth" data-label="2Depth">타이틀/텍스트</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/03_components_01_typography.html"
+												   target="_blank">html/ink/pc_guide/03_components_01_typography.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Components</td>
+											<td class="col_2depth" data-label="2Depth">텍스트 리스트</td>
+											<td class="col_3depth" data-label="3Depth">Bullet / Step</td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/03_components_02_text_list.html"
+												   target="_blank">html/ink/pc_guide/03_components_02_text_list.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Components</td>
+											<td class="col_2depth" data-label="2Depth">버튼</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/03_components_03_button.html"
+												   target="_blank">html/ink/pc_guide/03_components_03_button.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Components</td>
+											<td class="col_2depth" data-label="2Depth">박스 & 유의사항</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/03_components_04_box.html"
+												   target="_blank">html/ink/pc_guide/03_components_04_box.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Components</td>
+											<td class="col_2depth" data-label="2Depth">폼</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/03_components_05_form.html"
+												   target="_blank">html/ink/pc_guide/03_components_05_form.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Components</td>
+											<td class="col_2depth" data-label="2Depth">뱃지/태그</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/03_components_06_badge.html"
+												   target="_blank">html/ink/pc_guide/03_components_06_badge.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Contents</td>
+											<td class="col_2depth" data-label="2Depth">리스트(목록)</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/04_contents_01_list.html"
+												   target="_blank">html/ink/pc_guide/04_contents_01_list.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Contents</td>
+											<td class="col_2depth" data-label="2Depth">탭 메뉴</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/04_contents_02_tab.html"
+												   target="_blank">html/ink/pc_guide/04_contents_02_tab.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Contents</td>
+											<td class="col_2depth" data-label="2Depth">테이블</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/04_contents_03_table.html"
+												   target="_blank">html/ink/pc_guide/04_contents_03_table.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Contents</td>
+											<td class="col_2depth" data-label="2Depth">게시판/FAQ</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/04_contents_04_board.html"
+												   target="_blank">html/ink/pc_guide/04_contents_04_board.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Contents</td>
+											<td class="col_2depth" data-label="2Depth">슬라이드(Swiper)</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/04_contents_05_swiper.html"
+												   target="_blank">html/ink/pc_guide/04_contents_05_swiper.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Contents</td>
+											<td class="col_2depth" data-label="2Depth">컨텐츠 스크롤 도달시 상단 고정</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/04_contents_06_content_fixed.html"
+												   target="_blank">html/ink/pc_guide/04_contents_06_content_fixed.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Contents</td>
+											<td class="col_2depth" data-label="2Depth">custom scroll</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/04_contents_07_custom_scroll.html"
+												   target="_blank">html/ink/pc_guide/04_contents_07_custom_scroll.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Contents</td>
+											<td class="col_2depth" data-label="2Depth">custom scroll</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/04_contents_07_custom_scroll_5.3.3.html"
+												   target="_blank">html/ink/pc_guide/04_contents_07_custom_scroll_5.3.3.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">Contents</td>
+											<td class="col_2depth" data-label="2Depth">폴딩</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/ink/pc_guide/04_contents_08_folding.html"
+												   target="_blank">html/ink/pc_guide/04_contents_08_folding.html</a>
+											</td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태"></td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con">
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+					<!-- //Guide -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -10,7 +10,7 @@
 	<link href="../resources/css/common.css" rel="stylesheet" />
 	 
 	<!-- JS/Guide -->	
-	<script src="../resources/libs/jquery-3.3.1.min.js"></script>
+	<script src="../resources/libs/jquery-3.6.0.min.js"></script>
 	<script src="../resources/js/guide.js"></script>
 	
 	<!-- codeview -->
@@ -47,10 +47,10 @@
 						<a href="../seo/seo_intro.html">SEO 가이드</a>
 					</li>
 					<li>
-						<a href="../../pc_index.html">PC 가이드</a>
+						<a href="../../index_ink.html">PC 가이드</a>
 					</li>
 					<li>
-						<a href="../../mo_index.html">MO 가이드</a>
+						<a href="../../index_mok.html">MO 가이드</a>
 					</li>
 				</ul>
 			</nav>
@@ -270,6 +270,33 @@
 							<li>jQuery를 이벤트 등록 후 삭제 또는 트리거 시 네임스페이스를 지정하지 않는 경우 의도치 않은 이벤트를 삭제하거나 이벤트 핸들러가 실행될 수 있다.</li>
 							<li>이를 해결하기 위한 방법으로 jQuery에서 기본적으로 제공하는 namespace 기능을 활용한다.</li>
 						</ul>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption>jQuery Event namespace 속성정의</caption>
+								<colgroup>
+									<col style="width:120px;">
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>네임스페이스명</th>
+										<th>적용대상</th>
+										<th>예시</th>
+									</tr>
+									<tr>
+										<td class="al_c">uiCommon</td>
+										<td>공통 resize, scroll, load</td>
+										<td>$(window).on('resize.uiCommon', function () { ... })</td>
+									</tr>
+									<tr>
+										<td class="al_c">uiGNB</td>
+										<td>setHeader() 함수 내부에서 resize, scroll 이벤트 사용</td>
+										<td>$(window).off('resize.uiGNB scroll.uiGNB', setScrollUp).on('resize.uiGNB scroll.uiGNB', setScrollUp);</td>
+									</tr>
+								</thead>
+							</table>
+						</div>
 					</div>
 				</section>
 				<!-- //section3 -->
