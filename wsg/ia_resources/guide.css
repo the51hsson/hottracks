@@ -1,3 +1,9 @@
+/* TODO: theme 설정 부분 정리 할 것 */
+:root {
+    --theme-color:#D53020;
+}
+
+
 .fc_red {color: red;}
 .fw_bold {font-weight: bold;}
 
@@ -6,7 +12,7 @@
 .guide_inner + .guide_inner {margin-top: 20px;}
 
 .guide_btit {position: relative; padding: 10px 25px; font-size: 20px; font-weight: bold; margin-bottom: 8px; color: #000;}
-.guide_btit:before {content: ''; position: absolute; display: inline-block; width: 15px; height: 100%; left: 0; top: 0; background: #5055B1;}
+.guide_btit:before {content: ''; position: absolute; display: inline-block; width: 15px; height: 100%; left: 0; top: 0; background: var(--theme-color);}
 
 .guide_sbtit {padding-left: 8px; font-size: 16px; font-weight: 700; background: #f6f6f6; line-height: 35px; border-top: 5px solid #eee; border-right: 5px solid #eee; border-bottom: 5px solid #ccc; border-left: 5px solid #ccc; margin-bottom: 20px;}
 .guide_sbtit ~ .guide_sbtit, .guide_desc_list + .guide_sbtit, pre + .guide_sbtit {margin-top: 35px;}

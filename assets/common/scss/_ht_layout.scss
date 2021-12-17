@@ -1,0 +1,39 @@
+.ht_ {
+    .contents_wrap {
+        .main_menu_wrap {
+            position: relative; 
+            padding-top: 49px; 
+            box-sizing: border-box;
+            .main_menu_list_wrap {
+                overflow-x: auto; 
+                -webkit-overflow-scrolling: touch; 
+                border-bottom: 1px solid #d5d5d5; 
+                top: 0; 
+                left: 0;
+                &::-webkit-scrollbar {
+                    display: none; /* Chrome, Safari, Opera*/
+                }
+                .menu_list {
+                    white-space: nowrap;
+                    .menu_list_item {
+                        display: inline-block; 
+                        padding: 2px 15px 0; 
+                        vertical-align: top; 
+                        box-sizing: border-box;
+                        .menu_link {
+                            line-height: 50px;
+                            
+                        }
+                        &::first-child {
+                            padding-left: 20px;
+                        }
+                        &::last-child {
+                            padding-right: 20px;
+                        }
+                        .text{}
+                    }
+                }
+            }
+        }
+    }
+}

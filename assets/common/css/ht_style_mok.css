@@ -1,0 +1,15 @@
+.ht_ .contents_wrap .main_menu_wrap { position: relative; padding-top: 49px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-bottom: 1px solid #d5d5d5; top: 0; left: 0; }
+
+.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap::-webkit-scrollbar { display: none; /* Chrome, Safari, Opera*/ }
+
+.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list { white-space: nowrap; }
+
+.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list .menu_list_item { display: inline-block; padding: 2px 15px 0; vertical-align: top; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list .menu_list_item .menu_link { line-height: 50px; }
+
+.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list .menu_list_item::first-child { padding-left: 20px; }
+
+.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list .menu_list_item::last-child { padding-right: 20px; }

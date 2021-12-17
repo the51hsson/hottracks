@@ -207,5 +207,3 @@ a.btn_md, button.btn_md { height: 50px; padding: 0 23px 1px; border-radius: 6px;
 .fold_box_wrap .fold_box.no_fold .fold_box_header:after { content: none; }
 
 .ddd.fold_box_wrap .fold_box.no_fold .fold_box_header:after { content: none; }
-
-.dis { display: block; font-size: 16px; }
