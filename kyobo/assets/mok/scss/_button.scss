@@ -434,37 +434,41 @@ button.btn_md {
         text-align: center;
         img {
             
+
             width: 100%;
             max-width: 750px;
         }
     }
 }
-// .tab_wrap &.type_normal {
-//     .tab_item a {
-//         .tab_txt {
-//             font: 16px;
-//         }
+.tab_wrap {
+    &.type_normal {
+        .tab_item a {
+            .tab_txt {
+                font: 16px;
+            }
+    
+        }
+        .ui-state-active {
+            a {
+                .tab_txt {
+                    font-weight: $font-weight-bold;
+                }
+                position: relative;
+                &:after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    content: "";
+                    width: 100%;
+                    height: 3px;
+                    background: #000;
+                }
+            }
+            
+        }
+    }
+}
 
-//     }
-//     .ui-state-active {
-//         a {
-//             .tab_txt {
-//                 font-weight: $font-weight-bold;
-//             }
-//             position: relative;
-//             &:after {
-//                 position: absolute;
-//                 bottom: 0;
-//                 left: 0;
-//                 content: "";
-//                 width: 100%;
-//                 height: 3px;
-//                 background: #000;
-//             }
-//         }
-        
-//     }
-// }
 
 
 
@@ -506,6 +510,6 @@ button.btn_md {
 
 
 
-.dis .dd {display: block;}
-    
+.dis {display: block;}
+  
 
