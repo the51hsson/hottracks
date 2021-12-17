@@ -1,35 +1,11 @@
-.btn {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  border: 1px solid transparent;
-}
+.btn { display: inline-block; text-align: center; vertical-align: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; border: 1px solid transparent; }
 
 /* btn color */
-.btn_default {
-  color: #fff;
-  background-color: #0d6efd;
-  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
-}
+.btn_default { color: #fff; background-color: #0d6efd; -webkit-transition: background-color .2s ease-out,border-color .2s ease-out; transition: background-color .2s ease-out,border-color .2s ease-out; }
 
-.btn_primary {
-  color: #fff;
-  background-color: #0d6efd;
-  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
-}
+.btn_primary { color: #fff; background-color: #0d6efd; -webkit-transition: background-color .2s ease-out,border-color .2s ease-out; transition: background-color .2s ease-out,border-color .2s ease-out; }
 
-.btn_secondary {
-  color: #fff;
-  background-color: #0d6efd;
-  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
-}
+.btn_secondary { color: #fff; background-color: #0d6efd; -webkit-transition: background-color .2s ease-out,border-color .2s ease-out; transition: background-color .2s ease-out,border-color .2s ease-out; }
 
 /* btn size */
 /* btn outline */
