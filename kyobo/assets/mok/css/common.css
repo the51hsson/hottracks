@@ -177,6 +177,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 0 20px;
 }
 
+/* */
 /* align */
 .txt_center {
   text-align: center;
@@ -247,6 +248,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #0d6efd;
 }
 
+.btn_orange {
+  color: #fff;
+  background-color: #fd7e14;
+}
+.btn_orange:hover {
+  background-color: #0d6efd;
+}
+
 .btn_outline_primary {
   color: #dc3545;
   border: solid 1px #dc3545;
@@ -311,6 +320,7 @@ button.btn_md {
   font-weight: 700;
 }
 
+/* ico */
 .btn .txt.ico_shoppingbag {
   background: url(../images/ico/ico_shoppingbag.png) no-repeat 0 3px;
   background-size: 18px 20px;
@@ -490,19 +500,6 @@ button.btn_md {
   max-width: 750px;
 }
 
-.ui-state-active a {
-  position: relative;
-}
-.ui-state-active a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 3px;
-  background: #000;
-}
-
 /* btn_wrap multi */
 .btn_wrap.multi {
   display: -webkit-box;
@@ -598,6 +595,14 @@ button.btn_md {
 
 .fold_box_wrap .fold_box.no_fold .fold_box_header:after {
   content: none;
+}
+
+.ddd.fold_box_wrap .fold_box.no_fold .fold_box_header:after {
+  content: none;
+}
+
+.dis {
+  display: block;
 }
 
 .visual_wrap .swiper-container {
