@@ -52,7 +52,7 @@
     <div class="container_wrapper">
         <!-- Slider main container -->
      
-
+        <div class="container_inner">
         <div class="visual_wrap">
             <div class="swiper-container paging_test">
                 <ul class="swiper-wrapper">
@@ -70,19 +70,18 @@
                 </div>
                 <div class="tit_bottom">독서대 위너항균독서대 60SE 양방향필기독서대 위너항균독서대 60SE 양방향필기독서대 위너항균독서대 60SE 양방향필기독서대 위너항균독서대 60SE 양방향필기독서대 위너항균독서대 60SE 양방향필기</div>
             </h1>
-            <div class="price">
-                <span class="real_price">
-                    <span class="txt_value">17,200</span>
-                    <span class="txt_unit">원</span>
-                </span>
-                <span class="sale_price">
-                    <em class="txt_per">20%</em>
-                    <em class="txt_value">13,760</em>
-                    <span class="txt_unit">원</span>
-                </span>
-            </div>
         </div>
-
+        <div class="price_wrap">
+            <span class="real_price">
+                <span class="txt_value">17,200</span>
+                <span class="txt_unit">원</span>
+            </span>
+            <span class="sale_price">
+                <em class="txt_per">20%</em>
+                <em class="txt_value">13,760</em>
+                <span class="txt_unit">원</span>
+            </span>
+        </div>
         <div class="badge_wrap">
             <div class="badge_list">
                 <span class="badge badge_sm badge_primary">쿠폰</span>
@@ -110,17 +109,17 @@
                 <a href="#" class="btn btn_sm btn_orange"><span class="ico_white_download txt">쿠폰받기</span></a>
             
         </div>
-        <hr />
+        <hr class="devide_hr " />
         <div class="info_wrap">
             <dl class="list_info">
                 <dt class="txt_dt col_4">통합포인트</dt>
-                <dd class="txt_dd col_8">1%적립(+110원)</dd>
+                <dd class="txt_dd col_8"><span class="ico_info">1%적립(+110원)</span></dd>
                 <dt class="txt_dt col_4">카드 혜택</dt>
-                <dd class="txt_dd col_8">신용카드 할인안내</dd>
+                <dd class="txt_dd col_8"><span class="ico_info">신용카드 할인안내</span></dd>
                 <dt class="txt_dt col_4">배송비</dt>
                 <dd class="txt_dd col_8">
-                    <span class="d-block">3,000원 (30,000원 이상 무료배송)</span>
-                    <a href="">배송비 절약 상품 보기</a>
+                    <span class="d-block"><span class="ico_info">3,000원 (30,000원 이상 무료배송)</span></span>
+                    <a href="" class="link_delivery ico_more">배송비 절약 상품 보기</a>
                 </dd>
             </dl>
         </div>
@@ -132,17 +131,26 @@
             </p>
         </div>
 
+        <hr class="devide_hr" />
 
-        <div>
-            <a href="" class="ico_more">LEUCHTTURM 바로가기</a>
+        <div class="quick_area">
+            <a href="" class="link_quick ico_more">LEUCHTTURM 바로가기</a>
+            <a href="" class="ico_home"><span class="hidden">LEUCHTTURM 바로가기</span></a>
         </div>
 
-        <div class="">
-            <div class="thumnail"><img src="../../mok/images/thumnail.png" width="99px" height="99px"></div>
-            <div class="account">
-                <h2 class="txt_tit ico_live">11/29 11:00 방송예정</h2>
-                <p class="txt_desc">수험생 필수템 드레텍 스탑워치! 최대 49%할인</p>
-                <a href="#" class="txt_more ico_more">라이브 정보 및 혜택 자세히 보러가기</a>
+        <hr class="devide_hr" />
+
+        <div class="notice_area">
+            <div class="thumnail_notice">
+                <img src="../../mok/images/thumnail.png" width="99px" height="99px">
+            </div>
+
+            <div class="account_notice">
+                <div>
+                    <h2 class="txt_tit ico_live">11/29 11:00 방송예정</h2>
+                    <p class="txt_desc">수험생 필수템 드레텍 스탑워치! 최대 49%할인</p>
+                    <a href="#" class="link_live ico_more">라이브 정보 및 혜택 자세히 보러가기</a>
+                </div>
             </div>
         </div>
         
@@ -216,145 +224,22 @@
                 <img src="../../mok/images/banner/banner.png" />
             </a>
         </div>
-        <div class="tab_wrap justify prod_detail_body" data-type-btn="">
-            <!-- tab_list_wrap -->
-            <div class="tab_list_wrap">
-                <div class="sps sps_scroll_fixed tab_list_inner sps-abv" data-sps-offset="871">
-                    <div class="sps_inner">
-                        <ul class="tabs">
-                            <!-- DESC : 탭 비활성화 시, .tab_link 영역 tab_disabled class 추가 -->
-                            <li class="tab_item"><a href="#scrollSpyProdEvent" class="tab_link"><span class="tab_text">이벤트</span></a></li>
-                            <li class="tab_item"><a href="#scrollSpyProdInfo" class="tab_link"><span class="tab_text">상품정보</span></a></li>
-                            <li class="tab_item"><a href="#scrollSpyProdReview" class="tab_link"><span class="tab_text">리뷰 <span class="num">(999+)</span></span></a></li>
-                            <li class="tab_item"><a href="#scrollSpyProdClaim" class="tab_link"><span class="tab_text">교환/반품/품절</span></a></li>
-                        </ul>
-                    </div>
-                <div class="sps_observer" style="top:11px;"></div></div>
-            </div>
-            <!-- //tab_list_wrap -->
-
-            <div class="prod_detail_contents">
-                <div class="prod_detail_contents_inner">
-                    <!-- 이벤트 -->
-                    <section id="scrollSpyProdEvent" class="tab_content sps sps-abv" data-add-offset="48" data-height-observe="" data-sps-offset="890">
-                        <div style="height: 1000px; background:rgba(255,0,0,0.4);">이벤트
-                        </div>
-                        <div class="sps_observer" style="top:auto;"></div></section>
-                    <!-- // 이벤트 -->
-                    <!-- 상품정보 -->
-                    <section id="scrollSpyProdInfo" class="tab_content sps sps-abv" data-add-offset="48" data-height-observe="" data-sps-offset="1890">
-                        <div style="height: 1000px; background:rgba(0,255,0,0.4);">상품정보</div>
-                        <div class="sps_observer" style="top:auto;"></div></section>
-                    <!-- // 상품정보 -->
-                    <!-- 리뷰 -->
-                    <section id="scrollSpyProdReview" class="tab_content sps sps-abv" data-add-offset="48" data-height-observe="" data-sps-offset="2890">
-                        <div style="height: 600px; background:rgba(0,0,255,0.4);">리뷰</div>
-                        <div class="sps_observer" style="top:auto;"></div></section>
-                    <!-- // 리뷰 -->
-                    <!-- 교환/반품/품절 -->
-                    <section id="scrollSpyProdClaim" class="tab_content sps sps-abv" data-add-offset="48" data-height-observe="" data-sps-offset="3490">
-                        <div>
-                            <div class="tit_area">
-                                <h2 class="tit">배송/교환/반품</h2>
-                            </div>
-                            <div class="fold_box_wrap">
-                                <ul class="fold_box_list">
-                                    <li class="fold_box">
-                                        <div class="fold_box_header">배송 안내<button type="button" class="btn_fold"><span class="hidden">컨텐츠 열기</span></button></div>
-                                        <div class="fold_box_contents">
-                                            <br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd
-                                            <br>ddd
-                                            <br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd
-                                        </div>
-                                    </li>
-                                    <li class="fold_box">
-                                        <div class="fold_box_header">반품/교환 안내<button type="button" class="btn_fold"><span class="hidden">컨텐츠 열기</span></button></div>
-                                        <div class="fold_box_contents">
-                    
-                    
-                                            <ul>
-                                                <li>
-                                                    상품 설명에 반품/교환 관련 안내가 있는 경우 그 내용을 우선으로 합니다. (업체 사정에 따라 변경 될 수 있습니다.)                                
-                                                </li>
-                                                <li>
-                                                    브랜드별 배송 : 브랜드 정책에 따라 무료배송 혹은 배송비 부과 (상품상세정보에서 배송비 기준 확인가능)
-                                                </li>
-                                            </ul>
-                    
-                                            <ul>
-                                                <li>
-                                                    MY HOTTRACKS > 주문정보 > 반품/교환신청 
-                                                </li>
-                                                <li>
-                                                    고객센터 > SOS상담
-                                                </li>
-                                                <li>
-                                                    고객센터 (1661-1112) 
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li>
-                                                    변심반품의 경우 수령 후 7일 이내, 상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내
-                                                </li>
-                                                <li>
-                                                    상품불량 및 오배송 등의 이유로 반품/교환을 하실 경우 반품/교환비는 무료 입니다. (단, 판매자가 반품된 상품 확인 후 상품불량이 아닌 것으로 확인 될 시 반송비를 고객님께 부과할 수 있습니다.)
-                                                </li>
-                                                <li>
-                                                    고객변심으로 인한 교환/반품의 배송비는 고객님 부담 입니다.
-                                                </li>
-                                                <li>
-                                                    고객변심으로 인한 교환/반품 시 주문에 사용된 할인쿠폰은 반환되지 않습니다.
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li>
-                                                    반품/교환 가능 기간을 초과한 경우
-                                                </li>
-                                                <li>
-                                                    소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우 (단지 확인을 위한 포장 훼손은 제외)
-                                                </li>
-                                                <li>
-                                                    소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우 (예: 밀봉상품, 제품 수선, 세탁, 기타 사용/분리/훼손)
-                                                </li>
-                                                <li>
-                                                    설치상품의 경우 설치가 완료되어 상품의 가치가 훼손된 경우 (예: 설치가전, 가구, 식품 등)
-                                                </li>
-                                                <li>
-                                                    소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우
-                                                </li>
-                                                <li>
-                                                    시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우 
-                                                </li>
-                                                <li>
-                                                    전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우
-                                                </li>
-                                                <li>
-                                                    복제가 가능한 상품 등의 포장을 훼손한 경우 (예: 음반/DVD/비디오, 소프트웨어, 영상화보집)
-                                                </li>
-                    
-                    
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="fold_box">
-                                        <div class="fold_box_header">기타 사항<button type="button" class="btn_fold"><span class="hidden">컨텐츠 열기</span></button></div>
-                                        <div class="fold_box_contents">
-                    
-                    
-                                            <br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd
-                                            <br>ddd
-                                            <br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd<br>ddd
-                                        </div>
-                                    </li>                                
-                                </ul>
-                            </div>                               
-                        </div>
-                        <div class="sps_observer" style="top:auto;"></div>
-                    </section>
-                    <!-- // 교환/반품/품절 -->
-                </div>
-            </div>
-        </div>
+        <div class="info_wrap">
+            <dl class="list_info">
+                <dt class="txt_dt col_4">상품군</dt>
+                <dd class="txt_dd col_8">기타</dd>
+                <dt class="txt_dt col_4">제조사</dt>
+                <dd class="txt_dd col_8">플레플레</dd>
+                <dt class="txt_dt col_4">제조국</dt>
+                <dd class="txt_dd col_8">대한민국</dd>
+                <dt class="txt_dt col_4">품명 및 모델명</dt>
+                <dd class="txt_dd col_8">[1+1랜덤] 2022 플플 슈슈 다이어리v7 + 일정관리스티커</dd>   
+                <dt class="txt_dt col_4">수입여부</dt>
+                <dd class="txt_dd col_8">국산</dd>                                
+                <dt class="txt_dt col_4">A/S 및 소비자 상담</dt>
+                <dd class="txt_dd col_8">핫트랙스 / 1661-1112</dd>                                                
+            </dl>
+        </div> 
 
 
         <div class="tab_wrap type_normal">
@@ -362,55 +247,234 @@
             <div class="tab_list_wrap">
                 <ul class="tabs">
                     <!-- DESC : 탭 비활성화 시, .tab_link 영역 tab_disabled class 추가 -->
-                    <li class="tab_item"><a href="#tabContent1-1" class="tab_link"><span class="tab_txt">상품소개</span></a></li>
-                    <li class="tab_item"><a href="#tabContent1-2" class="tab_link">
-                        <span class="tab_txt">리뷰</span>
-                        <span class="num">(999+)</span>
-                    </a>
-                    </li>
-                    <li class="tab_item">
-                        <a href="#tabContent1-3" class="tab_link">
-                            <span class="tab_txt">Q&A</span>
-                            <span class="num">(999+)</span>
-                        </a>
-                    </li>
-                    <li class="tab_item">
-                        <a href="#tabContent1-3" class="tab_link">
-                            <span class="tab_txt">배송/교환/반품</span>
-                        </a>
-                    </li>
+                    <li class="tab_item"><a href="#tabContent1-1" class="tab_link"><span class="tab_txt">전체</span></a></li>
+                    <li class="tab_item"><a href="#tabContent1-2" class="tab_link"><span class="tab_txt">포토</span></a></li>
+                    <li class="tab_item"><a href="#tabContent1-3" class="tab_link"><span class="tab_txt">구매자</span></a></li>
+                    <li class="tab_item"><a href="#tabContent1-3" class="tab_link"><span class="tab_txt">한달 후</span></a></li>
                 </ul>
             </div>
             <!-- //tab_list_wrap -->
             <!-- tab_content -->
             <div id="tabContent1-1" class="tab_content">
-                <div style="height: 300px; background:rgba(255,0,0,0.4);">tab content 1</div>
+                <div class="all_review_wrap">
+                    <div class="detail_area">
+                        <span class="badge badge_sm badge_default rounded">구매자</span>
+                        <span class="txt_user">ab*****</span>
+                        <span class="gap"> | </span>
+                        <span class="txt_date">2021.07.11</span>
+                        <span class="gap"> | </span>
+                        <button class="btn_txt btn_sm">신고</button>
+                    </div>
+                    <div class="rating_area">
+                        별점 <span class="gap"> / </span> 좋았어요
+                    </div>
+
+
+
+                    <div class="review_area">
+                        <p class="txt_review">
+                            6개월용이라 부담없이 넉넉히 쓸 수 있어서 좋아요!! 메모할 수 있는 공간도 많구요! 앞으로 몇년간 이것만 계속 쓸 것 같아요
+                        </p>
+                        <div class="thumnail_review">
+                            <img src="../../mok/images/thumnail_review.png" width="100%" height="100%">
+                            <span class="txt_num">2</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <button class="">펼치기</button> 
+                        <a href="" class="">한달 후 리뷰 보기</a>
+                        <button class="btn_like">
+                            <span class="ico_like"></span><span class="txt_count">234</span>
+                        </button> 
+                        <button class="btn_reply">
+                            <span class="ico_reply"></span><span class="txt_reply">답글</span>
+                        </button>
+                    </div>
+                    <div>
+                        신고를 받아 블라인드 처리되었습니다.
+                    </div>                    
+                </div>
             </div>
             <!-- //tab_content -->
             <!-- tab_content -->
             <div id="tabContent1-2" class="tab_content">
-                <div style="height: 300px; background:rgba(255,0,0,0.4);">tab content 2</div>
+                <div>tab content 2</div>
             </div>
             <!-- //tab_content -->
             <!-- tab_content -->
             <div id="tabContent1-3" class="tab_content">
-                <div style="height: 300px; background:rgba(255,0,0,0.4);">tab content 3</div>
+                <div>tab content 3</div>
             </div>
             <!-- //tab_content -->
         </div>  
 
+        <div class="tit_area">
+            <h2 class="tit">연관 추천 상품</h2>
+        </div>
 
-   
 
 
+        75% 의 구매자가
+        좋았어요 라고 응답했어요
 
-        
+        <ul>
+            <li>추천해요</li>
+            <li>좋았어요</li>
+            <li>보통이예요</li>
+            <li>별로예요</li>
+            <li>아쉬워요</li>
+        </ul>
 
+        <div class="row">
+            <div class="recommend_area col_6">
+                <div class="thumnail_recommend">
+                    <img src="../../mok/images/thumnail_recommend_01.png" width="158px" height="158px">
+                    <button class="btn_heart"><span class="ico_heart">즐겨찿기</span></button>
+                </div>
+                <p class="account_recommend">
+                    <span class="txt_brand">Stanley</span>
+                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
+                </p>            
+            </div>
+            <div class="recommend_area col_6">
+                <div class="thumnail_recommend">
+                    <img src="../../mok/images/thumnail_recommend_02.png" width="158px" height="158px">
+                    <button class="">즐겨찿기</button>
+                </div>
+                <p class="account_recommend">
+                    <span class="txt_brand">Stanley</span>
+                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
+                </p>            
+            </div>
+            <div class="recommend_area col_6">
+                <div class="thumnail_recommend">
+                    <img src="../../mok/images/thumnail_recommend_03.png" width="158px" height="158px">
+                    <button class="">즐겨찿기</button>
+                </div>
+                <p class="account_recommend">
+                    <span class="txt_brand">Stanley</span>
+                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
+                </p>            
+            </div>
+            <div class="recommend_area col_6">
+                <div class="thumnail_recommend">
+                    <img src="../../mok/images/thumnail_recommend_04.png" width="158px" height="158px">
+                    <button class="">즐겨찿기</button>
+                </div>
+                <p class="account_recommend">
+                    <span class="txt_brand">Stanley</span>
+                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
+                </p>            
+            </div>
+            <div class="recommend_area col_6">
+                <div class="thumnail_recommend">
+                    <img src="../../mok/images/thumnail_recommend_01.png" width="158px" height="158px">
+                    <button class="">즐겨찿기</button>
+                </div>
+                <p class="account_recommend">
+                    <span class="txt_brand">Stanley</span>
+                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
+                </p>            
+            </div>
+            <div class="recommend_area col_6">
+                <div class="thumnail_recommend">
+                    <img src="../../mok/images/thumnail_recommend_01.png" width="158px" height="158px">
+                    <button class="">즐겨찿기</button>
+                </div>
+                <p class="account_recommend">
+                    <span class="txt_brand">Stanley</span>
+                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
+                </p>            
+            </div>
+            <div class="recommend_area col_6">
+                <div class="thumnail_recommend">
+                    <img src="../../mok/images/thumnail_recommend_01.png" width="158px" height="158px">
+                    <button class="">즐겨찿기</button>
+                </div>
+                <p class="account_recommend">
+                    <span class="txt_brand">Stanley</span>
+                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
+                </p>            
+            </div>
+            <div class="recommend_area col_6">
+                <div class="thumnail_recommend">
+                    <img src="../../mok/images/thumnail_recommend_01.png" width="158px" height="158px">
+                    <button class="">즐겨찿기</button>
+                </div>
+                <p class="account_recommend">
+                    <span class="txt_brand">Stanley</span>
+                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
+                </p>            
+            </div>
+            <div class="recommend_area col_6">
+                <div class="thumnail_recommend">
+                    <img src="../../mok/images/thumnail_recommend_01.png" width="158px" height="158px">
+                    <button class="">즐겨찿기</button>
+                </div>
+                <p class="account_recommend">
+                    <span class="txt_brand">Stanley</span>
+                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
+                </p>            
+            </div> 
+            </div>   
+        </div>                                                    
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    
         
     <!-- //container_wrapper -->
  
     <!-- footer_wrapper -->
-    <footer class="footer_wrapper"></footer>
+    <footer class="footer_wrapper">
+        <div class="notice_wrap">
+            <span class="notice_text">공지사항</span>
+            <a href="#" class="notice_link">교보문고 개인정보 처리방침 개정안내</a>
+        </div>
+
+        <div class="footer_body">
+            <div class="logo_box">
+                <a href="#" class="logo_link"><img src="" alt="핫트랙스"></a>
+            </div>
+
+            <div class="footer_info_box">
+                <div class="info_text_multi">
+                    <span class="info_text">대표이사 : 오교철</span>
+                    <span class="gap">|</span>
+                    <address class="info_text">경기도 파주시 회동길 78(출판사)</address>
+                </div>
+                <span class="info_text">사업자등록번호 : 102-81-11670</span>
+                <span class="info_text">FAX : 0502-987-5711(지역번호 공통)</span>
+                <span class="info_text"><span class="text_inner">서울특별시 통신판매업신고번호 : 제 653호</span> <a href="#" class="btn_footer_link">사업자정보확인</a></span>
+            </div>
+
+            <div class="footer_menu_box">
+                <ul class="footer_menu_list">
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">바로 찾는 바로드림</a></li>
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">이용약관</a></li>
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">중고장터 스펙비교</a></li>
+                    <li class="footer_menu_item privacy"><a href="#" class="footer_menu_link">개인정보처리방침</a></li>
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">기프트카드</a></li>
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">청소년보호정책</a></li>
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">매장안내</a></li>
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">협력사여러분</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_call_box"><span class="call_text">대표전화</span><span class="call_num">1661-1112</span><span class="call_text_sm">(발신자 부담전화)</span></div>
+
+            <div class="copyright_box">
+                <div class="copyright">@Hottracks Centre</div>
+                <div class="sns_share_box">
+                    <a href="#" class="btn_sns_share youtube"><span class="hidden">youtube 공유</span></a>
+                    <a href="#" class="btn_sns_share fb"><span class="hidden">facebook 공유</span></a>
+                    <a href="#" class="btn_sns_share insta"><span class="hidden">instagram 공유</span></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
     <!-- //footer_wrapper -->
 </div>
 <!-- //wrapper -->

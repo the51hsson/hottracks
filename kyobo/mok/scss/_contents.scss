@@ -39,3 +39,37 @@
 }
 
 
+.coupon_wrap {
+    background: #fff4f1;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 4px;
+}
+
+.freebie_wrap {
+    background: #fff4f1;
+    border: solid 1px $red;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $red url(../images/ico/ico_white_shoppingbag.png) no-repeat 50% 50%;
+        background-size: 22px 22px;
+    }
+    .txt_desc {
+        padding-left: 55px;
+    }
+}
