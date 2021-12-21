@@ -124,7 +124,7 @@ $blue:    #0d6efd !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
-$red:     #dc3545 !default;
+$primary:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #198754 !default;
@@ -132,10 +132,10 @@ $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 
 /* */
-$red:     #DA2128 !default;
-$grey:    #292929 !default;
+$primary:     #DA2128 !default;
+$secondary:    #292929 !default;
 $light-grey: #767675 !default;
-$white:      #ffffff !default;
+$default:      #ffffff !default;
 $orange:     #F96734 !default;
 
 /* align */
@@ -169,6 +169,7 @@ $orange:     #F96734 !default;
     user-select: none;
     border: 1px solid transparent;
     transition: background-color .2s ease-out,border-color .2s ease-out;
+    cursor: pointer;
 }
 .btn_block {
     display: block;
@@ -180,39 +181,61 @@ $orange:     #F96734 !default;
 }
 
 /* btn color */
-.btn_outline_default {
+.btn_default {
     color: #000;
-    background-color: $white;
+    background: $default;
     border:solid 1px #ccc;
+    &:hover {
+        background:#F2F2F2
+    }
+    &.disabled {
+        color: #999;
+    }
 
 }
 .btn_primary {
     color: #fff;
-    background-color: $red;
+    background: $primary;
     &:hover {
-        background-color: #0d6efd;
+        background: #AC3024;
+    }
+    :disabled,
+    &.disabled {
+        background: #DB8880;
+        border-color: #EAEAEA;
     }
 }
 .btn_orange {
     color: #fff;
-    background-color: $orange;
+    background: $orange;
     &:hover {
-        background-color: #0d6efd;
+        background: #0d6efd;
     }
 }
 .btn_outline_primary {
-    color: $red;
-    border:solid 1px $red;
+    color: $primary;
+    border:solid 1px $primary;
     &:hover {
-        background-color: #0d6efd;
+        background: #FFF4F1;
+        color: #DA2128;
     }     
+    &.disabled {
+        background: #fff;
+        color: #fff;
+    }
 }
 .btn_secondary {
     color: #fff;
-    background-color: $grey;
+    background-color: $secondary;
     &:hover {
-        background-color: #0d6efd;
+        background: #000000;
+    }
+    &:disabled,
+    &.disabled {
+        background: #BEBEBE;
+        cursor: default;
     }    
+
 }
 .btn_lightgrey {
     color: #fff;
@@ -230,7 +253,7 @@ $orange:     #F96734 !default;
     height: 50px;
     border-radius: 6px;
     color: #000;
-    background-color: $white;
+    background-color: $default;
     transition: background-color .2s ease-out,border-color .2s ease-out;
     border:solid 1px #ccc;
     .ico_heart {
@@ -241,8 +264,15 @@ $orange:     #F96734 !default;
         height: 20px;
     }            
     &.active {
+        .ico_heart {
+            background: url(../images/ico/ico_heart_active.png) no-repeat 0 0;
+            background-size: 20px 20px;  
+            width: 20px;        
+            height: 20px;
+        }
         
-    }
+    }        
+
 
 }
 
@@ -274,6 +304,11 @@ button.btn_sm {
             background-size: 18px 20px;
             padding-left: 22px;            
         }
+        &.ico_review {
+            background: url(../images/ico/ico_review.png) no-repeat 0 3px;
+            background-size: 16px auto;
+            padding-left: 22px;            
+        }        
         &.ico_white_download {
             background: url(../images/ico/ico_white_download.png) no-repeat 0 4px;
             background-size: 10px 10px;
@@ -393,7 +428,7 @@ button.btn_sm {
         .txt_per {
             font-family: Roboto;
             font-weight: 700;
-            color: $red;
+            color: $primary;
             font-weight: $font-weight-bold;
         }
         .txt_value {
@@ -510,8 +545,8 @@ button.btn_sm {
 
 }
 .badge_primary {
-    color: $red;
-    border:solid 1px $red;    
+    color: $primary;
+    border:solid 1px $primary;    
     background-color: #fff;
 }
 
@@ -608,6 +643,20 @@ button.btn_sm {
             font-size: 15px;
             font-weight: $font-weight-bold;
             margin-bottom: 6px;
+            &.ico_live {
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 34px;
+                    height: 22px;
+                    background: url(../images/ico/ico_live.png) no-repeat 0 0;
+                    background-size: 34px auto;
+                    position: relative;
+                    top: 6px;
+                    left: 3px;
+                }
+                
+            }
             
         }
         .txt_desc {
@@ -660,6 +709,94 @@ button.btn_sm {
     background-size: 20px 20px;
 }
 
+@mixin stars($width,$height,$backgroundSize) {
+    content: "";
+    display: inline-block;
+    width: $width;
+    height: $height;
+    background: url(../images/empty_star.png) no-repeat 0 0;
+    background-size: $backgroundSize;    
+}
+.rating_area {
+    padding: 32px 24px;
+    background: #f7f7f7;
+}
+.rating_row {
+    display: flex;
+    justify-content: center;
+    .progress_container {
+        margin-left: 14px;
+        &.overlap {
+            display: inline-flex;
+            width: calc(100% - 107px - 14px);
+            .progressbar {width: 100%;}
+        }
+    }
+}
+.rating_container {
+    .rating_stars {
+        width: 107px;
+        position: relative;
+        .empty_stars {
+            .star {
+                display: inline-block;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background: url(../images/empty_star.png) no-repeat 0 0;
+                    background-size: 24px auto;
+                }
+            }
+        }
+        .filled_stars {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: auto;
+            white-space: nowrap;
+            overflow: hidden;
+            .star {
+                display: inline-block;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background: url(../images/filled_star.png) no-repeat 0 0;
+                    background-size: 24px auto;
+                }
+            }            
+        }
+    }
+}
+.progress_container {
+    .progressbar {
+        position: relative;
+        .empty_progress {
+            display: block;
+            background: #eaeaea;
+            width: 100%;
+            height: 4px;
+            border-radius: 20px;
+        }
+        .filled_progress {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 4px;
+            border-radius: 20px;
+            margin: auto;
+            white-space: nowrap;
+            overflow: hidden;            
+            background: #f96734;
+        }
+        .txt_value {
+            display: block;
+        }
+    }
+}
 /* btn_wrap multi */
 .btn_wrap {
     display: flex;
@@ -668,23 +805,82 @@ button.btn_sm {
     flex-direction: row;
     text-align: center;
     &.multi {
-     
+        > .btn_wish {
+            flex: 0 1 auto;
+        }
+        > .btn_buy {
+            flex: 1;
+            min-width: auto;
+            justify-content: center;
+            margin-left: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }   
+        .overlap {
+            position: relative;
+            display: inline-flex;
+            vertical-align: middle;
+            margin-left: 5px;
+            flex: 0 1 auto;
+            width: calc((100% - 10px - 50px)/ 3 * 2);
+            
+            .btn:first-child {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                flex: 1;
+                justify-content: center;
+                min-width: auto;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            .btn:last-child {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;        
+                justify-content: center;
+                flex: 1;
+                min-width: auto;
+                margin-left: 0;
+                padding-left: 5px;
+                padding-right: 5px;                
+            }
+        }     
     }
 }
-/* btn_grop */
-.btn_group {
-    position: relative;
-    display: inline-flex;
-    vertical-align: middle;
-    .btn:first-child {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-    .btn:last-child {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;        
+
+.btn_wrap {
+    &.auto {
+        flex: 0 1 auto;
+        .btn + .btn {
+            margin-left: 5px;
+        }
     }
 }
+.btn_wrap:not(.auto) {
+    .btn {
+        flex: 1;
+        min-width: auto;
+        justify-content: center;
+    }
+    .btn + .btn {
+        margin-left: 5px;
+    }    
+}
+.btn_wrap {
+    &.overlap {
+        .btn + .btn {
+            margin-left: 0;
+        }
+        .btn:first-child {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .btn:last-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+
 
 
 

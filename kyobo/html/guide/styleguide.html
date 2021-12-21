@@ -153,9 +153,13 @@
                 </div>
             </div>
         </div>
-        
+        <div class="banner_area">
+            <a href="">
+                <img src="../../mok/images/banner/banner.png" />
+            </a>
+        </div>        
         <div class="btn_wrap">
-            <a href="#" class="btn btn_outline_default btn_md btn_block">
+            <a href="#" class="btn btn_default btn_md btn_block">
                 <span class="txt">선물하기</span>
             </a>
         </div>       
@@ -171,8 +175,15 @@
         </div>        
         <br />
         <div class="btn_wrap">
-            <a href="#" class="btn btn_secondary btn_md btn_block"><span class="txt">리뷰 작성</span></a>
+            <a href="#" class="btn btn_secondary btn_md btn_block">
+                <span class="txt ico_review">리뷰 작성</span>
+            </a>
         </div>
+        <div class="btn_wrap">
+            <a href="#" class="btn btn_secondary btn_md btn_block disabled">
+                <span class="txt ico_review">리뷰 작성</span>
+            </a>
+        </div>        
         <br /> 
         <div class="btn_wrap">
             <a href="#" class="btn btn_lightgrey btn_md btn_block"><span class="txt">리뷰 작성</span></a>
@@ -191,22 +202,27 @@
         </div>
         <br />
         <div class="btn_wrap">
-            <a href="#" class="btn btn_primary btn_md"><span class="txt">버튼</span></a>
-            <button class="btn btn_primary btn_md"><span class="txt">버튼</span></button>
+            <a href="#" class="btn btn_primary btn_md"><span class="txt">50% 버튼</span></a>
+            <button class="btn btn_primary btn_md"><span class="txt">50% 버튼</span></button>
         </div>
         <br />
-        <div class="btn_wrap">
+        <div class="btn_wrap auto">
             <button class="btn btn_primary btn_md"><span class="txt">버튼 좌측</span></button>
             <button class="btn btn_primary btn_md"><span class="txt">버튼 우측</span></button>
         </div>
         <br />
-        <div class="btn_wrap multi">
-            <div class="btn_single_group">
-                <button class="btn_wish active"><span class="txt ico_heart"></span></button>
-                <button class="btn btn_outline_default btn_md"><span class="txt ico_shoppingbag">선물하기</span></button>
-            </div>
+        <div class="btn_wrap overlap">
+            <button class="btn btn_secondary btn_md"><span class="txt">취소</span></button>
+            <button class="btn btn_primary btn_md"><span class="txt">신청</span></button>
+        </div>        
 
-            <div class="btn_group">
+        <br />
+        <div class="btn_wrap multi">
+            <button class="btn_wish active"><span class="txt ico_heart"></span></button>
+            <button class="btn btn_buy btn_default btn_md">
+                <span class="txt ico_shoppingbag">선물하기</span>
+            </button>
+            <div class="btn_wrap overlap">
                 <button class="btn btn_lightgrey btn_md"><span class="txt">장바구니</span></button>
                 <button class="btn btn_primary btn_md"><span class="txt">구매하기</span></button>
             </div>
@@ -219,11 +235,7 @@
 
 
 
-        <div class="banner_area">
-            <a href="">
-                <img src="../../mok/images/banner/banner.png" />
-            </a>
-        </div>
+
         <div class="info_wrap">
             <dl class="list_info">
                 <dt class="txt_dt col_4">상품군</dt>
@@ -265,7 +277,7 @@
                         <span class="gap"> | </span>
                         <button class="btn_txt btn_sm">신고</button>
                     </div>
-                    <div class="rating_area">
+                    <div class="">
                         별점 <span class="gap"> / </span> 좋았어요
                     </div>
 
@@ -309,28 +321,162 @@
             <!-- //tab_content -->
         </div>  
 
-        <div class="tit_area">
-            <h2 class="tit">연관 추천 상품</h2>
+
+
+        <h2>Klover 리뷰(1,024)</h2>
+        <p>* 구매 후 리뷰 작성시,최대 700p 적립</p>
+
+
+
+        <div class="rating_area">
+            <div class="">
+                <div class="rating_container">
+                    <div class="rating_stars">
+                        <div class="empty_stars">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                        <div class="filled_stars" style="width:50%">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <span>7.5</span>
+                        <span class="gap"> / </span>
+                        <span>10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rating_row">
+                <div class="rating_container">
+                    <div class="rating_stars">
+                        <div class="empty_stars">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                        <div class="filled_stars" style="width:75%">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="progress_container overlap">
+                    <div class="progressbar">
+                        <span class="empty_progress"></span>
+                        <span class="filled_progress" style="width:100%"></span>
+                    </div>  
+                    <span class="txt_value">100%</span>
+                </div>
+            </div>
+            <div class="rating_row">
+                <div class="rating_container">
+                    <div class="rating_stars">
+                        <div class="empty_stars">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                        <div class="filled_stars" style="width:100%">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="progress_container overlap">
+                    <div class="progressbar">
+                        <span class="empty_progress"></span>
+                        <span class="filled_progress" style="width:75%"></span>
+                    </div>  
+                    <span class="txt_value">75%</span>
+                </div>
+            </div>
+            <div class="rating_row">
+                <div class="rating_container">
+                    <div class="rating_stars">
+                        <div class="empty_stars">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                        <div class="filled_stars" style="width:50%">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="progress_container overlap">
+                    <div class="progressbar">
+                        <span class="empty_progress"></span>
+                        <span class="filled_progress" style="width:50%"></span>
+                    </div>  
+                    <span class="txt_value">50%</span>
+                </div>
+            </div>
+            <div class="rating_row">
+                <div class="rating_container">
+                    <div class="rating_stars">
+                        <div class="empty_stars">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                        <div class="filled_stars" style="width:25%">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="progress_container overlap">
+                    <div class="progressbar">
+                        <span class="empty_progress"></span>
+                        <span class="filled_progress" style="width:25%"></span>
+                    </div>  
+                    <span class="txt_value">25%</span>
+                </div>
+            </div>                        
+        
+
+            <p>75% 의 구매자가<br />좋았어요 라고 응답했어요</p>
+            <ul>
+                <li>추천해요<span>48%</span></li>
+                <li>좋았어요<span>36%</span></li>
+                <li>보통이예요<span>20%</span></li>
+                <li>별로예요<span>8%</span></li>
+                <li>아쉬워요<span>15%</span></li>
+            </ul>
         </div>
 
 
 
-        75% 의 구매자가
-        좋았어요 라고 응답했어요
 
-        <ul>
-            <li>추천해요</li>
-            <li>좋았어요</li>
-            <li>보통이예요</li>
-            <li>별로예요</li>
-            <li>아쉬워요</li>
-        </ul>
-
+        <div class="tit_area">
+            <h2 class="tit">연관 추천 상품</h2>
+        </div>
         <div class="row">
             <div class="recommend_area col_6">
                 <div class="thumnail_recommend">
                     <img src="../../mok/images/thumnail_recommend_01.png" width="158px" height="158px">
-                    <button class="btn_heart"><span class="ico_heart">즐겨찿기</span></button>
+                    <button class="btn_heart active">
+                        <span class="ico_heart">즐겨찿기</span>
+                    </button>
                 </div>
                 <p class="account_recommend">
                     <span class="txt_brand">Stanley</span>
@@ -419,8 +565,7 @@
             </div> 
             </div>   
         </div>                                                    
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+ 
 
     
         
