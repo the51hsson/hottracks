@@ -792,6 +792,35 @@ button.btn_sm {
 }
 
 /* accordion */
+<<<<<<< HEAD
+.fold_box_wrap .fold_box_list .fold_box + .fold_box { margin-top: 10px; }
+
+.fold_box_wrap .fold_box { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.fold_box_wrap .fold_box .fold_box_contents, .fold_box_wrap .fold_box .fold_box_header { padding: 0 20px; }
+
+.fold_box_wrap .fold_box .fold_box_header { position: relative; padding: 26px 30px 22px 19px; cursor: pointer; font-size: 16px; line-height: 22px; letter-spacing: -.01em; font-weight: 700; }
+
+.fold_box_wrap .fold_box .fold_box_header:after { content: ""; position: absolute; display: block; width: 22px; height: 22px; right: 20px; top: 50%; background-image: url(../images/ico/ico_arrow.png); background-size: 22px 22px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.fold_box_wrap .fold_box .fold_box_header .btn_fold { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; }
+
+.fold_box_wrap .fold_box .fold_box_contents { height: 0; overflow: hidden; }
+
+.fold_box_wrap .fold_box.expanded { background: #fff; border-color: #000; }
+
+.fold_box_wrap .fold_box.expanded .fold_box_header:after { -webkit-transform: translateY(-50%) rotate(180deg); transform: translateY(-50%) rotate(180deg); }
+
+.fold_box_wrap .fold_box.expanded > .fold_box_contents { height: auto; padding-top: 4px; padding-bottom: 23px; }
+
+.fold_box_wrap .fold_box.expanded > .fold_box_contents .form_wrap + .btn_wrap { margin-top: 20px; }
+
+.fold_box_wrap .fold_box.no_fold .fold_box_header { cursor: default; }
+
+.fold_box_wrap .fold_box.no_fold .fold_box_header:after { content: none; }
+
+.ddd.fold_box_wrap .fold_box.no_fold .fold_box_header:after { content: none; }
+=======
 .fold_box_wrap .fold_box_list .fold_box + .fold_box {
   margin-top: 10px;
 }
@@ -1234,6 +1263,7 @@ button.btn_sm {
   margin: 0 4px 0 3px;
   color: #ccc;
 }
+<<<<<<< HEAD
 
 .coupon_wrap {
   background: #fff4f1;
@@ -1277,3 +1307,6 @@ button.btn_sm {
 .freebie_wrap .txt_desc {
   padding-left: 55px;
 }
+=======
+>>>>>>> 62813299437add137aa3ceaf67994535c637766e
+>>>>>>> ff2b0446aafd6e8ef144f2c7544fcbf33e399162

@@ -62,6 +62,11 @@
 <link rel="stylesheet" href="../../../assets/common/css/style_mok.css" />
 <!-- // Custom styles for this template -->
 
+<!-- ht_ Hottracks custom css -->
+<link rel="stylesheet" href="../../../assets/common/css/ht_style_mok.css" />
+<!--// ht_ Hottracks custom css -->
+
+
 <!-- Plug-In javascript -->
 <script src="../../../assets/common/vendors/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="../../../assets/common/vendors/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
@@ -87,7 +92,8 @@
 	</div>
 	<!-- wrapper -->
 	<!--DESC : 에러페이지인 경우 [error] 클래스 추가 -->
-	<div class="wrapper">
+	<!-- ht_ Hottracks ht_ 클래스 추가 -->
+	<div class="wrapper ht_">
 		<!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
 		<header id="headerWrapper" class="header_wrapper header_main">
 			<div class="header_top_wrap">
@@ -104,13 +110,23 @@
 						<svg xmlns="http://www.w3.org/2000/svg" width="504" height="32" viewBox="0 0 504 32">
 							<g transform="translate(0 0)">
 								<a href="#" class="service_mall_link">
+									<use href="../../../assets/common/images/img_service_mall_tab_mok.svg#pathTab" fill="#3E43A4" stroke="rgba(0,0,0,0)" />
+								</a>
+								<text x="64" y="15" text-anchor="middle" fill="#fff" font-size="12"
+									  pointer-events="none" dy=".5em"
+									  font-family="Noto Sans KR" font-weight="700">교보문고</text>
+								
+							</g>
+							<g transform="translate(78 0)">
+								<a href="#" class="service_mall_link">
 									<use href="../../../assets/common/images/img_service_mall_tab_mok.svg#pathTab" fill="#2951cc" stroke="rgba(0,0,0,0)" />
 								</a>
 								<text x="64" y="15" text-anchor="middle" fill="#fff" font-size="13"
 									  pointer-events="none" dy=".5em"
 									  font-family="Roboto" font-weight="700">eBook</text>
 							</g>
-							<g transform="translate(78 0)">
+
+							<g transform="translate(156 0)">
 								<a href="#" class="service_mall_link">
 									<use href="../../../assets/common/images/img_service_mall_tab_mok.svg#pathTab" fill="#06BBC0" stroke="rgba(0,0,0,0)" />
 								</a>
@@ -118,15 +134,7 @@
 									  pointer-events="none" dy=".5em"
 									  font-family="Roboto" font-weight="700">sam</text>
 							</g>
-
-							<g transform="translate(156 0)">
-								<a href="#" class="service_mall_link">
-									<use href="../../../assets/common/images/img_service_mall_tab_mok.svg#pathTab" fill="#E8422F" stroke="rgba(0,0,0,0)" />
-								</a>
-								<text x="64" y="15" text-anchor="middle" fill="#fff" font-size="12"
-									  pointer-events="none" dy=".5em"
-									  font-family="Noto Sans KR" font-weight="700">핫트랙스</text>
-							</g>
+							
 							<g transform="translate(234 0)">
 								<a href="#" class="service_mall_link">
 									<use href="../../../assets/common/images/img_service_mall_tab_mok.svg#pathTab" fill="#8F603D" stroke="rgba(0,0,0,0)" />
@@ -210,19 +218,19 @@
 					<div class="main_menu_list_wrap sps sps_scroll_fixed">
 						<ul class="menu_list">
 							<li class="menu_list_item">
-								<a href="#" class="menu_link">HOME</a>
+								<a href="#" class="menu_link">음반·영상</a>
 							</li>
 							<li class="menu_list_item">
-								<a href="#" class="menu_link">BEST</a>
+								<a href="#" class="menu_link">다이어리</a>
 							</li>
 							<li class="menu_list_item">
-								<a href="#" class="menu_link">이벤트·쿠폰</a>
+								<a href="#" class="menu_link">스티커샵</a>
 							</li>
 							<li class="menu_list_item">
-								<a href="#" class="menu_link">기획전</a>
+								<a href="#" class="menu_link">필기구</a>
 							</li>
 							<li class="menu_list_item">
-								<a href="#" class="menu_link">HOT DEAL</a>
+								<a href="#" class="menu_link">크리스마스</a>
 							</li>
 							<li class="menu_list_item">
 								<a href="#" class="menu_link">가변구좌</a>
