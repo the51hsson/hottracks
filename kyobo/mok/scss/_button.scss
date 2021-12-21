@@ -708,14 +708,20 @@ button.btn_sm {
     background: url(../images/ico/ico_reply.png) no-repeat 0 0;
     background-size: 20px 20px;
 }
-
 @mixin stars($width,$height,$backgroundSize) {
     content: "";
     display: inline-block;
     width: $width;
     height: $height;
+    background-size: $backgroundSize;        
+}
+@mixin emptyStars() {
     background: url(../images/empty_star.png) no-repeat 0 0;
-    background-size: $backgroundSize;    
+
+}
+@mixin filledStars() {
+    background: url(../images/filled_star.png) no-repeat 0 0;
+
 }
 .rating_area {
     padding: 32px 24px;

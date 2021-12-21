@@ -278,7 +278,24 @@
                         <button class="btn_txt btn_sm">신고</button>
                     </div>
                     <div class="">
-                        별점 <span class="gap"> / </span> 좋았어요
+                        <div class="rating_container">
+                            <div class="rating_stars">
+                                <div class="empty_stars">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                                <div class="filled_stars" style="width:50%">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="gap"> / </span> 
+                        <span>좋았어요</span>
                     </div>
 
 
@@ -329,7 +346,7 @@
 
 
         <div class="rating_area">
-            <div class="">
+            <div class="total_box">
                 <div class="rating_container">
                     <div class="rating_stars">
                         <div class="empty_stars">
@@ -352,107 +369,108 @@
                     </div>
                 </div>
             </div>
-            <div class="rating_row">
-                <div class="rating_container">
-                    <div class="rating_stars">
-                        <div class="empty_stars">
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                        </div>
-                        <div class="filled_stars" style="width:75%">
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                        </div>
-                    </div> 
+            <div class="point_box">
+                <div class="rating_row">
+                    <div class="rating_container">
+                        <div class="rating_stars">
+                            <div class="empty_stars">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            </div>
+                            <div class="filled_stars" style="width:75%">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="progress_container overlap">
+                        <div class="progressbar">
+                            <span class="empty_progress"></span>
+                            <span class="filled_progress" style="width:100%"></span>
+                        </div>  
+                        <span class="txt_value">100%</span>
+                    </div>
                 </div>
-                <div class="progress_container overlap">
-                    <div class="progressbar">
-                        <span class="empty_progress"></span>
-                        <span class="filled_progress" style="width:100%"></span>
-                    </div>  
-                    <span class="txt_value">100%</span>
+                <div class="rating_row">
+                    <div class="rating_container">
+                        <div class="rating_stars">
+                            <div class="empty_stars">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            </div>
+                            <div class="filled_stars" style="width:100%">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="progress_container overlap">
+                        <div class="progressbar">
+                            <span class="empty_progress"></span>
+                            <span class="filled_progress" style="width:75%"></span>
+                        </div>  
+                        <span class="txt_value">75%</span>
+                    </div>
                 </div>
+                <div class="rating_row">
+                    <div class="rating_container">
+                        <div class="rating_stars">
+                            <div class="empty_stars">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            </div>
+                            <div class="filled_stars" style="width:50%">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="progress_container overlap">
+                        <div class="progressbar">
+                            <span class="empty_progress"></span>
+                            <span class="filled_progress" style="width:50%"></span>
+                        </div>  
+                        <span class="txt_value">50%</span>
+                    </div>
+                </div>
+                <div class="rating_row">
+                    <div class="rating_container">
+                        <div class="rating_stars">
+                            <div class="empty_stars">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            </div>
+                            <div class="filled_stars" style="width:25%">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="progress_container overlap">
+                        <div class="progressbar">
+                            <span class="empty_progress"></span>
+                            <span class="filled_progress" style="width:25%"></span>
+                        </div>  
+                        <span class="txt_value">25%</span>
+                    </div>
+                </div>                        
             </div>
-            <div class="rating_row">
-                <div class="rating_container">
-                    <div class="rating_stars">
-                        <div class="empty_stars">
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                        </div>
-                        <div class="filled_stars" style="width:100%">
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                        </div>
-                    </div> 
-                </div>
-                <div class="progress_container overlap">
-                    <div class="progressbar">
-                        <span class="empty_progress"></span>
-                        <span class="filled_progress" style="width:75%"></span>
-                    </div>  
-                    <span class="txt_value">75%</span>
-                </div>
-            </div>
-            <div class="rating_row">
-                <div class="rating_container">
-                    <div class="rating_stars">
-                        <div class="empty_stars">
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                        </div>
-                        <div class="filled_stars" style="width:50%">
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                        </div>
-                    </div> 
-                </div>
-                <div class="progress_container overlap">
-                    <div class="progressbar">
-                        <span class="empty_progress"></span>
-                        <span class="filled_progress" style="width:50%"></span>
-                    </div>  
-                    <span class="txt_value">50%</span>
-                </div>
-            </div>
-            <div class="rating_row">
-                <div class="rating_container">
-                    <div class="rating_stars">
-                        <div class="empty_stars">
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                        </div>
-                        <div class="filled_stars" style="width:25%">
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                            <span class="star"></span>
-                        </div>
-                    </div> 
-                </div>
-                <div class="progress_container overlap">
-                    <div class="progressbar">
-                        <span class="empty_progress"></span>
-                        <span class="filled_progress" style="width:25%"></span>
-                    </div>  
-                    <span class="txt_value">25%</span>
-                </div>
-            </div>                        
-        
 
             <p>75% 의 구매자가<br />좋았어요 라고 응답했어요</p>
             <ul>
