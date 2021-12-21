@@ -52,7 +52,7 @@
 
 .freebie_wrap {
     background: #fff4f1;
-    border: solid 1px $red;
+    border: solid 1px $primary;
     border-radius: 4px;
     padding: 20px;
     position: relative;
@@ -66,7 +66,7 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background: $red url(../images/ico/ico_white_shoppingbag.png) no-repeat 50% 50%;
+        background: $primary url(../images/ico/ico_white_shoppingbag.png) no-repeat 50% 50%;
         background-size: 22px 22px;
     }
     .txt_desc {
