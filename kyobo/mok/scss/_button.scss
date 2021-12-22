@@ -115,8 +115,8 @@ $blue:    #0d6efd !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
-$primary:     #dc3545 !default;
-$orange:  #fd7e14 !default;
+$btn-primary:     #dc3545 !default;
+$btn-orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
@@ -135,11 +135,11 @@ $font-weight-bolder:          bolder !default;
 $font-num : 'Roboto';
 
 /* */
-$primary:     #DA2128 !default;
-$secondary:    #292929 !default;
-$light-grey: #767675 !default;
-$default:      #ffffff !default;
-$orange:     #F96734 !default;
+$btn-primary:     #DA2128 !default;
+$btn-secondary:    #292929 !default;
+$btn-lightGrey: #767675 !default;
+$btn-default:      #ffffff !default;
+$btn-orange:     #F96734 !default;
 
 
 .font_num {
@@ -191,7 +191,7 @@ $orange:     #F96734 !default;
 /* btn color */
 .btn_default {
     color: #000;
-    background: $default;
+    background: $btn-default;
     border:solid 1px #ccc;
     &:hover {
         background:#F2F2F2
@@ -203,7 +203,7 @@ $orange:     #F96734 !default;
 }
 .btn_primary {
     color: #fff;
-    background: $primary;
+    background: $btn-primary;
     &:hover {
         background: #AC3024;
     }
@@ -215,14 +215,14 @@ $orange:     #F96734 !default;
 }
 .btn_orange {
     color: #fff;
-    background: $orange;
+    background: $btn-orange;
     &:hover {
         background: #0d6efd;
     }
 }
 .btn_outline_primary {
-    color: $primary;
-    border:solid 1px $primary;
+    color: $btn-primary;
+    border:solid 1px $btn-primary;
     &:hover {
         background: #FFF4F1;
         color: #DA2128;
@@ -234,7 +234,7 @@ $orange:     #F96734 !default;
 }
 .btn_secondary {
     color: #fff;
-    background-color: $secondary;
+    background-color: $btn-secondary;
     &:hover {
         background: #000000;
     }
@@ -247,7 +247,7 @@ $orange:     #F96734 !default;
 }
 .btn_lightgrey {
     color: #fff;
-    background-color: $light-grey;
+    background-color: $btn-lightGrey;
     &:hover {
         background-color: #0d6efd;
     }    
@@ -261,7 +261,7 @@ $orange:     #F96734 !default;
     height: 50px;
     border-radius: 6px;
     color: #000;
-    background-color: $default;
+    background-color: $btn-default;
     transition: background-color .2s ease-out,border-color .2s ease-out;
     border:solid 1px #ccc;
     .ico_heart {
@@ -307,7 +307,7 @@ button.btn_sm {
 .btn {
     .txt {
         &.ico_shoppingbag {
-            background: url(../images/ico/ico_shoppingbag.png) no-repeat 0 3px;
+            background: url(../images/ico/ico_black_shoppingbag.png) no-repeat 0 3px;
             background-size: 18px 20px;
             padding-left: 22px;
         }
@@ -391,12 +391,12 @@ button.btn_sm {
 /* tit area */
 .tit_wrap {
     margin-top: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     .tit {
         .tit_top {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 15px;
+            margin-bottom: 4px;
             .txt_brand {
                 font-size: 13px;
                 color: #595959;
@@ -414,12 +414,13 @@ button.btn_sm {
         .tit_bottom {
             font-size: 18px;
             font-weight: 500;
+            line-height: 28px;
             color: #000;
         }
     }
 }
 .price_wrap {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     .real_price {
         display: block;
         font-size: 16px;
@@ -439,7 +440,7 @@ button.btn_sm {
         .txt_per {
             font-family: Roboto;
             font-weight: 700;
-            color: $primary;
+            color: $btn-primary;
             font-weight: $font-weight-bold;
         }
         .txt_value {
@@ -462,6 +463,31 @@ button.btn_sm {
         }
         .txt_dd {
             font-size: 14px;
+            .txt_info {
+                position: relative;
+                display: block;
+                padding-right: 15px;
+                .ico_info {
+                    cursor: pointer;
+                    display: block;
+                    
+                    position: absolute;
+                    right: 0;
+                    top: 2px;
+                    &:after {
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        background: url(../images/ico/ico_info.png) no-repeat 0 0;
+                        background-size: 100% auto;
+                        position: absolute;
+                        right: 0;
+                        top: 2px;
+                    }
+                
+                }            
+            }
+
         }
         .txt_dt,
         .txt_dd {
@@ -477,20 +503,7 @@ button.btn_sm {
 } 
 
 
-.ico_info {
-    display: block;
-    position: relative;
-    &:after {
-        content: "";
-        width: 16px;
-        height: 16px;
-        background: url(../images/ico/ico_info.png) no-repeat 0 0;
-        background-size: 100% auto;
-        position: absolute;
-        right: 0;
-    }
 
-}
 /* grid */
 .row {
     display: flex;
@@ -560,14 +573,13 @@ button.btn_sm {
 
 
 .badge_wrap {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .badge_list {
     display: flex;
     flex-flow: wrap;
     .badge {
-        margin-top: 4px;
         margin-right:4px;
     }
 }
@@ -578,13 +590,14 @@ button.btn_sm {
 
 }
 .badge_primary {
-    color: $primary;
-    border:solid 1px $primary;    
+    color: $btn-primary;
+    border:solid 1px $btn-primary;    
     background-color: #fff;
 }
 
 .badge_sm {
     min-height: 20px;
+    min-width: 50px;
     padding: 0 10px;
     border-radius: 4px;
     font-size: 11px;
@@ -606,7 +619,17 @@ button.btn_sm {
     }
 }
 .rating_wrap {
+    display: flex;
     margin-bottom: 15px;
+    .txt_value {
+        font-size: 12px;
+        color: rgb(118,118,118);
+        margin-left: 4px;
+        margin-top: 1px;
+        .txt_score {
+            font-weight: $font-weight-bold;
+        }
+    }
 }
 
 .tab_wrap {
@@ -667,7 +690,7 @@ button.btn_sm {
         overflow: hidden;
         position: absolute;
         left: 0;
-        top: 0;
+        top: 0; 
     }
     .account_notice {
         float: left;
@@ -675,22 +698,12 @@ button.btn_sm {
         .txt_tit {
             font-size: 15px;
             font-weight: $font-weight-bold;
-            margin-bottom: 6px;
-            &.ico_live {
-                &:after {
-                    content: "";
-                    display: inline-block;
-                    width: 34px;
-                    height: 22px;
-                    background: url(../images/ico/ico_live.png) no-repeat 0 0;
-                    background-size: 34px auto;
-                    position: relative;
-                    top: 6px;
-                    left: 3px;
-                }
-                
-            }
-            
+            margin-bottom: 6px;   
+            .ico_live {
+                position: relative;
+                right: -3px;
+                top: -1px;
+            }         
         }
         .txt_desc {
             margin-bottom: 6px;
@@ -886,3 +899,24 @@ button.btn_sm {
 @media (-webkit-min-device-pixel-ratio:3) {
 	.wrapper .footer_wrapper .footer_body .copyright_box .sns_share_box .btn_sns_share.insta {	background-image: url(../images/btn_footer_sns_insta_mok@3x.png); 	}
 }.wrapper .footer_wrapper .footer_body .copyright_box .sns_share_box .btn_sns_share+.btn_sns_share {margin-left: 8px;}
+
+
+
+.msg_wrap {
+    .bg_secondary {
+        background: #292929;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        font-size: 14px;
+        padding: 15px 30px;
+    }
+}
+
+
+/* 텍스트 말줄임 */
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

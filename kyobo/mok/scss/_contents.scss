@@ -1,3 +1,6 @@
+
+
+
 .visual_wrap .swiper-container {
     width: 100%;
     height: 100%;
@@ -48,26 +51,22 @@
     justify-content: space-between;
     padding: 0 20px;
     border-radius: 4px;
+    .txt_dec {
+        width: calc(100% - 81px );
+    } 
 }
 
 .freebie_wrap {
     background: #fff4f1;
-    border: solid 1px $primary;
+    border: solid 1px #d53020;
     border-radius: 4px;
     padding: 20px;
     position: relative;
-    &:after {
-        content: "";
-        display: block;
+    .figure {
         position: absolute;
         left: 20px;
         top: 50%;
         transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: $primary url(../images/ico/ico_white_shoppingbag.png) no-repeat 50% 50%;
-        background-size: 22px 22px;
     }
     .txt_desc {
         padding-left: 55px;
@@ -101,11 +100,18 @@
                 }
                 &.large {
                     &:after {
-                        background-size: 23px 23px;
+                        background-size: 23px auto;
                         width: 23px;
                         height: 23px;                            
                     }
                 }
+                &.small {
+                    &:after {
+                        background-size: 10px auto;
+                        width: 10px;
+                        height: 10px;                            
+                    }
+                }                
             }
         }
         .filled_stars {
@@ -131,7 +137,14 @@
                         width: 23px;
                         height: 23px;                            
                     }
-                }                    
+                }  
+                &.small {
+                    &:after {
+                        background-size: 10px auto;
+                        width: 10px;
+                        height: 10px;                            
+                    }
+                }                                    
             }            
         }
     }
@@ -140,17 +153,28 @@
 
 /* 베스트 리뷰 */
 .review_best_area {
+    .tit_con_area {
+        margin-bottom: 24px;
+        .tit {
+            margin-bottom: 8px;
+        }
+    }
     .rating_area {
         padding: 32px 24px;
         background: #f7f7f7;
+        margin-bottom: 20px;
         .total_box {
+            margin-bottom: 16px;
             .rating_container {
                 display: flex;
                 justify-content: center;
                 .score {
+                    margin-left: 8px;
+                    margin-top: -2px;
                     .txt_score {
                         font-size: 20px;
                         font-weight: $font-weight-bold;
+                        color: rgb(218, 33, 40);
                     }
                     .txt_totalscore {
                         font-size: 14px;
@@ -159,6 +183,10 @@
             }
         }
         .score_box {
+            position: relative;
+            padding-bottom: 20px;
+            border-bottom: solid 1px #eaeaea;
+            margin-bottom: 20px;
             .rating_row {
                 display: flex;
                 justify-content: center;
@@ -170,6 +198,51 @@
                         width: calc(100% - 63px - 14px);
                         .progressbar {width: 100%;}
                     }
+                }
+            }
+            
+        }
+
+        .msg_box {
+            p {
+                text-align: center;
+                font-size: 16px;
+                line-height: 26px;
+                height: 50px;
+                .txt_like {
+                    font-weight: $font-weight-bold;
+                    position: relative;
+                    padding-left: 20px;
+                    display: inline-block;
+                    &:before {
+                        content: "";
+                        display: block;
+                        width: 16px;
+                        height: 10px;
+                        position: absolute;
+                        left: 0;
+                        top: 6px;
+                        background: url(../images/ico/ico_quotation.png);
+                        background-size: 16px auto;
+                    }
+                }
+            }
+            .list_msg {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+                .txt_msg {
+                    display: block;
+                    text-align: center;
+                    font-size: 12px;
+                    color: rgb(118,118,118);
+                }
+                .txt_per {
+                    display: block;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: $font-weight-bold;
+                    margin-top: 3px;
                 }
             }
         }
@@ -223,9 +296,9 @@
         position: relative;
         padding-right: 78px;
         min-height: 78px;
-        .txt_review {
+        // .txt_review {
     
-        }
+        // }
         .thumnail_review {
             position: absolute;
             top: 0;

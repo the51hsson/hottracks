@@ -380,7 +380,7 @@ button.btn_sm {
 
 /* ico */
 .btn .txt.ico_shoppingbag {
-  background: url(../images/ico/ico_shoppingbag.png) no-repeat 0 3px;
+  background: url(../images/ico/ico_black_shoppingbag.png) no-repeat 0 3px;
   background-size: 18px 20px;
   padding-left: 22px;
 }
@@ -484,7 +484,7 @@ button.btn_sm {
 /* tit area */
 .tit_wrap {
   margin-top: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 .tit_wrap .tit .tit_top {
   display: -webkit-box;
@@ -493,7 +493,7 @@ button.btn_sm {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 4px;
 }
 .tit_wrap .tit .tit_top .txt_brand {
   font-size: 13px;
@@ -511,11 +511,12 @@ button.btn_sm {
 .tit_wrap .tit .tit_bottom {
   font-size: 18px;
   font-weight: 500;
+  line-height: 28px;
   color: #000;
 }
 
 .price_wrap {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 .price_wrap .real_price {
   display: block;
@@ -558,6 +559,28 @@ button.btn_sm {
 .info_wrap .list_info .txt_dd {
   font-size: 14px;
 }
+.info_wrap .list_info .txt_dd .txt_info {
+  position: relative;
+  display: block;
+  padding-right: 15px;
+}
+.info_wrap .list_info .txt_dd .txt_info .ico_info {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+.info_wrap .list_info .txt_dd .txt_info .ico_info:after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../images/ico/ico_info.png) no-repeat 0 0;
+  background-size: 100% auto;
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
 .info_wrap .list_info .txt_dt,
 .info_wrap .list_info .txt_dd {
   padding: 10px 0;
@@ -571,20 +594,6 @@ button.btn_sm {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 70%;
           flex: 0 0 70%;
-}
-
-.ico_info {
-  display: block;
-  position: relative;
-}
-.ico_info:after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  background: url(../images/ico/ico_info.png) no-repeat 0 0;
-  background-size: 100% auto;
-  position: absolute;
-  right: 0;
 }
 
 /* grid */
@@ -657,7 +666,7 @@ button.btn_sm {
 }
 
 .badge_wrap {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .badge_list {
@@ -668,7 +677,6 @@ button.btn_sm {
       flex-flow: wrap;
 }
 .badge_list .badge {
-  margin-top: 4px;
   margin-right: 4px;
 }
 
@@ -685,6 +693,7 @@ button.btn_sm {
 
 .badge_sm {
   min-height: 20px;
+  min-width: 50px;
   padding: 0 10px;
   border-radius: 4px;
   font-size: 11px;
@@ -706,7 +715,19 @@ button.btn_sm {
 }
 
 .rating_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 15px;
+}
+.rating_wrap .txt_value {
+  font-size: 12px;
+  color: #767676;
+  margin-left: 4px;
+  margin-top: 1px;
+}
+.rating_wrap .txt_value .txt_score {
+  font-weight: 700;
 }
 
 .tab_wrap {
@@ -768,16 +789,10 @@ button.btn_sm {
   font-weight: 700;
   margin-bottom: 6px;
 }
-.notice_area .account_notice .txt_tit.ico_live:after {
-  content: "";
-  display: inline-block;
-  width: 34px;
-  height: 22px;
-  background: url(../images/ico/ico_live.png) no-repeat 0 0;
-  background-size: 34px auto;
+.notice_area .account_notice .txt_tit .ico_live {
   position: relative;
-  top: 6px;
-  left: 3px;
+  right: -3px;
+  top: -1px;
 }
 .notice_area .account_notice .txt_desc {
   margin-bottom: 6px;
@@ -1303,6 +1318,22 @@ button.btn_sm {
   margin-left: 8px;
 }
 
+.msg_wrap .bg_secondary {
+  background: #292929;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 15px 30px;
+}
+
+/* 텍스트 말줄임 */
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .visual_wrap .swiper-container {
   width: 100%;
   height: 100%;
@@ -1362,27 +1393,23 @@ button.btn_sm {
   padding: 0 20px;
   border-radius: 4px;
 }
+.coupon_wrap .txt_dec {
+  width: calc(100% - 81px );
+}
 
 .freebie_wrap {
   background: #fff4f1;
-  border: solid 1px #dc3545;
+  border: solid 1px #d53020;
   border-radius: 4px;
   padding: 20px;
   position: relative;
 }
-.freebie_wrap:after {
-  content: "";
-  display: block;
+.freebie_wrap .figure {
   position: absolute;
   left: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #dc3545 url(../images/ico/ico_white_shoppingbag.png) no-repeat 50% 50%;
-  background-size: 22px 22px;
 }
 .freebie_wrap .txt_desc {
   padding-left: 55px;
@@ -1404,9 +1431,14 @@ button.btn_sm {
   height: 13px;
 }
 .rating_container .rating_stars .empty_stars .star.large:after {
-  background-size: 23px 23px;
+  background-size: 23px auto;
   width: 23px;
   height: 23px;
+}
+.rating_container .rating_stars .empty_stars .star.small:after {
+  background-size: 10px auto;
+  width: 10px;
+  height: 10px;
 }
 .rating_container .rating_stars .filled_stars {
   position: absolute;
@@ -1432,12 +1464,27 @@ button.btn_sm {
   width: 23px;
   height: 23px;
 }
+.rating_container .rating_stars .filled_stars .star.small:after {
+  background-size: 10px auto;
+  width: 10px;
+  height: 10px;
+}
 
 /*// 공통 별점 블럭 */
 /* 베스트 리뷰 */
+.review_best_area .tit_con_area {
+  margin-bottom: 24px;
+}
+.review_best_area .tit_con_area .tit {
+  margin-bottom: 8px;
+}
 .review_best_area .rating_area {
   padding: 32px 24px;
   background: #f7f7f7;
+  margin-bottom: 20px;
+}
+.review_best_area .rating_area .total_box {
+  margin-bottom: 16px;
 }
 .review_best_area .rating_area .total_box .rating_container {
   display: -webkit-box;
@@ -1447,12 +1494,23 @@ button.btn_sm {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.review_best_area .rating_area .total_box .rating_container .score {
+  margin-left: 8px;
+  margin-top: -2px;
+}
 .review_best_area .rating_area .total_box .rating_container .score .txt_score {
   font-size: 20px;
   font-weight: 700;
+  color: #da2128;
 }
 .review_best_area .rating_area .total_box .rating_container .score .txt_totalscore {
   font-size: 14px;
+}
+.review_best_area .rating_area .score_box {
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #eaeaea;
+  margin-bottom: 20px;
 }
 .review_best_area .rating_area .score_box .rating_row {
   display: -webkit-box;
@@ -1474,6 +1532,51 @@ button.btn_sm {
 }
 .review_best_area .rating_area .score_box .rating_row .progress_container.overlap .progressbar {
   width: 100%;
+}
+.review_best_area .rating_area .msg_box p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  height: 50px;
+}
+.review_best_area .rating_area .msg_box p .txt_like {
+  font-weight: 700;
+  position: relative;
+  padding-left: 20px;
+  display: inline-block;
+}
+.review_best_area .rating_area .msg_box p .txt_like:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  background: url(../images/ico/ico_quotation.png);
+  background-size: 16px auto;
+}
+.review_best_area .rating_area .msg_box .list_msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 16px;
+}
+.review_best_area .rating_area .msg_box .list_msg .txt_msg {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #767676;
+}
+.review_best_area .rating_area .msg_box .list_msg .txt_per {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 3px;
 }
 .review_best_area .progress_container .progressbar {
   position: relative;
