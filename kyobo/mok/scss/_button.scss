@@ -110,15 +110,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 .container_inner {
     padding: 0 20px;
 }
-
-// font-weight
-$font-weight-lighter:         lighter !default;
-$font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
-$font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
-
-
 // scss-docs-start color-variables
 $blue:    #0d6efd !default;
 $indigo:  #6610f2 !default;
@@ -131,12 +122,29 @@ $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 
+
+
+
+// font-weight
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$font-num : 'Roboto';
+
 /* */
 $primary:     #DA2128 !default;
 $secondary:    #292929 !default;
 $light-grey: #767675 !default;
 $default:      #ffffff !default;
 $orange:     #F96734 !default;
+
+
+.font_num {
+    font-family: $font-num;
+}
 
 /* align */
 .txt_center {
@@ -280,7 +288,11 @@ $orange:     #F96734 !default;
 a.btn_lg, 
 button.btn_lg {height: 56px;padding: 0 23px 1px;border-radius: 6px;font-size: 16px;line-height: 26px;letter-spacing: -.01em;font-weight: $font-weight-bold;}
 a.btn_md, 
-button.btn_md {height: 50px;padding: 0 23px 1px;border-radius: 6px;font-size: 15px;line-height: 23px;letter-spacing: -.01em;font-weight: $font-weight-bold;}
+button.btn_md {
+    height: 50px;
+    padding: 0 23px 1px;
+    border-radius: 6px;
+    font-size: 14px;line-height: 23px;letter-spacing: -.01em;}
 a.btn_sm, 
 button.btn_sm {
     height: 30px;
@@ -335,7 +347,6 @@ button.btn_sm {
             background-size: 5px auto;    
             margin-left: 5px;                 
         }   
-    
     }    
 }
 .link_delivery {
@@ -494,11 +505,33 @@ button.btn_sm {
         flex: 0 0 70%;
     }    
 }
-        
-.tit_area {
+
+/* page title */
+.tit_page_area {
+    .tit {
+        font-size: 18px;
+    }
+}        
+/* content title */
+.tit_con_area {
     .tit {
         font-size: 20px;
         font-weight: $font-weight-bold;
+    }
+    .sub {
+        font-size: 14px;
+        color: rgb(118,118,118);
+    }
+}
+
+.tit_sub_area {
+    .tit {
+        font-size: 22px;
+        font-weight: $font-weight-bold;
+    }
+    .sub {
+        font-size: 14px;
+        color: rgb(118,118,118);
     }
 }
 
@@ -666,39 +699,7 @@ button.btn_sm {
         
     }
 }
-/* review */
-.all_review_wrap {
-    padding: 0 4px;
-    .review_area {
-        position: relative;
-        padding-right: 78px;
-        min-height: 78px;
-        .txt_review {
-    
-        }
-        .thumnail_review {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 78px;
-            height: 78px;
-            overflow: hidden;
-            border-radius: 5px;
-            .txt_num {
-                position: absolute;
-                width: 16px;
-                height: 16px;
-                bottom: 0;
-                right: 0;
-                background: #000;
-                color: #fff;
-                border-top-left-radius: 5px;
-                border-bottom-left-radius: 0;
-                font-size: 11px;
-            }
-        }
-    }    
-}
+
 
 .btn_like .ico_like {
     background: url(../images/ico/ico_like.png) no-repeat 0 0;
@@ -708,101 +709,12 @@ button.btn_sm {
     background: url(../images/ico/ico_reply.png) no-repeat 0 0;
     background-size: 20px 20px;
 }
-@mixin stars($width,$height,$backgroundSize) {
-    content: "";
-    display: inline-block;
-    width: $width;
-    height: $height;
-    background-size: $backgroundSize;        
-}
-@mixin emptyStars() {
-    background: url(../images/empty_star.png) no-repeat 0 0;
 
-}
-@mixin filledStars() {
-    background: url(../images/filled_star.png) no-repeat 0 0;
 
-}
-.rating_area {
-    padding: 32px 24px;
-    background: #f7f7f7;
-}
-.rating_row {
-    display: flex;
-    justify-content: center;
-    .progress_container {
-        margin-left: 14px;
-        &.overlap {
-            display: inline-flex;
-            width: calc(100% - 107px - 14px);
-            .progressbar {width: 100%;}
-        }
-    }
-}
-.rating_container {
-    .rating_stars {
-        width: 107px;
-        position: relative;
-        .empty_stars {
-            .star {
-                display: inline-block;
-                &:after {
-                    content: "";
-                    display: inline-block;
-                    width: 24px;
-                    height: 24px;
-                    background: url(../images/empty_star.png) no-repeat 0 0;
-                    background-size: 24px auto;
-                }
-            }
-        }
-        .filled_stars {
-            position: absolute;
-            left: 0;
-            top: 0;
-            margin: auto;
-            white-space: nowrap;
-            overflow: hidden;
-            .star {
-                display: inline-block;
-                &:after {
-                    content: "";
-                    display: inline-block;
-                    width: 24px;
-                    height: 24px;
-                    background: url(../images/filled_star.png) no-repeat 0 0;
-                    background-size: 24px auto;
-                }
-            }            
-        }
-    }
-}
-.progress_container {
-    .progressbar {
-        position: relative;
-        .empty_progress {
-            display: block;
-            background: #eaeaea;
-            width: 100%;
-            height: 4px;
-            border-radius: 20px;
-        }
-        .filled_progress {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 4px;
-            border-radius: 20px;
-            margin: auto;
-            white-space: nowrap;
-            overflow: hidden;            
-            background: #f96734;
-        }
-        .txt_value {
-            display: block;
-        }
-    }
-}
+
+
+
+
 /* btn_wrap multi */
 .btn_wrap {
     display: flex;

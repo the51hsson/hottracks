@@ -73,3 +73,179 @@
         padding-left: 55px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* 공통 별점 블럭 */
+.rating_container {
+    .rating_stars {
+        position: relative;
+        .empty_stars {
+            .star {
+                display: inline-block;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    background: url(../images/empty_star.png) no-repeat 0 0;
+                    background-size: 13px 13px;
+                    width: 13px;
+                    height: 13px;
+                }
+                &.large {
+                    &:after {
+                        background-size: 23px 23px;
+                        width: 23px;
+                        height: 23px;                            
+                    }
+                }
+            }
+        }
+        .filled_stars {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: auto;
+            white-space: nowrap;
+            overflow: hidden;
+            .star {
+                display: inline-block;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    background: url(../images/filled_star.png) no-repeat 0 0;
+                    background-size: 13px 13px;
+                    width: 13px;
+                    height: 13px;
+                }
+                &.large {
+                    &:after {
+                        background-size: 23px 23px;
+                        width: 23px;
+                        height: 23px;                            
+                    }
+                }                    
+            }            
+        }
+    }
+}
+/*// 공통 별점 블럭 */
+
+/* 베스트 리뷰 */
+.review_best_area {
+    .rating_area {
+        padding: 32px 24px;
+        background: #f7f7f7;
+        .total_box {
+            .rating_container {
+                display: flex;
+                justify-content: center;
+                .score {
+                    .txt_score {
+                        font-size: 20px;
+                        font-weight: $font-weight-bold;
+                    }
+                    .txt_totalscore {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .score_box {
+            .rating_row {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 8px;
+                .progress_container {
+                    margin-left: 14px;
+                    &.overlap {
+                        display: inline-flex;
+                        width: calc(100% - 63px - 14px);
+                        .progressbar {width: 100%;}
+                    }
+                }
+            }
+        }
+    }
+    .progress_container {
+        .progressbar {
+            position: relative;
+            .empty_progress {
+                position: absolute;
+                left: 0;
+                top: 6px;
+                display: block;
+                background: #eaeaea;
+                width: 100%;
+                height: 4px;
+                border-radius: 20px;
+            }
+            .filled_progress {
+                position: absolute;
+                left: 0;
+                top: 6px;
+                height: 4px;
+                border-radius: 20px;
+                margin: auto;
+                white-space: nowrap;
+                overflow: hidden;            
+                background: #767675;
+                &.orange_color {
+                    background:#F96734
+                }
+            }
+        }
+        .txt_value {
+            width: 35px;
+            font-size: 13px;
+            margin-left: 12px;
+            display: block;
+            font-weight: $font-weight-bold;
+            text-align: end;
+        }
+    }
+}
+
+
+
+
+/* review */
+.all_review_wrap {
+    padding: 0 4px;
+    .review_area {
+        position: relative;
+        padding-right: 78px;
+        min-height: 78px;
+        .txt_review {
+    
+        }
+        .thumnail_review {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 78px;
+            height: 78px;
+            overflow: hidden;
+            border-radius: 5px;
+            .txt_num {
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                bottom: 0;
+                right: 0;
+                background: #000;
+                color: #fff;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 0;
+                font-size: 11px;
+            }
+        }
+    }    
+}
