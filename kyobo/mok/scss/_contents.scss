@@ -1,5 +1,7 @@
 
-
+.txt_primary {
+    color: $txt-primary;
+}
 
 .visual_wrap .swiper-container {
     width: 100%;
@@ -88,7 +90,19 @@
     .rating_stars {
         position: relative;
         .empty_stars {
-            .star {
+            .star.xsmall {
+                display: inline-block;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    background: url(../images/empty_star.svg) no-repeat 0 0;
+                    background-size: 10px 10px;
+                    width: 10px;
+                    height: 10px;
+                }
+
+            }            
+            .star.small {
                 display: inline-block;
                 &:after {
                     content: "";
@@ -98,21 +112,20 @@
                     width: 13px;
                     height: 13px;
                 }
-                &.large {
-                    &:after {
-                        background-size: 23px auto;
-                        width: 23px;
-                        height: 23px;                            
-                    }
-                }
-                &.small {
-                    &:after {
-                        background-size: 10px auto;
-                        width: 10px;
-                        height: 10px;                            
-                    }
-                }                
+
             }
+            .star.large {
+                display: inline-block;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    background: url(../images/empty_star.svg) no-repeat 0 0;
+                    background-size: 23px 23px;
+                    width: 23px;
+                    height: 23px;
+                }
+
+            }            
         }
         .filled_stars {
             position: absolute;
@@ -121,7 +134,18 @@
             margin: auto;
             white-space: nowrap;
             overflow: hidden;
-            .star {
+            .star.xsmall {
+                display: inline-block;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    background: url(../images/filled_star.svg) no-repeat 0 0;
+                    background-size: 10px 10px;
+                    width: 10px;
+                    height: 10px;
+                }                              
+            }             
+            .star.small {
                 display: inline-block;
                 &:after {
                     content: "";
@@ -130,22 +154,19 @@
                     background-size: 13px 13px;
                     width: 13px;
                     height: 13px;
-                }
-                &.large {
-                    &:after {
-                        background-size: 23px 23px;
-                        width: 23px;
-                        height: 23px;                            
-                    }
-                }  
-                &.small {
-                    &:after {
-                        background-size: 10px auto;
-                        width: 10px;
-                        height: 10px;                            
-                    }
-                }                                    
-            }            
+                }                              
+            } 
+            .star.large {
+                display: inline-block;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    background: url(../images/filled_star.svg) no-repeat 0 0;
+                    background-size: 23px 23px;
+                    width: 23px;
+                    height: 23px;
+                }                              
+            }                         
         }
     }
 }
@@ -282,13 +303,19 @@
             display: block;
             font-weight: $font-weight-bold;
             text-align: end;
-            color: $txt-primary;
         }
     }
 }
 
 
-
+.ellipsis {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
 
 /* review */
 .all_review_wrap {
@@ -296,6 +323,7 @@
     .review_inner {
         
         .review_info_area {
+            display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-direction: row;
@@ -305,38 +333,54 @@
             color: rgb(118, 118, 118);
             .txt_user {
                 
-                
+                margin-left: 8px;
                 display: inline-block;
             }
             .txt_date {
+                margin-left: 8px;
                 display: inline-block;
 
             }
             .btn_report {
+                margin-left: 8px;
                 display: inline-block;
 
             }
             .gap {
                 display: inline-block;
                 font-size: 0;
-                width: 1px;
-                height: 9px;
-                background-color: #d5d5d5;
+                text-indent: -9000em;
+                overflow: hidden;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 1px;
+                    height: 9px;
+                    background-color: #d5d5d5;
+                    margin-left: 8px;
+                }
+                
             }
         }
-        .comment_area {
-            position: relative;
-            padding-right: 78px;
-            min-height: 78px;
+        .review_comment_area {
+            
+            display: flex;
             .txt_review {
-                float: left;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;                
+                flex: 1;
+                height: 40px;
             }
             .thumnail_review {
-                float: right;
+                display: flex;
                 width: 78px;
                 height: 78px;
                 overflow: hidden;
                 border-radius: 5px;
+                position: relative;
                 .txt_num {
                     position: absolute;
                     width: 16px;
@@ -352,6 +396,33 @@
                 }
             }
         } 
+
+        .review_msg_area {
+
+        }
+        .review_more_area {
+            display: flex;
+            justify-content: space-between;
+            .link_more {
+                font-size: 13px;
+            }
+            .review_btn_common {
+                display: flex;
+                font-size: 13px;
+                .txt_count {
+                    color: #000;
+                    vertical-align: top;
+                }
+                .btn_reply {
+                    margin-left: 16px;
+                    .txt_reply {
+                        color: rgb(118, 118, 118);
+                        vertical-align: top;
+                    }
+
+                }
+            }
+        }
     }
    
 }
