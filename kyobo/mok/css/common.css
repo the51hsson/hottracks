@@ -233,7 +233,7 @@ a.btn_sm, button.btn_sm { height: 30px; padding: 0 10px 1px; border-radius: 4px;
 
 .badge_list .badge { margin-right: 4px; }
 
-<<<<<<< HEAD
+
 .rating_score_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,7 +319,7 @@ a.btn_sm, button.btn_sm { height: 30px; padding: 0 10px 1px; border-radius: 4px;
 .tab_wrap.type_normal .tab_content {
   padding: 0;
 }
-=======
+
 .badge_default { color: #767676; border: solid 1px #d5d5d5; }
 
 .badge_primary { color: #dc3545; border: solid 1px #dc3545; background-color: #fff; }
@@ -355,12 +355,12 @@ a.btn_sm, button.btn_sm { height: 30px; padding: 0 10px 1px; border-radius: 4px;
 .tab_wrap.type_normal .tab_list_wrap .ui-state-active a:after { position: absolute; bottom: -1px; left: 0; content: ""; width: 100%; height: 3px; background: #000; }
 
 .tab_wrap.type_normal .tab_content { padding: 0; }
->>>>>>> eb3606e6d02d2f031c4215b4d344b4b602a3cbb2
+
 
 /* notice */
 .notice_area { position: relative; padding-left: 99px; min-height: 99px; margin-bottom: 20px; }
 
-<<<<<<< HEAD
+
 .btn_good .ico_good {
   background: url(../images/ico/ico_good.svg) no-repeat 0 0;
   background-size: 18px 18px;
@@ -379,7 +379,7 @@ a.btn_sm, button.btn_sm { height: 30px; padding: 0 10px 1px; border-radius: 4px;
   width: 18px;
   height: 18px;
 }
-=======
+
 .notice_area .thumnail_notice { width: 99px; height: 99px; border-radius: 4px; overflow: hidden; position: absolute; left: 0; top: 0; }
 
 .notice_area .account_notice { float: left; padding-left: 10px; }
@@ -393,7 +393,7 @@ a.btn_sm, button.btn_sm { height: 30px; padding: 0 10px 1px; border-radius: 4px;
 .btn_like .ico_like { background: url(../images/ico/ico_like.png) no-repeat 0 0; background-size: 20px 20px; }
 
 .btn_reply .ico_reply { background: url(../images/ico/ico_reply.png) no-repeat 0 0; background-size: 20px 20px; }
->>>>>>> eb3606e6d02d2f031c4215b4d344b4b602a3cbb2
+
 
 /* btn_wrap multi */
 .btn_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; text-align: center; }
@@ -544,7 +544,7 @@ a.btn_sm, button.btn_sm { height: 30px; padding: 0 10px 1px; border-radius: 4px;
 /* 텍스트 말줄임 */
 .text-truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-<<<<<<< HEAD
+
 .txt_primary {
   color: #DA2128;
 }
@@ -555,9 +555,9 @@ a.btn_sm, button.btn_sm { height: 30px; padding: 0 10px 1px; border-radius: 4px;
   overflow: hidden;
   margin: 0 auto;
 }
-=======
-.visual_wrap .swiper-container { width: 100%; height: 100%; overflow: hidden; margin: 0 auto; }
->>>>>>> eb3606e6d02d2f031c4215b4d344b4b602a3cbb2
+
+
+
 
 .visual_wrap .swiper-slide img { width: 100%; height: 100%; max-width: 400px; max-height: 400px; }
 
@@ -580,7 +580,7 @@ a.btn_sm, button.btn_sm { height: 30px; padding: 0 10px 1px; border-radius: 4px;
 .freebie_wrap .txt_desc { padding-left: 55px; }
 
 /* 공통 별점 블럭 */
-<<<<<<< HEAD
+
 .rating_container .rating_stars {
   position: relative;
 }
@@ -929,7 +929,7 @@ a.btn_sm, button.btn_sm { height: 30px; padding: 0 10px 1px; border-radius: 4px;
   color: #767676;
   vertical-align: top;
 }
-=======
+
 .rating_container .rating_stars { position: relative; }
 
 .rating_container .rating_stars .empty_stars .star { display: inline-block; }
@@ -1020,4 +1020,3 @@ a.btn_sm, button.btn_sm { height: 30px; padding: 0 10px 1px; border-radius: 4px;
 .all_review_wrap .review_inner .comment_area .thumnail_review { float: right; width: 78px; height: 78px; overflow: hidden; border-radius: 5px; }
 
 .all_review_wrap .review_inner .comment_area .thumnail_review .txt_num { position: absolute; width: 16px; height: 16px; bottom: 0; right: 0; background: #000; color: #fff; border-top-left-radius: 5px; border-bottom-left-radius: 0; font-size: 11px; text-align: center; }
->>>>>>> eb3606e6d02d2f031c4215b4d344b4b602a3cbb2
