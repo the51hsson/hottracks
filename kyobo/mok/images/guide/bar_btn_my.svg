@@ -1,0 +1,13 @@
+<svg id="bar_btn_my" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61" height="61" viewBox="0 0 61 61">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d53020"/>
+      <stop offset="1" stop-color="#aa2417"/>
+    </linearGradient>
+  </defs>
+  <rect id="bg" width="61" height="61" rx="30.5" fill="url(#linear-gradient)"/>
+  <g id="my" transform="translate(19.943 19.838)">
+    <path id="타원_122" data-name="타원 122" d="M6,2a4,4,0,1,0,4,4A4,4,0,0,0,6,2M6,0A6,6,0,1,1,0,6,6,6,0,0,1,6,0Z" transform="translate(4.557 -2.839)" fill="#fff"/>
+    <path id="사각형_775" data-name="사각형 775" d="M6.364,2A4.369,4.369,0,0,0,2,6.364,1.638,1.638,0,0,0,3.636,8H18.364A1.638,1.638,0,0,0,20,6.364,4.369,4.369,0,0,0,15.636,2H6.364m0-2h9.273A6.364,6.364,0,0,1,22,6.364,3.636,3.636,0,0,1,18.364,10H3.636A3.636,3.636,0,0,1,0,6.364,6.364,6.364,0,0,1,6.364,0Z" transform="translate(-0.443 10.661)" fill="#fff"/>
+  </g>
+</svg>
