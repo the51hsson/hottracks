@@ -1425,7 +1425,7 @@ button.btn_sm {
 .rating_container .rating_stars .empty_stars .star:after {
   content: "";
   display: inline-block;
-  background: url(../images/empty_star.png) no-repeat 0 0;
+  background: url(../images/empty_star.svg) no-repeat 0 0;
   background-size: 13px 13px;
   width: 13px;
   height: 13px;
@@ -1454,7 +1454,7 @@ button.btn_sm {
 .rating_container .rating_stars .filled_stars .star:after {
   content: "";
   display: inline-block;
-  background: url(../images/filled_star.png) no-repeat 0 0;
+  background: url(../images/filled_star.svg) no-repeat 0 0;
   background-size: 13px 13px;
   width: 13px;
   height: 13px;
@@ -1539,13 +1539,13 @@ button.btn_sm {
   line-height: 26px;
   height: 50px;
 }
-.review_best_area .rating_area .msg_box p .txt_like {
+.review_best_area .rating_area .msg_box p .ico_quotation {
   font-weight: 700;
   position: relative;
   padding-left: 20px;
   display: inline-block;
 }
-.review_best_area .rating_area .msg_box p .txt_like:before {
+.review_best_area .rating_area .msg_box p .ico_quotation:before {
   content: "";
   display: block;
   width: 16px;
@@ -1602,8 +1602,8 @@ button.btn_sm {
   overflow: hidden;
   background: #767675;
 }
-.review_best_area .progress_container .progressbar .filled_progress.orange_color {
-  background: #F96734;
+.review_best_area .progress_container .progressbar .filled_progress.bg_primary {
+  background: #DA2128;
 }
 .review_best_area .progress_container .txt_value {
   width: 35px;
@@ -1612,27 +1612,62 @@ button.btn_sm {
   display: block;
   font-weight: 700;
   text-align: end;
+  color: #DA2128;
 }
 
 /* review */
 .all_review_wrap {
   padding: 0 4px;
 }
-.all_review_wrap .review_area {
+.all_review_wrap .review_inner .review_info_area {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: #767676;
+}
+.all_review_wrap .review_inner .review_info_area .txt_user {
+  display: inline-block;
+}
+.all_review_wrap .review_inner .review_info_area .txt_date {
+  display: inline-block;
+}
+.all_review_wrap .review_inner .review_info_area .btn_report {
+  display: inline-block;
+}
+.all_review_wrap .review_inner .review_info_area .gap {
+  display: inline-block;
+  font-size: 0;
+  width: 1px;
+  height: 9px;
+  background-color: #d5d5d5;
+}
+.all_review_wrap .review_inner .comment_area {
   position: relative;
   padding-right: 78px;
   min-height: 78px;
 }
-.all_review_wrap .review_area .thumnail_review {
-  position: absolute;
-  top: 0;
-  right: 0;
+.all_review_wrap .review_inner .comment_area .txt_review {
+  float: left;
+}
+.all_review_wrap .review_inner .comment_area .thumnail_review {
+  float: right;
   width: 78px;
   height: 78px;
   overflow: hidden;
   border-radius: 5px;
 }
-.all_review_wrap .review_area .thumnail_review .txt_num {
+.all_review_wrap .review_inner .comment_area .thumnail_review .txt_num {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -1643,4 +1678,5 @@ button.btn_sm {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 0;
   font-size: 11px;
+  text-align: center;
 }

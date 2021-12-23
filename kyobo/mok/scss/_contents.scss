@@ -93,7 +93,7 @@
                 &:after {
                     content: "";
                     display: inline-block;
-                    background: url(../images/empty_star.png) no-repeat 0 0;
+                    background: url(../images/empty_star.svg) no-repeat 0 0;
                     background-size: 13px 13px;
                     width: 13px;
                     height: 13px;
@@ -126,7 +126,7 @@
                 &:after {
                     content: "";
                     display: inline-block;
-                    background: url(../images/filled_star.png) no-repeat 0 0;
+                    background: url(../images/filled_star.svg) no-repeat 0 0;
                     background-size: 13px 13px;
                     width: 13px;
                     height: 13px;
@@ -209,7 +209,7 @@
                 font-size: 16px;
                 line-height: 26px;
                 height: 50px;
-                .txt_like {
+                .ico_quotation {
                     font-weight: $font-weight-bold;
                     position: relative;
                     padding-left: 20px;
@@ -270,8 +270,8 @@
                 white-space: nowrap;
                 overflow: hidden;            
                 background: #767675;
-                &.orange_color {
-                    background:#F96734
+                &.bg_primary {
+                    background:$bg-primary
                 }
             }
         }
@@ -282,6 +282,7 @@
             display: block;
             font-weight: $font-weight-bold;
             text-align: end;
+            color: $txt-primary;
         }
     }
 }
@@ -292,33 +293,65 @@
 /* review */
 .all_review_wrap {
     padding: 0 4px;
-    .review_area {
-        position: relative;
-        padding-right: 78px;
-        min-height: 78px;
-        // .txt_review {
-    
-        // }
-        .thumnail_review {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 78px;
-            height: 78px;
-            overflow: hidden;
-            border-radius: 5px;
-            .txt_num {
-                position: absolute;
-                width: 16px;
-                height: 16px;
-                bottom: 0;
-                right: 0;
-                background: #000;
-                color: #fff;
-                border-top-left-radius: 5px;
-                border-bottom-left-radius: 0;
-                font-size: 11px;
+    .review_inner {
+        
+        .review_info_area {
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+            font-size: 12px;
+            color: rgb(118, 118, 118);
+            .txt_user {
+                
+                
+                display: inline-block;
+            }
+            .txt_date {
+                display: inline-block;
+
+            }
+            .btn_report {
+                display: inline-block;
+
+            }
+            .gap {
+                display: inline-block;
+                font-size: 0;
+                width: 1px;
+                height: 9px;
+                background-color: #d5d5d5;
             }
         }
-    }    
+        .comment_area {
+            position: relative;
+            padding-right: 78px;
+            min-height: 78px;
+            .txt_review {
+                float: left;
+            }
+            .thumnail_review {
+                float: right;
+                width: 78px;
+                height: 78px;
+                overflow: hidden;
+                border-radius: 5px;
+                .txt_num {
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    bottom: 0;
+                    right: 0;
+                    background: #000;
+                    color: #fff;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 0;
+                    font-size: 11px;
+                    text-align: center;
+                }
+            }
+        } 
+    }
+   
 }
