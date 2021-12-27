@@ -1600,6 +1600,7 @@ button.btn_sm {
   display: inline-block;
   font-size: 13px;
   color: #767676;
+  cursor: pointer;
 }
 .slide_review_wrap .review_inner .btn_expand .ico_circle_more {
   display: inline-block;
@@ -1677,6 +1678,10 @@ button.btn_sm {
   background-size: 17px 17px;
 }
 
+.all_qa_wrap {
+  border-top: solid 1px #000;
+  margin-top: 20px;
+}
 .all_qa_wrap .review_inner {
   padding-top: 20px;
   border-bottom: solid 1px #EAEAEA;
@@ -1848,17 +1853,25 @@ button.btn_sm {
   display: inline-block;
   font-size: 13px;
   color: #767676;
+  cursor: pointer;
 }
-.all_review_wrap .review_inner .btn_expand.ico_circle_more:after {
-  position: relative;
+.all_review_wrap .review_inner .btn_expand .ico_circle_more {
+  display: inline-block;
+}
+.all_review_wrap .review_inner .btn_expand .ico_circle_more:after {
   content: "";
-  top: 5px;
+  display: inline-block;
+  position: absolute;
+  top: -2px;
   width: 22px;
   height: 22px;
-  display: inline-block;
   background: url(../images/ico/ico_arrow.png) no-repeat 0 0;
   background-size: 22px auto;
-  margin-left: 5px;
+  margin-left: 2px;
+}
+.all_review_wrap .review_inner .btn_expand.active .ico_circle_more:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .all_review_wrap .review_inner .review_more_area {
   margin-bottom: 16px;
@@ -1925,6 +1938,7 @@ button.btn_sm {
 /* list */
 .list_item {
   margin: 0 -10px;
+  overflow: hidden;
 }
 
 .list_item .item {
@@ -2115,4 +2129,44 @@ button.btn_sm {
   font-size: 0;
   padding: 3px 0;
   background: rgba(0, 0, 0, 0.3);
+}
+
+.btn_more_area {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.btn_more_area .btn_expand {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  color: #767676;
+  cursor: pointer;
+}
+.btn_more_area .btn_expand .txt {
+  font-size: 15px;
+  color: #767676;
+  font-weight: 700;
+}
+.btn_more_area .btn_expand .ico_circle_more {
+  display: inline-block;
+}
+.btn_more_area .btn_expand .ico_circle_more:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/ico/ico_arrow_large.png) no-repeat 0 0;
+  background-size: 24px auto;
+  margin-left: 2px;
+}
+.btn_more_area .btn_expand.active .ico_circle_more:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
