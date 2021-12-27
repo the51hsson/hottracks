@@ -642,10 +642,10 @@
                         slidesPerView: 'auto',
                         spaceBetween: 16,
                         loop: true,
-                        // autoplay: {
-                        //     delay: 2500,
-                        //     disableOnInteraction: false,
-                        // },
+                        autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        },
                         // scrollbar: {
                         //     el: ".special_swiper .swiper-scrollbar",
                         //     hide: false,
@@ -655,7 +655,11 @@
                             clickable: false,
                         },
                     });
-                    
+                    var swiperScroll = $('.special_swiper .swiper-pagination .swiper-pagination-bullet');
+                    var swiperSize = $('.special_swiper .swiper-pagination .swiper-pagination-bullet').length;
+                    var swiperSpanSize = (100 / swiperSize);
+                    $(swiperScroll).width(swiperSpanSize + '%');
+
                 </script>
             </article>
             <!--// 기획전 상품 -->

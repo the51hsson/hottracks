@@ -471,6 +471,9 @@
     .scroll_type .swiper-pagination {
         bottom:0;
         line-height: 1px;
+        display: flex;
+        justify-content: center;
+        width: calc(100% - 20px);
 
         .swiper-pagination-bullet {
             width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));
