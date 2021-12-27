@@ -1112,6 +1112,7 @@ button.btn_sm {
 /* hotpick */
 .hotpick_wrap {
   position: relative;
+  overflow: hidden;
 }
 
 .hotpick_wrap .swiper-container {
@@ -1149,6 +1150,7 @@ button.btn_sm {
 
 .photoreview_wrap {
   position: relative;
+  overflow: hidden;
 }
 
 .photoreview_wrap .swiper-container {
@@ -1646,16 +1648,23 @@ button.btn_sm {
 }
 
 /* list */
-.figure {
-  position: relative;
-}
-.figure .btn_heart {
-  position: absolute;
-  right: 0;
-  top: 0;
+/* list */
+.list_item {
+  margin: 0 -10px;
 }
 
 .list_item .item {
   display: inline-block;
-  width: calc(50% - 2.5px);
+  width: 50%;
+  padding: 0 10px;
+  float: left;
+}
+.list_item .item .figure {
+  position: relative;
+  display: block;
+  background-color: blue;
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  overflow: hidden;
 }
