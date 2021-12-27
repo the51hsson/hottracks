@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>교보문고 3과제 웹퍼블리싱 가이드</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="Robots" content="noindex, nofollow" />
+	<!-- Front CSS-->
+	<link href="../resources/css/common.css" rel="stylesheet" />
+	
+	<!-- JS/Guide -->	
+	<script src="../resources/libs/jquery-3.6.0.min.js"></script>
+	<script src="../resources/js/guide.js"></script>
+	
+	<!-- codeview -->
+	<script src="../resources/libs/codeview/scripts/shCore.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shAutoLoader.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushjScript.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushXml.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushCss.js?cb=undefined"></script>
+	<link href="../resources/libs/codeview/styles/shCoreDefaultWhite.css" rel="stylesheet" />
+	<script>SyntaxHighlighter.config.bloggerMode = false;SyntaxHighlighter.defaults['smart_tabs'] = false;SyntaxHighlighter.all();</script>
+</head>
+
+<body>
+<div class="wsg_wrapper">
+	<header class="wsg_header_wrapper js_wsg_header_wrapper">
+		<div class="wsg_header_inner">
+			<h1 class="wsg_logo"><a href="../../_index.html">교보문고 3과제 웹퍼블리싱 가이드</a></h1><button class="btn_aside is_clickEvent" type="button"><span>Menu</span></button>
+			<nav class="wsg_lnb">
+				<ul>
+					<li>
+						<a href="../../index.html">개요</a>
+					</li>
+					<li>
+						<a href="../rule/rule_intro.html">규칙가이드</a>
+					</li>
+					<li>
+						<a href="../plan/plan_codeset.html">설계가이드</a>
+					</li>
+					<li class="is_current">
+						<a href="wa_index.html">접근성점검</a>
+					</li>
+					<li>
+						<a href="../seo/seo_intro.html">SEO 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_ink.html">PC 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_mok.html">MO 가이드</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="wsg_container_wrapper">
+		<aside class="wsg_aside js_wsg_aside">
+			<div class="wsg_aside_scroll">
+				<nav class="wsg_snb">
+                    <ul class="wsg_node1_list wsg_snbMenu5" style="display: block;">
+                        <li class="wsg_node1 is_current">
+                            <a href="wa_index.html">웹접근성</a>
+                            <ul class="wsg_node2_list">
+                                <li class="wsg_node2 is_current">
+                                    <a href="wa_index.html">웹접근성 개요</a>
+                                </li>
+                                <li class="wsg_node2">
+                                    <a href="wa_part.html">역할별 체크리스트</a>
+                                </li>
+                                <li class="wsg_node2">
+                                    <a href="wa_item.html">접근성 검사항목</a>
+                                </li>
+                                <li class="wsg_node2">
+                                    <a href="wa_process.html">개선작업 프로세스</a>
+                                </li>
+                                <li class="wsg_node2">
+                                    <a href="wa_names.html">기본명칭 정의예시</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+			</div>
+		</aside>
+		<!-- Content -->
+		<article class="wsg_content">
+			<div class="wsg_content_header wsg_inner">
+				<h1 class="wsg_h1">웹접근성 개요</h1>
+			</div>
+			<div class="wsg_content_body">
+				<!-- section1 -->
+				<section id="section1" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">웹접근성 정의</h2>
+					</div>
+					<div class="wsg_section_body">
+						<p>웹의 힘은 그것의 보편성에 있다. 장애에 구애없이 모든 사람이 접근할 수 있는 것이 필수적인 요소이다.</p>
+					</div>
+				</section>
+				<!-- //section1 -->
+
+				<!-- section2 -->
+				<section id="section2" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">웹사이트 이용자 유형</h2>
+					</div>
+					<div class="wsg_section_body">
+						<ul class="wsg_desc">
+							<li>시각을 통해 정보를 인지할 수 없는 시각 장애가 있는 경우</li>
+							<li>청각을 통해 음향 정보를 인지하지 못하는 청각 장애가 있는 경우</li>
+							<li>신경계의 마비, 근골격계의 마비 또는 선천성 기형 등으로 신체의 움직임에 제한이 있는 지체 장애가 있는 경우</li>
+							<li>읽기나 문장 이해력이 떨어지는 언어 장애가 있는 경우</li>
+							<li>키보드나 마우스를 사용할 수 없는 장애가 있는 경우</li>
+							<li>시각, 청각 또는 손을 사용하고 있어 해야 하는 일을 할 수 없는 경우<br>(운전 중이거나 소음이 많은 곳에서 일하는 경우 등 장애라기보다는 웹 사용자가 처한 환경에 따라 제한 받는 경우)</li>
+						</ul>
+					</div>
+				</section>
+				<!-- //section2 -->
+
+				<!-- section3 -->
+				<section id="section3" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">웹접근성 관련사이트</h2>
+					</div>
+					<div class="wsg_section_body">
+						<h3 class="wsg_h3">가이드</h3>
+						<h4 class="wsg_h4">웹접근성 연구소 : <a href="https://www.wah.or.kr:444/index.asp" title="새창열림" target="_blank" class="wsg_link_basic">바로가기</a></h4>
+						<h4 class="wsg_h4 ">NAVER Accessibility : <a href="http://accessibility.naver.com/" title="새창열림" target="_blank" class="wsg_link_basic">바로가기</a></h4>
+                        <!-- TODO 웹접근성 관련사이트 만료된 페이지들 주석처리 / 추후 다른 참고 페이지로 대체 여부 확인 필요 -->
+						<!-- 
+						<h4 class="wsg_h4 ">DARUM Accessibility : <a href="http://darum.daum.net/accessibility/intro" title="새창열림" target="_blank" class="wsg_link_basic">바로가기</a></h4>
+
+						<h3 class="wsg_h3">심사기관</h3>
+						<h4 class="wsg_h4">한국시각장애인연합회 : <a href="http://www.kbuwel.or.kr/Facilities/KWACC" title="새창열림" target="_blank" class="wsg_link_basic">바로가기</a></h4>
+						<h4 class="wsg_h4 ">WebWatch : <a href="http://www.webwatch.or.kr/" title="새창열림" target="_blank" class="wsg_link_basic">바로가기</a></h4>
+
+						<h4 class="wsg_h4 ">웹 접근성 점검 매뉴얼(2011. 9) : <a href="/_wsg/download/wah02.pdf" class="wsg_link_basic">다운로드</a></h4>
+						-->
+						<h3 class="wsg_h3">관련자료</h3>
+						<h4 class="wsg_h4">한국형 웹 콘텐츠 접근성 지침 2.1 : <a href="../download/accessibility_guidelines_2.1.pdf" class="wsg_link_basic" target="_blank">다운로드</a></h4>
+					</div>
+				</section>
+				<!-- //section3 -->
+			</div>
+		</article>
+		<!-- //Content -->
+
+	</div>
+</div>
+</body>
+</html>

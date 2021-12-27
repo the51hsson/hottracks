@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>교보문고 3과제 웹퍼블리싱 가이드</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="Robots" content="noindex, nofollow" />
+	<!-- Front CSS-->
+	<link href="../resources/css/common.css" rel="stylesheet" />
+	
+	<!-- JS/Guide -->	
+	<script src="../resources/libs/jquery-3.6.0.min.js"></script>
+	<script src="../resources/js/guide.js"></script>
+	
+	<!-- codeview -->
+	<script src="../resources/libs/codeview/scripts/shCore.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shAutoLoader.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushjScript.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushXml.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushCss.js?cb=undefined"></script>
+	<link href="../resources/libs/codeview/styles/shCoreDefaultWhite.css" rel="stylesheet" />
+	<script>SyntaxHighlighter.config.bloggerMode = false;SyntaxHighlighter.defaults['smart_tabs'] = false;SyntaxHighlighter.all();</script>
+</head>
+
+<body>
+<div class="wsg_wrapper">
+	<header class="wsg_header_wrapper js_wsg_header_wrapper">
+		<div class="wsg_header_inner">
+			<h1 class="wsg_logo"><a href="../../index.html">교보문고 3과제 웹퍼블리싱 가이드</a></h1><button class="btn_aside is_clickEvent" type="button"><span>Menu</span></button>
+			<nav class="wsg_lnb">
+				<ul>
+					<li>
+						<a href="../../index.html">개요</a>
+					</li>
+					<li>
+						<a href="../rule/rule_intro.html">규칙가이드</a>
+					</li>
+					<li>
+						<a href="../plan/plan_codeset.html">설계가이드</a>
+					</li>
+					<li class="is_current">
+						<a href="wa_index.html">접근성점검</a>
+					</li>
+					<li>
+						<a href="../seo/seo_intro.html">SEO 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_ink.html">PC 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_mok.html">MO 가이드</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="wsg_container_wrapper">
+		<aside class="wsg_aside js_wsg_aside">
+			<div class="wsg_aside_scroll">
+				<nav class="wsg_snb">
+                    <ul class="wsg_node1_list wsg_snbMenu5" style="display: block;">
+                        <li class="wsg_node1 is_current">
+                            <a href="wa_index.html">웹접근성</a>
+                            <ul class="wsg_node2_list">
+                                <li class="wsg_node2 is_current">
+                                    <a href="wa_index.html">웹접근성 개요</a>
+                                </li>
+                                <li class="wsg_node2">
+                                    <a href="wa_part.html">역할별 체크리스트</a>
+                                </li>
+                                <li class="wsg_node2">
+                                    <a href="wa_item.html">접근성 검사항목</a>
+                                </li>
+                                <li class="wsg_node2">
+                                    <a href="wa_process.html">개선작업 프로세스</a>
+                                </li>
+                                <li class="wsg_node2">
+                                    <a href="wa_names.html">기본명칭 정의예시</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+			</div>
+		</aside>
+		<!-- Content -->
+		<article class="wsg_content">
+			<div class="wsg_content_header wsg_inner">
+				<h1 class="wsg_h1">개선작업 프로세스</h1>
+			</div>
+			<div class="wsg_content_body">
+				<!-- section1 -->
+				<section id="section1" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">공통영역</h2>
+					</div>
+					<div class="wsg_section_body">
+						<h3 class="wsg_h3">퍼블리싱</h3>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col>
+									<col style="width:80px">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">프로세스</th>
+									<th scope="col">지침번호</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>웹페이지 기본 언어 표시 (퍼블리싱→개발)</td>
+                                    <td><a href="wa_item.html#waItem3-1" class="wsg_link_basic" target="waItem">3-1</a></td>
+								</tr>
+								<tr>
+									<td>본문 바로가기 링크 제공 (퍼블리싱→개발)</td>
+                                    <td><a href="wa_item.html#waItem2-4-1" class="wsg_link_basic" target="waItem">2-4-1</a></td>
+								</tr>
+								<tr>
+									<td>GNB, LNB, 푸터에 있는 모든 레이어 메뉴 기능을 키보드만으로 사용이 가능하도록 스크립트 수정 (퍼블리싱→개발)</td>
+                                    <td><a href="wa_item.html#waItem2-1" class="wsg_link_basic" target="waItem">2-1</a></td>
+								</tr>
+								<tr>
+									<td>검색, 로그인 등의 입력폼에서 키보드 초점이 논리적으로 이동하도록 수정 (퍼블리싱→개발)</td>
+                                    <td><a href="wa_item.html#waItem2-1-2" class="wsg_link_basic" target="waItem">2-1-2</a></td>
+								</tr>
+								<tr>
+									<td>더보기, 전체보기 링크를 코드상 해당 내용의 뒷부분으로 이동 (퍼블리싱→개발)</td>
+                                    <td><a href="wa_item.html#waItem2-1-2" class="wsg_link_basic" target="waItem">2-1-2</a></td>
+								</tr>
+								<tr>
+									<td>모든 이미지에 alt 값 삽입 (퍼블리싱→개발)</td>
+                                    <td><a href="wa_item.html#waItem1-1" class="wsg_link_basic" target="waItem">1-1</a></td>
+								</tr>
+								<tr>
+									<td>모든 입력폼과 label 텍스트 연결 (퍼블리싱→개발)</td>
+                                    <td><a href="wa_item.html#waItem3-4-1" class="wsg_link_basic" target="waItem">3-4-1</a></td>
+								</tr>
+								<tr>
+									<td>label 텍스트가 없는 입력폼에 title값 제공 (퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem3-4-1" class="wsg_link_basic" target="waItem">3-4-1</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<h3 class="wsg_h3">개발</h3>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col>
+									<col style="width:80px">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">프로세스</th>
+									<th scope="col">지침번호</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>웹페이지 기본 언어 표시 (개발)</td>
+									<td><a href="wa_item.html#waItem3-1" class="wsg_link_basic" target="waItem">3-1</a></td>
+								</tr>
+								<tr>
+									<td>각 페이지를 구분할 수 있는 제목 제공 (개발)</td>
+									<td><a href="wa_item.html#waItem2-4-2" class="wsg_link_basic" target="waItem">2-4-2</a></td>
+								</tr>
+								<tr>
+									<td>iframe의 용도를 설명하는 title 값 삽입 (개발)</td>
+									<td><a href="wa_item.html#waItem2-4-2" class="wsg_link_basic" target="waItem">2-4-2</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<!-- //section1 -->
+
+				<!-- section2 -->
+				<section id="section2" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">페이지별 단순작업</h2>
+					</div>
+					<div class="wsg_section_body">
+						<h3 class="wsg_h3">퍼블리싱</h3>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col>
+									<col style="width:80px">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">프로세스</th>
+									<th scope="col">지침번호</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>모든 이미지와 이미지맵에 alt 값 삽입 (퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem1-1" class="wsg_link_basic" target="waItem">1-1</a></td>
+								</tr>
+								<tr>
+									<td>키보드 포커스를 안보이게 하는 CSS에 대한 수정 (퍼블리싱)</td>
+									<td><a href="wa_item.html#waItem2-1-1" class="wsg_link_basic" target="waItem">2-1-1</a></td>
+								</tr>
+								<tr>
+									<td>스크롤이 필요한 콘텐츠를 키보드로 스크롤 할 수 있도록 수정 (퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem2-1-1" class="wsg_link_basic" target="waItem">2-1-1</a></td>
+								</tr>
+								<tr>
+									<td>제목을 헤딩태그(h1~h6)로 마크업 (퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem2-4-2" class="wsg_link_basic" target="waItem">2-4-2</a></td>
+								</tr>
+								<tr>
+									<td>탭으로 바뀌는 각각의 콘텐츠에 제목 제공 (퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem3-3-1" class="wsg_link_basic" target="waItem">3-3-1</a></td>
+								</tr>
+								<tr>
+									<td>모든 데이터 테이블에 &lt;caption&gt; 및 summary 값 제공 (퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem3-3-2" class="wsg_link_basic" target="waItem">3-3-2</a></td>
+								</tr>
+								<tr>
+									<td>모든 데이터 테이블을 &lt;th&gt;, colscope속성을 사용하여 이해하기 쉽게 구성 (퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem3-3-2" class="wsg_link_basic" target="waItem">3-3-2</a></td>
+								</tr>
+								<tr>
+									<td>모든 입력폼과 label 텍스트 연결 (퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem3-4-1" class="wsg_link_basic" target="waItem">3-4-1</a></td>
+								</tr>
+								<tr>
+									<td>label 텍스트가 없는 입력폼에 title값 제공 (퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem3-4-1" class="wsg_link_basic" target="waItem">3-4-1</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3 class="wsg_h3">개발</h3>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col>
+									<col style="width:80px">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">프로세스</th>
+									<th scope="col">지침번호</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>모든 텍스트 아이콘, 버튼 이미지에 alt 값 삽입 (개발)</td>
+									<td><a href="wa_item.html#waItem1-1" class="wsg_link_basic" target="waItem">1-1</a></td>
+								</tr>
+								<tr>
+									<td>별평점 이미지에 alt 값(5점 만점에 3점) 삽입 (개발)</td>
+									<td><a href="wa_item.html#waItem1-1" class="wsg_link_basic" target="waItem">1-1</a></td>
+								</tr>
+								<tr>
+									<td>alt값과 title값이 동일한 경우 title 제거 (개발, 퍼블리싱)</td>
+									<td><a href="wa_item.html#waItem1-1" class="wsg_link_basic" target="waItem">1-1</a></td>
+								</tr>
+								<tr>
+									<td>iframe의 용도를 설명하는 title 값 삽입 (개발)</td>
+									<td><a href="wa_item.html#waItem2-4-2" class="wsg_link_basic" target="waItem">2-4-2</a></td>
+								</tr>
+								<tr>
+									<td>키보드 포커스를 강제로 이동시키거나 사라지게 하는 스크립트 제거 (개발)</td>
+									<td><a href="wa_item.html#waItem3-2" class="wsg_link_basic" target="waItem">3-2</a></td>
+								</tr>
+								<tr>
+									<td>새창으로 뜨는 링크에 '새창으로 열림' title 값 제공 (개발, 퍼블리싱)</td>
+									<td><a href="wa_item.html#waItem3-2" class="wsg_link_basic" target="waItem">3-2</a></td>
+								</tr>
+								<tr>
+									<td>문법오류 수정 (개발, 퍼블리싱)</td>
+									<td><a href="wa_item.html#waItem4-1" class="wsg_link_basic" target="waItem">4-1</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3 class="wsg_h3">디자인</h3>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col>
+									<col style="width:80px">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">프로세스</th>
+									<th scope="col">지침번호</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>본문 텍스트와 배경간의 명도대비 수정 (디자인→퍼블리싱)</td>
+									<td><a href="wa_item.html#waItem1-3-3" class="wsg_link_basic" target="waItem">1-3-3</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3 class="wsg_h3">기획</h3>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col>
+									<col style="width:80px">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">프로세스</th>
+									<th scope="col">지침번호</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>시각, 청각에 무관하게 인식할 수 있도록 지시사항 수정 (기획→개발)</td>
+									<td><a href="wa_item.html#waItem1-3-2" class="wsg_link_basic" target="waItem">1-3-2</a></td>
+								</tr>
+								<tr>
+									<td>부적절한 링크텍스트 수정 (기획→개발)</td>
+									<td><a href="wa_item.html#waItem2-4-3" class="wsg_link_basic" target="waItem">2-4-3</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<!-- //section2 -->
+
+				<!-- section3 -->
+				<section id="section3" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">페이지별 고급작업</h2>
+					</div>
+					<div class="wsg_section_body">
+						<h3 class="wsg_h3">퍼블리싱</h3>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col>
+									<col style="width:80px">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">프로세스</th>
+									<th scope="col">지침번호</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>복잡한 내용의 이미지에 대한 대체 컨텐츠 생성 (퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem1-1" class="wsg_link_basic" target="waItem">1-1</a></td>
+								</tr>
+								<tr>
+									<td>키보드 초점이 논리적으로 이동하도록 수정 (퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem2-1-2" class="wsg_link_basic" target="waItem">2-1-2</a></td>
+								</tr>
+								<tr>
+									<td>제목 옆에 있는 더보기 링크를 코드상 해당 내용의 뒷쪽에 제공 (퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem3-3-1" class="wsg_link_basic" target="waItem">3-3-1</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3 class="wsg_h3">개발</h3>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col>
+									<col style="width:80px">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">프로세스</th>
+									<th scope="col">지침번호</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>상품, 배너 이미지 alt 값 삽입을 위한 관리도구 개발 (개발)</td>
+									<td><a href="wa_item.html#waItem1-1" class="wsg_link_basic" target="waItem">1-1</a></td>
+								</tr>
+								<tr>
+									<td>onfocus, onchange로 새창이 뜨거나 서식이 제출되는 스크립트 수정, 필요한 경우 버튼 추가 (개발)</td>
+									<td><a href="wa_item.html#waItem3-2" class="wsg_link_basic" target="waItem">3-2</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3 class="wsg_h3">디자인</h3>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col>
+									<col style="width:80px">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">프로세스</th>
+									<th scope="col">지침번호</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>색에 무관하게 콘텐츠를 인식할 수 있도록 수정 (디자인→퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem1-3-1" class="wsg_link_basic" target="waItem">1-3-1</a></td>
+								</tr>
+								<tr>
+									<td>자동 롤링되는 콘텐츠에 정지버튼, 탐색기능 제공 (디자인→퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem2-2-2" class="wsg_link_basic" target="waItem">2-2-2</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3 class="wsg_h3">기획</h3>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col>
+									<col style="width:80px">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">프로세스</th>
+									<th scope="col">지침번호</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>모든 동영상 콘텐츠에 자막 또는 대본 제공 (기획→디자인→퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem1-2" class="wsg_link_basic" target="waItem">1-2</a></td>
+								</tr>
+								<tr>
+									<td>시간 제한이 있는 콘텐츠의 응답시간을 조절할 수 있는 기능 제공 (기획→디자인→퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem2-2-1" class="wsg_link_basic" target="waItem">2-2-1</a></td>
+								</tr>
+								<tr>
+									<td>서식 전송 기능을 셀렉트박스만으로 제공하는 경우 전송 버튼 제공 (기획→디자인→퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem3-2" class="wsg_link_basic" target="waItem">3-2</a></td>
+								</tr>
+								<tr>
+									<td>페이지 링크 기능을 셀렉트박스만으로 제공하는 경우 레이어 방식으로 제공 (디자인→퍼블리싱→개발)</td>
+									<td><a href="wa_item.html#waItem3-2" class="wsg_link_basic" target="waItem">3-2</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<!-- //section3 -->
+			</div>
+		</article>
+		<!-- //Content -->
+
+	</div>
+</div>
+</body>
+</html>

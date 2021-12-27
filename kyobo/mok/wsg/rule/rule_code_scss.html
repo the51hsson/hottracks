@@ -1,0 +1,1532 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>웹퍼블리싱가이드 - Standard Guide</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="Robots" content="noindex, nofollow" />
+	<!-- Front CSS-->
+	<link href="../resources/css/common.css" rel="stylesheet" />
+	
+	<!-- JS/Guide -->	
+	<script src="../resources/libs/jquery-3.6.0.min.js"></script>
+	<script src="../resources/js/guide.js"></script>
+	
+	<!-- codeview -->
+	<script src="../resources/libs/codeview/scripts/shCore.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shAutoLoader.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushjScript.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushXml.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushCss.js?cb=undefined"></script>
+	<link href="../resources/libs/codeview/styles/shCoreDefaultWhite.css" rel="stylesheet" />
+	<script>SyntaxHighlighter.config.bloggerMode = false;SyntaxHighlighter.defaults['smart_tabs'] = false;SyntaxHighlighter.all();</script>
+</head>
+<body>
+<div class="wsg_wrapper">
+	
+	<header class="wsg_header_wrapper js_wsg_header_wrapper">
+		<div class="wsg_header_inner">
+			<h1 class="wsg_logo"><a href="../../index.html">교보문고 3과제 웹퍼블리싱가이드</a></h1><button class="btn_aside is_clickEvent" type="button"><span>Menu</span></button>
+			<nav class="wsg_lnb">
+				<ul>
+					<li>
+						<a href="../../index.html">개요</a>
+					</li>
+					<li class="is_current">
+						<a href="rule_intro.html">규칙가이드</a>
+					</li>
+					<li>
+						<a href="../plan/plan_codeset.html">설계가이드</a>
+					</li>
+					<li>
+						<a href="../accessibility/wa_index.html">접근성점검</a>
+					</li>
+					<li>
+						<a href="../seo/seo_intro.html">SEO 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_ink.html">PC 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_mok.html">MO 가이드</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="wsg_container_wrapper">
+		<aside class="wsg_aside js_wsg_aside">
+			<div class="wsg_aside_scroll">
+				<nav class="wsg_snb">
+					<ul class="wsg_node1_list" style="display: block;">
+						<li class="wsg_node1">
+							<a href="#">규칙가이드</a>
+							<ul class="wsg_node2_list">
+								<li class="wsg_node2">
+									<a href="rule_intro.html">기본정책</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_standard.html">표준규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_name.html">네이밍 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_html_markup.html">HTML Markup 규칙</a>
+								</li>
+								<li class="wsg_node2 is_current">
+									<a href="rule_code_scss.html">SCSS 코드 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_code_css.html">CSS 코드 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_code_js.html">JS 코드 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_compile.html">로컬 테스트 가이드</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>			
+			</div>
+		</aside>
+		<!-- Content -->
+		<article class="wsg_content">
+			<div class="wsg_content_header">
+				<div class="wsg_inner">
+					<h1 class="wsg_h1">SCSS 코드 규칙</h1>
+				</div>
+			</div>
+			<div class="wsg_content_body">
+				<!-- section1 -->
+				<section id="section1" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">개요</h2>
+					</div>
+					<div class="wsg_section_body">
+						<p class="wsg_desc">본 가이드는 Sass 문법 표준 규칙을 안내하고 프로젝트 진행을 원활하게 하기 위해 Sass 문법의 일부를 설명하지만 모든 Sass 문법에 대해 설명하지 않습니다.</p>
+						<p class="wsg_desc">프로젝트는 CSS 문법과 유사한 SCSS 문법으로 작업을 진행합니다.</p>
+						<p class="wsg_desc wsg_txt_red">아래 예시중 "아웃풋 CSS"의 내용은 가독성을 위해 CSS 표준규칙을 무시하고 개행 처리되었습니다.</p>
+						<h3 class="wsg_h3">참고 URL</h3>
+						<ul class="wsg_desc">
+							<li><a class="wsg_link_basic" href="https://sass-lang.com/documentation" target="_blank">Sass 공식 Documentation</a></li>
+							<li><a class="wsg_link_basic" href="https://sass-guidelin.es/ko/" target="_blank">Sass Guidelines(한국어)</a></li>
+							<li><a class="wsg_link_basic" href="https://opentutorials.org/module/237/2488" target="_blank">Opentutorials Sass</a></li>
+						</ul>
+
+					</div>
+				</section>
+
+				<!-- section2 -->
+				<section id="section2" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">코드 규칙</h2>
+					</div>
+					<div class="wsg_section_body">
+						<h3 class="wsg_h3">코드 들여쓰기</h3>
+						<ul class="wsg_desc">
+							<li>1탭 들여쓰기 하며, 1탭의 크기는 공백 4칸으로 설정한다.</li>
+						</ul>
+
+						<h3 class="wsg_h3">줄바꿈</h3>
+						<ul class="wsg_desc">
+							<li>모든 속성은 줄바꿈 처리한다.</li>
+							<li>박스단위 구분을 위해 단 사이 빈줄 추가(최대 2줄을 넘지않는다)</li>
+							<li>Nesting 구조에서 속성과 클래스 사이, 클래스와 클래스 사이는 반드시 한줄 빈칸을 추가한다.</li>
+						</ul>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<pre class="brush:css;">
+										/* 올바른 예 */
+										nav {
+											ul {
+												margin: 0;
+												padding: 0;
+												list-style: none;
+
+												li {
+													display: inline-block;
+												}
+											}
+
+											a {
+												display: block;
+												padding: 6px 12px;
+												text-decoration: none;
+											}
+										}
+
+										/* 잘못된 예 */
+										nav {
+											ul {
+												margin: 0; padding: 0;
+												list-style: none;
+												li {display: inline-block;}
+											}
+											a {
+												display: block; padding: 6px 12px; text-decoration: none;
+											}
+										}
+									</pre>
+								</figure>
+							</div>
+						</div>
+
+						<h3 class="wsg_h3">주석</h3>
+
+						<h4 class="wsg_h4">주석</h4>
+						<ul class="wsg_desc">
+							<li>한줄 주석과 두줄 이상의 주석은 아래와 같이 표기한다.</li>
+							<li>Sass의 경우 CSS에서 지원하지 않는 <code>//</code> 주석 사용이 가능하며 해당 주석은 CSS로 컴파일 시 포함되지 않는다.</li>
+							<li>DESC, TODO 등 참고용 주석은 반드시 <code>//</code> 주석으로 작성한다.</li>
+							<li><code>/* */</code> 주석은 컴파일시 주석을 작성한 위치에 표시되므로 블럭 최상단 클래스에만 작성한다.</li>
+						</ul>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<pre class="brush:css;">
+										/* 버튼 사이즈 */
+
+										/**
+										 * 두줄 이상의 주석 케이스
+										 * .btn_red : 경고 버튼
+										 */
+
+										// 참고용 주석
+										// DESC 내용
+										// TODO 내용
+									</pre>
+								</figure>
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">블럭 구분</h4>
+						<ul class="wsg_desc">
+							<li>코드 가독성을 위해 블럭을 구분하는 경우 아래와 같이 표시한다.</li>
+							<li>주석 시작과 끝(/*, */)라인의 *는 에디터 설정의 자동 줄바꿈 라인에 맞춰 채운다.</li>
+							<li>블럭 구분 주석의 경우 최상위 클래스에만 작성한다</li>
+						</ul>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<pre class="brush:css;">
+										/* wrap */
+										.wrapper {
+											.header_wrapper {
+												...
+											}
+										}
+
+										/* dashboard_wrap */
+										.dashboard_wrap {
+											padding: 23px 25px 25px;
+
+											.dashboard_inner {
+												position: relative;
+
+												&:after {
+													content: '';
+													display: block;
+													clear: both;
+												}
+											}
+										}
+									</pre>
+								</figure>
+
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">TODO 주석의 사용</h4>
+						<ul class="wsg_desc">
+							<li>TODO 주석을 기입할 경우 타인이 해당 내용을 이해할 수 있도록 상세하게 작성한다.</li>
+							<li>TODO 내용 해결 후 반드시 주석을 <span class="wsg_txt_red">삭제</span>한다.</li>
+						</ul>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<pre class="brush:css;">
+										/* 올바른 예 */
+										// TODO : 박스 가이드 완료 후 박스 내 .dashboard_wrap이 들어가는 케이스 추가 필요
+										.dashboard_wrap {
+											padding: 23px 25px 25px;
+										}
+
+										/* 잘못된 예 */
+										// TODO : 여백 수정 필요
+										.dashboard_wrap {
+											padding: 23px 25px 25px;
+										}
+									</pre>
+								</figure>
+							</div>
+						</div>
+
+						<h3 class="wsg_h3">상세 코드 규칙</h3>
+						<h4 class="wsg_h4">작은 따옴표('') 사용 범위</h4>
+						<p class="wsg_desc">폰트의 선언, filter, content에 작은 따옴표('')를 사용한다.</p>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<!-- s : pre in 보여질 코드삽입 -->
+									<pre class="brush:css;">
+									.class_name {
+										background: url(img.gif) no-repeat;
+										font-family: 'dotum';
+
+										&:after {
+											content: '.';
+										}
+									}
+									</pre>
+									<!-- e : pre in 보여질 코드삽입 -->
+								</figure>
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">background 속성</h4>
+						<p class="wsg_desc">background 속성에는 기본 따옴표를 사용하지 않으며 공백과 괄호 등의 이슈가 발생하는 케이스에 대하여 작은 따옴표를 허용한다.</p>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<!-- s : pre in 보여질 코드삽입 -->
+									<pre class="brush:css;">
+										.class_name_a {
+											background-image: url(img.gif);
+										}
+
+										.class_name_b {
+											background: url(img.gif) no-repeat;
+										}
+									</pre>
+									<!-- e : pre in 보여질 코드삽입 -->
+								</figure>
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">세미콜론(;)</h4>
+						<p class="wsg_desc">마지막 선언된 속성에도 세미콜론(;)을 사용한다.</p>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<!-- s : pre in 보여질 코드삽입 -->
+									<pre class="brush:css;">
+										.class_name {
+											margin-left: 0;
+											padding-left: 10px;
+										}
+									</pre>
+									<!-- e : pre in 보여질 코드삽입 -->
+								</figure>
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">공백의 사용</h4>
+						<p class="wsg_desc">선택자 간, 중괄호간 한칸의 공백을 사용한다, 중괄호 안쪽 좌우에는 공백은 사용하지 않는다.</p>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<!-- s : pre in 보여질 코드삽입 -->
+									<pre class="brush:css;">
+										.class_name {
+											&, .child_class {
+												background: url(../img/img.gif) no-repeat;
+											}
+										}
+										.class_name {
+											padding: 0;
+											margin: 0;
+										}
+									</pre>
+									<!-- e : pre in 보여질 코드삽입 -->
+								</figure>
+							</div>
+						</div>
+
+						<h3 class="wsg_h3">선택자</h3>
+						<h4 class="wsg_h4">공통 선택자</h4>
+						<p class="wsg_desc">'*' 공통 선택자는 웹 페이지의 성능을 저하를 가져오기 때문에 가급적 사용하지 않는다.</p>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<!-- s : pre in 보여질 코드삽입 -->
+									<pre class="brush:css;">
+										/* 잘못된 예 */
+										* {
+											margin: 0;
+											padding: 0;
+										}
+									</pre>
+									<!-- e : pre in 보여질 코드삽입 -->
+								</figure>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- section3 -->
+				<section id="section3" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">문법 사용 예시/결과</h2>
+					</div>
+					<div class="wsg_section_body">
+						<h3 class="wsg_h3">Nesting(중첩) 문법</h3>
+						<h4 class="wsg_h4">기본 문법</h4>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														nav {
+															ul {
+																margin: 0;
+																padding: 0;
+																list-style: none;
+
+																li {
+																	display: inline-block;
+																}
+															}
+
+															a {
+																display: block;
+																padding: 6px 12px;
+																text-decoration: none;
+															}
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														nav ul {
+															margin: 0;
+															padding: 0;
+															list-style: none;
+														}
+
+														nav ul li {
+															display: inline-block;
+														}
+
+														nav a {
+															display: block;
+															padding: 6px 12px;
+															text-decoration: none;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">리스트형 셀렉터</h4>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														ul > {
+															li {
+																list-style-type: none;
+															}
+														}
+
+														h2 {
+															+ p {
+																border-top: 1px solid gray;
+															}
+														}
+
+														p {
+															~ {
+																span {
+																  opacity: 0.8;
+																}
+															}
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														ul > li {
+															list-style-type: none;
+														}
+
+														h2 + p {
+															border-top: 1px solid gray;
+														}
+
+														p ~ span {
+															opacity: 0.8;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">셀렉터 조합</h4>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														nav {
+															ul {
+																margin: 0;
+																padding: 0;
+																list-style: none;
+
+																li {
+																	display: inline-block;
+																}
+															}
+
+															a {
+																display: block;
+																padding: 6px 12px;
+																text-decoration: none;
+															}
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														nav ul {
+															margin: 0;
+															padding: 0;
+															list-style: none;
+														}
+
+														nav ul li {
+															display: inline-block;
+														}
+
+														nav a {
+															display: block;
+															padding: 6px 12px;
+															text-decoration: none;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">부모 선택자</h4>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.alert {
+															&:hover {
+																font-weight: bold;
+															}
+
+															[dir=rtl] & {
+																margin-left: 0;
+																margin-right: 10px;
+															}
+
+															:not(&) {
+																opacity: 0.8;
+															}
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.alert:hover {
+															font-weight: bold;
+														}
+
+														[dir=rtl] .alert {
+															margin-left: 0;
+															margin-right: 10px;
+														}
+
+														:not(.alert) {
+															opacity: 0.8;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h3 class="wsg_h3">속성 선언</h3>
+						<h4 class="wsg_h4">기본문법</h4>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.circle {
+															$size: 100px;
+															width: $size;
+															height: $size;
+															border-radius: $size * 0.5;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.circle {
+															width: 100px;
+															height: 100px;
+															border-radius: 50px;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">변수 사용</h4>
+						<p class="wsg_desc">자바스크립트의 변수와 마찬가지로 전역 변수와 지역변수가 있으며 중괄호 안의 스코프가 우선시 된다.</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														$base_color: #c6538c;
+														$border_dark: rgba($base_color, 0.88);
+
+														.alert {
+															border: 1px solid $border_dark;
+														}
+
+														$variable: value 1;
+														.rule_1 {
+															value: $variable;
+														}
+
+														// 변수 재선언시 override
+														$variable: value 2;
+														.rule_2 {
+															value: $variable;
+														}
+
+														.rule_3 {
+															// 지역 변수가 우선시 된다
+															$variable: value 3;
+															value: $variable;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.alert {
+															border: 1px solid rgba(198, 83, 140, 0.88);
+														}
+
+														.rule_1 {
+															value: value 1;
+														}
+														.rule_2 {
+															value: value 2;
+														}
+														.rule_2 {
+															value: value 3;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">Interpolation(보간) 문법</h4>
+						<p class="wsg_desc">변수값을 CSS 문자로 활용하고 싶은 경우 <code>#{$variable}</code> 보간 문법을 사용한다.</p>
+						<p class="wsg_desc">보간 문법 내 변수가 따옴표로 감싸진 문자열인 경우 따옴표는 제거된다.</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														@mixin define-emoji($name, $glyph) {
+															span.emoji-#{$name} {
+																font-family: IconFont;
+																font-variant: normal;
+																font-weight: normal;
+																content: $glyph;
+															}
+														}
+
+														@include define-emoji('women-holding-hands', '👭');
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														span.emoji-women-holding-hands {
+															font-family: IconFont;
+															font-variant: normal;
+															font-weight: normal;
+															content: '👭';
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">속성에서의 Nesting(중첩) 활용</h4>
+						<p class="wsg_desc">font, transition 등 약식 속성의 경우 중괄호를 이용하여 풀어 쓸 수 있다.</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.enlarge {
+															font-size: 14px;
+															transition: {
+																property: font-size;
+																duration: 4s;
+																delay: 2s;
+															}
+
+															&:hover {
+																font-size: 36px;
+															}
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.enlarge {
+															font-size: 14px;
+															transition-property: font-size;
+															transition-duration: 4s;
+															transition-delay: 2s;
+														}
+
+														.enlarge:hover {
+															font-size: 36px;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h3 class="wsg_h3">Placeholder 문법</h3>
+						<p class="wsg_desc">일종의 추상화 클래스 문법으로 공통된 속성 값을 미리 선언하여 확장(<code>@extend</code>)하는데 사용한다. placeholder 문법에 선언한 속성은 컴파일 되지 않는다.</p>
+						<p class="wsg_desc"><code>@extends</code>로 확장한 구문은 선언한 내용과 분리되어 CSS에 생성된다.</p>
+						<h4 class="wsg_h4">기본 문법</h4>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.alert:hover, %strong-alert {
+															font-weight: bold;
+														}
+
+														%strong-alert:hover {
+															color: red;
+														}
+
+														%toolbelt {
+															box-sizing: border-box;
+															border-top: 1px rgba(#000, .12) solid;
+															padding: 16px 0;
+															width: 100%;
+
+															&:hover { border: 2px rgba(#000, .5) solid; }
+														}
+
+														.action_buttons {
+															@extend %toolbelt;
+															color: #4285f4;
+														}
+
+														.reset_buttons {
+															@extend %toolbelt;
+															color: #cddc39;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.alert:hover {
+															font-weight: bold;
+														}
+
+														.action_buttons, .reset_buttons {
+															box-sizing: border-box;
+															border-top: 1px rgba(0, 0, 0, 0.12) solid;
+															padding: 16px 0;
+															width: 100%;
+														}
+														.action_buttons:hover, .reset_buttons:hover {
+															border: 2px rgba(0, 0, 0, 0.5) solid;
+														}
+
+														.action_buttons {
+															color: #4285f4;
+														}
+
+														.reset_buttons {
+															color: #cddc39;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h3 class="wsg_h3">At(@) 규칙</h3>
+
+						<h4 class="wsg_h4">@import</h4>
+						<p class="wsg_desc">Sass 파일은 모듈별로 파일을 분리하여 제작하고 이를 최상위 Sass 파일에서 불러들여 사용하며 <code>@import</code>로 파일을 불러들여 컴파일 한다.</p>
+						<ul class="wsg_desc">
+							<li>
+								현재 Sass 팀은 <code>@import</code>를 아래와 같은 이유로 권장하지 않으며 아래 소개할 <code>@use</code>를 사용하도록 권장하고 있다.
+								<ul class="wsg_desc_line">
+									<li>@import는 모든 변수, 믹스인 및 함수를 전역적으로 액세스할 수 있습니다. 이로 인해 변수, 믹스인, 함수에 대해 정의된 위치를 말하기가 매우 어렵습니다.</li>
+									<li>모든 것이 전역적이기 때문에 라이브러리에서 충돌을 피하기 위해 모든 멤버에 접두어를 붙여야 합니다.</li>
+									<li>@extend 규칙도 전역적이므로 확장될 스타일 규칙을 예측하기 어렵습니다.</li>
+									<li>각 스타일시트는 @import할 때마다 실행되고 CSS가 내보내지므로 컴파일 시간이 늘어나고 출력이 부풀려집니다.</li>
+									<li>다운스트림 스타일시트에 액세스할 수 없는 private 멤버 또는 placeholder를 정의할 방법이 없었습니다.</li>
+								</ul>
+							</li>
+						</ul>
+						<p class="wsg_desc"><code>@import</code> 사용을 권장하지는 않지만 문법상 <code>@use</code>와 크게 다르지 않다.</p>
+
+						<h4 class="wsg_h4">@mixin과 @include</h4>
+						<p class="wsg_desc"><code>@mixin</code>을 사용하여 전체 스타일시트에서 재사용할 수 있는 스타일을 정의할 수 있다.</p>
+							<p class="wsg_desc"><code>@mixin &lt;명칭&gt; { ... }</code> 또는 <code>@mixin &lt;명칭&gt; (인자값...) { ... }</code>으로 작성할 수 있다.</p>
+						<br>
+						<p class="fw_b">기본 사용법</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														@mixin reset-list {
+															margin: 0;
+															padding: 0;
+															list-style: none;
+														}
+
+														@mixin horizontal_list {
+															@include reset-list;
+
+															li {
+																display: inline-block;
+																margin: {
+																	left: -2px;
+																	right: 2em;
+																}
+															}
+														}
+
+														nav ul {
+															@include horizontal_list;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														nav ul {
+															margin: 0;
+															padding: 0;
+															list-style: none;
+														}
+
+														nav ul li {
+															display: inline-block;
+															margin-left: -2px;
+															margin-right: 2em;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p class="fw_b">인자값</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														@mixin rtl($property, $ltr-value, $rtl-value) {
+															#{$property}: $ltr-value;
+
+															[dir=rtl] & {
+																#{$property}: $rtl-value;
+															}
+														}
+
+														.sidebar {
+															@include rtl(float, left, right);
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.sidebar {
+															float: left;
+														}
+														[dir=rtl] .sidebar {
+															float: right;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p class="fw_b">인자값의 기본값 설정</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														@mixin replace-text($image, $x: 50%, $y: 50%) {
+															text-indent: -99999em;
+															overflow: hidden;
+															text-align: left;
+															background: {
+																image: $image;
+																repeat: no-repeat;
+																position: $x $y;
+															}
+														}
+
+														.mail_icon {
+															@include replace-text(url(/images/mail.svg), 0);
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.mail_icon {
+															text-indent: -99999em;
+															overflow: hidden;
+															text-align: left;
+															background-image: url(/images/mail.svg);
+															background-repeat: no-repeat;
+															background-position: 0 50%;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p class="fw_b">콘텐츠 블록</p>
+						<p class="wsg_desc">콘텐츠 블록으로 알려진 <code>@content</code>를 통해 <code>@include</code>에 입력 된 값을 전달하여 삽입 할 수 있다.</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														@mixin hover {
+															&:not([disabled]):hover {
+																@content;
+															}
+															&:not([disabled]):active {
+																@content;
+															}
+														}
+
+														.button {
+															border: 1px solid black;
+															@include hover {
+																border-width: 2px;
+															}
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.button {
+															border: 1px solid black;
+														}
+														.button:not([disabled]):hover {
+															border-width: 2px;
+														}
+														.button:not([disabled]):active {
+															border-width: 2px;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p class="fw_b">콘텐츠 블록의 인자값 전달</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														@mixin media($types...) {
+															@each $type in $types {
+																@media #{$type} {
+																	@content($type);
+																}
+															}
+														}
+
+														@include media(screen, print) using ($type) {
+															h1 {
+																font-size: 40px;
+																@if $type == print {
+																	font-family: Calluna;
+																}
+															}
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														@media screen {
+															h1 {
+																font-size: 40px;
+															}
+														}
+														@media print {
+															h1 {
+																font-size: 40px;
+																font-family: Calluna;
+															}
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">@use</h4>
+						<p class="wsg_desc">Dart Sass 1.23.0 부터 추가된 모듈로 위에 언급한 <code>@import</code>에서 발생할 수 있는 문제들을 해결하기 위해 추가 되었다.</p>
+						<p class="wsg_desc"><code>@use</code>는 현재는 사용되지 않는 LibSass 컴파일러에서는 사용이 불가하므로 Dart Sass 컴파일러를 사용해야 하며 LibSass는 현재 사용이 중지된 상태이다.(node-sass 컴파일러 등)</p>
+						<br>
+						<p class="fw_b">기본 사용법</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														// foundation/_code.scss
+														code {
+															padding: .25em;
+															line-height: 0;
+														}
+
+														// foundation/_lists.scss
+														ul, ol {
+															text-align: left;
+
+															& & {
+																padding: {
+																	bottom: 0;
+																	left: 0;
+																}
+															}
+														}
+
+														// style.scss
+														@use 'foundation/code', 'foundation/lists';
+														// 또는
+														@use 'foundation';
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														code {
+															padding: .25em;
+															line-height: 0;
+														}
+														ul, ol {
+															text-align: left;
+														}
+														ul ul, ol ol {
+															padding-bottom: 0;
+															padding-left: 0;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p class="fw_b">네임 스페이스 사용법</p>
+						<p class="wsg_desc"><code>@use</code>로 불러들인 파일 내 변수, 함수, 믹스인은 <code>namespace.variable</code>, <code>namespace.function()</code>, <code>@include namespace.mixin()</code>으로 호출 할 수 있다.</p>
+						<p class="wsg_desc">기본적으로 네임스페이스는 모듈 URL 의 마지막 구성 요소로(예제에선 <code>corners</code>) 설정 된다.</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														// src/_corners.scss
+														$radius: 3px;
+
+														@mixin rounded {
+															border-radius: $radius;
+														}
+
+														// style.scss
+														@use 'src/corners';
+
+														.button {
+															@include corners.rounded;
+															padding: 5px + corners.$radius;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.button {
+															border-radius: 3px;
+															padding: 8px;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p class="fw_b">사용자 네임스페이스 설정</p>
+						<p class="wsg_desc">위 예제처럼 자동으로 설정된 네임스페이스 대신 사용자가 설정한 네임스페이스를 사용하고 싶은 경우 <code>@use '&lt;url&gt;' as &lt;네임스페이스명&gt;</code>으로 선언한다.</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														// src/_corners.scss
+														$radius: 3px;
+
+														@mixin rounded {
+															border-radius: $radius;
+														}
+
+														// style.scss
+														@use 'src/corners' as c;
+
+														.button {
+															@include c.rounded;
+															padding: 5px + c.$radius;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.button {
+															border-radius: 3px;
+															padding: 8px;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p class="fw_b">Private 변수 선언</p>
+						<p class="wsg_desc">Private(비공개) 변수의 선언은 변수명을 <code>$-variable</code> 또는 <code>$_variable</code> 형식으로 선언할 수 있다.</p>
+						<p class="wsg_desc">Private 변수는 <code>@use</code>를 통해 포함시킨 파일에선 접근할 수 없습니다.</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														// src/_corners.scss
+														$-radius: 3px;
+
+														@mixin rounded {
+															border-radius: $-radius;
+														}
+
+														// style.scss
+														@use 'src/corners';
+
+														.button {
+															@include corners.rounded;
+
+															// 비공개 변수인 $-radius는 '_corners.scss' 밖에서 접근할 수 없어 에러가 발생한다.
+															padding: 5px + corners.$-radius;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">@function</h4>
+						<p class="wsg_desc"><code>@function</code>은 복잡한 계산 작업을 정의하여 재사용할 수 있으며 해당 작업 결과를 <code>@return</code>을 통해 반환한다.</p>
+						<p class="wsg_desc"><code>@function</code>은 <code>@mixin</code>과 마찬가지로 인자값의 기본값을 설정할 수 있다.</p>
+
+						<p class="fw_b">기본 사용법</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														@function pow($base, $exponent) {
+															$result: 1;
+															@for $_ from 1 through $exponent {
+																$result: $result * $base;
+															}
+															@return $result;
+														}
+
+														.sidebar {
+															float: left;
+															margin-left: pow(4, 3) * 1px;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="stitle">아웃풋 CSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														.sidebar {
+															float: left;
+															margin-left: 64px;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p class="fw_b">@return</p>
+						<p class="wsg_desc"><code>@return</code>은 <code>@function</code> 내에서만 사용할 수 있으며 <code>@function</code>은 반드시 <code>@return</code>으로 끝나야 한다.</p>
+						<div class="grid_ex_box">
+							<div class="col row_group">
+								<div class="row">
+									<div class="stitle">컴파일 전 SCSS</div>
+									<div class="cont">
+										<div class="wsg_code">
+											<div class="syntaxhighlighter">
+												<figure class="highlight">
+													<pre class="brush: css;">
+														@use 'sass:string';
+
+														@function str-insert($string, $insert, $index) {
+															@if string.length($string) == 0 {
+																@return $insert;
+															}
+
+															$before: string.slice($string, 0, $index);
+															$after: string.slice($string, $index);
+															@return $before + $insert + $after;
+														}
+													</pre>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</article>
+		<!-- //Content -->
+
+	</div>
+
+</div>
+</body>
+</html>

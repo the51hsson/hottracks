@@ -1,0 +1,52 @@
+/* TODO: theme 설정 부분 정리 할 것 */
+:root {
+    --theme-color:#D53020;
+}
+
+
+.fc_red {color: red;}
+.fw_bold {font-weight: bold;}
+
+.guide_wrap {/*padding-bottom: 150px;*/}
+.guide_wrap + .guide_wrap {margin-top: 40px;}
+.guide_inner + .guide_inner {margin-top: 20px;}
+
+.guide_btit {position: relative; padding: 10px 25px; font-size: 20px; font-weight: bold; margin-bottom: 8px; color: #000;}
+.guide_btit:before {content: ''; position: absolute; display: inline-block; width: 15px; height: 100%; left: 0; top: 0; background: var(--theme-color);}
+
+.guide_sbtit {padding-left: 8px; font-size: 16px; font-weight: 700; background: #f6f6f6; line-height: 35px; border-top: 5px solid #eee; border-right: 5px solid #eee; border-bottom: 5px solid #ccc; border-left: 5px solid #ccc; margin-bottom: 20px;}
+.guide_sbtit ~ .guide_sbtit, .guide_desc_list + .guide_sbtit, pre + .guide_sbtit {margin-top: 35px;}
+
+.guide_btit .text_size, .guide_sbtit .text_size {color: #777; font-size: 16px;}
+
+.guide_btit + .guide_inner, .dialog_contents .guide_btit + .guide_inner {margin-top: 20px; margin-bottom: 20px;}
+.guide_wrap ~ h2, .guide_wrap + .guide_wrap,
+.dialog_contents > .guide_wrap ~ h2, .dialog_contents > .guide_wrap + .guide_wrap {margin-top: 50px;}
+
+.guide_inner pre code,
+.dialog_contents .guide_inner pre code { max-height: 500px; overflow: auto; }
+
+.guide_wrap .guide_inner ~ .guide_inner,
+.dialog_contents > .guide_wrap .guide_inner ~ .guide_inner {margin-top: 100px;}
+
+.guide_inner .guide_sbtit + .guide_desc_list{padding: 15px 20px; margin-bottom: 30px;}
+.guide_desc_list{padding: 30px 20px; margin-bottom: 30px; background-color: #eee;}
+.guide_desc_list + .guide_inner {margin-top: 50px;}
+.guide_desc_list li {margin-left: 24px; font-size: 15px; line-height: 23px; list-style: decimal-leading-zero; word-break: break-all; }
+.guide_desc_list li img {max-width: 100%; margin-top: 10px;}
+.guide_desc_list li ~ li {margin-top: 20px;}
+.guide_desc_list li code {display: inline-block; height: 23px; margin-right: 3px; padding: 0 4px; color: #d63384; background-color: #f5f5f5; border: 1px solid #d7d7d7; border-radius: 3px; box-sizing: border-box;}
+
+.guide_desc_list li > .guide_desc_list {padding: 0; margin-bottom: 0;}
+.guide_desc_list li > .guide_desc_list li {margin-left: 15px; font-size: 14px; list-style: initial;}
+.guide_desc_list li > .guide_desc_list li ~ li {margin-top: 5px;}
+
+.todo_text { display: block; margin: 20px 0; padding: 5px 10px; font-size: 14px; line-height: 22px; color: red; background: #ffe9e9;}
+.highlight_text {padding: 0 5px; font-weight: 500; background: #fff6ae; border: 1px solid #eddf6f;}
+.btn_guide_link {position: relative; color: #338bb5;}
+.btn_guide_link:after {content: ''; display: inline-block; position: absolute; left: 0; bottom: 3px; width: 100%; height: 1px; border-bottom: 1px dashed #338bb5;}
+
+.hljs { margin: 15px auto; font-size: 13px; line-height: 18px;}
+
+
+code{font-family: 'Pretendard', "SF Pro Display", AppleSDGothicNeo-Light, Helvetica,"Malgun Gothic", 'MalgunGothic', '맑은고딕', sans-serif; }

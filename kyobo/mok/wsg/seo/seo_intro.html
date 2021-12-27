@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>웹퍼블리싱가이드 - Standard Guide</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="Robots" content="noindex, nofollow" />
+	<!-- Front CSS-->
+	<link href="../resources/css/common.css" rel="stylesheet" />
+	
+	<!-- JS/Guide -->	
+	<script src="../resources/libs/jquery-3.6.0.min.js"></script>
+	<script src="../resources/js/guide.js"></script>
+	
+	<!-- codeview -->
+	<script src="../resources/libs/codeview/scripts/shCore.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shAutoLoader.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushjScript.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushXml.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushCss.js?cb=undefined"></script>
+	<link href="../resources/libs/codeview/styles/shCoreDefaultWhite.css" rel="stylesheet" />
+	<script>SyntaxHighlighter.config.bloggerMode = false;SyntaxHighlighter.defaults['smart_tabs'] = false;SyntaxHighlighter.all();</script>
+</head>
+<body>
+<div class="wsg_wrapper">
+	
+	<header class="wsg_header_wrapper js_wsg_header_wrapper">
+		<div class="wsg_header_inner">
+			<h1 class="wsg_logo"><a href="../../index.html">교보문고 3과제 웹퍼블리싱가이드</a></h1><button class="btn_aside is_clickEvent" type="button"><span>Menu</span></button>
+			<nav class="wsg_lnb">
+				<ul>
+					<li>
+						<a href="../../index.html">개요</a>
+					</li>
+					<li>
+						<a href="../rule/rule_intro.html">규칙가이드</a>
+					</li>
+					<li>
+						<a href="../plan/plan_codeset.html">설계가이드</a>
+					</li>
+					<li>
+						<a href="../accessibility/wa_index.html">접근성점검</a>
+					</li>
+					<li class="is_current">
+						<a href="seo_intro.html">SEO 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_ink.html">PC 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_mok.html">MO 가이드</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="wsg_container_wrapper">
+		<aside class="wsg_aside js_wsg_aside">
+			<div class="wsg_aside_scroll">
+				<nav class="wsg_snb">
+					<ul class="wsg_node1_list" style="display: block;">
+						<li class="wsg_node1">
+							<a href="#">SEO 가이드</a>
+							<ul class="wsg_node2_list">
+								<li class="wsg_node2 is_current">
+									<a href="seo_intro.html">태그 소개</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>			
+			</div>
+		</aside>
+		<!-- Content -->
+		<article class="wsg_content">
+			<div class="wsg_content_header">
+				<div class="wsg_inner">
+					<h1 class="wsg_h1">태그 소개</h1>
+				</div>
+			</div>
+			<div class="wsg_content_body">
+				<!-- section4 -->
+				<section id="section1" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">참고 URL</h2>
+					</div>
+					<div class="wsg_section_body">
+						<ul class="wsg_desc">
+							<li><a class="wsg_link_basic" href="https://developers.google.com/search/docs/beginner/seo-starter-guide?hlko" target="_blank">검색엔진 최적화(SEO) 기본 가이드</a></li>
+							<li><a class="wsg_link_basic" href="https://developers.google.com/search/docs/advanced/crawling/special-tags?hlko" target="_blank">구글에서 인식하는 모든 메타 태그</a></li>
+							<li><a class="wsg_link_basic" href="https://search.google.com/test/mobile-friendly" target="_blank">구글 모바일 친화성 테스트</a></li>
+							<li><a class="wsg_link_basic" href="https://developers.facebook.com/docs/sharing/webmasters/" target="_blank">페이스북 웹 마스터용 공유 가이드</a></li>
+							<li><a class="wsg_link_basic" href="https://developers.facebook.com/tools/debug/" target="_blank">페이스북 공유 디버거</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="section2" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">기본 태그</h2>
+					</div>
+					<div class="wsg_section_body">
+						<p>아래의 태그는 HTML 문서의 &lt;head&gt; 요소 내에 배치한다.</p>
+						<h3 class="wsg_h3">&lt;title&gt; 태그</h3>
+						<ul class="wsg_desc">
+							<li>&lt;title&gt; 태그는 사용자와 검색엔진에 모두 특정 페이지의 주제가 무엇인지 알려준다.</li>
+							<li>사이트의 각 페이지에 사용할 고유한 제목을 만들어야 한다.</li>
+							<li>문서가 검색결과 페이지에 표시될 때 검색결과의 첫 번째 줄에 title 태그의 내용이 표시될 수 있다.</li>
+						</ul>
+
+						<h4 class="wsg_h4">상황별 title 예시</h4>
+						<!-- TODO SEO title 기획 정의 후 추가 -->
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;title&gt;SEO title 기획 정의 후 추가&lt;/title&gt;
+							</pre>
+						</div>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;description&quot; /&gt; 태그</h3>
+						<ul class="wsg_desc">
+							<li>페이지의 description 메타 태그는 Google 및 다른 검색엔진에 페이지 내용을 요약하여 제공한다.</li>
+							<li>페이지 제목은 단어 몇 개나 문구로 이뤄질 수 있지만 페이지의 description 메타 태그는 한두 문장 또는 짧은 단락 정도로 길어질 수 있다.</li>
+						</ul>
+
+						<h4 class="wsg_h4">상황별 description 예시</h4>
+						<!-- TODO SEO description 기획 정의 후 추가 -->
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;meta name=&quot;description&quot; content=&quot;SEO description 기획 정의 후 추가&quot; /&gt;
+							</pre>
+						</div>
+
+						<!-- TODO SEO subject 기획 정의 후 추가 또는 삭제 -->
+						<h3 class="wsg_h3">&lt;meta name=&quot;subject&quot; /&gt; 태그</h3>
+						<ul class="wsg_desc">
+							<li>이 태그는 웹사이트의 주제를 선언하는 데 사용한다.</li>
+						</ul>
+
+						<h4 class="wsg_h4">상황별 subject 예시</h4>
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;meta name=&quot;subject&quot; content=&quot;SEO subject 기획 정의 후 추가&quot; /&gt;
+							</pre>
+						</div>
+
+						<!-- TODO SEO keywords 기획 정의 후 추가 또는 삭제 -->
+						<h3 class="wsg_h3">&lt;meta name=&quot;keywords&quot; /&gt; 태그</h3>
+						<ul class="wsg_desc">
+							<li>화면 주제 단어, 문장을 입력한다.</li>
+						</ul>
+
+						<!-- TODO SEO author 기획 정의 후 추가 또는 삭제 -->
+						<h3 class="wsg_h3">&lt;meta name=&quot;author&quot; /&gt; 태그</h3>
+						<ul class="wsg_desc">
+							<li>페이지 작성자의 이름을 지정하는 데 사용한다.</li>
+						</ul>
+
+						<h4 class="wsg_h4">상황별 author 예시</h4>
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;meta name=&quot;author&quot; content=&quot;SEO author 기획 정의 후 추가&quot; /&gt;
+							</pre>
+						</div>
+
+						<!-- TODO SEO rating 기획 정의 후 추가 또는 삭제 -->
+						<h3 class="wsg_h3">&lt;meta name=&quot;rating&quot; content=&quot;adult&quot; /&gt; 태그</h3>
+						<ul class="wsg_desc">
+							<li>성인컨텐츠인 경우 추가되어야 하는 메타태그</li>
+						</ul>
+
+						<h3 class="wsg_h3">전체 태그 예시</h3>
+						<div class="wsg_code">
+							<pre class="brush:html">
+							</pre>
+						</div>
+						<ul class="wsg_desc_guide">
+							<li>기존에 사용되던 &lt;meta name=&quot;keywords&quot;&gt;의 경우 트래픽 유입을 위해 무리하게 키워드를 넣는 악용사례가 많아 현재 <span class="wsg_txt_red">검색엔진에서 사용하지 않는</span> 메타태그로 정의하지 않음.</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="section3" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">Open Graph protocol Metadata 태그</h2>
+					</div>
+					<div class="wsg_section_body">
+						<p>참고 링크 : <a class="wsg_link_basic" href="https://ogp.me/" target="_blank">The Open Graph protocol</a></p>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;og:title&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>기본 태그 &lt;title&gt;과 동일</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;og:type&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>개체의 유형을 표시하는 메타 태그</li>
+							<li>music.album, video.movie, book, profile, website 등의 값을 가질 수 있다.</li>
+							<li>자세한 사항은 <a href="https://ogp.me/#types" class="wsg_link_basic" target="_blank">https://ogp.me/#types</a> 참고</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;og:url&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>페이지의 영구적인 URL 값</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;og:description&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>기본 태그 &lt;meta name=&quot;description&quot;&gt;과 동일</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;og:locale&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>사이트 사용자 언어 태그. 기본값은 en_US, 한글의 경우는 ko_KR로 설정.</li>
+							<li>참고링크 :
+								<a href="https://unicode-org.github.io/cldr-staging/charts/38/supplemental/territory_language_information.html" class="wsg_link_basic" target="_blank">Territory-Language Information</a></li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;og:locale:alternate&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>사이트를 사용할 수 있는 다른 언어 태그 배열로 중복 선언 가능.</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;og:site_name&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>화면이 더 큰 웹 사이트의 일부인 경우 전체 사이트에 표시되어야 하는 이름</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;og:image&quot; /&gt;, &lt;meta name=&quot;og:image:url&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>화면을 나타내는 이미지의 URL</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;og:image:secure_url&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>화면에서 HTTPS가 필요한 경우 사용할 대체 URL</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;og:image:width&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>이미지의 넓이 값(숫자)</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;og:image:height&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>이미지의 높이 값(숫자)</li>
+						</ul>
+
+						<h3 class="wsg_h3">전체 태그 예시</h3>
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;meta property="og:title" content="The Rock" /&gt;
+								&lt;meta property="og:type" content="video.movie" /&gt;
+								&lt;meta property="og:url" content="https://www.imdb.com/title/tt0117500/" /&gt;
+								&lt;meta property="og:description" content="The Rock: Directed by Michael Bay. With Sean Connery, Nicolas Cage, Ed Harris, John Spencer. A mild-mannered chemist and an ex-con must lead the counterstrike when a rogue group of military men, led by a renegade general, threaten a nerve gas attack from Alcatraz against San Francisco." /&gt;
+								&lt;meta property="og:locale" content="en_US" /&gt;
+								&lt;meta property="og:locale:alternate" content="ko_KR" /&gt;
+								&lt;meta property="og:site_name" content="IMDb" /&gt;
+								&lt;meta property="og:image" content="http://m.media-amazon.com/images/M/MV5BZDJjOTE0N2EtMmRlZS00NzU0LWE0ZWQtM2Q3MWMxNjcwZjBhXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_FMjpg_UX1000_.jpg" /&gt;
+								&lt;meta property="og:image:secure_url" content="https://m.media-amazon.com/images/M/MV5BZDJjOTE0N2EtMmRlZS00NzU0LWE0ZWQtM2Q3MWMxNjcwZjBhXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_FMjpg_UX1000_.jpg" /&gt;
+								&lt;meta property="og:image:width" content="1000" /&gt;
+								&lt;meta property="og:image:height" content="1480.7502467917077" /&gt;
+							</pre>
+						</div>
+					</div>
+				</section>
+
+				<section id="section4" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">Twitter Card Metadata 태그</h2>
+					</div>
+					<div class="wsg_section_body">
+						<p>참고 링크 :
+							<a class="wsg_link_basic" href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards" target="_blank">About Twitter Cards</a>,
+							<a class="wsg_link_basic" href="https://cards-dev.twitter.com/validator" target="_blank">Twitter 카드 테스트</a>
+						</p>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;twitter:card&quot; /&gt; <span class="wsg_txt_red">필수</span></h3>
+						<ul class="wsg_desc">
+							<li>트위터 카드 노출 유형 선택. “summary”(기본값), “summary_large_image”, “app”, “player”</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;twitter:title&quot; /&gt; <span class="wsg_txt_red">필수</span></h3>
+						<ul class="wsg_desc">
+							<li>기본 태그 &lt;title&gt;과 동일</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;twitter:site&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>사이트와 관련한 트위터 아이디 (@Twitter)</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;twitter:description&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>트윗 내에서 프레젠테이션에 적합하도록 콘텐츠를 간결하게 요약한 설명으로 제목을 다시 사용하거나 웹사이트에서 제공하는 일반 서비스를 설명하는 데 사용해서는 안 된다.</li>
+							<li>
+								플랫폼 별 동작
+								<ul class="wsg_desc_line">
+									<li>iOS, Android: 표시되지 않음</li>
+									<li>웹: 타임라인 및 확장된 트윗에서 두줄 이상 말줄임(...)</li>
+								</ul>
+							</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;twitter:image&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>가로 세로 비율이 1:1인 이미지 URL로 최소 사이즈 144x144에서 최대 사이즈 4096x4096이며 최대 용량 5MB 이하여야 한다.</li>
+							<li>JPG, PNG, WEBP, GIF 포멧을 지원하며 SVG는 지원하지 않는다. 움직이는 GIF의 경우 첫 프레임이 노출된다.</li>
+						</ul>
+
+						<h3 class="wsg_h3">&lt;meta name=&quot;twitter:image:alt&quot; /&gt;</h3>
+						<ul class="wsg_desc">
+							<li>이미지 대체 텍스트로 최대 420자까지 지원한다.</li>
+						</ul>
+
+						<h3 class="wsg_h3">전체 태그 예시</h3>
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;meta name=&quot;twitter:card&quot; content=&quot;summary&quot; /&gt;
+								&lt;meta name=&quot;twitter:title&quot; content=&quot;언바운드 | 조용민 | 인플루엔셜 - 교보문고 /&quot;&gt;
+								&lt;meta name=&quot;twitter:site&quot; content=&quot;@kyobobookstory /&quot;&gt;
+								&lt;meta name=&quot;twitter:description&quot; content=&quot;게임의 룰을 바꾸는 사람들의 성장 법칙 | “게임의 룰을 바꾸지 않으면 성공할 수 없다”
+								세계 최고 기업 구글의 혁신 전략을 내 삶에 적용하는 법
+
+								300년 전 세상을 떠난 루이 14세의 음성을 지금 들을 수 있을까? 실제로 구글은 프랑스 방송사 카날플러스에서 의뢰를 받아 루이 14세의 목소리를 AI로 ... | 미래를 예측하는 것보다 더 효과적으로 미래를 대비할 수 있는 방법이 있을까? 어떻게 해야 변화의 물결에 휩쓸리지 않고 나만의 경쟁력을 갖출 수 있을까? 지속가능한 성장을 이루려면 무엇을 해야 할까?
+
+								인공지능이 인간의 일을 대체하고 있고, 기술의 혁신 주기는 점점... /&quot;&gt;
+								&lt;meta name=&quot;twitter:image&quot; content=&quot;http://image.kyobobook.co.kr/images/book/xlarge/921/x9791191056921.jpg /&quot;&gt;
+								&lt;meta name=&quot;twitter:image:alt&quot; content=&quot;언바운드 | 게임의 룰을 바꾸는 사람들의 성장 법칙 /&quot;&gt;
+							</pre>
+						</div>
+					</div>
+				</section>
+			</div>
+		</article>
+		<!-- //Content -->
+
+	</div>
+
+</div>
+</body>
+</html>
