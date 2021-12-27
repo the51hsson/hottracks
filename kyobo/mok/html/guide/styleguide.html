@@ -444,7 +444,7 @@
                 <h2 class="tit">핫트 PICK</h2>
                 <p class="sub">핫트랙스에서 선정한 베스트 리뷰</p>
             </div>
-            <div class="hotpick_wrap">
+            <div class="hotpickslide_wrap">
                 <div class="swiper-container hotpick_slide">
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide">
@@ -678,8 +678,14 @@
                             </div>    
                         </div>
                         <div class="auto_overflow_footer">
-                            <button class="btn_expand ico_circle_more" data-btn-toggle>펼치기</button> 
+                            <button type="button" class="btn_expand" data-btn-toggle>
+                                <span class="text">펼치기</span>
+                                <span class="ico_circle_more"></span>
+                            </button>
                         </div>
+                        <!-- <div class="auto_overflow_footer">
+                            <button class="btn_expand ico_circle_more" data-btn-toggle>펼치기</button> 
+                        </div> -->
                     </div>
 
 
@@ -819,8 +825,15 @@
             <!-- //tab_content -->
         </div>  
 
+
+
+        <div>
+            <button>더보기</button>
+        </div>
+        <hr class="devide_hr"/>
+
         <div class="tit_con_area">
-            <h2 class="tit">Q&A</h2>
+            <h2 class="tit">Q&A<span> (19)</span></h2>
             <p class="sub">문의하기를 통해 궁금증을 해결하세요.</p>
         </div>
 
@@ -828,44 +841,230 @@
 
         <div class="btn_wrap">
             <a href="#" class="btn btn_secondary btn_md btn_block">
-                <span class="txt ico_review">상품 문의하기</span>
+                <span class="txt ico_comment">상품 문의하기</span>
             </a>
         </div>        
 
 
 
 
-        <div class="all_review_wrap">
+        <div class="all_qa_wrap">
             <div class="review_inner">
                 <div class="review_info_area">
                     <span class="txt_user">ab*****</span>
                     <span class="gap"> | </span>
                     <span class="txt_date">2021.07.11</span>
-                    <span class="gap"> | </span>
-                    <button class="btn_report">신고</button>
-                </div>      
+                </div>    
+                
+                <div class="review_comment_area">
+                    <p class="txt_review">
+                        배송이 잘못 왔습니다.
+                    </p>
+                    <div class="thumnail_review">
+                        답변완료
+                    </div>                    
+                </div>  
             </div>
+            <div class="review_inner">
+                <div class="review_info_area">
+                    <span class="txt_user">ab*****</span>
+                    <span class="gap"> | </span>
+                    <span class="txt_date">2021.07.11</span>
+                </div>    
+                
+                <div class="review_comment_area">
+                    <p class="txt_review">
+                        배송이 잘못 왔습니다.
+                    </p>
+                    <div class="txt_reply">
+                        답변요청
+                    </div>                    
+                </div>  
+
+                <div class="box_qa">
+
+                    Q
+                    <div class="qa_opt_area">
+                        <span>옵션 :</span>
+                        <span>01 Lavender </span>
+                    </div>
+
+
+                    <p class="">
+                    제가 구매한 상품은 “Lavender” 인데 다른 컬러가 왔었어요. 
+                    확인 부탁드립니다.  
+                    </p>
+
+                    A
+                    <p class="">
+                    안녕하세요 고객님.
+                    서비스 이용에 불편을 드려 죄송합니다.
+                    해당 내용에 대한 문의는 고객센터(1588-9667)를 이용해 주시면 전문 상담원이 확인 후 응대 도와드리고 있습니다. 본 게시판은 상품정보제공에 관한 게시판으로 답변드리기 어려운 점 고객님의 너그러운 양해 부탁드립니다. 이용에 불편을 드린 점 다시 한번 사과드립니다. 더 나은 서비스 제공을 위해 항상 노력하는 livework가 되겠습니다. 감사합니다.                    
+                    </p>
+
+                </div>
+            </div>             
+            <div class="review_inner">
+                <div class="review_info_area">
+                    <span class="txt_user">ab*****</span>
+                    <span class="gap"> | </span>
+                    <span class="txt_date">2021.07.11</span>
+                </div>    
+                
+                <div class="review_comment_area">
+                    <p class="txt_review">
+                        배송이 잘못 왔습니다.
+                    </p>
+                    <div class="thumnail_review">
+                        답변완료
+                    </div>                    
+                </div>  
+            </div>            
         </div> 
 
+        
         
         <div class="fold_box_wrap">
             <ul class="fold_box_list">
                 <li class="fold_box expanded">
                     <div class="fold_box_header">배송 안내 <button type="button" class="btn_fold"><span class="hidden">컨텐츠 열기</span></button></div>
                     <div class="fold_box_contents">
-                        <div>컨텐츠 영역</div>
+                        <div>
+                            <ul class="bul_list">
+                                <li class="bul_item_dot">상품 설명에 반품/교환 관련 안내가 있는 경우 그 내용을 우선으로 합니다. (업체 사정에 따라 변경 될 수 있습니다.)</li>
+                                <li class="bul_item_dot">브랜드별 배송 : 브랜드 정책에 따라 무료배송 혹은 배송비 부과 (상품상세정보에서 배송비 기준 확인가능)</li>
+                            </ul>
+                            <div class="title_wrap title_size_def">
+                                <p class="title_heading">반품/교환방법</p>
+                            </div>
+                            
+                            <ul class="bul_list">
+                                <li class="bul_item_dot">MY HOTTRACKS > 주문정보 > 반품/교환신청</li>
+                                <li class="bul_item_dot">고객센터 > SOS상담</li>
+                                <li class="bul_item_dot">고객센터 (1661-1112)</li>
+                            </ul>
+
+                            <div class="title_wrap title_size_def">
+                                <p class="title_heading">반품/교환가능 기간</p>
+                            </div>
+                            
+
+                            <ul class="bul_list">
+                                <li class="bul_item_dot">변심반품의 경우 수령 후 7일 이내, 상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내</li>
+                                <li class="bul_item_dot">상품불량 및 오배송 등의 이유로 반품/교환을 하실 경우 반품/교환비는 무료 입니다. (단, 판매자가 반품된 상품 확인 후 상품불량이 아닌 것으로 확인 될 시 반송비를 고객님께 부과할 수 있습니다.)</li>
+                                <li class="bul_item_dot">고객변심으로 인한 교환/반품의 배송비는 고객님 부담 입니다.</li>
+                                <li class="bul_item_dot">고객변심으로 인한 교환/반품 시 주문에 사용된 할인쿠폰은 반환되지 않습니다.</li>
+                            </ul>
+
+                            <div class="title_wrap title_size_def">
+                                <p class="title_heading">반품/교환 불가 사유</p>
+                            </div>
+                            
+                            <ul class="bul_list">
+                                <li class="bul_item_dot">반품/교환 가능 기간을 초과한 경우</li>
+                                <li class="bul_item_dot">소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우 (단지 확인을 위한 포장 훼손은 제외)</li>
+                                <li class="bul_item_dot">소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우 (예: 밀봉상품, 제품 수선, 세탁, 기타 사용/분리/훼손)</li>
+                                <li class="bul_item_dot">설치상품의 경우 설치가 완료되어 상품의 가치가 훼손된 경우 (예: 설치가전, 가구, 식품 등)</li>
+                                <li class="bul_item_dot">소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우</li>
+                                <li class="bul_item_dot">시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우</li>
+                                <li class="bul_item_dot">전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</li>
+                                <li class="bul_item_dot">복제가 가능한 상품 등의 포장을 훼손한 경우 (예: 음반/DVD/비디오, 소프트웨어, 영상화보집)</li>
+                            </ul>
+                        </div>
                     </div>
                 </li>
                 <li class="fold_box">
                     <div class="fold_box_header">반품/교환 안내<button type="button" class="btn_fold"><span class="hidden">컨텐츠 열기</span></button></div>
                     <div class="fold_box_contents">
-                        <div>컨텐츠 영역</div>
+                        <div>
+                            <ul class="bul_list">
+                                <li class="bul_item_dot">상품 설명에 반품/교환 관련 안내가 있는 경우 그 내용을 우선으로 합니다. (업체 사정에 따라 변경 될 수 있습니다.)</li>
+                                <li class="bul_item_dot">브랜드별 배송 : 브랜드 정책에 따라 무료배송 혹은 배송비 부과 (상품상세정보에서 배송비 기준 확인가능)</li>
+                            </ul>
+                            <div class="title_wrap title_size_def">
+                                <p class="title_heading">반품/교환방법</p>
+                            </div>
+                            
+                            <ul class="bul_list">
+                                <li class="bul_item_dot">MY HOTTRACKS > 주문정보 > 반품/교환신청</li>
+                                <li class="bul_item_dot">고객센터 > SOS상담</li>
+                                <li class="bul_item_dot">고객센터 (1661-1112)</li>
+                            </ul>
+
+                            <div class="title_wrap title_size_def">
+                                <p class="title_heading">반품/교환가능 기간</p>
+                            </div>
+                            
+
+                            <ul class="bul_list">
+                                <li class="bul_item_dot">변심반품의 경우 수령 후 7일 이내, 상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내</li>
+                                <li class="bul_item_dot">상품불량 및 오배송 등의 이유로 반품/교환을 하실 경우 반품/교환비는 무료 입니다. (단, 판매자가 반품된 상품 확인 후 상품불량이 아닌 것으로 확인 될 시 반송비를 고객님께 부과할 수 있습니다.)</li>
+                                <li class="bul_item_dot">고객변심으로 인한 교환/반품의 배송비는 고객님 부담 입니다.</li>
+                                <li class="bul_item_dot">고객변심으로 인한 교환/반품 시 주문에 사용된 할인쿠폰은 반환되지 않습니다.</li>
+                            </ul>
+
+                            <div class="title_wrap title_size_def">
+                                <p class="title_heading">반품/교환 불가 사유</p>
+                            </div>
+                            
+                            <ul class="bul_list">
+                                <li class="bul_item_dot">반품/교환 가능 기간을 초과한 경우</li>
+                                <li class="bul_item_dot">소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우 (단지 확인을 위한 포장 훼손은 제외)</li>
+                                <li class="bul_item_dot">소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우 (예: 밀봉상품, 제품 수선, 세탁, 기타 사용/분리/훼손)</li>
+                                <li class="bul_item_dot">설치상품의 경우 설치가 완료되어 상품의 가치가 훼손된 경우 (예: 설치가전, 가구, 식품 등)</li>
+                                <li class="bul_item_dot">소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우</li>
+                                <li class="bul_item_dot">시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우</li>
+                                <li class="bul_item_dot">전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</li>
+                                <li class="bul_item_dot">복제가 가능한 상품 등의 포장을 훼손한 경우 (예: 음반/DVD/비디오, 소프트웨어, 영상화보집)</li>
+                            </ul>
+                        </div>
                     </div>
                 </li>
                 <li class="fold_box">
                     <div class="fold_box_header">기타 사항<button type="button" class="btn_fold"><span class="hidden">컨텐츠 열기</span></button></div>
                     <div class="fold_box_contents">
-                        <div>컨텐츠 영역</div>
+                        <div>
+                            <ul class="bul_list">
+                                <li class="bul_item_dot">상품 설명에 반품/교환 관련 안내가 있는 경우 그 내용을 우선으로 합니다. (업체 사정에 따라 변경 될 수 있습니다.)</li>
+                                <li class="bul_item_dot">브랜드별 배송 : 브랜드 정책에 따라 무료배송 혹은 배송비 부과 (상품상세정보에서 배송비 기준 확인가능)</li>
+                            </ul>
+                            <div class="title_wrap title_size_def">
+                                <p class="title_heading">반품/교환방법</p>
+                            </div>
+                            
+                            <ul class="bul_list">
+                                <li class="bul_item_dot">MY HOTTRACKS > 주문정보 > 반품/교환신청</li>
+                                <li class="bul_item_dot">고객센터 > SOS상담</li>
+                                <li class="bul_item_dot">고객센터 (1661-1112)</li>
+                            </ul>
+
+                            <div class="title_wrap title_size_def">
+                                <p class="title_heading">반품/교환가능 기간</p>
+                            </div>
+                            
+
+                            <ul class="bul_list">
+                                <li class="bul_item_dot">변심반품의 경우 수령 후 7일 이내, 상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내</li>
+                                <li class="bul_item_dot">상품불량 및 오배송 등의 이유로 반품/교환을 하실 경우 반품/교환비는 무료 입니다. (단, 판매자가 반품된 상품 확인 후 상품불량이 아닌 것으로 확인 될 시 반송비를 고객님께 부과할 수 있습니다.)</li>
+                                <li class="bul_item_dot">고객변심으로 인한 교환/반품의 배송비는 고객님 부담 입니다.</li>
+                                <li class="bul_item_dot">고객변심으로 인한 교환/반품 시 주문에 사용된 할인쿠폰은 반환되지 않습니다.</li>
+                            </ul>
+
+                            <div class="title_wrap title_size_def">
+                                <p class="title_heading">반품/교환 불가 사유</p>
+                            </div>
+                            
+                            <ul class="bul_list">
+                                <li class="bul_item_dot">반품/교환 가능 기간을 초과한 경우</li>
+                                <li class="bul_item_dot">소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우 (단지 확인을 위한 포장 훼손은 제외)</li>
+                                <li class="bul_item_dot">소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우 (예: 밀봉상품, 제품 수선, 세탁, 기타 사용/분리/훼손)</li>
+                                <li class="bul_item_dot">설치상품의 경우 설치가 완료되어 상품의 가치가 훼손된 경우 (예: 설치가전, 가구, 식품 등)</li>
+                                <li class="bul_item_dot">소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우</li>
+                                <li class="bul_item_dot">시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우</li>
+                                <li class="bul_item_dot">전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</li>
+                                <li class="bul_item_dot">복제가 가능한 상품 등의 포장을 훼손한 경우 (예: 음반/DVD/비디오, 소프트웨어, 영상화보집)</li>
+                            </ul>
+                        </div>
                     </div>
                 </li>                
             </ul>
@@ -878,54 +1077,71 @@
             </div>
             <ul class="list_item">
                 <li class="item">
-                    <div class="figure">
-                        <button class="btn_heart active">
-                            <span class="ico_heart"><span class="hidden">즐겨찿기</span></span>
-                        </button>
-                    </div>
-                    <p class="txt_account">
-                        <span class="txt_brand">Stanley</span>
-                        <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
-                    </p>            
+                    <a href="">
+                        <div class="figure">
+                            <img src="../../images/thumnail_recommend_01.png" width="100%">
+                            <button class="btn_heart">
+                                <span class="ico_heart"><span class="hidden">즐겨찿기</span></span>
+                            </button>
+                        </div>
+                        <p class="txt_account">
+                            <span class="txt_brand">Stanley</span>
+                            <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기</span>
+                        </p>       
+                    </a>     
                 </li>
                 <li class="item">
-                    <div class="figure">
-                        <button class="btn_heart active">
-                            <span class="ico_heart"><span class="hidden">즐겨찿기</span></span>
-                        </button>
-                    </div>
-                    <p class="txt_account">
-                        <span class="txt_brand">Stanley</span>
-                        <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
-                    </p>            
+                    <a href="#">
+                        <div class="figure">
+                            <img src="../../images/thumnail_recommend_01.png" width="100%">
+                            <button class="btn_heart active">
+                                <span class="ico_heart"><span class="hidden">즐겨찿기</span></span>
+                            </button>
+                        </div>
+                        <p class="txt_account">
+                            <span class="txt_brand">Stanley</span>
+                            <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기</span>
+                        </p>        
+                    </a>    
                 </li>
                 <li class="item">
-                    <div class="figure">
-                        <img src="../../images/thumnail_recommend_01.png" width="100%">
-                        <button class="btn_heart active">
-                            <span class="ico_heart"><span class="hidden">즐겨찿기</span></span>
-                        </button>
-                    </div>
-                    <p class="txt_account">
-                        <span class="txt_brand">Stanley</span>
-                        <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
-                    </p>            
+                    <a href="#">
+                        <div class="figure">
+                            <img src="../../images/thumnail_recommend_01.png" width="100%">
+                            <button class="btn_heart active">
+                                <span class="ico_heart"><span class="hidden">즐겨찿기</span></span>
+                            </button>
+                        </div>
+                        <p class="txt_account">
+                            <span class="txt_brand">Stanley</span>
+                            <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기</span>
+                        </p>        
+                    </a>    
                 </li>
                 <li class="item">
-                    <div class="figure">
-                        <img src="../../images/thumnail_recommend_01.png" width="100%">
-                        <button class="btn_heart active">
-                            <span class="ico_heart"><span class="hidden">즐겨찿기</span></span>
-                        </button>
-                    </div>
-                    <p class="txt_account">
-                        <span class="txt_brand">Stanley</span>
-                        <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기..</span>
-                    </p>            
+                    <a href="#">
+                        <div class="figure">
+                            <img src="../../images/thumnail_recommend_01.png" width="100%">
+                            <button class="btn_heart active">
+                                <span class="ico_heart"><span class="hidden">즐겨찿기</span></span>
+                            </button>
+                        </div>
+                        <p class="txt_account">
+                            <span class="txt_brand">Stanley</span>
+                            <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기</span>
+                        </p>        
+                    </a>    
                 </li>
                 
             </ul>                                              
         </div>
+
+        <div class="">
+            <button>더보기</button>
+        </div>
+
+
+
        
 
     
@@ -939,30 +1155,7 @@
 <!-- SkipNav -->
 <div id="skipNav"></div>
 <!-- //SkipNav -->
-<style>
-.hotpick_wrap,
-.photoreview_wrap {
-    overflow: hidden;
-    margin: 0 -20px;
-    padding: 0 20px;
-}
-.hotpick_wrap .swiper-slide
-.photoreview_wrap .swiper-slide {
-    width: calc(100% - 5px) !important
-}
 
-
-.auto_overflow_wrap .auto_overflow_contents {
-    overflow: hidden;
-}
-.auto_overflow_wrap.active>.auto_overflow_contents {
-    max-height: none!important;
-}
-
-.swiper-pagination-fraction {
-    font-size: 0;
-} 
-</style>
 <script>
 // swiper (paging 외부)
 var visualSwiper = new CustomSwiper('.visual_wrap .swiper-container', {
@@ -980,7 +1173,7 @@ var visualSwiper = new CustomSwiper('.visual_wrap .swiper-container', {
 			},
 		}        
 });
-var hotpickSwiper = new CustomSwiper('.hotpick_wrap .swiper-container', {
+var hotpickSwiper = new CustomSwiper('.hotpickslide_wrap .swiper-container', {
 		slidesPerView: 'auto',
 		speed: 500,
         spaceBetween: 10,

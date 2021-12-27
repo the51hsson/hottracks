@@ -158,6 +158,8 @@ $btn-orange:     #F96734 !default;
 
 $bg-primary:     #DA2128 !default;
 $txt-primary:     #DA2128 !default;
+
+/* 영문 숫자폰트 */
 .font_num {
     font-family: $font-num;
 }
@@ -334,9 +336,14 @@ button.btn_sm {
         }
         &.ico_review {
             background: url(../images/ico/ico_review.png) no-repeat 0 3px;
-            background-size: 16px auto;
+            background-size: 20px auto;
             padding-left: 22px;            
-        }        
+        } 
+        &.ico_comment {
+            background: url(../images/ico/ico_comment.png) no-repeat 0 3px;
+            background-size: 20px auto;
+            padding-left: 25px;            
+        }                
         &.ico_white_download {
             background: url(../images/ico/ico_white_download.png) no-repeat 0 4px;
             background-size: 10px 10px;
@@ -543,13 +550,8 @@ button.btn_sm {
     }
 }
 
+/* 뱃지 */
 
-
-.badge_wrap {
-    .badge {
-        display: inline-block;
-    }
-}
 .badge {
     display: inline-block;
     font-size: 11px;
@@ -560,6 +562,7 @@ button.btn_sm {
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: 0.25rem;
+    letter-spacing: -.01em;    
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     &.rounded {
         border-radius: 10px !important;
@@ -579,28 +582,12 @@ button.btn_sm {
     }
 }
 
-.badge_default {
-    color: #767676;
-    border: solid 1px #d5d5d5;
-    background: #fff;
+/* badge color */
+.badge_default {color: #767676;border: solid 1px #d5d5d5;background: #fff;}
+.badge_primary {color: $btn-primary;border:solid 1px $btn-primary;    background-color: #fff;}
 
-}
-.badge_primary {
-    color: $btn-primary;
-    border:solid 1px $btn-primary;    
-    background-color: #fff;
-}
-
-.badge_sm {
-    min-height: 20px;
-    min-width: 50px;
-    padding: 0 10px;
-    border-radius: 4px;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: -.01em;    
-}
+/* badge size */
+.badge_sm {min-height: 20px;min-width: 50px;padding: 0 10px;border-radius: 4px;font-size: 11px;font-weight: 400;line-height: 18px;}
 
 .banner_area {
     margin:0 -20px;
@@ -674,7 +661,7 @@ button.btn_sm {
         .tab_item a {
             padding: 10px 0;
             .tab_txt {
-                font: 16px;
+                font-size: 16px;
             }
     
         }
@@ -746,7 +733,12 @@ button.btn_sm {
 
 
 .btn_good {
+    position: relative;
+    padding-left: 20px;
     .ico_good {
+        position: absolute;
+        left: 0;
+        top: 1px;
         background: url(../images/ico/ico_good.svg) no-repeat 0 0;
         background-size: 18px 18px;
         display: inline-block;
@@ -760,13 +752,21 @@ button.btn_sm {
     }
 }
 
-.btn_reply .ico_reply {
-    background: url(../images/ico/ico_reply.svg) no-repeat 0 0;
-    background-size: 18px 18px;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
+.btn_reply {
+    position: relative;
+    padding-left: 20px;
+    .ico_reply {
+        position: absolute;
+        left: 0;
+        top: 1px;
+        background: url(../images/ico/ico_reply.svg) no-repeat 0 0;
+        background-size: 18px 18px;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+    }
 }
+
 
 
 
@@ -876,7 +876,7 @@ button.btn_sm {
 .fold_box_wrap .fold_box.expanded {background: #fff; border-color: #000;}
 .fold_box_wrap .fold_box.expanded .fold_box_header:after {-webkit-transform: translateY(-50%) rotate(180deg); transform: translateY(-50%) rotate(180deg);}
 .fold_box_wrap .fold_box.expanded>.fold_box_contents {
-    height: auto; padding-top: 4px; padding-bottom: 23px;
+    height: auto; padding-top: 20px; padding-bottom: 20px;
     background: #f7f7f7;
 }
 .fold_box_wrap .fold_box.expanded>.fold_box_contents .form_wrap+.btn_wrap {margin-top: 20px;}
