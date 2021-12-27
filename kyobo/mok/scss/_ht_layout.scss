@@ -222,21 +222,19 @@
     }
 
     .cagetory_list {
-        padding:0 20px;
+        padding:0 10px;
         ul {
             display: flex;
             flex-wrap: wrap;
             li {
-                width: 68px;
+                width: calc(100% / 4);
                 margin-top: 24px;
-                margin-right: 6.2%;
+                padding:0;
+                text-align: center;
                 img {
-                    width: 100%;
+                    width: 68px;
                     border-radius: 50%;
                     background-color: rgb(248,248,248);
-                }
-                &:nth-child(4n) {
-                    margin-right: 0;
                 }
                 p {
                     text-align: center;
@@ -252,12 +250,9 @@
     }
 
     .special_exhibition_list {
-        padding-left: 20px;
-        padding-bottom: 24px;
-        padding-top: 24px;
         box-sizing: border-box;
         .special_swiper {
-            padding-bottom: 20px;
+            padding:24px 20px 20px;
         }
         .swiper-scrollbar {
             width: calc(100% - 20px);
@@ -295,7 +290,7 @@
             width: calc(100% - 20px);
         }
         .brand_swiper {
-            margin-left: 20px;
+            padding:0 20px;
             .swiper-scrollbar {
                 width: calc(100% - 20px);
                 bottom: -10px;
@@ -471,6 +466,9 @@
     .scroll_type .swiper-pagination {
         bottom:0;
         line-height: 1px;
+        display: flex;
+        justify-content: center;
+        width: calc(100% - 20px);
 
         .swiper-pagination-bullet {
             width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));

@@ -1,0 +1,2299 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>교보문고 3과제 웹퍼블리싱 가이드</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="Robots" content="noindex, nofollow" />
+	<!-- Front CSS-->
+	<link href="../resources/css/common.css" rel="stylesheet" />
+	
+	<!-- JS/Guide -->
+	<script src="../resources/libs/jquery-3.6.0.min.js"></script>
+	<script src="../resources/js/guide.js"></script>
+	
+	<!-- codeview -->
+	<script src="../resources/libs/codeview/scripts/shCore.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shAutoLoader.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushjScript.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushXml.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushCss.js?cb=undefined"></script>
+	<link href="../resources/libs/codeview/styles/shCoreDefaultWhite.css" rel="stylesheet" />
+	<script>SyntaxHighlighter.config.bloggerMode = false;SyntaxHighlighter.defaults['smart_tabs'] = false;SyntaxHighlighter.all();</script>
+</head>
+
+<body>
+<div class="wsg_wrapper">
+	<header class="wsg_header_wrapper js_wsg_header_wrapper">
+		<div class="wsg_header_inner">
+			<h1 class="wsg_logo"><a href="../../index.html">교보문고 3과제 웹퍼블리싱 가이드</a></h1><button class="btn_aside is_clickEvent" type="button"><span>Menu</span></button>
+			<nav class="wsg_lnb">
+				<ul>
+					<li>
+						<a href="../../index.html">개요</a>
+					</li>
+					<li>
+						<a href="../rule/rule_intro.html">규칙가이드</a>
+					</li>
+					<li>
+						<a href="../plan/plan_codeset.html">설계가이드</a>
+					</li>
+					<li class="is_current">
+						<a href="wa_index.html">접근성점검</a>
+					</li>
+					<li>
+						<a href="../seo/seo_intro.html">SEO 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_ink.html">PC 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_mok.html">MO 가이드</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="wsg_container_wrapper">
+		<aside class="wsg_aside js_wsg_aside">
+			<div class="wsg_aside_scroll">
+				<nav class="wsg_snb">
+					<ul class="wsg_node1_list wsg_snbMenu5" style="display: block;">
+						<li class="wsg_node1 is_current">
+							<a href="wa_index.html">웹접근성</a>
+							<ul class="wsg_node2_list">
+								<li class="wsg_node2 is_current">
+									<a href="wa_index.html">웹접근성 개요</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="wa_part.html">역할별 체크리스트</a>
+								</li>
+                                <li class="wsg_node2">
+                                    <a href="wa_item.html">접근성 검사항목</a>
+                                </li>
+								<li class="wsg_node2">
+									<a href="wa_process.html">개선작업 프로세스</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="wa_names.html">기본명칭 정의예시</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+                </nav>
+			</div>
+		</aside>
+		<!-- Content -->
+		<article class="wsg_content">
+			<div class="wsg_content_header wsg_inner">
+				<h1 class="wsg_h1">접근성 검사항목</h1>
+			</div>
+			<div class="wsg_content_body">
+				<!-- waItem0 -->
+				<section id="waItem0" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">지침별 항목</h2>
+					</div>
+					<div class="wsg_section_body">
+						<p>HTML5 기준 테이블의 summary 속성은 W3C Validator에서 오류가 발생하므로 <span class="wsg_txt_red">caption으로 대체</span>한다.</p>
+						<div class="wsg_tbl_type1">
+							<table>
+								<colgroup>
+									<col style="width: 20%;">
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+									<col style="width: auto;">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">원칙</th>
+									<th scope="col">지침<br>( 13개 )</th>
+									<th scope="col">검사항목<br>( 24개 )</th>
+									<th scope="col">관련 부서</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td rowspan="7">1. 인식의 용이성</td>
+									<td>1.1 적절한 대체 텍스트</td>
+									<td>1.1.1 적절한 대체 텍스트 제공</td>
+									<td>기획, 디자인, 퍼블, 개발</td>
+								</tr>
+								<tr>
+									<td>1.2 멀티미디어 대체 수단</td>
+									<td>1.2.1 자막 제공</td>
+									<td>기획</td>
+								</tr>
+								<tr>
+									<td rowspan="5">1.3 명료성</td>
+									<td>1.3.1 색에 무관한 콘텐츠 인식</td>
+									<td>디자인</td>
+								</tr>
+								<tr>
+									<td>1.3.2 명확한 지시 사항 제공</td>
+									<td>디자인</td>
+								</tr>
+								<tr>
+									<td>1.3.3 텍스트 콘텐츠의 명도 대비</td>
+									<td>디자인</td>
+								</tr>
+								<tr>
+									<td>1.3.4 자동 재생 금지</td>
+									<td>기획, 퍼블, 개발</td>
+								</tr>
+								<tr>
+									<td>1.3.5 콘텐츠 간의 구분</td>
+									<td>디자인, 퍼블</td>
+								</tr>
+								<tr>
+									<td rowspan="9">2. 운용의 용이성</td>
+									<td rowspan="3">2.1 입력장치 접근성</td>
+									<td>2.1.1 키보드 사용 보장</td>
+									<td>퍼블, 개발</td>
+								</tr>
+								<tr>
+									<td>2.1.2 초점 이동</td>
+									<td>기획, 퍼블, 개발</td>
+								</tr>
+								<tr>
+									<td>2.1.3 조작 가능</td>
+									<td>디자인, 퍼블</td>
+								</tr>
+								<tr>
+									<td rowspan="2">2.2 충분한 시간 제공</td>
+									<td>2.2.1 응답 시간 조절</td>
+									<td>기획, 디자인, 퍼블</td>
+								</tr>
+								<tr>
+									<td>2.2.2 정지 기능 제공</td>
+									<td>기획, 디자인, 퍼블</td>
+								</tr>
+								<tr>
+									<td>2.3 광과민성 발작 예방</td>
+									<td>2.3.1 깜빡임과 번쩍임 사용 제한</td>
+									<td>기획, 퍼블</td>
+								</tr>
+								<tr>
+									<td rowspan="3">2.4 쉬운 내비게이션</td>
+									<td>2.4.1 반복 영역 건너뛰기</td>
+									<td>기획, 퍼블</td>
+								</tr>
+								<tr>
+									<td>2.4.2 제목 제공</td>
+									<td>기획, 퍼블, 개발</td>
+								</tr>
+								<tr>
+									<td>2.4.3 적절한 링크 텍스트</td>
+									<td>퍼블</td>
+								</tr>
+								<tr>
+									<td rowspan="6">3. 이해의 용이성</td>
+									<td>3.1 가독성</td>
+									<td>3.1.1 기본 언어 표시</td>
+									<td>퍼블</td>
+								</tr>
+								<tr>
+									<td>3.2 예측 가능성</td>
+									<td>3.2.1 사용자 요구에 따른 실행</td>
+									<td>기획, 퍼블, 개발</td>
+								</tr>
+								<tr>
+									<td rowspan="2">3.3 콘텐츠의 논리성</td>
+									<td>3.3.1 콘텐츠의 선형 구조</td>
+									<td>퍼블</td>
+								</tr>
+								<tr>
+									<td>3.3.2 표의 구성</td>
+									<td>기획, 퍼블</td>
+								</tr>
+								<tr>
+									<td rowspan="2">3.4 입력 도움</td>
+									<td>3.4.1 레이블 제공</td>
+									<td>퍼블, 개발</td>
+								</tr>
+								<tr>
+									<td>3.4.2 오류 정정</td>
+									<td>개발</td>
+								</tr>
+								<tr>
+									<td rowspan="2">4. 견고성</td>
+									<td>4.1 문법 준수</td>
+									<td>4.1.1 마크업 오류 방지</td>
+									<td>퍼블</td>
+								</tr>
+								<tr>
+									<td>4.2 웹 애플리케이션 접근성</td>
+									<td>4.2.1 웹 애플리케이션 접근성 준수</td>
+									<td>기획, 디자인, 퍼블, 개발</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+                <!-- //waItem0 -->
+                
+                <!-- 접근성 검사항목 -->
+                <!-- waItem1 -->
+                <section id="waItem1" class="wsg_section wsg_inner">
+                    <div class="wsg_section_header">
+                        <h2 class="wsg_h2">인식의 용이성</h2>
+                    </div>
+                    <div class="wsg_section_body">
+                        <p>인식의 용이성은 사용자가 장애 유무 등과 관계없이 웹 사이트에서 제공하는 모든 콘텐츠를 동등하게 인식할 수 있도록 콘텐츠를 제공하는 것을 의미한다.</p>
+    
+                        <!-- 1-1. 적절한 대체 텍스트 -->
+                        <h3 id="waItem1_1" class="wsg_h3">1-1. 적절한 대체 텍스트</h3>
+                        <p>텍스트 아닌 콘텐츠는 그 의미나 용도를 이해할 수 있도록 대체 텍스트를 제공해야 한다.</p>
+                        <h4 id="waItem1_1_1" class="wsg_h4">1-1-1. 적절한 대체 텍스트 제공</h4>
+                        <p>웹 페이지에 이미지를 포함하기 위하여 img 태그를 사용하는 경우, alt 속성을 이용하여 짧은 대체 텍스트를 제공한다.</p>
+                        <ul class="wsg_desc g_gutter">
+                            <li>
+                                <span class="fw_b">인물 사진, 도서 표지, 평점 등 의미가 있는 이미지</span>
+                                <div class="grid_ex_box">
+                                    <div class="col row_group n3">
+                                        <div class="row">
+                                            <div class="stitle">예시 - 인물 사진</div>
+                                            <div class="cont c_img">
+                                                <!-- TODO 3과제 이미지로 교체 필요 -->
+                                                <img src="http://image.kyobobook.co.kr/newimages/author/2000022601.jpg" alt="조앤 K. 롤링" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="stitle">예시 - 책 표지</div>
+                                            <div class="cont c_img">
+                                                <!-- TODO 3과제 이미지로 교체 필요 -->
+                                                <img src="http://image.kyobobook.co.kr/images/book/medium/582/m9788989708582.jpg" alt="해리포터와 마법사의 돌" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="stitle">예시 - 별점</div>
+                                            <div class="cont c_img">
+                                                <!-- TODO 3과제 이미지로 교체 필요 -->
+                                                <img src="http://image.kyobobook.co.kr/ink/images/common/img_starating_a4.gif" alt="5점 만점에 4점" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush: html;">
+                                                            &lt;!-- 올바른 예 --&gt;
+                                                            &lt;img src="author_jkr.jpg" alt="조앤 K. 롤링" /&gt;                  &lt;!-- 인물 사진 (인물 이름) --&gt;
+                                                            &lt;img src="cover_harry_potter.jpg" alt="해리포터와 마법사의돌" /&gt;  &lt;!-- 도서 표지 (도서 제목) --&gt;
+                                                            &lt;img src="img_starating_a4.gif" alt="5점 만점에 4점" /&gt;          &lt;!-- 별점 (n점 만점에 n점) --&gt;
+                                                            
+                                                            &lt;!-- 잘못된 예 1) alt 속성을 제공하지 않은 경우 --&gt;
+                                                            &lt;img src="author_jkr.jpg" /&gt;
+                                                            &lt;img src="cover_harry_potter.jpg" /&gt;
+                                                            &lt;img src="img_starating_a4.gif" /&gt;
+                                                            
+                                                            &lt;!-- 잘못된 예 2) 빈 값, 의미없는 텍스트 등 적절하지 않은 텍스트를 제공한 경우 --&gt;
+                                                            &lt;img src="author_jkr.jpg" alt="" /&gt;
+                                                            &lt;img src="cover_harry_potter.jpg" alt="이미지" /&gt;
+                                                            &lt;img src="img_starating_a4.gif" alt="image" /&gt;
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col row_group">
+                                        <div class="row">
+                                            <div class="stitle">올바른 예</div>
+                                            <div class="cont">의미가 있는 <code>img</code>태그에는 <code>alt</code>속성이 제공되어야 하며, 이미지와 동일한 모든 내용을 제공</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="stitle">잘못된 예</div>
+                                            <div class="cont">
+                                                <ul class="wsg_desc_line">
+                                                    <li>의미가 있는 이미지에 <code>alt</code>속성을 제공하지 않은 경우</li>
+                                                    <li>의미가 있는 이미지에 빈 값, 의미없는 텍스트 등 적절하지 않은 텍스트를 제공한 경우</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">버튼 이미지</span>
+                                <div class="grid_ex_box">
+                                    <div class="col">
+                                        <div class="stitle">예시</div>
+                                        <div class="cont">
+                                            <!-- TODO 3과제 이미지로 교체 필요 -->
+                                            <form action="/submit/test" method="post">
+                                                <input type="image" name="submit" src="http://image.kyobobook.co.kr/ink/images/common/btn_confirm_blue.gif" alt="확인" />
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush: html;">
+                                                            &lt;form action="/submit/test" method="post"&gt;
+                                                                &lt;input type="image" name="submit" src="btn_confirm_blue.gif" alt="확인" /&gt;
+                                                            &lt;/form&gt;
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">설명</div>
+                                        <div class="cont">이미지를 이용한 입력 버튼의 경우 버튼에 <code>alt</code> 속성을 이용하여 대체 텍스트 제공</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">이미지 맵</span>
+                                <div class="grid_ex_box">
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush: html;">
+                                                            &lt;img src="language.gif" alt="language" usemap="#language" /&gt;
+                                                            &lt;map name="language"&gt;
+                                                                &lt;area alt="ENGLISH" shape="rect" coords="10,5,66,19" href="/en/" /&gt;
+                                                                &lt;area alt="KOREAN" shape="rect" coords="10,17,66,32" href="/ko/" /&gt;
+                                                            &lt;/map&gt;
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">설명</div>
+                                        <div class="cont">
+                                            <ul class="wsg_desc_line hyphen_desc">
+                                                <li><code>&lt;area&gt;</code> 태그별로 <code>alt</code> 속성을 이용하여 해당 영역의 용도나 목적을 대체 텍스트로 제공</li>
+                                                <li><code>&lt;area&gt;</code> 요소에 대체 텍스트를 작성하더라도 <code>&lt;img&gt;</code> 요소에 <code>alt</code> 속성을 제공하여야 하며, <code>longdesc</code> 속성을 사용하는 이미지 자체에 <code>alt</code> 속성을 제공하여야 함</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">그래프, 조직도 등 복잡한 이미지</span>
+                                <div class="grid_ex_box">
+                                    <div class="col">
+                                        <div class="stitle">예시</div>
+                                        <div class="cont c_img">
+                                            <!-- TODO 3과제 이미지로 교체 필요 -->
+                                            <img src="../resources/images/temp_img4.jpg" alt="본청조직도">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush: html;">
+                                                            &lt;!-- 1) 숨김 텍스트 사용 --&gt;
+                                                            &lt;img src="../resources/images/temp_img4.jpg" alt="본청조직도" /&gt;
+                                                            &lt;p class="offscreen"&gt;
+                                                                중소기업청장을 기준으로 중소기업창장의 대변인이 있으며 중소기업청장 아래 차장이 있다. 차장을 기준으로 그 아래에 감사담당관과 운영지원과, 기획조정관이 있다. 기획조정관에는 기획재정담당관, 행정업무담당관, 고객정보화담당관, 비상계획담당관이 있다.
+                                                            &lt;/p&gt;
+                                                            
+                                                            &lt;!-- 2) longdesc 속성 사용 --&gt;
+                                                            &lt;img src="../resources/images/temp_img4.jpg" alt="본청조직도" longdesc="organization.html" /&gt;
+                                                            &lt;!-- organization.html 예시 --&gt;
+                                                            &lt;p&gt;
+                                                                중소기업청장을 기준으로 중소기업창장의 대변인이 있으며 중소기업청장 아래 차장이 있다. 차장을 기준으로 그 아래에 감사담당관과 운영지원과, 기획조정관이 있다. 기획조정관에는 기획재정담당관, 행정업무담당관, 고객정보화담당관, 비상계획담당관이 있다.
+                                                            &lt;/p&gt;
+                                                            
+                                                            &lt;!-- 3) 이미지 링크 사용 --&gt;
+                                                            &lt;a href="organization.html"&gt;&lt;img src="../resources/images/temp_img4.jpg" alt="중앙기관 웹 접근성 조사결과" /&gt;&lt;/a&gt;
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">설명</div>
+                                        <div class="cont">그래프나 약도, 조직도과 같이 그 의미하는 바를 간단한 대체 텍스트로 충분한 설명이 불가능할 경우 추가적인 설명 제공</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">QR코드의 대체텍스트 제공</span>
+                                <div class="grid_ex_box">
+                                    <div class="col">
+                                        <div class="stitle">이미지</div>
+                                        <div class="cont c_img">
+                                            <!-- TODO 3과제 이미지로 교체 필요 -->
+                                            <img src="../resources/images/temp_img5.jpg" alt="QR코드의 대체텍스트 제공 방법">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush:html;">
+                                                            &lt;!-- 올바른 예 --&gt;
+                                                            &lt;img src=&quot;../resources/images/temp_img4.jpg&quot; alt=&quot;naver.com 바로가기 QR코드&quot; /&gt;
+                                                            
+                                                            &lt;!-- 잘못된 예 --&gt;
+                                                            &lt;img src=&quot;../resources/images/temp_img4.jpg&quot; alt=&quot;QR코드&quot; /&gt;
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">설명</div>
+                                        <div class="cont"><code>alt</code>속성에 QR코드 이동 주소 정보 제공</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">대체 텍스트를 빈 공간(alt="")으로 제공해야 하는 경우</span>
+                                <div class="grid_ex_box">
+                                    <div class="col row_group">
+                                        <!-- TODO 3과제 이미지로 교체 필요 -->
+                                        <div class="row">
+                                            <div class="stitle">예시 - 텍스트 설명이 함께 제공되는 이미지</div>
+                                            <div class="cont c_img">
+                                                <img src="../resources/images/temp_img9.jpg" alt="텍스트 설명이 함께 제공되는 이미지" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="stitle">예시 - 의미 없는 이미지</div>
+                                            <div class="cont c_img">
+                                                <img src="../resources/images/temp_img2.jpg" alt="블릿 이미지와 같이 의미없는 이미지에 대체 텍스트를 제공한 경우" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush: html;">
+                                                            &lt;!-- 올바른 예 --&gt;
+                                                            &lt;!-- 텍스트 설명이 함께 제공되는 이미지 --&gt;
+                                                            &lt;a href="..."&gt;
+                                                                &lt;img src="../resources/images/temp_img9.jpg" alt="" /&gt;
+                                                                마음을 움직이는 여행에세이
+                                                            &lt;/a&gt;
+                                                            
+                                                            &lt;!-- 의미 없는 이미지 --&gt;
+                                                            &lt;img src="../resources/images/temp_img9.jpg" alt="" /&gt;
+                                                            
+                                                            &lt;!-- 잘못된 예 --&gt;
+                                                            &lt;!-- 텍스트 설명이 함께 제공되는 이미지 --&gt;
+                                                            &lt;a href="..."&gt;
+                                                                &lt;img src="../resources/images/temp_img9.jpg" alt="마음을 움직이는 여행에세이" /&gt;
+                                                                마음을 움직이는 여행에세이
+                                                            &lt;/a&gt;
+                                                            
+                                                            &lt;!-- 의미 없는 이미지 --&gt;
+                                                            &lt;img src="../resources/images/temp_img9.jpg" alt="-" /&gt;
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col row_group">
+                                        <div class="row">
+                                            <div class="stitle">올바른 예</div>
+                                            <div class="cont">
+                                                <p>아래와 같은 이미지의 대체 텍스트는 빈 <code>alt</code>값을 제공</p>
+                                                <ul class="wsg_desc_line">
+                                                    <li>텍스트 설명이 함께 제공되는 이미지</li>
+                                                    <li>의미가 없는 블릿 등과 같이 장식용으로 사용하는 이미지</li>
+                                                </ul>
+                                                <p class="wsg_desc_guide">* 제공하지 않을 경우 스크린 리더가 불필요하게 파일 명을 읽게 되므로 주의</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="stitle">잘못된 예</div>
+                                            <div class="cont">
+                                                <ul class="wsg_desc_line hyphen_desc">
+                                                    <li>이미지와 함께 제공된 텍스트와 이미지의 <code>alt</code> 속성 값이 중복인 경우</li>
+                                                    <li>블릿 이미지와 같이 의미없는 이미지에 대체 텍스트를 제공한 경우</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">배경이미지가 의미있는 정보를 제공할 경우, 대체텍스트 제공 방법</span>
+                                <div class="grid_ex_box">
+                                    <div class="col">
+                                        <div class="stitle">예시</div>
+                                        <div class="cont c_img">
+                                            <!-- TODO 3과제 이미지로 교체 필요 -->
+                                            <img src="../resources/images/temp_img6.jpg" alt="배경이미지가 의미있는 정보를 제공할 경우, 대체텍스트 제공 방법" />
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush:html;">
+                                                            &lt;!-- 올바른 예 --&gt;
+                                                            &lt;span class=&quot;ico_best&quot;&gt;Best 01&lt;/span&gt;
+                                                            
+                                                            &lt;!-- 잘못된 예 --&gt;
+                                                            &lt;span class=&quot;ico_best&quot;&gt;&lt;/span&gt;
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">하나의 링크내에 설명문구와 이미지의 대체 텍스트를 중복해서 제공한 경우</span>
+                                <div class="grid_ex_box">
+                                    <div class="col">
+                                        <div class="stitle">예시</div>
+                                        <div class="cont c_img">
+                                            <!-- TODO 3과제 이미지로 교체 필요 -->
+                                            <img src="../resources/images/temp_img7.jpg" alt="하나의 링크내에 설명문구와 이미지의 대체 텍스트를 중복해서 제공한 경우" />
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush:html;">
+                                                            &lt;!-- 올바른 예 --&gt;
+                                                            &lt;a href=&quot;...&quot;&gt;
+                                                               &lt;span&gt;
+                                                                  &lt;img src=&quot;../resources/images/temp_img4.jpg&quot; alt=&quot;&quot; /&gt;
+                                                               &lt;/span&gt;
+                                                               김수현에게 이런 면이
+                                                            &lt;/a&gt;
+                                                            
+                                                            &lt;!-- 잘못된 예 --&gt;
+                                                            &lt;a href=&quot;...&quot;&gt;
+                                                               &lt;span&gt;
+                                                                  &lt;img src=&quot;../resources/images/temp_img4.jpg&quot; alt=&quot;김수현에게 이런 면이&quot; /&gt;
+                                                               &lt;/span&gt;
+                                                            &lt;/a&gt;
+                                                            &lt;a href=&quot;...&quot; title=&quot;김수현에게 이런면이&quot;&gt;
+                                                               김수현에게 이런 면이
+                                                            &lt;/a&gt;
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col row_group">
+                                        <div class="row">
+                                            <div class="stitle">올바른 예</div>
+                                            <div class="cont">
+                                                <ul class="wsg_desc_line hyphen_desc">
+                                                    <li>하나의 링크내에 설명문구와 이미지의 대체 텍스트를 중복 제공한 경우 이미지의 <code>alt</code>값을 빈값(<code>alt=""</code>)으로 제공</li>
+                                                    <li>이미지와 텍스트에 각각의 링크가 걸려있는 경우, 링크가 이미지와 텍스트를 한꺼번에 감싸도록 퍼블리싱해야하며, 불필요한 title은 제거</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="stitle">잘못된 예</div>
+                                            <div class="cont">"김수현에게 이런 면이"라는 오픈캐스트 항목 이미지의 대체 텍스트가 함께 제공된 텍스트와 중복됨</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- TODO 실제 적용코드로 내용 및 예제 변경 필요(img 태그 사용 / background 사용) -->
+                                <span class="fw_b">IR(Image Replacement) 기법</span>
+                                <p>: 복잡한 구조의 콘텐츠를 가지는 이미지의 경우 해당 이미지를 배경처리하여 보여주고 이미지와 동일한 내용의 html 콘텐츠을 삽입한 뒤 숨김처리하는 기법</p>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:css;">
+                                                /* IR 기법 CSS */
+                                                #content1 {background: url(content.jpg) no-repeat;}
+                                                .hidden {visibility: hidden; position: absolute;}
+                                                &nbsp;
+                                            </pre>
+                                            <pre class="brush:html;">
+                                                &lt;div id="content1"&gt;
+                                                    &lt;div class="hidden"&gt;
+                                                        &lt;h2&gt;할인예보&lt;/h2&gt;
+                                                        &lt;p&gt;2013년 8월 9일 (금)&lt;/p&gt;
+                                                        &lt;dl&gt;
+                                                            &lt;dt&gt;할인예보 서비스란?&lt;/dt&gt;
+                                                            &lt;dd&gt;출간 후 18개월이 경과하여 추가할인이 가능해진 도서 중 가장 사랑받았던 도서를 가장 빨리 할인된 가격으로 추천...&lt;/dd&gt;
+                                                        &lt;/dl&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                                IR 기법을 사용할 경우 이미지에 alt 값을 넣는 것에 비해 복잡한 구조의 콘텐츠를 제공할 수 있어 전맹자를 위한 스크린리더기에 대해 효과적으로 접근성을 확보할 수 있는 반면,
+                                약시자를 위한 <em class="fw_b">고대비모드</em>(운영체제에서 지원) 환경에서는 배경이미지가 단색으로 처리되어 <em style="text-decoration: underline">배경 이미지와 텍스트 양쪽 모두를 볼 수 없게 되는 취약점이 있다.</em>
+                                <ul class="wsg_desc_line">
+                                    <li>CSS와 이미지를 모두 사용하는 환경 : 내용(이미지)을 볼 수 있다.</li>
+                                    <li>CSS와 이미지를 모두 사용하지 않는 환경 (스크린리더) : 내용(텍스트)을 볼 수 있다.</li>
+                                    <li><span class="wsg_txt_red">CSS는 사용하면서 이미지를 사용하지 않는 환경 : 내용을 볼 수 없다.</span></li>
+                                    <li><span class="wsg_txt_red">CSS와 이미지는 사용하지만 배경이미지를 사용하지 않는 환경 (고대비모드) : 내용을 볼 수 없다.</span></li>
+                                    <li>이미지는 사용하면서 CSS를 사용하지 않는 환경 : 내용(텍스트)을 볼 수 있다.</li>
+                                </ul>
+                                <p class="wsg_desc_guide">※ 내용을 배경이미지로 보여주고 텍스트로 된 내용은 숨기는 방식인 Image Sprite 기법 역시 동일한 이슈가 있다.</p>
+                            </li>
+                        </ul>
+                        <!-- //1-1. 적절한 대체 텍스트 -->
+                        
+                        <!-- 1-2. 멀티미디어 대체 수단 -->
+                        <h3 id="waItem1_2" class="wsg_h3">1-2. 멀티미디어 대체 수단</h3>
+                        <p>동영상, 음성 등 멀티미디어 콘텐츠를 이해할 수 있도록 대체 수단을 제공해야 한다.</p>
+                        <h4 id="waItem1_2_1" class="wsg_h4">1-2-1. 자막 제공</h4>
+                        <p>자막을 오디오와 동기화시켜 제공하거나 원고 또는 수화를 제공해야 한다. 대사 없이 영상만 제공하는 경우 화면해설을 제공한다.</p>
+                        <div class="grid_ex_box">
+                            <div class="col">
+                                <div class="stitle">예시</div>
+                                <div class="cont c_img">
+                                    <!-- TODO 3과제 이미지로 교체 필요 -->
+                                    <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_1_2_1.gif" alt="img_example" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //1-2. 멀티미디어 대체 수단 -->
+                        
+                        <!-- 1-3. 명료성 -->
+                        <h3 id="waItem1_3" class="wsg_h3">1-3. 명료성</h3>
+                        <p>콘텐츠는 명확하게 전달되어야 한다.</p>
+                        <h4 id="waItem1_3_1" class="wsg_h4">1-3-1. 색에 무관한 콘텐츠 인식</h4>
+                        <ul class="wsg_desc">
+                            <li>콘텐츠는 색에 관계없이 인식될 수 있어야 한다.</li>
+                            <li>
+                                색을 이용하여 서식의 용도를 나타내는 경우와 같이 정보를 제공하는 수단으로 색을 사용한다면 보완 방법을 함께 제공하여 색의 의미를 전달할 수 있어야 한다.
+                                <ul class="wsg_desc_line">
+                                    <li>색을 보완하는 텍스트 제공</li>
+                                    <li>색을 보완하기 위하여 글자모양(글꼴,밑줄,굵은글씨,이텔릭체,글자크기,명도대비)을 이용하는 방법</li>
+                                    <li>색을 보완하기 위하여 무늬 또는 모양을 이용하는 방법</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="grid_ex_box">
+                            <div class="col row_group">
+                                <div class="row">
+                                    <div class="stitle">컬러 모드</div>
+                                    <div class="cont c_img">
+                                        <!-- TODO 3과제 이미지로 교체 필요 -->
+                                        <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_1_3_1.gif" alt="img_example" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="stitle">흑백 모드</div>
+                                    <div class="cont c_img">
+                                        <!-- TODO 3과제 이미지로 교체 필요 -->
+                                        <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_1_3_2.gif" alt="img_example" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="stitle">확인사항</div>
+                                <div class="cont">※ 화면을 흑백 모니터나 흑백 프린터로 출력하더라도 전달하고자 하는 내용에 문제가 없는지 확인할 것</div>
+                            </div>
+                        </div>
+                        <h4 id="waItem1_3_2" class="wsg_h4">1-3-2. 명확한 지시사항 제공</h4>
+                        <ul class="wsg_desc">
+                            <li>지시사항은 모양, 크기, 위치, 방향, 색, 소리 등에 관계없이 인식될 수 있어야 한다.</li>
+                            <li>
+                                특정 요소를 가리키거나 지시사항을 전달할 때 시각이나 청각 등과 같은 특정 감각에만 의존하지 않고 다른 감각을 통해서도 지시사항을 인식하는 데 문제가 없도록 제공해야 한다.
+                                <ul class="wsg_desc_line">
+                                    <li>시각정보: <span class="wsg_txt_primary">빨간색</span> 버튼을 누르시오 → <span class="wsg_txt_primary">빨간색 확인</span> 버튼을 누르시오.</li>
+                                    <li>청각정보: 음성알림을 제공하는 경우 화면에 동일한 내용의 메세지 창을 함께 표시</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4 id="waItem1_3_3" class="wsg_h4">1-3-3. 텍스트 콘텐츠의 명도 대비</h4>
+                        <ul class="wsg_desc">
+                            <li>텍스트 콘텐츠와 배경 간의 명도 대비는 4.5대 1 이상 이어야 한다.</li>
+                            <li>
+                                웹 페이지에 보이는 핵심 텍스트 콘텐츠와 배경 간의 충분한 대비를 제공하여, 저시력자, 색각 이상자, 고령자 등도 콘텐츠를 인식할 수 있도록 제공해야 한다.
+                                <ul class="wsg_desc_line">
+                                    <li>보통 크기(18pt 미만, 또는 굵은 14pt 미만)의 텍스트 : 명도 대비 4.5:1</li>
+                                    <li>그 이상 크기(18pt 이상, 또는 굵은 14pt 이상)의 텍스트 : 명도 대비 3:1</li>
+                                </ul>
+                                <p class="wsg_desc_guide">* 참고 : 14pt = 18px / 18pt = 24px</p>
+                            </li>
+                            <li>
+                                <span class="fw_b">이 검사 항목의 적용을 받지 않는 요소</span>
+                                <ul class="wsg_desc_line">
+                                    <li>본문 콘텐츠에 단순히 장식 목적으로만 사용한 텍스트</li>
+                                    <li>로고 또는 상호와 같은 텍스트 이미지</li>
+                                    <li>마우스나 키보드를 활용하여 초점을 받았을 때 색이나 명도 대비가 변화하는 콘텐츠</li>
+                                    <li>사용할 수 없음을 표시하기 위하여 명도 대비를 낮춘 회색의 컨트롤이나 입력 서식 등</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4 id="waItem1_3_4" class="wsg_h4">1-3-4. 배경음 사용금지</h4>
+                        <ul class="wsg_desc">
+                            <li>자동으로 재생되는 배경음을 사용하지 않아야 한다.</li>
+                            <li>자동적으로 재생되는 배경음의 지속시간을 3초 미만이 되도록 제한함</li>
+                            <li>3초 이상 재생되는 배경음을 사용할 경우, 반드시 배경음을 제어할 수 있는 수단(멈춤, 일시정지, 음량조절 등)을 웹 페이지의 첫 부분에 제공함</li>
+                        </ul>
+                        <h4 id="waItem1_3_5" class="wsg_h4">1-3-5. 콘텐츠 간의 구분</h4>
+                        <ul class="wsg_desc">
+                            <li>웹 페이지를 구성하는 이웃한 콘텐츠는 시각적으로 구분되도록 제공해야 한다.</li>
+                            <li>터치스크린을 채용한 모바일 기기에서 터치 기능을 이용할 수 있도록 이웃한 콘텐츠는 충분한 간격을 두도록 구현되어야 한다.</li>
+                            <li>
+                                <span class="fw_b">이웃한 콘텐츠를 시각적으로 구분짓는 방법</span>
+                                <ul class="wsg_desc_line">
+                                    <li>테두리를 이용하여 구분함</li>
+                                    <li>콘텐츠 사이에 시각적인 구분선을 삽입하여 구분함</li>
+                                    <li>서로 다른 무늬를 이용하여 구분함</li>
+                                    <li>콘텐츠 배경색 간의 명도대비(채도)를 달리하여 구분함</li>
+                                    <li>줄 간격 및 글자 간격을 조절하여 구분함</li>
+                                    <li>기타 콘텐츠를 시각적으로 구분할 수 있는 방법 등</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- //1-3. 명료성 -->
+                        
+                    </div>
+                </section>
+                <!-- //waItem1 -->
+                
+                <!-- waItem2 -->
+                <section id="waItem2" class="wsg_section wsg_inner">
+                    <div class="wsg_section_header">
+                        <h2 class="wsg_h2">운용의 용이성</h2>
+                    </div>
+                    <div class="wsg_section_body">
+                        <p>운용의 용이성은 사용자가 장애 유무 등에 관계없이 웹 사이트에서 제공하는 모든 기능들을 운용할 수 있게 제공하는 것을 의미한다.</p>
+                        
+                        <!-- 2-1. 입력장치 접근성 -->
+                        <h3 id="waItem2_1" class="wsg_h3">2-1. 입력장치 접근성</h3>
+                        <p>텍스트 아닌 콘텐츠는 그 의미나 용도를 이해할 수 있도록 대체 텍스트를 제공해야 한다.</p>
+                        <h4 id="waItem2_1_1" class="wsg_h4">2-1-1. 키보드 사용 보장</h4>
+                        <p>모든 기능은 키보드만으로도 사용할 수 있어야 한다.</p>
+                        <ul class="wsg_desc g_gutter">
+                            <li>
+                                <span class="fw_b">키보드 포커스가 가능한 요소 목록</span>
+                                <p style="margin-top: 5px;"><code>&lt;a&gt;</code>, <code>&lt;area&gt;</code>, <code>&lt; button&gt;</code>, <code>&lt; input&gt;</code>, <code>&lt; select&gt;</code>, <code>&lt; textarea&gt;</code></p>
+                                <div class="grid_ex_box">
+                                    <div class="col">
+                                        <div class="stitle">예시</div>
+                                        <div class="cont c_img">
+                                            <!-- TODO 3과제 이미지로 교체 필요 -->
+                                            <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_2_1_1.gif" alt="키보드 포커스가 가능한 요소 - 버튼 예시" />
+                                            <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_2_1_2.gif" alt="키보드 포커스가 가능한 요소 - 셀렉트박스 예시" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">웹페이지 탐색용 키보드 단축키 (인터넷 익스플로러)</span>
+                                <div class="wsg_tbl_type1" style="margin: 10px 0 15px;">
+                                    <table>
+                                        <caption>웹페이지 탐색용 키보드 단축키 (인터넷 익스플로러)</caption>
+                                        <colgroup>
+                                            <col style="width: 20%;">
+                                            <col style="width: 25%;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">페이지 스크롤</th>
+                                                <td>방향키 ↑ ↓ ← →</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">링크/컨트롤 탐색</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>다음 : Tab</li>
+                                                        <li>이전 : Shift + Tab</li>
+                                                    </ul>
+                                                </td>
+                                                <td rowspan="3" style="line-height: 20px;">
+                                                    <a href="#" class="wsg_link_basic">LINK 1</a><br>
+                                                    <a href="#" class="wsg_link_basic">LINK 2</a><br>
+                                                    
+                                                    <span class="form_chk" style="margin-top: 10px;">
+                                                        <input id="chk_ex_1_1" class="ip_chk" type="checkbox" name="chk_1" />
+                                                        <label for="chk_ex_1_1" class="ip_chk_lb">예제1</label>
+                                                    </span>
+                                                    <span class="form_chk" style="margin_top: 10px;">
+                                                        <input id="chk_ex_1_2" class="ip_chk" type="checkbox" name="chk_1" />
+                                                        <label for="chk_ex_1_2" class="ip_chk_lb">예제1</label>
+                                                    </span><br>
+                                                    
+                                                    <button type="button" class="ex_btn_basic" style="margin-top: 10px;">BUTTON</button><br>
+                                                    <textarea style="margin-top: 10px;">TEXTAREA</textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">링크 클릭</th>
+                                                <td>Enter</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">버튼 클릭</th>
+                                                <td>Enter, Space Bar</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">셀렉트박스 선택</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>이동 : ↑ ↓</li>
+                                                        <li>선택 : Enter</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <select class="ex_form_basic">
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">셀렉트박스 펼치기/접기</th>
+                                                <td>Space Bar / Esc</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">라디오버튼 선택</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>이동 : ↑ ↓ ← →</li>
+                                                        <li>선택 : Space Bar</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <span class="form_rdo">
+                                                        <input id="rdo_ex_1_1" class="ip_rdo" type="radio" name="rdo_1" />
+                                                        <label for="rdo_ex_1_1" class="ip_rdo_lb">예제1</label>
+                                                    </span>
+                                                    <span class="form_rdo">
+                                                        <input id="rdo_ex_1_2" class="ip_rdo" type="radio" name="rdo_1" />
+                                                        <label for="rdo_ex_1_2" class="ip_rdo_lb">예제1</label>
+                                                    </span>
+                                                    <span class="form_rdo">
+                                                        <input id="rdo_ex_1_3" class="ip_rdo" type="radio" name="rdo_1" />
+                                                        <label for="rdo_ex_1_3" class="ip_rdo_lb">예제1</label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">체크박스 선택</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>이동(다음/이전) : Tab / Shift + Tab</li>
+                                                        <li>선택 : Space Bar</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <span class="form_chk">
+                                                        <input id="chk_ex_2_1" class="ip_chk" type="checkbox" name="chk_2" />
+                                                        <label for="chk_ex_2_1" class="ip_chk_lb">예제1</label>
+                                                    </span>
+                                                    <span class="form_chk">
+                                                        <input id="chk_ex_2_2" class="ip_chk" type="checkbox" name="chk_2" />
+                                                        <label for="chk_ex_2_2" class="ip_chk_lb">예제1</label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">마우스와 키보드 이벤트 공통 적용</span>
+                                <ul class="wsg_desc_line">
+                                    <li>
+                                        마우스로 접근 가능 기능이라면 키보드로도 접근이 가능해야 한다.
+                                        <br>가능한 한 키보드와 마우스에 공통적으로 적용되는 이벤트 핸들러를 이용한다.
+                                        <div class="wsg_code">
+                                            <div class="syntaxhighlighter">
+                                                <figure class="highlight">
+                                                    <pre class="brush:html;">
+                                                        &lt;a href="#" onmouseover="process('true', 'on');" onmouseout="process('false','off');"
+                                                           onfocus="process('true', 'on');" onblur="process('false', 'off');"&gt;&lt;/a&gt;
+                                                    </pre>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        마우스와 키보드 이벤트 핸들러 비교
+                                        <div class="wsg_tbl_type1" style="margin: 10px 0 15px;">
+                                            <table>
+                                                <caption>웹페이지 탐색용 키보드 단축키 (인터넷 익스플로러)</caption>
+                                                <colgroup>
+                                                    <col style="width: 20%;">
+                                                    <col style="width: 30%;">
+                                                    <col style="width: 20%;">
+                                                    <col style="width: 30%;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="colgroup" colspan="2">마우스 이벤트</th>
+                                                        <th scope="colgroup" colspan="2">키보드 이벤트</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">이벤트 명</th>
+                                                        <th scope="col">이벤트 발생 지점</th>
+                                                        <th scope="col">이벤트 명</th>
+                                                        <th scope="col">이벤트 발생 지점</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>mousedown</td>
+                                                        <td>마우스 버튼을 눌렀을 때</td>
+                                                        <td>keydown</td>
+                                                        <td>어떤 키가 눌렸을 때</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>mouseup</td>
+                                                        <td>마우스 버튼이 복귀될 때</td>
+                                                        <td>keyup</td>
+                                                        <td>어떤 키가 눌렸다가 놓았을 때</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>mouseover</td>
+                                                        <td>마우스 커서가 객체 위에 있을 때</td>
+                                                        <td>focus</td>
+                                                        <td>어떤 객체가 초점을 받았을 때</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>mouseout</td>
+                                                        <td>마우스 커서가 객체영역을 벗어날 때</td>
+                                                        <td>blur</td>
+                                                        <td>어떤 객체가 초점을 벗어날 때</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="fw_b">키보드 포커스가 되지 않는 잘못된 사례</span>
+                                <ul class="wsg_desc_line">
+                                    <li>
+                                        링크가 적용 된 콘텐츠의 테두리를 없애기 위해 onfocus="this.blur()"제공 한 경우
+                                        <div class="wsg_code">
+                                            <div class="syntaxhighlighter">
+                                                <figure class="highlight">
+                                                    <pre class="brush:html;">
+                                                        &lt;!-- 잘못된 예 --&gt;
+                                                        &lt;a href="accommodation.html" target="_blank" onfocus="this.blur();"&gt;숙박 정보&lt;/a&gt;
+                                                        
+                                                        &lt;!-- 올바른 예 | onfocus="this.blur()" 제거 --&gt;
+                                                        &lt;a href="accommodation.html" target="_blank"&gt;숙박 정보&lt;/a&gt;
+                                                    </pre>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <code>&lt;a&gt;</code>, <code>&lt;area&gt;</code>, <code>&lt; button&gt;</code>, <code>&lt; input&gt;</code> 이외의 요소에 onclick 이벤트를 적용한 경우
+                                        <div class="wsg_code">
+                                            <div class="syntaxhighlighter">
+                                                <figure class="highlight">
+                                                    <pre class="brush:html;">
+                                                        &lt;!-- 잘못된 예 --&gt;
+                                                        &lt;img src="accommodation.jpg" alt="숙박 정보" onclick="popupOpen();" /&gt;
+                                                        
+                                                        &lt;!-- 올바른 예 | a, area input, button요소에만 onclick 이벤트를 사용 --&gt;
+                                                        &lt;a href="#popup" onclick="popupOpen();"&gt;&lt;img src="accommodation.jpg" alt="숙박 정보" /&gt;&lt;/a&gt;
+                                                    </pre>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="fw_b">스크롤 가능한 영역의 키보드 컨트롤</span>
+                                <p>포커스가 되지 않는 요소에 스크롤이 있는 경우 키보드로 스크롤해야만 볼 수 있는 내용은 확인할 수 없음</p>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;!-- 잘못된 예 --&gt;
+                                                &lt;div style="overflow-y: auto"&gt;이용약관&lt;/div&gt;
+                                                
+                                                &lt;!-- 올바른 예 --&gt;
+                                                &lt;div style="overflow-y: auto" tabindex="0"&gt;이용약관&lt;/div&gt; &lt;!-- 포커스가 되지 않는 요소에 스크롤이 있는 경우 tabindex="0" 속성 제공 --&gt;
+                                                &lt;textarea&gt;이용약관&lt;/textarea&gt;                            &lt;!-- 또는 textarea 요소로 변경 --&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h4 id="waItem2_1_2" class="wsg_h4">2-1-2. 초점이동</h4>
+                        <ul class="wsg_desc">
+                            <li>키보드에 의한 초점은 논리적으로 이동해야 하며 시각적으로 구별할 수 있어야 한다.</li>
+                            <li>키보드 내비게이션 과정에서 키보드 초점을 받은 링크, 컨트롤 및 입력 서식은 초점을 받지 않은 객체들로부터 구분될 수 있어야 한다.</li>
+                            <li>또한 Tab 키와 Shift + Tab 키에 의한 초점의 이동 순서는 논리적이며 일관성이 있어야 한다. 키보드 내비게이션의 순서는 일반적으로 웹 페이지의 좌측 상단 영역에서 우측 하단 영역으로 이동하는 것이 원칙이다.</li>
+                            <li>포커스 순서를 강제로 변경하기 위한 tabindex 속성값을 사용하지 않으며, 문서의 논리적 순서를 고려하여 마크업한다.</li>
+                            <li>
+                                <span class="fw_b">키보드 포커스가 보이지 않는 잘못된 사례</span>
+                                <div class="grid_ex_box">
+                                    <div class="col row_group">
+                                        <div class="row">
+                                            <div class="stitle">잘못된 예</div>
+                                            <div class="cont c_img">
+                                                <!-- TODO 3과제 이미지로 교체 필요 -->
+                                                <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_2_1_6.gif" alt="img_example" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="stitle">올바른 예</div>
+                                            <div class="cont c_img">
+                                                <!-- TODO 3과제 이미지로 교체 필요 -->
+                                                <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_2_1_7.gif" alt="img_example" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="wsg_desc_line">
+                                    <li>
+                                        포커스되는 요소에 점선 테두리를 없애기 위해 <code>outline:none;</code> 등의 속성을 적용한 경우
+                                        <div class="wsg_code">
+                                            <div class="syntaxhighlighter">
+                                                <figure class="highlight">
+                                                    <pre class="brush:css;">
+                                                        /* 잘못된 예 */
+                                                        .search_keyword {outline: none; select-dummy: expression(this.hideFocus=true);}
+                                                        
+                                                        /* 올바른 예 | 현재 포커스 위치를 확인할 수 있도록 outline:none;을 사용하지 않거나 점선 테두리를 대체할 수단(테두리, 배경)을 제공 */
+                                                        .search_keyword:active,
+                                                        .search_keyword:focus {background: url(http://image.kyobobook.co.kr/ink/images/gnb/bg_search_option_on.gif) no-repeat;}
+                                                    </pre>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        링크 요소의 자식 요소에 <code>float:left</code> / <code>position:absolute</code> 속성을 사용한 경우
+                                        <div class="wsg_code">
+                                            <div class="syntaxhighlighter">
+                                                <figure class="highlight">
+                                                    <pre class="brush:html;">
+                                                        &lt;a href="#" class="link"&gt;&lt;span&gt;링크&lt;/span&gt;&lt;/a&gt;
+                                                        &nbsp;
+                                                    </pre>
+                                                    <pre class="brush:css;">
+                                                        /* 잘못된 예 */
+                                                        a.link {}
+                                                        a.link span {float: left;}
+                                                        
+                                                        a.link {}
+                                                        a.link span {position: absolute;}
+                                                    </pre>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4 id="waItem2_1_3" class="wsg_h4">2-1-3. 조작 가능</h4>
+                        <ul class="wsg_desc">
+                            <li>사용자 입력 및 컨트롤은 조작 가능하도록 제공되어야 한다.</li>
+                            <li>웹 페이지에서 제공하는 모든 이웃한 컨트롤은 개별적으로 선택하고 사용할 수 있도록 충분한 크기로 제공해야 한다.</li>
+                            <li>
+                                컨트롤의 크기(대각선 방향의 길이)는 6.0mm 이상이어야 사용자들이 터치스크린을 채용한 기기에서도 조작이 가능하다.
+                                <br>따라서 모든 컨트롤의 크기는 대각선 방향으로 6.0mm 이상 되도록 제공하는 것이 바람직하다.
+                                <ul class="wsg_desc_guide">
+                                    <li>※ 컨트롤의 크기는 대각선의 길이를 측정하며, 모바일 기기의 경우에는 4inch 화면을 기준으로 측정하며, 데스크톱 PC 모니터는 17인치 모니터를 기준으로 측정함</li>
+                                    <li>&nbsp;&nbsp;- PC (96DPI) : 6mm = 25.4px</li>
+                                    <li>&nbsp;&nbsp;- 모바일 (160DPI) : 6mm = 37.8px</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- //2-1. 입력장치 접근성 -->
+    
+                        <!-- 2-2. 충분한 시간 제공 -->
+                        <h3 id="waItem2_2" class="wsg_h3">2-2. 충분한 시간 제공</h3>
+                        <p>콘텐츠를 읽고 사용하는 데 충분한 시간을 제공해야 한다.</p>
+                        <h4 id="waItem2_2_1" class="wsg_h4">2-2-1. 응답시간 조절</h4>
+                        <p>
+                            시간제한이 있는 콘텐츠는 시간적인 제약이 있음을 사용자에게 반드시 알려주어야 한다.
+                            <br>또한 다음과 같은 예외의 경우에 해당하는 콘텐츠를 제외한 모든 콘텐츠는 시간제약을 회피하거나 우회할 수 있는 수단을 함께 제공해야 한다.
+                        </p>
+                        <ul class="wsg_desc g_gutter">
+                            <li>
+                                <span class="fw_b">시간제한이 있는 콘텐츠</span>
+                                <ul class="wsg_desc_line">
+                                    <li>일정한 시간마다 그 내용의 일부 또는 전체가 자동적으로 갱신되는 콘텐츠</li>
+                                    <li>일정한 시간이 경과하면 다른 웹 페이지로 이동하도록 구성된 콘텐츠</li>
+                                    <li>사용자가 제어하지 않아도 자동적으로 스크롤되는 콘텐츠</li>
+                                    <li>일정시간 후 사라지거나 접근이 차단되는 콘텐츠</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="fw_b">제한 시간 연장 방법 제공</span>
+                                <p class="wsg_desc_line" style="margin-top: 5px;">제한 시간을 가진 기능을 제공할 때 사용자가 제한 시간을 연장할 수 있도록 해야 한다.</p>
+                            </li>
+                            <li>
+                                <span class="fw_b">메타 태그를 이용한 페이지 재 이동 방법 제공</span>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;meta http-equiv="refresh" content="0;URL='redirect.html'" /&gt;
+                                                &lt;p&gt;&lt;a href="redirect.html"&gt;redirect.html&lt;/a&gt; 페이지로 이동합니다.&lt;/p&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p class="wsg_desc_guide">* 메타(meta) 태그를 이용하여 자동 재이동(redirect) 하는 페이지의 경우 메타태그의 content 값이 0보다 크면 재이동 페이지가 브라우저의 히스토리에 남아 이전 페이지로 이동하기 어렵게 하므로 content 값을 반드시 0으로 설정한다</p>
+                            </li>
+                        </ul>
+                        <h4 id="waItem2_2_2" class="wsg_h4">2-2-2. 정지 기능 제공</h4>
+                        <ul class="wsg_desc">
+                            <li>자동으로 변경되는 콘텐츠는 움직임을 제어할 수 있어야 한다.</li>
+                            <li>이동하거나 스크롤되는 콘텐츠는 사용자가 이동이나 스크롤을 일시 정지시키거나 지나간 콘텐츠 또는 앞으로 나타날 콘텐츠를 사용할 수 있도록 "앞으로 이동", "뒤로 이동", "정지" 등의 컨트롤을 제공해야 한다.</li>
+                            <li>변화하는 배너의 정지나 이전, 다음 기능을 제공할 수 없다면 사용자가 개별 배너를 직접 선택할 수 있는 방법 또는 전체 배너를 보여줄 수 있는 방법을 제공한다.</li>
+                            <li>자동으로 갱신되는 콘텐츠는 읽고 있는 사용자가 충분한 읽을 시간을 얻기 위해 일시정지 시킬 수 있어야 한다. 또한 멈추었다 다시 시작하면 읽고 있던 그 이후부터 변경되어야 한다.</li>
+                            <li>자동으로 변경되는 콘텐츠 : 자동으로 변화하는 배너, 텍스트 스크롤</li>
+                        </ul>
+                        <div class="grid_ex_box">
+                            <div class="col">
+                                <div class="stitle">예시</div>
+                                <div class="cont c_img">
+                                    <!-- TODO 3과제 이미지로 교체 필요 -->
+                                    <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_2_2_1.gif" alt="정지 기능 제공 예시 이미지" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //2-2. 충분한 시간 제공 -->
+    
+                        <!-- 2-3. 광과민성 발작 예방 -->
+                        <h3 id="waItem2_3" class="wsg_h3">2-3. 광과민성 발작 예방</h3>
+                        <p>광과민성 발작을 일으킬 수 있는 콘텐츠를 제공하지 않아야 한다.</p>
+                        <p class="wsg_desc_guide">※ 광과민성 증후: 빛의 깜빡거림에 의해 발작을 일으키는 증상을 말한다.</p>
+                        <h4 id="waItem2_3_1" class="wsg_h4">2-3-1. 깜빡임과 번쩍임 사용 제한</h4>
+                        <p>초당 3~50회 주기로 깜빡이거나 번쩍이는 콘텐츠를 제공하지 않아야 한다.</p>
+                        <!-- //2-3. 광과민성 발작 예방 -->
+    
+                        <!-- 2-4. 쉬운 내비게이션 -->
+                        <h3 id="waItem2_4" class="wsg_h3">2-4. 쉬운 내비게이션</h3>
+                        <p>콘텐츠는 쉽게 내비게이션 할 수 있어야 한다.</p>
+                        <h4 id="waItem2_4_1" class="wsg_h4">2-4-1. 반복영역 건너뛰기</h4>
+                        <p>콘텐츠의 반복되는 영역은 건너뛸 수 있어야 한다.</p>
+                        <div class="grid_ex_box">
+                            <div class="col">
+                                <div class="stitle">예시</div>
+                                <div class="cont c_img">
+                                    <!-- TODO 3과제 이미지로 교체 필요 -->
+                                    <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_2_4_1.gif" alt="정지 기능 제공 예시 이미지" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="stitle">Code</div>
+                                <div class="cont">
+                                    <div class="wsg_code">
+                                        <div class="syntaxhighlighter">
+                                            <figure class="highlight">
+                                                <pre class="brush:css;">
+                                                    #skip_to_content a {position: absolute; top: -100px;}
+                                                    #skip_to_content a:active,
+                                                    #skip_to_content a:focus {position: static;}
+                                                    &nbsp;
+                                                </pre>
+                                                <pre class="brush:html;">
+                                                    &lt;div id="skip_to_content"&gt;
+                                                        &lt;a href="#page_content"&gt;본문내용 바로가기&lt;/a&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div id="gnb"&gt;
+                                                        &lt;!-- GNB --&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div id="page_content"&gt;
+                                                        &lt;!-- 본문내용 --&gt;
+                                                    &lt;/div&gt;
+                                                </pre>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="wsg_desc_guide">※ IE에서 본문 바로가기 링크가 정상적으로 동작하지 않는 경우 컨텐츠 블럭에 min-height 또는 height 값을 지정한다.</p>
+                        <h4 id="waItem2_4_2" class="wsg_h4">2-4-2. 제목제공</h4>
+                        <p>페이지, 프레임, 콘텐츠 블록에는 적절한 제목을 제공해야 한다.</p>
+                        <ul class="wsg_desc g_gutter">
+                            <li>
+                                <span class="fw_b">각 페이지를 구분할 수 있는 간단명료한 제목 제공</span>
+                                <div class="grid_ex_box">
+                                    <div class="col">
+                                        <div class="stitle">예시</div>
+                                        <div class="cont c_img">
+                                            <!-- TODO 3과제 이미지로 교체 필요 -->
+                                            <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_2_4_2.gif" alt="페이지 제목 제공 예시 이미지">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <!-- TODO 3과제 SEO에 맞춰 예제 코드 변경 필요 -->
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush:html;">
+                                                            &lt;!-- 웰컴 --&gt;
+                                                            &lt;title&gt;꿈을 키우는 세상 - 인터넷교보문고&lt;/title&gt;
+                                                            &lt;!-- 상품 상세 페이지 | 상품명 - 인터넷교보문고 --&gt;
+                                                            &lt;title&gt;상처받지 않고 행복해지는 관계의 힘 - 인터넷교보문고&lt;/title&gt;
+                                                            &lt;!-- 이벤트 페이지 | 이벤트명 - 인터넷교보문고 --&gt;
+                                                            &lt;title&gt;금융. 은행. 재경 자격시험교재 할인받고 강의수강권은 공짜로 받자! - 인터넷교보문고&lt;/title&gt;
+                                                            
+                                                            &lt;!-- 1 depth : 1depth - 인터넷 교보문고 --&gt;
+                                                            &lt;title&gt;베스트 - 인터넷교보문고&lt;/title&gt;
+                                                            &lt;!-- 2 depth : 2depth | 1depth - 인터넷교보문고 --&gt;
+                                                            &lt;title&gt;외국도서 | 베스트 - 인터넷교보문고&lt;/title&gt;
+                                                            &lt;!-- 3 depth : 3depth | 2depth | 1depth - 인터넷교보문고 --&gt;
+                                                            &lt;title&gt;문학 | 외국도서 | 베스트 - 인터넷교보문고&lt;/title&gt;
+                                                            &lt;!-- 4 depth : 4depth | 3depth | 2depth | 1depth - 인터넷교보문고 --&gt;
+                                                            &lt;title&gt;소설 | 문학 | 외국도서 | 베스트 - 인터넷교보문고&lt;/title&gt;
+                                                            &lt;!-- 5 depth : 5depth | 4depth | 3depth | 2depth - 인터넷교보문고 --&gt;
+                                                            &lt;title&gt;고전소설 | 소설 | 문학 | 외국도서 - 인터넷교보문고&lt;/title&gt;
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="wsg_desc_guide">※ 최대 4개의 depth까지만 노출한다.</p>
+                            </li>
+                            <li>
+                                <span class="fw_b">각 프레임을 구분할 수 있는 간단명료한 제목 제공</span>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;iframe title="로그인 프레임"&gt;&lt;/iframe&gt;
+                                                &lt;iframe title="광고 프레임"&gt;&lt;/iframe&gt;
+                                                &lt;iframe title="빈 프레임"&gt;&lt;/iframe&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">각 콘텐츠 블록을 구분할 수 있는 제목 제공</span>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;h1&gt;학교&lt;/h1&gt;
+                                                &lt;p&gt;학교(學校) 또는 배움터는 교육을 위한 장소이다. 대체로, 교실과 칠판 등 교육에 필요한 시설을 갖추고, 여러 학생들이 교사의 지도에 따라 지식을 얻는 형태로 교육이 이루어진다.&lt;/p&gt;
+                                                &lt;h2&gt;대한민국의 학교&lt;/h2&gt;
+                                                &lt;p&gt;대한민국의 경우에는 한국전통문화대학교(문화재청 관할) 등을 제외하면 국공립 학교는 모두 교육과학기술부에서 관할한다.&lt;/p&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <p class="wsg_desc_guide">※ 디자인적으로 제목이 보이지 않을 경우, 제목을 삭제시키기 않고 텍스트 숨김처리를 적용한다.</p>
+                            </li>
+                        </ul>
+                        <h4 id="waItem2_4_3" class="wsg_h4">2-4-3. 적절한 링크 텍스트</h4>
+                        <p>링크 텍스트는 용도나 목적을 이해할 수 있도록 제공해야 한다.</p>
+                        <div class="wsg_code">
+                            <div class="syntaxhighlighter">
+                                <figure class="highlight">
+                                    <pre class="brush:html;">
+                                        &lt;!-- 잘못된 예 | 용도나 목적을 이해할 수 없는 링크 텍스트 : ‘여기’ 등과 같이 명확하지 않는 링크 사용 --&gt;
+                                        보다 자세한 내용을 보시려면 &lt;a href="here.html"&gt;여기&lt;/a&gt;을 클릭하세요.
+                                        
+                                        &lt;!-- 올바른 예 --&gt;
+                                        &lt;!-- 1) 링크의 용도나 목적을 이해할 수 있도록 적절한 링크 텍스트 제공 --&gt;
+                                        보다 자세한 내용을 보시려면 &lt;a href="guide.html"&gt;사이트 이용 방법&lt;/a&gt;을 클릭하세요.
+                                        
+                                        &lt;!-- 2) URL에 관한 정보를 제공하는 문장에 이어서 링크 텍스트를 삽입 --&gt;
+                                        사이트 이용 방법 &lt;a href="guide.html"&gt;바로가기&lt;/a&gt;
+                                        
+                                        &lt;!-- 3) '더보기' 링크는 앞뒤 맥락으로부터 '공지사항 더보기' 임을 알 수 있다. --&gt;
+                                        &lt;h2>공지사항&lt;/h2&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;우체국택배 토요일 배송 휴무안내 &lt;/li&gt;
+                                            &lt;li&gt;인터넷교보문고 서비스점검 안내 &lt;/li&gt;
+                                        &lt;/ul&gt;
+                                        &lt;a href="notice.html"&gt;더보기&lt;/a&gt;
+                                    </pre>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- //2-4. 쉬운 내비게이션 -->
+                    
+                    </div>
+                </section>
+                <!-- //waItem2 -->
+                
+                <!-- waItem3 -->
+                <section id="waItem3" class="wsg_section wsg_inner">
+                    <div class="wsg_section_header">
+                        <h2 class="wsg_h2">이해의 용이성</h2>
+                    </div>
+                    <div class="wsg_section_body">
+                        <p>이해의 용이성은 사용자가 장애 유무 등에 관계없이 웹 사이트에서 제공하는 콘텐츠를 이해할 수 있도록 제공하는 것을 의미한다.</p>
+        
+                        <!-- 3-1. 가독성 -->
+                        <h3 id="waItem3_1" class="wsg_h3">3-1. 가독성</h3>
+                        <p>텍스트 아닌 콘텐츠는 그 의미나 용도를 이해할 수 있도록 대체 텍스트를 제공해야 한다.</p>
+                        <h4 id="waItem3_1_1" class="wsg_h4">3-1-1. 기본 언어 표시</h4>
+                        <p>
+                            화면 낭독 프로그램을 사용하는 경우, 텍스트 콘텐츠의 언어 정보를 화면 낭독 프로그램으로 제공하여 정확한 발음이 가능하도록 화면 낭독 프로그램을 제어하기도 한다.
+                            <br>따라서 웹 페이지를 구성하는 기본 언어는 정확히 명시해야 한다.
+                        </p>
+                        <ul class="wsg_desc">
+                            <li>
+                                <span class="fw_b">XHTML</span>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+                                                &lt;html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"&gt;&lt;/html&gt;
+                                                &lt;head&gt;&lt;/head&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">HTML5</span>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;!doctype html&gt;
+                                                &lt;html lang="ko"&gt;&lt;/html&gt;
+                                                &lt;head&gt;&lt;/head&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="wsg_desc_guide" style="margin-top: 0;">
+                            <li>※ 같은 철자의 단어라도 언어에 따라 발음이 다른 것에 유의</li>
+                            <li>&nbsp;&nbsp;- Idea : 아이디어(영어), 이데아(그리스어)</li>
+                            <li>&nbsp;&nbsp;- 北京 : 북경(한국어), 베이징(중국어)</li>
+                        </ul>
+                        <!-- //3-1. 가독성 -->
+    
+                        <!-- 3-2. 예측 가능성 -->
+                        <h3 id="waItem3_2" class="wsg_h3">3-2. 예측 가능성</h3>
+                        <p>콘텐츠의 기능과 실행결과는 예측 가능해야 한다.</p>
+                        <h4 id="waItem3_2_1" class="wsg_h4">3-2-1. 사용자 요구에 따른 실행</h4>
+                        <p>사용자가 의도하지 않은 기능(새 창, 초점 변화 등)은 실행되지 않아야 한다.</p>
+                        <ul class="wsg_desc g_gutter">
+                            <li>
+                                <span class="fw_b">초점(Focus)에 따른 변화</span>
+                                <p>
+                                    웹 콘텐츠를 구성하는 컨트롤이 초점을 받았을 경우, 사용자가 의도하지 않은 기능이 실행되지 않아야 한다.
+                                    <br>(단, 기능의 실행이 아니라 초점을 받은 요소의 색깔이 반전되거나 테두리가 생기는 것과 같은 시각적인 변화, 또는 사용자 제어가 이동하지 않은 상태에서 나타나는 추가 정보 등은 초점 변화에 따른 기능의 실행으로 간주하지 않는다.)
+                                </p>
+                                <p class="wsg_txt_primary" style="margin-top: 10px;">[잘못된 사례]</p>
+                                <ul class="wsg_desc_line">
+                                    <li>온라인 서식이 자동적으로 제출됨</li>
+                                    <li>새 창이 열림</li>
+                                    <li>드롭다운 메뉴나 풀다운 메뉴를 사용하는 경우에 해당 메뉴가 실행됨</li>
+                                    <li>사용자 제어가 다른 컨트롤로 이동하거나 사라지거나 예측할 수 없음</li>
+                                </ul>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;!-- 잘못된 예 | 입력 박스를 클릭하면 새 창이 자동으로 발생함 --&gt;
+                                                &lt;input type="text" onfocus="window.open('zipcode.html')" /&gt;
+
+                                                &lt;!-- 올바른 예 | 기능 실행을 위한 버튼을 따로 제공 --&gt;
+                                                &lt;input type="text" /&gt;
+                                                &lt;button type="button" onclick="window.open('zipcode.html')"&gt;우편번호검색&lt;/button&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">입력에 따른 변화</span>
+                                <p>
+                                    사용자가 선택할 수 있는 컨트롤(예: 콤보박스, 라디오 박스, 체크박스 등)과 같이 어떤 항목을 선택하는 경우, 특정 항목을 선택(초점을 받음)하는 것으로 해당 항목이 의미하는 기능이 실행되지 않아야 한다.
+                                    <br>실제로 해당 기능이 실행되는 것은 사용자 선택 컨트롤과 함께 제공되는 실행 버튼을 클릭하거나 활성화 하였을 때 비로소 실행되어야 한다.
+                                </p>
+                                <p class="wsg_txt_primary" style="margin-top: 10px;">[잘못된 사례]</p>
+                                <ul class="wsg_desc_line">
+                                    <li>
+                                        키보드 사용 시 페이지가 자동으로 이동하여 하위 항목을 선택할 수 없음
+                                        <div class="grid_ex_box">
+                                            <div class="col">
+                                                <div class="stitle">예시</div>
+                                                <div class="cont">
+                                                    <!-- TODO 3과제 이미지로 교체 필요 -->
+                                                    <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_3_2_2.gif" alt="img_example">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="stitle">Code</div>
+                                                <div class="cont">
+                                                    <div class="wsg_code">
+                                                        <div class="syntaxhighlighter">
+                                                            <figure class="highlight">
+                                                                <pre class="brush:html;">
+                                                                    &lt;label for="sort_option"&gt;조회기간:&lt;/label&gt;
+                                                                    &lt;select id="sort_option" onchange="sort()"&gt;
+                                                                        &lt;option value="1" selected="selected"&gt;최근 3개월&lt;/option&gt;
+                                                                        &lt;option value="2"&gt;최근 6개월&lt;/option&gt;
+                                                                    &lt;/select&gt;
+                                                                </pre>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        주민번호 입력시 자동으로 포커스를 이동
+                                        <div class="grid_ex_box">
+                                            <div class="col">
+                                                <div class="stitle">예시</div>
+                                                <div class="cont">
+                                                    <!-- TODO 3과제 이미지로 교체 필요 -->
+                                                    <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_3_2_5.gif" alt="img_example">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="stitle">Code</div>
+                                                <div class="cont">
+                                                    <div class="wsg_code">
+                                                        <div class="syntaxhighlighter">
+                                                            <figure class="highlight">
+                                                                <pre class="brush:html;">
+                                                                    사업자등록번호
+                                                                    &lt;input type="text" name="reg_no1" onKeyUp="javascript:auto_next_focus( this, 3, "reg_no2" );" /&gt;
+                                                                    - &lt;input type="text" name="reg_no2" onKeyUp="javascript:auto_next_focus( this, 2, "reg_no3" );" /&gt;
+                                                                    - &lt;input type="password" name="reg_no3" /&gt;
+                                                                    &lt;input type="image" src="b_okay.gif" alt="확인" /&gt;
+                                                                </pre>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="wsg_txt_primary" style="margin-top: 10px;">[올바른 사례]</p>
+                                <ul class="wsg_desc_line">
+                                    <li>
+                                        목록상자에 이동 버튼을 따로 제공
+                                        <div class="grid_ex_box">
+                                            <div class="col">
+                                                <div class="stitle">예시</div>
+                                                <div class="cont">
+                                                    <!-- TODO 3과제 이미지로 교체 필요 -->
+                                                    <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_3_2_3.gif" alt="img_example">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="stitle">Code</div>
+                                                <div class="cont">
+                                                    <div class="wsg_code">
+                                                        <div class="syntaxhighlighter">
+                                                            <figure class="highlight">
+                                                                <pre class="brush:html;">
+                                                                    &lt;label for="sort_option"&gt;조회기간:&lt;/label&gt;
+                                                                    &lt;select id="sort_option"&gt;
+                                                                        &lt;option value="1" selected="selected"&gt;최근 3개월&lt;/option&gt;
+                                                                        &lt;option value="2"&gt;최근 6개월&lt;/option&gt;
+                                                                    &lt;/select&gt;
+                                                                    &lt;input type="submit" value="이동" /&gt;
+                                                                </pre>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        전송 type이 get방식이고 전송버튼 추가를 원치 않을 경우 링크목록 형식으로 대체하는 것을 고려
+                                        <div class="grid_ex_box">
+                                            <div class="col">
+                                                <div class="stitle">예시</div>
+                                                <div class="cont">
+                                                    <!-- TODO 3과제 이미지로 교체 필요 -->
+                                                    <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_3_2_4.gif" alt="img_example">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="stitle">Code</div>
+                                                <div class="cont">
+                                                    <div class="wsg_code">
+                                                        <div class="syntaxhighlighter">
+                                                            <figure class="highlight">
+                                                                <pre class="brush:html;">
+                                                                    조회기간:
+                                                                    &lt;a href="#sort_option"&gt;최근 3개월&lt;/a&gt;
+                                                                    &lt;div id="sort_option" class="option_list"&gt;
+                                                                        &lt;a href="list.html?sort=1" class="on"&gt;최근 3개월&lt;/a&gt;
+                                                                        &lt;a href="list.html?sort=2"&gt;최근 6개월&lt;/a&gt;
+                                                                    &lt;/div&gt;
+                                                                </pre>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="fw_b">새 창/팝업 창/레이어 팝업</span>
+                                <p>
+                                    사용자가 예측할 수 없는 상황에서 새 창 또는 팝업 창이 열리고 이를 통해 정보나 기능을 전달하면 안 된다.
+                                    <br>레이어 팝업이 시각적으로는 맨 앞이지만 키보드로 접근하는 경우 맨 뒤인 경우가 있기 때문에, 사용자가 예측할 수 없는 상황에서 레이어 팝업 창으로 정보나 기능을 전달해서는 안 된다.
+                                </p>
+                                <div class="grid_ex_box">
+                                    <div class="col">
+                                        <div class="stitle">예시</div>
+                                        <div class="cont">
+                                            <!-- TODO 3과제 이미지로 교체 필요 -->
+                                            <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_3_2_1.gif" alt="img_example">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush:html;">
+                                                            &lt;!-- 1) 사용자의 입력으로 발생하는 새 창을 사전에 알려줌 --&gt;
+                                                            보다 자세한 &lt;a href="guide.html" target="_blank" title="새창으로 열림"&gt;사이트 이용 방법&lt;/a&gt;을 확인하세요.
+                                                            
+                                                            &lt;!-- 2) 스크립트를 통해 팝업이 열리는 경우에는 "새창으로 열림" title값을 반드시 제공 --&gt;
+                                                            &lt;a href="guide.html" onclick="window.open(this.href,'new','width=300,height=300');" title="새창으로 열림"&gt;우편번호 찾기&lt;/a&gt;
+                                                            
+                                                            &lt;!-- 3) target="_blank" 속성이 들어간 경우에는 "새창으로 열림" title값 제공 생략 가능 --&gt;
+                                                            보다 자세한 &lt;a href="guide.html" target="_blank"&gt;사이트 이용 방법&lt;/a&gt;을 확인하세요.
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">새 창/팝업 창/레이어 팝업의 닫음</span>
+                                <p>사용자가 열려있거나 화면에 나타난 새 창/팝업 창/레이어 팝업을 닫거나 종료하도록 버튼을 클릭하거나 활성화 시켰을 경우, 해당 창 또는 팝업 등이 종료되어야 한다.</p>
+                            </li>
+                        </ul>
+                        <!-- //3-2. 예측 가능성 -->
+    
+                        <!-- 3-3. 콘텐츠의 논리성 -->
+                        <h3 id="waItem3_3" class="wsg_h3">3-3. 콘텐츠의 논리성</h3>
+                        <p>콘텐츠는 논리적으로 구성해야 한다.</p>
+                        <h4 id="waItem3_3_1" class="wsg_h4">3-3-1. 콘텐츠 선형화</h4>
+                        <p>장애인 등이 사용하는 정보통신 보조 기기도 일반적인 순서에 따라 콘텐츠를 이해할 수 있도록 논리적인 순서로 설계해 제공해야 한다.</p>
+                        <div class="grid_ex_box" style="margin-top: 10px;">
+                            <div class="col row_group">
+                                <div class="row">
+                                    <div class="stitle">예시</div>
+                                    <div class="cont c_img">
+                                        <!-- TODO 3과제 이미지로 교체 필요 -->
+                                        <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_3_3_1.gif" alt="img_example" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="stitle">HTML 예시</div>
+                                    <div class="cont c_img">
+                                        <!-- TODO 3과제 이미지로 교체 필요 -->
+                                        <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_3_3_2.gif" alt="img_example" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="stitle">설명</div>
+                                <div class="cont">
+                                    <ul class="wsg_desc_line">
+                                        <li>제목1-내용1-제목2-내용2... 순으로 내용을 배치한다.</li>
+                                        <li>목록에 대한 더보기는 코드상 목록의 아래에 배치하고 CSS로 위치를 잡는다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="wsg_desc fw_b">선형화 작업 예제</p>
+                        <p style="padding-left: 10px;">탭메뉴가 제목의 역할을 동시에 하는 경우에는 다음의 방법을 사용하여 콘텐츠를 선형화 할 수 있다.</p>
+                        <ul class="wsg_desc_line" style="padding-left: 10px;">
+                            <li>
+                                기존에 작업된 내용을 최소한으로 수정할 경우
+                                <p>: 내용마다 hidden 처리된 제목을 제공한다. (탭메뉴와 각 제목을 해쉬(#) 링크와 id로 연결하는 것을 권장)</p>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;ul&gt;
+                                                    &lt;li&gt;&lt;a href="#section1"&gt;탭 1&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li&gt;&lt;a href="#section2"&gt;탭 2&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li&gt;&lt;a href="#section3"&gt;탭 3&lt;/a&gt;&lt;/li&gt;
+                                                &lt;/ul&gt;
+
+                                                &lt;!-- Tab 콘텐츠 --&gt;
+                                                &lt;div id="section1"&gt;
+                                                    &lt;h3 class="hidden"&gt;제목1&lt;/h3&gt;
+                                                    &lt;div&gt;내용2&lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div id="section2" style="display: none;"&gt;
+                                                    &lt;h3 class="hidden"&gt;제목2&lt;/h3&gt;
+                                                    &lt;div&gt;내용2&lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div id="section3" style="display: none;"&gt;
+                                                    &lt;h3 class="hidden"&gt;제목3&lt;/h3&gt;
+                                                    &lt;div&gt;내용3&lt;/div&gt;
+                                                &lt;/div&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                내용의 높이가 유동이고, 탭메뉴의 갯수가 고정인 경우
+                                <p>: 제목과 내용을 논리적인 순서로 배치하고 내용을 세로로 나열한 후 탭메뉴를 <code>position: absolute</code>로 배치</p>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;!-- Tab 콘텐츠 --&gt;
+                                                &lt;div style="position: relative; padding-top: 20px;"&gt;
+                                                    &lt;h3 style="position: absolute; top: 0; left: 0; width: 20%;"&gt;제목1&lt;/h3&gt;
+                                                    &lt;div&gt;내용1&lt;/div&gt;
+                                                
+                                                    &lt;h3 style="position: absolute; top: 0; left: 20%; width: 20%;"&gt;제목2&lt;/h3&gt;
+                                                    &lt;div style="display: none;"&gt;내용2&lt;/div&gt;
+                                                
+                                                    &lt;h3 style="position: absolute; top: 0; left: 40%; width: 20%;"&gt;제목3&lt;/h3&gt;
+                                                    &lt;div style="display: none;"&gt;내용3&lt;/div&gt;
+                                                &lt;/div&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                내용의 높이가 고정이고, 탭메뉴의 갯수가 유동인 경우
+                                <p>: 제목과 내용을 논리적인 순서로 배치하고 내용을 세로로 나열한 후 탭메뉴를 <code>position: absolute</code>로 배치</p>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;!-- Tab 콘텐츠 --&gt;
+                                                &lt;div style="position: relative; height: 200px;"&gt;
+                                                    &lt;h3 style="float: left;"&gt;제목1&lt;/h3&gt;
+                                                    &lt;div style="position: absolute; top: 20px; left: 0; width: 100%; height: 180px;"&gt;내용1&lt;/div&gt;
+                                                
+                                                    &lt;h3 style="float: left;"&gt;제목2&lt;/h3&gt;
+                                                    &lt;div style="position: absolute; top: 20px; left: 0; width: 100%; height: 180px; display: none;"&gt;내용2&lt;/div&gt;
+                                                
+                                                    &lt;h3 style="float: left;"&gt;제목3&lt;/h3&gt;
+                                                    &lt;div style="position: absolute; top: 20px; left: 0; width: 100%; height: 180px; display: none;"&gt;내용3&lt;/div&gt;
+                                                &lt;/div&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h4 id="waItem3_3_2" class="wsg_h4">3-3-2. 표의 구성</h4>
+                        <p>표는 이해하기 쉽게 구성해야 한다. 따라서 제목(<code>&lt;caption&gt;</code>태그)을 제공, 요약정보(<span class="wsg_txt_del"><code>summary</code>속성</span> <span class="wsg_txt_red" style="font-size: 12px;">HTML5에서 caption으로 대체됨</span>)해야 한다.</p>
+                        <ul class="wsg_desc">
+                            <li>
+                                <span class="fw_b">데이터 테이블에 제목과 요약정보 제공</span>
+                                <p>데이터 테이블의 내용을 이해할 수 있도록 제목(<code>&lt;caption&gt;</code>태그, <span class="wsg_txt_del"><code>summary</code>속성</span> <span class="wsg_txt_red" style="font-size: 12px;">HTML5에서 caption으로 대체됨</span>)을 제공해야 한다.</p>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;table&gt;
+                                                &lt;caption&gt;한국의 월별 강수량. 1월부터 12월까지의 평균 강우량을 나타낸 표, 장마 기간이 있는 6~7월에 강수량이 가장 많고, 11~2월 사이의 강수량이 가장 낮다.&lt;/caption&gt;
+                                                &lt;!-- 하략 --&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">제목과 내용 구분</span>
+                                <p>데이터 테이블은 데이터 셀별로 대응되는 모든 헤더를 확인할 수 있도록 제목 셀(<code>&lt;th&gt;</code>)과 내용 셀(<code>&lt;td&gt;</code>)을 구분할 수 있는 태그를 제공해야 한다.</p>
+                                
+                                <ul class="wsg_desc_line">
+                                    <li>
+                                        1행을 제목 셀로 제공
+                                        <div class="grid_ex_box" style="margin-top: 10px;">
+                                            <div class="col">
+                                                <div class="stitle">예시</div>
+                                                <div class="cont">
+                                                    <div class="wsg_tbl_type1">
+                                                        <table>
+                                                            <caption>게시글 목록</caption>
+                                                            <thead>
+                                                            <tr>
+                                                                <th>번호</th>
+                                                                <th>제목</th>
+                                                                <th>작성자</th>
+                                                                <th>작성일</th>
+                                                                <th>조회</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>160</td>
+                                                                <td><a href="ContentView.asp">웹 접근성 기술동향 및 향상방안 세미나 : Accessibility의 미래(...</a></td>
+                                                                <td>관리자</td>
+                                                                <td>2008-01-01</td>
+                                                                <td>254</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="stitle">Code</div>
+                                                <div class="cont">
+                                                    <div class="wsg_code">
+                                                        <div class="syntaxhighlighter">
+                                                            <figure class="highlight">
+                                                                <pre class="brush:html;">
+                                                                    &lt;table&gt;
+                                                                        &lt;caption&gt;게시글 목록&lt;/caption&gt;
+                                                                        &lt;thead&gt;
+                                                                            &lt;tr&gt;
+                                                                                &lt;th&gt;번호&lt;/th&gt;
+                                                                                &lt;th&gt;제목&lt;/th&gt;
+                                                                                &lt;th&gt;작성자&lt;/th&gt;
+                                                                                &lt;th&gt;작성일&lt;/th&gt;
+                                                                                &lt;th&gt;조회&lt;/th&gt;
+                                                                            &lt;/tr&gt;
+                                                                        &lt;/thead&gt;
+                                                                        &lt;tbody&gt;
+                                                                            &lt;tr&gt;
+                                                                                &lt;td&gt;160&lt;/td&gt;
+                                                                                &lt;td&gt;&lt;a href="ContentView.asp"&gt;웹 접근성 기술동향 및 향상방안 세미나 : Accessibility의 미래(...&lt;/a&gt;&lt;/td&gt;
+                                                                                &lt;td&gt;관리자&lt;/td&gt;
+                                                                                &lt;td&gt;2008-01-01&lt;/td&gt;
+                                                                                &lt;td&gt;254&lt;/td&gt;
+                                                                            &lt;/tr&gt;
+                                                                            &lt;!-- 하략 --&gt;
+                                                                </pre>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        1행, 1열이 제목 셀인 경우 <code>scope</code>속성 사용
+                                        <br>대응하는 제목셀이 여럿인 내용 셀의 경우 제목셀에 id를 지정하고 <code>header</code>속성 으로 연결
+                                        <div class="grid_ex_box" style="margin-top: 10px;">
+                                            <div class="col">
+                                                <div class="stitle">예시</div>
+                                                <div class="cont">
+                                                    <div class="wsg_tbl_type1">
+                                                        <table>
+                                                            <caption>공연에 대한 요금 소요시간 공연시간을 나타낸 표</caption>
+                                                            <tbody><tr>
+                                                                <th>구분</th>
+                                                                <th scope="col" id="gold">골드</th>
+                                                                <th scope="col" id="top">프리미엄</th>
+                                                                <th scope="col" id="vip">VIP</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row" id="fare">일반요금</th>
+                                                                <td headers="gold fare">20,900원</td>
+                                                                <td headers="top fare">31,100원</td>
+                                                                <td headers="vip fare">34,200원</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row" id="child">아동요금</th>
+                                                                <td colspan="3" headers="gold top vip child">초등학생까지 일반 요금의 50%</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="stitle">Code</div>
+                                                <div class="cont">
+                                                    <div class="wsg_code">
+                                                        <div class="syntaxhighlighter">
+                                                            <figure class="highlight">
+                                                                <pre class="brush:html;">
+                                                                    &lt;table&gt;
+                                                                        &lt;caption&gt;공연에 대한 요금 소요시간 공연시간을 나타낸 표&lt;/caption&gt;
+                                                                        &lt;tr&gt;
+                                                                            &lt;th&gt;구분&lt;/th&gt;
+                                                                            &lt;th scope="col" id="gold"&gt;골드&lt;/th&gt;
+                                                                            &lt;th scope="col" id="top"&gt;프리미엄&lt;/th&gt;
+                                                                            &lt;th scope="col" id="vip"&gt;VIP&lt;/th&gt;
+                                                                        &lt;/tr&gt;
+                                                                        &lt;tr&gt;
+                                                                            &lt;th scope="row" id="fare"&gt;일반요금&lt;/th&gt;
+                                                                            &lt;td headers="gold fare"&gt;20,900원&lt;/td&gt;
+                                                                            &lt;td headers="top fare"&gt;31,100원&lt;/td&gt;
+                                                                            &lt;td headers="vip fare"&gt;34,200원&lt;/td&gt;
+                                                                        &lt;/tr&gt;
+                                                                        &lt;tr&gt;
+                                                                            &lt;th scope="row" id="child"&gt;아동요금&lt;/th&gt;
+                                                                            &lt;td colspan="3" headers="gold top vip child"&gt;초등학생까지 일반 요금의 50%&lt;/td&gt;
+                                                                        &lt;/tr&gt;
+                                                                        &lt;!-- 하략 --&gt;
+                                                                </pre>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <li>
+                                        제목셀이 가로로 병합된 경우 <code>scope="colgroup"</code>, 세로로 병합된 경우 <code>scope="rowgroup"</code>를 지정한다.
+                                        <div class="grid_ex_box" style="margin-top: 10px;">
+                                            <div class="col">
+                                                <div class="stitle">예시</div>
+                                                <div class="cont">
+                                                    <div class="wsg_tbl_type1">
+                                                        <table>
+                                                            <caption>평일, 금요일, 토요일, 연휴성수기의 정상요금과, 개인 또는 법인회원, 지정, 대여시 회원요금을 안내합니다.</caption>
+                                                            <colgroup>
+                                                                <col style="width: 20%;">
+                                                                <col style="width: 20%;">
+                                                                <col style="width: 20%;">
+                                                                <col style="width: 20%;">
+                                                                <col style="width: 20%;">
+                                                            </colgroup>
+                                                            <thead>
+                                                            <tr>
+                                                                <th id="weekday" scope="col" rowspan="2">평일</th>
+                                                                <th id="normal" scope="col" rowspan="2">정상요금</th>
+                                                                <th id="member" scope="colgroup" colspan="3">회원요금</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th id="general" scope="col">개인/법인</th>
+                                                                <th id="appoint" scope="col">지정</th>
+                                                                <th id="rent" scope="col">대여</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <th id="case1">평일</th>
+                                                                <td headers="case1 normal">400,000</td>
+                                                                <td headers="case1 member general">83,000</td>
+                                                                <td headers="case1 member appoint">80,000</td>
+                                                                <td headers="case1 member rent">93,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th id="case2">주말(금)</th>
+                                                                <td headers="case2 normal">400,000</td>
+                                                                <td headers="case2 member general">103,000</td>
+                                                                <td headers="case2 member appoint">100,000</td>
+                                                                <td headers="case2 member rent">133,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th id="case3">주말(토)</th>
+                                                                <td headers="case3 normal">400,000</td>
+                                                                <td headers="case3 member general">103,000</td>
+                                                                <td headers="case3 member appoint">100,000</td>
+                                                                <td headers="case3 member rent">163,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th id="case4">연휴/성수기</th>
+                                                                <td headers="case4 normal">400,000</td>
+                                                                <td headers="case4 member general">107,000</td>
+                                                                <td headers="case4 member appoint">104,000</td>
+                                                                <td headers="case4 member rent">207,000</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="stitle">Code</div>
+                                                <div class="cont">
+                                                    <div class="wsg_code">
+                                                        <div class="syntaxhighlighter">
+                                                            <figure class="highlight">
+                                                                <pre class="brush:html;">
+                                                                    &lt;table&gt;
+                                                                        &lt;caption&gt;평일, 금요일, 토요일, 연휴성수기의 정상요금과, 개인 또는 법인회원, 지정, 대여시 회원요금을 안내합니다.&lt;/caption&gt;
+                                                                        &lt;thead&gt;
+                                                                            &lt;tr&gt;
+                                                                                &lt;th id="weekday" scope="col" rowspan="2"&gt;평일&lt;/th&gt;
+                                                                                &lt;th id="normal" scope="col" rowspan="2"&gt;정상요금&lt;/th&gt;
+                                                                                &lt;th id="member" scope="colgroup" colspan="3"&gt;회원요금&lt;/th&gt;
+                                                                            &lt;/tr&gt;
+                                                                            &lt;tr&gt;
+                                                                                &lt;th id="general" scope="col"&gt;개인/법인&lt;/th&gt;
+                                                                                &lt;th id="appoint" scope="col"&gt;지정&lt;/th&gt;
+                                                                                &lt;th id="rent" scope="col"&gt;대여&lt;/th&gt;
+                                                                            &lt;/tr&gt;
+                                                                        &lt;/thead&gt;
+                                                                        &lt;tbody&gt;
+                                                                            &lt;tr&gt;
+                                                                                &lt;th id="case1"&gt;평일&lt;/th&gt;
+                                                                                &lt;td headers="case1 normal"&gt;400,000&lt;/td&gt;
+                                                                                &lt;td headers="case1 member general"&gt;83,000&lt;/td&gt;
+                                                                                &lt;td headers="case1 member appoint"&gt;80,000&lt;/td&gt;
+                                                                                &lt;td headers="case1 member rent"&gt;93,000&lt;/td&gt;
+                                                                            &lt;/tr&gt;
+                                                                            &lt;tr&gt;
+                                                                                &lt;th id="case2"&gt;주말(금)&lt;/th&gt;
+                                                                                &lt;td headers="case2 normal"&gt;400,000&lt;/td&gt;
+                                                                                &lt;td headers="case2 member general"&gt;103,000&lt;/td&gt;
+                                                                                &lt;td headers="case2 member appoint"&gt;100,000&lt;/td&gt;
+                                                                                &lt;td headers="case2 member rent"&gt;133,000&lt;/td&gt;
+                                                                            &lt;/tr>
+                                                                            <!-- 하략 -->
+                                                                </pre>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- //3-3. 콘텐츠의 논리성 -->
+    
+                        <!-- 3-4. 입력 도움 -->
+                        <h3 id="waItem3_4" class="wsg_h3">3-4. 입력 도움</h3>
+                        <p>입력 오류를 방지하거나 정정할 수 있어야 한다.</p>
+                        <h4 id="waItem3_4_1" class="wsg_h4">3-4-1. 레이블 제공</h4>
+                        <p>입력 서식에는 대응하는 레이블을 제공해야 한다.</p>
+                        <ul class="wsg_desc g_gutter">
+                            <li>
+                                <span class="fw_b">입력 서식에 대응하는 레이블 제공 (Label 있을 때)</span>
+                                <p>컨트롤에 정확한 이름표(label)를 붙여줌으로써 시각장애인처럼 컨트롤과 그 컨트롤의 제목을 짝짓기 힘든 사람들에게 양식을 쉽게 사용할 수 있도록 한다.</p>
+                                <p class="wsg_desc_line"><code>Input</code> + <code>label</code>을 동시에 쓰는 경우 <code>label</code>의 <code>for</code>와 <code>input</code>의 <code>id</code>는 1:1 매칭</p>
+                                <div class="grid_ex_box">
+                                    <div class="col">
+                                        <div class="stitle">예시</div>
+                                        <div class="cont">
+                                            <label for="ip_1" class="ip_chk_lb">이름</label>
+                                            <input type="text" id="ip_1" placeholder="이름을 입력하세요" class="ex_form_basic width_150">
+                                            <br><br>
+                                            <span class="form_chk">
+                                                <input id="chk_1" class="ip_chk" name="chk_1" type="checkbox">
+                                                <label for="chk_1" class="ip_chk_lb">체크박스</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush:html;">
+                                                            &lt;!-- 명시적 방법 (권장) | 서식에서 레이블을 제공한 경우 --&gt;
+                                                            &lt;label for="ip-1" class="ip_chk_lb"&gt;이름&lt;/label&gt;
+                                                            &lt;input type="text" id="ip-1" placeholder="이름을 입력하세요" class="ex_form_basic width-150" /&gt;
+                                                            &lt;span class="form_chk"&gt;
+                                                                &lt;input id="chk-1" class="ip_chk" name="chk-1" type="checkbox" /&gt;
+                                                                &lt;label for="chk-1" class="ip_chk_lb"&gt;체크박스&lt;/label&gt;
+                                                            &lt;/span&gt;
+    
+                                                            &lt;!-- 암묵적 방법 | &lt;label&gt; 태그로 레이블과 서식을 묶어준 경우 --&gt;
+                                                            &lt;label&gt;이름 &lt;input type="text" /&gt;&lt;/label&gt;
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">대응하는 레이블이 없는 서식의 경우 자세한 정보 제공 (Label 없을 때)</span>
+                                <p>컨트롤에 대응하는 텍스트가 없는 경우에는 <code>title</code> 속성을 이용하여 설명을 제공 한다.</p>
+                                <ul class="wsg_desc_line">
+                                    <li>웹접근성 리더기에서 컨트롤에 대한 기본 속성을 읽어주므로 '입력', '목록', '선택' 등과 같은 문구는 생략한다.</li>
+                                    <li><code>label</code> 관련 예제 및 명는 [웹접근성 &gt; <a href="wa_names.html" class="wsg_link_basic" target="_blank">기본명칭 정의예시</a>] 를 참고.</li>
+                                </ul>
+                                <div class="grid_ex_box">
+                                    <div class="col row_group n3">
+                                        <div class="row">
+                                            <div class="stitle">예시 1) form 단일</div>
+                                            <div class="cont c_img">
+                                                <input type="text" placeholder="이름을 입력하세요" title="이름" class="ex_form_basic width_150" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="stitle">예시 2) form 혼합</div>
+                                            <div class="cont c_img">
+                                                <form method="post" action="#">
+                                                    <select class="ex_form_basic" title="검색 범위">
+                                                        <option value="" selected="">전체</option>
+                                                        <option value="">제목</option>
+                                                        <option value="">내용</option>
+                                                    </select>
+                                                    <input type="text" value="" placeholder="" title="검색 키워드" class="ex_form_basic width_150" />
+                                                    <button type="button" class="ex_btn_basic"><span>검색</span></button>
+                                                </form>
+                                                <p style="margin-top: 10px;">[검색 범위], [검색 키워드], [생략]</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="stitle">예시 3) input type="image" 사용</div>
+                                            <div class="cont c_img">
+                                                <!-- TODO 3과제 이미지로 교체 필요 -->
+                                                <input type="image" alt="검색" title="검색 결과 보기" src="../resources/images/wa_temp_search.png" style="height: 35px;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush:html;">
+                                                            <!-- 예시 1) -->
+                                                            &lt;input type="text" name="" value="" placeholder="이름을 입력하세요" title="이름" /&gt;
+                                                            
+                                                            &lt;!-- 예시 2) --&gt;
+                                                            &lt;form method="post" action=""&gt;
+                                                                &lt;select name="" title="검색 범위"&gt;
+                                                                    &lt;option value="" selected=""&gt;전체&lt;/option&gt;
+                                                                    &lt;option value=""&gt;제목&lt;/option&gt;
+                                                                    &lt;option value=""&gt;내용&lt;/option&gt;
+                                                                &lt;/select&gt;
+                                                                &lt;input type="text" value="" placeholder="" title="검색 키워드" /&gt;
+                                                                &lt;button type="button"&gt;&lt;span&gt;검색&lt;/span&gt;&lt;/button&gt;
+                                                            &lt;/form&gt;
+                                                            
+                                                            &lt;!-- 예시 3) --&gt;
+                                                            &lt;input type="image" alt="검색" title="검색 결과 보기" src="../resources/images/wa_temp_search.png" /&gt;
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">복잡한 서식의 Title 정의</span>
+                                <div class="grid_ex_box">
+                                    <div class="col">
+                                        <div class="stitle">예시) 분할된 항목으로 첫번째 요소에만 label 있는 경우</div>
+                                        <div class="cont">
+                                            <label for="idex1">사업자 식별번호</label>
+                                            <select id="idex1" class="ex_form_basic">
+                                                <option value="" selected="">010</option>
+                                                <option value="">011</option>
+                                                <option value="">012</option>
+                                            </select>
+                                            -
+                                            <input type="text" value="" placeholder="" title="국번호" class="ex_form_basic" style="width: 80px;" />
+                                            -
+                                            <input type="text" value="" placeholder="" title="가입자번호" class="ex_form_basic" style="width: 80px;" />
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="stitle">Code</div>
+                                        <div class="cont">
+                                            <div class="wsg_code">
+                                                <div class="syntaxhighlighter">
+                                                    <figure class="highlight">
+                                                        <pre class="brush:html;">
+                                                            &lt;label for="idex1"&gt;사업자 식별번호&lt;/label&gt;
+                                                            &lt;select name="" id="idex1" &gt;
+                                                                &lt;option value="" selected=""&gt;010&lt;/option&gt;
+                                                                &lt;option value=""&gt;011&lt;/option&gt;
+                                                                &lt;option value=""&gt;012&lt;/option&gt;
+                                                            &lt;/select&gt;
+                                                            -
+                                                            &lt;input type="text" value="" placeholder="" title="국번호" /&gt;
+                                                            -
+                                                            &lt;input type="text" value="" placeholder="" title="가입자번호" /&gt;
+                                                        </pre>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">fieldset을 사용하여 유사 컨트롤을 하나로 묶음</span>
+                                <p>회원 가입, 구독 신청 등과 같이 많은 정보를 양식을 통해 입력받을 때에는 적절하게 비슷한 컨트롤들을 묶어줌으로써 순차적으로 양식을 입력해야 하는 장애인들에게는 현재의 맥락을 쉽게 파악하고, 양식 입력의 오류를 줄일 수 있게 한다.</p>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;fieldset&gt;
+                                                    &lt;legend&gt;필수항목 입력&lt;/legend&gt;
+                                                    &lt;!-- 중간생략 --&gt;
+                                                &lt;/fieldset&gt;
+                                                &lt;fieldset&gt;
+                                                    &lt;legend&gt;선택항목 입력&lt;/legend&gt;
+                                                    &lt;!-- 중간생략 --&gt;
+                                                &lt;/fieldset&gt;
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h4 id="waItem3_4_2" class="wsg_h4">3-4-2. 오류 정정</h4>
+                        <p>입력 오류가 발생할 경우 사용자가 오류를 쉽게 정정할 수 있는 방법을 제공해야 한다.</p>
+                        <div class="grid_ex_box">
+                            <div class="col">
+                                <div class="stitle">예시</div>
+                                <div class="cont c_img">
+                                    <!-- TODO 3과제 이미지로 교체 필요 | 입력하라는 메세지가 포함되는 이미지 필요 -->
+                                    <img src="http://image.kyobobook.co.kr/ink/html/guide/images/access/img_3_4_3.gif" alt="img_example">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="stitle">설명</div>
+                                <div class="cont">
+                                    사용자의 실수로 반드시 입력해야 하는 ‘아이디’를 입력하지 않은 경우, 사용자가 실수한 부분을 알려주어('아이디를 입력하세요') 이를 해결하도록 도와주는 기능 제공
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //3-4. 입력 도움 -->
+                        
+                    </div>
+                </section>
+                <!-- //waItem3 -->
+                
+                <!-- waItem4 -->
+                <section id="waItem4" class="wsg_section wsg_inner">
+                    <div class="wsg_section_header">
+                        <h2 class="wsg_h2">견고성</h2>
+                    </div>
+                    <div class="wsg_section_body">
+                        <p>어떠한 기술이 사용되더라도 내용은 항상 접근성이 보장되어야 한다.</p>
+    
+                        <!-- 4-1. 문법 준수 -->
+                        <h3 id="waItem4_1" class="wsg_h3">4-1. 문법 준수</h3>
+                        <p>웹 콘텐츠는 마크업 언어의 문법을 준수해야 한다.</p>
+                        <h4 id="waItem4_1_1" class="wsg_h4">4-1-1. 마크업 오류 방지</h4>
+                        <p>마크업 언어의 요소는 열고 닫음, 중첩 관계 및 속성 선언에 오류가 없어야 한다.</p>
+                        <ul class="wsg_desc g_gutter">
+                            <li>
+                                <span class="fw_b">여는 태그와 닫는 태그의 정확한 사용</span>
+                                <p>태그의 열림과 닫힘이 일치해야 한다.</p>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;p&gt;&lt;b&gt;내용&lt;/p&gt;     (X)
+                                                &lt;p&gt;&lt;b&gt;내용&lt;/b&gt;&lt;/p&gt; (O)
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">태그의 정확한 중첩관계</span>
+                                <p>태그의 중첩관계가 엇갈리지 않아야 한다.</p>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;span&gt;&lt;strong&gt;내용&lt;/span&gt;&lt;/strong&gt; (X)
+                                                &lt;span&gt;&lt;strong&gt;내용&lt;/strong&gt;&lt;/span&gt; (O)
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="fw_b">속성 이름과 속성 값의 정확한 사용</span>
+                                <ul class="wsg_desc_line">
+                                    <li>속성 값은 반드시 따옴표(")로 묶는다.</li>
+                                    <li>속성과 속성 사이에는 공백을 넣는다.</li>
+                                    <li>동일한 속성을 두 번 이상 선언하지 않는다.</li>
+                                    <li>속성 값으로 따옴표를 사용해야 할 경우에는 &quot;로 사용한다.</li>
+                                </ul>
+                                <div class="wsg_code">
+                                    <div class="syntaxhighlighter">
+                                        <figure class="highlight">
+                                            <pre class="brush:html;">
+                                                &lt;p class='notice'&gt;내용&lt;/p&gt;               (X)
+                                                &lt;p class="notice"&gt;내용&lt;/p&gt;               (O)
+                                                
+                                                &lt;p class="notice" class="style"&gt;내용&lt;/p&gt; (X)
+                                                &lt;p class="notice style"&gt;내용&lt;/p&gt;         (O)
+                                            </pre>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //4-1. 입력 도움 -->
+    
+                        <!-- 4-2. 웹 애플리케이션 접근성 -->
+                        <h3 id="waItem4_2" class="wsg_h3">4-2. 웹 애플리케이션 접근성</h3>
+                        <p>웹 콘텐츠는 마크업 언어의 문법을 준수해야 한다.</p>
+                        <ul class="wsg_desc">
+                            <li>플러그인이나 웹 애플리케이션을 제공하는 경우, 플러그인이나 웹 애플리케이션은 반드시 사용자의 접근성을 지원하도록 구현해야 한다.</li>
+                            <li>플러그인이나 웹 애플리케이션은 반드시 보조기술 사용자가 접근할 수 있는 대체 수단을 함께 제공해야 한다.</li>
+                        </ul>
+                        <h4 id="waItem4_2_1" class="wsg_h4">4-2-1. 웹 애플리케이션 접근성 준수</h4>
+                        <ul class="wsg_desc">
+                            <li>콘텐츠에 포함된 웹애플리케이션은 접근성이 있어야 한다.</li>
+                            <li>플래시는 사용하는 경우 : 플래시 버전은 그대로 두고, 플래시를 이용하지 못하는 사용자들을 위해 일반 HTML로 제공된 대체수단을 함께 제공</li>
+                        </ul>
+                        <!-- //4-2. 웹 애플리케이션 접근성 -->
+                        
+                    </div>
+                </section>
+                <!-- //waItem4 -->
+                
+                <p class="wsg_desc_guide" style="margin-top: 50px;">
+                    ※ 참고사이트<br>
+                    <a href="https://www.wah.or.kr:444/Participation/technique.asp?tab=1" target="_blank" class="wsg_link_basic">https://www.wah.or.kr:444/Participation/technique.asp?tab=1</a>
+                </p>
+                <!-- //접근성 검사항목 -->
+			</div>
+		</article><!-- //Content -->
+
+	</div>
+</div>
+</body>
+</html>

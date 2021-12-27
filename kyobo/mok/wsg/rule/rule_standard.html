@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>웹퍼블리싱가이드 - Standard Guide</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="Robots" content="noindex, nofollow" />
+	<!-- Front CSS-->
+	<link href="../resources/css/common.css" rel="stylesheet" />
+	
+	<!-- JS/Guide -->	
+	<script src="../resources/libs/jquery-3.6.0.min.js"></script>
+	<script src="../resources/js/guide.js"></script>
+	
+	<!-- codeview -->
+	<script src="../resources/libs/codeview/scripts/shCore.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shAutoLoader.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushjScript.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushXml.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushCss.js?cb=undefined"></script>
+	<link href="../resources/libs/codeview/styles/shCoreDefaultWhite.css" rel="stylesheet" />
+	<script>SyntaxHighlighter.config.bloggerMode = false;SyntaxHighlighter.defaults['smart_tabs'] = false;SyntaxHighlighter.all();</script>
+</head>
+<body>
+<div class="wsg_wrapper">
+	
+	<header class="wsg_header_wrapper js_wsg_header_wrapper">
+		<div class="wsg_header_inner">
+			<h1 class="wsg_logo"><a href="../../index.html">교보문고 3과제 웹퍼블리싱가이드</a></h1><button class="btn_aside is_clickEvent" type="button"><span>Menu</span></button>
+			<nav class="wsg_lnb">
+				<ul>
+					<li>
+						<a href="../../index.html">개요</a>
+					</li>
+					<li class="is_current">
+						<a href="rule_intro.html">규칙가이드</a>
+					</li>
+					<li>
+						<a href="../plan/plan_codeset.html">설계가이드</a>
+					</li>
+					<li>
+						<a href="../accessibility/wa_index.html">접근성점검</a>
+					</li>
+					<li>
+						<a href="../seo/seo_intro.html">SEO 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_ink.html">PC 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_mok.html">MO 가이드</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="wsg_container_wrapper">
+		<aside class="wsg_aside js_wsg_aside">
+			<div class="wsg_aside_scroll">
+				<nav class="wsg_snb">
+					<ul class="wsg_node1_list" style="display: block;">
+						<li class="wsg_node1">
+							<a href="#">규칙가이드</a>
+							<ul class="wsg_node2_list">
+								<li class="wsg_node2">
+									<a href="rule_intro.html">기본정책</a>
+								</li>
+								<li class="wsg_node2 is_current">
+									<a href="rule_standard.html">표준규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_name.html">네이밍 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_html_markup.html">HTML Markup 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_code_scss.html">SCSS 코드 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_code_css.html">CSS 코드 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_code_js.html">JS 코드 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_compile.html">로컬 테스트 가이드</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>			
+			</div>
+		</aside>
+		<!-- Content -->
+		<article class="wsg_content">
+			<div class="wsg_content_header">
+				<div class="wsg_inner">
+					<h1 class="wsg_h1">표준규칙</h1>
+				</div>
+			</div>
+			<div class="wsg_content_body">
+				<!-- section4 -->
+				<section id="section1" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">표준규칙</h2>
+					</div>
+					<div class="wsg_section_body">
+						<h3 class="wsg_h3">기본 HTML 문서 정의</h3>
+						<ul class="wsg_desc">
+							<li><a href="../plan/plan_codeset.html" class="wsg_link_basic">기본문서 코드레이아웃 참고</a></li>
+						</ul>
+
+						<h4 class="wsg_h4">DOCTYPE HTML5선언</h4>
+						<ul class="wsg_desc">
+							<li>HTML5로 선언한다.</li>
+                            <li>DTD 선언 시 앞에 공백이나 다른 문자가 오지 않도록 해야하며, 문서 최상단에 선언한다.</li>
+						</ul>
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;!DOCTYPE html&gt;
+							</pre>
+						</div>
+						<h4 class="wsg_h4">언어 정의</h4>
+						<ul class="wsg_desc">
+							<li>lang="ko"를 기본으로 표기하며 언어에 따라서 해당국가 언어로 표기한다.</li>
+							<li><a href="https://www.w3schools.com/tags/ref_language_codes.asp" class="wsg_link_basic" target="_blank" title="새창열림">https://www.w3schools.com/tags/ref_language_codes.asp</a> (참고)</li>
+						</ul>
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;html lang="ko"&gt; /* Korean 한국 */
+								&lt;html lang="en"&gt; /* English 영어 */
+								&lt;html lang="ja"&gt; /* Japanese 일본 */
+								&lt;html lang="zh"&gt; /* Chinese 중국 */
+								&lt;html lang="ru"&gt; /* Russian 러시아 */
+								&lt;html lang="de"&gt; /* German 독일 */
+							</pre>
+						</div>
+						<h4 class="wsg_h4">인코딩 정의</h4>
+						<ul class="wsg_desc">
+							<li>charset="utf-8"를 기본 값으로 사용하고, &lt;head&gt;첫 번째에 선언한다.</li>
+						</ul>
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;meta charset="utf-8" /&gt;
+							</pre>
+						</div>
+						<h4 class="wsg_h4">브라우저 호환성 모드(PC)</h4>
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+							</pre>
+						</div>
+						<h4 class="wsg_h4">뷰포트 정의</h4>
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,user-scalable=yes&quot; /&gt;
+							</pre>
+						</div>
+						<h4 class="wsg_h4">문서정보 정의</h4>
+                        <!-- TODO SEO 내용 확정 후 그에 맞는 내용으로 수정 필요 -->
+						<ul class="wsg_desc">
+							<li>&lt;meta&gt; : 최소한의 메타정보가 제공되어야 하며 상세내용은 기획과 협의필요.</li>
+							<li>keywords(키워드) : 페이지 키워드를 기재하고 콤마(,)로 구별하여 기술/동의어와 유의어를 포함.</li>
+							<li>description(페이지 정보 요약) : 구글검색에서 결과 페이지 내용 미리보기로 사용할 수도 있음.</li>
+							<li>참고 : <a href="https://static.googleusercontent.com/media/www.google.co.kr/ko/kr/intl/ko/webmasters/docs/search-engine-optimization-starter-guide-ko.pdf" target="_blank" class="wsg_link_basic">구글 검색엔진 최적화 방법</a></li>
+						</ul>
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;meta name="Author" content="url" /&gt;
+								&lt;meta name="title" content="내용" /&gt;
+								&lt;meta name="keywords" content="내용" /&gt;
+								&lt;meta name="description" content="내용" /&gt;
+							</pre>
+						</div>
+
+						<h3 class="wsg_h3">표준 문법의 사용</h3>
+						<ul class="wsg_desc">
+							<li>HTML은 해당 DTD의 명세에 맞게 작성하며, <a href="http://validator.kldp.org/" target="_blank"  class="wsg_link_basic" title="새창">W3C validation</a>을 통과해야 한다.</li>
+							<li>DTD를 제외한 모든 엘리먼트와 애트리뷰트는 소문자로 작성한다.</li>
+							<li>애트리뷰트의 값은 큰따옴표("")로 묶는다.</li>
+							<li>특수기호는 Entity name을 사용하여 Entity 코드로 변환한다. Entity 코드는 ISO-8859-1을 기준으로 한다.</li>
+							<li>마크업은 <a href="http://www.w3.org/html/wg/drafts/html/master/" target="_blank"  class="wsg_link_basic" title="새창">W3C html5문법</a>에 준하여 사용한다.</li>
+							<li>종료 태그는 생략하지 않는다.</li>
+						</ul>
+
+						<h3 class="wsg_h3">구조, 표현, 동작의 분리</h3>
+						<h4 class="wsg_h4">기본사항</h4>
+						<ul class="wsg_desc">
+							<li>HTML 구조와 디자인 표현, 동작의 구현은 분리하여 작업한다.</li>
+						</ul>
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;!-- 잘못된 예 --&gt;
+								&lt;img width=&quot;200&quot; height=&quot;100&quot; /&gt;
+
+								&lt;button class=&quot;btn_something&quot; onclick=&quot;something();&quot;&gt;버튼&lt;/button&gt;
+								&lt;script&gt;
+									function something() {
+
+									}
+								&lt;/script&gt;
+
+								&lt;!-- 올바른 예 --&gt;
+								&lt;img class=&quot;image&quot; /&gt;
+								.image {width: 200px; height: 100px;}
+
+								&lt;button class=&quot;btn_something&quot;&gt;버튼&lt;/button&gt;
+								&lt;script&gt;
+									$(&#39;.btn_something&#39;).on(&#39;click&#39;, function(event) {
+
+									});
+								&lt;/script&gt;
+							</pre>
+						</div>
+
+						<h4 class="wsg_h4">예외사항</h4>
+                        <ul class="wsg_desc">
+                            <li>table의 col엘리먼트는 style속성으로 적용한다.</li>
+                            <li>input[text], select 엘리먼트의 경우 너비의 고정폭 지정 허용한다.</li>
+							<li>임시로 경고창을 띄워야 하는 경우, 사이즈를 지정해서 윈도우 팝업창을 띄울 경우는 예외로 한다.</li>
+                        </ul>
+						<div class="wsg_code">
+							<pre class="brush:html">
+								&lt;table&gt;
+                                    &lt;colgroup&gt;
+                                        &lt;col style="width: 50%" /&gt;
+                                        &lt;col style="width: auto" /&gt;
+                                    &lt;/colgroup&gt;
+								&lt;/table&gt;
+        
+								&lt;input type="text" id="formMyClass" class="my_class" style="width:80%;" /&gt;
+
+								&lt;!-- 예외사항 : 임시로 경고창을 띄워야 하는 경우 --&gt;
+								&lt;a href=&quot;#&quot; onclick=&quot;alert(&#39;준비중입니다.&#39;);return false;&quot;&gt;링크&lt;/a&gt;
+
+								&lt;!-- 사이즈를 지정해서 윈도우 팝업창을 띄울 경우 --&gt;
+								&lt;a href=&quot;http://...&quot; onclick=&quot;window.open(this.href,&#39;pop&#39;,&#39;width=400,height=300&#39;);return false;&quot; title=&quot;새 창으로 열기&quot;&gt;팝업&lt;/a&gt;
+							</pre>
+						</div>
+      
+						<h3 class="wsg_h3">특수기호 Entity name</h3>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption>주의 해야할 특수기호</caption>
+								<tbody>
+									<tr>
+										<th>Character</th>
+										<td>&#8361;</td>
+										<td>"</td>
+										<td>&amp;</td>
+										<td>&lt;</td>
+										<td>&gt;</td>
+										<td>&nbsp;</td>
+										<td>&middot;</td>
+									</tr>
+									<tr>
+										<th>Entity Name</th>
+										<td>&amp;#8361;</td>
+										<td>&amp;quot;</td>
+										<td>&amp;amp;</td>
+										<td>&amp;lt;</td>
+										<td>&amp;gt;</td>
+										<td>&amp;nbsp;</td>
+										<td>&amp;middot;</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="wsg_desc_guide">* 참고 : <a href="http://www.w3schools.com/html/html_entities.asp" target="_blank" title="새창">HTML Entities</a></p>
+					</div>
+				</section>
+				<section id="section2" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">시맨틱 마크업</h2>
+					</div>
+					<div class="wsg_section_body">
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption>시맨틱 마크업</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:auto">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">종류</th>
+										<th scope="col">구분</th>
+										<th scope="col">태그</th>
+										<th scope="col">설명</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td rowspan="2">그룹</td>
+										<td>블록타입</td>
+										<td>div</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>인라인타입</td>
+										<td>span</td>
+										<td></td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr>
+										<td rowspan="6">목차</td>
+										<td>목차 1레벨</td>
+										<td>h1</td>
+										<td>페이지 제목 최상위 레벨(문서 필수 요소)</td>
+									</tr>
+									<tr>
+										<td>목차 2레벨</td>
+										<td>h2</td>
+										<td>페이지 제목 수준</td>
+									</tr>
+									<tr>
+										<td>목차 3레벨</td>
+										<td>h3</td>
+										<td>컨텐츠 핵심 제목 수준</td>
+									</tr>
+									<tr>
+										<td>목차 4레벨</td>
+										<td>h4</td>
+										<td>컨텐츠 부 제목 수준</td>
+									</tr>
+									<tr>
+										<td>목차 5레벨</td>
+										<td>h5</td>
+										<td>컨텐츠 상세 제목 수준</td>
+									</tr>
+									<tr>
+										<td>목차 6레벨</td>
+										<td>h6</td>
+										<td>컨텐츠 상세 제목 수준</td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr>
+										<td rowspan="5">내용<br>(Block Type)</td>
+										<td>순서 없는 리스트</td>
+										<td>ul, li</td>
+										<td>도형, 도트 블릿 리스트 또는 반복적인 컨텐츠 그룹에 사용한다.</td>
+									</tr>
+									<tr>
+										<td>순서 있는 리스트</td>
+										<td>ol, li</td>
+										<td>순차적인 블릿 리스트 또는 순서가 중요한 컨텐츠 그룹에 사용한다.</td>
+									</tr>
+									<tr>
+										<td>정의 리스트</td>
+										<td>dl, dt, dd</td>
+										<td>목차를 대신하여 사용하지 않으며 dt, dd를 모두 갖추어야 한다.</td>
+									</tr>
+									<tr>
+										<td>단락</td>
+										<td>p</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>연락처정보</td>
+										<td>address</td>
+										<td></td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr>
+										<td rowspan="11">내용<br>(Inline Type)</td>
+										<td>링크</td>
+										<td>a</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>중요한</td>
+										<td>strong</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>주목이 필요한 텍스트</td>
+										<td>b</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>일반강조</td>
+										<td>em</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>문맥상 구분</td>
+										<td>i</td>
+										<td>전문용어나 다른 언어의 관용구, 문어체, 서양 문헌에 나오는 배 이름 등을 나타낼 때 사용한다.</td>
+									</tr>
+									<tr>
+										<td>정의</td>
+										<td>dfn</td>
+										<td>title속성을 사용하여 용어를 정의한다.</td>
+									</tr>
+									<tr>
+										<td>작은 텍스트</td>
+										<td>small</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>삭제된 내용</td>
+										<td>del</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>올바르지 않음, 관련 없음</td>
+										<td>s</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>추가된 내용</td>
+										<td>ins</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>철자오류</td>
+										<td>u</td>
+										<td></td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr>
+										<td rowspan="5">서식<br></td>
+										<td>서식 그룹</td>
+										<td>fieldset</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>서식 제목</td>
+										<td>legend</td>
+										<td>서식 그룹의 제목</td>
+									</tr>
+									<tr>
+										<td>라벨</td>
+										<td>label</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>입력, 선택 컨트롤</td>
+										<td>input, textarea, select</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>버튼</td>
+										<td>button</td>
+										<td>일반 버튼타입과 전송타입의 버튼 있다.</td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr>
+										<td rowspan="10">표<br></td>
+										<td>표</td>
+										<td>table</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>표 제목</td>
+										<td>caption</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>표 열 그룹</td>
+										<td>colgroup</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>표 열</td>
+										<td>col</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>표 헤더</td>
+										<td>thead</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>표 본문</td>
+										<td>tbody</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>표 푸터</td>
+										<td>tfoot</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>표 행</td>
+										<td>tr</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>표 제목셀</td>
+										<td>th</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>표 내용셀</td>
+										<td>td</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption>시맨틱 마크업</caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:20%">
+									<col style="width:auto">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">종류</th>
+										<th scope="col">구분</th>
+										<th scope="col">태그</th>
+										<th scope="col">설명</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td rowspan="9">레이아웃</td>
+										<td>헤더</td>
+										<td>header</td>
+										<td>페이지 또는 섹션의 헤더 영역을 정의한다.</td>
+									</tr>
+									<tr>
+										<td>푸터</td>
+										<td>footer</td>
+										<td>문서나 섹션의 푸터 영역을 정의한다.</td>
+									</tr>
+									<tr>
+										<td>내비게이션</td>
+										<td>nav</td>
+										<td>페이지 내의 네비게이션 부분을 지정한다.</td>
+									</tr>
+									<tr>
+										<td>메인</td>
+										<td>main</td>
+										<td>페이지의 중요한 메인 컨텐츠 영역을 지정한다.</td>
+									</tr>
+									<tr>
+										<td>섹션</td>
+										<td>section</td>
+										<td>페이지 내의 섹션을 정의한다.</td>
+									</tr>
+									<tr>
+										<td>아티클</td>
+										<td>article</td>
+										<td>독립적인 컨텐츠를 정의한다.</td>
+									</tr>
+									<tr>
+										<td>사이드 컨텐츠</td>
+										<td>aside</td>
+										<td>주요 컨텐츠 사이드에 위치한 요소들을 정의한다. </td>
+									</tr>
+									<tr>
+										<td>세부 컨텐츠</td>
+										<td>details</td>
+										<td>사용자가 보거나 숨길 수 있는 세부 컨텐츠를 정의할 때 사용한다.</td>
+									</tr>
+									<tr>
+										<td>&lt;details&gt; 컨텐츠 제목</td>
+										<td>summary</td>
+										<td>&lt;details&gt; 컨텐츠 내에 보여지는 제목으로 사용한다.</td>
+									</tr>
+									<tr>
+										<td rowspan="2">미디어</td>
+										<td>비디오</td>
+										<td>video</td>
+										<td>비디오 컨텐츠를 삽입할 때 사용한다.</td>
+									</tr>
+									<tr>
+										<td>오디오</td>
+										<td>audio</td>
+										<td>오디오 컨텐츠를 삽입할 때 사용한다.</td>
+									</tr>
+									<tr>
+										<td rowspan="2">기타</td>
+										<td>이미지</td>
+										<td>figure</td>
+										<td>사진, 이미지, 다이어그램 같은 컨텐츠를 정의할 때 사용한다.</td>
+									</tr>
+									<tr>
+										<td>&lt;figure&gt; 컨텐츠 제목</td>
+										<td>figcaption</td>
+										<td>&lt;figure&gt; 컨텐츠의 제목을 정의할 때 사용한다.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section id="section3" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">에디터 설정</h2>
+					</div>
+					<div class="wsg_section_body">
+						<ul class="wsg_desc">
+							<li>
+								코드 들여쓰기 : 자식 요소는 1탭 들여쓰기 하며, 1탭의 크기는 공백 4칸으로 설정한다.
+								<ul class="wsg_desc_line">
+									<li>Webstorm : Editor &gt; Code Style &gt; Style Sheet[CSS, SCSS], HTML, JavaScript : Use tab character 체크, Tab size 값 "4"</li>
+									<li>MS VS Code : File &gt; Preferences &gt; Text Editor : Insert Spaces 체크 해제, Tab Size 값 "4"</li>
+								</ul>
+							</li>
+							<li>
+								에디터의 자동 줄바꿈 라인은 120자로 한다.
+								<ul class="wsg_desc_line">
+									<li>Webstorm : Settings &gt; Editor &gt; Code Style &quot;Hard wrap at&quot; 값 "120"</li>
+									<li>MS VS Code : File &gt; Preferences &gt; Text Editor : Word Wrap Column 값 "120"</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</article>
+		<!-- //Content -->
+
+	</div>
+
+</div>
+</body>
+</html>

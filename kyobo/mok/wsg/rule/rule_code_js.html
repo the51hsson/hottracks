@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>웹퍼블리싱가이드 - Standard Guide</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="Robots" content="noindex, nofollow" />
+	<!-- Front CSS-->
+	<link href="../resources/css/common.css" rel="stylesheet" />
+	 
+	<!-- JS/Guide -->	
+	<script src="../resources/libs/jquery-3.6.0.min.js"></script>
+	<script src="../resources/js/guide.js"></script>
+	
+	<!-- codeview -->
+	<script src="../resources/libs/codeview/scripts/shCore.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shAutoLoader.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushjScript.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushXml.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushCss.js?cb=undefined"></script>
+	<link href="../resources/libs/codeview/styles/shCoreDefaultWhite.css" rel="stylesheet" />
+	<script>SyntaxHighlighter.config.bloggerMode = false;SyntaxHighlighter.defaults['smart_tabs'] = false;SyntaxHighlighter.all();</script>
+</head>
+
+<body>
+<div class="wsg_wrapper">
+	
+	<header class="wsg_header_wrapper js_wsg_header_wrapper">
+		<div class="wsg_header_inner">
+			<h1 class="wsg_logo"><a href="../../index.html">교보문고 3과제 웹퍼블리싱가이드</a></h1><button class="btn_aside is_clickEvent" type="button"><span>Menu</span></button>
+			<nav class="wsg_lnb">
+				<ul>
+					<li>
+						<a href="../../index.html">개요</a>
+					</li>
+					<li class="is_current">
+						<a href="rule_intro.html">규칙가이드</a>
+					</li>
+					<li>
+						<a href="../plan/plan_codeset.html">설계가이드</a>
+					</li>
+					<li>
+						<a href="../accessibility/wa_index.html">접근성점검</a>
+					</li>
+					<li>
+						<a href="../seo/seo_intro.html">SEO 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_ink.html">PC 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_mok.html">MO 가이드</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="wsg_container_wrapper">
+		<aside class="wsg_aside js_wsg_aside">
+			<div class="wsg_aside_scroll">
+				<nav class="wsg_snb">
+					<ul class="wsg_node1_list" style="display: block;">
+						<li class="wsg_node1">
+							<a href="#">규칙가이드</a>
+							<ul class="wsg_node2_list">
+								<li class="wsg_node2">
+									<a href="rule_intro.html">기본정책</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_standard.html">표준규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_name.html">네이밍 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_html_markup.html">HTML Markup 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_code_scss.html">SCSS 코드 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_code_css.html">CSS 코드 규칙</a>
+								</li>
+								<li class="wsg_node2 is_current">
+									<a href="rule_code_js.html">JS 코드 규칙</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="rule_compile.html">로컬 테스트 가이드</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>			
+			</div>
+		</aside>
+		<!-- Content -->
+		<article class="wsg_content">
+			<div class="wsg_content_header">
+				<div class="wsg_inner">
+					<h1 class="wsg_h1">JS 코드 규칙</h1>
+				</div>
+			</div>
+			<div class="wsg_content_body">
+				<!-- section3 -->
+				<section id="section3" class="wsg_section wsg_inner">
+					<div class="wsg_section_header">
+						<h2 class="wsg_h2">코드 규칙</h2>
+					</div>
+					<div class="wsg_section_body">
+						
+						<h3 class="wsg_h3">JS 기본 규칙</h3>
+						<h4 class="wsg_h4">파일명세</h4>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<!-- s : pre in 보여질 코드삽입 -->
+									<pre class="brush:js;">
+									/*
+									 * name : common.func.js
+									 * desc : 페이지 내 공통 실행이 필요한 함수 include
+									 * writer : glim
+									 * create : 2018/01/24
+									 * update : 2018/05/03
+									 * - 20180503 JS 수정내용 기입
+									 */
+									</pre>
+									<!-- e : pre in 보여질 코드삽입 -->
+								</figure>							
+							</div>
+						</div>
+
+						<h3 class="wsg_h3">주석/블럭구분</h3>
+						<ul class="wsg_desc">
+							<li>1탭 들여쓰기 하며, 1탭의 크기는 공백 4칸으로 설정한다.</li>
+						</ul>
+
+						<h4 class="wsg_h4">TODO 주석의 사용</h4>
+						<ul class="wsg_desc">
+							<li>TODO 주석을 기입할 경우 타인이 해당 내용을 이해할 수 있도록 상세하게 작성한다.</li>
+							<li>TODO 내용 해결 후 반드시 주석을 <span class="wsg_txt_red">삭제</span>한다.</li>
+
+						</ul>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<pre class="brush: js;">
+										// 올바른 예
+										/* TODO Modal Popup이 노출된 상태에서 select 선택 레이어 노출시 Modal 아래로 노출되는 오류 수정 필요 */
+
+										// 잘못된 예
+										/* TODO 오류 수정 필요 */
+									</pre>
+								</figure>
+							</div>
+						</div>
+
+						<h3 class="wsg_h3">변수(Variables)</h3>
+						<ul class="wsg_desc">
+							<li>코드의 가독성과 유지보수를 위해 변수는 함수 등의 최상단부에 선언(호이스팅, Hoisting)한다.</li>
+							<li>코드의 통일성을 위해 변수의 기본값을 변수 선언과 같이 하지 않는다.</li>
+							<li>객체에 속성 추가시 편의성 제고를 위해 객체 리터럴의 ECMAScript5 부터 지원되는 후행 쉼표 처리를 한다.</li>
+							<li>변수 선언부가 길어지는 경우 개행을 허용하며 개행시 객체 리터럴과 동일한 가독성을 위해 쉼표(,) 이후로 개행한다.</li>
+						</ul>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<pre class="brush: js;">
+										// 올바른 예
+
+										// 객체 리터럴 후행 쉼표
+										var object, arr;
+										object = {
+											foo: "bar",
+											baz: "qwerty",
+											age : 42,
+										};
+
+										arr = [
+											1,
+											2,
+											3,
+										];
+
+										function showDialog() {
+											var isShown, count, data,
+												status,
+												value;
+											isShown = false;
+											count = 0;
+											...
+										}
+
+										// 잘못된 예
+										function showDialog() {
+											// 변수 선언과 함께 기본값을 설정한 예
+											var isShown = false
+												, data	// 쉼표 개행이 잘못된 예
+												, status
+												, value;
+											...
+											// 호이스팅 처리가 안된 예
+											var _count = 0;
+											...
+										}
+									</pre>
+								</figure>
+							</div>
+						</div>
+
+						<h3 class="wsg_h3">함수(Function)</h3>
+						
+						<h4 class="wsg_h4">함수</h4>
+						<ul class="wsg_desc">
+							<li>함수에 설명은 파라미터와 함께 꼼꼼히 작성한다.</li>
+							<li>작성 규칙은 JSDoc의 <a class="wsg_link_basic" href="https://jsdoc.app/howto-commonjs-modules.html#values-assigned-to-moduleexports-and-local-variables" target="_blank">CommonJS Modules</a> 규칙 중 함수에 관한 부분을 차용한다.</li>
+						</ul>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<!-- s : pre in 보여질 코드삽입 -->
+									<pre class="brush:js;">
+										/**
+										 * jQuery UI Slider 설정
+										 * @param {HTMLElement} selector - slider 생성 할 DOM 셀렉터(default : .slider_range)
+										 * @return {HTMLElement} 생성된 slider HTMLElement
+										 */
+										function setSliderRange(selector) {
+											var element;
+											selector = selector || '.slider_range';
+											element = document.querySelector(selector);
+											...
+											return element;
+										}
+									</pre>
+									<!-- e : pre in 보여질 코드삽입 -->
+								</figure>
+							
+							</div>
+						</div>
+
+						<h4 class="wsg_h4">조건문</h4>
+						<ul class="wsg_desc">
+							<li>K&R 방법 : 여는블록({)을 조건과 같은 줄에 배치한다.</li>
+							<li>if / else if와 조건식 사이는 한칸 띄어쓰기 한다</li>
+						</ul>
+						<div class="wsg_code">
+							<div class="syntaxhighlighter">
+								<figure class="highlight">
+									<!-- s : pre in 보여질 코드삽입 -->
+									<pre class="brush:js;">
+										if (조건식) {
+
+										} else if (조건식) {
+
+										} else {
+
+										}
+									</pre>
+									<!-- e : pre in 보여질 코드삽입 -->
+								</figure>
+
+							</div>
+						</div>
+
+						<h3 class="wsg_h3">Event</h3>
+
+						<h4 class="wsg_h4">jQuery Event namespace 속성 활용</h4>
+						<ul class="wsg_desc">
+							<li>jQuery를 이벤트 등록 후 삭제 또는 트리거 시 네임스페이스를 지정하지 않는 경우 의도치 않은 이벤트를 삭제하거나 이벤트 핸들러가 실행될 수 있다.</li>
+							<li>이를 해결하기 위한 방법으로 jQuery에서 기본적으로 제공하는 namespace 기능을 활용한다.</li>
+						</ul>
+						<div class="wsg_tbl_type1">
+							<table>
+								<caption>jQuery Event namespace 속성정의</caption>
+								<colgroup>
+									<col style="width:120px;">
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>네임스페이스명</th>
+										<th>적용대상</th>
+										<th>예시</th>
+									</tr>
+									<tr>
+										<td class="al_c">uiCommon</td>
+										<td>공통 resize, scroll, load</td>
+										<td>$(window).on('resize.uiCommon', function () { ... })</td>
+									</tr>
+									<tr>
+										<td class="al_c">uiGNB</td>
+										<td>setHeader() 함수 내부에서 resize, scroll 이벤트 사용</td>
+										<td>$(window).off('resize.uiGNB scroll.uiGNB', setScrollUp).on('resize.uiGNB scroll.uiGNB', setScrollUp);</td>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</section>
+				<!-- //section3 -->
+			</div>
+		</article>
+		<!-- //Content -->
+
+	</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>웹퍼블리싱가이드 - Standard Guide</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="Robots" content="noindex, nofollow" />
+	<!-- Front CSS-->
+	<link href="../resources/css/common.css" rel="stylesheet" />
+	
+	<!-- JS/Guide -->	
+	<script src="../resources/libs/jquery-3.6.0.min.js"></script>
+	<script src="../resources/js/guide.js"></script>
+	
+	<!-- codeview -->
+	<script src="../resources/libs/codeview/scripts/shCore.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shAutoLoader.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushjScript.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushXml.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushPhp.js?cb=undefined"></script>
+	<script src="../resources/libs/codeview/scripts/shBrushCss.js?cb=undefined"></script>
+	<link href="../resources/libs/codeview/styles/shCoreDefaultWhite.css" rel="stylesheet" />
+	<script>SyntaxHighlighter.config.bloggerMode = false;SyntaxHighlighter.defaults['smart_tabs'] = false;SyntaxHighlighter.all();</script>
+</head>
+
+<body>
+<div class="wsg_wrapper">
+	<header class="wsg_header_wrapper js_wsg_header_wrapper">
+		<div class="wsg_header_inner">
+			<h1 class="wsg_logo"><a href="../../index.html">교보문고 3과제 웹퍼블리싱가이드</a></h1><button class="btn_aside is_clickEvent" type="button"><span>Menu</span></button>
+			<nav class="wsg_lnb">
+				<ul>
+					<li>
+						<a href="../../index.html">개요</a>
+					</li>
+					<li>
+						<a href="../rule/rule_intro.html">규칙가이드</a>
+					</li>
+					<li class="is_current">
+						<a href="plan_codeset.html">설계가이드</a>
+					</li>
+					<li>
+						<a href="../accessibility/wa_index.html">접근성점검</a>
+					</li>
+					<li>
+						<a href="../seo/seo_intro.html">SEO 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_ink.html">PC 가이드</a>
+					</li>
+					<li>
+						<a href="../../index_mok.html">MO 가이드</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="wsg_container_wrapper">
+		<aside class="wsg_aside js_wsg_aside">
+			<div class="wsg_aside_scroll">
+				<nav class="wsg_snb">
+					<ul class="wsg_node1_list" style="display: block;">
+						<li class="wsg_node1">
+							<a href="#">설계가이드</a>
+							<ul class="wsg_node2_list">
+								<li class="wsg_node2 is_current">
+									<a href="plan_codeset.html">기본 코드셋</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="plan_layout.html">레이아웃 구조</a>
+								</li>
+								<li class="wsg_node2">
+									<a href="plan_plugin.html">플러그인</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+		<!-- Content -->
+		<!-- Content -->
+		<article class="wsg_content">
+			<div class="wsg_content_inner">
+				<div class="wsg_content_header">
+					<h1 class="wsg_h1">Codeset</h1>
+				</div>
+				<div class="wsg_content_body">
+					<!-- section1 -->
+					<section class="wsg_section" id="wsg_section1">
+						<div class="wsg_section_header">
+							<h2 class="wsg_h2">HTML</h2>
+						</div>
+						<div class="wsg_section_body">
+							<div class="wsg_example_wrap">
+								<div class="wsg_example_header">
+									<strong class="wsg_example_tit"></strong>
+									<div class="wsg_example_nav">
+										<span class="wsg_example_txt"></span>
+										<a class="wsg_example_btn is_active" href="#tabContentCode1_1">HTML Default</a>
+										<a class="wsg_example_btn" href="#tabContentCode1_2">HTML Layout HTML5</a>
+										<a class="wsg_example_btn" href="#tabContentCode1_3">HTML Layout </a>
+									</div>
+								</div>
+								<div class="wsg_example_footer is_active" id="tabContentCode1_1">
+									<div class="wsg_code">
+										<div class="syntaxhighlighter">
+											<figure class="highlight">
+												<!-- s : pre in 보여질 코드삽입 -->
+												<pre class="brush: php; html-script: true">
+												&lt;!DOCTYPE html>
+												&lt;html lang="ko">
+												&lt;head>
+												&lt;meta charset="utf-8">
+												&lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+												&lt;meta http-equiv="imagetoolbar" content="no">
+												&lt;meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+												&lt;meta name="keywords" content="프로젝트키워드, 프로젝트 키워드">
+												&lt;meta name="description" content="프로젝트 설명, 프로젝트 설명">
+												&lt;title>Page | 페이지명&lt;/title>
+
+												&lt;!-- Plug-In css --&gt;
+												&lt;link rel=&quot;stylesheet&quot; href=&quot;../resources/pc/css/lib/jquery-ui-1.12.1/jquery-ui.min.css&quot;&gt;
+												&lt;!-- //Plug-In css --&gt;
+
+												&lt;!-- front ui CSS --&gt;
+												&lt;link rel=&quot;stylesheet&quot; href=&quot;../resources/css/common.css&quot; type=&quot;text/css&quot;&gt;
+												&lt;link rel=&quot;stylesheet&quot; href=&quot;../resources/css/layout.css&quot; type=&quot;text/css&quot;&gt;
+												&lt;link rel=&quot;stylesheet&quot; href=&quot;../resources/css/content.css&quot; type=&quot;text/css&quot;&gt;
+												&lt;link rel=&quot;stylesheet&quot; href=&quot;../resources/css/main.css&quot; type=&quot;text/css&quot;&gt;
+												&lt;!-- //front ui CSS --&gt;
+
+												&lt;!-- Plug-In javascript --&gt;
+												&lt;script src=&quot;../resources/js/lib/jquery-3.2.0/jquery-3.2.0.min.js&quot;&gt;&lt;/script&gt;
+												&lt;script src=&quot;../resources/js/lib/jquery-ui-1.12.1/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
+												&lt;!-- //Plug-In javascript --&gt;
+
+												&lt;!-- front ui javascript --&gt;
+												&lt;script src=&quot;../resources/js/front.ui.js&quot;&gt;&lt;/script&gt;
+												&lt;script src=&quot;../resources/js/common.ui.js&quot;&gt;&lt;/script&gt;
+												&lt;!-- //front ui javascript --&gt;
+												&lt;/head>
+												&lt;body>
+												&lt;/body>
+												&lt;/html>
+												</pre>
+												<!-- e : pre in 보여질 코드삽입 -->
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="wsg_example_footer" id="tabContentCode1_2">
+									<div class="wsg_code">
+										<div class="syntaxhighlighter">
+											<figure class="highlight">
+												<!-- s : pre in 보여질 코드삽입 -->
+												<pre class="brush: php; html-script: true">
+													&lt;!-- SkipNav --&gt;
+													&lt;div id=&quot;skipNav&quot;&gt;&lt;/div&gt;
+													&lt;!-- //SkipNav --&gt;
+
+													&lt;!-- wrapper --&gt;
+													&lt;div class=&quot;wrapper&quot;&gt;
+														&lt;!-- header_wrapper --&gt;
+														&lt;header class=&quot;header_wrapper&quot;&gt;&lt;/header&gt;
+														&lt;!-- //header_wrapper --&gt;
+
+														&lt;!-- container_wrapper --&gt;
+														&lt;div class=&quot;container_wrapper&quot;&gt;&lt;/div&gt;
+														&lt;!-- //container_wrapper --&gt;
+
+														&lt;!-- footer_wrapper --&gt;
+														&lt;footer class=&quot;footer_wrapper&quot;&gt;&lt;/footer&gt;
+														&lt;!-- //footer_wrapper --&gt;
+													&lt;/div&gt;
+													&lt;!-- //wrapper --&gt;
+												</pre>
+												<!-- e : pre in 보여질 코드삽입 -->
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="wsg_example_footer" id="tabContentCode1_3">
+									<div class="wsg_code">
+										<div class="syntaxhighlighter">
+											<figure class="highlight">
+												<!-- s : pre in 보여질 코드삽입 -->
+												<pre class="brush: php; html-script: true">
+													&lt;!-- SkipNav --&gt;
+													&lt;div id=&quot;skipNav&quot;&gt;&lt;/div&gt;
+													&lt;!-- //SkipNav --&gt;
+
+													&lt;!-- wrapper --&gt;
+													&lt;div class=&quot;wrapper&quot;&gt;
+														&lt;!-- header_wrapper --&gt;
+														&lt;div class=&quot;header_wrapper&quot;&gt;&lt;/div&gt;
+														&lt;!-- //header_wrapper --&gt;
+
+														&lt;!-- container_wrapper --&gt;
+														&lt;div class=&quot;container_wrapper&quot;&gt;&lt;/div&gt;
+														&lt;!-- //container_wrapper --&gt;
+
+														&lt;!-- footer_wrapper --&gt;
+														&lt;div class=&quot;footer_wrapper&quot;&gt;&lt;/div&gt;
+														&lt;!-- //footer_wrapper --&gt;
+													&lt;/div&gt;
+													&lt;!-- //wrapper --&gt;
+												</pre>
+												<!-- e : pre in 보여질 코드삽입 -->
+											</figure>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</section><!-- //section1 -->
+
+					<!-- section2 -->
+					<section class="wsg_section" id="wsg_section2">
+						<div class="wsg_section_header">
+							<h2 class="wsg_h2">CSS</h2>
+						</div>
+						<div class="wsg_section_body">
+							<div class="wsg_example_wrap">
+								<div class="wsg_example_header">
+									<strong class="wsg_example_tit"></strong>
+									<div class="wsg_example_nav">
+										<span class="wsg_example_txt"></span>
+										<a class="wsg_example_btn is_active" href="#tabContentCode2_1">Reset</a>
+										<a class="wsg_example_btn" href="#tabContentCode2_2">Common</a>
+										<a class="wsg_example_btn" href="#tabContentCode2_3">Layout</a>
+										<a class="wsg_example_btn" href="#tabContentCode2_4">Contents</a>
+										<a class="wsg_example_btn" href="#tabContentCode2_5">Main</a>
+										<a class="wsg_example_btn" href="#tabContentCode2_6">Icon</a>
+									</div>
+								</div>
+								<div class="wsg_example_footer is_active" id="tabContentCode2_1">
+									<div class="wsg_code">
+										<div class="syntaxhighlighter">
+											<figure class="highlight">
+												<!-- s : pre in 보여질 코드삽입 -->
+												<pre class="brush: css;">
+												@charset 'utf-8';
+												/*
+												 * 파일정의 : reset.css
+												 * 파일설명 : reset css
+												 * 작성자 :  glim 홍길동
+												 * 주의사항 : 주석표기는 페이지 접근방법을 알수 있도록 표시
+												 * 최초작성일 : 2018/10/10
+												 * 최종수정일 : 2018/10/18
+												 */
+												/* Base */
+												html, body, div, ul, ol, dl, li, dd, p, h1, h2, h3, h4, h5, h6, table, th, td, caption, address, article, aside, canvas, details, figure, figcaption, footer, header, menu, nav, section, button, select, textarea, input, fieldset, legend, a, span, strong, em, address, dfn, small, i, b {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; margin: 0; padding: 0; border: 0; list-style: none; word-break: break-all; font-family: "Lato","Helvetica Neue", "Dotum", "Dotumche", "돋움", "돋움체", "Arial"; font-style : normal; font-weight: normal;}
+												:before, :after {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box;}
+												article, aside, canvas, details, figure, figcaption, footer, header, menu, nav, section {display: block;}
+												html {font-size : 14px;}
+												hr {display: none;}
+												img {vertical-align: middle;}
+												button {background-color: transparent;}
+												fieldset, iframe {width: 100%;}
+												img, a, frame, iframe, fieldset {border: 0;}
+												table {width: 100%; border-spacing 0; border-collapse: collapse;}
+												caption {visibility: hidden; height: 0; line-height: 0; font-size: 0;}
+												legend {position: absolute; left: -9999em; top: -9999em;}
+
+												</pre>
+												<!-- e : pre in 보여질 코드삽입 -->
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="wsg_example_footer" id="tabContentCode2_2">
+									<div class="wsg_code">
+										<div class="syntaxhighlighter">
+											<figure class="highlight">
+												<!-- s : pre in 보여질 코드삽입 -->
+												<pre class="brush: css;">
+  													@charset 'utf-8';
+													/*
+													 * 파일정의 : common.css
+													 * 파일설명 : 전역스타일 공통
+													 * 작성자 :  glim 홍길동
+													 * 주의사항 : 주석표기는 페이지 접근방법을 알수 있도록 표시
+													 * 최초작성일 : 2018/10/10
+													 * 최종수정일 : 2018/10/18
+													 */
+													/* IR */
+													/* 화면에서 숨김 */
+													.offscreen {position: absolute; display: block; overflow: hidden; height: 1px; width: 1px; clip: rect(1px, 1px, 1px, 1px);}
+
+
+													/* skipNav */
+													#skipNav a {overflow: hidden; position: absolute; display: inline-block; /* width: 100%; */ font-size : inherit; text-decoration: none; padding: 0 15px 0; z-index: 100; top: -10000px; left: 0; font-size : 14px;}
+													#skipNav a:focus {display: inline-block; top: 0; left: 0; background: #000; color: #fff; z-index: 503; min-height: 35px; vertical-align: middle; padding-top: 10px;}
+
+
+													/* Link */
+													a {color:#333; text-decoration:none;}
+													a:active, a:visited, a:link {color:#333;}
+													a:hover {color:#333}
+
+
+													/* TAB */
+
+
+													/* Table */
+
+												</pre>
+												<!-- e : pre in 보여질 코드삽입 -->
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="wsg_example_footer" id="tabContentCode2_3">
+									<div class="wsg_code">
+										<div class="syntaxhighlighter">
+											<figure class="highlight">
+												<!-- s : pre in 보여질 코드삽입 -->
+												<pre class="brush: css;">
+												@charset 'utf-8';
+												/*
+												 * 파일정의 : layout.css
+												 * 파일설명 : 레이아웃
+												 * 작성자 :  glim 홍길동
+												 * 주의사항 : 주석표기는 페이지 접근방법을 알수 있도록 표시
+												 * 최초작성일 : 2018/10/10
+												 * 최종수정일 : 2018/10/18
+												 */
+												/* wrapper */
+
+
+												/* header */
+
+
+												/* container */
+
+												/* footer */
+
+
+												/* Navigation */
+												/* GNB (Global Nav) */
+
+												/* UNB (Util Nav) */
+
+												/* LNB (Local Nav) */
+
+												/* ANB (All Nav) */
+
+												/* MNB (Mobile Nav) */
+
+												/* SNB (Sub Nav) */
+
+												/* FNB (Footer Nav) */
+
+												/* QNB (Quick Nav) */
+
+												</pre>
+												<!-- e : pre in 보여질 코드삽입 -->
+											</figure>
+										</div>
+									</div>
+								</div>
+
+								<div class="wsg_example_footer" id="tabContentCode2_4">
+									<div class="wsg_code">
+										<div class="syntaxhighlighter">
+											<figure class="highlight">
+												<!-- s : pre in 보여질 코드삽입 -->
+												<pre class="brush: css; ">
+												@charset 'utf-8';
+												/*
+												 * 파일정의 : content.css
+												 * 파일설명 : 서브메뉴 컨텐츠
+												 * 작성자 :  glim 홍길동
+												 * 주의사항 : 주석표기는 페이지 접근방법을 알수 있도록 표시
+												 * 최초작성일 : 2018/10/10
+												 * 최종수정일 : 2018/10/18
+												 */
+												/* 메뉴명 */
+												/* 상세 */
+
+												/* 상세 */
+
+
+												/* 메뉴명 */
+
+
+
+												</pre>
+												<!-- e : pre in 보여질 코드삽입 -->
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="wsg_example_footer" id="tabContentCode2_5">
+									<div class="wsg_code">
+										<div class="syntaxhighlighter">
+											<figure class="highlight">
+												<!-- s : pre in 보여질 코드삽입 -->
+												<pre class="brush: css; ">
+												@charset 'utf-8';
+												/*
+												 * 파일정의 : main.css
+												 * 파일설명 : 메인사용 컨텐츠
+												 * 작성자 :  glim 홍길동
+												 * 주의사항 : 주석표기는 페이지 접근방법을 알수 있도록 표시
+												 * 최초작성일 : 2018/10/10
+												 * 최종수정일 : 2018/10/18
+												 */
+												/* 항목 */
+												/* 상세 */
+
+												/* 상세 */
+
+
+												/* 항목 */
+
+
+												/* 항목 */
+
+
+												</pre>
+												<!-- e : pre in 보여질 코드삽입 -->
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="wsg_example_footer" id="tabContentCode2_6">
+									<div class="wsg_code">
+										<div class="syntaxhighlighter">
+											<figure class="highlight">
+												<!-- s : pre in 보여질 코드삽입 -->
+												<pre class="brush: css; ">
+												@charset 'utf-8';
+												/*
+												 * 파일정의 : icon.css
+												 * 파일설명 : sprite icon
+												 * 작성자 :  glim 홍길동
+												 * 주의사항 : 주석표기는 페이지 접근방법을 알수 있도록 표시
+												 * 최초작성일 : 2018/10/10
+												 * 최종수정일 : 2018/10/18
+												 */
+
+												/* icon Sprites */
+												/* 아이콘만 있을 경우 */
+												.ico {overflow: hidden; position: relative; display: inline-block; background-image : url(../images/common/sprite.png); background-repeat: no-repeat; vertical-align: top;}
+												.ico span {position: absolute; display: block; overflow: hidden; height: 1px; width: 1px; clip: rect(1px, 1px, 1px, 1px);}
+
+												/* 아이콘 + 텍스트 */
+												.tico {position: relative; display: inline-block;}
+												.tico .ic {/* 아이콘이 되는 영역 */ overflow: hidden; position: relative; display: inline-block; background-image : url(../images/common/sprite.png); background-repeat: no-repeat; background-size : 1000px 1000px; vertical-align: top;}
+
+
+												/* header icon */
+												.ico.bic_hmove {width: 18px; height: 18px; background-position: 0 0;}
+												.ico.bic_hsearch {width: 35px; height: 35px; background-position: -20px 0;}
+												.ico.bic_hcart {width: 35px; height: 35px; background-position: -57px 0;}
+												.ico.bic_hmypage {width: 35px; height: 35px; background-position: -94px 0;}
+
+												/* 항목 */
+												/* 상세 */
+
+												/* 상세 */
+
+
+												/* 항목 */
+
+
+												/* 항목 */
+
+
+												</pre>
+												<!-- e : pre in 보여질 코드삽입 -->
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //section2 -->
+					<!-- section3 -->
+					<section class="wsg_section" id="wsg_section3">
+						<div class="wsg_section_header">
+							<h2 class="wsg_h2">SCRIPT</h2>
+						</div>
+						<div class="wsg_section_body">
+							<div class="wsg_example_wrap">
+								<div class="wsg_example_header">
+									<strong class="wsg_example_tit"></strong>
+									<div class="wsg_example_nav">
+										<span class="wsg_example_txt"></span>
+										<a class="wsg_example_btn is_active" href="#tabContentCode3_1">SCRIPT</a>
+									</div>
+								</div>
+								<div class="wsg_example_footer is_active" id="tabContentCode3_1">
+									<div class="wsg_code">
+										<div class="syntaxhighlighter">
+											<figure class="highlight">
+												<!-- s : pre in 보여질 코드삽입 -->
+												<pre class="brush: js; ">
+												/*
+												 * name : common.func.js
+												 * desc : 페이지 내 공통 실행이 필요한 함수 include
+												 * writer : glim
+												 * date : 2018/01/24
+												 * last : 2018/05/03
+												 * - 20180101 JS 수정내용 기입
+												 */
+
+												$(function() {
+													//초기화 함수들
+												});
+
+												$(document).ready(function() {
+													//초기화 함수들
+
+													$(window).resize(function() { resize(); });//resize
+													resize();
+												});
+
+												</pre>
+												<!-- e : pre in 보여질 코드삽입 -->
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section><!-- //section1 -->
+				</div>
+			</div>
+		</article>
+		<!-- //Content -->
+
+	</div>
+</div>
+</body>
+</html>

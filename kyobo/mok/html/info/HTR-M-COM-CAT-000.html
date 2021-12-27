@@ -637,22 +637,9 @@
                 <script>
                     var scroll_swiper_wide = new Swiper(".special_swiper", {
                         slidesPerView: 'auto',
+                        freeMode: true,
                         spaceBetween: 16,
-                        loop: true,
-                        // autoplay: {
-                        //     delay: 2500,
-                        //     disableOnInteraction: false,
-                        // },
-                        // scrollbar: {
-                        //     el: ".special_swiper .swiper-scrollbar",
-                        //     hide: false,
-                        // },
-                        pagination: {
-                            el: ".special_swiper .swiper-pagination",
-                            clickable: false,
-                        },
                     });
-                    
                 </script>
             </article>
             <!--// 기획전 상품 -->
@@ -668,6 +655,12 @@
                     <a href="#a"><span>인디고</span></a>
                     <a href="#a"><span>Jellycrew</span></a>
                 </div>
+                <script>
+                    // todo : ui.js 로 공통 처리할 것
+                    $('.tab_wrap > a').on('click',function(){
+                        $(this).addClass('active').siblings('a').removeClass('active');
+                    });
+                </script>
                 
                 <div class="swiper-container brand_swiper">
                     <ul class="swiper-wrapper">
@@ -752,8 +745,6 @@
                             </p>
                         </li>
                     </ul>
-                    <div class="swiper-scrollbar"></div>
-                    
                 </div>
                 <!-- todo : siwper는 js파일로 분리 할 것 -->
                 <script>
@@ -761,10 +752,6 @@
                         slidesPerView: 'auto',
                         freeMode: true,
                         spaceBetween: 12,
-                        scrollbar: {
-                            el: ".brand_swiper .swiper-scrollbar",
-                            hide: true,
-                        },
                     });
                 </script>
             </article>
