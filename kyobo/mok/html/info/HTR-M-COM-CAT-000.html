@@ -85,15 +85,13 @@
     <!-- // UI JavaScript -->
 
     <style>
-        body {
-            overflow: hidden;
-            touch-action: none;
-            position: fixed;
-            overflow: hidden;
-            touch-action: none;
-        }
-        body {
-            height: calc((var(--vh,1vh) * 100)) !important;
+        /* :root {
+        --vh: 100%;
+        } */
+        #categoryMenu {
+            /* height: calc((var(--vh,1vh) * 100)); */
+            height: -webkit-fill-available;
+            height: fill-available;
         }
     </style>
 </head>
@@ -819,7 +817,7 @@
 
             document.documentElement.style.setProperty('--vh', `${vh}px`);
         }
-        setScreenSize();
+        //setScreenSize();
     </script>
 </body>
 
