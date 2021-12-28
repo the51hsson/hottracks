@@ -92,6 +92,9 @@
             overflow: hidden;
             touch-action: none;
         }
+        .category_menu {
+            height: calc((var(--vh,1vh) * 100));
+        }
     </style>
 </head>
 
@@ -811,7 +814,7 @@
     </div>
     <!-- // wrapper -->
     <script>
-        funciton setScreenSize() {
+        function setScreenSize() {
             let vh = window.innerHeight * 0.01;
 
             document.documentElement.style.setProperty('--vh', `${vh}px`);
