@@ -364,7 +364,53 @@
 }
 
 
-
+.product_area {
+    .info_wrap {
+        .list_info {
+            display: flex;
+            flex-wrap: wrap;
+            .txt_dt {
+                font-size: 14px;
+                font-weight: 700;
+            }
+            .txt_dd {
+                font-size: 14px;
+                .txt_info {
+                    position: relative;
+                    display: block;
+                    padding-right: 15px;
+                    .ico_info {
+                        cursor: pointer;
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 2px;
+                        &:after {
+                            content: "";
+                            width: 16px;
+                            height: 16px;
+                            background: url(../images/ico/ico_info.png) no-repeat 0 0;
+                            background-size: 100% auto;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                        }
+                    }            
+                }
+            }
+            .txt_dt,
+            .txt_dd {
+                padding:10px 0
+            }
+            .col_4 {
+                flex: 0 0 30%;
+            }
+            .col_8 {
+                flex: 0 0 70%;
+            } 
+        }
+    }     
+}
 
 
 
