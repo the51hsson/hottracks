@@ -1106,7 +1106,7 @@
             }
             .review_good_wrap {
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 .total_review {
                     padding-left: 20px;
                     position: relative;
@@ -1128,6 +1128,7 @@
                     }
                 }
                 .total_good {
+                    margin-left: 16px;
                     .ico_total_good {
                         padding-left: 20px;
                         position: relative;
@@ -1354,7 +1355,7 @@
     }
     .review_good_wrap {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         width: 140px;
         .total_review {
             padding-left: 20px;
@@ -1378,6 +1379,7 @@
             }
         }
         .total_good {
+            margin-left: 16px;
             .ico_total_good {
                 padding-left: 20px;
                 position: relative;

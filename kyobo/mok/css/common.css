@@ -2113,9 +2113,9 @@ button.btn_sm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .recomened_area .list_item .item .review_good_wrap .total_review {
   padding-left: 20px;
@@ -2134,6 +2134,9 @@ button.btn_sm {
 }
 .recomened_area .list_item .item .review_good_wrap .total_review .txt_total {
   font-size: 12px;
+}
+.recomened_area .list_item .item .review_good_wrap .total_good {
+  margin-left: 16px;
 }
 .recomened_area .list_item .item .review_good_wrap .total_good .ico_total_good {
   padding-left: 20px;
@@ -2439,9 +2442,9 @@ button.btn_sm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 140px;
 }
 .soldoutslide_wrap .review_good_wrap .total_review {
@@ -2461,6 +2464,9 @@ button.btn_sm {
 }
 .soldoutslide_wrap .review_good_wrap .total_review .txt_total {
   font-size: 12px;
+}
+.soldoutslide_wrap .review_good_wrap .total_good {
+  margin-left: 16px;
 }
 .soldoutslide_wrap .review_good_wrap .total_good .ico_total_good {
   padding-left: 20px;
