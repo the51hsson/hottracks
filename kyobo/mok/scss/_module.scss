@@ -118,3 +118,42 @@
 .btn_tooltip {width: 22px; height: 22px;}
 .btn_tooltip [class^=ico_] {display: inline-block; width: 22px; height: 22px; vertical-align: top; transition: background .2s ease-out;}
 .btn_tooltip .ico_info {background-image: url(../images/ico/ico_info_large.png); background-size: 22px 22px;}
+
+
+
+/* 펼침 닫기 메뉴 */
+.auto_overflow_wrap{
+    .auto_overflow_contents {
+        overflow: hidden;
+    }
+    &.active {
+        > .auto_overflow_contents {
+            max-height: none!important;
+        }
+    }
+} 
+
+
+/* 그라데이션 펼침 닫기 메뉴 */
+.auto_overflow_wrap.type_text.overflow {
+    .auto_overflow_contents {
+        position: relative;
+        &:after {
+            content: "";
+            width: 100%;
+            height: 15px;
+            background: linear-gradient(180deg,rgba(255,255,255,0),#fff 15px);
+            position: absolute;
+            bottom: 0;
+        }        
+    }
+    &.active {
+        .auto_overflow_contents {
+            &:after {
+                display: none;
+            }
+            
+        }
+    }
+}
+
