@@ -1,4 +1,3 @@
-
 @mixin icoMore($top){
     &.ico_more {
         &:after {
@@ -79,13 +78,15 @@
         color: #ccc;
     }
 }
-/* hotpick */
+/* hotpick 간격 */
 .hotpick_area {
-    padding-top: 32px;
-    .tit_sub_area {
-        margin-bottom: 16px;
+    padding-top: 12px;
+    .hotpickslide_wrap {
+        margin-top: -4px;
     }
 }
+
+/**/
 .hotpickslide_wrap {
     position: relative;
     overflow: hidden;
@@ -161,17 +162,135 @@
     }
 }
 
+
+
+
+/* tit area */
+.tit_wrap {
+    margin-top: 40px;
+    margin-bottom: 8px;
+    .tit {
+        .tit_top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+            .txt_brand {
+                font-size: 13px;
+                color: #595959;
+                font-family: 'Roboto';
+                font-weight: 400;
+            }
+            .btn_share {
+                cursor: pointer;
+                width: 16px;
+                height: 16px;
+                background: url(../images/ico/ico_share.png) no-repeat 0 0;
+                background-size:16px auto;
+            }
+        }
+        .tit_bottom {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #000;
+        }
+        .tit_bottom_dec {
+            font-size: 13px;
+            color: rgb(218,33,40);
+        }
+    }
+}
+.price_wrap {
+    margin-bottom: 9px;
+    .real_price {
+        display: block;
+        font-size: 16px;
+        text-decoration: line-through;
+        .txt_value {
+            color: #767676;
+            font-family: Roboto;
+        }
+
+        .txt_unit {
+            color: #767676;
+        }
+    }
+    .sale_price {
+        display: block;
+        font-size: 22px;
+        .txt_per {
+            font-family: Roboto;
+            font-weight: 700;
+            color: $btn-primary;
+            font-weight: $font-weight-bold;
+        }
+        .txt_value {
+            font-family: Roboto;
+            font-weight: 700;
+            font-weight: $font-weight-bold
+        }
+        .txt_unit {
+           
+        }
+    }
+}
+.info_wrap {
+    .list_info {
+        display: flex;
+        flex-wrap: wrap;
+        .txt_dt {
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .txt_dd {
+            font-size: 14px;
+            .txt_info {
+                position: relative;
+                display: block;
+                padding-right: 15px;
+                .ico_info {
+                    cursor: pointer;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 2px;
+                    &:after {
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        background: url(../images/ico/ico_info.png) no-repeat 0 0;
+                        background-size: 100% auto;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                }            
+            }
+        }
+        .txt_dt,
+        .txt_dd {
+            padding:10px 0
+        }
+        .col_4 {
+            flex: 0 0 30%;
+        }
+        .col_8 {
+            flex: 0 0 70%;
+        } 
+    }
+} 
 .coupon_wrap {
-    background: #fff4f1;
+    background: rgb(218, 33, 40);
     height: 62px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 20px;
-    border-radius: 4px;
+    margin:0 -20px;
     .txt_dec {
         width: calc(100% - 81px );
+        color: #fff;
     } 
 }
 
@@ -291,9 +410,7 @@
 
 /* 베스트 리뷰 */
 .review_best_area {
-    padding-top: 20px;
     .tit_con_area {
-        margin-bottom: 24px;
         .tit {
             margin-bottom: 8px;
         }
@@ -616,6 +733,11 @@
                 margin-left: 8px;
                 display: inline-block;
             }
+            .btn_modify,
+            .btn_remove {
+                margin-left: 8px;
+                display: inline-block;
+            }            
             .gap {
                 display: inline-block;
                 font-size: 0;
@@ -660,6 +782,14 @@
         }
 
     } 
+}
+
+
+.auto_overflow_wrap .auto_overflow_contents {
+    overflow: hidden;
+}
+.auto_overflow_wrap.active>.auto_overflow_contents {
+    max-height: none!important;
 }
 .all_review_wrap {
     .review_inner {
@@ -817,7 +947,9 @@
         }
     }  
 }
-
+.multi_review_area {
+    margin-top: 40px;
+}
 
 
 
@@ -924,12 +1056,7 @@
 }
 
 
-.auto_overflow_wrap .auto_overflow_contents {
-    overflow: hidden;
-}
-.auto_overflow_wrap.active>.auto_overflow_contents {
-    max-height: none!important;
-}
+
 
 .swiper-pagination-fraction {
     font-size: 0;
@@ -975,5 +1102,39 @@
                 }
             }
         }
+    }
+}
+
+
+.delivery_area {
+    padding-bottom: 10px;
+    .tit_con_area {
+      margin-bottom: -10px;  
+    }
+    
+}
+
+.recomend_area {
+    .tit_con_area {
+        margin-bottom: 20px;
+    }
+}
+
+
+.info_army_area {
+    padding: 20px;
+    background: rgb(247, 247, 247);
+    .tit_subin_area {
+        padding: 20px 0 10px 0;
+        .tit {
+            font-size: 14px;
+            font-weight: $font-weight-bold;
+        }
+
+    }    
+    .txt_dec {
+        font-size: 13px;
+        font-weight: $font-weight-bold;
+        color: rgb(89, 89, 89);
     }
 }
