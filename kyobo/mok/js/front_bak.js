@@ -770,8 +770,6 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 								btnAfterText = btnBeforeText.replace('접기', '펼치기');
 							} else if (Boolean(btnBeforeText.match('닫기'))) {
 								btnAfterText = btnBeforeText.replace('닫기', '더보기');
-							} else if (Boolean(btnBeforeText.match('상품 정보 펼치기'))) {
-								btnAfterText = btnBeforeText.replace('상품 정보 펼치기', '상품 정보 닫기');
 							}
 
 							if ($(this).closest(wrap).hasClass('active')) {
