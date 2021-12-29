@@ -1679,6 +1679,7 @@
                         </div>                                                  
                     </a>     
                 </li>
+                <!--품절시 class 추가  "soldout"-->
                 <li class="item soldout">
                     <a href="">
                         <div class="figure">
@@ -1728,9 +1729,10 @@
                             <img src="../../images/thumnail_recommend_01.png" width="100%">
                             <div class="txt_soldout">
                                 <p class="txt_dec">아쉽지만!<br />품절이에요</p>
-                                <span class="link_replacement">
+                                <button class="link_replacement">
                                     <span class="txt">대체상품</span>
-                                </span>
+                                    <span class="ico_more"></span>
+                                </button>
                             </div>
                         </div>
                         <p class="txt_account">
@@ -1769,13 +1771,17 @@
                     </a>     
                 </li>
             </ul> 
-            <div class="soldout_wrap">
+            <div class="soldoutslide_wrap">
+                <div class="tit_con_area">
+                    <h2 class="tit">하필 딱! 품절이지만 괜찮아요</h2>
+                    <p class="sub">찾으시는 상품과 비슷한 상품이 여기 있어요</p>
+                </div>                
                 <div class="swiper-container">
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide">
                             <a href="">
                                 <div class="figure">
-                                    <img src="../../images/thumnail_recommend_01.png" width="140px">                                   
+                                    <img src="../../images/thumnail_recommend_01.png" width="100%">                                   
                                 </div>
                                 <p class="txt_account">
                                     <span class="txt_brand">Stanley</span>
@@ -1800,22 +1806,62 @@
                                     </div>
                                 </div>   
                                 <div class="review_good_wrap">
-                                    <span class="total_review">
-                                        <span class="ico_review"></span>
+                                    <button type="button" class="total_review">
+                                        <span class="ico_toal_review"></span>
                                         <span class="txt_total">+999</span>
+                                    </button>
+        
+                                    <button type="button" class="total_good">
+                                        <span class="ico_total_good"></span>
+                                        <span class="txt_total">+999</span> 
+                                    </button>
+                                </div>                                                
+                            </a>                          
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="">
+                                <div class="figure">
+                                    <img src="../../images/thumnail_recommend_01.png" width="100%">
+                                </div>
+                                <p class="txt_account">
+                                    <span class="txt_brand">Stanley</span>
+                                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기</span>
+                                </p>  
+                                <div class="price_wrap">
+                                    <span class="real_price">
+                                        <span class="txt_value">17,200</span>
+                                        <span class="txt_unit">원</span>
                                     </span>
-                                    <span class="total_good">
-                                        <em class="ico_good"></em>
-                                        <em class="txt_total">+999</em>
-                                        
+                                    <span class="sale_price">
+                                        <em class="txt_per">20%</em>
+                                        <em class="txt_value">13,760</em>
+                                        <span class="txt_unit">원</span>
                                     </span>
+                                </div>                        
+                                <div class="badge_wrap">
+                                    <div class="badge_list">
+                                        <span class="badge badge_sm badge_primary">쿠폰</span>
+                                        <span class="badge badge_sm badge_default">사은품</span>
+                                        <span class="badge badge_sm badge_default">무료배송</span>
+                                    </div>
+                                </div>   
+                                <div class="review_good_wrap">
+                                    <button type="button" class="total_review">
+                                        <span class="ico_toal_review"></span>
+                                        <span class="txt_total">+999</span>
+                                    </button>
+        
+                                    <button type="button" class="total_good">
+                                        <span class="ico_total_good"></span>
+                                        <span class="txt_total">+999</span> 
+                                    </button>
                                 </div>                                                  
                             </a>                          
                         </li>
                         <li class="swiper-slide">
                             <a href="">
                                 <div class="figure">
-                                    <img src="../../images/thumnail_recommend_01.png" width="140px">
+                                    <img src="../../images/thumnail_recommend_01.png" width="100%">
                                 </div>
                                 <p class="txt_account">
                                     <span class="txt_brand">Stanley</span>
@@ -1840,22 +1886,22 @@
                                     </div>
                                 </div>   
                                 <div class="review_good_wrap">
-                                    <span class="total_review">
-                                        <span class="ico_review"></span>
+                                    <button type="button" class="total_review">
+                                        <span class="ico_toal_review"></span>
                                         <span class="txt_total">+999</span>
-                                    </span>
-                                    <span class="total_good">
-                                        <em class="ico_good"></em>
-                                        <em class="txt_total">+999</em>
-                                        
-                                    </span>
-                                </div>                                                  
+                                    </button>
+        
+                                    <button type="button" class="total_good">
+                                        <span class="ico_total_good"></span>
+                                        <span class="txt_total">+999</span> 
+                                    </button>
+                                </div>                                                 
                             </a>                          
                         </li>
                         <li class="swiper-slide">
                             <a href="">
                                 <div class="figure">
-                                    <img src="../../images/thumnail_recommend_01.png" width="140px">
+                                    <img src="../../images/thumnail_recommend_01.png" width="100%">
                                 </div>
                                 <p class="txt_account">
                                     <span class="txt_brand">Stanley</span>
@@ -1880,60 +1926,21 @@
                                     </div>
                                 </div>   
                                 <div class="review_good_wrap">
-                                    <span class="total_review">
-                                        <span class="ico_review"></span>
+                                    <button type="button" class="total_review">
+                                        <span class="ico_toal_review"></span>
                                         <span class="txt_total">+999</span>
-                                    </span>
-                                    <span class="total_good">
-                                        <em class="ico_good"></em>
-                                        <em class="txt_total">+999</em>
-                                        
-                                    </span>
-                                </div>                                                  
-                            </a>                          
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="">
-                                <div class="figure">
-                                    <img src="../../images/thumnail_recommend_01.png" width="140px">
-                                </div>
-                                <p class="txt_account">
-                                    <span class="txt_brand">Stanley</span>
-                                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기</span>
-                                </p>  
-                                <div class="price_wrap">
-                                    <span class="real_price">
-                                        <span class="txt_value">17,200</span>
-                                        <span class="txt_unit">원</span>
-                                    </span>
-                                    <span class="sale_price">
-                                        <em class="txt_per">20%</em>
-                                        <em class="txt_value">13,760</em>
-                                        <span class="txt_unit">원</span>
-                                    </span>
-                                </div>                        
-                                <div class="badge_wrap">
-                                    <div class="badge_list">
-                                        <span class="badge badge_sm badge_primary">쿠폰</span>
-                                        <span class="badge badge_sm badge_default">사은품</span>
-                                        <span class="badge badge_sm badge_default">무료배송</span>
-                                    </div>
-                                </div>   
-                                <div class="review_good_wrap">
-                                    <span class="total_review">
-                                        <span class="ico_review"></span>
-                                        <span class="txt_total">+999</span>
-                                    </span>
-                                    <span class="total_good">
-                                        <em class="ico_good"></em>
-                                        <em class="txt_total">+999</em>
-                                        
-                                    </span>
-                                </div>                                                  
+                                    </button>
+        
+                                    <button type="button" class="total_good">
+                                        <span class="ico_total_good"></span>
+                                        <span class="txt_total">+999</span> 
+                                    </button>
+                                </div>                                                 
                             </a>                          
                         </li>                                                                                        
                     </ul>
                     <div class="swiper-pagination"></div>
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>               
             <!-- ajax 연동? -->
@@ -1967,7 +1974,6 @@
 var visualSwiper = new CustomSwiper('.visual_wrap .swiper-container', {
 		slidesPerView: '1',
 		speed: 500,
-	
         pagination: {
 			el: $('.visual_wrap').find('.swiper-pagination')[0],
 			type: 'fraction',
@@ -2001,8 +2007,8 @@ var photoreviewSwiper = new CustomSwiper('.photoreview_wrap .swiper-container', 
 			},
 		}        
 });
-var soldoutSwiper = new CustomSwiper('.soldout_wrap .swiper-container', {
-		slidesPerView: '3',
+var soldoutslidetSwiper = new CustomSwiper('.soldoutslide_wrap .swiper-container', {
+		slidesPerView: 'auto',
 		speed: 500,
         spaceBetween: 16,
         pagination: {
@@ -2014,7 +2020,10 @@ var soldoutSwiper = new CustomSwiper('.soldout_wrap .swiper-container', {
 			formatFractionTotal: function (number) {
 				return KyoboHottracks.mok.setPrependZero(number, 2);
 			},
-		}        
+		},
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        }                
 })
 
 </script>
