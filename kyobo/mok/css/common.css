@@ -1325,6 +1325,57 @@ button.btn_sm {
   padding-left: 55px;
 }
 
+.product_area .info_wrap .list_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.product_area .info_wrap .list_info .txt_dt {
+  font-size: 14px;
+  font-weight: 700;
+}
+.product_area .info_wrap .list_info .txt_dd {
+  font-size: 14px;
+}
+.product_area .info_wrap .list_info .txt_dd .txt_info {
+  position: relative;
+  display: block;
+  padding-right: 15px;
+}
+.product_area .info_wrap .list_info .txt_dd .txt_info .ico_info {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+.product_area .info_wrap .list_info .txt_dd .txt_info .ico_info:after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../images/ico/ico_info.png) no-repeat 0 0;
+  background-size: 100% auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.product_area .info_wrap .list_info .txt_dt,
+.product_area .info_wrap .list_info .txt_dd {
+  padding: 10px 0;
+}
+.product_area .info_wrap .list_info .col_4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+.product_area .info_wrap .list_info .col_8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70%;
+          flex: 0 0 70%;
+}
+
 /* 공통 별점 블럭 */
 .rating_container .rating_stars {
   position: relative;
