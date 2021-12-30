@@ -326,7 +326,15 @@ $txt-white:     #ffffff !default;
 
 /* btn size */
 a.btn_lg, 
-button.btn_lg {height: 56px;padding: 0 23px 1px;border-radius: 6px;font-size: 16px;line-height: 26px;letter-spacing: -.01em;font-weight: $font-weight-bold;}
+button.btn_lg {
+    height: 56px;
+    padding: 0 23px 1px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -.01em;
+    font-weight: $font-weight-bold;
+}
 a.btn_md, 
 button.btn_md {
     height: 50px;
@@ -378,6 +386,41 @@ button.btn_sm {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .link_home {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        &.ico_gohome {
+            position: relative;
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                position: absolute;              
+                left: 0;
+                top: 0; 
+                background: url(../images/ico/ico_gohome.svg) no-repeat 50% 50%;
+                background-size: 40px auto;
+            }
+
+        }
+        .ico_gomusic {
+            position: relative;
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                position: absolute;              
+                left: 0;
+                top: 0; 
+                background: url(../images/ico/ico_gomusic.svg) no-repeat 50% 50%;
+                background-size: 40px auto;
+            }
+        }
+    }
+
 }
 
 .link_delivery {
@@ -395,19 +438,13 @@ button.btn_sm {
   
 }
 
-.ico_home {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border:solid 1px #eaeaea;
-    border-radius: 50%;
-    background: url(../images/ico/ico_gohome.png) no-repeat 50% 50%;
-    background-size: 22px auto;
-}
+
+
 .link_live {
     position: relative;
     display: inline-block;
     font-size: 14px;
+    letter-spacing: -0.5px;
     @include icoMore(5px)
 }    
 

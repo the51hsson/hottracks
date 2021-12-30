@@ -54,7 +54,7 @@
 .visual_wrap .swiper-pagination-fraction {
     width: 58px;
     height: 25px;
-    background: #707070;
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 12px;
     font-family: 'Roboto';
     font-weight: 700;
@@ -292,15 +292,15 @@
         .txt_dec {
             width: calc(100% - 81px );
             color: #fff;
+            font-weight: $font-weight-bold;
         } 
     }
-
-
 }
 
 
 .product_deliinfo_area {
     .info_wrap {
+        margin-bottom: 14px;
         .list_info {
             display: flex;
             flex-wrap: wrap;
@@ -351,6 +351,7 @@
         border-radius: 4px;
         padding: 20px;
         position: relative;
+        margin-bottom: 20px;
         .figure {
             position: absolute;
             left: 20px;
@@ -409,7 +410,7 @@
                 flex: 0 0 70%;
             } 
         }
-    }     
+    } 
 }
 
 
@@ -1526,7 +1527,7 @@
 .info_all_area {
     border-radius: 4px;
     background-color: #f7f7f7;
-    .info_army_area {
+    .info_top_area {
         padding-bottom: 12px;
         position: relative;
         &:after {
@@ -1541,12 +1542,12 @@
             bottom: 0;
         }
     }
-    .info_mountain_area {
+    .info_bottom_area {
         padding-top: 12px;
     }
 }
 
-.info_army_area {
+.info_top_area {
     padding: 20px 20px 20px 20px;
     border-radius: 4px;
     background-color: #f7f7f7;  
@@ -1560,7 +1561,6 @@
             background: url(../images/ico/ico_army.svg) no-repeat 0 0;
             background-size: 18px auto;
         }
-
     }            
     .txt_dec {
         font-size: 13px;
@@ -1570,7 +1570,7 @@
     }        
 }
 
-.info_mountain_area {
+.info_bottom_area {
     padding: 20px 20px 20px 20px;
     border-radius: 4px;
     background-color: #f7f7f7;       
