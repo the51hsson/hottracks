@@ -697,10 +697,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
 }
 
-.ht_ .tab_list_wrap {
+.ht_ .tab_wrap .tab_list_wrap {
   position: -webkit-sticky;
   position: sticky;
   top: 60px;
+  height: 52px;
+  margin-bottom: 0;
+}
+
+.ht_ .tab_wrap.justify > .tab_list_wrap .tabs .tab_item {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
 }
 
 .ht_ .scroll_box {
@@ -1390,12 +1398,81 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .footer_wrap {
   background: #fff;
   padding: 6px 9px;
+  width: 100%;
 }
 
 .footer_wrap.fixed_foot {
   position: fixed;
   left: 0;
   bottom: 0;
+}
+
+.footer_wrap .btn_go_top {
+  position: fixed;
+  bottom: 92px;
+  right: 20px;
+  display: block;
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  z-index: 100;
+  opacity: 1;
+  -webkit-transition: right .23s,opacity .23s;
+  transition: right .23s,opacity .23s;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer_wrap .btn_go_top:before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 18px;
+  margin: 13px auto 0;
+  background-image: url(../images/guide/arw_go_top_mok.png);
+  background-size: 13px 18px;
+}
+
+.footer_wrap .btn_go_top.active {
+  opacity: 1;
+  right: 18px;
+}
+
+.footer_wrap .btn_go_back {
+  position: fixed;
+  bottom: 92px;
+  left: 20px;
+  display: block;
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  z-index: 100;
+  opacity: 1;
+  -webkit-transition: right .23s,opacity .23s;
+  transition: right .23s,opacity .23s;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer_wrap .btn_go_back:before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 18px;
+  margin: 13px auto 0;
+  background-image: url(../images/guide/arw_go_top_mok.png);
+  background-size: 13px 18px;
+}
+
+.footer_wrap .btn_go_back.active {
+  opacity: 1;
+  right: 18px;
 }
 
 /* 버튼 */

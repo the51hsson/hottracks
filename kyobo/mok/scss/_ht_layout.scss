@@ -427,9 +427,14 @@
             }
         }
     }
-    .tab_list_wrap {
+    .tab_wrap .tab_list_wrap {
         position: sticky;
         top:60px;
+        height: 52px;
+        margin-bottom: 0;
+    }
+    .tab_wrap.justify > .tab_list_wrap .tabs .tab_item {
+        flex:auto;
     }
     
     .scroll_box {
