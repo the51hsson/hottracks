@@ -354,6 +354,9 @@
 }
 
 .ht_ {
+    .container_wrapper {
+        position: relative;
+    }
     .product_wrap_li {
         width: 100px;
         img {
@@ -388,7 +391,10 @@
             }
         }
     }
-
+    .tab_list_wrap {
+        position: sticky;
+        top:60px;
+    }
     .tab_wrap {
         display: flex;
         a {

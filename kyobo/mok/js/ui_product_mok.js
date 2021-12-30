@@ -6,7 +6,11 @@
  * update :
  * -
  */
-
+// Custom Swiper
+var CustomSwiper = function(selector, options) {
+	options = $.extend(options, {containerModifierClass: 'swiper-'});
+	return new Swiper(selector, options);
+}
 $(function(){
 	setProdDetailAnchor();
 	reviewTabAnchor();

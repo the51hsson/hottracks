@@ -30,4 +30,32 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 *::after {
   box-sizing: border-box;
 }
+.skip_nav_wrap {
+  position: absolute;
+  font-size: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+
+  a {
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    text-align: center;
+    font-size: 15px;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+
+    &:not(:focus) {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  }
+}
 /* e : common */

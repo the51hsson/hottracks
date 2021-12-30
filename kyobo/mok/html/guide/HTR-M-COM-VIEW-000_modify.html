@@ -256,9 +256,11 @@
             <div class="auto_overflow_wrap overflow type_text" >
                 <div class="auto_overflow_contents" style="max-height: 500px;">
                     <div class="auto_overflow_inner">
-                        <iframe src="zoom.html" frameborder="0"></iframe>
-                        
-                        
+                        <div class="panzoom-parent" style="position: relative;">
+                            <div class="panzoom"  id="zoomable" style="position: relative;">
+                                <img src="../../images/temp/@product_detail.png" width="100%" />
+                            </div>
+                        </div>
                         <div class="product_detailinfo_area">        
                             <div class="info_wrap">
                                 <dl class="list_info">
@@ -1594,13 +1596,12 @@
 
 <script>
 // img zoom plugin
-// var area = document.getElementById('zoomable')
-// window.pz = panzoom(area, {
-//     contain:'inside',
-//     maxZoom: 1.5,
-//     minZoom: 1,
+var area = document.getElementById('zoomable')
+window.pz = panzoom(area, {
+    contain: 'outside',
+    
 
-// });
+});
 // swiper (paging 외부)
 var visualSwiper = new CustomSwiper('.visual_wrap .swiper-container', {
 		slidesPerView: '1',
