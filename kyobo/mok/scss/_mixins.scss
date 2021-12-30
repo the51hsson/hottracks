@@ -1,0 +1,15 @@
+@mixin icoMore($top){
+    &.ico_more {
+        &:after {
+            position: relative;
+            content: "";
+            top: $top;
+            width: 10px;
+            height: 18px;
+            display: inline-block;
+            background: url(../images/ico/ico_more.png) no-repeat 0 3px;
+            background-size: 5px auto;    
+            margin-left: 5px;                 
+        }   
+    }    
+}
