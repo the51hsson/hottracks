@@ -27,6 +27,7 @@
 <!-- //Plug-In javascript -->
  
 <!-- front ui javascript -->
+<script src="../../js/panzoom.min.js"></script>
 <script src="../../js/front_bak.js"></script>
 <!-- //front ui javascript -->
 </head>
@@ -255,7 +256,7 @@
             <div class="auto_overflow_wrap overflow type_text" >
                 <div class="auto_overflow_contents" style="max-height: 500px;">
                     <div class="auto_overflow_inner">
-                        <img src="../../images/temp/@product_detail.png" width="100%" />
+                        <img src="../../images/temp/@product_detail.png" width="100%"  id="zoomable" />
                         <div class="product_detailinfo_area">        
                             <div class="info_wrap">
                                 <dl class="list_info">
@@ -1590,6 +1591,9 @@
 </body>
 
 <script>
+// img zoom plugin
+var area = document.getElementById('zoomable')
+window.pz = panzoom(area, {autocenter: true, bounds: true});
 // swiper (paging 외부)
 var visualSwiper = new CustomSwiper('.visual_wrap .swiper-container', {
 		slidesPerView: '1',
