@@ -533,9 +533,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .category_menu .brand_product_list .brand_tab {
-  margin-bottom: 20px;
-  margin-left: 20px;
-  width: calc(100% - 20px);
+  padding: 0 20px 20px;
+  overflow-y: hidden;
+}
+
+.category_menu .brand_product_list .brand_tab a {
+  font-size: 15px;
+  color: #595959;
+  letter-spacing: -0.015em;
+  padding: 0 15px;
+  position: relative;
+}
+
+.category_menu .brand_product_list .brand_tab a:first-child {
+  padding-left: 0;
+}
+
+.category_menu .brand_product_list .brand_tab a::after {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #d5d5d5;
+  border-radius: 50%;
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  -webkit-transform: translateY(calc(-50% + (-3px)));
+          transform: translateY(calc(-50% + (-3px)));
+}
+
+.category_menu .brand_product_list .brand_tab a:last-child::after {
+  display: none;
+}
+
+.category_menu .brand_product_list .brand_tab a.active {
+  font-weight: bold;
+  color: #da2128;
+}
+
+.category_menu .brand_product_list .brand_tab a.active span:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #da2128;
 }
 
 .category_menu .brand_product_list .brand_swiper {
@@ -661,53 +703,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 60px;
 }
 
-.ht_ .tab_wrap {
+.ht_ .scroll_box {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.ht_ .tab_wrap a {
-  font-size: 15px;
-  color: #595959;
-  letter-spacing: -0.015em;
-  padding: 0 15px;
-  position: relative;
-}
-
-.ht_ .tab_wrap a:first-child {
-  padding-left: 0;
-}
-
-.ht_ .tab_wrap a::after {
-  content: '';
-  display: block;
-  width: 3px;
-  height: 3px;
-  background-color: #d5d5d5;
-  border-radius: 50%;
-  position: absolute;
-  right: -1px;
-  top: 50%;
-  -webkit-transform: translateY(calc(-50% + (-3px)));
-          transform: translateY(calc(-50% + (-3px)));
-}
-
-.ht_ .tab_wrap a:last-child::after {
-  display: none;
-}
-
-.ht_ .tab_wrap a.active {
-  font-weight: bold;
-  color: #da2128;
-}
-
-.ht_ .tab_wrap a.active span:after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #da2128;
 }
 
 /* swiper custom */
