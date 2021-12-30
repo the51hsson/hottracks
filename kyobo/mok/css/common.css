@@ -199,12 +199,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "Roboto";
 }
 
+.txt_primary {
+  color: #DA2128;
+}
+
+.txt_bold {
+  font-weight: 500;
+}
+
 /* align */
 .txt_center {
   text-align: center;
 }
 
-.d-block {
+.d_block {
   display: block;
 }
 
@@ -308,6 +316,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .btn_outline_primary.disabled {
+  background: #fff;
+  color: #fff;
+}
+
+.btn_outline_white {
+  color: #ffffff;
+  border: solid 1px #fff;
+}
+
+.btn_outline_white:hover {
+  background: #FFF4F1;
+  color: #fff;
+}
+
+.btn_outline_white.disabled {
   background: #fff;
   color: #fff;
 }
@@ -507,140 +530,6 @@ button.btn_sm {
   margin-left: 5px;
 }
 
-/* tit area */
-.tit_wrap {
-  margin-top: 40px;
-  margin-bottom: 8px;
-}
-
-.tit_wrap .tit .tit_top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 4px;
-}
-
-.tit_wrap .tit .tit_top .txt_brand {
-  font-size: 13px;
-  color: #595959;
-  font-family: 'Roboto';
-  font-weight: 400;
-}
-
-.tit_wrap .tit .tit_top .btn_share {
-  cursor: pointer;
-  width: 16px;
-  height: 16px;
-  background: url(../images/ico/ico_share.png) no-repeat 0 0;
-  background-size: 16px auto;
-}
-
-.tit_wrap .tit .tit_bottom {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 28px;
-  color: #000;
-}
-
-.price_wrap {
-  margin-bottom: 9px;
-}
-
-.price_wrap .real_price {
-  display: block;
-  font-size: 16px;
-  text-decoration: line-through;
-}
-
-.price_wrap .real_price .txt_value {
-  color: #767676;
-  font-family: Roboto;
-}
-
-.price_wrap .real_price .txt_unit {
-  color: #767676;
-}
-
-.price_wrap .sale_price {
-  display: block;
-  font-size: 22px;
-}
-
-.price_wrap .sale_price .txt_per {
-  font-family: Roboto;
-  font-weight: 700;
-  color: #dc3545;
-  font-weight: 700;
-}
-
-.price_wrap .sale_price .txt_value {
-  font-family: Roboto;
-  font-weight: 700;
-  font-weight: 700;
-}
-
-.info_wrap .list_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.info_wrap .list_info .txt_dt {
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.info_wrap .list_info .txt_dd {
-  font-size: 14px;
-}
-
-.info_wrap .list_info .txt_dd .txt_info {
-  position: relative;
-  display: block;
-  padding-right: 15px;
-}
-
-.info_wrap .list_info .txt_dd .txt_info .ico_info {
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 2px;
-}
-
-.info_wrap .list_info .txt_dd .txt_info .ico_info:after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  background: url(../images/ico/ico_info.png) no-repeat 0 0;
-  background-size: 100% auto;
-  position: absolute;
-  right: 0;
-  top: 2px;
-}
-
-.info_wrap .list_info .txt_dt,
-.info_wrap .list_info .txt_dd {
-  padding: 10px 0;
-}
-
-.info_wrap .list_info .col_4 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
-}
-
-.info_wrap .list_info .col_8 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 70%;
-          flex: 0 0 70%;
-}
-
 /* grid */
 .row {
   display: -webkit-box;
@@ -674,6 +563,10 @@ button.btn_sm {
 }
 
 /* content title */
+.tit_con_area {
+  padding: 20px 0;
+}
+
 .tit_con_area .tit {
   font-size: 20px;
   font-weight: 700;
@@ -682,6 +575,10 @@ button.btn_sm {
 .tit_con_area .sub {
   font-size: 14px;
   color: #767676;
+}
+
+.tit_sub_area {
+  padding: 20px 0;
 }
 
 .tit_sub_area .tit {
@@ -717,7 +614,7 @@ button.btn_sm {
 }
 
 .badge_wrap {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .badge_list {
@@ -743,6 +640,28 @@ button.btn_sm {
   color: #dc3545;
   border: solid 1px #dc3545;
   background-color: #fff;
+}
+
+.badge_ico {
+  color: #da2128;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.badge_ico .ico_truck {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background: url(../images/ico/ico_truck.svg) no-repeat 0 -5px;
+  background-size: 30px auto;
+}
+
+.badge_ico .ico_truck_txt {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: url(../images/ico/ico_truck_txt.svg) no-repeat 0 2px;
+  background-size: 40px auto;
 }
 
 /* badge size */
@@ -827,44 +746,6 @@ button.btn_sm {
 .rating_reaction_wrap .txt_value .ico_quotation .txt_reaction {
   font-size: 13px;
   margin-left: 5px;
-}
-
-.tab_wrap {
-  padding: 0;
-}
-
-.tab_wrap.type_normal .tab_item a {
-  padding: 10px 0;
-}
-
-.tab_wrap.type_normal .tab_item a .tab_txt {
-  font-size: 16px;
-}
-
-.tab_wrap.type_normal .tab_list_wrap {
-  border-bottom: solid 1px #ccc;
-}
-
-.tab_wrap.type_normal .tab_list_wrap .ui-state-active a {
-  position: relative;
-}
-
-.tab_wrap.type_normal .tab_list_wrap .ui-state-active a .tab_txt {
-  font-weight: 700;
-}
-
-.tab_wrap.type_normal .tab_list_wrap .ui-state-active a:after {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 3px;
-  background: #000;
-}
-
-.tab_wrap.type_normal .tab_content {
-  padding: 0;
 }
 
 /* notice */
@@ -1060,10 +941,6 @@ button.btn_sm {
 }
 
 /* accordion */
-.fold_box_wrap .fold_box_list .fold_box + .fold_box {
-  margin-top: 10px;
-}
-
 .fold_box_wrap .fold_box {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

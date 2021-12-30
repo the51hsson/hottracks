@@ -150,7 +150,8 @@ $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
+
+
 
 $font-num : 'Roboto';
 
@@ -160,20 +161,27 @@ $btn-secondary:    #292929 !default;
 $btn-lightGrey: #767675 !default;
 $btn-default:      #ffffff !default;
 $btn-orange:     #F96734 !default;
-
+$btn-wihte :     #ffffff !default;
 $bg-primary:     #DA2128 !default;
 $txt-primary:     #DA2128 !default;
+$txt-white:     #ffffff !default;
 
 /* 영문 숫자폰트 */
 .font_num {
     font-family: $font-num;
+}
+.txt_primary {
+    color: $txt-primary;
+}
+.txt_bold {
+    font-weight: 500;
 }
 
 /* align */
 .txt_center {
     text-align: center;
 }
-.d-block {
+.d_block {
     display: block;
 }
 .hidden {
@@ -222,8 +230,8 @@ $txt-primary:     #DA2128 !default;
     &.disabled {
         color: #999;
     }
-
 }
+
 .btn_primary {
     color: #fff;
     background: $btn-primary;
@@ -249,6 +257,18 @@ $txt-primary:     #DA2128 !default;
     &:hover {
         background: #FFF4F1;
         color: #DA2128;
+    }     
+    &.disabled {
+        background: #fff;
+        color: #fff;
+    }
+}
+.btn_outline_white {
+    color: $txt-white;
+    border:solid 1px #fff;
+    &:hover {
+        background: #FFF4F1;
+        color: #fff;
     }     
     &.disabled {
         background: #fff;
@@ -301,10 +321,7 @@ $txt-primary:     #DA2128 !default;
             width: 20px;        
             height: 20px;
         }
-        
     }        
-
-
 }
 
 /* btn size */
@@ -398,116 +415,7 @@ button.btn_sm {
 
 
 
-/* tit area */
-.tit_wrap {
-    margin-top: 40px;
-    margin-bottom: 8px;
-    .tit {
-        .tit_top {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 4px;
-            .txt_brand {
-                font-size: 13px;
-                color: #595959;
-                font-family: 'Roboto';
-                font-weight: 400;
-            }
-            .btn_share {
-                cursor: pointer;
-                width: 16px;
-                height: 16px;
-                background: url(../images/ico/ico_share.png) no-repeat 0 0;
-                background-size:16px auto;
-            }
-        }
-        .tit_bottom {
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 28px;
-            color: #000;
-        }
-    }
-}
-.price_wrap {
-    margin-bottom: 9px;
-    .real_price {
-        display: block;
-        font-size: 16px;
-        text-decoration: line-through;
-        .txt_value {
-            color: #767676;
-            font-family: Roboto;
-        }
 
-        .txt_unit {
-            color: #767676;
-        }
-    }
-    .sale_price {
-        display: block;
-        font-size: 22px;
-        .txt_per {
-            font-family: Roboto;
-            font-weight: 700;
-            color: $btn-primary;
-            font-weight: $font-weight-bold;
-        }
-        .txt_value {
-            font-family: Roboto;
-            font-weight: 700;
-            font-weight: $font-weight-bold
-        }
-        .txt_unit {
-           
-        }
-    }
-}
-.info_wrap {
-    .list_info {
-        display: flex;
-        flex-wrap: wrap;
-        .txt_dt {
-            font-size: 14px;
-            font-weight: 700;
-        }
-        .txt_dd {
-            font-size: 14px;
-            .txt_info {
-                position: relative;
-                display: block;
-                padding-right: 15px;
-                .ico_info {
-                    cursor: pointer;
-                    display: block;
-                    position: absolute;
-                    right: 0;
-                    top: 2px;
-                    &:after {
-                        content: "";
-                        width: 16px;
-                        height: 16px;
-                        background: url(../images/ico/ico_info.png) no-repeat 0 0;
-                        background-size: 100% auto;
-                        position: absolute;
-                        right: 0;
-                        top: 2px;
-                    }
-                }            
-            }
-        }
-        .txt_dt,
-        .txt_dd {
-            padding:10px 0
-        }
-        .col_4 {
-            flex: 0 0 30%;
-        }
-        .col_8 {
-            flex: 0 0 70%;
-        } 
-    }
-} 
 
 
 
@@ -534,6 +442,7 @@ button.btn_sm {
 }        
 /* content title */
 .tit_con_area {
+    padding: 20px 0;
     .tit {
         font-size: 20px;
         font-weight: $font-weight-bold;
@@ -545,6 +454,7 @@ button.btn_sm {
 }
 
 .tit_sub_area {
+    padding: 20px 0;
     .tit {
         font-size: 22px;
         font-weight: $font-weight-bold;
@@ -554,6 +464,8 @@ button.btn_sm {
         color: rgb(118,118,118);
     }
 }
+
+
 
 /* 뱃지 */
 
@@ -576,7 +488,7 @@ button.btn_sm {
 
 
 .badge_wrap {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .badge_list {
@@ -591,6 +503,26 @@ button.btn_sm {
 .badge_default {color: #767676;border: solid 1px #d5d5d5;background: #fff;}
 .badge_primary {color: $btn-primary;border:solid 1px $btn-primary;    background-color: #fff;}
 
+
+.badge_ico {
+    color: #da2128;
+    font-weight: 500;
+    font-size: 13px;
+    .ico_truck {
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        background: url(../images/ico/ico_truck.svg) no-repeat 0 -5px;
+        background-size: 30px auto;
+    }
+    .ico_truck_txt {
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        background: url(../images/ico/ico_truck_txt.svg) no-repeat 0 2px;
+        background-size: 40px auto;
+    }
+}
 /* badge size */
 .badge_sm {min-height: 20px;min-width: 50px;padding: 0 10px;border-radius: 4px;font-size: 11px;font-weight: 400;line-height: 18px;}
 
@@ -657,46 +589,7 @@ button.btn_sm {
 
 
 
-.tab_wrap {
-    padding: 0;
-    &.type_normal {
-        .tab_list_wrap {
-            
-        }
-        .tab_item a {
-            padding: 10px 0;
-            .tab_txt {
-                font-size: 16px;
-            }
-    
-        }
-        .tab_list_wrap {
-            border-bottom: solid 1px #ccc;
-            .ui-state-active {
-                a {
-                    .tab_txt {
-                        font-weight: $font-weight-bold;
-                    }
-                    position: relative;
-                    &:after {
-                        position: absolute;
-                        bottom: -1px;
-                        left: 0;
-                        content: "";
-                        width: 100%;
-                        height: 3px;
-                        background: #000;
-                    }
-                }
-                
-            }
-        }
-        .tab_content {
-            padding: 0;
-        }
 
-    }
-} 
 
 
 /* notice */
@@ -866,7 +759,7 @@ button.btn_sm {
 
 
 /* accordion */
-.fold_box_wrap .fold_box_list .fold_box+.fold_box {margin-top: 10px;}
+// .fold_box_wrap .fold_box_list .fold_box+.fold_box {margin-top: 10px;}
 .fold_box_wrap .fold_box {box-sizing: border-box;}
 .fold_box_wrap .fold_box .fold_box_contents,
 .fold_box_wrap .fold_box .fold_box_header {padding: 0 20px;}
@@ -888,8 +781,6 @@ button.btn_sm {
 .fold_box_wrap .fold_box.no_fold .fold_box_header {cursor: default;}
 .fold_box_wrap .fold_box.no_fold .fold_box_header:after {content: none;}
 .fold_box_wrap .fold_box.no_fold .fold_box_header:after {content: none;}
-
-
 
 
 
