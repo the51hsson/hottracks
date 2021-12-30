@@ -33,7 +33,12 @@
 .txt_primary {
     color: $txt-primary;
 }
-
+/* 상단 간격 */
+.mgt10 {margin-top: 10px !important;}
+.mgt12 {margin-top: 12px !important;}
+.mgt20 {margin-top: 20px !important;}
+.mgt24 {margin-top: 24px !important;}
+.mgt40 {margin-top: 40px !important;}
 /* visual area */
 .visual_wrap {
     position: relative;
@@ -78,6 +83,47 @@
         color: #ccc;
     }
 }
+
+/* 바로가기 메뉴 */
+.quick_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .link_home {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        &.ico_gohome {
+            position: relative;
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                position: absolute;              
+                left: 0;
+                top: 0; 
+                background: url(../images/ico/ico_gohome.svg) no-repeat 50% 50%;
+                background-size: 40px auto;
+            }
+        }
+        &.ico_gomusic {
+            position: relative;
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                position: absolute;              
+                left: 0;
+                top: 0; 
+                background: url(../images/ico/ico_gomusic.svg) no-repeat 50% 50%;
+                background-size: 40px auto;
+            }
+        }
+    }
+}
+
 /* hotpick 간격 */
 .hotpick_area {
     padding-top: 12px;
@@ -366,6 +412,12 @@
 
 
 .product_area {
+    .info_intro_area {
+        p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
     .info_wrap {
         .list_info {
             display: flex;
@@ -411,6 +463,32 @@
             } 
         }
     } 
+    .infoshort_wrap {
+        padding: 12px 0 13px 0;
+        border: solid 1px #eaeaea;
+        border-radius: 4px;
+        margin-top: 14px;
+        .list_infoshort {
+            font-size: 12px;
+            display: flex;
+            justify-content: space-around;
+            li {
+                width: calc(100% / 4);
+                text-align: center;
+                border-right: dotted 1px #eaeaea;
+                .txt_dt,
+                .txt_dd {
+                    display: block;
+                }
+                .txt_dd {
+                    color: #767676;
+                }
+                &:last-child {
+                    border-right: 0;
+                }
+            }
+        }
+    }
 }
 
 
@@ -1478,7 +1556,7 @@
         font-size: 13px;
         color: #767676;
         cursor: pointer;
-        .txt {
+        .text {
             font-size: 15px;
             color: #767676;
             font-weight: 500;
@@ -1548,28 +1626,9 @@
 }
 
 .info_top_area {
-    padding: 20px 20px 20px 20px;
-    border-radius: 4px;
-    background-color: #f7f7f7;  
-    margin-bottom: 20;      
-    .tit_subin_area {
-        margin-bottom:10px;
-        .tit {
-            font-size: 14px;
-            font-weight: $font-weight-bold;
-            padding-left: 20px;
-            background: url(../images/ico/ico_army.svg) no-repeat 0 0;
-            background-size: 18px auto;
-        }
-    }            
-    .txt_dec {
-        font-size: 13px;
-        font-weight: 500;
-        color: #595959;
-        line-height: 19px;
-    }        
+    margin-bottom: 0;      
 }
-
+.info_top_area,
 .info_bottom_area {
     padding: 20px 20px 20px 20px;
     border-radius: 4px;
@@ -1579,9 +1638,42 @@
         .tit {
             font-size: 14px;
             font-weight: $font-weight-bold;
-            padding-left: 20px;
-            background: url(../images/ico/ico_mountain.svg) no-repeat 0 -1px;                
-            background-size: 18px auto;
+            position: relative;
+            .ico_buble {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                background: url(../images/ico/ico_buble.svg) no-repeat 0 0;
+                background-size: 18px auto;                                
+            }
+            .ico_reservation {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                background: url(../images/ico/ico_reservation.svg) no-repeat 0 0;
+                background-size: 18px auto;                
+            }
+            .ico_poster {
+                display: inline-block;
+                width: 18px;
+                height: 18px;                
+                background: url(../images/ico/ico_poster.svg) no-repeat 0 0;
+                background-size: 18px auto;                
+            }
+            .ico_army {
+                display: inline-block;
+                width: 18px;
+                height: 18px;                
+                background: url(../images/ico/ico_army.svg) no-repeat 0 0;
+                background-size: 18px auto;
+            }
+            .ico_mountain {
+                display: inline-block;
+                width: 18px;
+                height: 18px;                
+                background: url(../images/ico/ico_mountain.svg) no-repeat 0 -1px;                
+                background-size: 18px auto;                
+            }
         }
     }            
     .txt_dec {
