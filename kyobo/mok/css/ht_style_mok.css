@@ -1385,6 +1385,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: 26px 26px;
 }
 
+.footer_wrap {
+  background: #fff;
+  padding: 6px 9px;
+}
+
+.footer_wrap.fixed_foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
 /* 버튼 */
 a[class^=btn_],
 button[class^=btn_] {

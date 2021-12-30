@@ -540,3 +540,13 @@
         }
     }
 }
+
+.footer_wrap {
+    background: #fff;
+    padding: 6px 9px;
+    &.fixed_foot {
+        position: fixed;
+        left: 0;
+        bottom:0;
+    }
+}
