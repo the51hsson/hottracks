@@ -1904,6 +1904,7 @@ button.btn_sm {
   font-size: 14px;
 }
 
+/**/
 .auto_overflow_wrap .auto_overflow_contents {
   overflow: hidden;
 }
@@ -2105,6 +2106,15 @@ button.btn_sm {
   margin: 0 auto 4px;
   background: url(../images/ico/ico_lock.png) no-repeat 0 0;
   background-size: 17px 19px;
+}
+.all_review_wrap .review_inner .auto_overflow_contents {
+  margin-bottom: 12px;
+}
+.all_review_wrap .review_inner .auto_overflow_contents .auto_overflow_inner .review_comment_area .txt_review {
+  margin-bottom: 12px;
+}
+.all_review_wrap .review_inner .auto_overflow_footer {
+  margin-bottom: 12px;
 }
 
 /* recomend area  */
