@@ -1,3 +1,4 @@
+/* header common */
 .header_wrapper {
     position: sticky;
     top: 0;
@@ -541,21 +542,24 @@
     }
 }
 
+/* footer btn common */
 .footer_wrap {
     background: #fff;
-    padding: 6px 9px;
-    width: 100%;
     &.fixed_foot {
         position: fixed;
+        width: 100%;
         left: 0;
         bottom:0;
-        
     }
+    .prod_purchase_info_wrap { // 상품상세 하단 고정 버튼 영역
+        padding: 6px 9px;
+    }
+
 
     .btn_go_top {
         position: fixed;
-        bottom: 92px;
-        right: 20px;
+        bottom: 79px;
+        right: 18px;
         display: block;
         width: 47px;
         height: 47px;
@@ -584,8 +588,8 @@
     }
     .btn_go_back {
         position: fixed;
-        bottom: 92px;
-        left: 20px;
+        bottom: 79px;
+        left: 18px;
         display: block;
         width: 47px;
         height: 47px;

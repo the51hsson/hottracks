@@ -288,14 +288,19 @@
             margin-bottom: 20px;
         }
         .brand_tab {
-            padding:0 20px 20px;
-            overflow-y: hidden;
+            display: flex;
+            margin-bottom: 20px;
+            padding:0 20px;
+            width: 100%;
+            overflow-x: auto;
+            box-sizing: border-box;
             a {
                 font-size: 15px;
                 color:rgb(89,89,89);
                 letter-spacing: -0.015em;
                 padding:0 15px;
                 position: relative;
+                white-space: nowrap;
                 &:first-child {
                     padding-left: 0;
                 }
@@ -437,13 +442,6 @@
         flex:auto;
     }
     
-    .scroll_box {
-        width: max-content;
-        display: flex;
-        .scroll_x {
-
-        }
-    }
 }
 
 /* swiper custom */
