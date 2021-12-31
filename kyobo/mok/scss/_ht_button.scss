@@ -17,7 +17,7 @@ button[class^=btn_] {
     &.disabled, &[aria-disabled], &[disabled] {
         pointer-events: none;
         cursor: default;
-     }
+    }
 }
 a[class^=btn_] [class^=ico_], button[class^=btn_] [class^=ico_], a[class^=btn_] .text, button[class^=btn_] .text {
     display: inline-block;
@@ -948,7 +948,7 @@ button.btn_text_link {
     }
     a.btn_xs .ico_plus, button.btn_xs .ico_plus {
         background-image: url(../images/ico_plus_h12_mok@2x.png);
-     }
+    }
     a.btn_xs .ico_write_white, button.btn_xs .ico_write_white {
         background-image: url(../images/ico_write_wh_h17_mok@2x.png);
     }
