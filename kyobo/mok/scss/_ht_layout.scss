@@ -436,10 +436,25 @@
         position: sticky;
         top:60px;
         height: 52px;
-        margin-bottom: 0;
+        margin-bottom: 39px;
+        border-bottom: 1px solid #d5d5d5;
+    }
+    .tab_wrap.justify > .tab_list_wrap .tabs {
+        padding:0 20px;
+        overflow-y: visible;
+        height: 52px;
     }
     .tab_wrap.justify > .tab_list_wrap .tabs .tab_item {
-        flex:auto;
+        white-space: nowrap;
+        margin-right: 22px;
+        &:last-child {
+            margin-right: 0;
+        }
+        .tab_link {
+            padding:0;
+            flex: initial;
+            align-items: center;
+        }
     }
     
 }
