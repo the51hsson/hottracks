@@ -135,6 +135,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
           box-sizing: border-box;
 }
 
+.scroll_hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scroll_hide::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
+}
+
 .skip_nav_wrap {
   position: absolute;
   font-size: 0;
@@ -477,8 +489,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 20px;
 }
 .category_menu .brand_product_list .brand_tab {
-  padding: 0 20px 20px;
-  overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .category_menu .brand_product_list .brand_tab a {
   font-size: 15px;
@@ -486,6 +505,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   letter-spacing: -0.015em;
   padding: 0 15px;
   position: relative;
+  white-space: nowrap;
 }
 .category_menu .brand_product_list .brand_tab a:first-child {
   padding-left: 0;
@@ -623,14 +643,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
-}
-.ht_ .scroll_box {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 /* swiper custom */
 .ht_ .swiper-scrollbar {
@@ -1233,7 +1245,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .footer_wrap {
   background: #fff;
-  padding: 6px 9px;
+  padding: 20px 9px;
   width: 100%;
 }
 .footer_wrap.fixed_foot {
