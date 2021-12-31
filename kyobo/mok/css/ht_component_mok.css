@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* 버튼 */
+/* s: 버튼 정리 */
 a[class^=btn_], button[class^=btn_] {
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -1603,3 +1603,5 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
     background-image: url(../images/ico_trash_mok@3x.png);
   }
 }
+
+/* e: 버튼 정리 */

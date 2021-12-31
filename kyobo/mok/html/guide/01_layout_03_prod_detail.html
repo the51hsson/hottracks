@@ -174,95 +174,42 @@
 		<!-- // 컨텐츠 -->
 
 		<!-- 독바 -->
-		<section class="footer_wrap fixed_foot">
+		<section class="footer_wrap fixed_foot"><!-- todo : footer_wrap에서 product_btn_foot등으로 변경 여지 있음 -->
 			<!-- 상품상세 하단 고정영역 -->
-			<div class="prod_detail_footer">
-				<!-- 구매 정보 영역 -->
-				<div class="prod_purchase_info_wrap">
-					<!-- CASE 1. 기본(옵션이 없는 경우, 옵션이 있는 경우 - 선택 전) -->
-					<!-- DESC : style="display: none;" 은 퍼블 작업을 위한 임시 css. 작업시 삭제 필요 -->
-					<div class="footer_contents_inner">
+			<div class="prod_purchase_info_wrap">
+				<!-- CASE 1. 기본(옵션이 없는 경우, 옵션이 있는 경우 - 선택 전) -->
+				<!-- DESC : 버튼 풀배열인경우 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
+				<div class="btn_wrap multi">
+					<!-- DESC : 찜하기 버튼 활성화 시 button.btn_wish 영역 [active] class 추가 -->
+					<button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span class="hidden">찜하기</span></button>
+					<button type="button" class="btn_ip btn_line_gray"><span class="ico_gift"></span><span class="text">선물하기</span></button>
 
-						<!-- DESC : 버튼 풀배열인경우 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
-						<div class="btn_wrap multi">
-							<!-- DESC : 찜하기 버튼 활성화 시 button.btn_wish 영역 [active] class 추가 -->
-							<button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span class="hidden">찜하기</span></button>
-							<button type="button" class="btn_ip btn_line_gray"><span class="ico_gift"></span><span class="text">선물하기</span></button>
-
-							<!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
-							<div class="btn_wrap overlap">
-								<button type="button" class="btn_ip btn_light_gray"><span class="text">장바구니</span></button>
-								<button type="button" class="btn_ip btn_primary"><span class="text">구매하기</span></button>
-							</div>
-						</div>
+					<!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
+					<div class="btn_wrap overlap">
+						<button type="button" class="btn_ip btn_light_gray"><span class="text">장바구니</span></button>
+						<button type="button" class="btn_ip btn_primary"><span class="text">구매하기</span></button>
 					</div>
-					<!-- // CASE 1. 기본(옵션이 없는 경우, 옵션이 있는 경우 - 선택 전) -->
-
-					<!-- CASE 2. 기본(옵션이 있는 경우 - 선택 후) -->
-					<!-- DESC : style="display: none;" 은 퍼블 작업을 위한 임시 css. 작업시 삭제 필요 -->
-					<div class="footer_contents_inner" style="display: none;">
-						<!-- DESC : 기본타입인경우 버튼 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
-						<div class="btn_wrap">
-							<!-- DESC : 찜하기 버튼 활성화 시 button.btn_wish 영역 [active] class 추가 -->
-							<button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span class="hidden">찜하기</span></button>
-
-							<!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
-							<div class="btn_wrap overlap single">
-								<button type="button" class="btn_ip btn_primary"><span class="text">바로구매</span></button>
-							</div>
-						</div>
-					</div>
-					<!-- // CASE 2. 기본(옵션이 있는 경우 - 선택 후) -->
-
-					<!-- CASE 3. 절판, 출간예정 -->
-					<!-- DESC : style="display: none;" 은 퍼블 작업을 위한 임시 css. 작업시 삭제 필요 -->
-					<div class="footer_contents_inner" style="display: none;">
-						<!-- DESC : 기본타입인경우 버튼 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
-						<div class="btn_wrap">
-							<!-- DESC : 찜하기 버튼 활성화 시 button.btn_wish 영역 [active] class 추가 -->
-							<button type="button" class="btn_wish size_lg active"><span class="ico_wish"></span><span class="hidden">찜하기</span></button>
-							<button type="button" class="btn_ip btn_line_primary"><span class="ico_purchase_alarm"></span><span class="text">재입고알림신청</span></button>
-							<!--<button type="button" class="btn_lg btn_line_primary"><span class="ico_purchase_alarm"></span><span class="text">출간알림신청</span></button>-->
-						</div>
-					</div>
-					<!-- // CASE 3. 절판, 출간예정 -->
-
-					<!-- CASE 4. 인터넷 주문불가 -->
-					<!-- DESC : style="display: none;" 은 퍼블 작업을 위한 임시 css. 작업시 삭제 필요 -->
-					<div class="footer_contents_inner" style="display: none;">
-						<!-- DESC : 기본타입인경우 버튼 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
-						<div class="btn_wrap">
-							<!-- DESC : 찜하기 버튼 활성화 시 button.btn_wish 영역 [active] class 추가 -->
-							<button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span class="hidden">찜하기</span></button>
-							<button type="button" class="btn_ip btn_line_primary"><span class="text">바로드림</span></button>
-						</div>
-					</div>
-					<!-- // CASE 4. 인터넷 주문불가 -->
-
-					<!-- CASE 5. sam 구매 -->
-					<!-- DESC : style="display: none;" 은 퍼블 작업을 위한 임시 css. 작업시 삭제 필요 -->
-					<div class="footer_contents_inner" style="display: none;">
-						<!-- DESC : 기본타입인경우 버튼 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
-						<div class="btn_wrap">
-							<!-- DESC : 찜하기 버튼 활성화 시 button.btn_wish 영역 [active] class 추가 -->
-							<button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span class="hidden">찜하기</span></button>
-							<button type="button" class="btn_ip btn_line_primary"><span class="text">배송지 입력</span></button>
-						</div>
-					</div>
-					<!-- // CASE 5. sam 구매 -->
 				</div>
-				<!-- // 구매 정보 영역 -->
+				<!-- // CASE 1. 기본(옵션이 없는 경우, 옵션이 있는 경우 - 선택 전) -->
+
+				<!-- CASE 2. 기본(옵션이 있는 경우 - 선택 후) -->
+				<!-- // CASE 2. 기본(옵션이 있는 경우 - 선택 후) -->
+
+				<!-- CASE 3. 절판, 출간예정 -->
+				<!-- // CASE 3. 절판, 출간예정 -->
+
+				<!-- CASE 4. 인터넷 주문불가 -->
+				<!-- // CASE 4. 인터넷 주문불가 -->
+
+				<!-- CASE 5. sam 구매 -->
+				<!-- // CASE 5. sam 구매 -->
 			</div>
 			<!-- // 상품상세 하단 고정영역 -->
 			<!-- 탑버튼 -->
-			<div class="floating_wrapper">
-				<a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
-			</div>
+			<a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
 			<!-- // 탑버튼 -->
 			<!-- 백버튼 -->
-			<div class="floating_wrapper">
-				<a href="#" class="btn_go_back"><span class="hidden">이전 화면으로</span></a>
-			</div>
+			<a href="#" class="btn_go_back"><span class="hidden">이전 화면으로</span></a>
 			<!--// 백버튼-->
 
 		</section>
