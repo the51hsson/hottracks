@@ -341,6 +341,30 @@
             font-weight: $font-weight-bold;
         } 
     }
+    .coupon_wrap_complete {
+        background: #f2f2f2;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin:0 -20px;
+        .txt_dec {
+            width: calc(100% - 81px );
+            color: #767676;
+            font-weight: $font-weight-bold;
+            .ico_check {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                background: url(../images/ico/ico_check.svg) no-repeat 0 0;
+                background-size: 18px auto;
+                position: relative;
+                top: 3px;
+            }
+        } 
+    }    
 }
 
 
@@ -839,7 +863,6 @@
                 position: relative;
                 display: inline-block;
                 font-size: 13px;
-                
                 color: #595959;
                 @include icoMore(6px);
                 
@@ -849,15 +872,12 @@
                 font-size: 13px;
                 .txt_count {
                     color: #000;
-                    
                 }
                 .btn_reply {
                     margin-left: 16px;
                     .txt_reply {
                         color: rgb(118, 118, 118);
-                    
                     }
-
                 }
             }
         }
@@ -1562,14 +1582,14 @@
     padding-top: 20px;
     display: flex;
     justify-content: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     .btn_expand {
         position: relative;
         display: inline-block;
         font-size: 13px;
         color: #767676;
         cursor: pointer;
-        .text {
+        .txt {
             font-size: 15px;
             color: #767676;
             font-weight: 500;

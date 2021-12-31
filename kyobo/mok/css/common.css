@@ -431,10 +431,42 @@ button.btn_sm {
   background-size: 20px auto;
   padding-left: 25px;
 }
-.btn .txt.ico_white_download {
-  background: url(../images/ico/ico_white_download.png) no-repeat 0 4px;
+
+.btn_coupon_download {
+  width: 79px;
+  height: 30px;
+  padding: 6px 10px 1px;
+  border-radius: 4px;
+  font-size: 12px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  border: solid 1px #fff;
+  color: #fff;
+  text-align: center;
+}
+.btn_coupon_download .ico_white_download {
+  background: url(../images/ico/ico_white_download.png) no-repeat 0 2px;
   background-size: 10px 10px;
   padding-left: 15px;
+}
+.btn_coupon_download .txt {
+  display: inline-block;
+}
+
+.btn_coupon_view {
+  width: 79px;
+  height: 30px;
+  padding: 6px 10px 1px;
+  border-radius: 4px;
+  font-size: 12px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  border: solid 1px #ccc;
+  color: #000;
+  text-align: center;
+}
+.btn_coupon_view .txt {
+  display: inline-block;
 }
 
 .link_delivery {
@@ -1232,6 +1264,37 @@ button.btn_sm {
   width: calc(100% - 81px );
   color: #fff;
   font-weight: 700;
+}
+.product_info_area .coupon_wrap_complete {
+  background: #f2f2f2;
+  height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 -20px;
+}
+.product_info_area .coupon_wrap_complete .txt_dec {
+  width: calc(100% - 81px );
+  color: #767676;
+  font-weight: 700;
+}
+.product_info_area .coupon_wrap_complete .txt_dec .ico_check {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../images/ico/ico_check.svg) no-repeat 0 0;
+  background-size: 18px auto;
+  position: relative;
+  top: 3px;
 }
 
 .product_deliinfo_area .info_wrap {
@@ -2586,7 +2649,7 @@ button.btn_sm {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .btn_more_area .btn_expand {
   position: relative;
@@ -2595,7 +2658,7 @@ button.btn_sm {
   color: #767676;
   cursor: pointer;
 }
-.btn_more_area .btn_expand .text {
+.btn_more_area .btn_expand .txt {
   font-size: 15px;
   color: #767676;
   font-weight: 500;

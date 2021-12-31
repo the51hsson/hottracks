@@ -779,18 +779,18 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 								$(this).removeClass('active');
 
 								if (isOpened) {
-									$(this).find('.text').text(btnAfterText);
+									$(this).find('.txt').text(btnAfterText);
 								} else {
-									$(this).find('.text').text(btnBeforeText);
+									$(this).find('.txt').text(btnBeforeText);
 								}
 							} else {
 								$(this).closest(wrap).addClass('active');
 								$(this).addClass('active');
 
 								if (isOpened) {
-									$(this).find('.text').text(btnBeforeText);
+									$(this).find('.txt').text(btnBeforeText);
 								} else {
-									$(this).find('.text').text(btnAfterText);
+									$(this).find('.txt').text(btnAfterText);
 								}
 							}
 						});

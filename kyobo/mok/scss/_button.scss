@@ -383,14 +383,45 @@ button.btn_sm {
             background-size: 20px auto;
             padding-left: 25px;            
         }                
-        &.ico_white_download {
-            background: url(../images/ico/ico_white_download.png) no-repeat 0 4px;
-            background-size: 10px 10px;
-            padding-left: 15px;                        
-        }
+  
     }
 }
 
+.btn_coupon_download {
+    width: 79px;
+    height: 30px;
+    padding: 6px 10px 1px;
+    border-radius: 4px;
+    font-size: 12px;
+    letter-spacing: -.01em;
+    font-weight: 500;    
+    border:solid 1px #fff;
+    color: #fff;
+    text-align: center;
+    .ico_white_download {
+        background: url(../images/ico/ico_white_download.png) no-repeat 0 2px;
+        background-size: 10px 10px;
+        padding-left: 15px;                        
+    }
+    .txt {
+        display: inline-block;
+    }
+}
+.btn_coupon_view {
+    width: 79px;
+    height: 30px;
+    padding: 6px 10px 1px;
+    border-radius: 4px;
+    font-size: 12px;
+    letter-spacing: -.01em;
+    font-weight: 500;    
+    border:solid 1px #ccc;
+    color: #000;
+    text-align: center;
+    .txt {
+        display: inline-block;
+    }
+}
 
 .link_delivery {
     position: relative;
