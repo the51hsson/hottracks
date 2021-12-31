@@ -831,7 +831,7 @@
                 }   
             }        
         }
-        .review_more_area {
+        .review_more_area {           
             margin-bottom: 16px;
             display: flex;
             justify-content: space-between;
@@ -969,13 +969,16 @@
     } 
 }
 
-
+/**/
 .auto_overflow_wrap .auto_overflow_contents {
     overflow: hidden;
 }
 .auto_overflow_wrap.active>.auto_overflow_contents {
     max-height: none!important;
 }
+
+
+
 .all_review_wrap {
     .review_inner {
         padding-top: 20px;
@@ -1149,13 +1152,23 @@
             }            
         }
     }  
+    .review_inner {
+        .auto_overflow_contents {
+            margin-bottom: 12px;
+            .auto_overflow_inner {
+                .review_comment_area {
+                    .txt_review {
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+            
+        }
+        .auto_overflow_footer {
+            margin-bottom: 12px;
+        }
+    }
 }
-.multi_review_area {
-    
-}
-
-
-
 
 
 /* recomend area  */
@@ -1639,48 +1652,97 @@
             font-size: 14px;
             font-weight: $font-weight-bold;
             position: relative;
+
             .ico_buble {
-                display: inline-block;
-                width: 18px;
-                height: 18px;
-                background: url(../images/ico/ico_buble.svg) no-repeat 0 0;
-                background-size: 18px auto;                                
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    background: url(../images/ico/ico_buble.svg) no-repeat 0 0;
+                    background-size: 18px auto;  
+                    position: relative;
+                    top: 3px;                              
+                }
+
             }
             .ico_reservation {
-                display: inline-block;
-                width: 18px;
-                height: 18px;
-                background: url(../images/ico/ico_reservation.svg) no-repeat 0 0;
-                background-size: 18px auto;                
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    background: url(../images/ico/ico_reservation.svg) no-repeat 0 0;
+                    background-size: 18px auto;    
+                    position: relative;
+                    top: 3px;                                
+                }
+
             }
             .ico_poster {
-                display: inline-block;
-                width: 18px;
-                height: 18px;                
-                background: url(../images/ico/ico_poster.svg) no-repeat 0 0;
-                background-size: 18px auto;                
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;                
+                    background: url(../images/ico/ico_poster.svg) no-repeat 0 0;
+                    background-size: 18px auto; 
+                    position: relative;
+                    top: 3px;               
+                }
+
             }
             .ico_army {
-                display: inline-block;
-                width: 18px;
-                height: 18px;                
-                background: url(../images/ico/ico_army.svg) no-repeat 0 0;
-                background-size: 18px auto;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;                
+                    background: url(../images/ico/ico_army.svg) no-repeat 0 0;
+                    background-size: 18px auto;
+                    position: relative;
+                    top: 3px;
+                }
+
             }
             .ico_mountain {
-                display: inline-block;
-                width: 18px;
-                height: 18px;                
-                background: url(../images/ico/ico_mountain.svg) no-repeat 0 -1px;                
-                background-size: 18px auto;                
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;                
+                    background: url(../images/ico/ico_mountain.svg) no-repeat 0 -1px;                
+                    background-size: 18px auto;   
+                    position: relative;
+                    top: 3px;                                
+                }
+
             }
         }
     }            
     .txt_dec {
         font-size: 13px;
-        font-weight: 500;
         color: #595959;
         line-height: 19px;
+        .txt_strong {
+            margin-bottom: 8px;
+        }
+        .gap {
+            display: inline-block;
+            font-size: 0;
+            text-indent: -9000em;
+            overflow: hidden;            
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 9px;
+                background-color: #d5d5d5;
+                margin:0 4px;
+                position: relative;
+                top: 10px;
+            }
+        }            
     }        
 }
 

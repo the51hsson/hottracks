@@ -170,7 +170,7 @@ $txt-white:     #ffffff !default;
     color: $txt-primary;
 }
 .txt_bold {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 /* align */
@@ -336,7 +336,19 @@ button.btn_md {
     height: 50px;
     padding: 0 23px 1px;
     border-radius: 6px;
-    font-size: 14px;line-height: 23px;letter-spacing: -.01em;}
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -.01em;
+}
+a.btn_md_second, 
+button.btn_md_second {
+    height: 36px;
+    padding: 9px 0 8px 1px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -.01em;
+}
 a.btn_sm, 
 button.btn_sm {
     height: 30px;
@@ -347,6 +359,7 @@ button.btn_sm {
     letter-spacing: -.01em;
     font-weight: $font-weight-normal;
 }
+
 /* ico */
 .btn {
     .txt {
@@ -443,6 +456,7 @@ button.btn_sm {
     .sub {
         font-size: 14px;
         color: rgb(118,118,118);
+        margin-top: 8px;
     }
 }
 
