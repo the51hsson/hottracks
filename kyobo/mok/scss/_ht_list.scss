@@ -192,6 +192,9 @@
 
         + .font_size_xs, .bul_list {
             margin-top: 6px;
+            &.no_margin {
+                margin-top: 0;
+            }
         }
     }
 

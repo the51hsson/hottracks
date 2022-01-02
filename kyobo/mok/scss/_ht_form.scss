@@ -308,7 +308,7 @@
     > select {
         display: inline-block;
         width: 100%;
-        height: 44px;
+        height: 50px;
         padding: 0 37px 0 14px;
         border: 1px solid #d5d5d5;
         border-radius: 6px;
@@ -319,7 +319,7 @@
         letter-spacing: -0.01em;
         color: #000;
         font-family: "Noto Sans KR", sans-serif;
-        background-image: url('../images/arw_select_mok.png');
+        background-image: url('../images/guide/ico_arw_select.svg');
         background-size: 9px 5px;
         background-color: #fff;
         background-position: calc(100% - 14px) center;
@@ -346,16 +346,7 @@
         line-height: 34px;
     }
 }
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .form_sel > select {
-        background-image: url('../images/arw_select_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .form_sel > select {
-        background-image: url('../images/arw_select_mok@3x.png');
-    }
-}
+
 /* radio/check */
 .form_chk,
 .form_rdo {
@@ -459,23 +450,23 @@
 }
 .form_chk input:checked + label:before,
 .form_rdo input:checked + label:before {
-    background-color: #5055b1;
-    border-color: #5055b1;
+    background-color: #D53020;
+    border-color: #D53020;
 }
 .form_chk input:checked {
     &[aria-disabled] + label:before,
     &[disabled] + label:before,
     &[readonly] + label:before {
-        background-color: #b8badf;
-        border-color: #b8badf;
+        background-color: #E27F75;
+        border-color: #E27F75;
     }
 }
 .form_rdo input:checked {
     &[aria-disabled] + label:before,
     &[disabled] + label:before,
     &[readonly] + label:before {
-        background-color: #b8badf;
-        border-color: #b8badf;
+        background-color: #E27F75;
+        border-color: #E27F75;
     }
 }
 .form_chk input:focus + label,

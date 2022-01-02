@@ -16,6 +16,7 @@ $(function(){
 	reviewTabAnchor();
 
 	setProdTitleMoreBtn();
+	toggleRadioTextArea();
 
 	// 리뷰 내 리뷰 썸네일 swiper
 	$(".review_swiper .swiper-container").each(function (index, element) {
@@ -242,6 +243,32 @@ function setProdTitleMoreBtn() {
 		overflowEl.each(function (index) {
 			if (index < overflowElCnt - 1) {
 				$(this).find('> .auto_overflow_footer .btn_more_detail').remove();
+			}
+		});
+	}
+}
+
+// radio 클릭 시 textarea 노출
+function toggleRadioTextArea() {
+	if ($('.toggle_textarea_list .chk_col_item').length > 0) {
+		var checkInput, hasTextarea, targetTextarea;
+
+		$('.toggle_textarea_list .chk_col_item').each(function () {
+			hasTextarea = $(this).find('.byte_check_wrap').length > 0;
+
+			if (hasTextarea) {
+				checkInput = $(this).find('> .form_rdo input');
+				checkInput.on('change', function () {
+					targetTextarea = $(this).closest('.chk_col_item').find('.byte_check_wrap .form_textarea');
+					targetTextarea.attr('disabled', false);
+				});
+			} else {
+				checkInput = $(this).find('> .form_rdo input');
+				checkInput.on('change', function () {
+					if (targetTextarea) {
+						targetTextarea.attr('disabled', true);
+					}
+				});
 			}
 		});
 	}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="Author" content="SEO 기획 정의 내용 반영" />
+    <meta name="keywords" content="SEO 기획 정의 내용 반영" />
+    <meta name="description" content="SEO 기획 정의 내용 반영" />
+    <meta name="subject" content="SEO 기획 정의 내용 반영" />
+    <!-- DESC : 성인컨텐츠인 경우 추가하는 meta tag -->
+    <!--<meta name="rating" content="adult" />-->
+
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta property="og:title" content="핫트랙스">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../../images/guide/sns.jpg">
+    <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
+    <title>모바일상품상세 레이아웃</title>
+
+    <!-- Plug-In css -->
+    <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../../vendors/lib/swiper-7.2.0/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../vendors/lib/star-rating/css/star-rating.min.css" />
+    <!-- // Plug-In css -->
+
+    <!-- font css -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
+    <!-- // font css -->
+
+    <!-- Custom styles for this template -->
+    <!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
+    <!-- // Custom styles for this template -->
+
+    <!-- ht_ Hottracks custom css -->
+    <link rel="stylesheet" href="../../css/ht_style_mok.css" />
+    <link rel="stylesheet" href="../../css/ht_product_mok.css" />
+    <!--// ht_ Hottracks custom css -->
+
+
+    <!-- Plug-In javascript -->
+    <script src="../../vendors/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="../../vendors/lib/jquery-ui-1.12.1/jquery.ui.spinner.js"></script>
+    <script src="../../vendors/lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../vendors/lib/swiper-7.2.0/js/swiper-bundle.min.js"></script>
+    <script src="../../vendors/lib/star-rating/js/star-rating.min.js"></script>
+    <script src="../../vendors/lib/star-rating/themes/krajee-gly/theme.min.js"></script>
+    <script src="../../vendors/lib/star-rating/js/locales/ko.js"></script>
+    <script src="../../vendors/lib/scrollpos-styler/scrollPosStyler.min.js"></script>
+    <script src="../../vendors/lib/css-element-queries/ResizeSensor.js"></script>
+    <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
+    <!-- // Plug-In javascript -->
+
+    <!-- UI JavaScript -->
+    <!-- <script src="../../vendors/js/ui_mok.js"></script> -->
+    <script src="../../js/front_bak.js"></script>
+    <script src="../../js/ui_product_mok.js"></script>
+    <!-- // UI JavaScript -->
+
+</head>
+
+<body>
+    <!-- SkipNav -->
+    <div class="skip_nav_wrap">
+        <a href="#headerWrapper">메뉴 바로가기</a>
+        <a href="#containerWrapper">본문 바로가기</a>
+    </div>
+    <!-- //SkipNav -->
+
+    <!-- wrapper -->
+    <!-- ht_ Hottracks ht_ 클래스 추가 -->
+    <!-- DESC : footer 없는 경우 [ no-footer ] 클래스 추가 -->
+    <!-- DESC : 상품상세와 같이 하단 구매 영역 있는 경우 클래스 .contents_detail_view 추가 -->
+    <div class="ht_ wrapper contents_detail_view">
+        <!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
+        <header id="headerWrapper" class="ht_ header_wrapper">
+            <div class="header_left">
+                <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
+            </div>
+            <div class="header_center">
+                <div class="page_title prod_detail"></div>
+            </div>
+            <div class="header_right">
+                <!-- DESC : 상품정보 부터 검색버튼 비활성화 -->
+                <a href="#" class="btn_header_search"><span class="hidden">검색</span></a>
+                <a href="#" class="btn_header_cart">
+                    <span class="hidden">장바구니</span>
+                    <!-- DESC :: 0개인경우 count 영역 미노출 / 최대 99 -->
+                    <span class="count">99</span>
+                </a>
+            </div>
+        </header>
+        <!-- // 헤더 -->
+        <!-- 컨텐츠 -->
+        <main id="containerWrapper" class="container_wrapper">
+            <!-- data-target 과 id 매치 -->
+            <button type="button" class="btn_lg btn_primary" data-role="btn-dialog" data-target="#popFullHasBtnEx1"><span class="text">팝업오픈</span></button>
+        </main>
+        <!-- // 컨텐츠 -->
+
+        <!-- 독바 -->
+        <section class="footer_wrap fixed_foot">
+            <!-- todo : footer_wrap에서 product_btn_foot등으로 변경 여지 있음 -->
+            <!-- 상품상세 하단 고정영역 -->
+            <div class="prod_purchase_info_wrap">
+                <!-- CASE 1. 기본 -->
+                <!-- DESC : 버튼 풀배열인경우 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
+                <div class="btn_wrap multi">
+                    <button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span
+                            class="hidden">찜하기</span></button>
+                    <button type="button" class="btn_gift size_lg"><span class="ico_gift"></span><span
+                            class="text">선물하기</span></button>
+
+                    <!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
+                    <div class="btn_wrap overlap">
+                        <button type="button" class="btn_ip btn_light_gray"><span class="text">장바구니</span></button>
+                        <button type="button" class="btn_ip btn_primary"><span class="text">구매하기</span></button>
+                    </div>
+                </div>
+                <!-- // CASE 1. 기본 -->
+
+            </div>
+            <!-- // 상품상세 하단 고정영역 -->
+            <div class="floating_wrapper">
+                <!-- 탑버튼 -->
+                <a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
+                <!-- // 탑버튼 -->
+                <!-- 백버튼 -->
+                <a href="#" class="btn_go_back"><span class="hidden">이전 화면으로</span></a>
+                <!--// 백버튼-->
+            </div>
+        </section>
+        <!-- // 독바 -->
+    </div>
+    <!-- // wrapper -->
+    <!-- 팝업 - full + 하단 버튼 -->
+    <div id="popFullHasBtnEx1" class="dialog_wrap has_btn" data-class="dialog_full">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
+                class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">신고</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents"> 
+            <p class="info_text font_size_def"><span class="fw_medium">신고 사유를 선택해주세요. <br>신고 내용은 이용약관 및 정책에 의해 처리됩니다.</span></p>
+            <div class="round_gray_box type_sub">
+                <div class="box_info_inner">
+                    <!-- chk_col_list -->
+                    <ul class="chk_col_list toggle_textarea_list">
+                        <li class="chk_col_item">
+                            <!-- form_rdo -->
+                            <span class="form_rdo">
+                                <input id="rdoReport01" type="radio" name="rdoReport" checked="">
+                                <label for="rdoReport01">비방, 명예훼손, 욕설, 혐오발언</label>
+                            </span>
+                            <!-- //form_rdo -->
+                        </li>
+                        <li class="chk_col_item">
+                            <!-- form_rdo -->
+                            <span class="form_rdo">
+                                <input id="rdoReport02" type="radio" name="rdoReport">
+                                <label for="rdoReport02">홍보, 영리목적</label>
+                            </span>
+                            <!-- //form_rdo -->
+                        </li>
+                        <li class="chk_col_item">
+                            <!-- form_rdo -->
+                            <span class="form_rdo">
+                                <input id="rdoReport03" type="radio" name="rdoReport">
+                                <label for="rdoReport03">음란, 유해, 불법정보</label>
+                            </span>
+                            <!-- //form_rdo -->
+                        </li>
+                        <li class="chk_col_item">
+                            <!-- form_rdo -->
+                            <span class="form_rdo">
+                                <input id="rdoReport04" type="radio" name="rdoReport">
+                                <label for="rdoReport04">상품과 무관한 내용</label>
+                            </span>
+                            <!-- //form_rdo -->
+                        </li>
+                        <li class="chk_col_item">
+                            <!-- form_rdo -->
+                            <span class="form_rdo">
+                                <input id="rdoReport05" type="radio" name="rdoReport">
+                                <label for="rdoReport05">도배 및 내용이 없는 리뷰</label>
+                            </span>
+                            <!-- //form_rdo -->
+                        </li>
+                        <li class="chk_col_item">
+                            <!-- form_rdo -->
+                            <span class="form_rdo">
+                                <input id="rdoReport06" type="radio" name="rdoReport">
+                                <label for="rdoReport06">기타</label>
+                            </span>
+                            <!-- //form_rdo -->
+                            <!-- byte_check_wrap -->
+                            <!-- DESC : 신고하기 항목 - '기타'의 textarea는 기본 disabled 상태 (다른 항목 선택 시 활성화처리는 스크립트 적용되어 있음) -->
+                            <div class="byte_check_wrap">
+                                <textarea class="form_textarea" title="신고 내용을 입력해주세요" placeholder="신고 내용을 입력해주세요." disabled=""
+                                    style="height: 68px;"></textarea>
+                                <div class="byte_chack_footer">
+                                    <div class="byte_check">
+                                        <span class="count">12</span>
+                                        <span class="total">300자</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //byte_check_wrap -->
+                        </li>
+                    </ul>
+                    <!-- //chk_col_list -->
+                </div>
+            </div>
+            <p class="bul_item_asterisk font_size_xs">허위 신고일 경우, 신고자의 서비스 활동이 제한될 수 있으니 유의하시어 신중하게 신고해주세요.</p>
+        </div>
+        <!-- //dialog_contents -->
+        <!-- dialog_footer -->
+        <div class="dialog_footer">
+            <button type="button" class="btn_md btn_primary"><span class="text">신고</span></button>
+        </div>
+        <!-- //dialog_footer -->
+    </div>
+    <!-- //팝업 - full + 하단 버튼 -->
+</body>
+
+</html>

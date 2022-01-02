@@ -515,27 +515,27 @@ button.btn_line_gray.disabled [class^=ico_], button.btn_line_gray[aria-disabled]
   opacity: .4;
 }
 
-a.btn_line_green, button.btn_line_green {
-  color: #4dac27;
-  background: #fff;
-  border: 1px solid #4dac27;
+a.btn_black, button.btn_black {
+  color: #fff;
+  background: #292929;
+  border: 1px solid #292929;
   -webkit-transition: background-color .2s ease-out;
   transition: background-color .2s ease-out;
 }
 
-a.btn_line_green:active, a.btn_line_green:focus {
-  background: #f3ffef;
+a.btn_black:active, a.btn_black:focus {
+  background: #000;
 }
 
-button.btn_line_green:active, button.btn_line_green:focus {
-  background: #f3ffef;
+button.btn_black:active, button.btn_black:focus {
+  background: #000;
 }
 
-a.btn_line_green.disabled [class^=ico_], a.btn_line_green[aria-disabled] [class^=ico_], a.btn_line_green[disabled] [class^=ico_] {
+a.btn_black.disabled [class^=ico_], a.btn_black[aria-disabled] [class^=ico_], a.btn_black[disabled] [class^=ico_] {
   opacity: .4;
 }
 
-button.btn_line_green.disabled [class^=ico_], button.btn_line_green[aria-disabled] [class^=ico_], button.btn_line_green[disabled] [class^=ico_] {
+button.btn_black.disabled [class^=ico_], button.btn_black[aria-disabled] [class^=ico_], button.btn_black[disabled] [class^=ico_] {
   opacity: .4;
 }
 

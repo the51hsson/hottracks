@@ -1506,13 +1506,13 @@ body.dialog_open {
                 .thumbnail_round_box {
                     padding: 16px;
                     border: 1px solid #eaeaea;
-                    border-radius: 10px;
+                    border-radius: 4px;
                     .thumbnail_product_item {
                         .thumbnail_area {
-                            width: 46px;
+                            width: 66px;
                         }
                         .info_area {
-                            padding: 6px 0 6px 12px;
+                            padding: 0 0 0 12px;
                             .info_product_name .link_text {
                                 font-size: 14px;
                                 line-height: 22px;
@@ -1578,9 +1578,24 @@ body.dialog_open {
                     margin: 34px 0 30px;
                     padding: 0 20px;
                     [class^=btn_] {
-                        border-radius: 6px;
+                        border-radius: 4px;
                         ~ [class^=btn_] {
                             margin-left: 5px;
+                        }
+                    }
+                    .overlap {
+                        [class^=btn_] {
+                            &:first-child {
+                                border-top-right-radius: 0;
+                                border-bottom-right-radius: 0;
+                            }
+                            &:last-child {
+                                border-top-left-radius: 0;
+                                border-bottom-left-radius: 0;
+                            }
+                        }
+                        [class^=btn_] + [class^=btn_] {
+                            margin-left: 0;
                         }
                     }
                 }

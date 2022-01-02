@@ -438,28 +438,28 @@ button.btn_line_gray {
         opacity: .4;
     }
 }
-a.btn_line_green, button.btn_line_green {
-    color: #4dac27;
-    background: #fff;
-    border: 1px solid #4dac27;
+a.btn_black, button.btn_black {
+    color: #fff;
+    background: #292929;
+    border: 1px solid #292929;
     transition: background-color .2s ease-out;
 }
-a.btn_line_green {
+a.btn_black {
     &:active, &:focus {
-        background: #f3ffef;
+        background: #000;
     }
 }
-button.btn_line_green {
+button.btn_black {
     &:active, &:focus {
-        background: #f3ffef;
+        background: #000;
     }
 }
-a.btn_line_green {
+a.btn_black {
     &.disabled [class^=ico_], &[aria-disabled] [class^=ico_], &[disabled] [class^=ico_] {
         opacity: .4;
     }
 }
-button.btn_line_green {
+button.btn_black {
     &.disabled [class^=ico_], &[aria-disabled] [class^=ico_], &[disabled] [class^=ico_] {
         opacity: .4;
     }
