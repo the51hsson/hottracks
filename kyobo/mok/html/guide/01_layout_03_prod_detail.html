@@ -21,30 +21,6 @@
 <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
 <title>모바일상품상세 레이아웃</title>
 
-<!--<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="180x180" href="../../images/guidefavicon/apple-touch-icon-180x180-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="167x167" href="../../images/guidefavicon/apple-touch-icon-167x167-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="152x152" href="../../images/guidefavicon/apple-touch-icon-152x152-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="144x144" href="../../images/guidefavicon/apple-touch-icon-144x144-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="120x120" href="../../images/guidefavicon/apple-touch-icon-120x120-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="114x114" href="../../images/guidefavicon/apple-touch-icon-114x114-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="76x76" href="../../images/guidefavicon/apple-touch-icon-76x76-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="72x72" href="../../images/guidefavicon/apple-touch-icon-72x72-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="60x60" href="../../images/guidefavicon/apple-touch-icon-60x60-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" href="../../images/guidefavicon/apple-touch-icon-57x57-precomposed.png" />
-<link rel="shortcut icon" sizes="256x256" href="../../images/guidefavicon/favicon_256x256.png" />
-<link rel="shortcut icon" sizes="196x196" href="../../images/guidefavicon/favicon_196x196.png" />
-<link rel="shortcut icon" sizes="128x128" href="../../images/guidefavicon/favicon_128x128.png" />
-<link rel="shortcut icon" sizes="48x48" href="../../images/guidefavicon/favicon_48x48.png" />
-<link rel="shortcut icon" sizes="32x32" href="../../images/guidefavicon/favicon_32x32.png" />
-<link rel="shortcut icon" href="../../images/guidefavicon/favicon_16x16.png" />
-
-<link rel="icon" sizes="128x128" href="../../images/guidefavicon/favicon_128x128.png" type="image/png" />
-<link rel="icon" sizes="64x64" href="../../images/guidefavicon/favicon_64x64.png" type="image/png" />
-<link rel="icon" sizes="32x32" href="../../images/guidefavicon/favicon_32x32.png" type="image/png" />
-
-<meta name="msapplication-TileImage" content="/images/guide/favicon/apple-touch-icon-144x144-precomposed.png" />
-<meta name="msapplication-TileColor" content="#222222" />-->
-
 <!-- Plug-In css -->
 <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
 <link rel="stylesheet" href="../../vendors/lib/swiper-7.2.0/css/swiper-bundle.min.css" />
@@ -86,10 +62,13 @@
 
 </head>
 <body>
+	<!-- SkipNav -->
 	<div class="skip_nav_wrap">
 		<a href="#headerWrapper">메뉴 바로가기</a>
 		<a href="#containerWrapper">본문 바로가기</a>
 	</div>
+	<!-- //SkipNav -->
+	
 	<!-- wrapper -->
 	<!-- ht_ Hottracks ht_ 클래스 추가 -->
 	<!-- DESC : footer 없는 경우 [ no-footer ] 클래스 추가 -->
@@ -145,23 +124,23 @@
 					<div class="prod_detail_contents">
 						<div class="prod_detail_contents_inner">
 							<!-- 이벤트 -->
-							<section id="scrollSpyProdEvent" class="tab_content sps" data-add-offset="48" data-height-observe>
+							<section id="scrollSpyProdEvent" class="tab_content sps">
 								<div style="height: 1000px; background:rgba(255,0,0,0.4);">이벤트
 								</div>
 							</section>
 							<!-- // 이벤트 -->
 							<!-- 상품정보 -->
-							<section id="scrollSpyProdInfo" class="tab_content sps" data-add-offset="48" data-height-observe>
+							<section id="scrollSpyProdInfo" class="tab_content sps">
 								<div style="height: 1000px; background:rgba(0,255,0,0.4);">상품정보</div>
 							</section>
 							<!-- // 상품정보 -->
 							<!-- 리뷰 -->
-							<section id="scrollSpyProdReview" class="tab_content sps" data-add-offset="48" data-height-observe>
+							<section id="scrollSpyProdReview" class="tab_content sps">
 								<div style="height: 600px; background:rgba(0,0,255,0.4);">리뷰</div>
 							</section>
 							<!-- // 리뷰 -->
 							<!-- 교환/반품/품절 -->
-							<section id="scrollSpyProdClaim" class="tab_content sps" data-add-offset="48" data-height-observe>
+							<section id="scrollSpyProdClaim" class="tab_content sps">
 								<div style="height: 600px; background:rgba(255,0,0,0.4);">교환/반품/품절</div>
 							</section>
 							<!-- // 교환/반품/품절 -->

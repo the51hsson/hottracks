@@ -2577,32 +2577,32 @@ body.dialog_open {
     }
 }
 /* sps */
-.wrapper .header_wrapper {
-    &.scroll_down ~ .container_wrapper .sps.sps-blw:not(.sps_add) {
-        top: 0;
-    }
-    &.scroll_up ~ .container_wrapper .sps.sps-blw {
-        top: 60px;
-    }
-}
-.sps.sps_scroll_fixed {
-    position: absolute;
-    width: 100%;
-    background-color: #fff;
-    z-index: 10;
-    transition: top 0.23s;
-    ~ .sps-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    &.sps-blw {
-        position: fixed;
-        left: 0;
-        right: 0;
-        width: 100%;
-    }
-}
+// .wrapper .header_wrapper {
+//     &.scroll_down ~ .container_wrapper .sps.sps-blw:not(.sps_add) {
+//         top: 112px;
+//     }
+//     &.scroll_up ~ .container_wrapper .sps.sps-blw {
+//         top: 60px;
+//     }
+// }
+// .sps.sps_scroll_fixed {
+//     position: absolute;
+//     width: 100%;
+//     background-color: #fff;
+//     z-index: 10;
+//     transition: top 0.23s;
+//     ~ .sps-bg {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//     }
+//     &.sps-blw {
+//         position: fixed;
+//         left: 0;
+//         right: 0;
+//         width: 100%;
+//     }
+// }
 /* rating */
 .rating-container {
     position: relative;
