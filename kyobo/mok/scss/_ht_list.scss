@@ -1,0 +1,300 @@
+/* s: list common */
+/* 타이틀 영역 */
+.title_wrap {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    .title_heading {
+        display: inline-block;
+        font-weight: 700;
+        .title_prefix {
+            display: inline-block;
+            color: #595959;
+            margin-right: 3px;
+            font-weight: 400;
+        }
+    }
+    &.title_size_xl {
+        margin-bottom: 20px;
+        .title_heading {
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: -0.01em;
+        }
+        &.align_both {
+            min-height: 36px;
+            margin-bottom: 16px;
+        }
+        &.has_sub_title {
+            margin-bottom: 24px;
+        }
+    }
+    &.title_size_md {
+        margin-bottom: 18px;
+        .title_heading {
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: -0.01em;
+        }
+        &.align_both {
+            min-height: 30px;
+            margin-bottom: 14px;
+        }
+        &.has_sub_title {
+            margin-bottom: 20px;
+        }
+    }
+    &.title_size_def {
+        margin-bottom: 12px;
+        .title_heading {
+            font-size: 15px;
+            line-height: 23px;
+            letter-spacing: -0.01em;
+        }
+    }
+    &.title_size_sm {
+        margin-bottom: 10px;
+        .title_heading {
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.01em;
+            .ico_speech {
+                margin: 2px 4px 0 0;
+            }
+        }
+    }
+    &.title_size_xs {
+        margin-bottom: 8px;
+        .title_heading {
+            font-size: 13px;
+            line-height: 19px;
+            letter-spacing: -0.01em;
+        }
+    }
+    &.has_sub_title {
+        flex-wrap: wrap;
+        .title_heading {
+            display: block;
+            margin-bottom: 0;
+        }
+        .info_text,
+        [class^=bul_item_] {
+            width: 100%;
+            margin-top: 6px;
+        }
+    }
+    &.has_btn .right_area {
+        margin-left: auto;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        [class^=btn_]:not(.btn_xs) ~ [class^=btn_]:not(.btn_xs) {
+            margin-left: 6px;
+        }
+        .btn_xs ~ .btn_xs {
+            margin-left: 3px;
+        }
+        .form_chk + [class^=btn_] {
+            margin-left: 20px;
+        }
+    }
+    &.type_sub_title {
+        margin-bottom: 20px;
+        .title_heading {
+            font-weight: 500;
+        }
+    }
+    .count {
+        display: inline-block;
+        min-width: 20px;
+        padding: 0 6px;
+        margin: -3px 0 0 5px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+        line-height: 20px;
+        font-weight: 700;
+        background: #000;
+        border-radius: 20px;
+        text-align: center;
+        box-sizing: border-box;
+        vertical-align: top;
+    }
+    &.title_size_sm + .bul_list {
+        margin-top: 12px;
+    }
+    &.title_size_xs + .bul_list {
+        margin-top: 10px;
+    }
+    &.title_size_min + .bul_list {
+        margin-top: 8px;
+    }
+    &.title_size_sm + [class*=bul_list] {
+        margin-top: 12px;
+    }
+    &.title_size_xs + [class*=bul_list] {
+        margin-top: 10px;
+    }
+    &.title_size_min + [class*=bul_list] {
+        margin-top: 8px;
+    }
+}
+
+.bul_list + .title_wrap {
+    &.title_size_sm {
+        margin-top: 20px;
+    }
+    &.title_size_xs {
+        margin-top: 18px;
+    }
+    &.title_size_min {
+        margin-top: 16px;
+    }
+}
+
+/* 불릿 아이템 */
+[class^=bul_item_] {
+    position: relative;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -.01em;
+    color: #595959;
+    font-weight: 400;
+     word-break: keep-all;
+
+    + [class^=bul_item_], .bul_list {
+        margin-top: 10px;
+    }
+
+    .btn_text_link {
+        display: inline;
+        color: inherit;
+        font-size: inherit;
+        line-height: inherit;
+
+        .text {
+            display: inline;
+            text-decoration: underline;
+        }
+    }
+
+    &.font_size_xs {
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: -.01em;
+
+        /*TODO : 디자인 수급 후 수정*/
+
+        + .font_size_xs, .bul_list {
+            margin-top: 6px;
+        }
+    }
+
+    &.font_size_xxs {
+        padding-left: 6px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -.01em;
+
+        &:before {
+            width: 2px;
+            height: 2px;
+        }
+
+        + .font_size_xxs, .bul_list {
+            margin-top: 4px;
+        }
+    }
+}
+
+.bul_item_dot {
+    padding-left: 9px;
+    strong {
+        font-weight: 700;
+        color:#000;
+    }
+    b {
+        font-weight: 700;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 7px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #999;
+    }
+}
+
+.bul_item_asterisk {
+    color: #767676;
+    padding-left: 8px;
+
+    &:before {
+        content: "*";
+        color: #474c98;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.bul_item_branch {
+    padding-left: 11px;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 6px;
+        height: 6px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../images/bul_branch_mok.png);
+        background-size: 6px 6px;
+    }
+}
+
+/* decimal 리스트 */
+.decimal_item {
+    color: #595959;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    font-weight: 400;
+    .btn_text_link {
+        color: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        .text {
+            display: inline;
+            text-decoration: underline;
+        }
+    }
+    &.font_size_xs {
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: -0.01em;
+    }
+    &.font_size_xxs {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+    }
+}
+.decimal_list {
+    padding-left: 15px;
+    list-style: decimal;
+    box-sizing: border-box;
+}
+/* e: list common */
