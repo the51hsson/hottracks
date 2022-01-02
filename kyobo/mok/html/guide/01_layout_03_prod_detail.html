@@ -61,6 +61,7 @@
 
 <!-- ht_ Hottracks custom css -->
 <link rel="stylesheet" href="../../css/ht_style_mok.css" />
+<link rel="stylesheet" href="../../css/ht_product_mok.css" />
 <!--// ht_ Hottracks custom css -->
 
 
@@ -177,12 +178,11 @@
 		<section class="footer_wrap fixed_foot"><!-- todo : footer_wrap에서 product_btn_foot등으로 변경 여지 있음 -->
 			<!-- 상품상세 하단 고정영역 -->
 			<div class="prod_purchase_info_wrap">
-				<!-- CASE 1. 기본(옵션이 없는 경우, 옵션이 있는 경우 - 선택 전) -->
+				<!-- CASE 1. 기본 -->
 				<!-- DESC : 버튼 풀배열인경우 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
-				<div class="btn_wrap multi">
-					<!-- DESC : 찜하기 버튼 활성화 시 button.btn_wish 영역 [active] class 추가 -->
-					<button type="button" class="btn_wish size_md"><span class="ico_wish"></span><span class="hidden">찜하기</span></button>
-					<button type="button" class="btn_ip size_md"><span class="ico_gift"></span><span class="text">선물하기</span></button>
+				<div class="btn_wrap multi" style="display: none;">
+					<button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span class="hidden">찜하기</span></button>
+					<button type="button" class="btn_gift size_lg"><span class="ico_gift"></span><span class="text">선물하기</span></button>
 
 					<!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
 					<div class="btn_wrap overlap">
@@ -190,19 +190,54 @@
 						<button type="button" class="btn_ip btn_primary"><span class="text">구매하기</span></button>
 					</div>
 				</div>
-				<!-- // CASE 1. 기본(옵션이 없는 경우, 옵션이 있는 경우 - 선택 전) -->
+				<!-- // CASE 1. 기본 -->
 
-				<!-- CASE 2. 기본(옵션이 있는 경우 - 선택 후) -->
-				<!-- // CASE 2. 기본(옵션이 있는 경우 - 선택 후) -->
+				<!-- CASE 2. 버튼 1개  -->
+				<div class="btn_wrap multi" style="display: none;">
+					<!-- DESC : 찜하기 버튼 활성화 시 button.btn_wish 영역 [active] class 추가 -->
+					<button type="button" class="btn_wish size_lg active"><span class="ico_wish"></span><span
+							class="hidden">찜하기</span></button>
+				
+					<!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
+					<div class="btn_wrap overlap single">
+						<button type="button" class="btn_ip btn_primary"><span class="text">바로구매</span></button>
+					</div>
+				</div>
+				<!-- // CASE 2. 버튼 1개 -->
 
-				<!-- CASE 3. 절판, 출간예정 -->
-				<!-- // CASE 3. 절판, 출간예정 -->
+				<!-- CASE 3. 재입고 신청  -->
+				<div class="btn_wrap multi" style="display: none;">
+					<button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span class="hidden">찜하기</span></button>
+					<div class="btn_wrap overlap single">
+						<button type="button" class="btn_ip btn_line_primary"><span class="ico_bell"></span><span class="text">재입고 알람 신청하기</span></button>
+					</div>
+				</div>
+				<!-- // CASE 3. 재입고 신청 -->
 
-				<!-- CASE 4. 인터넷 주문불가 -->
-				<!-- // CASE 4. 인터넷 주문불가 -->
+				<!-- CASE 4. 판매 중지 -->
+				<div class="btn_wrap multi" style="display:none;">
+					<button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span class="hidden">찜하기</span></button>
+					<!-- DESC : 판매중지 [ disabled ] class 추가 -->
+					<div class="btn_wrap overlap single">
+						<button type="button" class="btn_ip btn_line_gray disabled"><span class="text">현재 판매가 중지된 상품입니다</span></button>
+					</div>
+				</div>
+				<!-- // CASE 4. 판매 중지 -->
 
-				<!-- CASE 5. sam 구매 -->
-				<!-- // CASE 5. sam 구매 -->
+				<!-- CASE 5. 바로드림 바로구매 -->
+				<div class="btn_wrap" style="display:none;">
+					<button type="button" class="btn_ip btn_line_primary"><span class="text">바로드림</span></button>
+					<button type="button" class="btn_ip btn_primary"><span class="text">바로구매</span></button>
+				</div>
+				<!-- // CASE 6. 바로드림 바로구매 -->
+
+				<!-- CASE 6. 찜하기없는 장바구니 바로구매 -->
+				<div class="btn_wrap multi">
+					<button type="button" class="btn_gift size_lg"><span class="ico_gift"></span><span class="text">선물하기</span></button>
+					<button type="button" class="btn_ip btn_line_primary"><span class="text">장바구니</span></button>
+					<button type="button" class="btn_ip btn_primary"><span class="text">구매하기</span></button>
+				</div>
+				<!-- // CASE 6. 찜하기없는 장바구니 바로구매 -->
 			</div>
 			<!-- // 상품상세 하단 고정영역 -->
 			<!-- 탑버튼 -->

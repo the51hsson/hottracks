@@ -543,7 +543,15 @@ a.btn_ip .ico_gift, button.btn_ip .ico_gift {
   width: 18px;
   background-position: left center;
   background-repeat: no-repeat;
-  background-image: url(../images/ico_gift_mok.png);
+  background-image: url(../images/guide/ico_gift.svg);
+  background-size: 18px 20px;
+}
+
+a.btn_ip .ico_bell, button.btn_ip .ico_bell {
+  width: 18px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-image: url(../images/guide/ico_bell.svg);
   background-size: 18px 20px;
 }
 
@@ -558,30 +566,30 @@ a.btn_ip .ico_purchase_alarm, button.btn_ip .ico_purchase_alarm {
 /* 버튼 - 색상 */
 a.btn_primary, button.btn_primary {
   color: #fff;
-  background: #5055b1;
-  border: 1px solid #5055b1;
+  background: #DA2128;
+  border: 1px solid #DA2128;
   -webkit-transition: background-color .2s ease-out,border-color .2s ease-out;
   transition: background-color .2s ease-out,border-color .2s ease-out;
 }
 
 a.btn_primary:active, a.btn_primary:focus {
-  background: #2c307c;
-  border-color: #2c307c;
+  background: #AC3024;
+  border-color: #AC3024;
 }
 
 button.btn_primary:active, button.btn_primary:focus {
-  background: #2c307c;
-  border-color: #2c307c;
+  background: #AC3024;
+  border-color: #AC3024;
 }
 
 a.btn_primary.disabled, a.btn_primary[aria-disabled], a.btn_primary[disabled] {
-  background: #a6a9d7;
-  border-color: #a6a9d7;
+  background: #DB8880;
+  border-color: #DB8880;
 }
 
 button.btn_primary.disabled, button.btn_primary[aria-disabled], button.btn_primary[disabled] {
-  background: #a6a9d7;
-  border-color: #a6a9d7;
+  background: #DB8880;
+  border-color: #DB8880;
 }
 
 a.btn_light_gray, button.btn_light_gray {
@@ -613,41 +621,41 @@ button.btn_light_gray.disabled, button.btn_light_gray[aria-disabled], button.btn
 }
 
 a.btn_line_primary, button.btn_line_primary {
-  color: #474c98;
-  border: 1px solid #474c98;
+  color: #DA2128;
+  border: 1px solid #DA2128;
   background: #fff;
   -webkit-transition: background-color .2s ease-out,border-color .2s ease-out;
   transition: background-color .2s ease-out,border-color .2s ease-out;
 }
 
 a.btn_line_primary:active, a.btn_line_primary:focus {
-  background: #efeff8;
-  border-color: #474c98;
+  background: #FFF4F1;
+  border-color: #DA2128;
 }
 
 button.btn_line_primary:active, button.btn_line_primary:focus {
-  background: #efeff8;
-  border-color: #474c98;
+  background: #FFF4F1;
+  border-color: #DA2128;
 }
 
 a.btn_line_primary.disabled, a.btn_line_primary[aria-disabled], a.btn_line_primary[disabled] {
-  color: rgba(71, 76, 152, 0.5);
+  color: rgba(213, 48, 32, 0.5);
   background: #fff;
-  border-color: #a6a9d7;
+  border-color: #DB8880;
 }
 
 button.btn_line_primary.disabled, button.btn_line_primary[aria-disabled], button.btn_line_primary[disabled] {
-  color: rgba(71, 76, 152, 0.5);
+  color: rgba(213, 48, 32, 0.5);
   background: #fff;
-  border-color: #a6a9d7;
+  border-color: #DB8880;
 }
 
 a.btn_line_primary.disabled [class^=ico_], a.btn_line_primary[aria-disabled] [class^=ico_], a.btn_line_primary[disabled] [class^=ico_] {
-  opacity: .4;
+  opacity: .5;
 }
 
 button.btn_line_primary.disabled [class^=ico_], button.btn_line_primary[aria-disabled] [class^=ico_], button.btn_line_primary[disabled] [class^=ico_] {
-  opacity: .4;
+  opacity: .5;
 }
 
 a.btn_line_gray, button.btn_line_gray {
@@ -978,7 +986,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   margin-top: 12px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../images/ico_heart_h18_mok.png);
+  background-image: url(../images/guide/ico_heart.svg);
   background-size: 18px 18px;
   vertical-align: top;
   -webkit-transition: background .2s ease-out;
@@ -986,9 +994,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 }
 
 .btn_wish.active .ico_wish {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../images/ico_heart_h18_active_mok.png);
+  background-image: url(../images/guide/ico_heart_active.svg);
   background-size: 18px 18px;
 }
 
@@ -1001,14 +1007,10 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   width: 20px;
   height: 20px;
   margin-top: 11px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../images/ico_heart_h20_mok.png);
   background-size: 20px 20px;
 }
 
 .btn_wish.size_lg.active .ico_wish {
-  background-image: url(../images/ico_heart_h20_active_mok.png);
   background-size: 20px 20px;
 }
 
@@ -1021,14 +1023,71 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   width: 14px;
   height: 14px;
   margin-top: 8px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../images/ico_heart_h14_mok.png);
   background-size: 14px 14px;
 }
 
 .btn_wish.size_sm.active .ico_wish {
-  background-image: url(../images/ico_heart_h14_active_mok.png);
+  background-size: 14px 14px;
+}
+
+.btn_gift {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5px;
+  letter-spacing: -.01em;
+  line-height: 42px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -.01em;
+  font-family: "Noto Sans KR",sans-serif;
+  font-weight: 500;
+}
+
+.btn_gift .ico_gift {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  margin-right: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/guide/ico_gift.svg);
+  background-size: 18px 18px;
+  vertical-align: top;
+  -webkit-transition: background .2s ease-out;
+  transition: background .2s ease-out;
+}
+
+.btn_gift.size_lg {
+  width: 50px;
+  height: 50px;
+}
+
+.btn_gift.size_lg .ico_gift {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+}
+
+.btn_gift.size_sm {
+  width: 30px;
+  height: 30px;
+}
+
+.btn_gift.size_sm .ico_gift {
+  width: 14px;
+  height: 14px;
   background-size: 14px 14px;
 }
 
@@ -1312,9 +1371,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   a.btn_ip .ico_cart_white, button.btn_ip .ico_cart_white {
     background-image: url(../images/ico_cart_wh_h18_mok@2x.png);
   }
-  a.btn_ip .ico_gift, button.btn_ip .ico_gift {
-    background-image: url(../images/ico_gift_mok@2x.png);
-  }
   a.btn_ip .ico_purchase_alarm, button.btn_ip .ico_purchase_alarm {
     background-image: url(../images/ico_purchase_alarm_mok@2x.png);
   }
@@ -1347,24 +1403,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   }
   .btn_delete .ico_delete {
     background-image: url(../images/ico_delete_mok@2x.png);
-  }
-  .btn_wish .ico_wish {
-    background-image: url(../images/ico_heart_h18_mok@2x.png);
-  }
-  .btn_wish.active .ico_wish {
-    background-image: url(../images/ico_heart_h18_active_mok@2x.png);
-  }
-  .btn_wish.size_lg .ico_wish {
-    background-image: url(../images/ico_heart_h20_mok@2x.png);
-  }
-  .btn_wish.size_lg.active .ico_wish {
-    background-image: url(../images/ico_heart_h20_active_mok@2x.png);
-  }
-  .btn_wish.size_sm .ico_wish {
-    background-image: url(../images/ico_heart_h14_mok@2x.png);
-  }
-  .btn_wish.size_sm.active .ico_wish {
-    background-image: url(../images/ico_heart_h14_active_mok@2x.png);
   }
   .btn_share_text .ico_share {
     background-image: url(../images/ico_share_mok@2x.png);
@@ -1441,9 +1479,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   a.btn_ip .ico_cart_white, button.btn_ip .ico_cart_white {
     background-image: url(../images/ico_cart_wh_h18_mok@3x.png);
   }
-  a.btn_ip .ico_gift, button.btn_ip .ico_gift {
-    background-image: url(../images/ico_gift_mok@3x.png);
-  }
   a.btn_ip .ico_purchase_alarm, button.btn_ip .ico_purchase_alarm {
     background-image: url(../images/ico_purchase_alarm_mok@3x.png);
   }
@@ -1476,24 +1511,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   }
   .btn_delete .ico_delete {
     background-image: url(../images/ico_delete_mok@3x.png);
-  }
-  .btn_wish .ico_wish {
-    background-image: url(../images/ico_heart_h18_mok@3x.png);
-  }
-  .btn_wish.active .ico_wish {
-    background-image: url(../images/ico_heart_h18_active_mok@3x.png);
-  }
-  .btn_wish.size_lg .ico_wish {
-    background-image: url(../images/ico_heart_h20_mok@3x.png);
-  }
-  .btn_wish.size_lg.active .ico_wish {
-    background-image: url(../images/ico_heart_h20_active_mok@3x.png);
-  }
-  .btn_wish.size_sm .ico_wish {
-    background-image: url(../images/ico_heart_h14_mok@3x.png);
-  }
-  .btn_wish.size_sm.active .ico_wish {
-    background-image: url(../images/ico_heart_h14_active_mok@3x.png);
   }
   .btn_share_text .ico_share {
     background-image: url(../images/ico_share_mok@3x.png);
@@ -1533,6 +1550,21 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   }
   .btn_pop_tooltip {
     background-image: url(../images/btn_pop_tooltip_mok@3x.png);
+  }
+}
+
+@media (max-width: 375px) {
+  .btn_gift {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 1 auto !important;
+            flex: 0 1 auto !important;
+    width: 50px;
+  }
+  .btn_gift .ico_gift {
+    margin-right: 0 !important;
+  }
+  .btn_gift .text {
+    display: none !important;
   }
 }
 

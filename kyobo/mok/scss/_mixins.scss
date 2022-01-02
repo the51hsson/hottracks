@@ -12,6 +12,12 @@
     }
 }
 
+@mixin device375 {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
 
 @mixin icoMore($top){
     &.ico_more {

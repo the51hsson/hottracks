@@ -1,0 +1,15 @@
+.ht_ {
+    .prod_purchase_info_wrap {
+        .btn_wish {
+            flex: 0 1 auto;
+        }
+        .btn_ip  {
+            padding:0 5px;
+        }
+        .btn_wrap {
+            &.overlap {
+                flex: 1 0 auto;
+            }
+        }
+    }    
+}
