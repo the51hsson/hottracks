@@ -6,17 +6,22 @@
  * update :
  * -
  */
-// Custom Swiper
-var CustomSwiper = function(selector, options) {
-	options = $.extend(options, {containerModifierClass: 'swiper-'});
-	return new Swiper(selector, options);
-}
 $(function(){
 	setProdDetailAnchor();
 	reviewTabAnchor();
 
 	setProdTitleMoreBtn();
 	toggleRadioTextArea();
+
+	$('#popProductReview').on({
+		'dialogopen': function() {
+			reviewAnimation(0);
+		},
+
+		'dialogclose': function() {
+			reviewAnimation(1);
+		},
+	});
 
 	// 리뷰 내 리뷰 썸네일 swiper
 	$(".review_swiper .swiper-container").each(function (index, element) {
@@ -36,10 +41,10 @@ $(function(){
 					return '<span class="' + currentClass + '"></span>' + '<span class="' + totalClass + '"></span>';
 				},
 				formatFractionCurrent: function (number) {
-					return KyoboBookPub.mok.setPrependZero(number, 2);
+					return KyoboHottracks.mok.setPrependZero(number, 2);
 				},
 				formatFractionTotal: function (number) {
-					return KyoboBookPub.mok.setPrependZero(number, 2);
+					return KyoboHottracks.mok.setPrependZero(number, 2);
 				},
 			},
 		});
@@ -271,6 +276,44 @@ function toggleRadioTextArea() {
 				});
 			}
 		});
+	}
+}
+
+/**
+ * 리뷰팝업 트랜지션 전용 스크립트
+ * @param type {string} 팝업 이벤트 타입(0 - pop open / 1 - pop close)
+ */
+ function reviewAnimation(evttype){
+	var reviewPopContainer = $('.dialog_wrap.product_review');
+	var ratingTg = $('.form_rating', reviewPopContainer);
+	var reviewProdItem = $('.thumbnail_round_box', reviewPopContainer);
+	var reviewBtnTag = $('.tag_wrap .tag_item', reviewPopContainer);
+
+	if(evttype === 0){
+		ratingTg.on('rating:change', function(event, value, caption){
+			reviewPopContainer.addClass('review_next has_btn');
+			reviewProdItem.find('.thumbnail_product_item').addClass('horizontal_type');
+			reviewPopContainer.find('.rating-container').addClass('rating-sm').removeClass('rating-lg');
+		});
+
+		reviewProdItem.on('transitionend', function () {
+			$('.form_wrap .form_box.review_step01', reviewPopContainer).addClass('animated');
+		});
+
+		reviewBtnTag.on('click', function(){
+			$('.form_wrap .form_box.review_step02', reviewPopContainer).addClass('animated');
+		});
+
+		setTimeout(function (){
+			reviewPopContainer.addClass('open');
+		}, 200);
+	}else{
+		ratingTg.rating('reset');
+		reviewPopContainer.removeClass('open review_next has_btn');
+		reviewProdItem.find('.thumbnail_product_item').removeClass('horizontal_type');
+		reviewPopContainer.find('.rating-container').removeClass('rating-sm').addClass('rating-lg');
+		reviewBtnTag.removeClass('active');
+		$('.form_wrap .form_box', reviewPopContainer).removeClass('animated');
 	}
 }
 $(window).off('resize.uiProdTitle orientationChange.uiProdTitle', setProdTitleMoreBtn).on('resize.uiProdTitle orientationChange.uiProdTitle', setProdTitleMoreBtn);

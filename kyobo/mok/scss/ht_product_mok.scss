@@ -563,7 +563,19 @@
         }
     }
 }
-
+.thumbnail_product_item {
+    .caption {
+        display: none;
+    }
+    &.horizontal_type {
+        .caption {
+            display: inline-block;
+            .caption-badge {
+                background: 0;
+            }
+        }
+    }
+}
 /* rating */
 .rating-container {
     position: relative;
@@ -583,7 +595,7 @@
                 display: inline-block;
                 width: 22px;
                 height: 22px;
-                background-image: url('../images/ico_klover_none_mok.png');
+                background-image: url('../images/guide/ico_klover_none.svg');
                 background-size: 22px 22px;
             }
         }
@@ -607,7 +619,32 @@
         }
     }
     .caption {
-        display: none;
+        margin: 0 0 0 8px;
+        vertical-align: top;
+        font-size: 0;
+        position: relative;
+
+        .val {
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: -.01em;
+            color: #DA2128;
+            font-weight: 700;
+            line-height: 1;
+        }
+        .total {
+            padding-top: 5px;
+            margin-left: 6px;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -.01em;
+            color: #767676;
+            font-weight: 400;
+            line-height: 1;
+            &:before {
+                content: "/";
+            }
+        }
     }
     &.rating-sm {
         margin-left: -2px;
@@ -632,7 +669,7 @@
                 height: 18px;
                 background-repeat: no-repeat;
                 background-position: center;
-                background-image: url('../images/ico_klover_sm_mok.png');
+                background-image: url('../images/guide/ico_klover.svg');
                 background-size: 18px 18px;
             }
         }
@@ -648,7 +685,7 @@
                 height: 13px;
                 background-repeat: no-repeat;
                 background-position: center;
-                background-image: url('../images/ico_klover_xs_none_mok.png');
+                background-image: url('../images/guide/ico_klover_none.svg');
                 background-size: 13px 13px;
             }
         }
@@ -659,7 +696,7 @@
                 display: inline-block;
                 width: 13px;
                 height: 13px;
-                background-image: url('../images/guide/ico_clover.svg');
+                background-image: url('../images/guide/ico_klover.svg');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 13px 13px;
@@ -677,7 +714,7 @@
                 height: 40px;
                 background-repeat: no-repeat;
                 background-position: center;
-                background-image: url('../images/ico_klover_lg_none_mok.png');
+                background-image: url('../images/guide/ico_klover_none.svg');
                 background-size: 40px 40px;
             }
         }
@@ -690,7 +727,7 @@
                 height: 40px;
                 background-repeat: no-repeat;
                 background-position: center;
-                background-image: url('../images/ico_klover_lg_mok.png');
+                background-image: url('../images/guide/ico_klover.svg');
                 background-size: 40px 40px;
             }
         }
@@ -726,58 +763,7 @@
         }
     }
 }
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .rating-container .rating-stars .empty-stars .star .glyphicon-star-empty:before {
-        background-image: url('../images/ico_klover_none_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .rating-container .rating-stars .empty-stars .star .glyphicon-star-empty:before {
-        background-image: url('../images/ico_klover_none_mok@3x.png');
-    }
-}
 
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .rating-container.rating-sm .empty-stars .star .glyphicon-star-empty:before {
-        background-image: url('../images/ico_klover_sm_none_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .rating-container.rating-sm .empty-stars .star .glyphicon-star-empty:before {
-        background-image: url('../images/ico_klover_sm_none_mok@3x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .rating-container.rating-sm .filled-stars .star .glyphicon-star:before {
-        background-image: url('../images/ico_klover_sm_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .rating-container.rating-sm .filled-stars .star .glyphicon-star:before {
-        background-image: url('../images/ico_klover_sm_mok@3x.png');
-    }
-}
-
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .rating-container.rating-lg .empty-stars .star .glyphicon-star-empty:before {
-        background-image: url('../images/ico_klover_lg_none_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .rating-container.rating-lg .empty-stars .star .glyphicon-star-empty:before {
-        background-image: url('../images/ico_klover_lg_none_mok@3x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .rating-container.rating-lg .filled-stars .star .glyphicon-star:before {
-        background-image: url('../images/ico_klover_lg_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .rating-container.rating-lg .filled-stars .star .glyphicon-star:before {
-        background-image: url('../images/ico_klover_lg_mok@3x.png');
-    }
-}
 .rating-disabled {
     .rating-input,
     .rating-stars {
@@ -813,3 +799,511 @@
         vertical-align: top;
     }
 }
+
+.review_user_info {display: flex; display: -webkit-flex; justify-content: flex-start; align-items: center; flex-direction: row; font-size: 12px; line-height: 18px; letter-spacing: -.01em; color: #767676; margin-bottom: 11px; flex-wrap: wrap;}
+.review_user_info .gap {display: inline-block; font-size: 0; width: 1px; height: 9px; background-color: #d5d5d5; margin: 0 6px;}
+.review_user_info .badge_line_gray {margin: 0 6px 0 4px;}
+/* 뱃지 */
+[class^=badge_] {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: top;
+    [class^=ico_] {
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+    }
+    .text {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+/* 뱃지 - 사이즈 */
+.badge_md {
+    min-height: 22px;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+}
+.badge_sm {
+    min-height: 20px;
+    padding: 0 7px;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    &.badge_pill {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+        border-radius: 20px;
+    }
+    &:not(.badge_pill) .text {
+        transform: translateY(1px);
+    }
+}
+/* 뱃지 - 색상 */
+.badge_line_primary {
+    color: #DA2128;
+    border: 1px solid #DA2128;
+    background: #fff;
+}
+.badge_line_gray {
+    color: #767676;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+/* 뱃지 - 리스트 */
+.badge_list_box {
+    margin-top: -4px;
+    font-size: 0;
+    text-align: left;
+    [class^=badge_] {
+        margin-right: 4px;
+        margin-top: 4px;
+    }
+}
+.review_summary_wrap {
+    display: block;
+    font-size: 0;
+    .gap {
+        display: inline-block;
+        width: 4px;
+        height: 8px;
+        margin: 5px 6px 0;
+        background-image: url('../images/guide/ico_slash.svg');
+        background-size: 4px 8px;
+        vertical-align: top;
+    }
+    .review_quotes_text {
+        margin-right: 1px;
+        + .gap {
+            margin: 6px 6px 0;
+        }
+    }
+    .rating-container.rating-xs {
+        margin-top: 3px;
+    }
+}
+/* auto overflow 공통 */
+.auto_overflow_wrap {
+    .auto_overflow_contents {
+        overflow: hidden;
+    }
+    .auto_overflow_footer {
+        display: none;
+    }
+    &.overflow .auto_overflow_footer {
+        display: block;
+        margin-top: 12px;
+        &.type_cont {
+            margin-top: 24px;
+            text-align: center;
+        }
+    }
+    &.active {
+        > .auto_overflow_contents {
+            max-height: none !important;
+        }
+        &.type_tbl_col .auto_overflow_contents:after {
+            content: none;
+        }
+    }
+    &.type_tbl_col {
+        .auto_overflow_contents {
+            position: relative;
+            border-bottom: 1px solid #eaeaea;
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 10px;
+                background-color: #fff;
+            }
+        }
+        .tbl_col_wrap {
+            border-bottom: none;
+        }
+    }
+    &.type_text.overflow {
+        .auto_overflow_contents {
+            position: relative;
+            &:after {
+                content: "";
+                width: 100%;
+                height: 15px;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0), #fff 15px);
+                position: absolute;
+                bottom: 0;
+            }
+        }
+        &.active .auto_overflow_contents:after {
+            content: none;
+        }
+    }
+}
+/* 상품/리뷰 컨텐츠 공통 사용 */
+.review_quotes_text {
+    display: inline-block;
+    position: relative;
+    padding-left: 18px;
+    color: #595959;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    vertical-align: top;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 13px;
+        height: 13px;
+        background-image: url('../images/guide/ico_quotes.svg');
+        background-size: 13px 13px;
+    }
+}
+
+.review_klover_text {
+    display: inline-block;
+    position: relative;
+    padding-left: 19px;
+    color: #000;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    vertical-align: top;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 13px;
+        height: 13px;
+        background-image: url('../images/guide/ico_klover.svg');
+        background-size: 13px 13px;
+    }
+}
+.review_klover_box {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+    .review_desc {
+        display: inline-block;
+        margin: 1px 0 0 4px;
+        color: #767676;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+        vertical-align: top;
+    }
+}
+
+/* 리뷰 */
+.all_review_wrap {
+    .all_review_list .all_review_item {
+        border-bottom: 1px solid #eaeaea;
+        padding: 20px 4px;
+        box-sizing: border-box;
+        .review_middle .review_middle_box .auto_overflow_wrap {
+            .auto_overflow_contents {
+                max-height: 86px;
+                .auto_overflow_inner .info_text {
+                    margin-bottom: 13px;
+                    display: block;
+                    overflow: hidden;
+                    max-height: 88px;
+                    line-height: 22px;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 4;
+                    text-overflow: -o-ellipsis-lastline;
+                    white-space: normal;
+                    color: #000;
+                }
+            }
+            &.active .auto_overflow_contents .auto_overflow_inner .info_text {
+                height: auto;
+                max-height: none;
+                -webkit-box-orient: inherit;
+                -webkit-line-clamp: inherit;
+            }
+            .auto_overflow_footer {
+                margin-bottom: 13px;
+                .overflow_footer_inner {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row;
+                }
+            }
+        }
+        .review_top_common .review_summary_wrap {
+            margin-bottom: 14px;
+        }
+        .review_button_common {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            .btn_more_view {
+                flex: 1 0;
+            }
+            .bottom_right {
+                margin-left: auto;
+                .btn_like {
+                    .ico_like {
+                        width: 20px;
+                        height: 20px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-image: url('../images/guide/ico_like.svg');
+                        background-size: 20px 20px;
+                        margin-right: 4px;
+                    }
+                    &.active .ico_like {
+                        background-image: url('../images/guide/ico_like_pre.svg');
+                        background-size: 20px 20px;
+                    }
+                    .like_cont {
+                        position: relative;
+                        font-size: 13px;
+                        line-height: 19px;
+                        letter-spacing: -0.01em;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+                .btn_reply {
+                    margin-left: 12px;
+                    &.active {
+                        .ico_reply {
+                            background-image: url('../images/guide/ico_reply_pre.svg');
+                            background-size: 20px 20px;
+                        }
+                        .text_reply {
+                            color: #000;
+                        }
+                    }
+                    .ico_reply {
+                        width: 20px;
+                        height: 20px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-image: url('../images/guide/ico_reply.svg');
+                        background-size: 20px 20px;
+                        margin-right: 4px;
+                    }
+                    .text_reply {
+                        position: relative;
+                        font-size: 13px;
+                        line-height: 19px;
+                        letter-spacing: -0.01em;
+                        color: #767676;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        &.thumbnail .review_middle .review_middle_box .auto_overflow_wrap {
+            .auto_overflow_contents {
+                max-height: 86px;
+                .auto_overflow_inner {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    .info_text {
+                        padding-right: 20px;
+                        display: block;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        max-height: 88px;
+                        line-height: 22px;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 4;
+                        text-overflow: -o-ellipsis-lastline;
+                        white-space: normal;
+                    }
+                    .review_thumb {
+                        position: relative;
+                        width: 78px;
+                        height: 78px;
+                        .thumb_cont {
+                            display: block;
+                            width: 16px;
+                            height: 16px;
+                            line-height: 16px;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            background-color: rgba(0, 0, 0, 0.85);
+                            color: #fff;
+                            text-align: center;
+                            font-size: 11px;
+                            border-radius: 6px 0 6px 0;
+                        }
+                    }
+                }
+                .review_swiper {
+                    margin-top: 16px;
+                    display: none;
+                    .swiper-container .swiper-wrapper .swiper-slide {
+                        max-width: 335px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            &.active .auto_overflow_contents {
+                .auto_overflow_inner {
+                    .info_text {
+                        width: 100%;
+                        padding-right: 0;
+                        height: auto;
+                        max-height: none;
+                        -webkit-box-orient: inherit;
+                        -webkit-line-clamp: inherit;
+                    }
+                    .review_thumb {
+                        display: none;
+                    }
+                }
+                .review_swiper {
+                    display: block;
+                }
+            }
+        }
+        &.spoilers .review_middle .spoilers_text_box {
+            height: 62px;
+            background-color: #f7f7f7;
+            color: #767676;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            font-size: 13px;
+            line-height: 19px;
+            letter-spacing: -0.01em;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            .text_spoilers:before {
+                content: "";
+                display: inline-block;
+                width: 17px;
+                height: 19px;
+                background-image: url('../images/ico_locker_mok.png');
+                background-size: 17px 19px;
+                vertical-align: sub;
+                margin-right: 6px;
+            }
+            .btn_xxs {
+                width: 20px;
+                height: 20px;
+                border: 0;
+                background-color: rgba(0, 0, 0, 0);
+                background-image: url('../images/ico_spo_more_mok.png');
+                background-size: 20px 20px;
+                margin-left: 4px;
+            }
+        }
+        &.reply .review_reply {
+            border-top: 1px solid #eaeaea;
+            padding-top: 10px;
+            margin-top: 20px;
+            .byte_check_wrap {
+                &.active {
+                    display: block;
+                }
+                .form_textarea {
+                    height: 80px;
+                }
+            }
+            .reply_list .reply_list_item {
+                position: relative;
+                padding: 20px 20px 24px 37px;
+                box-sizing: border-box;
+                background-color: #f7f7f7;
+                margin-top: 8px;
+                border-radius: 10px;
+                .review_user_info:before {
+                    content: "";
+                    display: inline-block;
+                    width: 8px;
+                    height: 9px;
+                    background-image: url('../images/guide/arw_reply.svg');
+                    background-size: 8px 9px;
+                    position: absolute;
+                    top: 24px;
+                    left: 20px;
+                }
+                .info_text {
+                    color: #000;
+                }
+            }
+            .btn_more_body {
+                margin-top: 12px;
+            }
+        }
+        &.report_wrap .review_middle .report_text_box {
+            background-color: #f7f7f7;
+            border-radius: 6px;
+            padding: 37px 0 16px;
+            text-align: center;
+            box-sizing: border-box;
+            margin-top: 16px;
+            margin-bottom: 12px;
+            position: relative;
+            .info_text {
+                color: #767676;
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    width: 17px;
+                    height: 17px;
+                    background-image: url('../images/ico_exclamation_gray_sm_mok.png');
+                    background-size: 17px 17px;
+                    vertical-align: middle;
+                    margin-right: 2px;
+                    position: absolute;
+                    top: 16px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    .review_more_btn_wrap {
+        margin-top: 24px;
+        text-align: center;
+    }
+}
+
+/* 텍스트 gray 박스 */
+.info_text_box {
+    display: block;
+    padding: 18px;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    .info_text_inner + .info_text_inner {
+        margin-top: 18px;
+        padding-top: 18px;
+        border-top: 1px solid #eaeaea;
+    }
+    &.size_sm {
+        padding: 14px;
+        [class^=bul_item_].font_size_min + [class^=bul_item_].font_size_min {
+            margin-top: 4px;
+        }
+    }
+}
+

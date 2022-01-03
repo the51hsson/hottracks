@@ -828,13 +828,15 @@
                                     .rating-container.has_caption {
                                         margin-top: 30px;
                                         .caption {
-                                            display: none;
+                                            display: inline-block;
+                                            margin:0 0 0 8px;
+                                            vertical-align: top;
                                         }
                                     }
                                 }
                             }
                             &.horizontal_type .thumbnail_area {
-                                width: 64px;
+                                width: 93px;
                             }
                         }
                     }
@@ -1110,6 +1112,7 @@
                             .swiper-container .swiper-wrapper .swiper-slide {
                                 max-width: 335px;
                                 margin-right: 12px;
+                                width: 90% !important;
                                 img {
                                     width: 100%;
                                 }
@@ -1137,14 +1140,14 @@
                             padding: 20px 20px 24px 37px;
                             box-sizing: border-box;
                             background-color: #f7f7f7;
-                            margin-top: 8px;
+                            margin-top: 4px;
                             border-radius: 10px;
                             .review_user_info:before {
                                 content: "";
                                 display: inline-block;
                                 width: 8px;
                                 height: 9px;
-                                background-image: url('../images/arw_reply_mok.png');
+                                background-image: url('../images/guide/arw_reply.svg');
                                 background-size: 8px 9px;
                                 position: absolute;
                                 top: 24px;
@@ -1350,16 +1353,6 @@
         opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0);
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents .all_review_wrap .all_review_list .all_review_item .review_reply .reply_list .reply_list_item .review_user_info:before {
-        background-image: url('../images/arw_reply_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents .all_review_wrap .all_review_list .all_review_item .review_reply .reply_list .reply_list_item .review_user_info:before {
-        background-image: url('../images/arw_reply_mok@3x.png');
     }
 }
 /* 팝업 - dialog */

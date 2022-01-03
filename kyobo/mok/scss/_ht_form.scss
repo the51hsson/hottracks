@@ -495,7 +495,7 @@
         &:after {
             background-position: center;
             background-repeat: no-repeat;
-            background-image: url('../images/ico_checkbox_mok.png');
+            background-image: url('../images/guide/ico_checkbox.svg');
             background-size: 10px 7px;
             background-size: 10px 7px;
             transition: background 0.2s ease-out;
@@ -504,7 +504,7 @@
     &:checked + label:after {
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url('../images/ico_checkbox_active_mok.png');
+        background-image: url('../images/guide/ico_checkbox_active.svg');
         background-size: 10px 7px;
         background-size: 10px 7px;
     }
@@ -513,49 +513,12 @@
     &[readonly] + label:after {
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url('../images/ico_checkbox_disabled_mok.png');
+        background-image: url('../images/guide/ico_checkbox_disabled.svg');
         background-size: 10px 7px;
         background-size: 10px 7px;
     }
 }
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .form_chk input + label:after {
-        background-image: url('../images/ico_checkbox_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .form_chk input + label:after {
-        background-image: url('../images/ico_checkbox_mok@3x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .form_chk input:checked + label:after {
-        background-image: url('../images/ico_checkbox_active_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .form_chk input:checked + label:after {
-        background-image: url('../images/ico_checkbox_active_mok@3x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .form_chk input {
-        &[aria-disabled] + label:after,
-        &[disabled] + label:after,
-        &[readonly] + label:after {
-            background-image: url('../images/ico_checkbox_disabled_mok@2x.png');
-        }
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .form_chk input {
-        &[aria-disabled] + label:after,
-        &[disabled] + label:after,
-        &[readonly] + label:after {
-            background-image: url('../images/ico_checkbox_disabled_mok@3x.png');
-        }
-    }
-}
+
 .form_rdo input {
     + label {
         &:before {
@@ -767,7 +730,7 @@
     flex-direction: column;
     overflow: hidden;
     border: 1px solid #d5d5d5;
-    border-radius: 6px;
+    border-radius: 4px;
     font-size: 0;
     background: #fff;
     .form_textarea {
@@ -966,7 +929,7 @@
                 width: 100%;
                 height: 100%;
                 font-size: 0 !important;
-                background-image: url('../images/btn_attached_add_mok.png');
+                background-image: url('../images/guide/btn_attached_add.svg');
                 background-size: 16px 16px;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -1003,8 +966,8 @@
                     position: absolute;
                     width: 22px;
                     height: 22px;
-                    background-image: url('../images/btn_attached_remove_mok.png');
-                    background-size: 22px 22px;
+                    background-image: url('../images/guide/btn_attached_remove.svg');
+                    background-size: 7px 7px;
                     background-position: center;
                     background-repeat: no-repeat;
                     background-color: rgba(0, 0, 0, 0.6);
@@ -1022,26 +985,8 @@
         margin-top: 10px;
     }
 }
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .file_list .file_item .btn_box label {
-        background-image: url('../images/btn_attached_add_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .file_list .file_item .btn_box label {
-        background-image: url('../images/btn_attached_add_mok@3x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .file_list .file_item.attached .attach_img_box .btn_remove_img {
-        background-image: url('../images/btn_attached_remove_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .file_list .file_item.attached .attach_img_box .btn_remove_img {
-        background-image: url('../images/btn_attached_remove_mok@3x.png');
-    }
-}
+
+
 .file_attach_val {
     display: inline-block;
     font-size: 0;
