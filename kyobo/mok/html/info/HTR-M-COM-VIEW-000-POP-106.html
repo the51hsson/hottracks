@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="Author" content="SEO 기획 정의 내용 반영" />
+    <meta name="keywords" content="SEO 기획 정의 내용 반영" />
+    <meta name="description" content="SEO 기획 정의 내용 반영" />
+    <meta name="subject" content="SEO 기획 정의 내용 반영" />
+    <!-- DESC : 성인컨텐츠인 경우 추가하는 meta tag -->
+    <!--<meta name="rating" content="adult" />-->
+
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta property="og:title" content="핫트랙스">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../../images/guide/sns.jpg">
+    <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
+    <title>모바일상품상세 레이아웃</title>
+
+    <!-- Plug-In css -->
+    <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../../vendors/lib/swiper-7.2.0/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../vendors/lib/star-rating/css/star-rating.min.css" />
+    <!-- // Plug-In css -->
+
+    <!-- font css -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
+    <!-- // font css -->
+
+    <!-- Custom styles for this template -->
+    <!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
+    <!-- // Custom styles for this template -->
+
+    <!-- ht_ Hottracks custom css -->
+    <link rel="stylesheet" href="../../css/ht_style_mok.css" />
+    <link rel="stylesheet" href="../../css/ht_product_mok.css" />
+    <!--// ht_ Hottracks custom css -->
+
+
+    <!-- Plug-In javascript -->
+    <script src="../../vendors/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="../../vendors/lib/jquery-ui-1.12.1/jquery.ui.spinner.js"></script>
+    <script src="../../vendors/lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../vendors/lib/swiper-7.2.0/js/swiper-bundle.min.js"></script>
+    <script src="../../vendors/lib/star-rating/js/star-rating.min.js"></script>
+    <script src="../../vendors/lib/star-rating/themes/krajee-gly/theme.min.js"></script>
+    <script src="../../vendors/lib/star-rating/js/locales/ko.js"></script>
+    <script src="../../vendors/lib/scrollpos-styler/scrollPosStyler.min.js"></script>
+    <script src="../../vendors/lib/css-element-queries/ResizeSensor.js"></script>
+    <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
+    <!-- // Plug-In javascript -->
+
+    <!-- UI JavaScript -->
+    <!-- <script src="../../vendors/js/ui_mok.js"></script> -->
+    <script src="../../js/front_bak.js"></script>
+    <script src="../../js/ui_product_mok.js"></script>
+    <!-- // UI JavaScript -->
+
+</head>
+
+<body>
+    <!-- SkipNav -->
+    <div class="skip_nav_wrap">
+        <a href="#headerWrapper">메뉴 바로가기</a>
+        <a href="#containerWrapper">본문 바로가기</a>
+    </div>
+    <!-- //SkipNav -->
+
+    <!-- wrapper -->
+    <!-- ht_ Hottracks ht_ 클래스 추가 -->
+    <!-- DESC : footer 없는 경우 [ no-footer ] 클래스 추가 -->
+    <!-- DESC : 상품상세와 같이 하단 구매 영역 있는 경우 클래스 .contents_detail_view 추가 -->
+    <div class="ht_ wrapper contents_detail_view">
+        <!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
+        <header id="headerWrapper" class="ht_ header_wrapper">
+            <div class="header_left">
+                <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
+            </div>
+            <div class="header_center">
+                <div class="page_title prod_detail"></div>
+            </div>
+            <div class="header_right">
+                <!-- DESC : 상품정보 부터 검색버튼 비활성화 -->
+                <a href="#" class="btn_header_search"><span class="hidden">검색</span></a>
+                <a href="#" class="btn_header_cart">
+                    <span class="hidden">장바구니</span>
+                    <!-- DESC :: 0개인경우 count 영역 미노출 / 최대 99 -->
+                    <span class="count">99</span>
+                </a>
+            </div>
+        </header>
+        <!-- // 헤더 -->
+        <!-- 컨텐츠 -->
+        <main id="containerWrapper" class="container_wrapper">
+            <!-- data-target 과 id 매치 -->
+            <button type="button" class="btn_lg btn_primary" data-role="btn-dialog" data-target="#popProductReview"><span class="text">팝업오픈</span></button>
+        </main>
+        <!-- // 컨텐츠 -->
+
+        <!-- 독바 -->
+        <section class="footer_wrap fixed_foot">
+            <!-- todo : footer_wrap에서 product_btn_foot등으로 변경 여지 있음 -->
+            <!-- 상품상세 하단 고정영역 -->
+            <div class="prod_purchase_info_wrap">
+                <!-- CASE 1. 기본 -->
+                <!-- DESC : 버튼 풀배열인경우 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
+                <div class="btn_wrap multi">
+                    <button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span
+                            class="hidden">찜하기</span></button>
+                    <button type="button" class="btn_gift size_lg"><span class="ico_gift"></span><span
+                            class="text">선물하기</span></button>
+
+                    <!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
+                    <div class="btn_wrap overlap">
+                        <button type="button" class="btn_ip btn_light_gray"><span class="text">장바구니</span></button>
+                        <button type="button" class="btn_ip btn_primary"><span class="text">구매하기</span></button>
+                    </div>
+                </div>
+                <!-- // CASE 1. 기본 -->
+
+            </div>
+            <!-- // 상품상세 하단 고정영역 -->
+            <div class="floating_wrapper">
+                <!-- 탑버튼 -->
+                <a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
+                <!-- // 탑버튼 -->
+                <!-- 백버튼 -->
+                <a href="#" class="btn_go_back"><span class="hidden">이전 화면으로</span></a>
+                <!--// 백버튼-->
+            </div>
+        </section>
+        <!-- // 독바 -->
+    </div>
+    <!-- // wrapper -->
+    <!-- 팝업 - full -->
+    <div id="popProductReview" class="dialog_wrap" data-class="dialog_full">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
+                class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">상품 문의하기</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents">
+            <div class="thumbnail_round_box">
+                <div class="thumbnail_product_item horizontal_type">
+                    <div class="thumbnail_area">
+                        <a href="#" class="link_thumbnail">
+                            <img src="../../images/guide/@thumb_01.png" alt="@썸네일">
+                        </a>
+                    </div>
+                    <div class="info_area">
+                        <div class="info_product_name">
+                            <a href="#" class="link_text">
+                                [1+1랜덤] 2022 플플 슈슈 <br>
+                                다이어리v7 + 일정관리스티커
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info_text_box">
+                <ul class="bul_list">
+                    <li class="bul_item_dot font_size_xs">
+                        주문 후 주문/배송/취소/환불 등에 관한 문의는 <br>
+                        <a href="#a">마이룸 > 1:1 문의</a>를 이용해주시기 바랍니다.
+                    </li>
+                    <li class="bul_item_dot font_size_xs">
+                        상품 문의 외 주문/배송/취소/환불 등의 문의를 <br>남겨 주시면 빠른 안내가 어렵습니다.
+                    </li>
+                </ul>
+            </div>
+            <div class="form_wrap type_md" style="margin-top: 20px;">
+                <div class="form_box">
+                    <div class="form_title">
+                        <label for="inputPageNumber" class="form_label">제목</label>
+                    </div>
+                    <div class="form_cont">
+                        <input id="inputPageNumber" type="text" class="form_ip" placeholder="제목을 입력해주세요">
+                    </div>
+                </div>
+                <div class="form_box">
+                    <div class="form_title">
+                        <label for="textKillingPart02" class="form_label">내용 작성</label>
+                    </div>
+                    <div class="form_cont">
+						<!-- byte_check_wrap -->
+						<div class="byte_check_wrap">
+							<textarea id="textKillingPart02" class="form_textarea" title="타이틀 입력" placeholder="최대 100자까지 등록 가능합니다." style="height: 70px;"></textarea>
+							<div class="byte_chack_footer">
+								<div class="byte_check">
+									<span class="count">12</span>
+									<span class="total">300자</span>
+								</div>
+							</div>
+						</div>
+						<!-- //byte_check_wrap -->
+						<!-- form_chk -->
+						<span class="form_chk">
+							<input id="chkReview01" type="checkbox">
+							<label for="chkReview01">비밀글로 문의하기</label>
+						</span>
+						<!-- //form_chk -->
+					</div>
+                </div>
+                <div class="form_box">
+                    <div class="form_cont">
+                        <input id="" type="text" class="form_ip" placeholder="mimikim99@naver.com" disabled >
+                    </div>
+                    <div class="form_cont">
+                        <!-- form_chk -->
+						<span class="form_chk">
+							<input id="chkReview02" type="checkbox">
+							<label for="chkReview02">답변 메일 받기</label>
+						</span>
+						<!-- //form_chk -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //dialog_contents -->
+        <div class="dialog_footer">
+			<button type="button" class="btn_md btn_primary disabled" data-dialog-close=""><span class="text">등록</span></button>
+		</div>
+    </div>
+    <!-- //팝업 - full -->
+</body>
+
+</html>
