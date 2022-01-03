@@ -2,7 +2,7 @@
 /*
 https://github.com/the51hsson/doc/blob/main/scss_guide.md 참조
  파일정의 : the-51.com scss 교보 핫트랙스 모바일
- 파일설명 : defalut scss
+ 파일설명 : default scss
  작성자 :  UID 손혁수
  주의사항 : import scss의 용도 및 설명 주석 처리 할 것, todo는 반영 후 삭제
  최초작성일: 2021/12/30
@@ -12,7 +12,7 @@ https://github.com/the51hsson/doc/blob/main/scss_guide.md 참조
 @import "_functions.scss";
 @import "_mixins.scss";
 
-@import "_ht_reset.scss"; // eric meyer reset 2.0
+@import "_ht_reset.scss"; // eric meyer reset 2.0, _ht : 핫트랙스 접두어
 @import "_ht_components.scss"; // button, form, tab, swiper, fixed content, folding, list, table, box등 ...
 @import "_ht_layout.scss"; // header, footer, dialog, main, sub_type별 정의
 @import "_ht_header.scss"; // todo : layout으로 추가 할 것

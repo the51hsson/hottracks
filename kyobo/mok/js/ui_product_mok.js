@@ -16,6 +16,7 @@ $(function(){
 	reviewTabAnchor();
 
 	setProdTitleMoreBtn();
+	toggleRadioTextArea();
 
 	// 리뷰 내 리뷰 썸네일 swiper
 	$(".review_swiper .swiper-container").each(function (index, element) {
@@ -67,13 +68,68 @@ $(function(){
 		$('.prod_recommend .dialog_wrap .dialog_contents').removeClass('show_all_list');
 		$('.prod_recommend .dialog_wrap .btn_show_all_list').focus();
 	});
+
+	var visualSwiper = new CustomSwiper('.visual_wrap .swiper-container', {
+		slidesPerView: '1',
+		speed: 500,
+		pagination: {
+			el: $('.visual_wrap').find('.swiper-pagination')[0],
+			type: 'fraction',
+			formatFractionCurrent: function (number) {
+				return KyoboHottracks.mok.setPrependZero(number, 2);
+			},
+			formatFractionTotal: function (number) {
+				return KyoboHottracks.mok.setPrependZero(number, 2);
+			},
+		}
+	});
+	var hotpickSwiper = new CustomSwiper('.hotpickslide_wrap .swiper-container', {
+		slidesPerView: 'auto',
+		speed: 500,
+		spaceBetween: 10,
+		pagination: false
+	});
+	var photoreviewSwiper = new CustomSwiper('.photoreview_wrap .swiper-container', {
+		slidesPerView: 'auto',
+		speed: 500,
+		spaceBetween: 10,
+		centeredSlides: true,
+		pagination: {
+			el: $('.photoreview_wrap').find('.swiper-pagination')[0],
+			type: 'fraction',
+			formatFractionCurrent: function (number) {
+				return KyoboHottracks.mok.setPrependZero(number, 2);
+			},
+			formatFractionTotal: function (number) {
+				return KyoboHottracks.mok.setPrependZero(number, 2);
+			},
+		}
+	});
+	var soldoutslidetSwiper = new CustomSwiper('.soldoutslide_wrap .swiper-container', {
+		slidesPerView: 'auto',
+		speed: 500,
+		spaceBetween: 16,
+		pagination: {
+			el: $('.photoreview_wrap').find('.swiper-pagination')[0],
+			type: 'fraction',
+			formatFractionCurrent: function (number) {
+				return KyoboHottracks.mok.setPrependZero(number, 2);
+			},
+			formatFractionTotal: function (number) {
+				return KyoboHottracks.mok.setPrependZero(number, 2);
+			},
+		},
+		scrollbar: {
+			el: ".swiper-scrollbar",
+		}
+	})
 });
 
 // 상품상세 앵커탭 기능
 function setProdDetailAnchor(){
 	if($('.tab_wrap.prod_detail_body').length > 0) {
 		var _tabLinks;
-		_tabLinks = $('.tab_wrap.prod_detail_body > .tab_list_wrap .tabs .tab_item .tab_link');
+		_tabLinks = $('.tab_list_wrap .tabs .tab_item .tab_link');
 
 		// 옵션영역 펼치기
 		$('.btn_option_more', '.prod_option_info_wrap').on('click', function () {
@@ -94,7 +150,7 @@ function setProdDetailAnchor(){
 			event.preventDefault();
 
 			targetId = event.currentTarget.getAttribute('href');
-			offsetTop = $(targetId).offset().top - 46;
+			offsetTop = $(targetId).offset().top - 52;
 			$('html, body').stop().animate({scrollTop: offsetTop}, 300);
 		});
 
@@ -187,6 +243,32 @@ function setProdTitleMoreBtn() {
 		overflowEl.each(function (index) {
 			if (index < overflowElCnt - 1) {
 				$(this).find('> .auto_overflow_footer .btn_more_detail').remove();
+			}
+		});
+	}
+}
+
+// radio 클릭 시 textarea 노출
+function toggleRadioTextArea() {
+	if ($('.toggle_textarea_list .chk_col_item').length > 0) {
+		var checkInput, hasTextarea, targetTextarea;
+
+		$('.toggle_textarea_list .chk_col_item').each(function () {
+			hasTextarea = $(this).find('.byte_check_wrap').length > 0;
+
+			if (hasTextarea) {
+				checkInput = $(this).find('> .form_rdo input');
+				checkInput.on('change', function () {
+					targetTextarea = $(this).closest('.chk_col_item').find('.byte_check_wrap .form_textarea');
+					targetTextarea.attr('disabled', false);
+				});
+			} else {
+				checkInput = $(this).find('> .form_rdo input');
+				checkInput.on('change', function () {
+					if (targetTextarea) {
+						targetTextarea.attr('disabled', true);
+					}
+				});
 			}
 		});
 	}

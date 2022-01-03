@@ -435,11 +435,32 @@
     .tab_wrap .tab_list_wrap {
         position: sticky;
         top:60px;
+        left: 0;
         height: 52px;
-        margin-bottom: 0;
+        border-bottom: 1px solid #d5d5d5;
+        margin:0;
+        padding:0 20px;
+        width: 100%;
+        overflow-x:auto;
+        z-index: 10;
+    }
+    .tab_wrap.justify > .tab_list_wrap .tabs {
+        padding:0;
+        overflow-y: visible;
+        height: 52px;
+        width: 100%;
     }
     .tab_wrap.justify > .tab_list_wrap .tabs .tab_item {
-        flex:auto;
+        white-space: nowrap;
+        margin-right: 22px;
+        &:last-child {
+            margin-right: 0;
+        }
+        .tab_link {
+            padding:0;
+            flex: initial;
+            align-items: center;
+        }
     }
     
 }

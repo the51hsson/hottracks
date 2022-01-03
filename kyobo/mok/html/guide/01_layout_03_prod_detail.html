@@ -1,94 +1,78 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
-<meta name="Author" content="SEO 기획 정의 내용 반영" />
-<meta name="keywords" content="SEO 기획 정의 내용 반영"/>
-<meta name="description" content="SEO 기획 정의 내용 반영" />
-<meta name="subject" content="SEO 기획 정의 내용 반영" />
-<!-- DESC : 성인컨텐츠인 경우 추가하는 meta tag -->
-<!--<meta name="rating" content="adult" />-->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+	<meta name="Author" content="SEO 기획 정의 내용 반영" />
+	<meta name="keywords" content="SEO 기획 정의 내용 반영" />
+	<meta name="description" content="SEO 기획 정의 내용 반영" />
+	<meta name="subject" content="SEO 기획 정의 내용 반영" />
+	<!-- DESC : 성인컨텐츠인 경우 추가하는 meta tag -->
+	<!--<meta name="rating" content="adult" />-->
 
-<meta name="Robots" content="noindex, nofollow" />
-<meta name="msapplication-TileColor" content="#000000">
-<meta property="og:title" content="핫트랙스">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:image" content="../../images/guide/sns.jpg">
-<link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-<title>모바일상품상세 레이아웃</title>
+	<meta name="Robots" content="noindex, nofollow" />
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta property="og:title" content="핫트랙스">
+	<meta property="og:description" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="../../images/guide/sns.jpg">
+	<link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
+	<title>모바일상품상세 레이아웃</title>
 
-<!--<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="180x180" href="../../images/guidefavicon/apple-touch-icon-180x180-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="167x167" href="../../images/guidefavicon/apple-touch-icon-167x167-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="152x152" href="../../images/guidefavicon/apple-touch-icon-152x152-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="144x144" href="../../images/guidefavicon/apple-touch-icon-144x144-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="120x120" href="../../images/guidefavicon/apple-touch-icon-120x120-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="114x114" href="../../images/guidefavicon/apple-touch-icon-114x114-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="76x76" href="../../images/guidefavicon/apple-touch-icon-76x76-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="72x72" href="../../images/guidefavicon/apple-touch-icon-72x72-precomposed.png" />
-<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="60x60" href="../../images/guidefavicon/apple-touch-icon-60x60-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" href="../../images/guidefavicon/apple-touch-icon-57x57-precomposed.png" />
-<link rel="shortcut icon" sizes="256x256" href="../../images/guidefavicon/favicon_256x256.png" />
-<link rel="shortcut icon" sizes="196x196" href="../../images/guidefavicon/favicon_196x196.png" />
-<link rel="shortcut icon" sizes="128x128" href="../../images/guidefavicon/favicon_128x128.png" />
-<link rel="shortcut icon" sizes="48x48" href="../../images/guidefavicon/favicon_48x48.png" />
-<link rel="shortcut icon" sizes="32x32" href="../../images/guidefavicon/favicon_32x32.png" />
-<link rel="shortcut icon" href="../../images/guidefavicon/favicon_16x16.png" />
+	<!-- Plug-In css -->
+	<link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+	<link rel="stylesheet" href="../../vendors/lib/swiper-7.2.0/css/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="../../vendors/lib/star-rating/css/star-rating.min.css" />
+	<!-- // Plug-In css -->
 
-<link rel="icon" sizes="128x128" href="../../images/guidefavicon/favicon_128x128.png" type="image/png" />
-<link rel="icon" sizes="64x64" href="../../images/guidefavicon/favicon_64x64.png" type="image/png" />
-<link rel="icon" sizes="32x32" href="../../images/guidefavicon/favicon_32x32.png" type="image/png" />
+	<!-- font css -->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
+	<!-- // font css -->
 
-<meta name="msapplication-TileImage" content="/images/guide/favicon/apple-touch-icon-144x144-precomposed.png" />
-<meta name="msapplication-TileColor" content="#222222" />-->
+	<!-- Custom styles for this template -->
+	<!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
+	<!-- // Custom styles for this template -->
 
-<!-- Plug-In css -->
-<link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
-<link rel="stylesheet" href="../../vendors/lib/swiper-7.2.0/css/swiper-bundle.min.css" />
-<link rel="stylesheet" href="../../vendors/lib/star-rating/css/star-rating.min.css" />
-<!-- // Plug-In css -->
-
-<!-- font css -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
-<!-- // font css -->
-
-<!-- Custom styles for this template -->
-<!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
-<!-- // Custom styles for this template -->
-
-<!-- ht_ Hottracks custom css -->
-<link rel="stylesheet" href="../../css/ht_style_mok.css" />
-<!--// ht_ Hottracks custom css -->
+	<!-- ht_ Hottracks custom css -->
+	<link rel="stylesheet" href="../../css/ht_style_mok.css" />
+	<link rel="stylesheet" href="../../css/ht_product_mok.css" />
+	<!--// ht_ Hottracks custom css -->
 
 
-<!-- Plug-In javascript -->
-<script src="../../vendors/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
-<script src="../../vendors/lib/jquery-ui-1.12.1/jquery.ui.spinner.js"></script>
-<script src="../../vendors/lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-<script src="../../vendors/lib/swiper-7.2.0/js/swiper-bundle.min.js"></script>
-<script src="../../vendors/lib/star-rating/js/star-rating.min.js"></script>
-<script src="../../vendors/lib/star-rating/themes/krajee-gly/theme.min.js"></script>
-<script src="../../vendors/lib/star-rating/js/locales/ko.js"></script>
-<script src="../../vendors/lib/scrollpos-styler/scrollPosStyler.min.js"></script>
-<script src="../../vendors/lib/css-element-queries/ResizeSensor.js"></script>
-<script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
-<!-- // Plug-In javascript -->
+	<!-- Plug-In javascript -->
+	<script src="../../vendors/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+	<script src="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../vendors/lib/jquery-ui-1.12.1/jquery.ui.spinner.js"></script>
+	<script src="../../vendors/lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../vendors/lib/swiper-7.2.0/js/swiper-bundle.min.js"></script>
+	<script src="../../vendors/lib/star-rating/js/star-rating.min.js"></script>
+	<script src="../../vendors/lib/star-rating/themes/krajee-gly/theme.min.js"></script>
+	<script src="../../vendors/lib/star-rating/js/locales/ko.js"></script>
+	<script src="../../vendors/lib/scrollpos-styler/scrollPosStyler.min.js"></script>
+	<script src="../../vendors/lib/css-element-queries/ResizeSensor.js"></script>
+	<script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
+	<!-- // Plug-In javascript -->
 
-<!-- UI JavaScript -->
-<!-- <script src="../../vendors/js/ui_mok.js"></script> -->
-<script src="../../js/ui_product_mok.js"></script>
-<!-- // UI JavaScript -->
+	<!-- UI JavaScript -->
+	<!-- <script src="../../vendors/js/ui_mok.js"></script> -->
+	<script src="../../js/front_bak.js"></script>
+	<script src="../../js/ui_product_mok.js"></script>
+	<!-- // UI JavaScript -->
 
 </head>
+
 <body>
+	<!-- SkipNav -->
 	<div class="skip_nav_wrap">
 		<a href="#headerWrapper">메뉴 바로가기</a>
 		<a href="#containerWrapper">본문 바로가기</a>
 	</div>
+	<!-- //SkipNav -->
+
 	<!-- wrapper -->
 	<!-- ht_ Hottracks ht_ 클래스 추가 -->
 	<!-- DESC : footer 없는 경우 [ no-footer ] 클래스 추가 -->
@@ -126,15 +110,19 @@
 				<!-- 상품상세 컨텐츠 영역 -->
 				<div class="tab_wrap justify prod_detail_body" data-type-btn>
 					<!-- tab_list_wrap -->
-					<div class="tab_list_wrap">
+					<div class="tab_list_wrap scroll_hide">
 						<div class="sps sps_scroll_fixed tab_list_inner">
 							<div class="sps_inner">
 								<ul class="tabs">
 									<!-- DESC : 탭 비활성화 시, .tab_link 영역 tab_disabled class 추가 -->
-									<li class="tab_item"><a href="#scrollSpyProdEvent" class="tab_link"><span class="tab_text">상품 정보</span></a></li>
-									<li class="tab_item"><a href="#scrollSpyProdInfo" class="tab_link"><span class="tab_text">리뷰 <span class="num">(999+)</span></span></a></li>
-									<li class="tab_item"><a href="#scrollSpyProdReview" class="tab_link"><span class="tab_text">Q&A <span class="num">(999+)</span></span></a></li>
-									<li class="tab_item"><a href="#scrollSpyProdClaim" class="tab_link"><span class="tab_text">배송/교환/반품</span></a></li>
+									<li class="tab_item"><a href="#scrollSpyProdEvent" class="tab_link"><span
+												class="tab_text">상품 정보</span></a></li>
+									<li class="tab_item"><a href="#scrollSpyProdInfo" class="tab_link"><span
+												class="tab_text">리뷰<span class="num">(999+)</span></span></a></li>
+									<li class="tab_item"><a href="#scrollSpyProdReview" class="tab_link"><span
+												class="tab_text">Q&A<span class="num">(999+)</span></span></a></li>
+									<li class="tab_item"><a href="#scrollSpyProdClaim" class="tab_link"><span
+												class="tab_text">배송/교환/반품</span></a></li>
 								</ul>
 							</div>
 						</div>
@@ -144,23 +132,27 @@
 					<div class="prod_detail_contents">
 						<div class="prod_detail_contents_inner">
 							<!-- 이벤트 -->
-							<section id="scrollSpyProdEvent" class="tab_content sps" data-add-offset="48" data-height-observe>
+							<section id="scrollSpyProdEvent" class="tab_content sps" data-add-offset="112"
+								data-height-observe>
 								<div style="height: 1000px; background:rgba(255,0,0,0.4);">이벤트
 								</div>
 							</section>
 							<!-- // 이벤트 -->
 							<!-- 상품정보 -->
-							<section id="scrollSpyProdInfo" class="tab_content sps" data-add-offset="48" data-height-observe>
+							<section id="scrollSpyProdInfo" class="tab_content sps" data-add-offset="112"
+								data-height-observe>
 								<div style="height: 1000px; background:rgba(0,255,0,0.4);">상품정보</div>
 							</section>
 							<!-- // 상품정보 -->
 							<!-- 리뷰 -->
-							<section id="scrollSpyProdReview" class="tab_content sps" data-add-offset="48" data-height-observe>
+							<section id="scrollSpyProdReview" class="tab_content sps" data-add-offset="112"
+								data-height-observe>
 								<div style="height: 600px; background:rgba(0,0,255,0.4);">리뷰</div>
 							</section>
 							<!-- // 리뷰 -->
 							<!-- 교환/반품/품절 -->
-							<section id="scrollSpyProdClaim" class="tab_content sps" data-add-offset="48" data-height-observe>
+							<section id="scrollSpyProdClaim" class="tab_content sps" data-add-offset="112"
+								data-height-observe>
 								<div style="height: 600px; background:rgba(255,0,0,0.4);">교환/반품/품절</div>
 							</section>
 							<!-- // 교환/반품/품절 -->
@@ -174,15 +166,17 @@
 		<!-- // 컨텐츠 -->
 
 		<!-- 독바 -->
-		<section class="footer_wrap fixed_foot"><!-- todo : footer_wrap에서 product_btn_foot등으로 변경 여지 있음 -->
+		<section class="footer_wrap fixed_foot">
+			<!-- todo : footer_wrap에서 product_btn_foot등으로 변경 여지 있음 -->
 			<!-- 상품상세 하단 고정영역 -->
 			<div class="prod_purchase_info_wrap">
-				<!-- CASE 1. 기본(옵션이 없는 경우, 옵션이 있는 경우 - 선택 전) -->
+				<!-- CASE 1. 기본 -->
 				<!-- DESC : 버튼 풀배열인경우 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
-				<div class="btn_wrap multi">
-					<!-- DESC : 찜하기 버튼 활성화 시 button.btn_wish 영역 [active] class 추가 -->
-					<button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span class="hidden">찜하기</span></button>
-					<button type="button" class="btn_ip btn_line_gray"><span class="ico_gift"></span><span class="text">선물하기</span></button>
+				<div class="btn_wrap multi" style="display: none;">
+					<button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span
+							class="hidden">찜하기</span></button>
+					<button type="button" class="btn_gift size_lg"><span class="ico_gift"></span><span
+							class="text">선물하기</span></button>
 
 					<!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
 					<div class="btn_wrap overlap">
@@ -190,32 +184,74 @@
 						<button type="button" class="btn_ip btn_primary"><span class="text">구매하기</span></button>
 					</div>
 				</div>
-				<!-- // CASE 1. 기본(옵션이 없는 경우, 옵션이 있는 경우 - 선택 전) -->
+				<!-- // CASE 1. 기본 -->
 
-				<!-- CASE 2. 기본(옵션이 있는 경우 - 선택 후) -->
-				<!-- // CASE 2. 기본(옵션이 있는 경우 - 선택 후) -->
+				<!-- CASE 2. 버튼 1개  -->
+				<div class="btn_wrap multi" style="display: none;">
+					<!-- DESC : 찜하기 버튼 활성화 시 button.btn_wish 영역 [active] class 추가 -->
+					<button type="button" class="btn_wish size_lg active"><span class="ico_wish"></span><span
+							class="hidden">찜하기</span></button>
 
-				<!-- CASE 3. 절판, 출간예정 -->
-				<!-- // CASE 3. 절판, 출간예정 -->
+					<!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
+					<div class="btn_wrap overlap single">
+						<button type="button" class="btn_ip btn_primary"><span class="text">바로구매</span></button>
+					</div>
+				</div>
+				<!-- // CASE 2. 버튼 1개 -->
 
-				<!-- CASE 4. 인터넷 주문불가 -->
-				<!-- // CASE 4. 인터넷 주문불가 -->
+				<!-- CASE 3. 재입고 신청  -->
+				<div class="btn_wrap multi" style="display: none;">
+					<button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span
+							class="hidden">찜하기</span></button>
+					<div class="btn_wrap overlap single">
+						<button type="button" class="btn_ip btn_line_primary"><span class="ico_bell"></span><span
+								class="text">재입고 알람 신청하기</span></button>
+					</div>
+				</div>
+				<!-- // CASE 3. 재입고 신청 -->
 
-				<!-- CASE 5. sam 구매 -->
-				<!-- // CASE 5. sam 구매 -->
+				<!-- CASE 4. 판매 중지 -->
+				<div class="btn_wrap multi" style="display:none;">
+					<button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span
+							class="hidden">찜하기</span></button>
+					<!-- DESC : 판매중지 [ disabled ] class 추가 -->
+					<div class="btn_wrap overlap single">
+						<button type="button" class="btn_ip btn_line_gray disabled"><span class="text">현재 판매가 중지된
+								상품입니다</span></button>
+					</div>
+				</div>
+				<!-- // CASE 4. 판매 중지 -->
+
+				<!-- CASE 5. 바로드림 바로구매 -->
+				<div class="btn_wrap" style="display:none;">
+					<button type="button" class="btn_ip btn_line_primary"><span class="text">바로드림</span></button>
+					<button type="button" class="btn_ip btn_primary"><span class="text">바로구매</span></button>
+				</div>
+				<!-- // CASE 6. 바로드림 바로구매 -->
+
+				<!-- CASE 6. 찜하기없는 장바구니 바로구매 -->
+				<div class="btn_wrap multi">
+					<button type="button" class="btn_gift size_lg"><span class="ico_gift"></span><span
+							class="text">선물하기</span></button>
+					<button type="button" class="btn_ip btn_line_primary"><span class="text">장바구니</span></button>
+					<button type="button" class="btn_ip btn_primary"><span class="text">구매하기</span></button>
+				</div>
+				<!-- // CASE 6. 찜하기없는 장바구니 바로구매 -->
 			</div>
 			<!-- // 상품상세 하단 고정영역 -->
-			<!-- 탑버튼 -->
-			<a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
-			<!-- // 탑버튼 -->
-			<!-- 백버튼 -->
-			<a href="#" class="btn_go_back"><span class="hidden">이전 화면으로</span></a>
-			<!--// 백버튼-->
-
+			<div class="floating_wrapper">
+				<!-- 탑버튼 -->
+				<a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
+				<!-- // 탑버튼 -->
+				<!-- 백버튼 -->
+				<a href="#" class="btn_go_back"><span class="hidden">이전 화면으로</span></a>
+				<!--// 백버튼-->
+			</div>
 		</section>
 		<!-- // 독바 -->
 	</div>
 	<!-- // wrapper -->
 
 </body>
+
 </html>

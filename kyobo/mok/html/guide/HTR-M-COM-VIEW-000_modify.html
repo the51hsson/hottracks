@@ -27,7 +27,7 @@
 <!-- //Plug-In javascript -->
  
 <!-- front ui javascript -->
-<script src="../../js/panzoom.min.js"></script>
+<script src="../../js/pinch-zoom.js"></script>
 <script src="../../js/front_bak.js"></script>
 <!-- //front ui javascript -->
 </head>
@@ -256,11 +256,13 @@
             <div class="auto_overflow_wrap overflow type_text" >
                 <div class="auto_overflow_contents" style="max-height: 500px;">
                     <div class="auto_overflow_inner">
-                        <div class="panzoom-parent" style="position: relative;">
-                            <div class="panzoom"  id="zoomable" style="position: relative;">
-                                <img src="../../images/temp/@product_detail.png" width="100%" />
-                            </div>
+                        <div class="pinch_zoom">
+                            <img src="../../images/temp/@product_detail.png" style="width: 100%;">
                         </div>
+                        <script type="text/javascript">
+                            var el = document.querySelector('.pinch_zoom');
+                            new PinchZoom.default(el, {});
+                        </script>
                         <div class="product_detailinfo_area">        
                             <div class="info_wrap">
                                 <dl class="list_info">
@@ -278,7 +280,7 @@
                                     <dd class="txt_dd col_8">핫트랙스 / 1661-1112</dd>                                                
                                 </dl>
                             </div> 
-                        </div>                        
+                        </div>
                     </div>
                 </div>
                 <div class="auto_overflow_footer">
@@ -1595,13 +1597,6 @@
 </body>
 
 <script>
-// img zoom plugin
-var area = document.getElementById('zoomable')
-window.pz = panzoom(area, {
-    contain: 'outside',
-    
-
-});
 // swiper (paging 외부)
 var visualSwiper = new CustomSwiper('.visual_wrap .swiper-container', {
 		slidesPerView: '1',

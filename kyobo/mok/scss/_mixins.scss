@@ -1,3 +1,24 @@
+// 2배수 이미지 처리
+@mixin ratio2 {
+    @media (-webkit-min-device-pixel-ratio: 2) {
+        @content;
+    }
+}
+
+// 3배수 이미지 처리
+@mixin ratio3 {
+    @media (-webkit-min-device-pixel-ratio: 3) {
+        @content;
+    }
+}
+
+@mixin device375 {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+
 @mixin icoMore($top){
     &.ico_more {
         &:after {
