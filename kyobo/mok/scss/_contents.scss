@@ -1793,3 +1793,71 @@
 
     }
 }
+
+
+
+/* 20220102*/
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+  }
+  .soldoutslide_outer:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 24px 24px 24px;
+    border-color: transparent transparent #007bff transparent;
+    top: 0;
+
+  }
+  .soldoutslide_wrap {
+    height: 538px;
+    margin: 0 -10px;    
+    margin-bottom: 24px;
+    padding: 0 20px;
+  }
+  .soldoutslide_wrap{
+    padding-top: 20px;
+  }
+  .soldoutslide_wrap:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    background: #fff url(../images/ico/arrow_pink.png) no-repeat 0 0;
+    background-size: 24px auto;
+  }
+  .recomened_area .tit_con_area .tit {
+  padding-top:12px
+  }
+  .recomened_area .list_item {
+    overflow: visible;
+  }
+  
+  
+  
+  .recomended_new_area .list_item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .recomended_new_area .list_item .item {
+    width: calc( 100 / 2);
+    flex: 1;
+  }
+  .recomened_new_area .list_item .item .figure {
+    height: auto;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

@@ -173,16 +173,6 @@ a.btn_xs .ico_plus, button.btn_xs .ico_plus {
   background-repeat: no-repeat;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_xs .ico_plus, button.btn_xs .ico_plus {
-    background-image: url(../images/ico_plus_h12_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_xs .ico_plus, button.btn_xs .ico_plus {
-    background-image: url(../images/ico_plus_h12_mok@3x.png);
-  }
-}
 a.btn_xs .ico_write_white, button.btn_xs .ico_write_white {
   background-image: url(../images/ico_write_wh_h17_mok.png);
   background-size: 16px 17px;
@@ -191,48 +181,18 @@ a.btn_xs .ico_write_white, button.btn_xs .ico_write_white {
   width: 16px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_xs .ico_write_white, button.btn_xs .ico_write_white {
-    background-image: url(../images/ico_write_wh_h17_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_xs .ico_write_white, button.btn_xs .ico_write_white {
-    background-image: url(../images/ico_write_wh_h17_mok@3x.png);
-  }
-}
 a.btn_xs .ico_locate, button.btn_xs .ico_locate {
   width: 13px;
   background-image: url(../images/ico_locate_mok.png);
   background-size: 13px 19px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_xs .ico_locate, button.btn_xs .ico_locate {
-    background-image: url(../images/ico_locate_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_xs .ico_locate, button.btn_xs .ico_locate {
-    background-image: url(../images/ico_locate_mok@3x.png);
-  }
-}
 a.btn_xs .ico_new_window, button.btn_xs .ico_new_window {
   width: 14px;
   background-image: url(../images/ico_new_window_mok.png);
   background-size: 14px 19px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_xs .ico_new_window, button.btn_xs .ico_new_window {
-    background-image: url(../images/ico_new_window_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_xs .ico_new_window, button.btn_xs .ico_new_window {
-    background-image: url(../images/ico_new_window_mok@3x.png);
-  }
-}
 a.btn_xxs, button.btn_xxs {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -281,16 +241,6 @@ a.btn_xxs .ico_download_white, button.btn_xxs .ico_download_white {
   background-repeat: no-repeat;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_xxs .ico_download_white, button.btn_xxs .ico_download_white {
-    background-image: url(../images/ico_download_wh_h10_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_xxs .ico_download_white, button.btn_xxs .ico_download_white {
-    background-image: url(../images/ico_download_wh_h10_mok@3x.png);
-  }
-}
 a.btn_xxs .ico_alarm, button.btn_xxs .ico_alarm {
   width: 12px;
   height: 18px;
@@ -298,16 +248,6 @@ a.btn_xxs .ico_alarm, button.btn_xxs .ico_alarm {
   background-size: 12px 18px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_xxs .ico_alarm, button.btn_xxs .ico_alarm {
-    background-image: url(../images/ico_alarm_pr_xxs_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_xxs .ico_alarm, button.btn_xxs .ico_alarm {
-    background-image: url(../images/ico_alarm_pr_xxs_mok@3x.png);
-  }
-}
 a.btn_min, button.btn_min {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -358,16 +298,6 @@ a.btn_min .ico_arw, button.btn_min .ico_arw {
   background-repeat: no-repeat;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_min .ico_arw, button.btn_min .ico_arw {
-    background-image: url(../images/arw_info_more_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_min .ico_arw, button.btn_min .ico_arw {
-    background-image: url(../images/arw_info_more_mok@3x.png);
-  }
-}
 a.btn_ip, button.btn_ip {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -414,16 +344,6 @@ a.btn_ip .ico_heart, button.btn_ip .ico_heart {
   background-repeat: no-repeat;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_ip .ico_heart, button.btn_ip .ico_heart {
-    background-image: url(../images/ico_heart_h18_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_ip .ico_heart, button.btn_ip .ico_heart {
-    background-image: url(../images/ico_heart_h18_mok@3x.png);
-  }
-}
 a.btn_ip .ico_heart_primary, button.btn_ip .ico_heart_primary {
   width: 18px;
   background-image: url(../images/ico_heart_pm_h18_mok.png);
@@ -432,16 +352,6 @@ a.btn_ip .ico_heart_primary, button.btn_ip .ico_heart_primary {
   background-repeat: no-repeat;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_ip .ico_heart_primary, button.btn_ip .ico_heart_primary {
-    background-image: url(../images/ico_heart_pm_h18_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_ip .ico_heart_primary, button.btn_ip .ico_heart_primary {
-    background-image: url(../images/ico_heart_pm_h18_mok@3x.png);
-  }
-}
 a.btn_ip .ico_cart_white, button.btn_ip .ico_cart_white {
   width: 18px;
   height: 18px;
@@ -451,16 +361,6 @@ a.btn_ip .ico_cart_white, button.btn_ip .ico_cart_white {
   background-repeat: no-repeat;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_ip .ico_cart_white, button.btn_ip .ico_cart_white {
-    background-image: url(../images/ico_cart_wh_h18_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_ip .ico_cart_white, button.btn_ip .ico_cart_white {
-    background-image: url(../images/ico_cart_wh_h18_mok@3x.png);
-  }
-}
 a.btn_ip .ico_gift, button.btn_ip .ico_gift {
   width: 18px;
   background-position: left center;
@@ -469,16 +369,6 @@ a.btn_ip .ico_gift, button.btn_ip .ico_gift {
   background-size: 18px 20px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_ip .ico_gift, button.btn_ip .ico_gift {
-    background-image: url(../images/ico_gift_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_ip .ico_gift, button.btn_ip .ico_gift {
-    background-image: url(../images/ico_gift_mok@3x.png);
-  }
-}
 a.btn_ip .ico_purchase_alarm, button.btn_ip .ico_purchase_alarm {
   width: 18px;
   background-position: left center;
@@ -487,16 +377,6 @@ a.btn_ip .ico_purchase_alarm, button.btn_ip .ico_purchase_alarm {
   background-size: 18px 20px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_ip .ico_purchase_alarm, button.btn_ip .ico_purchase_alarm {
-    background-image: url(../images/ico_purchase_alarm_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_ip .ico_purchase_alarm, button.btn_ip .ico_purchase_alarm {
-    background-image: url(../images/ico_purchase_alarm_mok@3x.png);
-  }
-}
 /* 버튼 - 색상 */
 a.btn_primary, button.btn_primary {
   color: #fff;
@@ -669,16 +549,6 @@ a.btn_alarm .ico_alarm, button.btn_alarm .ico_alarm {
   background-size: 14px 14px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_alarm .ico_alarm, button.btn_alarm .ico_alarm {
-    background-image: url(../images/ico_alarm_off_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_alarm .ico_alarm, button.btn_alarm .ico_alarm {
-    background-image: url(../images/ico_alarm_off_mok@3x.png);
-  }
-}
 a.btn_alarm .text, button.btn_alarm .text {
   position: relative;
   padding-right: 1px;
@@ -695,16 +565,6 @@ a.btn_alarm.active .ico_alarm, button.btn_alarm.active .ico_alarm {
   background-size: 12px 18px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  a.btn_alarm.active .ico_alarm, button.btn_alarm.active .ico_alarm {
-    background-image: url(../images/ico_alarm_on_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  a.btn_alarm.active .ico_alarm, button.btn_alarm.active .ico_alarm {
-    background-image: url(../images/ico_alarm_on_mok@3x.png);
-  }
-}
 /* 버튼 - 텍스트 링크 */
 a.btn_text_link, button.btn_text_link {
   color: #767676;
@@ -790,26 +650,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-repeat: no-repeat;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_more_body .ico_arw {
-    background-image: url(../images/btn_more_body_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_more_body .ico_arw {
-    background-image: url(../images/btn_more_body_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_more_body.active .ico_arw {
-    background-image: url(../images/btn_more_body_active_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_more_body.active .ico_arw {
-    background-image: url(../images/btn_more_body_active_mok@3x.png);
-  }
-}
 .btn_more_cont {
   color: #767676;
   font-size: 15px;
@@ -844,26 +684,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-repeat: no-repeat;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_more_cont .ico_arw {
-    background-image: url(../images/btn_more_cont_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_more_cont .ico_arw {
-    background-image: url(../images/btn_more_cont_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_more_cont.active .ico_arw {
-    background-image: url(../images/btn_more_cont_active_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_more_cont.active .ico_arw {
-    background-image: url(../images/btn_more_cont_active_mok@3x.png);
-  }
-}
 .btn_more_detail {
   color: #474c98;
   font-size: 13px;
@@ -883,16 +703,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-size: 16px 16px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_more_detail .ico_plus {
-    background-image: url(../images/btn_more_detail_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_more_detail .ico_plus {
-    background-image: url(../images/btn_more_detail_mok@3x.png);
-  }
-}
 .btn_more_view {
   color: #595959;
   font-size: 13px;
@@ -931,26 +741,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   text-decoration: underline;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_more_view .ico_arw {
-    background-image: url(../images/btn_more_view_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_more_view .ico_arw {
-    background-image: url(../images/btn_more_view_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_more_view.fc_spot .ico_arw {
-    background-image: url(../images/arw_review_more_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_more_view.fc_spot .ico_arw {
-    background-image: url(../images/arw_review_more_mok@3x.png);
-  }
-}
 /* 버튼 - 기능 버튼 */
 .btn_delete {
   color: #767676;
@@ -971,16 +761,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-size: 13px 15px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_delete .ico_delete {
-    background-image: url(../images/ico_delete_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_delete .ico_delete {
-    background-image: url(../images/ico_delete_mok@3x.png);
-  }
-}
 /* 버튼 - 아이콘 */
 .btn_wish {
   width: 44px;
@@ -1047,66 +827,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-size: 14px 14px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_wish .ico_wish {
-    background-image: url(../images/ico_heart_h18_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_wish .ico_wish {
-    background-image: url(../images/ico_heart_h18_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_wish.active .ico_wish {
-    background-image: url(../images/ico_heart_h18_active_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_wish.active .ico_wish {
-    background-image: url(../images/ico_heart_h18_active_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_wish.size_lg .ico_wish {
-    background-image: url(../images/ico_heart_h20_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_wish.size_lg .ico_wish {
-    background-image: url(../images/ico_heart_h20_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_wish.size_lg.active .ico_wish {
-    background-image: url(../images/ico_heart_h20_active_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_wish.size_lg.active .ico_wish {
-    background-image: url(../images/ico_heart_h20_active_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_wish.size_sm .ico_wish {
-    background-image: url(../images/ico_heart_h14_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_wish.size_sm .ico_wish {
-    background-image: url(../images/ico_heart_h14_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_wish.size_sm.active .ico_wish {
-    background-image: url(../images/ico_heart_h14_active_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_wish.size_sm.active .ico_wish {
-    background-image: url(../images/ico_heart_h14_active_mok@3x.png);
-  }
-}
 .btn_share_text {
   height: 44px;
   color: #292929;
@@ -1129,16 +849,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   transition: background 0.2s ease-out;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_share_text .ico_share {
-    background-image: url(../images/ico_share_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_share_text .ico_share {
-    background-image: url(../images/ico_share_mok@3x.png);
-  }
-}
 .btn_wish_text {
   height: 44px;
   color: #292929;
@@ -1173,26 +883,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-size: 18px 18px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_wish_text .ico_wish {
-    background-image: url(../images/ico_heart_h18_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_wish_text .ico_wish {
-    background-image: url(../images/ico_heart_h18_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_wish_text.active .ico_wish {
-    background-image: url(../images/ico_heart_h18_active_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_wish_text.active .ico_wish {
-    background-image: url(../images/ico_heart_h18_active_mok@3x.png);
-  }
-}
 .btn_tooltip {
   width: 22px;
   height: 22px;
@@ -1222,46 +912,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-size: 22px 22px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_tooltip .ico_info {
-    background-image: url(../images/btn_tooltip_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_tooltip .ico_info {
-    background-image: url(../images/btn_tooltip_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_tooltip .ico_arw {
-    background-image: url(../images/arw_tooltip_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_tooltip .ico_arw {
-    background-image: url(../images/arw_tooltip_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_tooltip.active .ico_info {
-    background-image: url(../images/btn_tooltip_active_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_tooltip.active .ico_info {
-    background-image: url(../images/btn_tooltip_active_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_tooltip.active .ico_arw {
-    background-image: url(../images/arw_tooltip_active_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_tooltip.active .ico_arw {
-    background-image: url(../images/arw_tooltip_active_mok@3x.png);
-  }
-}
 .btn_tooltip_sm {
   width: 16px;
   height: 16px;
@@ -1287,36 +937,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-size: 16px 16px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_tooltip_sm .ico_info {
-    background-image: url(../images/btn_tooltip_sm_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_tooltip_sm .ico_info {
-    background-image: url(../images/btn_tooltip_sm_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_tooltip_sm .ico_question {
-    background-image: url(../images/btn_tooltip_question_sm_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_tooltip_sm .ico_question {
-    background-image: url(../images/btn_tooltip_question_sm_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_tooltip_sm.active .ico_info {
-    background-image: url(../images/btn_tooltip_sm_active_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_tooltip_sm.active .ico_info {
-    background-image: url(../images/btn_tooltip_sm_active_mok@3x.png);
-  }
-}
 .btn_tooltip_arw {
   width: 22px;
   height: 22px;
@@ -1330,26 +950,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-size: 22px 22px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_tooltip_arw {
-    background-image: url(../images/arw_tooltip_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_tooltip_arw {
-    background-image: url(../images/arw_tooltip_mok@3x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_tooltip_arw.active {
-    background-image: url(../images/btn_pop_tooltip_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_tooltip_arw.active {
-    background-image: url(../images/btn_pop_tooltip_mok@3x.png);
-  }
-}
 .btn_pop_tooltip {
   width: 16px;
   height: 16px;
@@ -1357,16 +957,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-size: 22px 22px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .btn_pop_tooltip {
-    background-image: url(../images/btn_pop_tooltip_mok@2x.png);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 3) {
-  .btn_pop_tooltip {
-    background-image: url(../images/btn_pop_tooltip_mok@3x.png);
-  }
-}
 /* 버튼 정렬 */
 .btn_wrap {
   display: -webkit-box;
@@ -1458,11 +1048,338 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   .ico_trash {
     background-image: url(../images/ico_trash_mok@2x.png);
   }
+
+  a.btn_xs .ico_plus, button.btn_xs .ico_plus {
+    background-image: url(../images/ico_plus_h12_mok@2x.png);
+  }
+
+  a.btn_xs .ico_write_white, button.btn_xs .ico_write_white {
+    background-image: url(../images/ico_write_wh_h17_mok@2x.png);
+  }
+
+  a.btn_xs .ico_locate, button.btn_xs .ico_locate {
+    background-image: url(../images/ico_locate_mok@2x.png);
+  }
+
+  a.btn_xs .ico_new_window, button.btn_xs .ico_new_window {
+    background-image: url(../images/ico_new_window_mok@2x.png);
+  }
+
+  a.btn_xxs .ico_download_white, button.btn_xxs .ico_download_white {
+    background-image: url(../images/ico_download_wh_h10_mok@2x.png);
+  }
+
+  a.btn_xxs .ico_alarm, button.btn_xxs .ico_alarm {
+    background-image: url(../images/ico_alarm_pr_xxs_mok@2x.png);
+  }
+
+  a.btn_min .ico_arw, button.btn_min .ico_arw {
+    background-image: url(../images/arw_info_more_mok@2x.png);
+  }
+
+  a.btn_ip .ico_heart, button.btn_ip .ico_heart {
+    background-image: url(../images/ico_heart_h18_mok@2x.png);
+  }
+
+  a.btn_ip .ico_heart_primary, button.btn_ip .ico_heart_primary {
+    background-image: url(../images/ico_heart_pm_h18_mok@2x.png);
+  }
+
+  a.btn_ip .ico_cart_white, button.btn_ip .ico_cart_white {
+    background-image: url(../images/ico_cart_wh_h18_mok@2x.png);
+  }
+
+  a.btn_ip .ico_gift, button.btn_ip .ico_gift {
+    background-image: url(../images/ico_gift_mok@2x.png);
+  }
+
+  a.btn_ip .ico_purchase_alarm, button.btn_ip .ico_purchase_alarm {
+    background-image: url(../images/ico_purchase_alarm_mok@2x.png);
+  }
+
+  a.btn_alarm .ico_alarm, button.btn_alarm .ico_alarm {
+    background-image: url(../images/ico_alarm_off_mok@2x.png);
+  }
+
+  a.btn_alarm.active .ico_alarm, button.btn_alarm.active .ico_alarm {
+    background-image: url(../images/ico_alarm_on_mok@2x.png);
+  }
+
+  .btn_more_body .ico_arw {
+    background-image: url(../images/btn_more_body_mok@2x.png);
+  }
+
+  .btn_more_body.active .ico_arw {
+    background-image: url(../images/btn_more_body_active_mok@2x.png);
+  }
+
+  .btn_more_cont .ico_arw {
+    background-image: url(../images/btn_more_cont_mok@2x.png);
+  }
+
+  .btn_more_cont.active .ico_arw {
+    background-image: url(../images/btn_more_cont_active_mok@2x.png);
+  }
+
+  .btn_more_detail .ico_plus {
+    background-image: url(../images/btn_more_detail_mok@2x.png);
+  }
+
+  .btn_more_view .ico_arw {
+    background-image: url(../images/btn_more_view_mok@2x.png);
+  }
+
+  .btn_more_view.fc_spot .ico_arw {
+    background-image: url(../images/arw_review_more_mok@2x.png);
+  }
+
+  .btn_delete .ico_delete {
+    background-image: url(../images/ico_delete_mok@2x.png);
+  }
+
+  .btn_wish .ico_wish {
+    background-image: url(../images/ico_heart_h18_mok@2x.png);
+  }
+
+  .btn_wish.active .ico_wish {
+    background-image: url(../images/ico_heart_h18_active_mok@2x.png);
+  }
+
+  .btn_wish.size_lg .ico_wish {
+    background-image: url(../images/ico_heart_h20_mok@2x.png);
+  }
+
+  .btn_wish.size_lg.active .ico_wish {
+    background-image: url(../images/ico_heart_h20_active_mok@2x.png);
+  }
+
+  .btn_wish.size_sm .ico_wish {
+    background-image: url(../images/ico_heart_h14_mok@2x.png);
+  }
+
+  .btn_wish.size_sm.active .ico_wish {
+    background-image: url(../images/ico_heart_h14_active_mok@2x.png);
+  }
+
+  .btn_share_text .ico_share {
+    background-image: url(../images/ico_share_mok@2x.png);
+  }
+
+  .btn_wish_text .ico_wish {
+    background-image: url(../images/ico_heart_h18_mok@2x.png);
+  }
+
+  .btn_wish_text.active .ico_wish {
+    background-image: url(../images/ico_heart_h18_active_mok@2x.png);
+  }
+
+  .btn_tooltip .ico_info {
+    background-image: url(../images/btn_tooltip_mok@2x.png);
+  }
+
+  .btn_tooltip .ico_arw {
+    background-image: url(../images/arw_tooltip_mok@2x.png);
+  }
+
+  .btn_tooltip.active .ico_info {
+    background-image: url(../images/btn_tooltip_active_mok@2x.png);
+  }
+
+  .btn_tooltip.active .ico_arw {
+    background-image: url(../images/arw_tooltip_active_mok@2x.png);
+  }
+
+  .btn_tooltip_sm .ico_info {
+    background-image: url(../images/btn_tooltip_sm_mok@2x.png);
+  }
+
+  .btn_tooltip_sm .ico_question {
+    background-image: url(../images/btn_tooltip_question_sm_mok@2x.png);
+  }
+
+  .btn_tooltip_sm.active .ico_info {
+    background-image: url(../images/btn_tooltip_sm_active_mok@2x.png);
+  }
+
+  .btn_tooltip_arw {
+    background-image: url(../images/arw_tooltip_mok@2x.png);
+  }
+
+  .btn_tooltip_arw.active {
+    background-image: url(../images/btn_pop_tooltip_mok@2x.png);
+  }
+
+  .btn_pop_tooltip {
+    background-image: url(../images/btn_pop_tooltip_mok@2x.png);
+  }
 }
 @media (-webkit-min-device-pixel-ratio: 3) {
   .ico_trash {
     background-image: url(../images/ico_trash_mok@3x.png);
   }
-}
 
+  a.btn_xs .ico_plus, button.btn_xs .ico_plus {
+    background-image: url(../images/ico_plus_h12_mok@3x.png);
+  }
+
+  a.btn_xs .ico_write_white, button.btn_xs .ico_write_white {
+    background-image: url(../images/ico_write_wh_h17_mok@3x.png);
+  }
+
+  a.btn_xs .ico_locate, button.btn_xs .ico_locate {
+    background-image: url(../images/ico_locate_mok@3x.png);
+  }
+
+  a.btn_xs .ico_new_window, button.btn_xs .ico_new_window {
+    background-image: url(../images/ico_new_window_mok@3x.png);
+  }
+
+  a.btn_xxs .ico_download_white, button.btn_xxs .ico_download_white {
+    background-image: url(../images/ico_download_wh_h10_mok@3x.png);
+  }
+
+  a.btn_xxs .ico_alarm, button.btn_xxs .ico_alarm {
+    background-image: url(../images/ico_alarm_pr_xxs_mok@3x.png);
+  }
+
+  a.btn_min .ico_arw, button.btn_min .ico_arw {
+    background-image: url(../images/arw_info_more_mok@3x.png);
+  }
+
+  a.btn_ip .ico_heart, button.btn_ip .ico_heart {
+    background-image: url(../images/ico_heart_h18_mok@3x.png);
+  }
+
+  a.btn_ip .ico_heart_primary, button.btn_ip .ico_heart_primary {
+    background-image: url(../images/ico_heart_pm_h18_mok@3x.png);
+  }
+
+  a.btn_ip .ico_cart_white, button.btn_ip .ico_cart_white {
+    background-image: url(../images/ico_cart_wh_h18_mok@3x.png);
+  }
+
+  a.btn_ip .ico_gift, button.btn_ip .ico_gift {
+    background-image: url(../images/ico_gift_mok@3x.png);
+  }
+
+  a.btn_ip .ico_purchase_alarm, button.btn_ip .ico_purchase_alarm {
+    background-image: url(../images/ico_purchase_alarm_mok@3x.png);
+  }
+
+  a.btn_alarm .ico_alarm, button.btn_alarm .ico_alarm {
+    background-image: url(../images/ico_alarm_off_mok@3x.png);
+  }
+
+  a.btn_alarm.active .ico_alarm, button.btn_alarm.active .ico_alarm {
+    background-image: url(../images/ico_alarm_on_mok@3x.png);
+  }
+
+  .btn_more_body .ico_arw {
+    background-image: url(../images/btn_more_body_mok@3x.png);
+  }
+
+  .btn_more_body.active .ico_arw {
+    background-image: url(../images/btn_more_body_active_mok@3x.png);
+  }
+
+  .btn_more_cont .ico_arw {
+    background-image: url(../images/btn_more_cont_mok@3x.png);
+  }
+
+  .btn_more_cont.active .ico_arw {
+    background-image: url(../images/btn_more_cont_active_mok@3x.png);
+  }
+
+  .btn_more_detail .ico_plus {
+    background-image: url(../images/btn_more_detail_mok@3x.png);
+  }
+
+  .btn_more_view .ico_arw {
+    background-image: url(../images/btn_more_view_mok@3x.png);
+  }
+
+  .btn_more_view.fc_spot .ico_arw {
+    background-image: url(../images/arw_review_more_mok@3x.png);
+  }
+
+  .btn_delete .ico_delete {
+    background-image: url(../images/ico_delete_mok@3x.png);
+  }
+
+  .btn_wish .ico_wish {
+    background-image: url(../images/ico_heart_h18_mok@3x.png);
+  }
+
+  .btn_wish.active .ico_wish {
+    background-image: url(../images/ico_heart_h18_active_mok@3x.png);
+  }
+
+  .btn_wish.size_lg .ico_wish {
+    background-image: url(../images/ico_heart_h20_mok@3x.png);
+  }
+
+  .btn_wish.size_lg.active .ico_wish {
+    background-image: url(../images/ico_heart_h20_active_mok@3x.png);
+  }
+
+  .btn_wish.size_sm .ico_wish {
+    background-image: url(../images/ico_heart_h14_mok@3x.png);
+  }
+
+  .btn_wish.size_sm.active .ico_wish {
+    background-image: url(../images/ico_heart_h14_active_mok@3x.png);
+  }
+
+  .btn_share_text .ico_share {
+    background-image: url(../images/ico_share_mok@3x.png);
+  }
+
+  .btn_wish_text .ico_wish {
+    background-image: url(../images/ico_heart_h18_mok@3x.png);
+  }
+
+  .btn_wish_text.active .ico_wish {
+    background-image: url(../images/ico_heart_h18_active_mok@3x.png);
+  }
+
+  .btn_tooltip .ico_info {
+    background-image: url(../images/btn_tooltip_mok@3x.png);
+  }
+
+  .btn_tooltip .ico_arw {
+    background-image: url(../images/arw_tooltip_mok@3x.png);
+  }
+
+  .btn_tooltip.active .ico_info {
+    background-image: url(../images/btn_tooltip_active_mok@3x.png);
+  }
+
+  .btn_tooltip.active .ico_arw {
+    background-image: url(../images/arw_tooltip_active_mok@3x.png);
+  }
+
+  .btn_tooltip_sm .ico_info {
+    background-image: url(../images/btn_tooltip_sm_mok@3x.png);
+  }
+
+  .btn_tooltip_sm .ico_question {
+    background-image: url(../images/btn_tooltip_question_sm_mok@3x.png);
+  }
+
+  .btn_tooltip_sm.active .ico_info {
+    background-image: url(../images/btn_tooltip_sm_active_mok@3x.png);
+  }
+
+  .btn_tooltip_arw {
+    background-image: url(../images/arw_tooltip_mok@3x.png);
+  }
+
+  .btn_tooltip_arw.active {
+    background-image: url(../images/btn_pop_tooltip_mok@3x.png);
+  }
+
+  .btn_pop_tooltip {
+    background-image: url(../images/btn_pop_tooltip_mok@3x.png);
+  }
+}
 /* e: 버튼 정리 */
