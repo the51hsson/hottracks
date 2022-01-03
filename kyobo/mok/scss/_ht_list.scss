@@ -224,7 +224,9 @@
     b {
         font-weight: 700;
     }
-
+    a {
+        text-decoration: underline;
+    }
     &:before {
         content: "";
         display: block;
