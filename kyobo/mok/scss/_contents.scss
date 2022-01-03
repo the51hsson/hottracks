@@ -1438,13 +1438,25 @@
 
 
 
-.hotpickslide_wrap,
+.hotpickslide_wrap {
+    
+    margin: 0 -20px;
+    
+}
 .photoreview_wrap {
     overflow: hidden;
     margin: 0 -20px;
     padding: 0 20px;
 }
-.hotpickslide_wrap .swiper-slide
+.hotpickslide_wrap {
+    .swiper-wrapper {
+        
+        .swiper-slide {
+            max-width: 330px;
+        }
+    }
+}
+
 .photoreview_wrap .swiper-slide {
     width: calc(100% - 5px) !important
 }
