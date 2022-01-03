@@ -29,10 +29,8 @@
             margin-left: 5px;                 
         }   
     }    
-}
-.txt_primary {
-    color: $txt-primary;
-}
+} 
+
 /* 상단 간격 */
 .mgt10 {margin-top: 10px !important;}
 .mgt12 {margin-top: 12px !important;}
@@ -59,6 +57,7 @@
 .visual_wrap .swiper-pagination-fraction {
     width: 58px;
     height: 25px;
+    padding: 0;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 12px;
     font-family: 'Roboto';
@@ -69,10 +68,12 @@
     .swiper-pagination-current {
         font-size: 13px;
         color: #fff;
+        line-height: 24px;
     }
     .swiper-pagination-total {
         font-size: 13px;
         color: #ccc;
+        line-height: 24px;
     }
 }
 .visual_wrap {
@@ -184,6 +185,7 @@
 .photoreview_wrap .swiper-pagination-fraction {
     width: 58px;
     height: 25px;
+    padding: 0;
     border-radius: 12px;
     font-family: 'Roboto';
     font-weight: 700;
@@ -193,10 +195,12 @@
     .swiper-pagination-current {
         font-size: 13px;
         color: #fff;
+        line-height: 24px;
     }
     .swiper-pagination-total {
         font-size: 13px;
         color: #ccc;
+        line-height: 24px;
     }
 }
 .photoreview_wrap {
@@ -265,6 +269,12 @@
         .sale_price {
             display: block;
             font-size: 22px;
+            .txt_tit {
+                font-size: 13px;
+                color: #767676;
+                position: relative;
+                top: -3px;
+            }            
             .txt_per {
                 font-family: Roboto;
                 font-weight: 700;
@@ -295,6 +305,8 @@
                     position: relative;
                     display: block;
                     padding-right: 15px;
+                        line-height: 35px;
+                    }                    
                     .ico_info {
                         cursor: pointer;
                         display: block;
@@ -313,6 +325,7 @@
                         }
                     }            
                 }
+  
             }
             .txt_dt,
             .txt_dd {
@@ -365,7 +378,7 @@
             }
         } 
     }    
-}
+
 
 
 .product_deliinfo_area {
@@ -514,10 +527,6 @@
         }
     }
 }
-
-
-
-
 
 /* 공통 별점 블럭 */
 .rating_container {
@@ -1195,7 +1204,6 @@
 .recomened_area {
     .list_item {
         margin: 0 -10px;
-        overflow: hidden;
         .item {
             display: inline-block;
             width: 50%;
@@ -1326,7 +1334,7 @@
                         top: 50%;
                         left: 50%;
                         transform: translate3d(-50%,-50%,0);
-                        z-index: 10;
+                        z-index: 5;
                         .txt_dec {
                             color: #fff;
                             font-size: 13px;
@@ -1386,6 +1394,9 @@
 
 
 /* panel text type */
+.group_purchase_area {
+
+}
 .panel_outer {
     .bul_list {
         padding-bottom: 20px;
@@ -1401,6 +1412,10 @@
         }
     }
 }
+
+
+
+
 /* 불릿 아이템 */
 [class^=bul_item_] {position: relative; font-size: 14px; line-height: 22px; letter-spacing: -.01em; color: #595959; font-weight: 400;}
 [class^=bul_item_]+[class^=bul_item_] {margin-top: 8px;}
@@ -1433,151 +1448,176 @@
 .photoreview_wrap .swiper-slide {
     width: calc(100% - 5px) !important
 }
-
-.swiper-pagination-fraction {
-    font-size: 0;
-    padding: 3px 0;
-    background: rgba(0,0,0,30%);
-}
-.soldoutslide_wrap {
-    background: #fff4f1;
-    overflow: hidden;
-    margin: 0 -20px;
-    
-    padding: 20px 20px 52px;
-    
-    position: relative;
-    .swiper-slide {
-        width: 150px;
+.hotpickslide_wrap,
+.photoreview_wrap {
+    .swiper-pagination-fraction {
+        font-size: 0;
+        padding: 3px 0;
+        background: rgba(0,0,0,30%);
     }
-    .figure {
+}
+
+/* 대체상품 */
+.item_replacement {
+    float: left;
+    width: 100%;
+    margin-bottom: 24px;
+    .replacement_wrap {
+        background: #fff4f1;
+        padding: 12px 0 32px 0;
+        margin: 0 -10px;
         position: relative;
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-radius: 4px;
-        overflow: hidden;
-    }   
-    .txt_account {
-        width: 140px;
-        .txt_brand {
-            display: block;
-            margin-top: 12px;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 20px;
+            top: -11px;
+            width: 24px;
+            height: 12px;
+            display: inline-block;
+            background: url(../images/ico/ico_arrow_pink.png);
+            background-size: 24px auto;
         }
-        .txt_desc {
-            margin-top: 4px;
-            display: block;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            -webkit-box-flex: 1;
-            flex: 1;
-            height: 40px            
-        }
-    }
-    .price_wrap {
-        margin-bottom: 9px;
-        .real_price {
-            display: block;
-            font-size: 12px;
-            text-decoration: line-through;
-            .txt_value {
-                color: #767676;
-                font-family: Roboto;
-            }
-
-            .txt_unit {
-                color: #767676;
-            }
-        }
-        .sale_price {
-            display: block;
-            font-size: 15px;
-            .txt_per {
-                font-family: Roboto;
-                font-weight: 700;
-                color: $btn-primary;
-                font-weight: $font-weight-bold;
-            }
-            .txt_value {
-                font-family: Roboto;
-                font-weight: 700;
-                font-weight: $font-weight-bold
-            }
-            .txt_unit {
-            
-            }
-        }
-    }
-    .review_good_wrap {
-        display: flex;
-        justify-content: flex-start;
-        width: 140px;
-        .total_review {
+        .tit_con_area {
             padding-left: 20px;
-            position: relative;
-            
-            .ico_toal_review {
-                &:after {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    top: 2px;
-                    display: inline-block;
-                    width: 14px;
-                    height: 15px;
-                    background: url(../images/ico/ico_total_review.png) no-repeat 0 0;
-                    background-size: 14px auto;
-                }
-            }
-            .txt_total {
-                font-size: 12px;
-            }
         }
-        .total_good {
-            margin-left: 16px;
-            .ico_total_good {
+        .list_replacement_outer {
+            .list_replacement {
+                display: flex;
+                overflow-x: scroll;
+                width: auto;
                 padding-left: 20px;
-                position: relative;
-                &:after {
-                    content: "";
-                    position: absolute;
-                    left: 0; 
-                    top: 2px;                   
+                li {
+                    width: 140px;
+                    margin-right: 16px;
                     display: inline-block;
-                    width: 14px;
-                    height: 14px;                
-                    background: url(../images/ico/ico_heart.png) no-repeat 0 0;
-                    background-size: 14px 14px;
+                    float: left;
+                    a {
+                        display: block;
+                        .figure {
+                            position: relative;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 4px;
+                            overflow: hidden;
+                        }   
+                        .txt_account {
+                            margin-bottom: 8px;
+                            .txt_brand {
+                                display: block;
+                                margin-top: 12px;
+                            }
+                            .txt_desc {
+                                margin-top: 4px;
+                                display: block;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                -webkit-box-flex: 1;
+                                flex: 1;                                         
+                            }
+                        }
+                        .price_wrap {
+                            margin-bottom: 9px;
+                            .real_price {
+                                display: block;
+                                font-size: 12px;
+                                text-decoration: line-through;
+                                .txt_value {
+                                    color: #767676;
+                                    font-family: Roboto;
+                                }
+                    
+                                .txt_unit {
+                                    color: #767676;
+                                }
+                            }
+                            .sale_price {
+                                display: block;
+                                font-size: 15px;
+                                .txt_per {
+                                    font-family: Roboto;
+                                    font-weight: 700;
+                                    color: $btn-primary;
+                                    font-weight: $font-weight-bold;
+                                }
+                                .txt_value {
+                                    font-family: Roboto;
+                                    font-weight: 700;
+                                    font-weight: $font-weight-bold
+                                }
+                                .txt_unit {
+                                
+                                }
+                            }
+                        }
+                        .review_good_wrap {
+                            display: flex;
+                            justify-content: flex-start;
+                            width: 140px;
+                            .total_review {
+                                padding-left: 20px;
+                                position: relative;
+                                
+                                .ico_toal_review {
+                                    &:after {
+                                        content: "";
+                                        position: absolute;
+                                        left: 0;
+                                        top: 2px;
+                                        display: inline-block;
+                                        width: 14px;
+                                        height: 15px;
+                                        background: url(../images/ico/ico_total_review.png) no-repeat 0 0;
+                                        background-size: 14px auto;
+                                    }
+                                }
+                                .txt_total {
+                                    font-size: 12px;
+                                }
+                            }
+                            .total_good {
+                                margin-left: 16px;
+                                .ico_total_good {
+                                    padding-left: 20px;
+                                    position: relative;
+                                    &:after {
+                                        content: "";
+                                        position: absolute;
+                                        left: 0; 
+                                        top: 2px;                   
+                                        display: inline-block;
+                                        width: 14px;
+                                        height: 14px;                
+                                        background: url(../images/ico/ico_heart.png) no-repeat 0 0;
+                                        background-size: 14px 14px;
+                                    }           
+                                }
+                                .txt_total {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        .badge_wrap {
+                            width: 140px;
+                            .badge_list {
+                                display: flex;
+                                .badge {
+                                    margin-bottom: 4px;
+                                    
+                                }
+                            }
+                        } 
+                    }
                 }
-
-            }
-            .txt_total {
-                font-size: 12px;
             }
         }
     }
-    .badge_wrap {
-        width: 140px;
-        .badge_list {
-            display: flex;
-            
-            
-            .badge {
-                margin-bottom: 4px;
-                
-            }
-        }
-    }
-    .swiper-horizontal>.swiper-scrollbar {
-        left: 20px;
-        bottom: 32px;
-        width: calc(100% - 40px);
-    }
-
 }
+
 .btn_more_area {
     padding-top: 20px;
     display: flex;
@@ -1793,3 +1833,36 @@
 
     }
 }
+
+
+
+/* 20220102*/
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+}
+
+.soldoutslide_wrap:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    background: #fff url(../images/ico/arrow_pink.png) no-repeat 0 0;
+    background-size: 24px auto;
+}
+  
+  
+  
+  
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

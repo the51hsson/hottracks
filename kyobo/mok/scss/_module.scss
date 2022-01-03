@@ -1,8 +1,9 @@
 
 /* tab */
-.tab_wrap {
+.ht_tab_wrap {
     padding: 0;
-        .tab_list_wrap {
+    &.type_normal {
+        .ht_tab_list_wrap {
             display: flex;
             border-bottom: solid 1px #ccc;
             justify-content: space-between;
@@ -13,6 +14,7 @@
                 .tab_item {
                     padding: 0 10px;
                     .tab_link {
+                        display: inline-block;
                         padding: 10px 0;
                         position: relative;
                         .tab_txt {
@@ -23,31 +25,29 @@
                         padding-left: 0;
                     }
                 } 
-
-                
-
-                .ui-state-active {
-                    .tab_link {
-                        .tab_txt {
-                            font-weight: $font-weight-bold;
-                        }
-                        
-                        &:after {
-                            position: absolute;
-                            bottom: -1px;
-                            left: 0;
-                            content: "";
-                            width: 100%;
-                            height: 3px;
-                            background: #000;
-                        }
-                    }
-                    
+                .tab_item {
+                    &.active {
+                        .tab_link {
+                            .tab_txt {
+                                font-weight: $font-weight-bold;
+                            }
+                            
+                            &:after {
+                                position: absolute;
+                                bottom: -1px;
+                                left: 0;
+                                content: "";
+                                width: 100%;
+                                height: 3px;
+                                background: #000;
+                            }
+                        }                      
+                   } 
                 }                
             }
             .right_area {
                 display: inline-block;
-                margin-top: 10px;
+                margin-top: 8px;
                 .form_sel {
                     select {
                         appearance: none;
@@ -67,6 +67,10 @@
         .tab_content {
             padding: 0;
         }
+    }
+
+    
+
 } 
 
 /* tootip */
@@ -159,27 +163,27 @@
 
 /* accordion */
 // .fold_box_wrap .fold_box_list .fold_box+.fold_box {margin-top: 10px;}
-.fold_box_wrap .fold_box {box-sizing: border-box;}
-.fold_box_wrap .fold_box .fold_box_contents,
-.fold_box_wrap .fold_box .fold_box_header {padding: 0 20px;}
-.fold_box_wrap .fold_box .fold_box_header {position: relative; padding: 10px 30px 10px 0; cursor: pointer; font-size: 16px; line-height: 22px; letter-spacing: -.01em; font-weight: 700;}
-.fold_box_wrap .fold_box .fold_box_header:after {content: ""; position: absolute; display: block; width: 22px; height: 22px; right: 0; top: 50%; 
+.ht_fold_box_wrap .fold_box {box-sizing: border-box;}
+.ht_fold_box_wrap .fold_box .fold_box_contents,
+.ht_fold_box_wrap .fold_box .fold_box_header {padding: 0 20px;}
+.ht_fold_box_wrap .fold_box .fold_box_header {position: relative; padding: 10px 30px 10px 0; cursor: pointer; font-size: 16px; line-height: 22px; letter-spacing: -.01em; font-weight: 700;}
+.ht_fold_box_wrap .fold_box .fold_box_header:after {content: ""; position: absolute; display: block; width: 22px; height: 22px; right: 0; top: 50%; 
     background-image: url(../images/ico/ico_arrow.png); background-size: 22px 22px; -webkit-transform: translateY(-50%); transform: translateY(-50%);}
-.fold_box_wrap .fold_box .fold_box_header .btn_fold {
+.ht_fold_box_wrap .fold_box .fold_box_header .btn_fold {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
     z-index: 10;
 }
-.fold_box_wrap .fold_box .fold_box_contents {height: 0; overflow: hidden;}
-.fold_box_wrap .fold_box.expanded {background: #fff; border-color: #000;}
-.fold_box_wrap .fold_box.expanded .fold_box_header:after {-webkit-transform: translateY(-50%) rotate(180deg); transform: translateY(-50%) rotate(180deg);}
-.fold_box_wrap .fold_box.expanded>.fold_box_contents {
+.ht_fold_box_wrap .fold_box .fold_box_contents {height: 0; overflow: hidden;}
+.ht_fold_box_wrap .fold_box.expanded {background: #fff; border-color: #000;}
+.ht_fold_box_wrap .fold_box.expanded .fold_box_header:after {-webkit-transform: translateY(-50%) rotate(180deg); transform: translateY(-50%) rotate(180deg);}
+.ht_fold_box_wrap .fold_box.expanded>.fold_box_contents {
     height: auto; padding-top: 20px; padding-bottom: 20px;
     background: #f7f7f7;
 }
-.fold_box_wrap .fold_box.expanded>.fold_box_contents .form_wrap+.btn_wrap {margin-top: 20px;}
-.fold_box_wrap .fold_box.no_fold .fold_box_header {cursor: default;}
-.fold_box_wrap .fold_box.no_fold .fold_box_header:after {content: none;}
-.fold_box_wrap .fold_box.no_fold .fold_box_header:after {content: none;}
+.ht_fold_box_wrap .fold_box.expanded>.fold_box_contents .form_wrap+.btn_wrap {margin-top: 20px;}
+.ht_fold_box_wrap .fold_box.no_fold .fold_box_header {cursor: default;}
+.ht_fold_box_wrap .fold_box.no_fold .fold_box_header:after {content: none;}
+.ht_fold_box_wrap .fold_box.no_fold .fold_box_header:after {content: none;}
 
 
 
