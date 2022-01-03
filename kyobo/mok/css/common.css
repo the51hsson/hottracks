@@ -69,11 +69,11 @@
 }
 
 .txt_primary {
-  color: #DA2128;
+  color: #DA2128 !important;
 }
 
 .txt_bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 /* align */
@@ -798,10 +798,6 @@ button.btn_sm {
   white-space: nowrap;
 }
 
-.txt_primary {
-  color: #DA2128;
-}
-
 /* 상단 간격 */
 .mgt10 {
   margin-top: 10px !important;
@@ -1072,6 +1068,12 @@ button.btn_sm {
   display: block;
   font-size: 22px;
 }
+.product_info_area .price_wrap .sale_price .txt_tit {
+  font-size: 13px;
+  color: #767676;
+  position: relative;
+  top: -3px;
+}
 .product_info_area .price_wrap .sale_price .txt_per {
   font-family: Roboto;
   font-weight: 700;
@@ -1101,6 +1103,9 @@ button.btn_sm {
   position: relative;
   display: block;
   padding-right: 15px;
+}
+.product_info_area .info_wrap .list_info .txt_dd .txt_info.one_line {
+  line-height: 35px;
 }
 .product_info_area .info_wrap .list_info .txt_dd .txt_info .ico_info {
   cursor: pointer;

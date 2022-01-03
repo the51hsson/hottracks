@@ -30,9 +30,7 @@
         }   
     }    
 } 
-.txt_primary {
-    color: $txt-primary;
-}
+
 /* 상단 간격 */
 .mgt10 {margin-top: 10px !important;}
 .mgt12 {margin-top: 12px !important;}
@@ -271,6 +269,12 @@
         .sale_price {
             display: block;
             font-size: 22px;
+            .txt_tit {
+                font-size: 13px;
+                color: #767676;
+                position: relative;
+                top: -3px;
+            }            
             .txt_per {
                 font-family: Roboto;
                 font-weight: 700;
@@ -301,6 +305,8 @@
                     position: relative;
                     display: block;
                     padding-right: 15px;
+                        line-height: 35px;
+                    }                    
                     .ico_info {
                         cursor: pointer;
                         display: block;
@@ -319,6 +325,7 @@
                         }
                     }            
                 }
+  
             }
             .txt_dt,
             .txt_dd {
@@ -1391,6 +1398,9 @@
 
 
 /* panel text type */
+.group_purchase_area {
+
+}
 .panel_outer {
     .bul_list {
         padding-bottom: 20px;
@@ -1406,6 +1416,10 @@
         }
     }
 }
+
+
+
+
 /* 불릿 아이템 */
 [class^=bul_item_] {position: relative; font-size: 14px; line-height: 22px; letter-spacing: -.01em; color: #595959; font-weight: 400;}
 [class^=bul_item_]+[class^=bul_item_] {margin-top: 8px;}

@@ -139,10 +139,10 @@ $txt-white:     #ffffff !default;
     font-family: $font-num;
 }
 .txt_primary {
-    color: $txt-primary;
+    color: $txt-primary !important;
 }
 .txt_bold {
-    font-weight: 700;
+    font-weight: $font-weight-bold !important;
 }
 
 /* align */
