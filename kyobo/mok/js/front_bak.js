@@ -667,7 +667,7 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 	 * @param selector Tab 생성 DOM 셀렉터(default : .tab_wrap)
 	 */
 	function setFoldBox(selector) {
-		selector = selector ? selector : '.fold_box_wrap';
+		selector = selector ? selector : '.ht_fold_box_wrap';
 		if ($(selector).length > 0) {
 			$(selector).find('.fold_box .fold_box_header').each(function (index) {
 				$(this).find('.btn_fold').off('click.uiFold').on('click.uiFold', function (event) {

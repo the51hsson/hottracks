@@ -70,7 +70,7 @@ $(function(){
 	});
 
 	var visualSwiper = new CustomSwiper('.visual_wrap .swiper-container', {
-		slidesPerView: '1',
+		slidesPerView: '1',	
 		speed: 500,
 		pagination: {
 			el: $('.visual_wrap').find('.swiper-pagination')[0],
@@ -105,24 +105,6 @@ $(function(){
 			},
 		}
 	});
-	var soldoutslidetSwiper = new CustomSwiper('.soldoutslide_wrap .swiper-container', {
-		slidesPerView: 'auto',
-		speed: 500,
-		spaceBetween: 16,
-		pagination: {
-			el: $('.photoreview_wrap').find('.swiper-pagination')[0],
-			type: 'fraction',
-			formatFractionCurrent: function (number) {
-				return KyoboHottracks.mok.setPrependZero(number, 2);
-			},
-			formatFractionTotal: function (number) {
-				return KyoboHottracks.mok.setPrependZero(number, 2);
-			},
-		},
-		scrollbar: {
-			el: ".swiper-scrollbar",
-		}
-	})
 });
 
 // 상품상세 앵커탭 기능
