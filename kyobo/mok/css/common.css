@@ -1103,18 +1103,16 @@ button.btn_sm {
   position: relative;
   display: block;
   padding-right: 15px;
-}
-.product_info_area .info_wrap .list_info .txt_dd .txt_info.one_line {
   line-height: 35px;
 }
-.product_info_area .info_wrap .list_info .txt_dd .txt_info .ico_info {
+.product_info_area .info_wrap .list_info .txt_dd .ico_info {
   cursor: pointer;
   display: block;
   position: absolute;
   right: 0;
   top: 2px;
 }
-.product_info_area .info_wrap .list_info .txt_dd .txt_info .ico_info:after {
+.product_info_area .info_wrap .list_info .txt_dd .ico_info:after {
   content: "";
   width: 16px;
   height: 16px;
@@ -1124,21 +1122,22 @@ button.btn_sm {
   right: 0;
   top: 0;
 }
-.product_info_area .info_wrap .list_info .txt_dt,
-.product_info_area .info_wrap .list_info .txt_dd {
+.product_info_area .info_wrap .txt_dt,
+.product_info_area .info_wrap .txt_dd {
   padding: 10px 0;
 }
-.product_info_area .info_wrap .list_info .col_4 {
+.product_info_area .info_wrap .col_4 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
 }
-.product_info_area .info_wrap .list_info .col_8 {
+.product_info_area .info_wrap .col_8 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 70%;
           flex: 0 0 70%;
 }
-.product_info_area .coupon_wrap {
+
+.coupon_wrap {
   background: #da2128;
   height: 62px;
   display: -webkit-box;
@@ -1155,12 +1154,13 @@ button.btn_sm {
   padding: 0 20px;
   margin: 0 -20px;
 }
-.product_info_area .coupon_wrap .txt_dec {
+.coupon_wrap .txt_dec {
   width: calc(100% - 81px );
   color: #fff;
   font-weight: 700;
 }
-.product_info_area .coupon_wrap_complete {
+
+.coupon_wrap_complete {
   background: #f2f2f2;
   height: 62px;
   display: -webkit-box;
@@ -1177,12 +1177,12 @@ button.btn_sm {
   padding: 0 20px;
   margin: 0 -20px;
 }
-.product_info_area .coupon_wrap_complete .txt_dec {
+.coupon_wrap_complete .txt_dec {
   width: calc(100% - 81px );
   color: #767676;
   font-weight: 700;
 }
-.product_info_area .coupon_wrap_complete .txt_dec .ico_check {
+.coupon_wrap_complete .txt_dec .ico_check {
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -2413,6 +2413,18 @@ button.btn_sm {
   background: #fff4f1;
   padding: 12px 0 32px 0;
   margin: 0 -10px;
+  position: relative;
+}
+.item_replacement .replacement_wrap:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -11px;
+  width: 24px;
+  height: 12px;
+  display: inline-block;
+  background: url(../images/ico/ico_arrow_pink.png);
+  background-size: 24px auto;
 }
 .item_replacement .replacement_wrap .tit_con_area {
   padding-left: 20px;

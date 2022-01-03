@@ -378,7 +378,7 @@
             }
         } 
     }    
-}
+
 
 
 .product_deliinfo_area {
@@ -527,10 +527,6 @@
         }
     }
 }
-
-
-
-
 
 /* 공통 별점 블럭 */
 .rating_container {
@@ -1470,6 +1466,18 @@
         background: #fff4f1;
         padding: 12px 0 32px 0;
         margin: 0 -10px;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 20px;
+            top: -11px;
+            width: 24px;
+            height: 12px;
+            display: inline-block;
+            background: url(../images/ico/ico_arrow_pink.png);
+            background-size: 24px auto;
+        }
         .tit_con_area {
             padding-left: 20px;
         }
