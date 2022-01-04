@@ -5,11 +5,9 @@
     height: 8px;
     margin: 20px -20px;
     border: 0;
- 
 }
 
 /* font */
-
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
@@ -131,12 +129,16 @@ $btn-default:      #ffffff !default;
 $btn-orange:     #F96734 !default;
 $btn-wihte :     #ffffff !default;
 $bg-primary:     #DA2128 !default;
+
 $txt-primary:     #DA2128 !default;
 $txt-white:     #ffffff !default;
-
+$txt-lightGrey: #767675 !default;
 /* 영문 숫자폰트 */
 .font_num {
     font-family: $font-num;
+}
+.txt_lightgrey {
+    color: $txt-lightGrey !important;
 }
 .txt_primary {
     color: $txt-primary !important;

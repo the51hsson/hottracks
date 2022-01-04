@@ -34,3 +34,20 @@
         }   
     }    
 }
+
+
+@mixin icoCircleMore($top){
+    &.ico_circle_more {
+        &:after {
+            position: relative;
+            content: "";
+            top: $top;
+            width: 22px;
+            height: 22px;
+            display: inline-block;
+            background: url(../images/ico/ico_arrow.png) no-repeat 0 0;
+            background-size: 22px auto;    
+            margin-left: 5px;                 
+        }   
+    }    
+}
