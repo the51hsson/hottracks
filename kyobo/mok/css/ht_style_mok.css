@@ -146,6 +146,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* Chrome, Safari, Opera*/
 }
 
+::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
+}
+
 .skip_nav_wrap {
   position: absolute;
   font-size: 0;
@@ -5708,11 +5713,6 @@ body.dialog_open {
   left: 0;
 }
 
-.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap::-webkit-scrollbar {
-  display: none;
-  /* Chrome, Safari, Opera*/
-}
-
 .ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list {
   white-space: nowrap;
 }
@@ -5735,6 +5735,22 @@ body.dialog_open {
 
 .ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list .menu_list_item::last-child {
   padding-right: 20px;
+}
+
+.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list.marker {
+  position: relative;
+}
+
+.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list.marker:after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #DA2128;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .dialog_wrapper.open .ui-dialog.dialog_menu {

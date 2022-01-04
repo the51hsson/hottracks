@@ -11,9 +11,6 @@
                 border-bottom: 1px solid #d5d5d5; 
                 top: 0; 
                 left: 0;
-                &::-webkit-scrollbar {
-                    display: none; /* Chrome, Safari, Opera*/
-                }
                 .menu_list {
                     white-space: nowrap;
                     .menu_list_item {
@@ -31,7 +28,20 @@
                         &::last-child {
                             padding-right: 20px;
                         }
-                        .text{}
+                    }
+                    &.marker {
+                        position: relative;
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 4px;
+                            height: 4px;
+                            background-color: #DA2128;
+                            border-radius: 50%;
+                            position: absolute;
+                            right: 0;
+                            top:0;
+                        }
                     }
                 }
             }

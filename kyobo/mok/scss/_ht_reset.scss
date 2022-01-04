@@ -37,6 +37,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 .scroll_hide::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
 .skip_nav_wrap {
   position: absolute;
   font-size: 0;
