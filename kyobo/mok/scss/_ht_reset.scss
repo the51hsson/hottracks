@@ -1,6 +1,6 @@
 /* s : reset */
 body,html {height: 100%;}
-body {font-size: 14px; line-height: 1.4; font-family: Roboto,"NotoSansCJKkr","PingFang SC","Apple SD Gothic Neo","Microsoft YaHei UI","Malgun Gothic",sans-serif; color: #000;}
+body {font-size: 14px; line-height: 1.4; font-family: Roboto,"Noto Sans KR","PingFang SC","Apple SD Gothic Neo","Microsoft YaHei UI","Malgun Gothic",sans-serif; color: #000;}
 button,input,pre,select,table,td,textarea,th {font: inherit; color: inherit;}
 blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,select,table,td,textarea,th,ul {margin: 0; padding: 0;}
 h1,h2,h3,h4,h5,h6 {font-size: 100%;}
@@ -35,6 +35,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
   scrollbar-width: none; /* Firefox */
 }
 .scroll_hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 .skip_nav_wrap {

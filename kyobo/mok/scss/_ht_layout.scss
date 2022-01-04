@@ -1,18 +1,16 @@
 .ht_ {
     .contents_wrap {
         .main_menu_wrap {
-            position: relative; 
-            padding-top: 49px; 
-            box-sizing: border-box;
+            position: sticky; 
+            left: 0;
+            top:0;
+            background-color: #fff;
             .main_menu_list_wrap {
                 overflow-x: auto; 
                 -webkit-overflow-scrolling: touch; 
                 border-bottom: 1px solid #d5d5d5; 
                 top: 0; 
                 left: 0;
-                &::-webkit-scrollbar {
-                    display: none; /* Chrome, Safari, Opera*/
-                }
                 .menu_list {
                     white-space: nowrap;
                     .menu_list_item {
@@ -30,7 +28,20 @@
                         &::last-child {
                             padding-right: 20px;
                         }
-                        .text{}
+                    }
+                    &.marker {
+                        position: relative;
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 4px;
+                            height: 4px;
+                            background-color: #DA2128;
+                            border-radius: 50%;
+                            position: absolute;
+                            right: 0;
+                            top:0;
+                        }
                     }
                 }
             }
