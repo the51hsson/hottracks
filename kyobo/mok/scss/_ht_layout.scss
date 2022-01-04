@@ -1,9 +1,10 @@
 .ht_ {
     .contents_wrap {
         .main_menu_wrap {
-            position: relative; 
-            padding-top: 49px; 
-            box-sizing: border-box;
+            position: sticky; 
+            left: 0;
+            top:0;
+            background-color: #fff;
             .main_menu_list_wrap {
                 overflow-x: auto; 
                 -webkit-overflow-scrolling: touch; 

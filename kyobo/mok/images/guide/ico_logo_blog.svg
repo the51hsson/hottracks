@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_3413" data-name="사각형 3413" width="10.248" height="13.43" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="블로그" transform="translate(-1778 -889.001)">
+    <circle id="타원_37" data-name="타원 37" cx="16" cy="16" r="16" transform="translate(1778 889.001)" fill="#00c300"/>
+    <g id="icon_blog" transform="translate(1790 898.002)">
+      <g id="그룹_1783" data-name="그룹 1783" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="패스_36264" data-name="패스 36264" d="M5.819,3.746A4.181,4.181,0,0,0,3.14,4.99V0H0V13.1H3.175V12.073A3.019,3.019,0,0,0,5.819,13.43a4.639,4.639,0,0,0,4.428-4.9s-.163-4.785-4.428-4.785m-.7,6.911A2.019,2.019,0,1,1,7.144,8.64a2.016,2.016,0,0,1-2.02,2.017" transform="translate(0 0)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
