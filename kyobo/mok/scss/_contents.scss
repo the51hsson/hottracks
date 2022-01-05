@@ -881,90 +881,150 @@
         }
     }     
 }
-.all_qa_wrap {
-    border-top: solid 1px #000;
-    margin-top: 20px;
-    .review_inner {
-        padding-top: 20px;
-        border-bottom: solid 1px #EAEAEA;
-        .review_info_area {
-            display: flex;
-            justify-content: space-between;
-            .left_area {
+.all_qa_area {
+    .all_qa_wrap {
+        border-top: solid 1px #000;
+        margin-top: 20px;  
+        .no_review {
+            text-align: center;
+            position: relative;
+            padding: 40px 15px;
+            border-radius:4px;
+            border-bottom: solid 1px #eaeaea;
+            .txt_msg {
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    margin: 0 auto 8px;
+                    background: url(../images/ico/ico_info.svg) no-repeat 0 0;
+                    background-size: 30px 30px;
+                }
+                font-size: 13px;
+                color: #767676;
+            }
+        }          
+        .review_inner {
+            padding-top: 20px;
+            border-bottom: solid 1px #EAEAEA;
+            .review_info_area {
                 display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                flex-direction: row;
-                flex-wrap: wrap;
-                margin-bottom: 12px;
-                font-size: 12px;
-                color: rgb(118, 118, 118);
-                .txt_user {
-                    margin-left: 0;
-                    display: inline-block;
-                }
-                .txt_date {
-                    margin-left: 8px;
-                    display: inline-block;
-                }
-                .btn_modify,
-                .btn_remove {
-                    margin-left: 8px;
-                    display: inline-block;
-                }            
-                .gap {
-                    display: inline-block;
-                    font-size: 0;
-                    text-indent: -9000em;
-                    overflow: hidden;
-                    &:after {
-                        content: "";
+                justify-content: space-between;
+                .left_area {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin-bottom: 12px;
+                    font-size: 12px;
+                    color: rgb(118, 118, 118);
+                    .txt_user {
+                        margin-left: 0;
                         display: inline-block;
-                        width: 1px;
-                        height: 9px;
-                        background-color: #d5d5d5;
+                    }
+                    .txt_date {
                         margin-left: 8px;
+                        display: inline-block;
+                    }
+                    .btn_modify,
+                    .btn_remove {
+                        margin-left: 8px;
+                        display: inline-block;
+                    }            
+                    .gap {
+                        display: inline-block;
+                        font-size: 0;
+                        text-indent: -9000em;
+                        overflow: hidden;
+                        &:after {
+                            content: "";
+                            display: inline-block;
+                            width: 1px;
+                            height: 9px;
+                            background-color: #d5d5d5;
+                            margin-left: 8px;
+                        }
                     }
                 }
+                .right_area {
+                    .txt_reply {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }                
+                }            
             }
-            .right_area {
-                .txt_reply {
+            .review_comment_area {
+                display: flex;
+                .txt_review {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;                
+                    flex: 1;
+                    height: 40px;
+                }
+            
+            } 
+            .box_qa {
+                background: #F7F7F7;
+                padding: 20px;
+                margin-bottom: 20px;
+                .question_area {
+                    margin-bottom: 16px;
+                }
+                .txt_tit {
+                    margin-bottom: 7px;
+                }
+                .txt_dec {
+                    line-height: 22px;
                     font-size: 14px;
-                    font-weight: 500;
-                }                
-            }            
-        }
-        .review_comment_area {
-            display: flex;
-            .txt_review {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;                
-                flex: 1;
-                height: 40px;
+                }
             }
-        
+            .box_msg {
+                background: #F7F7F7;
+                text-align: center;
+                position: relative;
+                padding: 16px 15px;
+                margin-bottom: 20px;
+                border-radius:4px;
+                .txt_msg {
+                    &:before {
+                        content: "";
+                        display: block;
+                        width: 17px;
+                        height: 17px;
+                        margin: 0 auto 4px;
+                        background: url(../images/ico/ico_info.svg) no-repeat 0 0;
+                        background-size: 17px 17px;
+                    }
+                    font-size: 13px;
+                    color: #767676;
+                }
+                .txt_secret {
+                    font-size: 13px;
+                    color: #767676;                
+                    padding-left: 22px;
+                    position: relative;
+                    &:before {
+                        position: absolute;
+                        left: 0;
+                        content: '';
+                        display: block;
+                        width: 17px;
+                        height: 19px;
+                        margin: 0 auto 4px;
+                        background: url(../images/ico/ico_lock.png) no-repeat 0 0;
+                        background-size: 17px 19px;
+                    }
+                }            
+            }
         } 
-        .box_qa {
-            background: #F7F7F7;
-            padding: 20px;
-            margin-bottom: 20px;
-            .question_area {
-                margin-bottom: 16px;
-            }
-            .txt_tit {
-                margin-bottom: 7px;
-            }
-            .txt_dec {
-                line-height: 22px;
-                font-size: 14px;
-            }
-        }
-
-    } 
+    }
 }
+
 
 /**/
 .auto_overflow_wrap .auto_overflow_contents {
@@ -974,10 +1034,30 @@
     max-height: none!important;
 }
 .all_review_area {
+    .no_review {
+        text-align: center;
+        position: relative;
+        padding: 40px 15px;
+        border-radius:4px;
+        border-bottom: solid 1px #eaeaea;
+        .txt_msg {
+            &:before {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 30px;
+                margin: 0 auto 8px;
+                background: url(../images/ico/ico_info.svg) no-repeat 0 0;
+                background-size: 30px 30px;
+            }
+            font-size: 13px;
+            color: #767676;
+        }
+    }     
     .auto_overflow_wrap.overflow {
         &.active {
             margin:0 -20px;
-            .auto_overflow_contents {
+            .auto_overflow_contents {                
                 .review_comment_area {
                     .txt_review {
                         padding: 0 20px;
@@ -1035,10 +1115,6 @@
     }
 }
  
-
-
-
-
 .all_review_wrap {
     .review_inner {
         padding-top: 20px;
@@ -1230,7 +1306,6 @@
     }
 }
 
-
 /* recomend area  */
 .recomened_area {
     .list_item {
@@ -1421,16 +1496,6 @@
     }
 
 }  
-
-
-/* panel text type */
-.group_purchase_area {
-
-}
-
-
-
-
 
 /* 불릿 아이템 */
 [class^=bul_item_] {position: relative; font-size: 14px; line-height: 22px; letter-spacing: -.01em; color: #595959; font-weight: 400;}
