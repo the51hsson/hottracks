@@ -849,7 +849,7 @@ button.btn_sm {
   margin: 0 auto;
 }
 
-.visual_wrap .swiper-slide img {
+.swiper-slide img {
   width: 100%;
   height: 100%;
   max-width: 400px;
@@ -982,6 +982,7 @@ button.btn_sm {
   margin: 0 5px !important;
 }
 
+/* hotpick area */
 .hotpickslide_wrap .swiper-slide img {
   width: 100%;
   height: 100%;
@@ -1012,7 +1013,6 @@ button.btn_sm {
   color: #ccc;
 }
 
-/* photoreview wrap */
 /* tit area */
 .product_info_area .tit_wrap {
   margin-top: 40px;
