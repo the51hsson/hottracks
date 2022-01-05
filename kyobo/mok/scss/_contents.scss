@@ -3,6 +3,7 @@
 /* 상단 간격 */
 .mgt10 {margin-top: 10px !important;}
 .mgt12 {margin-top: 12px !important;}
+.mgt14 {margin-top: 14px !important;}
 .mgt20 {margin-top: 20px !important;}
 .mgt24 {margin-top: 24px !important;}
 .mgt40 {margin-top: 40px !important;}
@@ -92,6 +93,20 @@
                 background-size: 40px auto;
             }
         }
+        &.ico_gobluelay {
+            position: relative;
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                position: absolute;              
+                left: 0;
+                top: 0; 
+                background: url(../images/ico/ico_gobluelay.svg) no-repeat 50% 50%;
+                background-size: 40px auto;
+            }
+        }        
     }
 }
 
@@ -107,6 +122,15 @@
             width: 100%;
             height: 100%;
             padding: 0 20px;
+
+            .swiper_control_box {
+                margin-top: 10px;
+                .swiper-pagination {
+                    .swiper-pagination-bullet {
+                        margin: 0 5px !important;
+                    }
+                }
+            }
         }        
     }
 }
@@ -381,6 +405,7 @@
         p {
             font-size: 14px;
             line-height: 22px;
+            color: #292929;
         }
     }
     .info_wrap {
@@ -452,6 +477,14 @@
                     border-right: 0;
                 }
             }
+        }
+    }
+    .detail_txt_area {
+        color: #595959;
+    }
+    .list_detail {
+        li {
+            color: #595959;
         }
     }
 }
@@ -1394,21 +1427,7 @@
 .group_purchase_area {
 
 }
-.panel_outer {
-    .bul_list {
-        padding-bottom: 20px;
-        &:last-child {
-            padding-bottom: 0;
-        }
-    }
-    .tit_area {
-        margin-bottom: 9px;
-        .tit {
-            font-size: 14px;
-            font-weight: 500;
-        }
-    }
-}
+
 
 
 
@@ -1744,6 +1763,19 @@
                 }
 
             }
+            .ico_addinfo {
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    background: url(../images/ico/ico_addinfo.svg) no-repeat 0 0;
+                    background-size: 18px auto;    
+                    position: relative;
+                    top: 3px;                                
+                }
+
+            }            
             .ico_poster {
                 &:after {
                     content: '';

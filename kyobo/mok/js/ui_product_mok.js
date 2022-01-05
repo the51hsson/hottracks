@@ -92,7 +92,9 @@ $(function(){
 		slidesPerView: 'auto',
 		speed: 500,
 		spaceBetween: 10,
-		pagination: false
+		pagination: {
+			el: $('.hotpickslide_wrap').find('.swiper_control_box .swiper-pagination')[0],
+		},
 	});
 	
 
@@ -113,7 +115,7 @@ $(function(){
 			},
 		}
 	});
-	var photoreviewSwiper = new CustomSwiper('.photoreviewSlide-02 .swiper-container', {
+	var photoreview02Swiper = new CustomSwiper('.photoreviewSlide-02 .swiper-container', {
 		slidesPerView: 'auto',
 		speed: 500,
 		spaceBetween: 10,

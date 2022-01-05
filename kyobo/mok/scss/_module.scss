@@ -163,6 +163,21 @@
 
 /* accordion */
 // .fold_box_wrap .fold_box_list .fold_box+.fold_box {margin-top: 10px;}
+.panel_outer {
+    .bul_list {
+        padding-bottom: 20px;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    .tit_area {
+        margin-bottom: 9px;
+        .tit {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
 .ht_fold_box_wrap .fold_box {
     box-sizing: border-box;
 }
@@ -201,10 +216,12 @@
 .ht_fold_box_wrap .fold_box .fold_box_contents {
     height: 0;
     overflow: hidden;
+    border-radius: 10px;
 }
 .ht_fold_box_wrap .fold_box.expanded {
     background: #fff;
     border-color: #000;
+    margin-bottom: 10px;
 }
 .ht_fold_box_wrap .fold_box.expanded .fold_box_header:after {
     transform: translateY(-50%) rotate(0);
