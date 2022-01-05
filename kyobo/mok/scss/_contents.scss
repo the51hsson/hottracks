@@ -962,7 +962,44 @@
                 font-size: 14px;
             }
         }
-
+        .box_msg {
+            background: #F7F7F7;
+            text-align: center;
+            position: relative;
+            padding: 16px 15px;
+            margin-bottom: 20px;
+            border-radius:4px;
+            .txt_msg {
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 17px;
+                    height: 17px;
+                    margin: 0 auto 4px;
+                    background: url(../images/ico/ico_info.svg) no-repeat 0 0;
+                    background-size: 17px 17px;
+                }
+                font-size: 13px;
+                color: #767676;
+            }
+            .txt_secret {
+                font-size: 13px;
+                color: #767676;                
+                padding-left: 22px;
+                position: relative;
+                &:before {
+                    position: absolute;
+                    left: 0;
+                    content: '';
+                    display: block;
+                    width: 17px;
+                    height: 19px;
+                    margin: 0 auto 4px;
+                    background: url(../images/ico/ico_lock.png) no-repeat 0 0;
+                    background-size: 17px 19px;
+                }
+            }            
+        }
     } 
 }
 

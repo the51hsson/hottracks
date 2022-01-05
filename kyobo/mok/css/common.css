@@ -2005,6 +2005,49 @@ button.btn_sm {
   font-size: 14px;
 }
 
+.all_qa_wrap .review_inner .box_msg {
+  background: #F7F7F7;
+  text-align: center;
+  position: relative;
+  padding: 16px 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.all_qa_wrap .review_inner .box_msg .txt_msg {
+  font-size: 13px;
+  color: #767676;
+}
+
+.all_qa_wrap .review_inner .box_msg .txt_msg:before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin: 0 auto 4px;
+  background: url(../images/ico/ico_info.svg) no-repeat 0 0;
+  background-size: 17px 17px;
+}
+
+.all_qa_wrap .review_inner .box_msg .txt_secret {
+  font-size: 13px;
+  color: #767676;
+  padding-left: 22px;
+  position: relative;
+}
+
+.all_qa_wrap .review_inner .box_msg .txt_secret:before {
+  position: absolute;
+  left: 0;
+  content: '';
+  display: block;
+  width: 17px;
+  height: 19px;
+  margin: 0 auto 4px;
+  background: url(../images/ico/ico_lock.png) no-repeat 0 0;
+  background-size: 17px 19px;
+}
+
 /**/
 .auto_overflow_wrap .auto_overflow_contents {
   overflow: hidden;
@@ -3485,7 +3528,7 @@ button.btn_sm {
 .ht_fold_box_wrap .fold_box .fold_box_contents {
   height: 0;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .ht_fold_box_wrap .fold_box.expanded {
