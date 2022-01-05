@@ -842,69 +842,7 @@
 .review_user_info {display: flex; display: -webkit-flex; justify-content: flex-start; align-items: center; flex-direction: row; font-size: 12px; line-height: 18px; letter-spacing: -.01em; color: #767676; margin-bottom: 11px; flex-wrap: wrap;}
 .review_user_info .gap {display: inline-block; font-size: 0; width: 1px; height: 9px; background-color: #d5d5d5; margin: 0 6px;}
 .review_user_info .badge_line_gray {margin: 0 6px 0 4px;}
-/* 뱃지 */
-[class^=badge_] {
-    display: inline-block;
-    box-sizing: border-box;
-    text-align: center;
-    vertical-align: top;
-    [class^=ico_] {
-        display: inline-block;
-        position: relative;
-        vertical-align: top;
-    }
-    .text {
-        display: inline-block;
-        vertical-align: top;
-    }
-}
-/* 뱃지 - 사이즈 */
-.badge_md {
-    min-height: 22px;
-    padding: 1px 5px;
-    border-radius: 4px;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: -0.01em;
-}
-.badge_sm {
-    min-height: 20px;
-    padding: 0 7px;
-    border-radius: 4px;
-    font-size: 11px;
-    line-height: 18px;
-    letter-spacing: -0.01em;
-    &.badge_pill {
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: -0.01em;
-        border-radius: 20px;
-    }
-    &:not(.badge_pill) .text {
-        transform: translateY(1px);
-    }
-}
-/* 뱃지 - 색상 */
-.badge_line_primary {
-    color: #DA2128;
-    border: 1px solid #DA2128;
-    background: #fff;
-}
-.badge_line_gray {
-    color: #767676;
-    background: #fff;
-    border: 1px solid #ccc;
-}
-/* 뱃지 - 리스트 */
-.badge_list_box {
-    margin-top: -4px;
-    font-size: 0;
-    text-align: left;
-    [class^=badge_] {
-        margin-right: 4px;
-        margin-top: 4px;
-    }
-}
+
 .review_summary_wrap {
     display: block;
     font-size: 0;
