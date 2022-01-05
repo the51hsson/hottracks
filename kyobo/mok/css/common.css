@@ -1891,17 +1891,40 @@ button.btn_sm {
   background-size: 17px 17px;
 }
 
-.all_qa_wrap {
+.all_qa_area .all_qa_wrap {
   border-top: solid 1px #000;
   margin-top: 20px;
 }
 
-.all_qa_wrap .review_inner {
+.all_qa_area .all_qa_wrap .no_review {
+  text-align: center;
+  position: relative;
+  padding: 40px 15px;
+  border-radius: 4px;
+  border-bottom: solid 1px #eaeaea;
+}
+
+.all_qa_area .all_qa_wrap .no_review .txt_msg {
+  font-size: 13px;
+  color: #767676;
+}
+
+.all_qa_area .all_qa_wrap .no_review .txt_msg:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 8px;
+  background: url(../images/ico/ico_info.svg) no-repeat 0 0;
+  background-size: 30px 30px;
+}
+
+.all_qa_area .all_qa_wrap .review_inner {
   padding-top: 20px;
   border-bottom: solid 1px #EAEAEA;
 }
 
-.all_qa_wrap .review_inner .review_info_area {
+.all_qa_area .all_qa_wrap .review_inner .review_info_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1910,7 +1933,7 @@ button.btn_sm {
           justify-content: space-between;
 }
 
-.all_qa_wrap .review_inner .review_info_area .left_area {
+.all_qa_area .all_qa_wrap .review_inner .review_info_area .left_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1931,30 +1954,30 @@ button.btn_sm {
   color: #767676;
 }
 
-.all_qa_wrap .review_inner .review_info_area .left_area .txt_user {
+.all_qa_area .all_qa_wrap .review_inner .review_info_area .left_area .txt_user {
   margin-left: 0;
   display: inline-block;
 }
 
-.all_qa_wrap .review_inner .review_info_area .left_area .txt_date {
+.all_qa_area .all_qa_wrap .review_inner .review_info_area .left_area .txt_date {
   margin-left: 8px;
   display: inline-block;
 }
 
-.all_qa_wrap .review_inner .review_info_area .left_area .btn_modify,
-.all_qa_wrap .review_inner .review_info_area .left_area .btn_remove {
+.all_qa_area .all_qa_wrap .review_inner .review_info_area .left_area .btn_modify,
+.all_qa_area .all_qa_wrap .review_inner .review_info_area .left_area .btn_remove {
   margin-left: 8px;
   display: inline-block;
 }
 
-.all_qa_wrap .review_inner .review_info_area .left_area .gap {
+.all_qa_area .all_qa_wrap .review_inner .review_info_area .left_area .gap {
   display: inline-block;
   font-size: 0;
   text-indent: -9000em;
   overflow: hidden;
 }
 
-.all_qa_wrap .review_inner .review_info_area .left_area .gap:after {
+.all_qa_area .all_qa_wrap .review_inner .review_info_area .left_area .gap:after {
   content: "";
   display: inline-block;
   width: 1px;
@@ -1963,18 +1986,18 @@ button.btn_sm {
   margin-left: 8px;
 }
 
-.all_qa_wrap .review_inner .review_info_area .right_area .txt_reply {
+.all_qa_area .all_qa_wrap .review_inner .review_info_area .right_area .txt_reply {
   font-size: 14px;
   font-weight: 500;
 }
 
-.all_qa_wrap .review_inner .review_comment_area {
+.all_qa_area .all_qa_wrap .review_inner .review_comment_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.all_qa_wrap .review_inner .review_comment_area .txt_review {
+.all_qa_area .all_qa_wrap .review_inner .review_comment_area .txt_review {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -1986,26 +2009,26 @@ button.btn_sm {
   height: 40px;
 }
 
-.all_qa_wrap .review_inner .box_qa {
+.all_qa_area .all_qa_wrap .review_inner .box_qa {
   background: #F7F7F7;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-.all_qa_wrap .review_inner .box_qa .question_area {
+.all_qa_area .all_qa_wrap .review_inner .box_qa .question_area {
   margin-bottom: 16px;
 }
 
-.all_qa_wrap .review_inner .box_qa .txt_tit {
+.all_qa_area .all_qa_wrap .review_inner .box_qa .txt_tit {
   margin-bottom: 7px;
 }
 
-.all_qa_wrap .review_inner .box_qa .txt_dec {
+.all_qa_area .all_qa_wrap .review_inner .box_qa .txt_dec {
   line-height: 22px;
   font-size: 14px;
 }
 
-.all_qa_wrap .review_inner .box_msg {
+.all_qa_area .all_qa_wrap .review_inner .box_msg {
   background: #F7F7F7;
   text-align: center;
   position: relative;
@@ -2014,12 +2037,12 @@ button.btn_sm {
   border-radius: 4px;
 }
 
-.all_qa_wrap .review_inner .box_msg .txt_msg {
+.all_qa_area .all_qa_wrap .review_inner .box_msg .txt_msg {
   font-size: 13px;
   color: #767676;
 }
 
-.all_qa_wrap .review_inner .box_msg .txt_msg:before {
+.all_qa_area .all_qa_wrap .review_inner .box_msg .txt_msg:before {
   content: "";
   display: block;
   width: 17px;
@@ -2029,14 +2052,14 @@ button.btn_sm {
   background-size: 17px 17px;
 }
 
-.all_qa_wrap .review_inner .box_msg .txt_secret {
+.all_qa_area .all_qa_wrap .review_inner .box_msg .txt_secret {
   font-size: 13px;
   color: #767676;
   padding-left: 22px;
   position: relative;
 }
 
-.all_qa_wrap .review_inner .box_msg .txt_secret:before {
+.all_qa_area .all_qa_wrap .review_inner .box_msg .txt_secret:before {
   position: absolute;
   left: 0;
   content: '';
@@ -2055,6 +2078,29 @@ button.btn_sm {
 
 .auto_overflow_wrap.active > .auto_overflow_contents {
   max-height: none !important;
+}
+
+.all_review_area .no_review {
+  text-align: center;
+  position: relative;
+  padding: 40px 15px;
+  border-radius: 4px;
+  border-bottom: solid 1px #eaeaea;
+}
+
+.all_review_area .no_review .txt_msg {
+  font-size: 13px;
+  color: #767676;
+}
+
+.all_review_area .no_review .txt_msg:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 8px;
+  background: url(../images/ico/ico_info.svg) no-repeat 0 0;
+  background-size: 30px 30px;
 }
 
 .all_review_area .auto_overflow_wrap.overflow.active {
@@ -2568,7 +2614,6 @@ button.btn_sm {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* panel text type */
 /* 불릿 아이템 */
 [class^=bul_item_] {
   position: relative;
