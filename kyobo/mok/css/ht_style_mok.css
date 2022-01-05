@@ -1562,7 +1562,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 570px) {
   .btn_gift {
     -webkit-box-flex: 0 !important;
         -ms-flex: 0 1 auto !important;
@@ -5737,11 +5737,11 @@ body.dialog_open {
   padding-right: 20px;
 }
 
-.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list.marker {
+.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list .menu_list_item.marker {
   position: relative;
 }
 
-.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list.marker:after {
+.ht_ .contents_wrap .main_menu_wrap .main_menu_list_wrap .menu_list .menu_list_item.marker:after {
   content: '';
   display: block;
   width: 4px;
@@ -5749,8 +5749,8 @@ body.dialog_open {
   background-color: #DA2128;
   border-radius: 50%;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 10px;
+  top: 13px;
 }
 
 .dialog_wrapper.open .ui-dialog.dialog_menu {
@@ -6415,17 +6415,17 @@ body.dialog_open {
 }
 
 .ht_ .header_wrapper [class^=btn_header].btn_header_back:after {
-  background-image: url(../images/guide/btn_header_back_mok.png);
+  background-image: url(../images/guide/btn_header_back_mok.svg);
   background-size: 26px 26px;
 }
 
 .ht_ .header_wrapper [class^=btn_header].btn_header_home:after {
-  background-image: url(../images/guide/btn_header_home_mok.png);
+  background-image: url(../images/guide/btn_header_home_mok.svg);
   background-size: 26px 26px;
 }
 
 .ht_ .header_wrapper [class^=btn_header].btn_header_search:after {
-  background-image: url(../images/guide/btn_header_search_mok.png);
+  background-image: url(../images/guide/btn_header_search_mok.svg);
   background-size: 26px 26px;
 }
 
@@ -6434,7 +6434,7 @@ body.dialog_open {
 }
 
 .ht_ .header_wrapper [class^=btn_header].btn_header_cart:after {
-  background-image: url(../images/guide/btn_header_cart_mok.png);
+  background-image: url(../images/guide/btn_header_cart_mok.svg);
   background-size: 26px 26px;
 }
 

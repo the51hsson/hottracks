@@ -23,6 +23,21 @@ $(function(){
 		},
 	});
 
+	// 상품정보 헤더 노출
+	
+	$(window).on('scroll', function(){  
+
+		var visualImgHeight = $('.prod_detail_header .visual_wrap').outerHeight(true);
+		var tgPosition = $(window).scrollTop();
+		var headerWrap = $('#headerWrapper');
+
+		if ( tgPosition > visualImgHeight ) {
+			headerWrap.addClass('active_product');
+		} else {
+			headerWrap.removeClass('active_product');
+		}
+	});
+
 	// 리뷰 내 리뷰 썸네일 swiper
 	$(".review_swiper .swiper-container").each(function (index, element) {
 		var reviewSwiper = new CustomSwiper(this, {

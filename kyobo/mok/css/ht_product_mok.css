@@ -1,4 +1,50 @@
 @charset "UTF-8";
+.ht_ {
+  /* header common */
+}
+
+.ht_ .header_wrapper .header_center {
+  padding-top: 0;
+}
+
+.ht_ .header_wrapper .header_center .page_title {
+  opacity: 0;
+}
+
+.ht_ .header_wrapper .header_center .page_title img {
+  width: 28px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.ht_ .header_wrapper.active_product .btn_header_home {
+  display: none;
+}
+
+.ht_ .header_wrapper.active_product .btn_header_search {
+  display: none;
+}
+
+.ht_ .header_wrapper.active_product .header_center .page_title {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.ht_ .header_wrapper.active_product .header_center .page_title span {
+  display: inline-block;
+  width: calc(100% - 38px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .ht_ .prod_purchase_info_wrap .btn_wish {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
