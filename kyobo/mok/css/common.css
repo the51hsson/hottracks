@@ -3595,6 +3595,7 @@ button.btn_sm {
 }
 
 /* */
+/* 구분선 */
 .evt_area .txt_account .tit_area .txt_heading {
   font-size: 16px;
   font-weight: 700;
@@ -3614,18 +3615,83 @@ button.btn_sm {
   font-size: 13px;
 }
 
-.mdl_001 .txt_account .txt_heading {
-  font-size: 16px;
+.evt_detail_header {
+  padding: 0 20px 56px;
+}
+
+/* module 001 */
+.mdl_001 {
+  padding: 24px 0;
+}
+
+.mdl_001 .card_header {
+  position: relative;
+}
+
+.mdl_001 .card_header .tit_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
+  height: 56px;
+  overflow: hidden;
+}
+
+.mdl_001 .card_header .tit_area .txt_heading {
+  font-size: 20px;
   font-weight: 700;
   color: #000;
 }
 
-.mdl_001 .txt_account .txt_sub {
-  font-size: 13px;
-  color: #767676;
+.mdl_001 .card_header .tit_area .right_area {
+  margin-top: 6px;
 }
 
-.mdl_001 .txt_account .txt_period {
-  font-size: 13px;
+.mdl_001 .card_header .tit_area .right_area .btn_share {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: url(../images/ico/ico_share.png) no-repeat 0 0;
+  background-size: 16px auto;
+}
+
+.mdl_001 .card_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mdl_001 .card_body .txt_account .txt_sub {
+  font-size: 16px;
+  color: #767676;
+  margin-bottom: 16px;
+  height: 45px;
+  overflow: hidden;
+}
+
+.mdl_001 .card_body .txt_account .txt_period {
+  font-size: 14px;
   color: #595959;
 }
+
+.mdl_001 .card_body .box_circle {
+  background: #DA2128;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.mdl_001 .card_body .box_circle .txt_per {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Roboto";
+}
+
+/* module 002 */
+/* module 003 */

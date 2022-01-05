@@ -1,5 +1,5 @@
 
-
+/* 구분선 */
 .evt_area {
     .thunmail_evt {
 
@@ -27,21 +27,72 @@
     }
 }
 
+.evt_detail_header {
+    padding: 0 20px 56px;
+}
 
+/* module 001 */
 .mdl_001 {
-    .txt_account {
-        .txt_heading {
-            font-size: 16px;
-            font-weight: $font-weight-bold;
-            color: #000;
-        }
-        .txt_sub {
-            font-size: 13px;
-            color: #767676;
-        }
-        .txt_period {
-            font-size: 13px;
-            color: #595959;
+    padding: 24px 0;
+    .card_header {
+        position: relative;
+        .tit_area {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            height: 56px;
+            overflow: hidden;
+            .txt_heading {
+                font-size: 20px;
+                font-weight: $font-weight-bold;
+                color: #000;
+            }
+            .right_area {
+                margin-top: 6px;
+                .btn_share {
+                    cursor: pointer;
+                    width: 16px;
+                    height: 16px;
+                    background: url(../images/ico/ico_share.png) no-repeat 0 0;
+                    background-size: 16px auto;                    
+                }
+            }        
         }
     }
+    .card_body {
+        display: flex;
+        justify-content: space-between;
+        .txt_account {
+            .txt_sub {
+                font-size: 16px;
+                color: #767676;
+                margin-bottom: 16px;
+                height: 45px;
+                overflow: hidden;
+            }
+            .txt_period {
+                font-size: 14px;
+                color: #595959;
+            }
+        }
+
+        .box_circle {
+           
+           
+            background: $bg-primary;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            .txt_per {
+                color: #fff;
+                font-size: 15px;
+                font-family: $font-num;
+            }
+        }        
+    }
 }
+/* module 002 */
+
+
+
+/* module 003 */
