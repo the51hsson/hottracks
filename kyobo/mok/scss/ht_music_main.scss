@@ -1,4 +1,122 @@
 .ht_ {
-    
+    .reserved_product_wrap {
+        .scroll_type .swiper-pagination {
+            .swiper-pagination-bullet {
+                flex:1;
+            }
+        }
+    }
+    .purchase_history_wrap {
+        .purchase_box {
+            display: flex;
+            align-items: center;
+            .img_box {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                margin-right: 16px;
+                img {
+                    width: 100%;
+                }
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: url(../images/guide/purchase_mask.svg) no-repeat 0 0 / cover;
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                }
+            }
+        }
+        .swiper-slide {
+            &.swiper-slide-active {
+                .guage_box {
+                    height: 6px;
+                    background: #D5D5D5;
+                    border-radius: 300px;
+                    width: 165px;
+                    // overflow:hidden;
+                    .gauge_bar {
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        &:after {
+                            display: block;
+                            content: '';
+                            width: 0px;
+                            height: 100%;
+                            background-color: #DA2128;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            animation: loadingGauge 2s forwards;
+                            animation-delay: 1s;
+                            border-radius: 300px;
+                        }
+                        &::before {
+                            display: block;
+                            content: '';
+                            width: 18px;
+                            height: 18px;
+                            background: url(../images/guide/img_hot_deal_time_s1.gif) no-repeat 0 0 / cover;
+                            position: absolute;
+                            bottom:0;
+                            left:0;
+                            transform: translateX(-10px);
+                            z-index: 1;
+                            opacity: 0;
+                            animation: loadingGaugeIcon 2s forwards;
+                            animation-delay: 1s;
+                        }
+                    }
+                }
+                @keyframes loadingGauge {
+                    0% {
+                      width: 0;
+                    }
+                    100% {
+                      width: 100%;
+                    }
+                }
+                @keyframes loadingGaugeIcon {
+                    0% {
+                      left:0;
+                      opacity: 0;
+                    }
+                    10% {
+                        opacity: 1;
+                    }
+                    100% {
+                      left:100%;
+                      opacity: 1;
+                      
+                    }
+                }
+            }
+        }
+    }
+
+    .realtime_chart_wrap {
+        .chart_box {
+            
+            .detail_info {
+                display: none;
+            }
+            &.active {
+                .album_img {
+                    display: none;
+                }
+                .detail_info {
+                    display: block;
+                }
+            }
+        }
+    }
+
 }
 

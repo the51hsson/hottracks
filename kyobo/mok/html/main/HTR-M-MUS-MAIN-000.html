@@ -56,7 +56,9 @@
 <!-- // Plug-In javascript -->
 
 <!-- UI JavaScript -->
-<script src="../../vendors/js/ui_mok.js"></script>
+<script src="../../js/circletype.min.js"></script>
+<script src="../../js/front_bak.js"></script>
+<script src="../../js/ht_music.js"></script>
 <!-- // UI JavaScript -->
 </head>
 <body>
@@ -290,7 +292,171 @@
 					</div>
 					<!--// 퀵메뉴 -->
 
-					<!-- -->
+					<!-- 예약상품 -->
+					<h2 class="tit">예약상품</h2>
+					<div class="scroll_box type_no1 scroll_hide"><!-- todo : type_no1 타입이 미정이라 임의로 클래스 생성함 -->
+						<a href="#a" class="active"><span>가요</span></a>
+						<a href="#a"><span>팝</span></a>
+						<a href="#a"><span>클래식</span></a>
+					</div>
+					<div class="reserved_product_wrap">
+						<div class="swiper-container scroll_type">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="product_box">
+										<img src="" alt="">
+										<p class="circle_txt">BLEASE DATE <span>20211119</span> <span>D-30</span><span>.</span></p>
+										<div class="pro_info">
+											<p>소녀시대 - OH!GG</p>
+											<p>2022 SEASONS GREETINGS</p>
+											<div class="badge">
+												<span>수입</span>
+												<span>예약</span>
+												<span>포스터</span>
+												<span>사은품</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="product_box">
+										<img src="" alt="">
+										<p class="circle_txt">BLEASE DATE <span>20211119</span> <span>D-Day</span><span>.</span></p>
+										<div class="pro_info">
+											<p>소녀시대 - OH!GG</p>
+											<p>2022 SEASONS GREETINGS</p>
+											<div class="badge">
+												<span>수입</span>
+												<span>예약</span>
+												<span>포스터</span>
+												<span>사은품</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+
+					<!-- 구매내역 -->
+					<div class="purchase_history_wrap">
+						<div class="swiper-container scroll_type">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="purchase_box">
+										<div class="img_box">
+											<img src="../../images/guide/@music_purchase.png" alt="">
+											<span class="d_day">D-27</span>
+											<span class="date">11월28일</span>
+										</div>
+										<div class="txt_box">
+											<p class="artist_name">SIMPLY RED</p>
+											<p class="album_name">REMIXED VOL.1 1985</p>
+											<div class="guage_box">
+												<span class="gauge_bar" style="width: 50%;"></span>
+											</div>
+											<p class="txt">김미미님의 예약 상품 발매까지</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="purchase_box">
+										<div class="img_box">
+											<img src="../../images/guide/@music_purchase.png" alt="">
+											<span class="d_day">D-27</span>
+											<span class="date">11월28일</span>
+										</div>
+										<div class="txt_box">
+											<p class="artist_name">SIMPLY RED</p>
+											<p class="album_name">REMIXED VOL.1 1985</p>
+											<div class="guage_box">
+												<span class="gauge_bar" style="width: 50%;"></span>
+											</div>
+											<p class="txt">김미미님의 예약 상품 발매까지</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<a href="#a" class="btn_all"><span>나의 예약상품 모두 보기</span></a>
+					</div>
+					<!--// 구매내역 -->
+					<!--// 예약상품 -->
+
+					<!-- 실사간 차트-->
+					<!--// 실시간 차트 -->
+					<h2 class="tit">실시간 차트를확인하세요</h2>
+					<div class="scroll_box type_no1 scroll_hide"><!-- todo : type_no1 타입이 미정이라 임의로 클래스 생성함 -->
+						<a href="#a" class="active"><span>가요</span></a>
+						<a href="#a"><span>팝</span></a>
+						<a href="#a"><span>클래식</span></a>
+					</div>
+					<div class="realtime_chart_wrap">
+						<div class="chart_box">
+							<div class="rank_txt">
+								<span class="num">1</span>
+								<span class="fluctuation new">NEW</span>
+							</div>
+							<div class="album_img">
+								<img src="../../images/guide/@here_music_01.png" alt="">
+							</div>
+							<div class="chart_info">
+								<p class="singer_name">JON SOMI(전소미)</p>
+								<p class="album_name">THE FIRST ALBUM XOXO [키티]</p>
+								<div class="detail_info">
+									<del>15,000원</del>
+									<p class="sale_price">
+										<span>10%</span>15,000원
+									</p>
+									<div class="badge_wrap">
+										<div class="badge_list_box">
+											<span class="badge badge_sm badge_primary">포스터</span>
+											<span class="badge badge_sm badge_default">수입</span>
+											<span class="badge badge_sm badge_default">예약</span>
+											<span class="badge badge_sm badge_default">사은품</span>
+										</div>
+									</div>
+									<div class="btn_wrap">
+										<button type="button" class="btn_sm btn_line_primary"><span class="text">자세히 보기</span></button>
+										<button type="button" class="btn_sm btn_primary"><span class="text">장바구니 담기</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="chart_box active">
+							<div class="rank_txt">
+								<span class="num">2</span>
+								<span class="fluctuation down">1</span>
+							</div>
+							<div class="album_img">
+								<img src="../../images/guide/@here_music_01.png" alt="">
+							</div>
+							<div class="chart_info">
+								<p class="singer_name">JON SOMI(전소미)</p>
+								<p class="album_name">THE FIRST ALBUM XOXO [키티]</p>
+								<div class="detail_info">
+									<del>15,000원</del>
+									<p class="sale_price">
+										<span>10%</span>15,000원
+									</p>
+									<div class="badge_wrap">
+										<div class="badge_list_box">
+											<span class="badge badge_sm badge_primary">포스터</span>
+											<span class="badge badge_sm badge_default">수입</span>
+											<span class="badge badge_sm badge_default">예약</span>
+											<span class="badge badge_sm badge_default">사은품</span>
+										</div>
+									</div>
+									<div class="btn_wrap">
+										<button type="button" class="btn_sm btn_line_primary"><span class="text">자세히 보기</span></button>
+										<button type="button" class="btn_sm btn_primary"><span class="text">장바구니 담기</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>

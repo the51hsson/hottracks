@@ -1264,69 +1264,7 @@
         background-image: url('../images/ico_exclamation_gray_mok@3x.png');
     }
 }
-/* 뱃지 */
-[class^=badge_] {
-    display: inline-block;
-    box-sizing: border-box;
-    text-align: center;
-    vertical-align: top;
-    [class^=ico_] {
-        display: inline-block;
-        position: relative;
-        vertical-align: top;
-    }
-    .text {
-        display: inline-block;
-        vertical-align: top;
-    }
-}
-/* 뱃지 - 사이즈 */
-.badge_md {
-    min-height: 22px;
-    padding: 1px 5px;
-    border-radius: 4px;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: -0.01em;
-}
-.badge_sm {
-    min-height: 20px;
-    padding: 0 7px;
-    border-radius: 4px;
-    font-size: 11px;
-    line-height: 18px;
-    letter-spacing: -0.01em;
-    &.badge_pill {
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: -0.01em;
-        border-radius: 20px;
-    }
-    &:not(.badge_pill) .text {
-        transform: translateY(1px);
-    }
-}
-/* 뱃지 - 색상 */
-.badge_line_primary {
-    color: #474c98;
-    border: 1px solid #474c98;
-    background: #fff;
-}
-.badge_line_gray {
-    color: #767676;
-    background: #fff;
-    border: 1px solid #ccc;
-}
-/* 뱃지 - 리스트 */
-.badge_list_box {
-    margin-top: -4px;
-    font-size: 0;
-    text-align: left;
-    [class^=badge_] {
-        margin-right: 4px;
-        margin-top: 4px;
-    }
-}
+
 /* 태그 */
 .tag_wrap {
     margin: -3px;

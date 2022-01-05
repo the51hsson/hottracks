@@ -1222,3 +1222,57 @@ button.btn_text_link {
     }
 }
 /* e: 버튼 정리 */
+
+/* 뱃지 */
+/* 뱃지 */
+.badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    height: 20px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    letter-spacing: -.01em;    
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    &.rounded {
+        border-radius: 10px !important;
+    }
+}
+.badge_wrap {
+    margin-bottom: 8px;
+}
+.badge_list {
+    display: flex;
+    flex-flow: wrap;
+    .badge {
+        margin-right:4px;
+    }
+}
+/* badge color */
+.badge_default {color: #767676;border: solid 1px #d5d5d5;background: #fff;}
+.badge_primary {color: $btn-primary;border:solid 1px $btn-primary;    background-color: #fff;}
+/* badge icon */
+.badge_ico {
+    color: #da2128;
+    font-weight: 500;
+    font-size: 13px;
+    .ico_truck {
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        background: url(../images/ico/ico_truck.svg) no-repeat 0 -5px;
+        background-size: 30px auto;
+    }
+    .ico_truck_txt {
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        background: url(../images/ico/ico_truck_txt.svg) no-repeat 0 2px;
+        background-size: 40px auto;
+    }
+}
+/* badge size */
+.badge_sm {min-height: 20px;min-width: 50px;padding: 0 10px;border-radius: 4px;font-size: 11px;font-weight: 400;line-height: 18px;}
