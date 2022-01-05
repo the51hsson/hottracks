@@ -28,19 +28,19 @@
                         &::last-child {
                             padding-right: 20px;
                         }
-                    }
-                    &.marker {
-                        position: relative;
-                        &:after {
-                            content: '';
-                            display: block;
-                            width: 4px;
-                            height: 4px;
-                            background-color: #DA2128;
-                            border-radius: 50%;
-                            position: absolute;
-                            right: 0;
-                            top:0;
+                        &.marker {
+                            position: relative;
+                            &:after {
+                                content: '';
+                                display: block;
+                                width: 4px;
+                                height: 4px;
+                                background-color: #DA2128;
+                                border-radius: 50%;
+                                position: absolute;
+                                right: 10px;
+                                top:13px;
+                            }
                         }
                     }
                 }

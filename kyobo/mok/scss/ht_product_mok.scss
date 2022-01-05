@@ -1,4 +1,43 @@
 .ht_ {
+    /* header common */
+    .header_wrapper {
+        .header_center {
+            padding-top: 0;
+            .page_title {
+                opacity: 0;
+                img {
+                    width: 28px;
+                    border-radius: 4px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        &.active_product {
+            .btn_header_home {
+                display: none;
+            }
+            .btn_header_search {
+                display: none;
+            }
+            .header_center {
+                .page_title {
+                    opacity: 1;
+                    display: flex;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color:#000;
+                    transition:opacity 0.5s;
+                    span {
+                        display: inline-block;
+                        width: calc(100% - 38px);
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
     .prod_purchase_info_wrap {
         .btn_wish {
             flex: 0 1 auto;
