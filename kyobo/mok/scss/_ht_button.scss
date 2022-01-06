@@ -1224,7 +1224,21 @@ button.btn_text_link {
 /* e: 버튼 정리 */
 
 /* 뱃지 */
-/* 뱃지 */
+[class^=badge_] {
+    display: inline-block; 
+    box-sizing: border-box; 
+    text-align: center; 
+    vertical-align: top;
+}
+[class^=badge_] [class^=ico_] {
+    display: inline-block; 
+    position: relative; 
+    vertical-align: top;
+}
+[class^=badge_] .text {
+    display: inline-block; 
+    vertical-align: top;
+}
 .badge {
     display: inline-block;
     font-size: 11px;
@@ -1252,8 +1266,21 @@ button.btn_text_link {
     }
 }
 /* badge color */
-.badge_default {color: #767676;border: solid 1px #d5d5d5;background: #fff;}
-.badge_primary {color: $btn-primary;border:solid 1px $btn-primary;    background-color: #fff;}
+.badge_default {
+    color: #767676;
+    border: solid 1px #d5d5d5;
+    background: #fff;
+}
+.badge_primary {
+    color: $btn-primary;
+    border:solid 1px $btn-primary;    
+    background-color: #fff;
+}
+.badge_line_gray {
+    color: #595959; 
+    background: #fff; 
+    border: 1px solid #d5d5d5;
+}
 /* badge icon */
 .badge_ico {
     color: #da2128;
@@ -1275,4 +1302,57 @@ button.btn_text_link {
     }
 }
 /* badge size */
-.badge_sm {min-height: 20px;min-width: 50px;padding: 0 10px;border-radius: 4px;font-size: 11px;font-weight: 400;line-height: 18px;}
+.badge_sm {display:block; min-height: 20px; min-width: 50px; padding: 0 10px; border-radius: 4px; font-size: 11px; font-weight: 400;}
+
+
+/* 태그 */
+.tag_wrap {
+    margin: -3px;
+    font-size: 0;
+    .tag_item {
+        margin: 3px;
+        display: inline-block;
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: -0.01em;
+        color: #595959;
+        padding: 5px 14px 6px;
+        background-color: #f7f7f7;
+        border: 1px solid #f7f7f7;
+        border-radius: 20px;
+        box-sizing: border-box;
+        transition: background-color 0.23s, border-color 0.23s, color 0.23s;
+        text-align: center;
+        vertical-align: top;
+        .text {
+            position: relative;
+        }
+    }
+    button.tag_item {
+        &:hover {
+            cursor: pointer;
+        }
+        &.active {
+            background-color: #fff;
+            border-color: #da2128;
+            color: #da2128;
+        }
+        &.size_lg.active {
+            color: #da2128;
+        }
+    }
+    &.size_md .tag_item {
+        padding: 8px 14px 7px;
+    }
+    &.size_lg .tag_item {
+        padding: 9px 16px 7px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        border-color: #eaeaea;
+        color: #000;
+    }
+    &.col3 .tag_item {
+        width: calc((100% - 18px) / 3);
+    }
+}

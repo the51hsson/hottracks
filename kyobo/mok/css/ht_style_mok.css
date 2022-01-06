@@ -1579,7 +1579,25 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 /* e: 버튼 정리 */
 /* 뱃지 */
-/* 뱃지 */
+[class^=badge_] {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  vertical-align: top;
+}
+
+[class^=badge_] [class^=ico_] {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+[class^=badge_] .text {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .badge {
   display: inline-block;
   font-size: 11px;
@@ -1630,6 +1648,12 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-color: #fff;
 }
 
+.badge_line_gray {
+  color: #595959;
+  background: #fff;
+  border: 1px solid #d5d5d5;
+}
+
 /* badge icon */
 .badge_ico {
   color: #da2128;
@@ -1655,13 +1679,73 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 /* badge size */
 .badge_sm {
+  display: block;
   min-height: 20px;
   min-width: 50px;
   padding: 0 10px;
   border-radius: 4px;
   font-size: 11px;
   font-weight: 400;
-  line-height: 18px;
+}
+
+/* 태그 */
+.tag_wrap {
+  margin: -3px;
+  font-size: 0;
+}
+
+.tag_wrap .tag_item {
+  margin: 3px;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  color: #595959;
+  padding: 5px 14px 6px;
+  background-color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: background-color 0.23s, border-color 0.23s, color 0.23s;
+  transition: background-color 0.23s, border-color 0.23s, color 0.23s;
+  text-align: center;
+  vertical-align: top;
+}
+
+.tag_wrap .tag_item .text {
+  position: relative;
+}
+
+.tag_wrap button.tag_item:hover {
+  cursor: pointer;
+}
+
+.tag_wrap button.tag_item.active {
+  background-color: #fff;
+  border-color: #da2128;
+  color: #da2128;
+}
+
+.tag_wrap button.tag_item.size_lg.active {
+  color: #da2128;
+}
+
+.tag_wrap.size_md .tag_item {
+  padding: 8px 14px 7px;
+}
+
+.tag_wrap.size_lg .tag_item {
+  padding: 9px 16px 7px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  border-color: #eaeaea;
+  color: #000;
+}
+
+.tag_wrap.col3 .tag_item {
+  width: calc((100% - 18px) / 3);
 }
 
 /* dialog 공통 */
@@ -2831,9 +2915,9 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap.product_review.review_next .dialog_contents .review_prod_info .thumbnail_round_box .thumbnail_product_item {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap.product_review.review_next .dialog_contents .form_wrap {
@@ -5284,7 +5368,7 @@ body.dialog_open {
 
 .byte_check_wrap .byte_chack_footer .byte_check .count {
   display: inline-block;
-  color: #292929;
+  color: #000;
 }
 
 .byte_check_wrap .byte_chack_footer .byte_check .total {
@@ -5293,6 +5377,7 @@ body.dialog_open {
 
 .byte_check_wrap .byte_chack_footer .byte_check .total:before {
   content: "/";
+  margin: 0 2px;
 }
 
 .byte_check_wrap .byte_chack_footer .btn_wrap {
@@ -5473,6 +5558,7 @@ body.dialog_open {
   background-size: 16px 16px;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #f7f7f7;
 }
 
 .file_list .file_item.attached .btn_box {
@@ -7120,6 +7206,12 @@ body.dialog_open {
   white-space: nowrap;
   font-weight: 500;
   text-align: center;
+}
+
+.ht_ .header_nosticky_wrapper .header_center .page_title .logo {
+  width: 63px;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .ht_ .header_nosticky_wrapper .header_center .page_title .txt {
@@ -9315,66 +9407,6 @@ body.dialog_open {
   .no_review_wrap .no_review_inner .info_text:before {
     background-image: url("../images/ico_exclamation_gray_mok@3x.png");
   }
-}
-
-/* 태그 */
-.tag_wrap {
-  margin: -3px;
-  font-size: 0;
-}
-
-.tag_wrap .tag_item {
-  margin: 3px;
-  display: inline-block;
-  font-size: 13px;
-  line-height: 19px;
-  letter-spacing: -0.01em;
-  color: #595959;
-  padding: 5px 14px 6px;
-  background-color: #f7f7f7;
-  border: 1px solid #f7f7f7;
-  border-radius: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: background-color 0.23s, border-color 0.23s, color 0.23s;
-  transition: background-color 0.23s, border-color 0.23s, color 0.23s;
-  text-align: center;
-  vertical-align: top;
-}
-
-.tag_wrap .tag_item .text {
-  position: relative;
-}
-
-.tag_wrap button.tag_item:hover {
-  cursor: pointer;
-}
-
-.tag_wrap button.tag_item.active {
-  background-color: #595959;
-  border-color: #595959;
-  color: #fff;
-}
-
-.tag_wrap button.tag_item.size_lg.active {
-  color: #fff;
-}
-
-.tag_wrap.size_md .tag_item {
-  padding: 8px 14px 7px;
-}
-
-.tag_wrap.size_lg .tag_item {
-  padding: 9px 16px 7px;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: -0.01em;
-  border-color: #eaeaea;
-  color: #000;
-}
-
-.tag_wrap.col3 .tag_item {
-  width: calc((100% - 18px) / 3);
 }
 
 /* 뷸렛 리스트 아래 타이틀이 있을 때 간격 */
