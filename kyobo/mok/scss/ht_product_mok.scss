@@ -859,6 +859,10 @@
     }
     .badge_line_gray {
         margin: 0 6px 0 4px;
+        border-radius: 10px;
+        .text{
+            transform:translateY(1px);
+        }
     }
 }
 

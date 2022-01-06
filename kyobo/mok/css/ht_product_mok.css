@@ -1013,6 +1013,12 @@
 
 .review_user_info .badge_line_gray {
   margin: 0 6px 0 4px;
+  border-radius: 10px;
+}
+
+.review_user_info .badge_line_gray .text {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 
 .review_summary_wrap {
