@@ -515,7 +515,7 @@
                 }
             }
             .rating-container {
-                margin-top: 18px;
+                margin-top: 12px;
             }
         }
     }
@@ -839,10 +839,30 @@
     }
 }
 
-.review_user_info {display: flex; display: -webkit-flex; justify-content: flex-start; align-items: center; flex-direction: row; font-size: 12px; line-height: 18px; letter-spacing: -.01em; color: #767676; margin-bottom: 11px; flex-wrap: wrap;}
-.review_user_info .gap {display: inline-block; font-size: 0; width: 1px; height: 9px; background-color: #d5d5d5; margin: 0 6px;}
-.review_user_info .badge_line_gray {margin: 0 6px 0 4px;}
-
+.review_user_info {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    font-size: 12px; 
+    line-height: 18px; 
+    letter-spacing: -.01em; 
+    color: #767676; 
+    margin-bottom: 11px; 
+    flex-wrap: wrap;
+    .gap {
+        display: inline-block; 
+        font-size: 0; 
+        width: 1px; 
+        height: 9px; 
+        background-color: #d5d5d5; 
+        margin: 0 6px;
+    }
+    .badge_line_gray {
+        margin: 0 6px 0 4px;
+        border-radius: 10px;
+    }
+}
+\
 .review_summary_wrap {
     display: block;
     font-size: 0;

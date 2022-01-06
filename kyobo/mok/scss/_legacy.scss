@@ -1265,57 +1265,7 @@
     }
 }
 
-/* 태그 */
-.tag_wrap {
-    margin: -3px;
-    font-size: 0;
-    .tag_item {
-        margin: 3px;
-        display: inline-block;
-        font-size: 13px;
-        line-height: 19px;
-        letter-spacing: -0.01em;
-        color: #595959;
-        padding: 5px 14px 6px;
-        background-color: #f7f7f7;
-        border: 1px solid #f7f7f7;
-        border-radius: 20px;
-        box-sizing: border-box;
-        transition: background-color 0.23s, border-color 0.23s, color 0.23s;
-        text-align: center;
-        vertical-align: top;
-        .text {
-            position: relative;
-        }
-    }
-    button.tag_item {
-        &:hover {
-            cursor: pointer;
-        }
-        &.active {
-            background-color: #595959;
-            border-color: #595959;
-            color: #fff;
-        }
-        &.size_lg.active {
-            color: #fff;
-        }
-    }
-    &.size_md .tag_item {
-        padding: 8px 14px 7px;
-    }
-    &.size_lg .tag_item {
-        padding: 9px 16px 7px;
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: -0.01em;
-        border-color: #eaeaea;
-        color: #000;
-    }
-    &.col3 .tag_item {
-        width: calc((100% - 18px) / 3);
-    }
-}
+
 
 
 /* 뷸렛 리스트 아래 타이틀이 있을 때 간격 */

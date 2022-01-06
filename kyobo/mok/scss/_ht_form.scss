@@ -764,12 +764,13 @@
             }
             .count {
                 display: inline-block;
-                color: #292929;
+                color: #000;
             }
             .total {
                 color: #767676;
                 &:before {
                     content: "/";
+                    margin:0 2px;
                 }
             }
         }
@@ -924,6 +925,7 @@
                 background-size: 16px 16px;
                 background-position: center;
                 background-repeat: no-repeat;
+                background-color: #f7f7f7;
             }
         }
         &.attached {

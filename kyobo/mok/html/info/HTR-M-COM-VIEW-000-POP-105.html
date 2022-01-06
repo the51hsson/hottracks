@@ -168,7 +168,7 @@
 				</div>
 				<div class="info_text_box">
 					<ul class="bul_list">
-						<li class="bul_item_dot font_size_xs">구매 후 90일 이내  후기 작성 시, 일반 후기 통합포인트 100P 적립, 포토후기 200P 적립</li>
+						<li class="bul_item_dot font_size_xs">구매 후 90일 이내  후기 작성 시, 일반 후기 통합포인트 <b>100P</b> 적립, 포토후기 <b>200P</b> 적립</li>
 					</ul>
 				</div>
 			</div>
@@ -183,11 +183,11 @@
 					<div class="form_cont">
 						<div class="tag_wrap size_lg col3" data-tag-toggle>
 							<!-- DESC : 선택 시, tag_item active class toggle -->
+							<button type="button" class="tag_item"><span class="text">추천해요</span></button>
 							<button type="button" class="tag_item"><span class="text">좋았어요</span></button>
-							<button type="button" class="tag_item"><span class="text">최고예요</span></button>
-							<button type="button" class="tag_item"><span class="text">공감돼요</span></button>
+							<button type="button" class="tag_item"><span class="text">보통이에요</span></button>
+							<button type="button" class="tag_item"><span class="text">별로예요</span></button>
 							<button type="button" class="tag_item"><span class="text">아쉬워요</span></button>
-							<button type="button" class="tag_item"><span class="text">재밌어요</span></button>
 						</div>
 					</div>
 				</div>
@@ -200,7 +200,7 @@
 					<div class="form_cont">
 						<!-- byte_check_wrap -->
 						<div class="byte_check_wrap">
-							<textarea id="textKillingPart02" class="form_textarea" title="타이틀 입력" placeholder="리뷰를 작성해주세요." style="height: 70px;"></textarea>
+							<textarea id="textKillingPart02" class="form_textarea" title="타이틀 입력" placeholder="10자 이상 입력해주세요. 주제와 무관한 댓글, 악플, 배송문의 등의 글은 임의 삭제될 수 있습니다." style="height: 70px;"></textarea>
 							<div class="byte_chack_footer">
 								<div class="byte_check">
 									<span class="count">12</span>
@@ -209,12 +209,6 @@
 							</div>
 						</div>
 						<!-- //byte_check_wrap -->
-						<!-- form_chk -->
-						<span class="form_chk">
-							<input id="chkReview01" type="checkbox" />
-							<label for="chkReview01">이 리뷰는 스포일러 내용이 포함되어 있습니다.</label>
-						</span>
-						<!-- //form_chk -->
 					</div>
 				</div>
 				<!-- //form_box -->
@@ -227,23 +221,6 @@
 						<div class="file_list_box">
 							<!-- s : file_list -->
 							<ul class="file_list">
-								<!-- s : 파일 등록 상태(이미지) -->
-								<li class="list_item">
-									<!-- DESC : 첨부시 attached class 추가 -->
-									<span class="file_item attached">
-										<span class="btn_box">
-											<input type="file" id="inputFileImage0" />
-											<label for="inputFileImage0"><span class="hidden">첨부파일 추가</span></label>
-
-											<span class="attach_img_box">
-												<!-- DESC : background-images 속성만 사용하여 url import 필요 -->
-												<span class="attach_img_view" style="background-image: url('/assets/common/temporary/btn_attached_remove_mok.png');"></span>
-												<button type="button" class="btn_remove_img"><span class="hidden">첨부파일 삭제</span></button>
-											</span>
-										</span>
-									</span>
-								</li>
-								<!-- e : 파일 등록 상태(이미지) -->
 								<!-- s : 파일 미등록 상태 -->
 								<li class="list_item">
 									<!-- DESC : 첨부시 attached class 추가 -->
@@ -260,54 +237,23 @@
 									</span>
 								</li>
 								<!-- e : 파일 미등록 상태 -->
-								<!-- s : 파일 미등록 상태 -->
+								<!-- s : 파일 등록 상태(이미지) 등록이미지 뒤로 -->
 								<li class="list_item">
 									<!-- DESC : 첨부시 attached class 추가 -->
-									<span class="file_item">
+									<span class="file_item attached">
 										<span class="btn_box">
-											<input type="file" id="inputFileImage2" />
-											<label for="inputFileImage2"><span class="hidden">첨부파일 추가</span></label>
+											<input type="file" id="inputFileImage0" />
+											<label for="inputFileImage0"><span class="hidden">첨부파일 추가</span></label>
 
 											<span class="attach_img_box">
-												<span class="attach_img_view"></span>
+												<!-- DESC : background-images 속성만 사용하여 url import 필요 -->
+												<span class="attach_img_view" style="background-image: url(../../images/guide/@thumb_01.png);"></span>
 												<button type="button" class="btn_remove_img"><span class="hidden">첨부파일 삭제</span></button>
 											</span>
 										</span>
 									</span>
 								</li>
-								<!-- e : 파일 미등록 상태 -->
-								<!-- s : 파일 미등록 상태 -->
-								<li class="list_item">
-									<!-- DESC : 첨부시 attached class 추가 -->
-									<span class="file_item">
-										<span class="btn_box">
-											<input type="file" id="inputFileImage3" />
-											<label for="inputFileImage3"><span class="hidden">첨부파일 추가</span></label>
-
-											<span class="attach_img_box">
-												<span class="attach_img_view"></span>
-												<button type="button" class="btn_remove_img"><span class="hidden">첨부파일 삭제</span></button>
-											</span>
-										</span>
-									</span>
-								</li>
-								<!-- e : 파일 미등록 상태 -->
-								<!-- s : 파일 미등록 상태 -->
-								<li class="list_item">
-									<!-- DESC : 첨부시 attached class 추가 -->
-									<span class="file_item">
-										<span class="btn_box">
-											<input type="file" id="inputFileImage4" />
-											<label for="inputFileImage4"><span class="hidden">첨부파일 추가</span></label>
-
-											<span class="attach_img_box">
-												<span class="attach_img_view"></span>
-												<button type="button" class="btn_remove_img"><span class="hidden">첨부파일 삭제</span></button>
-											</span>
-										</span>
-									</span>
-								</li>
-								<!-- e : 파일 미등록 상태 -->
+								<!-- e : 파일 등록 상태(이미지) -->
 							</ul>
 							<!-- e : file_list -->
 						</div>
