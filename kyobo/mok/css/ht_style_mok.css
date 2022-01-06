@@ -1595,8 +1595,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 [class^=badge_] .text {
   display: inline-block;
-  vertical-align: -1px;
-  height: 17px;
+  vertical-align: top;
 }
 
 .badge {
@@ -7207,6 +7206,12 @@ body.dialog_open {
   white-space: nowrap;
   font-weight: 500;
   text-align: center;
+}
+
+.ht_ .header_nosticky_wrapper .header_center .page_title .logo {
+  width: 63px;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .ht_ .header_nosticky_wrapper .header_center .page_title .txt {

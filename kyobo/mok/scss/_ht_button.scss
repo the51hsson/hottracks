@@ -1237,8 +1237,7 @@ button.btn_text_link {
 }
 [class^=badge_] .text {
     display: inline-block; 
-    vertical-align:-1px;
-    height:17px;
+    vertical-align: top;
 }
 .badge {
     display: inline-block;

@@ -1016,13 +1016,16 @@
   border-radius: 10px;
 }
 
-\
+.review_user_info .badge_line_gray .text {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
 .review_summary_wrap {
   display: block;
   font-size: 0;
 }
 
-\
 .review_summary_wrap .gap {
   display: inline-block;
   width: 4px;
@@ -1033,17 +1036,14 @@
   vertical-align: top;
 }
 
-\
 .review_summary_wrap .review_quotes_text {
   margin-right: 1px;
 }
 
-\
 .review_summary_wrap .review_quotes_text + .gap {
   margin: 6px 6px 0;
 }
 
-\
 .review_summary_wrap .rating-container.rating-xs {
   margin-top: 3px;
 }
