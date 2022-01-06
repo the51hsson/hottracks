@@ -1100,6 +1100,11 @@ button.btn_sm {
   font-weight: 700;
 }
 
+.product_info_area .price_wrap .sale_price .txt_unit {
+  position: relative;
+  left: -4px;
+}
+
 .product_info_area .info_wrap .list_info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3740,3 +3745,64 @@ button.btn_sm {
 
 /* module 002 */
 /* module 003 */
+.ht_ {
+  /* header common */
+}
+
+.ht_ .header_wrapper .header_center {
+  padding-top: 0;
+}
+
+.ht_ .header_wrapper .header_center .page_title {
+  opacity: 0;
+}
+
+.ht_ .header_wrapper .header_center .page_title img {
+  width: 28px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.ht_ .header_wrapper.active_product .btn_header_home {
+  display: none;
+}
+
+.ht_ .header_wrapper.active_product .btn_header_search {
+  display: none;
+}
+
+.ht_ .header_wrapper.active_product .header_center .page_title {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.ht_ .header_wrapper.active_product .header_center .page_title span {
+  display: inline-block;
+  width: calc(100% - 38px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ht_ .prod_detail_header {
+  padding: 0 20px 56px;
+}
+
+.ht_ .prod_detail_contents {
+  padding: 0 20px 112px;
+}
+
+.ht_ .prod_detail_contents .tab_content.sps-blw {
+  padding-top: 40px;
+}
+
+.ht_ .product_area {
+  padding-top: 40px;
+}

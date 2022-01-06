@@ -235,7 +235,8 @@
                 font-weight: $font-weight-bold;
             }
             .txt_unit {
-            
+                position: relative;
+                left: -4px;
             }
         }
     }
