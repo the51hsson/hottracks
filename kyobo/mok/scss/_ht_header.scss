@@ -542,7 +542,38 @@
             }
         }
     }
+    .header_nosticky_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        background-color: #fff;
+        transform: translateY(0);
+        .header_center {
+            overflow: hidden;
+            padding: 4px 10px 0;
+            flex: 1;
+            box-sizing: border-box;
+            .page_title {
+                display: flex;
+                font-size: 18px;
+                justify-content: center;
+                line-height: 28px;
+                letter-spacing: -0.01em;
+                white-space: nowrap;
+                font-weight: 500;
+                text-align: center;
+                .txt {
+                    margin-left: 8px;
+                }
 
+            }
+        }
+    }
     /* footer btn common */
     .footer_wrap {
         background: #fff;
