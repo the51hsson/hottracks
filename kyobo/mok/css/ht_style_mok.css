@@ -1595,7 +1595,8 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 [class^=badge_] .text {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: -1px;
+  height: 17px;
 }
 
 .badge {
@@ -1679,13 +1680,13 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 /* badge size */
 .badge_sm {
+  display: block;
   min-height: 20px;
   min-width: 50px;
   padding: 0 10px;
   border-radius: 4px;
   font-size: 11px;
   font-weight: 400;
-  line-height: 18px;
 }
 
 /* 태그 */
