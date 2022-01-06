@@ -42,7 +42,18 @@ $(function(){
         }
     });
     // 시시간 차트 rolling
-    
-    
+
+    // 구매 상품 스와이프
+    var newAlbumSwiper = new CustomSwiper('.new_album_wrap .swiper-container', {
+        observer: true,
+        observeParents: true,
+        slidesPerView: 'auto',
+        loop: true,
+        loopsSlide:1,
+        pagination: {
+            el: '.new_album_wrap .swiper-pagination',
+            type: "progressbar",
+        },
+    });
 
 });
