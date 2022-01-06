@@ -431,7 +431,7 @@
                     <h3 class="tit">음반정보</h3>
                 </div>
 
-                <div>
+                <div class="detail_txt_area">
                     <p>KAI(카이-엑소) The 2nd Mini Album ‘Peaches’</p>
                     <br/>
                     <p>EXO 카이, 두 번째 미니앨범 ‘Peaches’ 공개!
@@ -469,7 +469,7 @@
                 <div class="tit_con_area mgt20">
                     <h2 class="tit">상품상세정보</h2>
                 </div>
-                <ul>
+                <ul class="list_detail">
                     <li>- 커버 1종</li>
                     <li>- 엽서 3종중 1종 랜덤 증정</li>
                     <li>- 접지포스터 2종중 1종 랜덤 증정</li>
@@ -548,7 +548,8 @@
                                             </div>
                                             <!-- //tooltip_wrap -->
                                         </h2>
-                                        <p class="sub">* 구매 후 리뷰 작성시,최대 700p 적립</p>
+                                        <p class="sub">CD, DVD 관련 상품은 상품평을 작성하셔도<br />
+                                            포인트 적립대상에서 제외입니다.</p>
                                 
                                     </div>
                                 
@@ -800,7 +801,9 @@
                                                     </div>
                                                 </li>
                                             </ul>
-                                            <div class="swiper-pagination"></div>
+                                            <div class="swiper_control_box">
+                                                <div class="swiper-pagination"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -848,6 +851,11 @@
                                         <div class="tab_content">
                                             <div class="all_review_area">
                                                 <div class="all_review_wrap">
+                                                    <!-- 작성된 리뷰가 없을경우 -->
+                                                    <div class="no_review">
+                                                        <p class="txt_msg">이 상품의 첫 리뷰어가 되어주세요.</p>
+                                                    </div>                             
+                                                    <!--// 작성된 리뷰가 없을경우 -->                                                      
                                                     <div class="review_inner">
                                                         <div class="review_info_area">
                                                             <span class="badge badge_sm badge_default rounded">구매자</span>
@@ -1126,14 +1134,14 @@
                                         <!-- tab_content -->
                                         <div class="tab_content">
                                             <div>
-                                                tab content 2
+                                                
                                             </div>
                                         </div>
                                         <!-- //tab_content -->
                                         <!-- tab_content -->
                                         <div class="tab_content">
                                             <div>
-                                                tab content 3
+                                                
                                             </div>
                                         </div>
                                         <!-- //tab_content -->
@@ -1158,6 +1166,11 @@
                                         </a>
                                     </div>
                                     <div class="all_qa_wrap">
+                                        <!-- 작성된 상품문의가 없을경우 -->
+                                        <div class="no_review">
+                                            <p class="txt_msg">작성된 상품 문의가 없습니다.</p>
+                                        </div>                             
+                                        <!--// 작성된 상품문의가 없을경우 -->                                         
                                         <div class="review_inner">
                                             <div class="review_info_area">
                                                 <div class="left_area">
@@ -1178,8 +1191,6 @@
                                                 </p>
                                             </div>
                                         </div>
-                                
-                                
                                         <div class="review_inner">
                                             <div class="review_info_area">
                                 
@@ -1266,7 +1277,7 @@
                                                 </div>
                                                 <div class="right_area">
                                                     <div class="txt_reply">
-                                                        <span class="txt_primary">답변요청</span>
+                                                        <span class="txt_lightgrey">답변요청</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1276,6 +1287,27 @@
                                                 </p>
                                             </div>
                                         </div>
+                                        <div class="review_inner">
+                                            <div class="review_info_area">
+                                                <div class="left_area">
+                                                    <span class="txt_user">ab*****</span>
+                                                    <span class="gap"> | </span>
+                                                    <span class="txt_date">2021.07.11</span>
+                                                    <span class="gap"> | </span>
+                                                    <button class="btn_modify">수정</button>
+                                                    <span class="gap"> | </span>
+                                                    <button class="btn_remove">삭제</button>
+                                                </div>
+                                                <div class="right_area">
+                                                    <div class="txt_reply">
+                                                        <span class="txt_lightgrey">답변요청</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box_msg">
+                                                <span class="txt_secret">비밀글</span>
+                                            </div>
+                                        </div>                                          
                                         <!-- ajax 연동? -->
                                         <div class="btn_more_area">
                                             <button class="btn_expand">
@@ -1302,16 +1334,43 @@
                                     <div class="ht_fold_box_wrap">
                                         <ul class="fold_box_list">
                                             <li class="fold_box expanded">
-                                                <div class="fold_box_header">배송 안내 <button type="button" class="btn_fold"><span class="hidden">컨텐츠
+                                                <div class="fold_box_header">배송 안내 <button type="button" class="btn_fold"><span class="hidden">컨텐츠 열기</span></button></div>
+                                                <div class="fold_box_contents">
+                                                    <div class="panel_outer">
+                                                        <ul class="bul_list">
+                                                            <li class="bul_item_dot">핫트랙스 배송 : 2만원 이상 구매 시 무료배송/ 2만원 미만 구매 시 배송비 2,000원
+                                                            </li>
+                                                            <li class="bul_item_dot">브랜드별 배송 : 브랜드 정책에 따라 무료배송 혹은 배송비 부과 (상품상세정보에서 배송비 기준 확인가능)
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tit_area">
+                                                            <p class="tit">배송비</p>
+                                                        </div>
+                                                        <ul class="bul_list">
+                                                            <li class="bul_item_dot">도서, 산간, 오지, 일부지역, 설치배송 상품 등은 배송비가 추가될 수 있습니다.</li>
+                                                            <li class="bul_item_dot">무료배송 상품과 함께 구입 시, 기준금액 미만으로 구입하시더라도 해당 브랜드 상품은 무료배송 됩니다.</li>
+                                                            <li class="bul_item_dot">핫트랙스 배송과 브랜드 개별 배송비는 별도로 부과 됩니다.</li>
+                                                        </ul>
+                                                        <div class="tit_area">
+                                                            <p class="tit">배송기간 및 방법</p>
+                                                        </div>
+                                                        <ul class="bul_list">
+                                                            <li class="bul_item_dot">결제 완료 후, 1~5일 이내에 배송 됩니다. (단, 상품의 재고 상황이나 배송 상황, 지역특성에 따라 배송이 지연될 수 있습니다.)</li>
+                                                            <li class="bul_item_dot">주문제작 상품 및 가구와 같은 업체 직배송 상품은 제작기간과 배송시기를 별도 확인하시기 바랍니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="fold_box">
+                                                <div class="fold_box_header">반품/교환 안내<button type="button" class="btn_fold"><span class="hidden">컨텐츠
                                                             열기</span></button></div>
                                                 <div class="fold_box_contents">
                                                     <div class="panel_outer">
                                                         <ul class="bul_list">
                                                             <li class="bul_item_dot">상품 설명에 반품/교환 관련 안내가 있는 경우 그 내용을 우선으로 합니다. (업체 사정에 따라 변경 될 수 있습니다.)
+                                                                - 브랜드별 배송 : 브랜드 정책에 따라 무료배송 혹은 배송비 부과 (상품상세정보에서 배송비 기준 확인가능)
                                                             </li>
-                                                            <li class="bul_item_dot">브랜드별 배송 : 브랜드 정책에 따라 무료배송 혹은 배송비 부과 (상품상세정보에서 배송비 기준 확인가능)</li>
                                                         </ul>
-                                
                                                         <div class="tit_area">
                                                             <p class="tit">반품/교환방법</p>
                                                         </div>
@@ -1326,12 +1385,16 @@
                                                             <p class="tit">반품/교환가능 기간</p>
                                                         </div>
                                 
+                                
                                                         <ul class="bul_list">
                                                             <li class="bul_item_dot">변심반품의 경우 수령 후 7일 이내, 상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내</li>
-                                                            <li class="bul_item_dot">상품불량 및 오배송 등의 이유로 반품/교환을 하실 경우 반품/교환비는 무료 입니다. (단, 판매자가 반품된 상품 확인 후
-                                                                상품불량이 아닌 것으로 확인 될 시 반송비를 고객님께 부과할 수 있습니다.)</li>
-                                                            <li class="bul_item_dot">고객변심으로 인한 교환/반품의 배송비는 고객님 부담 입니다.</li>
-                                                            <li class="bul_item_dot">고객변심으로 인한 교환/반품 시 주문에 사용된 할인쿠폰은 반환되지 않습니다.</li>
+                                                            <li class="bul_item_dot">상품불량 및 오배송 등의 이유로 반품/교환을 하실 경우 반품/교환비는 무료 입니다.
+                                                                (단, 판매자가 반품된 상품 확인 후 상품불량이 아닌 것으로 확인 될 시 반송비를 고객님께 부과할 수 있습니다.)
+                                                                </li>
+                                                            <li class="bul_item_dot">고객변심으로 인한 교환/반품의 배송비는 고객님 부담 입니다.
+                                                            </li>
+                                                            <li class="bul_item_dot">고객변심으로 인한 교환/반품 시 주문에 사용된 할인쿠폰은 반환되지 않습니다.
+                                                            </li>
                                                         </ul>
                                 
                                                         <div class="tit_area">
@@ -1341,64 +1404,17 @@
                                                         <ul class="bul_list">
                                                             <li class="bul_item_dot">반품/교환 가능 기간을 초과한 경우</li>
                                                             <li class="bul_item_dot">소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우 (단지 확인을 위한 포장 훼손은 제외)</li>
-                                                            <li class="bul_item_dot">소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우 (예: 밀봉상품, 제품 수선, 세탁, 기타
-                                                                사용/분리/훼손)</li>
-                                                            <li class="bul_item_dot">설치상품의 경우 설치가 완료되어 상품의 가치가 훼손된 경우 (예: 설치가전, 가구, 식품 등)</li>
-                                                            <li class="bul_item_dot">소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우</li>
-                                                            <li class="bul_item_dot">시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우</li>
-                                                            <li class="bul_item_dot">전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</li>
-                                                            <li class="bul_item_dot">복제가 가능한 상품 등의 포장을 훼손한 경우 (예: 음반/DVD/비디오, 소프트웨어, 영상화보집)</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="fold_box">
-                                                <div class="fold_box_header">반품/교환 안내<button type="button" class="btn_fold"><span class="hidden">컨텐츠
-                                                            열기</span></button></div>
-                                                <div class="fold_box_contents">
-                                                    <div>
-                                                        <ul class="bul_list">
-                                                            <li class="bul_item_dot">상품 설명에 반품/교환 관련 안내가 있는 경우 그 내용을 우선으로 합니다. (업체 사정에 따라 변경 될 수 있습니다.)
+                                                            <li class="bul_item_dot">소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우 (예: 밀봉상품, 제품 수선, 세탁, 기타 사용/분리/훼손)
                                                             </li>
-                                                            <li class="bul_item_dot">브랜드별 배송 : 브랜드 정책에 따라 무료배송 혹은 배송비 부과 (상품상세정보에서 배송비 기준 확인가능)</li>
-                                                        </ul>
-                                                        <div class="title_wrap title_size_def">
-                                                            <p class="title_heading">반품/교환방법</p>
-                                                        </div>
-                                
-                                                        <ul class="bul_list">
-                                                            <li class="bul_item_dot">MY HOTTRACKS > 주문정보 > 반품/교환신청</li>
-                                                            <li class="bul_item_dot">고객센터 > SOS상담</li>
-                                                            <li class="bul_item_dot">고객센터 (1661-1112)</li>
-                                                        </ul>
-                                
-                                                        <div class="title_wrap title_size_def">
-                                                            <p class="title_heading">반품/교환가능 기간</p>
-                                                        </div>
-                                
-                                
-                                                        <ul class="bul_list">
-                                                            <li class="bul_item_dot">변심반품의 경우 수령 후 7일 이내, 상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내</li>
-                                                            <li class="bul_item_dot">상품불량 및 오배송 등의 이유로 반품/교환을 하실 경우 반품/교환비는 무료 입니다. (단, 판매자가 반품된 상품 확인 후
-                                                                상품불량이 아닌 것으로 확인 될 시 반송비를 고객님께 부과할 수 있습니다.)</li>
-                                                            <li class="bul_item_dot">고객변심으로 인한 교환/반품의 배송비는 고객님 부담 입니다.</li>
-                                                            <li class="bul_item_dot">고객변심으로 인한 교환/반품 시 주문에 사용된 할인쿠폰은 반환되지 않습니다.</li>
-                                                        </ul>
-                                
-                                                        <div class="title_wrap title_size_def">
-                                                            <p class="title_heading">반품/교환 불가 사유</p>
-                                                        </div>
-                                
-                                                        <ul class="bul_list">
-                                                            <li class="bul_item_dot">반품/교환 가능 기간을 초과한 경우</li>
-                                                            <li class="bul_item_dot">소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우 (단지 확인을 위한 포장 훼손은 제외)</li>
-                                                            <li class="bul_item_dot">소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우 (예: 밀봉상품, 제품 수선, 세탁, 기타
-                                                                사용/분리/훼손)</li>
-                                                            <li class="bul_item_dot">설치상품의 경우 설치가 완료되어 상품의 가치가 훼손된 경우 (예: 설치가전, 가구, 식품 등)</li>
-                                                            <li class="bul_item_dot">소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우</li>
+                                                            <li class="bul_item_dot">설치상품의 경우 설치가 완료되어 상품의 가치가 훼손된 경우 (예: 설치가전, 가구, 식품 등)
+                                                            </li>
+                                                            <li class="bul_item_dot">소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우
+                                                            </li>
                                                             <li class="bul_item_dot">시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우</li>
-                                                            <li class="bul_item_dot">전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</li>
-                                                            <li class="bul_item_dot">복제가 가능한 상품 등의 포장을 훼손한 경우 (예: 음반/DVD/비디오, 소프트웨어, 영상화보집)</li>
+                                                            <li class="bul_item_dot">전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우
+                                                            </li>
+                                                            <li class="bul_item_dot">복제가 가능한 상품 등의 포장을 훼손한 경우 (예: 음반/DVD/비디오, 소프트웨어, 영상화보집)
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -1409,47 +1425,10 @@
                                                 <div class="fold_box_contents">
                                                     <div>
                                                         <ul class="bul_list">
-                                                            <li class="bul_item_dot">상품 설명에 반품/교환 관련 안내가 있는 경우 그 내용을 우선으로 합니다. (업체 사정에 따라 변경 될 수 있습니다.)
+                                                            <li class="bul_item_dot">상품의 불량에 의한 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은 소비자분쟁해결 기준 (공정거래위원회 고시)에 준하여 처리됨
                                                             </li>
-                                                            <li class="bul_item_dot">브랜드별 배송 : 브랜드 정책에 따라 무료배송 혹은 배송비 부과 (상품상세정보에서 배송비 기준 확인가능)</li>
-                                                        </ul>
-                                                        <div class="title_wrap title_size_def">
-                                                            <p class="title_heading">반품/교환방법</p>
-                                                        </div>
-                                
-                                                        <ul class="bul_list">
-                                                            <li class="bul_item_dot">MY HOTTRACKS > 주문정보 > 반품/교환신청</li>
-                                                            <li class="bul_item_dot">고객센터 > SOS상담</li>
-                                                            <li class="bul_item_dot">고객센터 (1661-1112)</li>
-                                                        </ul>
-                                
-                                                        <div class="title_wrap title_size_def">
-                                                            <p class="title_heading">반품/교환가능 기간</p>
-                                                        </div>
-                                
-                                
-                                                        <ul class="bul_list">
-                                                            <li class="bul_item_dot">변심반품의 경우 수령 후 7일 이내, 상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내</li>
-                                                            <li class="bul_item_dot">상품불량 및 오배송 등의 이유로 반품/교환을 하실 경우 반품/교환비는 무료 입니다. (단, 판매자가 반품된 상품 확인 후
-                                                                상품불량이 아닌 것으로 확인 될 시 반송비를 고객님께 부과할 수 있습니다.)</li>
-                                                            <li class="bul_item_dot">고객변심으로 인한 교환/반품의 배송비는 고객님 부담 입니다.</li>
-                                                            <li class="bul_item_dot">고객변심으로 인한 교환/반품 시 주문에 사용된 할인쿠폰은 반환되지 않습니다.</li>
-                                                        </ul>
-                                
-                                                        <div class="title_wrap title_size_def">
-                                                            <p class="title_heading">반품/교환 불가 사유</p>
-                                                        </div>
-                                
-                                                        <ul class="bul_list">
-                                                            <li class="bul_item_dot">반품/교환 가능 기간을 초과한 경우</li>
-                                                            <li class="bul_item_dot">소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우 (단지 확인을 위한 포장 훼손은 제외)</li>
-                                                            <li class="bul_item_dot">소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우 (예: 밀봉상품, 제품 수선, 세탁, 기타
-                                                                사용/분리/훼손)</li>
-                                                            <li class="bul_item_dot">설치상품의 경우 설치가 완료되어 상품의 가치가 훼손된 경우 (예: 설치가전, 가구, 식품 등)</li>
-                                                            <li class="bul_item_dot">소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우</li>
-                                                            <li class="bul_item_dot">시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우</li>
-                                                            <li class="bul_item_dot">전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</li>
-                                                            <li class="bul_item_dot">복제가 가능한 상품 등의 포장을 훼손한 경우 (예: 음반/DVD/비디오, 소프트웨어, 영상화보집)</li>
+                                                            <li class="bul_item_dot">대금 환불 및 환불지연에 따른 배상금 지급 조건, 절차 등은 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 처리함
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>

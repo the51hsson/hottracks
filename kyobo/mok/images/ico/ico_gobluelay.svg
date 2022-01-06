@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(-319 -1217)">
+        <g id="tb" transform="translate(24 315)">
+            <g id="img" transform="translate(295 902)" style="fill:#fff;stroke:#eaeaea">
+                <circle cx="20" cy="20" r="20" style="stroke:none"/>
+                <circle cx="20" cy="20" r="19.5" style="fill:none"/>
+            </g>
+        </g>
+        <g id="icon-2" data-name="icon" transform="translate(326.5 1225.85)">
+            <g id="그룹_109445" data-name="그룹 109445" transform="translate(1.5 1.5)">
+                <path id="패스_36357" data-name="패스 36357" class="cls-2" d="M20.8 11.15a9.65 9.65 0 1 1-9.65-9.65 9.651 9.651 0 0 1 9.65 9.65z" transform="translate(-1.5 -1.5)"/>
+                <path id="패스_36358" data-name="패스 36358" class="cls-2" d="M33.039 24.078a2.112 2.112 0 1 1 2.112-2.112 2.112 2.112 0 0 1-2.112 2.112z" transform="translate(-18.841 -12.316)"/>
+                <path id="패스_36359" data-name="패스 36359" class="cls-2" d="M10.892 24.078A2.112 2.112 0 1 1 13 21.966a2.112 2.112 0 0 1-2.108 2.112z" transform="translate(-5.79 -12.316)"/>
+                <path id="패스_36360" data-name="패스 36360" class="cls-2" d="M24.078 10.892a2.112 2.112 0 1 1-2.112-2.112 2.112 2.112 0 0 1 2.112 2.112z" transform="translate(-12.316 -5.79)"/>
+                <path id="패스_36361" data-name="패스 36361" class="cls-2" d="M24.078 33.038a2.112 2.112 0 1 1-2.112-2.112 2.112 2.112 0 0 1 2.112 2.112z" transform="translate(-12.316 -18.84)"/>
+                <path id="패스_36362" data-name="패스 36362" class="cls-2" d="M43.732 39.58h3.012a1.643 1.643 0 0 1 0 3.286h-3.012" transform="translate(-26.387 -23.94)"/>
+            </g>
+        </g>
+    </g>
+</svg>

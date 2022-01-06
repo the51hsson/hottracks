@@ -1,19 +1,156 @@
 
-
+/* 구분선 */
 .evt_area {
     .thunmail_evt {
 
     }
     
     .txt_account {
-        .txt_heading {
-            font-size: 16px;
+        .tit_area {
+            .txt_heading {
+                font-size: 16px;
+                font-weight: $font-weight-bold;
+                color: #000;
+            }
+            .right_area {
+                position: absolute;
+                right: 0;
+            }
         }
+
         .txt_sub {
             font-size: 13px;
         }
         .txt_period {
             font-size: 13px;
         }
+    }
+}
+
+.evt_detail_header {
+    padding: 0 20px 56px;
+}
+
+/* module 001 */
+.mdl_001 {
+    padding: 24px 0;
+    .card_header {
+        position: relative;
+        .tit_area {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            height: 56px;
+            overflow: hidden;
+            .txt_heading {
+                font-size: 20px;
+                font-weight: $font-weight-bold;
+                color: #000;
+            }
+            .right_area {
+                margin-top: 6px;
+                .btn_share {
+                    cursor: pointer;
+                    width: 16px;
+                    height: 16px;
+                    background: url(../images/ico/ico_share.png) no-repeat 0 0;
+                    background-size: 16px auto;                    
+                }
+            }        
+        }
+    }
+    .card_body {
+        display: flex;
+        justify-content: space-between;
+        .txt_account {
+            .txt_sub {
+                font-size: 16px;
+                color: #767676;
+                margin-bottom: 16px;
+                height: 45px;
+                overflow: hidden;
+            }
+            .txt_period {
+                font-size: 14px;
+                color: #595959;
+            }
+        }
+
+        .box_circle {
+           
+           
+            background: $bg-primary;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            .txt_per {
+                color: #fff;
+                font-size: 15px;
+                font-family: $font-num;
+            }
+        }        
+    }
+}
+/* module 002 */
+
+
+
+/* module 003 */
+
+
+.ht_ {
+    /* header common */
+    .header_wrapper {
+        .header_center {
+            padding-top: 0;
+            .page_title {
+                opacity: 0;
+                img {
+                    width: 28px;
+                    border-radius: 4px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        &.active_product {
+            .btn_header_home {
+                display: none;
+            }
+            .btn_header_search {
+                display: none;
+            }
+            .header_center {
+                .page_title {
+                    opacity: 1;
+                    display: flex;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color:#000;
+                    transition:opacity 0.5s;
+                    span {
+                        display: inline-block;
+                        width: calc(100% - 38px);
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+  
+    .prod_detail_header {
+        padding:0 20px 56px;
+    }
+    .prod_detail_contents {
+        padding:0 20px 112px;
+        .tab_content {
+            &.sps-blw {
+                padding-top: 40px;
+            }
+        }
+    }
+    .product_area {
+        padding-top: 40px;
     }
 }
