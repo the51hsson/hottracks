@@ -244,6 +244,8 @@ function setProdDetailAnchor(){
 	}
 }
 
+
+
 // 상품 상단 - 리뷰 영역 선택 시 하단 리뷰로 이동
 function reviewTabAnchor() {
 	if ($('.prod_review_box .btn_go_review').length > 0) {
