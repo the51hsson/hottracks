@@ -272,6 +272,16 @@
                 .swiper_ctrl_box {
                     margin: -20px 0 0;
                 }
+                &.no_swiper {
+                    .swiper_ctrl_box { 
+                        display: none;
+                    }
+                    .swiper-slide {
+                        + .swiper-slide {
+                            margin-top: 20px;
+                        }
+                    }
+                }
             }
         }
     }
