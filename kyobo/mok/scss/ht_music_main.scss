@@ -186,6 +186,11 @@
                     bottom:0;
                 }
             }    
+            .swiper-slide {
+                img {
+                    width: 100%;
+                }
+            }
         }
         
         // 클래식 음반 찾기
