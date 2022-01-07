@@ -175,11 +175,12 @@
                 }
             }
         }
-        
+
         // 띠배너
         .belt_banner_wrap {
             position: relative;
             padding-bottom: 20px;
+            margin-bottom: 60px;
             .swiper-pagination {
                 &.out_bottom {
                     bottom:0;
@@ -187,6 +188,39 @@
             }    
         }
 
+        // LP SHOP 
+        .lp_shop_wrap {
+            margin-bottom: 60px;
+            padding:0 20px;
+            position: relative;
+            .swiper-container {
+                width: calc(100% + 20px);
+                padding-bottom: 20px;
+            }
+            .swiper-slide {
+                width: 37%;
+                min-width: 140px;
+                margin-right: 4.27%;
+                img {
+                    width: 100%;
+                    border-radius: 4px;
+                }
+            }
+            .swiper-pagination.swiper-pagination-progressbar {
+                width: calc(100% - 20px);
+                left: 0;
+                transform: translateX(0);
+            }
+            .btn_more {
+                position: absolute;
+                right: 20px;
+                top:-64px;
+                display: block;
+                width: 16px;
+                height: 16px;
+                background: url(../images/guide/ico_plus_more.svg) no-repeat 0 0 / cover;
+            }
+        }
         // 특별한 할인상품
         .special_sale_wrap {
             background-color: #fffaf1;
