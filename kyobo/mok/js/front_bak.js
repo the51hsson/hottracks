@@ -9,10 +9,6 @@
 
 var KyoboHottracks = KyoboHottracks || {};
 
-$(function(){
-
-});
-
 KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 	var _front = {},
 		_dialogCount = 0,
@@ -661,6 +657,17 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 			});
 		}
 	}
+	/**
+	 * Simple UI 탭
+	 * selector Slide Tab UI( addClass acitve, sbilings remove active)
+	 * * @param selector Tab 선택 셀렉터(default : .scroll_box > a)
+	 */
+	function activeTab(selector) {
+		selector = selector || '.scroll_box > a';
+		$(selector).on('click',function(){
+			$(this).addClass('active').siblings('a').removeClass('active');
+		});
+	}
 
 	/**
 	 * fold 설정
@@ -1142,6 +1149,7 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 		tooltipOnOff();
 		autoOverflowContents();
 		setTagToggle();
+		activeTab();
 	});
 
 	// 이하 각 화면에서 호출하는 영역
