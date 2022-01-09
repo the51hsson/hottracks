@@ -9,153 +9,298 @@
             }
         }
     }
-    .purchase_history_wrap {
-        .purchase_box {
-            display: flex;
-            align-items: center;
-            .img_box {
-                width: 100px;
-                height: 100px;
-                position: relative;
-                margin-right: 16px;
-                img {
-                    width: 100%;
-                }
-                &:after {
-                    content: '';
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    background: url(../images/guide/purchase_mask.svg) no-repeat 0 0 / cover;
-                    position: absolute;
-                    left: 0;
-                    top:0;
-                }
+    .main_cont_wrap {
+        &.music {
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: -0.02em;
+                margin-bottom: 20px;
+                line-height: 32px;
+                margin-left: 20px;
             }
         }
-        .swiper-slide {
-            &.swiper-slide-active {
-                .guage_box {
-                    height: 6px;
-                    background: #D5D5D5;
-                    border-radius: 300px;
-                    width: 165px;
-                    // overflow:hidden;
-                    .gauge_bar {
-                        position: relative;
+        // 히어로 배너 
+        .here_banner_wrap {
+
+        }
+        
+        // 퀵메뉴
+        .music_quick_menu {
+
+        }
+
+        //예약 상품
+        .purchase_history_wrap {
+            .purchase_box {
+                display: flex;
+                align-items: center;
+                .img_box {
+                    width: 100px;
+                    height: 100px;
+                    position: relative;
+                    margin-right: 16px;
+                    img {
+                        width: 100%;
+                    }
+                    &:after {
+                        content: '';
                         display: block;
                         width: 100%;
                         height: 100%;
-                        top: 0;
+                        background: url(../images/guide/purchase_mask.svg) no-repeat 0 0 / cover;
+                        position: absolute;
                         left: 0;
-                        &:after {
+                        top:0;
+                    }
+                }
+            }
+            .swiper-slide {
+                &.swiper-slide-active {
+                    .guage_box {
+                        height: 6px;
+                        background: #D5D5D5;
+                        border-radius: 300px;
+                        width: 165px;
+                        // overflow:hidden;
+                        .gauge_bar {
+                            position: relative;
                             display: block;
-                            content: '';
-                            width: 0px;
+                            width: 100%;
                             height: 100%;
-                            background-color: #DA2128;
-                            position: absolute;
-                            left: 0;
                             top: 0;
-                            animation: loadingGauge 2s forwards;
-                            animation-delay: 1s;
-                            border-radius: 300px;
+                            left: 0;
+                            &:after {
+                                display: block;
+                                content: '';
+                                width: 0px;
+                                height: 100%;
+                                background-color: #DA2128;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                animation: loadingGauge 2s forwards;
+                                animation-delay: 1s;
+                                border-radius: 300px;
+                            }
+                            &::before {
+                                display: block;
+                                content: '';
+                                width: 18px;
+                                height: 18px;
+                                background: url(../images/guide/img_hot_deal_time_s1.gif) no-repeat 0 0 / cover;
+                                position: absolute;
+                                bottom:0;
+                                left:0;
+                                transform: translateX(-10px);
+                                z-index: 1;
+                                opacity: 0;
+                                animation: loadingGaugeIcon 2s forwards;
+                                animation-delay: 1s;
+                            }
                         }
-                        &::before {
-                            display: block;
-                            content: '';
-                            width: 18px;
-                            height: 18px;
-                            background: url(../images/guide/img_hot_deal_time_s1.gif) no-repeat 0 0 / cover;
-                            position: absolute;
-                            bottom:0;
-                            left:0;
-                            transform: translateX(-10px);
-                            z-index: 1;
-                            opacity: 0;
-                            animation: loadingGaugeIcon 2s forwards;
-                            animation-delay: 1s;
+                    }
+                    @keyframes loadingGauge {
+                        0% {
+                        width: 0;
+                        }
+                        100% {
+                        width: 100%;
                         }
                     }
-                }
-                @keyframes loadingGauge {
-                    0% {
-                      width: 0;
-                    }
-                    100% {
-                      width: 100%;
-                    }
-                }
-                @keyframes loadingGaugeIcon {
-                    0% {
-                      left:0;
-                      opacity: 0;
-                    }
-                    10% {
+                    @keyframes loadingGaugeIcon {
+                        0% {
+                        left:0;
+                        opacity: 0;
+                        }
+                        10% {
+                            opacity: 1;
+                        }
+                        100% {
+                        left:100%;
                         opacity: 1;
-                    }
-                    100% {
-                      left:100%;
-                      opacity: 1;
-                      
+                        
+                        }
                     }
                 }
             }
         }
-    }
 
-    .realtime_chart_wrap {
-        .chart_box {
-            
-            .detail_info {
-                display: none;
-            }
-            &.active {
-                .album_img {
+        // 실시간 차트
+        .realtime_chart_wrap {
+            .chart_box {
+                
+                .detail_info {
                     display: none;
                 }
-                .detail_info {
-                    display: block;
+                &.active {
+                    .album_img {
+                        display: none;
+                    }
+                    .detail_info {
+                        display: block;
+                    }
                 }
             }
         }
-    }
 
-    // 음반상품 리스트
-    .music_main_list {
-        padding:0 20px;
-        display: flex;
-        justify-content: space-between;
-       flex-wrap: wrap;
-       .product_info {
-            font-size: 15px;
-        }
-    }
-    .new_album_wrap {
-        .swiper-container {
-            padding-left: 20px;
-            .swiper-slide {
-                width: calc(100% - 20px);
-                padding-right: 20px;
-            }
-        }
-        .product_list__div {
-            
-            margin-bottom: 20px;
-            .product_tit {
-                margin-top: 0;
-            }
-            .product_info {
+        // 음반상품 리스트
+        .music_main_list {
+            padding:0 20px;
+            display: flex;
+            justify-content: space-between;
+        flex-wrap: wrap;
+        .product_info {
                 font-size: 15px;
             }
         }
+
+        // 새로 나온 음반
+        .new_album_wrap {
+            .swiper-container {
+                padding-left: 20px;
+                .swiper-slide {
+                    width: calc(100% - 20px);
+                    padding-right: 20px;
+                }
+            }
+            .product_list__div {
+                
+                margin-bottom: 20px;
+                .product_tit {
+                    margin-top: 0;
+                }
+                .product_info {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        // 띠배너
+        .belt_banner_wrap {
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 60px;
+            .swiper-pagination {
+                &.out_bottom {
+                    bottom:0;
+                }
+            }    
+            .swiper-slide {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        
+        // 클래식 음반 찾기
+        .classic_album_search {
+            background-color: #d53020;
+            padding:30px 20px;
+            color:#fff;
+            text-align: center;
+            .t1 {
+                font-size: 16px;
+                line-height: 1.63;
+                letter-spacing: -0.016em;
+                font-weight: 700;
+            }
+            .t2 {
+                font-size: 12px;   
+                letter-spacing: -0.012em;
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:18px 0 12px;
+                width: 100%;
+                height: 40px;
+                border-radius: 25px;
+                background: #fff url(../images/guide/ico_find.svg) no-repeat right 20px top 50% / 20px;
+                font-size: 13px;
+                color:#767676;
+                letter-spacing: -0.012em;
+            }
+        }
+
+        // LP SHOP 
+        .lp_shop_wrap {
+            margin-bottom: 60px;
+            padding:0 20px;
+            position: relative;
+            .swiper-container {
+                width: calc(100% + 20px);
+                padding-bottom: 20px;
+            }
+            .swiper-slide {
+                width: 37%;
+                min-width: 140px;
+                margin-right: 4.27%;
+                img {
+                    width: 100%;
+                    border-radius: 4px;
+                }
+            }
+            .swiper-pagination.swiper-pagination-progressbar {
+                width: calc(100% - 20px);
+                left: 0;
+                transform: translateX(0);
+            }
+            .btn_more {
+                position: absolute;
+                right: 20px;
+                top:-64px;
+                display: block;
+                width: 16px;
+                height: 16px;
+                background: url(../images/guide/ico_plus_more.svg) no-repeat 0 0 / cover;
+            }
+        }
+        // 특별한 할인상품
+        .special_sale_wrap {
+            background-color: #fffaf1;
+            padding:40px 20px;
+            h2 {
+                margin-left: 0;
+            }
+            .scroll_tab {
+                width: calc(100% + 20px);
+                padding-right:20px;
+            }
+            .sale_list_wrap {
+                position: relative;
+                padding-bottom: 28px;
+                .product_info {
+                    font-size: 13px;
+                }
+                .swiper_ctrl_box {
+                    margin: -20px 0 0;
+                }
+                &.no_swiper {
+                    .swiper_ctrl_box { 
+                        display: none;
+                    }
+                    .swiper-slide {
+                        + .swiper-slide {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
     }
+    
+    // 상품 리스트 공통 타입 todo : list.scss로 정리해서 분류 할 것
     .product_list {
         .product_tit {
             font-size: 13px;
             letter-spacing: -0.013em;
             color:rgb(0,0,0);
             margin-top: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .product_txt {
             font-size: 13px;
@@ -199,6 +344,13 @@
                 border-radius: 4px;
             }
         }
+        &__group {
+            width: 100%;
+            .product_img {
+                width: 100%;
+                border-radius: 4px;
+            }
+        }
         &__div {
             width: 100%;
             display: flex;
@@ -228,6 +380,5 @@
             }
         }
     }
-    
 }
 
