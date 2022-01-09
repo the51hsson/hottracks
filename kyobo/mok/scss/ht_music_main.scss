@@ -11,13 +11,25 @@
     }
     .main_cont_wrap {
         &.music {
-            h2 {
+            .tit {
                 font-size: 20px;
                 font-weight: 700;
                 letter-spacing: -0.02em;
                 margin-bottom: 20px;
                 line-height: 32px;
                 margin-left: 20px;
+            }
+            .scroll_tab {
+                padding-left: 20px;
+
+            }
+            .badge_list_box {
+                display: flex;
+                .badge_sm {
+                    + .badge_sm {
+                        margin-left: 4px;
+                    }
+                }
             }
         }
         // 히어로 배너 
@@ -32,14 +44,46 @@
 
         //예약 상품
         .purchase_history_wrap {
+            background: #fff4f1;
+            padding:30px 20px;
+            margin-bottom: 60px;
+            .swiper-container {
+                padding-bottom: 20px;
+            }
             .purchase_box {
                 display: flex;
                 align-items: center;
+                border: 1px solid #d5d5d5;
+                background-color: #fff;
+                border-radius: 4px;
+                padding:24px 20px;
                 .img_box {
                     width: 100px;
                     height: 100px;
                     position: relative;
                     margin-right: 16px;
+                    .d_day {
+                        font-size: 30px;
+                        color:#fff;
+                        font-weight: 700;
+                        position: absolute;
+                        z-index: 10;
+                        width: 100%;
+                        top:20%;
+                        left: 0;
+                        text-align: center;
+                    }
+                    .date {
+                        font-size: 12px;
+                        color:#fff;
+                        position: absolute;
+                        z-index: 10;
+                        width: 100%;
+                        top:70%;
+                        left: 0;
+                        text-align: center;
+                        font-weight: 700;
+                    }
                     img {
                         width: 100%;
                     }
@@ -124,23 +168,312 @@
                     }
                 }
             }
+            .btn_all {
+                display: block;
+                margin:20px auto 0;
+                width: max-content;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                background-color: #fff;
+                padding:12px 24px;
+                font-weight: 500;
+                span {
+                    padding-right: 17px;
+                    background: url(../images/guide/ico_plus_more.svg) no-repeat 100% 50% / 12px;
+                }
+            }
+            .swiper-pagination.swiper-pagination-progressbar {
+                width: 100%;
+            }
+        }
+
+        // 새로나온 음반
+        .new_album_wrap {
+            margin-bottom: 60px;
         }
 
         // 실시간 차트
         .realtime_chart_wrap {
+            margin-bottom: 60px;
             .chart_box {
-                
+                display: flex;
+                align-items: center;
+                padding:0 20px;
+                flex: 1 1 0;;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .rank_txt {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-right: 13px;
+                    font-weight: 700;
+                    .num {
+                        font-size: 15px;
+                    }
+                    .fluctuation {
+                        font-size: 12px;
+                        width: 26px;
+                        text-align: center;
+                        &.new {
+                            color:#D53020;
+                            font-weight: 700;
+                        }
+                        &.down {
+                            &::before {
+                                content: '▼';
+                                margin-right: 2px;
+                            }
+                        }
+                        &.up {
+                            &::before {
+                                content: '▲';
+                                margin-right: 2px;
+                            }
+                        }
+                    }
+                }
+                .album_img {
+                    width: 20%;
+                    min-width: 73px;
+                    margin-right: 13px;
+                    img {
+                        width:100%;
+                    }
+                }
+                .singer_name {
+                    font-size: 13px;
+                    color:#595959;
+                }
+                .album_name {
+                    &.ellipsis_line2 {
+                        height: auto;
+                        max-height: 52px;
+                    }
+                }
                 .detail_info {
                     display: none;
                 }
+                .btn_wrap {
+                    display: none;
+                }
                 &.active {
+                    padding:30px 20px;
+                    background: url(../images/guide/@bg_realtime_bg.png) no-repeat 0 0 / cover;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
                     .album_img {
                         display: none;
                     }
+                    .chart_info {
+                        width:calc(100% - 40px);
+                    }
+                    .album_name {
+                        font-weight: 500;
+                    } 
                     .detail_info {
                         display: block;
+                        .cost {
+                            display: block;
+                            font-size: 12px;
+                            color:#767676;
+                            margin-top: 5px;
+                        }
+                        .sale_price {
+                            font-size: 15px;
+                            font-weight: 700;
+                            margin-bottom: 8px;
+                            span {
+                                color:#d53020;
+                            }
+                        }
+                        .badge_wrap {
+                            margin-bottom: 24px;
+                        }
+                    }
+                    .btn_wrap {
+                        width: 100%;
+                        display: flex;
                     }
                 }
+            }
+        }
+
+        // 추천앨범 개인화 영역 
+        .frequently_txt {
+            display: inline-block;
+            background-color: #ffc7b7;
+            padding:8px 16px;
+            margin-bottom: 10px;
+            border-radius: 500px;
+            font-weight: 500;
+            position: relative;
+            max-width: 70%;
+            left: 20px;
+            top: -10px;
+            text-align: center;
+            .ellipsis_line2 {
+                height: auto;
+                max-height: 52px;
+            }
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 0;
+                border-bottom: 10px solid #ffc7b7;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                position: absolute;
+                left: 20px;
+                top:-8px;
+                border-radius: 4px;
+            }
+        }
+        // 팬사인회 소식
+        .fan_sign_wrap {
+            padding:0 20px;
+            margin-bottom: 60px;
+            .swiper-slide {
+                width: 73%;
+                min-width: 276px;
+                opacity: .2;
+                > img {
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: 4px;
+                }
+                &.swiper-slide-active {
+                    opacity: 1;
+                }
+            }
+            .txt_box {
+                border: 1px solid #d5d5d5;
+                border-top: 0 solid #000;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                text-align: center;
+                padding:20px 0;
+                .btn_sm {
+                    min-width: 165px;
+                }
+                .artist_name {
+                    color:#595959;
+                    font-size: 13px;
+                }
+                .album_name {
+                    font-weight: 500;
+                    color:#000;
+                    font-size: 14px;
+                    line-height: 22px;
+                    margin-bottom: 10px;
+                }
+                .badge_wrap {
+                    margin-bottom: 20px;
+                }
+                .period_txt {
+                    color:#595959;
+                    margin-bottom: 20px;
+                    font-size: 13px;
+                }
+            }
+            .swiper-container {
+                padding-bottom: 28px;
+                width: calc(100% + 20px);
+            }
+            .swiper-pagination.out_bottom  {
+                width: calc(100% - 20px);
+            }
+            &.no_swiper {
+                .swiper-container {
+                    width: 100%;
+                }
+                .swiper-wrapper {
+                    padding:0 30px;
+                    box-sizing: border-box;
+                }
+                .swiper-slide {
+                    opacity: 1;
+                }
+            }
+        }
+
+        // 영통팬싸
+        .video_call_wrap {
+            background-color: #fff4f1;
+            padding:30px 20px;
+            text-align: center;
+            .tit                  {
+                margin-left: 0;
+            }
+            .event_list {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+            > a {
+                display: inline-block;
+                font-size: 13px;
+                margin:0 auto;
+                color:#595959;
+                font-weight: 500;
+                padding-right: 9px;
+                background: url(../images/guide/ico_more_arrow.svg) no-repeat 100% 50%;
+            }
+        }
+
+        // 핫한 해외 팝음반
+        .overseas_hot_wrap {
+            margin-bottom: 60px;
+            padding:0 20px;
+            position: relative;
+            .thumb_img_list {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                right:20px;
+                width: 10%;
+                min-width: 40px;
+                li {
+                    margin-bottom: 7px;
+                    opacity: .5;
+                    img {
+                        width: 100%;
+                    }
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+            }
+            .record_info_area {
+                .img_box {
+                    width: 73%;
+                    img {
+                        width: 100%;
+                        min-width: 276px;
+                    }
+                }
+                .ellipsis_line2 {
+                    height: auto;
+                    max-height: 52px;
+                }
+            }
+            .txt_box {
+                padding-top: 10px;
+                margin-top: 20px;
+                border-top: 1px dashed #d5d5d5;
+            }
+            .btn_wrap {
+                margin-top: 16px;
+            }
+            .product_info {
+                font-size: 15px;
+                margin-bottom: 8px;
+            }
+            .product_txt {
+                margin:4px 0;
             }
         }
 
@@ -261,12 +594,12 @@
         .special_sale_wrap {
             background-color: #fffaf1;
             padding:40px 20px;
-            h2 {
+            .tit {
                 margin-left: 0;
             }
             .scroll_tab {
                 width: calc(100% + 20px);
-                padding-right:20px;
+                padding-left: 0;
             }
             .sale_list_wrap {
                 position: relative;
@@ -361,7 +694,7 @@
             }
         }
         + .btn_more {
-            margin:0 auto;
+            margin:0 auto 40px;
             padding:0 24px;
             width: max-content;
             height: 44px;

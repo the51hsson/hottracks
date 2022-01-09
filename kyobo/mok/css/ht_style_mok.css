@@ -1602,7 +1602,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   display: inline-block;
   font-size: 11px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 18px;
   height: 20px;
   text-align: center;
   white-space: nowrap;
@@ -6060,6 +6060,10 @@ body.dialog_open {
   overflow-x: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.scroll_tab.type_no2 {
+  text-align: center;
 }
 
 .scroll_tab a {

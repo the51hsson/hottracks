@@ -56,6 +56,34 @@ $(function(){
         },
     });
 
+    // 팬사인회 소식
+    var fanWwiperOptions;
+    if ($('.fan_sign_wrap .swiper-slide').length >= 2) {
+        saleListWrapInit = true;
+        fanWwiperOptions = {
+            observer: true,
+            observeParents: true,
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            loopsSlide: 1,
+            pagination: {
+                el: ('.fan_sign_wrap .swiper-pagination'),
+            },
+            navigation: {
+                nextEl: '.fan_sign_wrap .swiper-button-next',
+                prevEl: '.fan_sign_wrap .swiper-button-prev',
+            },
+        }
+        var fanSignWrap = new Swiper('.fan_sign_wrap .swiper-container', fanWwiperOptions);
+    } else {
+        $('.fan_sign_wrap').css('padding-bottom', 0);
+        $('.fan_sign_wrap').addClass('no_swiper');
+        $('.fan_sign_wrap .swiper-wrapper').css('display', 'block');
+        $('.fan_sign_wrap .swiper-slide li').removeClass('product_list__group').addClass('product_list__div');
+    }
+
     // 띠배너 스와이프
     $(".belt_banner_wrap .swiper-container").each(function (index, element) {
         var $parent = $(this).parent('.belt_banner_wrap');
@@ -115,5 +143,5 @@ $(function(){
         $('.sale_list_wrap .swiper-wrapper').css('display','block');
         $('.sale_list_wrap .swiper-slide li').removeClass('product_list__group').addClass('product_list__div');
     }
-   
+
 });

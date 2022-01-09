@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #767675;
+      }
+    </style>
+  </defs>
+  <path id="more_C_btn" class="cls-1" d="M1445.345,796.647l-.7-.731,3.6-3.769-3.6-3.769.7-.731,4.3,4.5Z" transform="translate(-1444.646 -787.647)"/>
+</svg>

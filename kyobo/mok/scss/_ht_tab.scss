@@ -5,6 +5,9 @@
     width: 100%;
     overflow-x: auto;
     box-sizing: border-box;
+    &.type_no2 {
+        text-align: center;
+    }
     a {
         font-size: 15px;
         color:rgb(89,89,89);
