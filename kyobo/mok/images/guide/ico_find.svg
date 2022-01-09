@@ -1,0 +1,15 @@
+<svg id="btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-1,.cls-3{fill:none}.cls-1{stroke:#d53020;stroke-width:2px}.cls-2{stroke:none}
+        </style>
+    </defs>
+    <g id="타원_214" data-name="타원 214" class="cls-1">
+        <circle class="cls-2" cx="7" cy="7" r="7"/>
+        <circle class="cls-3" cx="7" cy="7" r="6"/>
+    </g>
+    <g id="사각형_3134" data-name="사각형 3134" class="cls-1" transform="rotate(-45 19.407 -6.418)">
+        <rect class="cls-2" width="2.293" height="5.879" rx="1.146"/>
+        <rect class="cls-3" x="1" y="1" width=".293" height="3.879" rx=".146"/>
+    </g>
+</svg>
