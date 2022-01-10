@@ -25,6 +25,7 @@ $(function(){
         observer: true,
         observeParents: true,
         slidesPerView: 'auto',
+        spaceBetween: 12,
         loop: true,
         loopsSlide:1,
         pagination: {

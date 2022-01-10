@@ -41,14 +41,19 @@
         .music_quick_menu {
 
         }
+        // 예약 상품
+        .reserved_product_wrap {
+            margin-bottom: 40px;
+        }
 
-        //예약 상품
+        //예약 상품 구매내역
         .purchase_history_wrap {
             background: #fff4f1;
-            padding:30px 20px;
+            padding:30px 0;
             margin-bottom: 60px;
             .swiper-container {
                 padding-bottom: 20px;
+                margin-left: 20px;
             }
             .purchase_box {
                 display: flex;
@@ -98,14 +103,34 @@
                         top:0;
                     }
                 }
+                .txt_box {
+                    width: calc(100% - 116px);
+                    .artist_name {
+                        font-size: 13px;
+                        color:#595959;
+                    }
+                    .album_name {
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                    .txt {
+                        margin-top: 5px;
+                        font-size: 12px;
+                        color:#595959;
+                    }
+
+                }
             }
             .swiper-slide {
+                width: calc(100% - 32px);
+                box-sizing: border-box;
                 &.swiper-slide-active {
                     .guage_box {
+                        margin-top: 10px;
                         height: 6px;
                         background: #D5D5D5;
                         border-radius: 300px;
-                        width: 165px;
+                        width: 100%;
                         // overflow:hidden;
                         .gauge_bar {
                             position: relative;
@@ -184,7 +209,9 @@
                 }
             }
             .swiper-pagination.swiper-pagination-progressbar {
-                width: 100%;
+                width: calc(100% - 20px);
+                transform: translateX(0);
+                left: 0;
             }
         }
 
