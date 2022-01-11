@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="Author" content="SEO 기획 정의 내용 반영" />
+    <meta name="keywords" content="SEO 기획 정의 내용 반영" />
+    <meta name="description" content="SEO 기획 정의 내용 반영" />
+    <meta name="subject" content="SEO 기획 정의 내용 반영" />
+    <!-- DESC : 성인컨텐츠인 경우 추가하는 meta tag -->
+    <!--<meta name="rating" content="adult" />-->
+
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta property="og:title" content="핫트랙스">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../../images/guide/sns.jpg">
+    <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
+    <title>교보핫트랙스-이벤트 당첨자 발표</title>
+
+    <!-- Plug-In css -->
+    <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../../vendors/lib/swiper-7.2.0/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../vendors/lib/star-rating/css/star-rating.min.css" />
+    <!-- // Plug-In css -->
+
+    <!-- font css -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
+    <!-- // font css -->
+
+    <!-- ht_ Hottracks custom css -->
+    <link rel="stylesheet" href="../../css/ht_event_mok.css">
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+    <!--// ht_ Hottracks custom css -->
+
+
+    <!-- Plug-In javascript -->
+    <script src="../../vendors/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="../../vendors/lib/jquery-ui-1.12.1/jquery.ui.spinner.js"></script>
+    <script src="../../vendors/lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../vendors/lib/swiper-7.2.0/js/swiper-bundle.min.js"></script>
+    <script src="../../vendors/lib/star-rating/js/star-rating.min.js"></script>
+    <script src="../../vendors/lib/star-rating/themes/krajee-gly/theme.min.js"></script>
+    <script src="../../vendors/lib/star-rating/js/locales/ko.js"></script>
+    <script src="../../vendors/lib/scrollpos-styler/scrollPosStyler.min.js"></script>
+    <script src="../../vendors/lib/css-element-queries/ResizeSensor.js"></script>
+    <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
+    <!-- // Plug-In javascript -->
+
+    <!-- UI JavaScript -->
+    <!-- <script src="../../vendors/js/ui_mok.js"></script> -->
+    <script src="../../js/front_bak.js"></script>
+    <script src="../../js/ui_product_mok.js"></script>
+    
+    <!-- // UI JavaScript -->
+    <script>
+        $(function(){
+           $('.contents_evt_wrap .menuUl .menu_item').on('click', function(){
+               var index = $(this).index();
+               $('.menuUl .menu_item').eq(index).addClass('active');
+               $('.menuUl .menu_item').not(':eq('+index+')').removeClass('active');
+  
+           })
+        });
+    </script>
+</head>
+
+<body>
+    <!-- SkipNav -->
+    <div class="skip_nav_wrap">
+        <a href="#headerWrapper">메뉴 바로가기</a>
+        <a href="#containerWrapper">본문 바로가기</a>
+    </div>
+    <!-- //SkipNav -->
+
+    <!-- wrapper -->
+    <div class="ht_ wrapper">
+        <!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
+        <header id="headerWrapper" class="ht_ header_wrapper">
+            <div class="header_left">
+                <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
+            </div>
+            <div class="header_center">
+                <div class="page_title prod_detail"></div>
+            </div>
+            <div class="header_right">
+                <!-- DESC : 상품정보 부터 검색버튼 비활성화 -->
+                <a href="#" class="btn_header_search"><span class="hidden">검색</span></a>
+                <a href="#" class="btn_header_cart">
+                    <span class="hidden">장바구니</span>
+                    <!-- DESC :: 0개인경우 count 영역 미노출 / 최대 99 -->
+                    <span class="count">99</span>
+                </a>
+            </div>
+        </header>
+        <!-- // 헤더 -->
+        <!-- 컨텐츠 -->
+        <main class="container_wrapper">
+            <section class="contents_evt_wrap">
+                <!--이벤트 타이틀 영역-->
+               <div class="evt_section_title">
+                 <h2>당첨자 발표</h2>
+                 <span class="evt_ck_area">
+                    <input type="checkbox" id="myEventCk" class="common_check">
+                    <label for="myEventCk" class="common_ck_label">내가 참여한 이벤트</label>
+                 </span>
+               </div>
+               <!--이벤트 메뉴 영역-->
+               <div class="evt_winner_menu">
+                   <ul class="menuUl">
+                       <li class="menu_item active">
+                           <a>전체</a>
+                        </li>
+                        <li  class="menu_item">
+                            <a>라이브</a>
+                         </li>
+                         <li  class="menu_item">
+                            <a>음반/영상</a>
+                         </li>
+                         <li  class="menu_item">
+                            <a>컬처</a>
+                         </li>
+                         <li class="menu_item">
+                            <a>일반</a>
+                         </li>
+                   </ul>
+                </div>
+                <!--이벤트 리스트 영역-->
+                <ul class="evt_list_card_ul">
+                    <li class="evt_list_item">
+                        <div class="list_badge_area">
+                            <span>라이브</span>
+                            <span class="new_badge">NEW</span>
+                        </div>
+                        <div class="list_title_area">
+                            핫트랙스 LIVE X 단순 생활 이벤트 당첨자 발표
+                        </div>
+                        <div class="list_date_area">
+                            2021.11.08
+                        </div>
+                    </li>
+                    <li class="evt_list_item">
+                    <div class="list_badge_area">
+                        <span>일반</span>
+                    </div>
+                    <div class="list_title_area">
+                        GHOST9(고스트나인) - NOW:WHO WE ARE FACING
+                    </div>
+                    <div class="list_date_area">
+                        2021.11.08
+                    </div>
+                    </li>
+                    <li class="evt_list_item">
+                    <div class="list_badge_area">
+                        <span>음반/영상</span>
+                    </div>
+                    <div class="list_title_area">
+                        영화 &lt;팜 스프링스&gt; 예매권 이벤트 당첨 발표
+                    </div>
+                    <div class="list_date_area">
+                        2021.11.08
+                    </div>
+                    </li>
+                    <li class="evt_list_item">
+                    <div class="list_badge_area">
+                        <span>컬처</span>
+                    </div>
+                    <div class="list_title_area">
+                        영화 &lt;팜 스프링스&gt; 예매권 이벤트 당첨 발표
+                    </div>
+                    <div class="list_date_area">
+                        2021.11.08
+                    </div>
+                    </li>
+                    <li class="evt_list_item">
+                    <div class="list_badge_area">
+                        <span>음반/영상</span>
+                    </div>
+                    <div class="list_title_area">
+                        VICTON 1ST CONCERT [NEW WORLD]DVD 발매기념
+                    </div>
+                    <div class="list_date_area">
+                        2021.11.08
+                    </div>
+                    </li>
+                </ul>
+                <!--더보기 버튼 more_btn에 hidden Class  추가하면 버튼 안보임-->
+                <div class="btn_more_div">
+                <button class="more_btn">
+                    <span class="txt">더보기</span>
+                    <span class="btn_more_icon"></span>
+                </button>
+                </div>
+            </section>
+      
+        </main>
+        <!-- // 컨텐츠 -->
+
+    </div>
+    <!-- // wrapper -->
+
+</body>
+</html>

@@ -5,35 +5,21 @@
 @import "_ht_components.scss"; // button, form, tab, swiper, fixed content, folding, list, table, box등 ...
 @import "_ht_header.scss"; // todo : layout으로 추가 할 것
 
-@mixin box($w, $h, $m, $p){
-	width:$w;
-	height:$h;
-	margin:$m;
-	padding:$p;
-}
 @mixin flex($row, $wrap, $ju, $cont, $item){
 	display:flex;
 	flex-flow:$row $wrap;
 	justify-content: $ju;
 	align-content: $cont;
 	$align-items:$item;
-
-}
-@mixin position($po){
-	position:$po;
-
 }
 .contents_evt_wrap{
-  	@include box(100%, auto, 0, 0 20px);
-	font-family: "Noto Sans KR", sans-serif;
-
+  	padding:0 20px;
 }
 //이벤트 당첨자 발표 타이틀
  .evt_section_title{
-  	@include box(100%, auto, 12px 0 0 0, 0);
 	@include flex(row, nowrap, space-between, start, start);
-	letter-spacing: -0.2px;
-    & h2{
+	margin-top:12px;
+     h2{
 		font-size: 20px;
 		font-weight: 700;
 		line-height:32px;
@@ -42,39 +28,40 @@
  }
  .evt_ck_area{
 	 line-height:26px;
-	 &.pad6{
-		padding:6px 0;
-	 }
-	 & input[type="checkbox"]{
-		display: none;
-	 }
-	 & > label{
-		position:relative;
-	 }
-	 & label:before{
-		 content:"";
-		 @include box(22px, 22px, 0, 0);
+	 padding:6px 0;
+ }
+
+ //체크박스
+ .common_check{
+	display: none;
+ }
+ .common_ck_label{
+	position:relative;
+	&:before{
+		content:"";
+		 width:22px;
+		 height:22px;
 		 position:absolute;
 		 left:-28px;
-		 top:0;
+		 top:-2px;
 		 background:url(../images/ico/ico_checkborder.svg) no-repeat 0 0;
 		 background-size: 22px auto;
-	 }
-	 & input[type="checkbox"]:checked + label:before{
-		background-color: aqua;
-	 }
+	}
+ }
+ .common_check:checked + label:before{
+	background-color: aqua;
  }
  //이벤트 메뉴 영역
  .evt_winner_menu{
-	 @include box(100%, auto, 20px 0 0 0, 0);
-	 & .menuUl{
-		 @include box(auto, 25px, 0, 0);
+	margin-top:20px;
+	.menuUl{
+		 height:25px;
 		 @include flex(row, nowrap, flex-start, center, center);
 	     overflow-x: auto;
 		 -ms-overflow-style:none; /* IE and Edge */
 		 scrollbar-width:none; /* Firefox */
 		// li
-		& .menu_item{   
+		.menu_item{   
 			position:relative;
 			flex-shrink: 0;
 			margin-left:27px;
@@ -85,13 +72,14 @@
 			&:not(:first-of-type)::before{
 				content:"";
 				position:absolute;
-				@include box(3px, 3px, 0, 0);
+                width:3px;
+				height:3px;
 				left:-12px;			
 				top:50%;
 				margin-top:-1.5px;
 				background-color: #d5d5d5;			
 			}
-			& a{
+			a{
 				height:21px;
 				line-height:21px;
 				font-size: 15px;
@@ -99,41 +87,41 @@
 				color:#595959;
 			}
 		}
-		& .menu_item.active{
+		 .menu_item.active{
 			border-bottom:2px solid #da2128;
-			& a{
+			a{
 				color:#da2128;
 			}
 		}
 
 	 }
-	 & .menuUl::-webkit-scrollbar {
+	.menuUl::-webkit-scrollbar {
 		display:none /* Chrome , Safari , Opera */
 	}
  }
  //이벤트 목록 영역
  .evt_list_card_ul{
-	@include box(100%, auto, 20px 0 0 0, 0);
+    margin-top:20px;
 	border-top:1px solid #000;
 	// li
-	& .evt_list_item{                  
-		@include box(100%, auto, 0, 12px 4px);
+	.evt_list_item{                  
+		padding:12px 4px;
 		border-bottom:1px solid #eaeaea;
 		cursor:pointer;
 	}
-	& .list_badge_area, 
-	& .list_date_area{
-		@include box(100%, 17px, 0, 0);
+	.list_badge_area, 
+	.list_date_area{
+		height:17px;
 		line-height:17px;
 		font-size:12px;
 		color:#767676;
 	}
-	& .new_badge{
+	.new_badge{
       color:#da2128;
 	  font-weight:500;
 	  line-height:17px;
 	}
-	& .list_title_area{
+	.list_title_area{
 		margin-top:8px;
 		line-height:22px;
 		letter-spacing: -0.14px;
@@ -141,31 +129,34 @@
 		white-space: nowrap;
 	    text-overflow:ellipsis;
 	}
-	& .list_date_area{
+	.list_date_area{
 		margin-top:4px;
 	}
  }
  //더보기 버튼 영역
  .btn_more_div{
-	@include box(100%, auto, 24px 0 0 0, 0);
-	& .more_btn{
-		@include box(71px, 24px, 0 auto, 0 );
+	margin-top:24px;
+	.more_btn{
+		width:71px;
+		height:24px;
+		margin:0 auto;
 		@include flex(row, nowrap, space-between, center, center);
 		appearance: none;
 		cursor:pointer;
 	}
-	& .more_btn.hidden{
+	.more_btn.hidden{
 		display:none;
 	}
-	& .txt{
+	.txt{
 		line-height:24px;
 		font-size: 15px;
 		font-weight:500;
 		letter-spacing: -0.15px;
 		color:#767676;
 	}
-	& .btn_more_icon{
-		@include box(24px, 24px, 0, 0 );
+	.btn_more_icon{
+		width:24px;
+		height:24px;
 		background:url(../images/ico/ico_arrow_large.png) no-repeat 0 0;
 		background-size: 24px auto;
 	}
@@ -173,42 +164,44 @@
  /*================================= HTR-M-EVT-ETC-001 ===========================================*/
 //당첨자 결과 보기 영역
 .evt_content{
-  &>.evt_list_item{
+    .evt_list_item{
 	  padding:20px 4px;
   } 
-  & .list_badge_area{
+    .list_badge_area{
 	  line-height:18px;
   }
-  & .list_title_area{
+    .list_title_area{
 	  white-space: normal;
 	  font-weight: 700;;
   }
-  & .list_date_area{
-	line-height:19px;
-  }
+    .list_date_area{
+		line-height:19px;
+	}
 }
 .eve_content_bottom{
-	@include box(100%, auto, 0, 40px 4px 0 4px);
+	padding: 40px 4px 0 4px;
 	hr{
-		display:block;
+		display: block;
 		width:100%;
 		height:1px;
-		background-color: blue;
+		border:none;
+		border-top:1px dashed #000;
 	}
 }
 .btn_area{
-	@include box(100%, auto, 0, 24px 0 40px 0);
+	padding:24px 0 40px 0;
 	text-align: center;
 	&.underline{
 		border-bottom:1px solid #eaeaea;
 	}
-	& button{
+	button{
 		cursor:pointer;
 		border-radius: 6px;  
 		appearance: none;
 	}
 	.evt_confirm_btn{
-		@include box(165px, 44px, 0, 0);
+		width:165px;
+		height:44px;
 		letter-spacing: -0.14px;
 		color:#fff;
 	}
