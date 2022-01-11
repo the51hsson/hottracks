@@ -2,5 +2,120 @@
 @import "_variables.scss"; 
 @import "_mixins.scss";
 @import "_ht_reset.scss"; // eric meyer reset 2.0, _ht : 핫트랙스 접두어
+//모듈 7 영역
+.module_section_gray{
+   background-color: #f0f0f0;
+}
+.module7_wrap{
+	margin-top:11px;
+	padding:40px 0 40px 20px;
+	background-color: #fff;
+	overflow:hidden;
+	border:1px solid green;
+	&:first-of-type{
+		margin:0;
+	}
+	h3{
+		padding-right: 20px;
+		font-size: 18px;
+		line-height: 32px;
+		letter-spacing: -0.18px;
+	}
+}
+.module7_slider{
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	border:1px solid blue;
+	overflow-x: auto;
+	//슬라이더 개별 상품 카드
+	li{
+		width:140px;
+		margin-left:20px;
+		flex-shrink: 0;
+		cursor:pointer;
+		&:first-of-type{
+			margin:0;
+		}
+		img{
+			width:100%;
+		}
+	}
+	.product_info{
+		padding-top:12px;
+		&>span{
+			display: block;
+		}
+	} 			
+	.title{
+		font-size: 13px;
+		line-height: 19px;
+		letter-spacing: -0.13px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		}
+	.price_origin{
+		margin-top: 8px;
+		font-size: 12px;
+		line-height: 16px;
+		text-decoration: line-through;
+		color:#767676;
+	}  
+	.price_discount{
+		display:flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		font-size: 15px;
 
+	}
+	.discount_rate,
+	.fianl_price{
+		display: inline-block;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 23px;
+	}
+	.discount_rate{
+		color:#da2128;
+	}
+}
+//슬라이더 영역 등록 상품 2개인 경우
+.minimum_prod{
+	background-color: lightcoral;
+}
+//모듈 8 영역
+.evt_module8_ul{
+  background-color:#f0f0f0;
+  padding-bottom:89px;
+  li{
+    padding:40px 20px;
+    background-color: #fff;
+    margin-top:40px;
+    cursor: pointer;
+    &:first-of-type{
+      margin:0;
+    }
+    .title{
+      line-height:26px;
+      font-size: 16px;
+      font-weight:700;
+      letter-spacing: -0.16px;
+    }
+    .sub_title{
+      margin-top:4px;
+      font-size: 13px;
+      line-height: 19px;
+      letter-spacing: -0.13px;
+      color:#767676;
+    }
+    .content{
+      margin-top:14px;
+      line-height: 22px;
+      letter-spacing: -0.14px;
+    }
+  }
+}
 

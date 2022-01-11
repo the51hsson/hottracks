@@ -1184,35 +1184,29 @@
         .dialog_contents.evt_cotent{
             margin:0;
             padding:48px 0 32px 0;
-            & .evt_flower{
+            .evt_flower{
                 width:50px;
-                height:60px;
                 margin:0 auto;
-                background: url(../images/guide/evt_flower.svg) no-repeat center center;
-                background-size: cover;
             }
-            & .evt_gifticon{
+            .evt_gifticon{
                 width:96.5px;
-                height:90px;
                 margin:0 auto;
-                background: url(../images/guide/evt_gifticon.png) no-repeat center center;
-                background-size: cover;
             }
-            & .evt_drop{
+            .evt_drop{
                 width:52px;
-                height:65px;
                 margin:0 auto;
-                background: url(../images/guide/evt_drop.svg) no-repeat center center;
-                background-size: cover;
             }
-            & .sub_txt{
+            img{
+                width:100%;
+            }
+            .sub_txt{
                 width:100%;
                 margin-top:12px;
                 line-height:19px;
                 text-align: center;
                 color:#595959;
             }
-            & .main_msg{
+            .main_msg{
                 font-size: 20px;
                 font-weight:700;
                 line-height:32px;  
@@ -1515,7 +1509,7 @@ body.dialog_open {
                 }
             }
             .dialog_contents {
-                flex: 1 1 auto;
+                flex: 1;
                 position: relative;
                 overflow-y: auto;
                 overflow-x: hidden;

@@ -59,12 +59,9 @@
     
     <!-- // UI JavaScript -->
     <script>
-        $(function(){
+        $(function(){//todo 공통 처리 예정
            $('.contents_evt_wrap .menuUl .menu_item').on('click', function(){
-               var index = $(this).index();
-               $('.menuUl .menu_item').eq(index).addClass('active');
-               $('.menuUl .menu_item').not(':eq('+index+')').removeClass('active');
-  
+               $(this).addClass('active').siblings('li').removeClass('active');
            })
         });
     </script>
@@ -112,7 +109,7 @@
                </div>
                <!--이벤트 메뉴 영역-->
                <div class="evt_winner_menu">
-                   <ul class="menuUl">
+                   <ul class="menuUl"><!--todo 공통 처리 예정 -->
                        <li class="menu_item active">
                            <a>전체</a>
                         </li>
@@ -133,9 +130,9 @@
                 <!--이벤트 리스트 영역-->
                 <ul class="evt_list_card_ul">
                     <li class="evt_list_item">
-                        <div class="list_badge_area">
+                        <div class="category_area">
                             <span>라이브</span>
-                            <span class="new_badge">NEW</span>
+                            <span class="status_new">NEW</span>
                         </div>
                         <div class="list_title_area">
                             핫트랙스 LIVE X 단순 생활 이벤트 당첨자 발표
@@ -145,7 +142,7 @@
                         </div>
                     </li>
                     <li class="evt_list_item">
-                    <div class="list_badge_area">
+                    <div class="category_area">
                         <span>일반</span>
                     </div>
                     <div class="list_title_area">
@@ -156,7 +153,7 @@
                     </div>
                     </li>
                     <li class="evt_list_item">
-                    <div class="list_badge_area">
+                    <div class="category_area">
                         <span>음반/영상</span>
                     </div>
                     <div class="list_title_area">
@@ -167,7 +164,7 @@
                     </div>
                     </li>
                     <li class="evt_list_item">
-                    <div class="list_badge_area">
+                    <div class="category_area">
                         <span>컬처</span>
                     </div>
                     <div class="list_title_area">
@@ -178,7 +175,7 @@
                     </div>
                     </li>
                     <li class="evt_list_item">
-                    <div class="list_badge_area">
+                    <div class="category_area">
                         <span>음반/영상</span>
                     </div>
                     <div class="list_title_area">
