@@ -1,0 +1,8 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+    <g data-name="사각형 925" style="fill:#fff;stroke:#ccc">
+        <circle cx="11" cy="11" r="11" style="stroke:none"/>
+        <circle cx="11" cy="11" r="10.5" style="fill:none"/>
+    </g>
+    <path data-name="모양 699" d="M10 15a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414L10 12.585l4.293-4.293a1 1 0 0 1 1.414 1.414l-5 5A1 1 0 0 1 10 15z" style="fill:#ccc"/>
+</svg>

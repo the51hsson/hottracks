@@ -3273,6 +3273,73 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   text-align: center;
 }
 
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_header.evt_title_header {
+  padding-bottom: 18px;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_pop_cotent {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #595959;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+  text-align: center;
+  margin: 0;
+  padding: 32px 20px;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent {
+  margin: 0;
+  padding: 48px 0 32px 0;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_flower {
+  width: 50px;
+  height: 60px;
+  margin: 0 auto;
+  background: url(../images/guide/evt_flower.svg) no-repeat center center;
+  background-size: cover;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_gifticon {
+  width: 96.5px;
+  height: 90px;
+  margin: 0 auto;
+  background: url(../images/guide/evt_gifticon.svg) no-repeat center center;
+  background-size: cover;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_drop {
+  width: 52px;
+  height: 65px;
+  margin: 0 auto;
+  background: url(../images/guide/evt_drop.svg) no-repeat center center;
+  background-size: cover;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .sub_txt {
+  width: 100%;
+  margin-top: 12px;
+  line-height: 19px;
+  text-align: center;
+  color: #595959;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .main_msg {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.2px;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_footer.evt_pop_footer {
+  margin: 0;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_footer.evt_pop_footer > .secondary {
+  background-color: #d53020;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   .dialog_wrapper .ui-dialog.dialog_bottom.sns_share .dialog_wrap .dialog_contents .sns_share_list .list_item .btn_sns_share .ico_sns.kakao {
     background-image: url("../images/ico_kakao_mok@2x.png");
@@ -3618,8 +3685,8 @@ body.dialog_open {
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   position: relative;
   overflow-y: auto;
   overflow-x: hidden;
