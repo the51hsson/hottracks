@@ -19,7 +19,7 @@
  .evt_section_title{
 	@include flex(row, nowrap, space-between, start, start);
 	margin-top:12px;
-     h2{
+  h2{
 		font-size: 20px;
 		font-weight: 700;
 		line-height:32px;
