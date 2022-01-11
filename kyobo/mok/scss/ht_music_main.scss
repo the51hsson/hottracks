@@ -45,7 +45,7 @@
                     }
                 }
             }
-            .btn_more {
+            .btn_more_link {
                 position: absolute;
                 right: 20px;
                 display: block;
@@ -199,8 +199,38 @@
         // 예약 상품
         .reserved_product_wrap {
             margin-bottom: 40px;
-            & + .btn_more {
-                top:-64px;
+            position: relative;
+            .btn_more_link {
+                top:-87px;
+            }
+            .swiper-slide {
+                width: 70%;
+                .product_box {
+                    transform: scale(.8);
+                    transition: all .3s;
+                }
+                &.swiper-slide-active {
+                    .product_box {
+                        transform: scale(1);
+                        transition: all .3s;
+                    }
+                    
+                }
+            }
+            .product_box {
+                text-align: center;
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                .circle_txt {
+                    position: absolute;
+                    color:#E6D6CA;
+                    font-size: 44px;
+                    font-weight: 700;
+                    top:0;
+                    left: 60%;
+                }
             }
         }
 
@@ -672,8 +702,8 @@
             padding:0 20px;
             display: flex;
             justify-content: space-between;
-        flex-wrap: wrap;
-        .product_info {
+            flex-wrap: wrap;
+            .product_info {
                 font-size: 15px;
             }
         }
@@ -770,7 +800,7 @@
                 left: 0;
                 transform: translateX(0);
             }
-            .btn_more {
+            .btn_more_link {
                 top:-64px;
             }
         }

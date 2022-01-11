@@ -39,6 +39,7 @@ $(function(){
         observer: true,
         observeParents: true,
         slidesPerView: 'auto',
+        centeredSlides: true,
         loop: true,
         loopsSlide:1,
         pagination: {
