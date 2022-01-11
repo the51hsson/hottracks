@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:#fff;stroke:#292929;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}.cls-3{fill:#ffa3f4}
+        </style>
+    </defs>
+    <g id="_3" data-name="3" transform="translate(-945 -896.001)">
+        <g id="icon_best" transform="translate(950 899)">
+            <g id="그룹_109532" data-name="그룹 109532" transform="translate(-3.501 .47)">
+                <g id="그룹_109533" data-name="그룹 109533" transform="translate(0 -1)">
+                    <rect id="사각형_19693" data-name="사각형 19693" class="cls-2" width="6.503" height="5.313" rx="1" transform="translate(1.845 18.906)"/>
+                    <rect id="사각형_19695" data-name="사각형 19695" class="cls-3" width="6.503" height="5.313" rx="1" transform="translate(1.845 10.876)"/>
+                    <rect id="사각형_19697" data-name="사각형 19697" class="cls-3" width="6.503" height="5.313" rx="1" transform="translate(11.249 18.906)"/>
+                    <rect id="사각형_19699" data-name="사각형 19699" class="cls-2" width="6.503" height="5.313" rx="1" transform="translate(11.249 10.876)"/>
+                    <rect id="사각형_19701" data-name="사각형 19701" class="cls-2" width="6.503" height="5.313" rx="1" transform="translate(11.249 2.845)"/>
+                    <rect id="사각형_19703" data-name="사각형 19703" class="cls-2" width="6.502" height="5.313" rx="1" transform="translate(20.653 18.906)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
