@@ -25,6 +25,10 @@
 		line-height:32px;
 		letter-spacing: -0.2px;
 	}
+	&.title_line{
+		padding-bottom:20px;
+		border-bottom:1px solid #000;
+	}
  }
  .evt_ck_area{
 	 line-height:26px;
@@ -44,12 +48,13 @@
 		 position:absolute;
 		 left:-28px;
 		 top:-2px;
-		 background:url(../images/ico/ico_checkborder.svg) no-repeat 0 0;
+		 background:url(../images/guide/ico_checkborder.svg) no-repeat 0 0;
 		 background-size: 22px auto;
 	}
  }
  .common_check:checked + label:before{
-	background-color: aqua;
+	background:url(../images/guide/ico_checkborder_check.svg) no-repeat 0 0;
+	background-size: 22px auto;
  }
  //이벤트 메뉴 영역
  .evt_winner_menu{
@@ -102,22 +107,21 @@
  //이벤트 목록 영역
  .evt_list_card_ul{
     margin-top:20px;
-	border-top:1px solid #000;
+		border-top:1px solid #000;
 	// li
 	.evt_list_item{                  
 		padding:12px 4px;
 		border-bottom:1px solid #eaeaea;
 		cursor:pointer;
 	}
-	.list_badge_area, 
-	.list_date_area{
+	.category_area{
 		height:17px;
 		line-height:17px;
 		font-size:12px;
 		color:#767676;
 	}
-	.new_badge{
-      color:#da2128;
+	.status_new{
+    color:#da2128;
 	  font-weight:500;
 	  line-height:17px;
 	}
@@ -131,8 +135,11 @@
 	}
 	.list_date_area{
 		margin-top:4px;
+		font-size: 13px;
+		color:#767676;
 	}
  }
+
  //더보기 버튼 영역
  .btn_more_div{
 	margin-top:24px;
@@ -161,13 +168,32 @@
 		background-size: 24px auto;
 	}
  }
- /*================================= HTR-M-EVT-ETC-001 ===========================================*/
-//당첨자 결과 보기 영역
-.evt_content{
-    .evt_list_item{
+ /*================================= HTR-M-EVT-VIEW-000 ===========================================*/
+ //당첨 결과 보기 타이틀
+ .evt_description_title{
+	padding:20px 4px;
+	border-bottom:1px solid #eaeaea;
+	.category_area{
+		height:17px;
+		line-height:17px;
+		font-size:13px;
+		color:#767676;
+	}
+	.list_title_area{
+		margin-top:8px;
+		font-weight:700;
+		line-height:22px;
+		letter-spacing: -0.14px;
+	}
+	.list_date_area{
+		margin-top:4px;
+		font-size: 13px;
+		color:#767676;
+	}
+}
+.evt_description_content{
 	  padding:20px 4px;
-  } 
-    .list_badge_area{
+    .category_area{
 	  line-height:18px;
   }
     .list_title_area{
@@ -176,10 +202,7 @@
   }
     .list_date_area{
 		line-height:19px;
-	}
-}
-.eve_content_bottom{
-	padding: 40px 4px 0 4px;
+ }
 	hr{
 		display: block;
 		width:100%;
@@ -188,12 +211,27 @@
 		border-top:1px dashed #000;
 	}
 }
-.btn_area{
+
+.evt_content{
+  .evt_list_item{
+	  padding:20px 4px;
+  } 
+  .category_area{
+	  line-height:18px;
+  }
+  .list_title_area{
+	  white-space: normal;
+	  font-weight: 700;;
+  }
+  .list_date_area{
+		line-height:19px;
+	}
+}
+.btn_area, 
+.tolist_btn_area{
 	padding:24px 0 40px 0;
 	text-align: center;
-	&.underline{
-		border-bottom:1px solid #eaeaea;
-	}
+	border-top:1px solid #eaeaea;
 	button{
 		cursor:pointer;
 		border-radius: 6px;  
@@ -216,4 +254,6 @@
 		
 	}
 }
-
+.btn_area{
+	border:none;
+}

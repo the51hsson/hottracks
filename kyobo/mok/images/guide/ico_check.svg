@@ -1,0 +1,28 @@
+
+<svg id="checkbox_off" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #ccc;
+      }
+
+      .cls-2 {
+        fill: #ccc;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="사각형_925" data-name="사각형 925" class="cls-1">
+    <circle class="cls-3" cx="11" cy="11" r="11"/>
+    <circle class="cls-4" cx="11" cy="11" r="10.5"/>
+  </g>
+  <path id="모양_699" data-name="모양 699" class="cls-2" d="M10,15h0a1,1,0,0,1-.707-.293l-3-3a1,1,0,0,1,1.414-1.414L10,12.585l4.293-4.293a1,1,0,0,1,1.414,1.414l-5,5A1,1,0,0,1,10,15Z"/>
+</svg>

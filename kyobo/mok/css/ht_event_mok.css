@@ -3285,26 +3285,21 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_flower {
   width: 50px;
-  height: 60px;
   margin: 0 auto;
-  background: url(../images/guide/evt_flower.svg) no-repeat center center;
-  background-size: cover;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_gifticon {
   width: 96.5px;
-  height: 90px;
   margin: 0 auto;
-  background: url(../images/guide/evt_gifticon.png) no-repeat center center;
-  background-size: cover;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_drop {
   width: 52px;
-  height: 65px;
   margin: 0 auto;
-  background: url(../images/guide/evt_drop.svg) no-repeat center center;
-  background-size: cover;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent img {
+  width: 100%;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .sub_txt {
@@ -3676,8 +3671,8 @@ body.dialog_open {
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+      -ms-flex: 1;
+          flex: 1;
   position: relative;
   overflow-y: auto;
   overflow-x: hidden;
@@ -7523,6 +7518,11 @@ body.dialog_open {
   letter-spacing: -0.2px;
 }
 
+.evt_section_title.title_line {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
 .evt_ck_area {
   line-height: 26px;
   padding: 6px 0;
@@ -7543,12 +7543,13 @@ body.dialog_open {
   position: absolute;
   left: -28px;
   top: -2px;
-  background: url(../images/ico/ico_checkborder.svg) no-repeat 0 0;
+  background: url(../images/guide/ico_checkborder.svg) no-repeat 0 0;
   background-size: 22px auto;
 }
 
 .common_check:checked + label:before {
-  background-color: aqua;
+  background: url(../images/guide/ico_checkborder_check.svg) no-repeat 0 0;
+  background-size: 22px auto;
 }
 
 .evt_winner_menu {
@@ -7630,15 +7631,14 @@ body.dialog_open {
   cursor: pointer;
 }
 
-.evt_list_card_ul .list_badge_area,
-.evt_list_card_ul .list_date_area {
+.evt_list_card_ul .category_area {
   height: 17px;
   line-height: 17px;
   font-size: 12px;
   color: #767676;
 }
 
-.evt_list_card_ul .new_badge {
+.evt_list_card_ul .status_new {
   color: #da2128;
   font-weight: 500;
   line-height: 17px;
@@ -7655,6 +7655,8 @@ body.dialog_open {
 
 .evt_list_card_ul .list_date_area {
   margin-top: 4px;
+  font-size: 13px;
+  color: #767676;
 }
 
 .btn_more_div {
@@ -7702,12 +7704,62 @@ body.dialog_open {
   background-size: 24px auto;
 }
 
-/*================================= HTR-M-EVT-ETC-001 ===========================================*/
+/*================================= HTR-M-EVT-VIEW-000 ===========================================*/
+.evt_description_title {
+  padding: 20px 4px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.evt_description_title .category_area {
+  height: 17px;
+  line-height: 17px;
+  font-size: 13px;
+  color: #767676;
+}
+
+.evt_description_title .list_title_area {
+  margin-top: 8px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+}
+
+.evt_description_title .list_date_area {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #767676;
+}
+
+.evt_description_content {
+  padding: 20px 4px;
+}
+
+.evt_description_content .category_area {
+  line-height: 18px;
+}
+
+.evt_description_content .list_title_area {
+  white-space: normal;
+  font-weight: 700;
+}
+
+.evt_description_content .list_date_area {
+  line-height: 19px;
+}
+
+.evt_description_content hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: none;
+  border-top: 1px dashed #000;
+}
+
 .evt_content .evt_list_item {
   padding: 20px 4px;
 }
 
-.evt_content .list_badge_area {
+.evt_content .category_area {
   line-height: 18px;
 }
 
@@ -7720,28 +7772,15 @@ body.dialog_open {
   line-height: 19px;
 }
 
-.eve_content_bottom {
-  padding: 40px 4px 0 4px;
-}
-
-.eve_content_bottom hr {
-  display: block;
-  width: 100%;
-  height: 1px;
-  border: none;
-  border-top: 1px dashed #000;
-}
-
-.btn_area {
+.btn_area,
+.tolist_btn_area {
   padding: 24px 0 40px 0;
   text-align: center;
+  border-top: 1px solid #eaeaea;
 }
 
-.btn_area.underline {
-  border-bottom: 1px solid #eaeaea;
-}
-
-.btn_area button {
+.btn_area button,
+.tolist_btn_area button {
   cursor: pointer;
   border-radius: 6px;
   -webkit-appearance: none;
@@ -7749,14 +7788,16 @@ body.dialog_open {
           appearance: none;
 }
 
-.btn_area .evt_confirm_btn {
+.btn_area .evt_confirm_btn,
+.tolist_btn_area .evt_confirm_btn {
   width: 165px;
   height: 44px;
   letter-spacing: -0.14px;
   color: #fff;
 }
 
-.btn_area .evt_list_btn {
+.btn_area .evt_list_btn,
+.tolist_btn_area .evt_list_btn {
   width: 100%;
   line-height: 48px;
   font-size: 15px;
@@ -7764,4 +7805,8 @@ body.dialog_open {
   color: #000;
   letter-spacing: -0.15px;
   border: 1px solid #ccc;
+}
+
+.btn_area {
+  border: none;
 }

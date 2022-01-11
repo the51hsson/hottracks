@@ -3294,26 +3294,21 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_flower {
   width: 50px;
-  height: 60px;
   margin: 0 auto;
-  background: url(../images/guide/evt_flower.svg) no-repeat center center;
-  background-size: cover;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_gifticon {
   width: 96.5px;
-  height: 90px;
   margin: 0 auto;
-  background: url(../images/guide/evt_gifticon.png) no-repeat center center;
-  background-size: cover;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_drop {
   width: 52px;
-  height: 65px;
   margin: 0 auto;
-  background: url(../images/guide/evt_drop.svg) no-repeat center center;
-  background-size: cover;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent img {
+  width: 100%;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .sub_txt {
@@ -3685,8 +3680,8 @@ body.dialog_open {
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+      -ms-flex: 1;
+          flex: 1;
   position: relative;
   overflow-y: auto;
   overflow-x: hidden;
