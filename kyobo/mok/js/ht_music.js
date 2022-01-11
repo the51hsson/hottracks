@@ -1,5 +1,39 @@
 $(function(){
 
+    // hero 배너 스와이프
+    var heroSwiper = new CustomSwiper('.here_banner_wrap .swiper-container', {
+		slidesPerView: 'auto',
+		speed: 500,
+		spaceBetween: 10,
+		centeredSlides: true,
+        loop: true,
+        loopsSlide:1,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+		pagination: {
+			el: $('.here_banner_wrap').find('.swiper-pagination')[0],
+			type: 'fraction',
+			formatFractionCurrent: function (number) {
+				return KyoboHottracks.mok.setPrependZero(number, 2);
+			},
+			formatFractionTotal: function (number) {
+				return KyoboHottracks.mok.setPrependZero(number, 2);
+			},
+		}
+	});
+    $('.play_pause_box').click(function(){
+        if ( $(this).hasClass('play') ) {
+            heroSwiper.autoplay.stop();
+            $(this).removeClass('play').addClass('pause');
+        } else {
+            heroSwiper.autoplay.start();
+            $(this).removeClass('pause').addClass('play');
+        }
+    });
+
+
     // 예약 상품 스와이프
     var reservedSwiper = new CustomSwiper('.reserved_product_wrap .swiper-container', {
         observer: true,
@@ -20,6 +54,7 @@ $(function(){
             }
         }
     });
+
     // 구매 상품 스와이프
     var purchaseSwiper = new CustomSwiper('.purchase_history_wrap .swiper-container', {
         observer: true,
@@ -42,6 +77,7 @@ $(function(){
             }
         }
     });
+
     // 시시간 차트 rolling
 
     // 새로나온 음반 스와이프

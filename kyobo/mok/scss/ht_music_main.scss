@@ -45,14 +45,31 @@
                     }
                 }
             }
+            .btn_more {
+                position: absolute;
+                right: 20px;
+                display: block;
+                width: 16px;
+                height: 16px;
+                background: url(../images/guide/ico_plus_more.svg) no-repeat 0 0 / cover;
+            }
         }
         // 히어로 배너 
         .here_banner_wrap {
             margin:0 20px 24px;
-            padding:20px;
-            background-color: #fa607b;
-            border-radius: 4px;
-            color:#fff;
+            .here_banner_box {
+                display: flex;
+                flex-direction: column;
+                height: 292px;
+                padding:20px;
+                background-color: #fa607b;
+                border-radius: 4px;
+                color:#fff;
+                img {
+                    width: 130px;
+                    margin-top: auto;
+                }
+            }
             .album_tit {
                 font-size: 20px;
                 font-weight: 700;
@@ -63,15 +80,128 @@
                 opacity: .8;
                 margin-top: 5px;
             }
+            .option_box {
+                position: absolute;
+                right:20px;
+                bottom:20px;
+                z-index: 1;
+                display: flex;
+                .btn_all {
+                    position: absolute;
+                    right: 0;
+                    top:0;
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    background: url(../images/guide/ico_plus_w.svg) no-repeat 50% / 9px;
+                    z-index: 10;
+                }
+
+            }
+            .swiper-pagination.swiper-pagination-fraction {
+                position: static;
+                height: 25px;
+                transform: translateX(0);
+                background-color: rgba(0, 0, 0, 0.3);
+                padding-right: 25px;
+                .swiper-pagination-current,
+                .swiper-pagination-total {
+                    line-height: 25px;
+                }
+            }
+            .play_pause_box {
+                margin-right: 4px;
+                [class^=btn_] {
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                }
+                .btn_play {
+                    background:rgba(0,0,0,.3) url(../images/guide/ico_play.svg) no-repeat 50% / 7px;
+                }
+                .btn_pause {
+                    background:rgba(0,0,0,.3) url(../images/guide/ico_pause.svg) no-repeat 50% / 5px;
+                }
+                &.play {
+                    .btn_play {
+                        display: none;
+                    }
+                    .btn_pause {
+                        display: block;
+                    }
+                }
+                &.pause {
+                    .btn_play {
+                        display: block;
+                    }
+                    .btn_pause {
+                        display: none;
+                    }
+                }
+            }
         }
         
         // 퀵메뉴
         .music_quick_menu {
-
+            margin-bottom: 60px;
+            padding:0 60px;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30%;
+                    margin-top:24px;
+                    &:nth-child(-n + 3) {
+                        margin-top: 0;
+                    }
+                    .ico {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 56px;
+                        height: 56px;
+                        background-color: #f7f7f7;
+                        border-radius: 50%;
+                        img {
+                            display: block;
+                            min-width: 32px;
+                        }
+                    }
+                    .txt {
+                        font-size: 13px;
+                        color:#000;
+                        letter-spacing: -0.01em;
+                        margin-top: 4px;
+                        &.marker {
+                            position: relative;
+                            &::after {
+                                content: '';
+                                display: block;
+                                width: 4px;
+                                height: 4px;
+                                border-radius: 50%;
+                                background-color: #da2128;
+                                position: absolute;
+                                right: -7px;
+                                top: 0;
+                            }
+                        }
+                    }
+                }
+            }
         }
         // 예약 상품
         .reserved_product_wrap {
             margin-bottom: 40px;
+            & + .btn_more {
+                top:-64px;
+            }
         }
 
         //예약 상품 구매내역
@@ -641,13 +771,7 @@
                 transform: translateX(0);
             }
             .btn_more {
-                position: absolute;
-                right: 20px;
                 top:-64px;
-                display: block;
-                width: 16px;
-                height: 16px;
-                background: url(../images/guide/ico_plus_more.svg) no-repeat 0 0 / cover;
             }
         }
         // 특별한 할인상품

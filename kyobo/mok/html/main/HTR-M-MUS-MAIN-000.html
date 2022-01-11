@@ -235,27 +235,27 @@
 											QUENENCOM [미니 6집]
 										</p>
 										<p class="album_info">긍정 에너지 타이틀 곡 'Queendom'</p>
-										<img src="../../images/guide/@here_music_01.png" alt="레드벨벳 엘범">
+										<img src="../../images/guide/@here_music_01.png" alt="레드벨벳 엘범" class="bd_img">
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="here_banner_box">
-										<p class="m_tit">
+										<p class="album_tit">
 											RED VELVET(레드벨벳) <br>
 											QUENENCOM [미니 6집]
 										</p>
-										<p class="s_tit">긍정 에너지 타이틀 곡 'Queendom'</p>
-										<img src="../../images/guide/@here_music_01.png" alt="레드벨벳 엘범">
+										<p class="album_info">긍정 에너지 타이틀 곡 'Queendom'</p>
+										<img src="../../images/guide/@here_music_01.png" alt="레드벨벳 엘범" class="bd_img">
 									</div>
 								</div>
 							</div>
 							<div class="option_box">
-								<div class="play_pause_box">
-									<button>play</button>
-									<button>stop</button>
+								<div class="play_pause_box play">
+									<button class="btn_play"><span class="hidden">play</span></button>
+									<button class="btn_pause"><span class="hidden">pause</span></button>
 								</div>
 								<div class="swiper-pagination"></div>
-								<a href="#a">전체보기</a>
+								<a href="#a" class="btn_all"><span class="hidden">전체보기</span></a>
 							</div>
 						</div>
 					</div>
@@ -264,29 +264,30 @@
 					<!-- 퀵메뉴 -->
 					<div class="music_quick_menu">
 						<ul>
+							<!-- todo : ico내 img는 background로 수정 될 여지 있음 -->
 							<li>
-								<img src="" alt="">
-								<span>CD/LP</span>
+								<span class="ico"><img src="../../images/guide/music_quick_ico_01.svg" alt=""></span>
+								<span class="txt">CD/LP</span>
 							</li>
 							<li>
-								<img src="" alt="">
-								<span>베스트</span>
+								<span class="ico"><img src="../../images/guide/music_quick_ico_02.svg" alt=""></span>
+								<span class="txt">베스트</span>
 							</li>
 							<li>
-								<img src="" alt="">
-								<span>신상품</span>
+								<span class="ico"><img src="../../images/guide/music_quick_ico_03.svg" alt=""></span>
+								<span class="txt">신상품</span>
 							</li>
 							<li>
-								<img src="" alt="">
-								<span>팬사인회</span>
+								<span class="ico"><img src="../../images/guide/music_quick_ico_04.svg" alt=""></span>
+								<span class="txt marker">팬사인회</span><!-- marker -->
 							</li>
 							<li>
-								<img src="" alt="">
-								<span>상세 검색</span>
+								<span class="ico"><img src="../../images/guide/music_quick_ico_05.svg" alt=""></span>
+								<span class="txt">상세 검색</span>
 							</li>
 							<li>
-								<img src="" alt="">
-								<span>AUDIOPHILE</span>
+								<span class="ico"><img src="../../images/guide/music_quick_ico_06.svg" alt=""></span>
+								<span class="txt">AUDIOPHILE</span>
 							</li>
 						</ul>
 					</div>
@@ -294,7 +295,7 @@
 
 					<!-- 예약상품 -->
 					<h2 class="tit">예약상품</h2>
-					<div class="scroll_box type_no1 scroll_hide"><!-- todo : type_no1 타입이 미정이라 임의로 클래스 생성함 -->
+					<div class="scroll_tab scroll_box type_no1 scroll_hide"><!-- todo : type_no1 타입이 미정이라 임의로 클래스 생성함 -->
 						<a href="#a" class="active"><span>가요</span></a>
 						<a href="#a"><span>팝</span></a>
 						<a href="#a"><span>클래식</span></a>
@@ -338,6 +339,7 @@
 							<div class="swiper-pagination"></div>
 						</div>
 					</div>
+					<a href="#a" class="btn_more"><span class="hidden">더보기</span></a>
 
 					<!-- 구매내역 -->
 					<div class="purchase_history_wrap">
