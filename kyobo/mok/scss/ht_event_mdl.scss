@@ -2,16 +2,77 @@
 @import "_variables.scss"; 
 @import "_mixins.scss";
 @import "_ht_reset.scss"; // eric meyer reset 2.0, _ht : 핫트랙스 접두어
-//모듈 7 영역
-.module_section_gray{
-   background-color: #f0f0f0;
+
+.module_section_bg{
+  background-color: #f0f0f0;
 }
+.module{
+  padding:40px 20px;
+}
+
+//모듈 6 영역
+.module6_wrap{
+  h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height:28px;
+  }
+}
+.module6_item{
+	width:100%;
+	margin-top:20px;
+  cursor:pointer;
+	.product_pic img{
+		width:100%;
+	}
+	.title{
+		margin-top:12px;
+		width:100%;
+		font-size: 13px;
+		line-height: 19px;
+		letter-spacing: -0.13px;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		 white-space: normal;
+	}
+	.price_area{
+		margin-top:8px;
+		display:flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;
+		font-size: 15px;
+	}
+	.discount_rate,
+	.fianl_price{
+		margin-left:4px;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 23px;
+	}
+	.discount_rate{
+		color:#da2128;
+		margin:0;
+	}
+	.price_origin{
+		margin-left:4px;
+		font-size: 12px;
+		line-height: 23px;
+		text-decoration: line-through;
+		color:#767676;
+	}  
+}
+//모듈 7 영역
 .module7_wrap{
 	margin-top:11px;
 	padding:40px 0 40px 20px;
 	background-color: #fff;
 	overflow:hidden;
-	border:1px solid green;
 	&:first-of-type{
 		margin:0;
 	}
@@ -26,7 +87,6 @@
 	display:flex;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
-	border:1px solid blue;
 	overflow-x: auto;
 	//슬라이더 개별 상품 카드
 	li{
@@ -40,14 +100,12 @@
 		img{
 			width:100%;
 		}
-	}
-	.product_info{
-		padding-top:12px;
-		&>span{
+		span{
 			display: block;
 		}
 	} 			
 	.title{
+		margin-top:12px;
 		font-size: 13px;
 		line-height: 19px;
 		letter-spacing: -0.13px;
@@ -83,8 +141,10 @@
 	}
 }
 //슬라이더 영역 등록 상품 2개인 경우
-.minimum_prod{
-	background-color: lightcoral;
+.module7_wrap.minimum_prod{
+	.module7_slider li{
+		width:158px;
+	}
 }
 //모듈 8 영역
 .evt_module8_ul{
@@ -99,10 +159,14 @@
       margin:0;
     }
     .title{
-      line-height:26px;
-      font-size: 16px;
-      font-weight:700;
-      letter-spacing: -0.16px;
+			font-size: 13px;
+			line-height: 19px;
+			letter-spacing: -0.13px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
     }
     .sub_title{
       margin-top:4px;
@@ -118,4 +182,15 @@
     }
   }
 }
-
+//모듈 14 영역
+.module14_comment_write{
+  border:1px solid red;
+  h3{
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.16px;
+  }
+  .comment{
+    width:100%;
+  }
+}
