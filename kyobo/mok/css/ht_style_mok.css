@@ -6120,8 +6120,6 @@ body.dialog_open {
   padding: 0;
   width: 100%;
   overflow-x: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .scroll_tab.type_no2 {

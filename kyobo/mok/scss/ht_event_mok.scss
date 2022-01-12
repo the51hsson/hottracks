@@ -18,7 +18,7 @@
 //이벤트 당첨자 발표 타이틀
  .evt_section_title{
 	@include flex(row, nowrap, space-between, start, start);
-	margin-top:12px;
+	margin:12px 0 20px;
   h2{
 		font-size: 20px;
 		font-weight: 700;
@@ -56,54 +56,7 @@
 	background:url(../images/guide/ico_checkborder_check.svg) no-repeat 0 0;
 	background-size: 22px auto;
  }
- //이벤트 메뉴 영역
- .evt_winner_menu{
-	margin-top:20px;
-	.menuUl{
-		 height:25px;
-		 @include flex(row, nowrap, flex-start, center, center);
-	     overflow-x: auto;
-		 -ms-overflow-style:none; /* IE and Edge */
-		 scrollbar-width:none; /* Firefox */
-		// li
-		.menu_item{   
-			position:relative;
-			flex-shrink: 0;
-			margin-left:27px;
-			cursor:pointer;
-			&:first-of-type{
-				margin:0;
-			}
-			&:not(:first-of-type)::before{
-				content:"";
-				position:absolute;
-                width:3px;
-				height:3px;
-				left:-12px;			
-				top:50%;
-				margin-top:-1.5px;
-				background-color: #d5d5d5;			
-			}
-			a{
-				height:21px;
-				line-height:21px;
-				font-size: 15px;
-				letter-spacing: -0.15px;
-				color:#595959;
-			}
-		}
-		 .menu_item.active{
-			border-bottom:2px solid #da2128;
-			a{
-				color:#da2128;
-			}
-		}
-
-	 }
-	.menuUl::-webkit-scrollbar {
-		display:none /* Chrome , Safari , Opera */
-	}
- }
+ 
  //이벤트 목록 영역
  .evt_list_card_ul{
     margin-top:20px;
