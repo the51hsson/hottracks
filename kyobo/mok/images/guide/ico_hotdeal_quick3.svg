@@ -1,0 +1,68 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1, .cls-5, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #49f8e4;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5, .cls-8 {
+        stroke: #161615;
+        stroke-width: 1.5px;
+      }
+
+      .cls-5 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-6 {
+        fill: #61dec2;
+      }
+
+      .cls-7 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-8 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_3447" data-name="사각형 3447" class="cls-1" width="24.451" height="23.06" transform="translate(0 0)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_3448" data-name="사각형 3448" class="cls-2" width="24.451" height="23.06" transform="translate(0 0)"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_2721" data-name="그룹 2721" transform="translate(-981 -896.001)">
+    <rect id="사각형_3818" data-name="사각형 3818" class="cls-3" width="32" height="32" transform="translate(981 896.001)"/>
+    <g id="icon_promotion" transform="translate(985 900.001)">
+      <g id="그룹_1824" data-name="그룹 1824">
+        <g id="그룹_1823" data-name="그룹 1823" class="cls-4">
+          <rect id="사각형_3446" data-name="사각형 3446" class="cls-5" width="5.224" height="8.459" transform="translate(0.75 7.004)"/>
+        </g>
+      </g>
+      <path id="패스_36316" data-name="패스 36316" class="cls-6" d="M23.7,1.045V21.552L5.974,16.009V7.031Z"/>
+      <g id="그룹_1826" data-name="그룹 1826">
+        <g id="그룹_1825" data-name="그룹 1825" class="cls-7">
+          <path id="패스_36317" data-name="패스 36317" class="cls-8" d="M23.7,1.045V21.552L5.974,16.009V7.031Z"/>
+          <path id="패스_36318" data-name="패스 36318" class="cls-5" d="M11.675,18.5v1.458s.117,2.608-2.993,2.328a2.72,2.72,0,0,1-2.707-2.743v-2.71"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
