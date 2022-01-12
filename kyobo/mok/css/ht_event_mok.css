@@ -1679,6 +1679,12 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   font-weight: 400;
 }
 
+.badge_xs {
+  display: block;
+  font-weight: normal;
+  padding: 0 5px;
+}
+
 /* 태그 */
 .tag_wrap {
   margin: -3px;
@@ -6161,6 +6167,57 @@ body.dialog_open {
   background-color: #da2128;
 }
 
+.sort_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+}
+
+.sort_tab a {
+  position: relative;
+  padding: 0 9px;
+  color: #595959;
+}
+
+.sort_tab a:last-of-type {
+  padding-right: 0;
+}
+
+.sort_tab a::after {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #d5d5d5;
+  border-radius: 50%;
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  -webkit-transform: translateY(calc(-50% + (-3px)));
+          transform: translateY(calc(-50% + (-3px)));
+}
+
+.sort_tab .active {
+  font-weight: bold;
+  color: #000;
+}
+
+.sort_tab .active span:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
 .ht_ {
   /* header common */
   /* footer btn common */
@@ -7489,6 +7546,420 @@ body.dialog_open {
     @include mixins.transform(translateY(calc(env(safe-area-inset-bottom)))); *!*/
 }
 
+/*=========================== 이벤트 리스트 =============================*/
+.evt_list_area {
+  padding-top: 12px;
+}
+
+.evt_list_area h2 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  padding: 0 20px;
+}
+
+.evt_list_area .evt_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.evt_list_area .evt_menu .left_txt_sum {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  line-height: 20px;
+  letter-spacing: -0.14px;
+  color: #292929;
+}
+
+.list_evt_area {
+  padding-top: 20px;
+}
+
+.list_evt_area .evt_item {
+  margin-top: 24px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.list_evt_area .evt_item:first-of-type {
+  margin: 0;
+}
+
+.list_evt_area .evt_item:nth-of-type(11) {
+  margin-top: 40px;
+}
+
+.list_evt_area img {
+  width: 100%;
+}
+
+.list_evt_area .txt_account {
+  padding-top: 12px;
+}
+
+.list_evt_area .txt_account .txt_heading,
+.list_evt_area .txt_account .txt_sub {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.list_evt_area .txt_account .txt_heading {
+  line-height: 26px;
+  font-size: 16px;
+  letter-spacing: -0.16px;
+}
+
+.list_evt_area .txt_account .txt_sub {
+  margin-top: 4px;
+  line-height: 19px;
+  font-size: 13px;
+  letter-spacing: -0.13px;
+}
+
+.list_evt_area .txt_account .txt_period {
+  margin-top: 6px;
+  line-height: 19px;
+  font-size: 13px;
+  letter-spacing: -0.13px;
+  color: #595959;
+}
+
+.evt_quick_menu_area {
+  padding: 0 60px;
+  margin-top: 40px;
+}
+
+.evt_quick_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.evt_quick_menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 56px;
+  padding: 0 4px;
+  cursor: pointer;
+}
+
+.evt_quick_menu li span {
+  display: block;
+}
+
+.evt_quick_menu .ico {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.evt_quick_menu .quick_type1 {
+  background: url(../images/guide/ico_hotdeal_quick1.svg) no-repeat center center;
+  background-size: 50%;
+  background-color: #f7f7f7;
+}
+
+.evt_quick_menu .quick_type2 {
+  background: url(../images/guide/ico_hotdeal_quick2.svg) no-repeat center center;
+  background-size: 50%;
+  background-color: #f7f7f7;
+}
+
+.evt_quick_menu .quick_type3 {
+  background: url(../images/guide/ico_hotdeal_quick3.svg) no-repeat center center;
+  background-size: 50%;
+  background-color: #f7f7f7;
+}
+
+.evt_quick_menu .txt {
+  margin-top: 8px;
+  height: 19px;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: -0.13px;
+  white-space: nowrap;
+}
+
+.evt_slider_wrap {
+  padding: 40px 0 40px 20px;
+  overflow: hidden;
+}
+
+.evt_slider_wrap h2 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  line-height: 29px;
+  padding-right: 20px;
+}
+
+.evt_slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.evt_slider li {
+  width: 244px;
+  cursor: pointer;
+  margin-left: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.evt_slider li:first-of-type {
+  margin: 0;
+}
+
+.evt_slider li span {
+  display: block;
+}
+
+.evt_slider li img {
+  width: 100%;
+}
+
+.evt_slider .title {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.16px;
+}
+
+.evt_slider .sub {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: -0.13px;
+}
+
+.evt_slider_wrap.deadline_section {
+  overflow: visible;
+  position: relative;
+  background-color: #fff4f1;
+  margin-top: 60px;
+}
+
+.evt_slider_wrap.deadline_section h2 {
+  padding: 0;
+}
+
+.evt_slider_wrap.deadline_section .deadline_bubble {
+  width: auto;
+  max-width: 85%;
+  position: absolute;
+  z-index: 10;
+  border-radius: 30px;
+  background-color: #ffc7b7;
+  padding: 8px 16px;
+  top: 0;
+  right: 95px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.evt_slider_wrap.deadline_section .deadline_bubble:before {
+  content: "";
+  position: absolute;
+  border-top: 9px solid transparent;
+  border-left: 0 solid transparent;
+  border-right: 9px solid #ffc7b7;
+  border-bottom: 9px solid transparent;
+  -webkit-transform: rotate(110deg);
+          transform: rotate(110deg);
+  z-index: -1;
+  bottom: 0;
+  right: 2px;
+}
+
+.evt_slider_wrap.deadline_section .deadline_bubble .txt {
+  width: 100%;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.12px;
+}
+
+.evt_slider_wrap.deadline_section .deadline_character {
+  position: absolute;
+  width: 70px;
+  height: 80px;
+  right: 24px;
+  top: 10px;
+  z-index: 10;
+}
+
+.evt_slider_wrap.deadline_section .deadline_character img {
+  width: 100%;
+}
+
+.hot_deal_wrap {
+  padding-top: 8px;
+  background-color: #f7f7f7;
+}
+
+.hot_deal_area {
+  padding: 40px 0 40px 20px;
+  background-color: #fff;
+}
+
+.hot_deal_area .title_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
+}
+
+.hot_deal_area h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.hot_deal_area .countdown .time {
+  position: relative;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #da2128;
+}
+
+.hot_deal_area .countdown .time:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -26px;
+  top: 50%;
+  margin-top: -9px;
+  background: url(../images/guide/ico_clock.svg) no-repeat 0 0;
+  background-size: cover;
+}
+
+.hotdeal_slider {
+  overflow-x: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hotdeal_item {
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 12px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  cursor: pointer;
+}
+
+.hotdeal_item:first-of-type {
+  margin-left: 0;
+}
+
+.hotdeal_item .product_pic img {
+  width: 100%;
+}
+
+.hotdeal_item .title {
+  margin-top: 12px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: -0.13px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.hotdeal_item .price_area {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 15px;
+}
+
+.hotdeal_item .discount_rate,
+.hotdeal_item .fianl_price {
+  margin-left: 4px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.hotdeal_item .discount_rate {
+  color: #da2128;
+  margin: 0;
+}
+
+.hotdeal_item .badge_line {
+  margin-top: 8px;
+}
+
+/*========================= 이벤트 리스트 종료 ===========================*/
 .contents_evt_wrap {
   padding: 0 20px;
 }
