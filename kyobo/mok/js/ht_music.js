@@ -23,6 +23,7 @@ $(function(){
 			},
 		}
 	});
+
     $('.play_pause_box').click(function(){
         if ( $(this).hasClass('play') ) {
             heroSwiper.autoplay.stop();
@@ -52,6 +53,10 @@ $(function(){
                 for (var i = 0; i < circles.length; i++) {
                     var circleType = new CircleType(circles.item(i));
                 }
+                $('.swiper-slide-active').removeClass('zoom_out').addClass('zoom_in');
+            },
+            slideChange: function() {
+                $('.swiper-slide-active').removeClass('zoom_in');
             }
         }
     });
@@ -181,5 +186,10 @@ $(function(){
         $('.sale_list_wrap .swiper-wrapper').css('display','block');
         $('.sale_list_wrap .swiper-slide li').removeClass('product_list__group').addClass('product_list__div');
     }
+
+    // 찜하기 : todo 공통으로 정리 할 것
+    $('.img_box .btn_like').on('click',function(){
+        $(this).toggleClass('active');
+    });
 
 });

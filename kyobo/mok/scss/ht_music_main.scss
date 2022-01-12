@@ -203,18 +203,30 @@
             .btn_more_link {
                 top:-87px;
             }
+            .swiper-container {
+                overflow: visible;
+            }
             .swiper-slide {
                 width: 70%;
                 .product_box {
                     transform: scale(.8);
-                    transition: all .3s;
                 }
                 &.swiper-slide-active {
-                    .product_box {
-                        transform: scale(1);
-                        transition: all .3s;
+                    z-index: 10;
+                    &.zoom_in {
+                        .product_box {
+                            animation: zoom_in 2s forwards;
+                        }
+                        .circle_txt {
+                            animation-fill-mode: forwards, forwards;
+                            animation-name: rotate_txt, rotate_txt_loop;
+                            animation-delay: 1s, 0;
+                            animation-duration: 1s, 3s;
+                            animation-timing-function: ease, linear ;
+                            animation-iteration-count: 1, infinite;
+                            animation-direction: normal,normal;
+                        }
                     }
-                    
                 }
             }
             .product_box {
@@ -228,8 +240,33 @@
                     color:#E6D6CA;
                     font-size: 44px;
                     font-weight: 700;
-                    top:0;
+                    top:-20px;
                     left: 60%;
+                    opacity: 0;
+                }
+            }
+            @keyframes zoom_in {
+                0% {
+                    transform: scale(.8);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+            @keyframes rotate_txt {
+                0% {
+                    transform: rotate(0);
+                    opacity: 0;
+                }
+                100% {
+                    transform: rotate(180deg);
+                    opacity: 1;
+                }
+            }
+            @keyframes rotate_txt_loop {
+                100% {
+                    transform: rotate(360deg);
+                    opacity: 1;
                 }
             }
         }
@@ -446,12 +483,15 @@
                             &::before {
                                 content: '▼';
                                 margin-right: 2px;
+                                transform: scale(.5);
                             }
                         }
                         &.up {
                             &::before {
                                 content: '▲';
+                                transform: scale(.5);
                                 margin-right: 2px;
+                                color:#d53020;
                             }
                         }
                     }
@@ -718,7 +758,6 @@
                 }
             }
             .product_list__div {
-                
                 margin-bottom: 20px;
                 .product_tit {
                     margin-top: 0;
@@ -835,6 +874,12 @@
                     }
                 }
             }
+            .img_box {
+                .btn_like {
+                    right: 4px;
+                    bottom:4px;
+                }
+            }
         }
     }
     
@@ -881,6 +926,21 @@
             }
             .text {
                 font-weight: bold;
+            }
+        }
+        .img_box {
+            position: relative;
+            .btn_like {
+                position: absolute;
+                right: 8px;
+                bottom: 8px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgba(0,0,0,.3) url(../images/guide/ico_heart_w.svg) no-repeat 50% / 14px 12px;
+                &.active {
+                    background: rgba(0,0,0,.3) url(../images/guide/ico_heart_active.svg) no-repeat 50% / 14px 12px;
+                }
             }
         }
         &__li {
