@@ -9,7 +9,7 @@ $(function(){
   if($('#swapAble2 li').length<=2){
     $('#swapAble2 ul').removeClass('swiper-wrapper').addClass('nonswipe');
   }
-  var eventSwiper1 = new CustomSwiper('#swapAble1 .mySwiper.evt', {
+  var eventSwiper1 = new CustomSwiper('#swapAble1', {
     slidesPerView: 'auto',
     spaceBetween: 16,
     freeMode: true,
@@ -20,7 +20,7 @@ $(function(){
         clickable: true,
     },
 });
-  var eventSwiper2 = new CustomSwiper('#swapAble2 .mySwiper.evt', {
+  var eventSwiper2 = new CustomSwiper('#swapAble2', {
       slidesPerView: 'auto',
       spaceBetween: 16,
       freeMode: true,
