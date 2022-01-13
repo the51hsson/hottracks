@@ -48,7 +48,7 @@ $(function(){
     //var currentScroll = 0;
 
     window.addEventListener('scroll', promotionEffect);
-    window.addEventListener('resize', promotionEffect);
+    // window.addEventListener('resize', promotionEffect);
 
   function promotionEffect(){
     if(bubbleHighlight('.deadline_section')){
@@ -61,16 +61,8 @@ $(function(){
     var isShow
     var headerHeight = $('#headerWrapper').height();
     var scrolltop  = $(window).scrollTop();
-    var deviceHeight = $(window).height();
-    var deviceWidth = $(window).width();
-    var elemHeight = $(item).height();
-    var focusTop = $(item).offset().top;
-    // var scrollDown;       //스크롤 올림 또는 내림 컨트롤 변수
-    // currentScroll = $(window).scrollTop();
-    // scrollDown = (currentScroll > prevScroll  ) ? true : false; 
-    // prevScroll = currentScroll;
-    isShow = (focusTop + elemHeight - deviceHeight - headerHeight - deviceWidth*0.05 < scrolltop) &&
-             (focusTop + elemHeight - deviceHeight - headerHeight - deviceWidth*1.05 < scrolltop) ;
+    var offsetTop = $(item).offset().top;
+    isShow = offsetTop - headerHeight - 200 < scrolltop
 
     return isShow; 
   }

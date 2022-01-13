@@ -65,6 +65,7 @@
 	.promotion_end{
 		position:relative;
 		height:auto;
+		overflow: hidden;
 		&:before{
 			content:"";
 			position:absolute;

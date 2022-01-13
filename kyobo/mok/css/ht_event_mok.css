@@ -7615,6 +7615,7 @@ body.dialog_open {
 .list_evt_area .promotion_end {
   position: relative;
   height: auto;
+  overflow: hidden;
 }
 
 .list_evt_area .promotion_end:before {
