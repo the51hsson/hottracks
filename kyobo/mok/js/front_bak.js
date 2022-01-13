@@ -42,6 +42,7 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 
 		// scrollUp/down check
 		function setScrollUp() {
+			
 			var offset;
 			offset = _headerWrapper.height() / 2;
 
@@ -1065,7 +1066,7 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 
 	$(window).on('scroll.uiCommon', function (event) {
 		_scrollTop = $(window).scrollTop();
-
+    
 		$(document).data('scrollEnd', setTimeout(function () {
 			if (_isMacLike && window.innerHeight !== _fisHeight) {
 				_resizeVh = (window.innerHeight + 1);
