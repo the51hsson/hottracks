@@ -202,6 +202,44 @@ $(function(){
 		});
 	});
 
+    // 요즘 핫한 해외 팝음반
+    var autoPop = setInterval(function() {
+        nextPopSlide();
+    }, 5000);
+    $('.thumb_img_list li').on('click',function(){
+        clearInterval(autoPop);
+        $(this).addClass('active').siblings('li').removeClass('active');
+        $('.record_info_area .img_box img').attr('src',$(this).find('img').attr('src'));
+        autoPop = setInterval(function() {
+            nextPopSlide();
+        }, 5000);
+    });
+    $('.record_info_area .img_box img').attr('src',$('.thumb_img_list li.active img').attr('src'));
+
+    function nextPopSlide() {
+        var allSlide = $('.thumb_img_list li');
+        var imgSrc = allSlide.find('img').attr('src');
+        allSlide.each(function(index,item){
+            if($(this).hasClass('active')) {
+                currentIndex = index;
+                imgSrc = $(this).find('img').attr('src');
+            }
+        });
+        var newIndex = 0;
+        if(currentIndex >= allSlide.length-1) {
+            //현재 슬라이드 index가 마지막 순서면 0번째로 보냄(무한반복)
+            newIndex = 0;
+        } else {
+            //현재 슬라이드의 index에서 한 칸 만큼 앞으로 간 index 지정
+            newIndex = currentIndex+1;
+        }
+        allSlide.removeClass('active');
+	    allSlide.eq(newIndex).addClass('active');
+        imgSrc = allSlide.eq(newIndex).find('img').attr('src');
+        $('.record_info_area .img_box img').attr('src',imgSrc);
+        // console.log(newIndex);
+    }
+
     // LP SHOP 스와이프
     var lpShopSwiper = new CustomSwiper('.lp_shop_wrap .swiper-container', {
         observer: true,

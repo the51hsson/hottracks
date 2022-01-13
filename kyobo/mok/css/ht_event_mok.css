@@ -7704,8 +7704,8 @@ body.dialog_open {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -7767,6 +7767,22 @@ body.dialog_open {
   line-height: 19px;
   letter-spacing: -0.13px;
   white-space: nowrap;
+}
+
+.evt_quick_menu_area.type1 {
+  margin-top: 20px;
+}
+
+.evt_quick_menu_area.type1 li:nth-of-type(4) {
+  margin-top: 24px;
+}
+
+.evt_quick_menu_area.type1 li:nth-of-type(5) {
+  margin-top: 24px;
+}
+
+.evt_quick_menu_area.type1 li:nth-of-type(6) {
+  margin-top: 24px;
 }
 
 .evt_slider_wrap {
