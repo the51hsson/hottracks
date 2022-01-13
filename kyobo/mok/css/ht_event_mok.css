@@ -7546,18 +7546,92 @@ body.dialog_open {
     @include mixins.transform(translateY(calc(env(safe-area-inset-bottom)))); *!*/
 }
 
-/*=========================== 이벤트 리스트 =============================*/
-.evt_list_area {
+.evt_list_header {
+  position: relative;
   padding-top: 12px;
 }
 
-.evt_list_area h2 {
+.evt_list_header h2 {
   font-size: 20px;
   line-height: 32px;
   font-weight: 700;
   padding: 0 20px;
 }
 
+.evt_quick_menu_slide {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+  margin-top: 12px;
+  padding-bottom: 24px;
+  width: 100%;
+  overflow-x: auto;
+  background-color: #fff;
+  z-index: 20;
+  border-bottom: 8px solid #f7f7f7;
+}
+
+.evt_quick_menu_slide .swiper-container {
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+.evt_quick_menu_slide .swiper-slide {
+  width: 58px;
+}
+
+.evt_quick_menu_slide .swiper-slide.active .ico {
+  background: #da2128;
+  border-color: #da2128;
+}
+
+.evt_quick_menu_slide .swiper-slide.active .txt {
+  font-weight: 700;
+  color: #000;
+}
+
+.evt_quick_menu_slide a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+  padding-bottom: 25px;
+}
+
+.evt_quick_menu_slide a .ico {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  padding-bottom: 100%;
+  border: 1px solid #eaeaea;
+}
+
+.evt_quick_menu_slide a .ico img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.evt_quick_menu_slide a .txt {
+  white-space: nowrap;
+  color: #767676;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 13px;
+}
+
+/*=========================== 이벤트 리스트 =============================*/
 .evt_list_area .evt_menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7565,8 +7639,7 @@ body.dialog_open {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20px;
-  padding: 0 20px;
+  padding: 24px 20px 0;
 }
 
 .evt_list_area .evt_menu .left_txt_sum {
@@ -7767,22 +7840,6 @@ body.dialog_open {
   line-height: 19px;
   letter-spacing: -0.13px;
   white-space: nowrap;
-}
-
-.evt_quick_menu_area.type1 {
-  margin-top: 20px;
-}
-
-.evt_quick_menu_area.type1 li:nth-of-type(4) {
-  margin-top: 24px;
-}
-
-.evt_quick_menu_area.type1 li:nth-of-type(5) {
-  margin-top: 24px;
-}
-
-.evt_quick_menu_area.type1 li:nth-of-type(6) {
-  margin-top: 24px;
 }
 
 .evt_slider_wrap {

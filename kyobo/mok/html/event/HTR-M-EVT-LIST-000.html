@@ -75,7 +75,7 @@
     <!-- ht_ Hottracks ht_ 클래스 추가 -->
     <!-- DESC : footer 없는 경우 [ no-footer ] 클래스 추가 -->
     <!-- DESC : 상품상세와 같이 하단 구매 영역 있는 경우 클래스 .contents_detail_view 추가 -->
-    <div class="ht_ wrapper contents_detail_view" style="padding-bottom:112px;">
+    <div class="ht_ wrapper contents_detail_view" style="padding-bottom:50px;">
         <!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
         <header id="headerWrapper" class="ht_ header_wrapper">
             <div class="header_left">
@@ -95,40 +95,71 @@
             </div>
         </header>
         <!-- // 헤더 -->
+        
+        <div class="evt_list_header">
+            <h2>이벤트</h2>
+        </div>
+        
+        <!-- 이벤트 퀵메뉴 -->
+        <div class="evt_quick_menu_slide">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#a" class="active">
+                            <span class="ico">
+                                <img src="../../images/guide/ico_evt_quick_01.svg" alt="">
+                            </span>
+                            <span class="txt">기획전</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#a">
+                            <span class="ico">
+                                <img src="../../images/guide/ico_evt_quick_02.svg" alt="">
+                            </span>
+                            <span class="txt">이벤트</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#a">
+                            <span class="ico">
+                                <img src="../../images/guide/ico_evt_quick_03.svg" alt="">
+                            </span>
+                            <span class="txt">쿠폰존</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#a">
+                            <span class="ico">
+                                <img src="../../images/guide/ico_evt_quick_04.svg" alt="">
+                            </span>
+                            <span class="txt">매장이벤트</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#a">
+                            <span class="ico">
+                                <img src="../../images/guide/ico_evt_quick_05.svg" alt="">
+                            </span>
+                            <span class="txt">컬처이벤트</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#a">
+                            <span class="ico">
+                                <img src="../../images/guide/ico_evt_quick_06.svg" alt="">
+                            </span>
+                            <span class="txt">당첨자발표</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- 컨텐츠 -->
         <main id="containerWrapper" class="container_wrapper">
             <section>
                 <article class="evt_list_area">
-                    <h2>이벤트</h2>
-                    <!-- 이벤트 퀵메뉴 -->
-                    <div class="evt_quick_menu_area type1">
-                        <ul class="evt_quick_menu">
-                            <li>
-                                <span class="ico quick_type1"></span>
-                                <span class="txt">출석체크</span>                
-                            </li>
-                            <li>
-                                <span class="ico quick_type2"></span>
-                                <span class="txt">매장이벤트</span>                
-                            </li>
-                            <li>
-                                <span class="ico quick_type3"></span>
-                                <span class="txt">당첨자발표</span>                
-                            </li>
-                            <li>
-                                <span class="ico quick_type1"></span>
-                                <span class="txt">출석체크</span>                
-                            </li>
-                            <li>
-                                <span class="ico quick_type2"></span>
-                                <span class="txt">매장이벤트</span>                
-                            </li>
-                            <li>
-                                <span class="ico quick_type3"></span>
-                                <span class="txt">당첨자발표</span>                
-                            </li>
-                        </ul>
-                    </div>    
                     <div class="evt_menu">
                         <div class="left_txt_sum">264건</div>                    
                         <div class="sort_tab scroll_box">
@@ -637,11 +668,16 @@
         </main>
         <!-- // 컨텐츠 -->
         <!-- 푸터 -->
-		<footer class="footer_wrapper" style="margin-top:20px;">
+		<footer class="footer_wrapper">
+			<div class="notice_wrap">
+				<span class="notice_text">공지사항</span>
+				<a href="#" class="notice_link">교보문고 개인정보 처리방침 개정안내</a>
+			</div>
+
 			<div class="footer_body">
 				<div class="logo_box">
 					<a href="#" class="logo_link">
-						<img class="bd_img" src="../../images/guide/ico_logo.svg" alt="핫트랙스">
+						<img src="../../images/guide/ico_logo.svg" alt="핫트랙스">
 					</a>
 				</div>
 
@@ -681,91 +717,33 @@
 			</div>
 
 		</footer>
+		<!-- // 푸터 -->
 
-        <!-- 독바 -->
-        <section class="footer_wrap fixed_foot">
-            <!-- todo : footer_wrap에서 product_btn_foot등으로 변경 여지 있음 -->
-            <!-- 상품상세 하단 고정영역 -->
-            <div class="prod_purchase_info_wrap">
-                <!-- CASE 1. 기본 -->
-                <!-- DESC : 버튼 풀배열인경우 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
-                <div class="btn_wrap multi" style="display: none;">
-                    <button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span
-                            class="hidden">찜하기</span></button>
-                    <button type="button" class="btn_gift size_lg"><span class="ico_gift"></span><span
-                            class="text">선물하기</span></button>
+		<!-- 독바 -->
+		<section class="docker_wrapper">
+			<!-- 탑버튼 -->
+			<div class="floating_wrapper">
+				<a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
+			</div>
+			<!-- // 탑버튼 -->
 
-                    <!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
-                    <div class="btn_wrap overlap">
-                        <button type="button" class="btn_ip btn_light_gray"><span class="text">장바구니</span></button>
-                        <button type="button" class="btn_ip btn_primary"><span class="text">구매하기</span></button>
-                    </div>
-                </div>
-                <!-- // CASE 1. 기본 -->
-
-                <!-- CASE 2. 버튼 1개  -->
-                <div class="btn_wrap multi" style="display: none;">
-                    <!-- DESC : 찜하기 버튼 활성화 시 button.btn_wish 영역 [active] class 추가 -->
-                    <button type="button" class="btn_wish size_lg active"><span class="ico_wish"></span><span
-                            class="hidden">찜하기</span></button>
-
-                    <!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
-                    <div class="btn_wrap overlap single">
-                        <button type="button" class="btn_ip btn_primary"><span class="text">바로구매</span></button>
-                    </div>
-                </div>
-                <!-- // CASE 2. 버튼 1개 -->
-
-                <!-- CASE 3. 재입고 신청  -->
-                <div class="btn_wrap multi" style="display: none;">
-                    <button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span
-                            class="hidden">찜하기</span></button>
-                    <div class="btn_wrap overlap single">
-                        <button type="button" class="btn_ip btn_line_primary"><span class="ico_bell"></span><span
-                                class="text">재입고 알람 신청하기</span></button>
-                    </div>
-                </div>
-                <!-- // CASE 3. 재입고 신청 -->
-
-                <!-- CASE 4. 판매 중지 -->
-                <div class="btn_wrap multi" style="display:none;">
-                    <button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span
-                            class="hidden">찜하기</span></button>
-                    <!-- DESC : 판매중지 [ disabled ] class 추가 -->
-                    <div class="btn_wrap overlap single">
-                        <button type="button" class="btn_ip btn_line_gray disabled"><span class="text">현재 판매가 중지된
-                                상품입니다</span></button>
-                    </div>
-                </div>
-                <!-- // CASE 4. 판매 중지 -->
-
-                <!-- CASE 5. 바로드림 바로구매 -->
-                <div class="btn_wrap" style="display:none;">
-                    <button type="button" class="btn_ip btn_line_primary"><span class="text">바로드림</span></button>
-                    <button type="button" class="btn_ip btn_primary"><span class="text">바로구매</span></button>
-                </div>
-                <!-- // CASE 6. 바로드림 바로구매 -->
-
-                <!-- CASE 6. 찜하기없는 장바구니 바로구매 -->
-                <div class="btn_wrap multi">
-                    <button type="button" class="btn_gift size_lg"><span class="ico_gift"></span><span
-                            class="text">선물하기</span></button>
-                    <button type="button" class="btn_ip btn_line_primary"><span class="text">장바구니</span></button>
-                    <button type="button" class="btn_ip btn_primary"><span class="text">구매하기</span></button>
-                </div>
-                <!-- // CASE 6. 찜하기없는 장바구니 바로구매 -->
-            </div>
-            <!-- // 상품상세 하단 고정영역 -->
-            <div class="floating_wrapper">
-                <!-- 탑버튼 -->
-                <a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
-                <!-- // 탑버튼 -->
-                <!-- 백버튼 -->
-                <a href="#" class="btn_go_back"><span class="hidden">이전 화면으로</span></a>
-                <!--// 백버튼-->
-            </div>
-        </section>
-        <!-- // 독바 -->
+			<ul class="docker_list">
+				<li class="docker_item"><a href="#" class="btn_docker_home"><span class="hidden">홈</span></a></li>
+				<li class="docker_item"><a href="#" class="btn_docker_search"><span class="hidden">검색</span></a></li>
+				<!-- DESC : 로그인 후 li.docker_item [ login ] class 추가 -->
+				<li class="docker_item my">
+					<a href="#" class="btn_docker_my">
+						<span class="img_box">
+							<img src="../../temporary/temp_docker_login_mok.png" alt="마이룸 임시이미지" />
+						</span>
+						<span class="hidden">마이룸</span>
+					</a>
+				</li>
+				<li class="docker_item"><a href="#" class="btn_docker_history"><span class="hidden">최근본상품</span></a></li>
+				<li class="docker_item"><a href="#" class="btn_docker_menu"><span class="hidden">전체메뉴</span></a></li>
+			</ul>
+		</section>
+		<!-- // 독바 -->
     </div>
     <!-- // wrapper -->
 

@@ -1,5 +1,12 @@
 $(function(){
 
+  var eventQuickSwiper = new CustomSwiper('.evt_quick_menu_slide .swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 24,
+    freeMode: true,
+    observer: true,
+    observeParents: true,
+  });
   // 마감임박, 반응최고 스와이프
   //상품 개수 2개이하일때 ul class="evt_slider nonswipe"로 설정
 
@@ -15,10 +22,6 @@ $(function(){
     freeMode: true,
     observer: true,
     observeParents: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
 });
   var eventSwiper2 = new CustomSwiper('#swapAble2', {
       slidesPerView: 'auto',
@@ -26,10 +29,6 @@ $(function(){
       freeMode: true,
       observer: true,
       observeParents: true,
-      pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-      },
   });
    // 오늘만 특가 스와이프
    var horDealSwiper = new CustomSwiper('.mySwiper.hotdeal', {
@@ -38,10 +37,6 @@ $(function(){
       freeMode: true,
       observer: true,
       observeParents: true,
-      pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-      },
   });
   //스크롤 처리
     //var prevScroll = $(window).scrollTop();
@@ -66,4 +61,9 @@ $(function(){
 
     return isShow; 
   }
-})
+
+  $('.evt_quick_menu_slide .swiper-slide').on('click',function(){
+			$(this).addClass('active').siblings('div').removeClass('active');
+  });
+
+});
