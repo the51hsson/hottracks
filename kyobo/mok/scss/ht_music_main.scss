@@ -204,7 +204,8 @@
                 top:-87px;
             }
             .swiper-container {
-                overflow: visible;
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
             .swiper-slide {
                 width: 70%;
@@ -216,21 +217,24 @@
                     &.zoom_in {
                         .product_box {
                             animation: zoom_in 2s forwards;
+                            animation-delay: 0.5s;
                         }
                         .circle_txt {
-                            animation-fill-mode: forwards, forwards;
                             animation-name: rotate_txt, rotate_txt_loop;
-                            animation-delay: 1s, 0;
-                            animation-duration: 1s, 3s;
-                            animation-timing-function: ease, linear ;
-                            animation-iteration-count: 1, infinite;
-                            animation-direction: normal,normal;
+                            animation-fill-mode: forwards, forwards;
+                            animation-delay: 0.1s, 1s;
+                            animation-duration:2s, 10s;
+                            animation-timing-function:ease-in-out, linear;
+                            animation-iteration-count:1, infinite;
+                            animation-direction: none;
+                        }
+                        .pro_info {
+                            animation: fade_in 1s forwards;
                         }
                     }
                 }
             }
             .product_box {
-                text-align: center;
                 position: relative;
                 img {
                     width: 100%;
@@ -238,19 +242,55 @@
                 .circle_txt {
                     position: absolute;
                     color:#E6D6CA;
-                    font-size: 44px;
+                    font-size: 13vw;
                     font-weight: 700;
-                    top:-20px;
-                    left: 60%;
+                    top:-35px;
+                    left: 65%;
                     opacity: 0;
+                }
+            }
+            .pro_info {
+                text-align: center;
+                margin-top: 20px;
+                opacity: 0;
+                .artist_name {
+                    font-size: 13px;
+                    color:#595959;
+                    letter-spacing: -0.01em;
+                }
+                .album_name {
+                    margin-top: 4px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color:#000;
+                    letter-spacing: -0.01em;
+                    height: 40px;
+                }
+                .badge_list {
+                    justify-content: center;
+                    margin-top: 8px;
                 }
             }
             @keyframes zoom_in {
                 0% {
                     transform: scale(.8);
                 }
+                50% {
+                    transform: scale(1);
+                }
                 100% {
                     transform: scale(1);
+                }
+            }
+            @keyframes fade_in {
+                0% {
+                    opacity: 0;;
+                }
+                50% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 1;
                 }
             }
             @keyframes rotate_txt {
@@ -258,12 +298,20 @@
                     transform: rotate(0);
                     opacity: 0;
                 }
+                50% {
+                    transform: rotate(360deg);
+                    opacity: 0.5;
+                }
                 100% {
-                    transform: rotate(180deg);
+                    transform: rotate(360deg);
                     opacity: 1;
                 }
             }
             @keyframes rotate_txt_loop {
+                0% {
+                    transform: rotate(0deg);
+                    opacity: 1;
+                }
                 100% {
                     transform: rotate(360deg);
                     opacity: 1;
@@ -397,6 +445,14 @@
                                 animation: loadingGaugeIcon 2s forwards;
                                 animation-delay: 1s;
                             }
+                            &.complete {
+                                &::before {
+                                    width: 25px;
+                                    height: 25px;
+                                    background: url(../images/guide/img_hot_deal_time_s2.svg) no-repeat 0 0 / cover;
+                                    transform: translate(-18px,-3px);
+                                }
+                            }
                         }
                     }
                     @keyframes loadingGauge {
@@ -508,12 +564,7 @@
                     font-size: 13px;
                     color:#595959;
                 }
-                .album_name {
-                    &.ellipsis_line2 {
-                        height: auto;
-                        max-height: 52px;
-                    }
-                }
+
                 .detail_info {
                     display: none;
                 }
@@ -602,6 +653,7 @@
                 min-width: 276px;
                 opacity: .2;
                 > img {
+                    width: 100%;
                     border-top-left-radius: 4px;
                     border-top-right-radius: 4px;
                 }
@@ -715,10 +767,6 @@
                         min-width: 276px;
                     }
                 }
-                .ellipsis_line2 {
-                    height: auto;
-                    max-height: 52px;
-                }
             }
             .txt_box {
                 padding-top: 10px;
@@ -734,6 +782,7 @@
             }
             .product_txt {
                 margin:4px 0;
+                height: 36px;
             }
         }
 

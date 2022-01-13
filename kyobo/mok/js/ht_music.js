@@ -1,5 +1,35 @@
 $(function(){
 
+    //fit text 
+    $.fn.fitText = function( kompressor, options ) {
+
+        // Setup options
+        var compressor = kompressor || 1,
+            settings = $.extend({
+              'minFontSize' : Number.NEGATIVE_INFINITY,
+              'maxFontSize' : Number.POSITIVE_INFINITY
+            }, options);
+    
+        return this.each(function(){
+    
+          // Store the object
+          var $this = $(this);
+    
+          // Resizer() resizes items based on the object width divided by the compressor * 10
+          var resizer = function () {
+            $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
+          };
+    
+          // Call once to set.
+          resizer();
+    
+          // Call on resize. Opera debounces their resize by default.
+          $(window).on('resize.fittext orientationchange.fittext', resizer);
+    
+        });
+    
+    };
+
     // hero 배너 스와이프
     var heroSwiper = new CustomSwiper('.here_banner_wrap .swiper-container', {
 		slidesPerView: 'auto',
@@ -85,7 +115,35 @@ $(function(){
     });
 
     // 시시간 차트 rolling
-
+    var autoChart = setInterval(function() {
+        nextSlide();
+    }, 5000);
+    $('.realtime_chart_wrap .chart_box').on('click',function(){
+        clearInterval(autoChart);
+        $(this).addClass('active').siblings('div').removeClass('active');
+        autoChart = setInterval(function() {
+            nextSlide();
+        }, 5000);
+    });
+    function nextSlide() {
+        var allSlide = $('.realtime_chart_wrap .chart_box');
+        allSlide.each(function(index,item){
+            if($(this).hasClass('active')) {
+                currentIndex = index;
+            }
+        });
+        var newIndex = 0;
+        if(currentIndex >= allSlide.length-1) {
+            //현재 슬라이드 index가 마지막 순서면 0번째로 보냄(무한반복)
+            newIndex = 0;
+        } else {
+            //현재 슬라이드의 index에서 한 칸 만큼 앞으로 간 index 지정
+            newIndex = currentIndex+1;
+        }
+        allSlide.removeClass('active');
+	    allSlide.eq(newIndex).addClass('active');
+    }
+    
     // 새로나온 음반 스와이프
     var newAlbumSwiper = new CustomSwiper('.new_album_wrap .swiper-container', {
         observer: true,
