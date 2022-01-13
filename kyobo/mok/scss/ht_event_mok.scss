@@ -97,6 +97,9 @@
 			letter-spacing: -0.14px;
 			color:#292929;
 		}
+		a:last-of-type:after{
+		display: none;
+		}
 	}
 }
 .promotion_status_txt{
@@ -448,7 +451,7 @@
 	  .product_pic{
 		  position: relative;
 		  height:0;
-		  padding-top:100%;
+		  padding-top:100px;
 	  }	
 	  .product_pic img{
 		  width:100%;

@@ -57,7 +57,8 @@ $(function(){
     var headerHeight = $('#headerWrapper').height();
     var scrolltop  = $(window).scrollTop();
     var offsetTop = $(item).offset().top;
-    isShow = offsetTop - headerHeight - 200 < scrolltop
+    var topMenuHeight = $('.evt_quick_menu_slide').height();
+    isShow = offsetTop - headerHeight - topMenuHeight - 200 < scrolltop
 
     return isShow; 
   }

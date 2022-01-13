@@ -7650,6 +7650,10 @@ body.dialog_open {
   color: #292929;
 }
 
+.evt_list_area .evt_menu a:last-of-type:after {
+  display: none;
+}
+
 .promotion_status_txt {
   display: none;
 }
@@ -8063,7 +8067,7 @@ body.dialog_open {
 .hotdeal_slider li .product_pic {
   position: relative;
   height: 0;
-  padding-top: 100%;
+  padding-top: 100px;
 }
 
 .hotdeal_slider li .product_pic img {
