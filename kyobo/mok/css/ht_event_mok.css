@@ -7977,6 +7977,7 @@ body.dialog_open {
 
 .hotdeal_slider li {
   width: 100px;
+  cursor: pointer;
 }
 
 .hotdeal_slider li:last-of-type {
