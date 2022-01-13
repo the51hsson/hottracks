@@ -69,8 +69,8 @@ $(function(){
     // currentScroll = $(window).scrollTop();
     // scrollDown = (currentScroll > prevScroll  ) ? true : false; 
     // prevScroll = currentScroll;
-    isShow = (focusTop + elemHeight - deviceHeight - headerHeight - deviceWidth*0.15 < scrolltop) &&
-             (focusTop + elemHeight - deviceHeight - headerHeight - deviceWidth*1.15 < scrolltop) ;
+    isShow = (focusTop + elemHeight - deviceHeight - headerHeight - deviceWidth*0.05 < scrolltop) &&
+             (focusTop + elemHeight - deviceHeight - headerHeight - deviceWidth*1.05 < scrolltop) ;
 
     return isShow; 
   }
