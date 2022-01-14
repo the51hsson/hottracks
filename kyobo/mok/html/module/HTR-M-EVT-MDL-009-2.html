@@ -19,7 +19,7 @@
     <meta property="og:image" content="../../images/guide/sns.jpg">
     <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-    <title>교보핫트랙스-이벤트 모듈 8타입</title>
+    <title>교보핫트랙스-이벤트 당첨자 발표</title>
 
     <!-- Plug-In css -->
     <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -52,33 +52,45 @@
     <!-- // Plug-In javascript -->
 
     <!-- UI JavaScript -->
-    <!-- <script src="../../vendors/js/ui_mok.js"></script> -->
     <script src="../../js/front_bak.js"></script>
-    
-    <!-- // UI JavaScript -->
 </head>
 
 <body>
-    <!-- wrapper -->
-    <section>
-      <!-- 모듈 7 컨텐츠 -->
-      <div class="module module6_wrap">
-        <h3>기록하기 좋은 다이어리</h3>
-        <!--슬라이드 영역-->
-        <article class="module6_item">
-          <div class="product_pic">
-            <img src="../../images/guide/module6_product_sample.png" alt="핫트랙스 모듈 6 상품" title="핫트랙스 모듈 6 상품">
-          </div>
-          <div class="title">파엘 육각 실리콘 코스터 6P 세트 컬러 택1.2줄까지 허용 2줄 이상 출력시 말줄임 처리</div>
-          <div class="price_area">
-            <div class="discount_rate">12%</div>
-            <div class="fianl_price">17,500원</div>
-            <div class="price_origin">20,000원</div>
-          </div>
-        </article>
-      </div>
+  <section class="top_gray_section">
+    <div class="comment_list_area">
+        <!--타이틀 영역-->
+        <div class="cmt_section_title">
+          <div class="title">총 <em class="highlight">744건</em>의 댓글이 있습니다.</div>
+          <span class="evt_ck_area">
+            <input type="checkbox" id="myEventCk" class="common_check">
+            <label for="myEventCk" class="common_ck_label">내가 쓴 댓글 보기</label>
+          </span>
+        </div>
+           <!--댓글 리스트 영역-->
+        <ul class="cmt_list_card_ul">
+          <li>
+            <div class="user_info">
+              <span class="user_id">abe10**</span>
+              <span class="date">2021.07.11</span>
+            </div>
+            <div class="cmt_pd_title">1.꼬리별 스튜디오</div>
+            <div class="user_cmt">
+              <span class="cmt_content">디자인이 너무 귀엽고 취향이예요! 핫트랙스에서 상품으로 나오면 정말 잘 쓸 것 같아요.</span>
+              <span class="cmt_img">
+                <img src="" alt="">
+              </span>
+            </div>
+          </li>
+       </ul>
+      <!--더보기 버튼 more_btn에 hidden Class  추가하면 버튼 안보임-->
+      <div class="btn_more_div">
+        <button class="more_btn">
+            <span class="txt">더보기</span>
+            <span class="btn_more_icon"></span>
+        </button>
+    </div>
+    </div>
   </section>
-  <!-- // wrapper -->
-
+    <!-- // wrapper -->
 </body>
 </html>

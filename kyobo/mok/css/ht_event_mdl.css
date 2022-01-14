@@ -7554,6 +7554,191 @@ body.dialog_open {
   padding: 40px 20px;
 }
 
+/*===============     모듈 001 영역(기획전 타이틀)   ==================*/
+.evt_mdl_title {
+  padding: 24px 20px;
+}
+
+.evt_mdl_title .tit_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.evt_mdl_title .txt_heading {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+}
+
+.evt_mdl_title .right_area {
+  width: 18px;
+  height: 18px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 22px;
+  background: url(../images/ico/ico_share.png) no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.evt_mdl_title .card_body {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.evt_mdl_title .txt_account .txt_sub {
+  width: calc(100%);
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.16px;
+  color: #767676;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.evt_mdl_title .txt_account .txt_period {
+  margin-top: 16px;
+  line-height: 19px;
+  letter-spacing: -0.14px;
+  color: #595959;
+}
+
+.evt_mdl_title .box_circle {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #da2128;
+  padding: 0 3px;
+}
+
+.evt_mdl_title .txt_per {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.15px;
+  text-align: center;
+  color: white;
+}
+
+/*===============     모듈 002 영역(앵커 메뉴)   ==================*/
+.evt_mdl2_wrap {
+  padding-top: 8px;
+  background-color: #f7f7f7;
+  -webkit-transition: -webkit-transform 1000ms ease-out;
+  transition: -webkit-transform 1000ms ease-out;
+  transition: transform 1000ms ease-out;
+  transition: transform 1000ms ease-out, -webkit-transform 1000ms ease-out;
+}
+
+.evt_mdl2_menu.anchor {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.evt_mdl2_menu {
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-top: 8px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.evt_mdl2_menu:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.evt_mdl2_menu li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+  border-bottom: 1px solid #d5d5d5;
+  position: relative;
+}
+
+.evt_mdl2_menu li a {
+  width: 100%;
+  height: 100%;
+  padding: 18px 3px;
+  display: -webkit-box;
+  font-size: 15px;
+  color: #595959;
+  line-height: 22px;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.evt_mdl2_menu li.active:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out, font-weight 0.2s ease-out;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out, font-weight 0.2s ease-out;
+}
+
+.evt_mdl2_menu li.active a {
+  color: #000;
+  font-weight: 500;
+}
+
+/*===============     모듈 006 영역   ==================*/
 .module6_wrap h3 {
   text-align: center;
   font-size: 18px;
@@ -7567,8 +7752,18 @@ body.dialog_open {
   cursor: pointer;
 }
 
+.module6_item .product_pic {
+  position: relative;
+  height: 0;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
 .module6_item .product_pic img {
   width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .module6_item .title {
@@ -7765,7 +7960,7 @@ body.dialog_open {
   letter-spacing: -0.14px;
 }
 
-/*===============     모듈 9 영역(전체 레이어 팝업)   ==================*/
+/*===============     모듈 009-1 영역(전체 레이어 팝업)   ==================*/
 .evt_mdl9_pop_wrap h2 {
   font-size: 16px;
   line-height: 26px;
@@ -7950,7 +8145,8 @@ body.dialog_open {
   color: #fff;
 }
 
-/*===============     모듈 14 영역   ==================*/
+/*===============     모듈 009-2 영역 (내가 쓴 댓글 보기)  ==================*/
+/*======================     모듈 14 영역   =======================*/
 .module14_comment_write {
   border: 1px solid red;
 }

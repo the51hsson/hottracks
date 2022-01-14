@@ -12,7 +12,137 @@
   padding:40px 20px;
 }
 
-//모듈 6 영역
+/*===============     모듈 001 영역(기획전 타이틀)   ==================*/
+.evt_mdl_title{
+ padding:24px 20px;
+ .tit_area{
+	 display: flex;
+	 flex-flow: row nowrap;
+	 justify-content: space-between;
+	 align-items: center;
+	 align-content: center;
+ }
+ .txt_heading{
+   font-size: 20px;
+	 line-height: 32px;
+	 font-weight: 900;
+	 letter-spacing: -0.2px;
+ }
+ .right_area{
+	 width:18px;
+	 height:18px;
+	 flex-shrink: 0;
+	 margin-left: 22px;
+	 background: url(../images/ico/ico_share.png) no-repeat center center;
+	 background-size: cover;
+	 cursor: pointer;
+ }
+ .card_body{
+	 margin-top:8px;
+	 display: flex;
+	 flex-flow: row nowrap;
+	 justify-content: space-between;
+	 align-items: center;
+	 align-content: center;
+ }
+ //좌측 텍스트 영역
+ .txt_account{
+   .txt_sub{
+		 width: calc(100%);
+		 font-size: 16px;
+		 line-height:26px;
+		 letter-spacing: -0.16px;
+		 color:#767676;
+		 flex-grow: 1;
+	 }
+	 .txt_period{
+		 margin-top: 16px;
+		 line-height: 19px;
+		 letter-spacing: -0.14px;
+		 color:#595959;
+	 }
+ }
+ //우측 할인율 표시 영역
+ .box_circle{
+	 width:44px;
+	 height:44px;
+	 line-height: 44px;
+	 flex-shrink: 0;
+	 border-radius: 50%;
+	 background-color: #da2128;
+	 padding:0 3px;
+ }
+ .txt_per{
+	 font-size: 15px;
+	 font-weight: 500;
+	 letter-spacing: -0.15px;
+	 text-align: center;
+	 color:white;
+ }
+}
+/*===============     모듈 002 영역(앵커 메뉴)   ==================*/
+.evt_mdl2_wrap{
+	padding-top:8px;
+	background-color: #f7f7f7;
+	transition: transform 1000ms ease-out;
+}
+.evt_mdl2_menu.anchor{ //삭제 예정
+	position: sticky;
+	top:0;
+	left:0;
+}
+.evt_mdl2_menu{
+	left:0;
+	right:0;
+	top:0;
+	margin-top:8px;
+	background-color: #fff;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	&:nth-of-type(1){
+		margin-top:0;
+	}
+	li{
+		flex:1 1 0px;
+		border-bottom:1px solid #d5d5d5;
+		position:relative;
+		a{
+			width:100%;
+			height:100%;
+			padding: 18px 3px;
+			display: -webkit-box;
+			font-size: 15px;
+			color:#595959;
+			line-height: 22px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			text-align: center;
+		}
+		&.active{
+			&:before{
+        content:"";
+				position: absolute;
+				width:100%;
+				height:2px;
+				background-color: #000;
+				bottom: 0;
+				left:0;
+				right:0;
+				z-index: 5;
+				transition:background-color 0.2s ease-out, color 0.2s ease-out, font-weight 0.2s ease-out;
+			}
+			a{
+       color:#000;
+			 font-weight: 500;
+			}
+		}
+	}
+
+}
+/*===============     모듈 006 영역   ==================*/
 .module6_wrap{
   h3{
     text-align: center;
@@ -25,8 +155,18 @@
 	width:100%;
 	margin-top:20px;
   cursor:pointer;
-	.product_pic img{
-		width:100%;
+
+	.product_pic{
+		position:relative;
+		height:0;
+		padding-top:100%;
+		overflow:hidden;
+		img{
+			width:100%;
+			position: absolute;
+			left:0;
+			top:0;
+		}
 	}
 	.title{
 		margin-top:12px;
@@ -180,7 +320,7 @@
     }
   }
 }
-/*===============     모듈 9 영역(전체 레이어 팝업)   ==================*/
+/*===============     모듈 009-1 영역(전체 레이어 팝업)   ==================*/
 .evt_mdl9_pop_wrap{
 	h2{
 		font-size: 16px;
@@ -327,7 +467,72 @@
 	background-color: #db8880;
 	color:#fff;
 }
-/*===============     모듈 14 영역   ==================*/
+/*===============     모듈 009-2 영역 (내가 쓴 댓글 보기)  ==================*/
+// .top_gray_section{
+// 	padding-top:8px;
+// 	background-color: #f7f7f7;
+// }
+// .comment_list_area{
+// 	padding:40px 20px;
+// 	background-color: #fff;
+// }
+// .cmt_section_title{
+// 	padding-bottom:20px;
+// 	border-bottom:1px solid;
+// 	.title{
+// 		font-size:16px;
+// 		line-height: 26px;
+// 		font-weight:700;
+// 		letter-spacing: -0.16px;
+// 	}
+// 	.highlight{
+// 		color:#da2128;
+// 	}
+// 	.evt_ck_area{
+// 		display: block;
+// 		letter-spacing: -0.14px;
+// 		margin-top:5px;
+// 		padding-left:28px;
+// 	}
+// }
+// .cmt_list_card_ul{
+// 	border:1px solid blue;
+// 	li{
+// 		padding:20px 4px;
+// 		border-bottom:1px solid #eaeaea;
+// 	}
+// 	.user_info{
+// 		border:1px solid blue;
+// 		span{
+// 			display:inline-block;
+// 			position: relative;
+// 			white-space: nowrap;
+// 			font-size:12px;
+// 			line-height: 16px;
+// 			color:#767676;
+// 			&:last-of-type{
+// 				margin-left:12px;
+// 			}
+// 			&:last-of-type:before{
+// 				content:"|";
+// 				position: absolute;
+// 				top:0;
+// 				left:-9px;
+// 			}
+// 		}
+// 	}
+// 	.cmt_pd_title{
+// 		margin-top:10px;
+// 		font-size: 13px;
+// 		letter-spacing: -0.13px;
+// 		line-height: 19px;
+// 		color:#595959;
+// 	}
+// 	.user_cmt{
+
+// 	}
+// }
+/*======================     모듈 14 영역   =======================*/
 .module14_comment_write{
   border:1px solid red;
   h3{

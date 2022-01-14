@@ -1,5 +1,5 @@
 $(function(){
-
+  /*================================= HTR-M-EVT-LIST-000.html ==============================*/
   var eventQuickSwiper = new CustomSwiper('.evt_quick_menu_slide .swiper-container', {
     slidesPerView: 'auto',
     spaceBetween: 24,
@@ -38,9 +38,12 @@ $(function(){
       observer: true,
       observeParents: true,
   });
-  //스크롤 애니메이션(마감임박 말풍선)
-  window.addEventListener('scroll', promotionEffect);
 
+  //스크롤 애니메이션(마감임박 말풍선)
+
+  if(document.querySelector('.evt_slider_wrap.deadline_section .deadline_bubble')){
+    window.addEventListener('scroll', promotionEffect);
+  }
 
   function promotionEffect(){
     if(bubbleHighlight('.deadline_section')){
@@ -63,6 +66,7 @@ $(function(){
   $('.evt_quick_menu_slide .swiper-slide').on('click',function(){
 			$(this).addClass('active').siblings('div').removeClass('active');
   }); 
+  /*================================= HTR-M-EVT-MDL-009-3.html ==============================*/  
 //투표 참여하기 버튼 활성화 기능
 $(document).on('click', '.evt_mdl9_pop_wrap .evt_vote_list input', voteActive);
 $('#userComment').keyup(voteActive);
@@ -113,4 +117,20 @@ function voteActive(e){
      }
     $('#userComment').val('');
   })
+   /*================================= HTR-M-EVT-MDL-002.html ==============================*/  
+   //앵커 메뉴 버튼 활성화 기능
+   $('.evt_mdl2_menu.anchor').children('li').click(function(){
+    $('.evt_mdl2_menu.anchor').children('li').removeClass('active');
+     $(this).addClass('active');
+
+   });
+   //앵커 태그 부드럽게 이동
+   document.querySelectorAll('.evt_mdl2_menu a[href^="#"]').forEach(function(anchor){
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
 });
