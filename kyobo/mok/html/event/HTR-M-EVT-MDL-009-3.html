@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +19,7 @@
     <meta property="og:image" content="../../images/guide/sns.jpg">
     <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-    <title>모바일상품상세 레이아웃</title>
+    <title>교보핫트랙스-MD-이벤트기획전</title>
 
     <!-- Plug-In css -->
     <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -38,8 +37,7 @@
     <!-- // Custom styles for this template -->
 
     <!-- ht_ Hottracks custom css -->
-    <link rel="stylesheet" href="../../css/ht_style_mok.css" />
-
+     <link rel="stylesheet" href="../../css/ht_event_mdl.css">
     <!--// ht_ Hottracks custom css -->
 
 
@@ -60,14 +58,21 @@
     <!-- UI JavaScript -->
     <!-- <script src="../../vendors/js/ui_mok.js"></script> -->
     <script src="../../js/front_bak.js"></script>
-    <script src="../../js/ui_product_mok.js"></script>
+    
     <!-- // UI JavaScript -->
+    <script src="../../js/ht_event_list.js"></script>
+    <style>
+
+    </style>
+    <script>
+
+    </script>
 
 </head>
 
 <body>
-    <!-- SkipNav -->
-    <div class="skip_nav_wrap">
+      <!-- SkipNav -->
+      <div class="skip_nav_wrap">
         <a href="#headerWrapper">메뉴 바로가기</a>
         <a href="#containerWrapper">본문 바로가기</a>
     </div>
@@ -141,40 +146,90 @@
     <!-- // wrapper -->
     <!-- 팝업 - full + 하단 버튼 -->
     <div id="popFullHasBtnEx1" class="dialog_wrap has_btn" data-class="dialog_full">
-        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
+        <button type="button" id="votePopClose" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
                 class="hidden">닫기</span></button>
         <!-- dialog_header -->
         <div class="dialog_header">
-            <div class="dialog_title">상품 할인 쿠폰 받기</div>
+            <div class="dialog_title">투표 참여하기</div>
         </div>
         <!-- //dialog_header -->
         <!-- dialog_contents -->
-        <div class="dialog_contents">
-            <div class="coupon_box">
-                <p class="t_sale">20%</p>
-                <p class="t_name">다이어리 신상 할인 쿠폰</p>
-                <p class="t_guide">1만원 이상 구매 시 사용 가능</p>
-                <p class="t_date">만료일자:2021.11.25</p>
-                <p class="t_help">* 쿠폰을 다운받으면 자동으로 적용됩니다.</p>
-                <button class="btn_coupon_download"><span class="ico_coupon"></span>쿠폰받기</button>
+        <div class="dialog_contents evt_mdl9_pop_wrap">
+          <h2>디자인 선택</h2>
+          <h3>마음에 드는 다이어리를 선택해 주세요.</h3>
+          <ul class="evt_vote_list">
+            <li>
+              <div class="vote_img">
+                 <span class="vote_ckbox_area">
+                   <input type="checkbox" class="common_check"  id="voteEvtCk0">
+                   <label for="voteEvtCk0" class="common_ck_label"></label>
+                 </span>  
+                <img class="bd_img" src="../../images/guide/@hotdeal_thumnail_01.png" alt="핫트랙스 이벤트 투표 상품 이미지" title="핫트랙스 이벤트 투표 상품 이미지">
+              </div>
+              <div class="vot_txt">2022오프닝 시퀸스 다이어리(날짜형)</div>
+            </li>
+            <li>
+              <div class="vote_img">
+                 <span class="vote_ckbox_area">
+                   <input type="checkbox" class="common_check"  id="voteEvtCk1">
+                   <label for="voteEvtCk1" class="common_ck_label"></label>
+                 </span>  
+                <img src="../../images/guide/@vote_thumnail2.png" alt="핫트랙스 이벤트 투표 상품 이미지" title="핫트랙스 이벤트 투표 상품 이미지">
+              </div>
+              <div class="vot_txt">2022별별 일상 다이어리(날짜형)</div>
+            </li>
+            <li>
+              <div class="vote_img">
+                 <span class="vote_ckbox_area">
+                   <input type="checkbox" class="common_check"  id="voteEvtCk2">
+                   <label for="voteEvtCk2" class="common_ck_label"></label>
+                 </span>  
+                <img src="../../images/guide/@vote_thumnail2.png" alt="핫트랙스 이벤트 투표 상품 이미지" title="핫트랙스 이벤트 투표 상품 이미지">
+              </div>
+              <div class="vot_txt">2022별별 일상 다이어리(날짜형)</div>
+            </li>
+            <li>
+              <div class="vote_img">
+                 <span class="vote_ckbox_area">
+                   <input type="checkbox" class="common_check"  id="voteEvtCk3">
+                   <label for="voteEvtCk3" class="common_ck_label"></label>
+                 </span>  
+                <img src="../../images/guide/@vote_thumnail4.png" alt="핫트랙스 이벤트 투표 상품 이미지" title="핫트랙스 이벤트 투표 상품 이미지">
+              </div>
+              <div class="vot_txt">2022별별 일상 다이어리(날짜형)</div>
+            </li>
+            <li>
+              <div class="vote_img">
+                 <span class="vote_ckbox_area">
+                   <input type="checkbox" class="common_check"  id="voteEvtCk4">
+                   <label for="voteEvtCk4" class="common_ck_label"></label>
+                 </span>  
+                <img src="../../images/guide/@vote_thumnail4.png" alt="핫트랙스 이벤트 투표 상품 이미지" title="핫트랙스 이벤트 투표 상품 이미지">
+              </div>
+              <div class="vot_txt">2022별별 일상 다이어리(날짜형)</div>
+            </li>
+          </ul>
+          <section class="div_comment_area">
+            <h2>댓글 입력</h2>
+            <div class="comment_txt_box bd_img">
+              <textarea name="" id="userComment" placeholder="댓글을 입력해 주세요."></textarea>
+              <span class="count_length_line">
+                <em class="count" id="commentEA">0</em>
+                <em class="count_defalut">/ 300자</em>
+              </span>
             </div>
-            <div class="coupon_box disabled">
-                <p class="t_sale">20%</p>
-                <p class="t_name">다이어리 신상 할인 쿠폰</p>
-                <p class="t_guide">1만원 이상 구매 시 사용 가능</p>
-                <p class="t_date">만료일자:2021.11.25</p>
-                <p class="t_help">* 쿠폰을 다운받으면 자동으로 적용됩니다.</p>
-                <button class="btn_coupon_download"><span class="ico_coupon_end"></span>쿠폰 받기 완료!</button>
-            </div>
+          </section>
         </div>
         <!-- //dialog_contents -->
         <!-- dialog_footer -->
         <div class="dialog_footer">
-            <button type="button" class="btn_md btn_primary" data-dialog-close><span class="text">쿠폰 전체 받기</span></button>
+          <!--버튼 활성화 Class : btn_primary-->
+            <button type="button" id="evtVoteBtn" class="btn_md vote_inactive" ><span class="text">참여하기</span></button>
         </div>
         <!-- //dialog_footer -->
     </div>
     <!-- //팝업 - full + 하단 버튼 -->
+
 </body>
 
 </html>

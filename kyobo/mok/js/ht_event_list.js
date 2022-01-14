@@ -38,12 +38,9 @@ $(function(){
       observer: true,
       observeParents: true,
   });
-  //스크롤 처리
-    //var prevScroll = $(window).scrollTop();
-    //var currentScroll = 0;
+  //스크롤 애니메이션(마감임박 말풍선)
+  window.addEventListener('scroll', promotionEffect);
 
-    window.addEventListener('scroll', promotionEffect);
-    // window.addEventListener('resize', promotionEffect);
 
   function promotionEffect(){
     if(bubbleHighlight('.deadline_section')){
@@ -65,6 +62,55 @@ $(function(){
 
   $('.evt_quick_menu_slide .swiper-slide').on('click',function(){
 			$(this).addClass('active').siblings('div').removeClass('active');
-  });
+  }); 
+//투표 참여하기 버튼 활성화 기능
+$(document).on('click', '.evt_mdl9_pop_wrap .evt_vote_list input', voteActive);
+$('#userComment').keyup(voteActive);
 
+function voteActive(e){
+    if(voteActiveCheck(e)){
+      $('#evtVoteBtn').addClass('. btn_primary');
+    }else{
+      $('#evtVoteBtn').removeClass('. btn_primary');
+    }
+}
+
+  function voteActiveCheck(e){
+    var ckInputs = $('.evt_mdl9_pop_wrap .evt_vote_list input');
+    var ckLength = ckInputs.length;
+    var isActive = false;
+    var ckCheck = false;
+    if(e && e.target.id == 'userComment') countCommentEA(e);
+
+    for(var i=0; i<ckLength; i++){
+     if(ckInputs.eq(i).is(':checked')) {
+      ckCheck = true;
+       break;
+     }
+    }
+    if($('#userComment').val().length > 0 &&  ckCheck) isActive = true;
+    else isActive = false;
+    return isActive;
+  }
+  //댓글 입력 글자수 카운팅
+  function countCommentEA(e){
+    var length = $('#userComment').val().length;
+    if(length>300) {
+      e.preventDefault();
+      $('#userComment').val($('#userComment').val().substring(0, 300));
+      return;
+    }
+
+    $(commentEA).text(length);
+  }
+  //투표 참여 닫기 버튼 클릭 시 사용자 작성 내용 초기화
+  $('#votePopClose').click(function(){
+    var ckInputs = $('.evt_mdl9_pop_wrap .evt_vote_list input');
+    var ckLength = ckInputs.length;
+
+    for(var i=0; i<ckLength; i++){
+      ckInputs.eq(i).prop('checked', false);
+     }
+    $('#userComment').val('');
+  })
 });
