@@ -3289,23 +3289,41 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   padding: 48px 0 32px 0;
 }
 
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_flower,
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_gifticon,
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_drop,
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_fortune {
+  margin: 0 auto;
+  position: relative;
+  height: 0;
+}
+
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_flower {
   width: 50px;
-  margin: 0 auto;
+  padding-top: 61px;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_gifticon {
   width: 96.5px;
-  margin: 0 auto;
+  padding-top: 90px;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_drop {
   width: 52px;
-  margin: 0 auto;
+  padding-top: 65px;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_fortune {
+  width: 112px;
+  padding-top: 82px;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent img {
+  position: absolute;
   width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .sub_txt {

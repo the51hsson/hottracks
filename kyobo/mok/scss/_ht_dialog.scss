@@ -1184,20 +1184,36 @@
         .dialog_contents.evt_cotent{
             margin:0;
             padding:48px 0 32px 0;
+            .evt_flower,
+            .evt_gifticon,
+            .evt_drop,
+            .evt_fortune{
+                margin:0 auto;
+                position: relative;
+                height:0;
+            }
             .evt_flower{
                 width:50px;
-                margin:0 auto;
+                padding-top:61px;
             }
             .evt_gifticon{
                 width:96.5px;
-                margin:0 auto;
+                padding-top:90px;
             }
             .evt_drop{
                 width:52px;
-                margin:0 auto;
+                padding-top:65px;
+            }
+            .evt_fortune{
+                width:112px;
+                padding-top:82px;
             }
             img{
+                position:absolute;
                 width:100%;
+                top:0;
+                left:0;
+                right:0;
             }
             .sub_txt{
                 width:100%;
