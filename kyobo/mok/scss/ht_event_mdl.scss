@@ -96,6 +96,7 @@
 	right:0;
 	top:0;
 	margin-top:8px;
+	padding-bottom:30px;
 	background-color: #fff;
 	display: flex;
 	flex-flow: row nowrap;
@@ -110,7 +111,7 @@
 		a{
 			width:100%;
 			height:100%;
-			padding: 18px 3px;
+			padding: 18px 0px;
 			display: -webkit-box;
 			font-size: 15px;
 			color:#595959;
@@ -142,7 +143,137 @@
 	}
 
 }
-/*===============     모듈 006 영역   ==================*/
+
+/*===============     모듈 004 영역(스왑 배너)   ==================*/
+
+
+.evt_banner_wrap {
+	padding-bottom:30px;
+  
+	.swiper-container{
+		position:relative;
+	}
+	.swiper-slide{
+		.banner_img{
+			width:100%;
+			height:0;
+			padding-top:100%;
+			overflow:hidden;
+			position: relative;
+		}
+		img{
+			width:100%;
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			z-index: 1;
+		}
+	}
+	.banner_dim{
+		display:block;
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		z-index:3;
+		background: linear-gradient( to bottom, rgba(84, 84, 84, 0) 50%, rgba(0,0,0,0.6) 100% );
+	}
+	.txt_box{
+		position:absolute;
+		z-index:4;
+		bottom:20px;
+		left:20px;
+		color:#fff;
+		span{
+			display:block;
+		}
+		.txt_upper{
+			font-size: 20px;
+			line-height:28px;
+			font-weight: 500;
+			letter-spacing: -0.2px;
+		}
+		.txt_sub{
+			font-size: 13px;
+			letter-spacing: -0.13px;
+			line-height:19px;
+		}
+	}
+	.swiper-button-next,
+	.swiper-button-prev {
+			right:10px;
+			padding: 30px;
+			color: #fff !important;
+			fill: #fff !important;
+			stroke: #fff !important;
+	}
+	.option_box {
+		  display:none; 
+			position: absolute;
+			right:20px;
+			bottom:20px;
+			z-index: 1;
+			display: flex;
+			.btn_all {
+					position: absolute;
+					right: 0;
+					top:0;
+					display: block;
+					width: 25px;
+					height: 25px;
+					background: url(../images/guide/ico_plus_w.svg) no-repeat 50% / 9px;
+					z-index: 10;
+			}
+
+	}
+	.swiper-pagination.swiper-pagination-fraction {
+			position: static;
+			height: 25px;
+			transform: translateX(0);
+			background-color: rgba(0, 0, 0, 0.3);
+			padding-right: 25px;
+			.swiper-pagination-current,
+			.swiper-pagination-total {
+					line-height: 25px;
+			}
+	}
+	.play_pause_box {
+			margin-right: 4px;
+			[class^=btn_] {
+					display: block;
+					width: 25px;
+					height: 25px;
+					border-radius: 50%;
+			}
+			.btn_play {
+					background:rgba(0,0,0,.3) url(../images/guide/ico_play.svg) no-repeat 50% / 7px;
+			}
+			.btn_pause {
+					background:rgba(0,0,0,.3) url(../images/guide/ico_pause.svg) no-repeat 50% / 5px;
+			}
+			&.play {
+					.btn_play {
+							display: none;
+					}
+					.btn_pause {
+							display: block;
+					}
+			}
+			&.pause {
+					.btn_play {
+							display: block;
+					}
+					.btn_pause {
+							display: none;
+					}
+			}
+	}
+}
+/*===============     모듈 002 영역(앵커 메뉴)   ==================*/
+/*=======================     모듈 006 영역   =====================*/
 .module6_wrap{
   h3{
     text-align: center;
@@ -468,70 +599,135 @@
 	color:#fff;
 }
 /*===============     모듈 009-2 영역 (내가 쓴 댓글 보기)  ==================*/
-// .top_gray_section{
-// 	padding-top:8px;
-// 	background-color: #f7f7f7;
-// }
-// .comment_list_area{
-// 	padding:40px 20px;
-// 	background-color: #fff;
-// }
-// .cmt_section_title{
-// 	padding-bottom:20px;
-// 	border-bottom:1px solid;
-// 	.title{
-// 		font-size:16px;
-// 		line-height: 26px;
-// 		font-weight:700;
-// 		letter-spacing: -0.16px;
-// 	}
-// 	.highlight{
-// 		color:#da2128;
-// 	}
-// 	.evt_ck_area{
-// 		display: block;
-// 		letter-spacing: -0.14px;
-// 		margin-top:5px;
-// 		padding-left:28px;
-// 	}
-// }
-// .cmt_list_card_ul{
-// 	border:1px solid blue;
-// 	li{
-// 		padding:20px 4px;
-// 		border-bottom:1px solid #eaeaea;
-// 	}
-// 	.user_info{
-// 		border:1px solid blue;
-// 		span{
-// 			display:inline-block;
-// 			position: relative;
-// 			white-space: nowrap;
-// 			font-size:12px;
-// 			line-height: 16px;
-// 			color:#767676;
-// 			&:last-of-type{
-// 				margin-left:12px;
-// 			}
-// 			&:last-of-type:before{
-// 				content:"|";
-// 				position: absolute;
-// 				top:0;
-// 				left:-9px;
-// 			}
-// 		}
-// 	}
-// 	.cmt_pd_title{
-// 		margin-top:10px;
-// 		font-size: 13px;
-// 		letter-spacing: -0.13px;
-// 		line-height: 19px;
-// 		color:#595959;
-// 	}
-// 	.user_cmt{
+.top_gray_section{
+	padding-top:8px;
+	background-color: #f7f7f7;
+}
+.comment_list_area{
+	padding:40px 20px;
+	background-color: #fff;
+}
+.cmt_section_title{
+	padding-bottom:20px;
+	border-bottom:1px solid;
+	.title{
+		font-size:16px;
+		line-height: 26px;
+		font-weight:700;
+		letter-spacing: -0.16px;
+	}
+	.highlight{
+		color:#da2128;
+	}
+	.evt_ck_area{
+		display: block;
+		letter-spacing: -0.14px;
+		margin-top:5px;
+		padding-left:28px;
+	}
+}
+.cmt_list_card_ul{
+	li{
+		padding:20px 4px;
+		border-bottom:1px solid #eaeaea;
+	}
+	.user_info{
+		span{
+			display:inline-block;
+			position: relative;
+			white-space: nowrap;
+			font-size:12px;
+			line-height: 16px;
+			color:#767676;
+			margin-left:12px;
+			&:before{
+				content:"|";
+				position: absolute;
+				top:0;
+				left:-9px;
+			}
+			&:first-of-type{
+				margin-left:0px;
+			}
+			&:first-of-type:before{
+				content:"";
+				position: absolute;
+			}
+		}
+		.cmt_modify{
+			cursor: pointer;
+		}
+	}
+	.cmt_pd_title{
+		margin-top:8px;
+		font-size: 13px;
+		letter-spacing: -0.13px;
+		line-height: 19px;
+		color:#595959;
+	}
+	.user_cmt{
+		margin-top:16px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		align-content: flex-start;
+	}
+	.cmt_content{
+		line-height: 22px;
+		letter-spacing: -0.14px;
+    color:#292929;
+	}
+  .cmt_img{
+		position:relative;
+		width:78px;
+		height:0;
+		padding-top:78px;
+		margin-left:19px;
+		flex-shrink: 0;
+		overflow: hidden;
+		img{
+			position:absolute;
+			left:0;
+			right:0;
+			top:0;
+			width:100%;
 
-// 	}
-// }
+		}
+	}
+}
+ //더보기 버튼 영역
+ .btn_more_div{
+	margin-top:24px;
+	.more_btn{
+		height:24px;
+		margin:0 auto;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
+		appearance: none;
+		cursor:pointer;
+	}
+	.more_btn.hidden{
+		display:none;
+	}
+	.txt{
+		line-height:24px;
+		font-size: 15px;
+		font-weight:500;
+		letter-spacing: -0.15px;
+		color:#767676;
+	}
+	.btn_more_icon{
+		margin-left:6px;
+		width:24px;
+		height:24px;
+		background:url(../images/ico/ico_arrow_large.png) no-repeat 0 0;
+		background-size: cover;
+	}
+ }
 /*======================     모듈 14 영역   =======================*/
 .module14_comment_write{
   border:1px solid red;
