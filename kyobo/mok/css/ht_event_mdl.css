@@ -7550,10 +7550,6 @@ body.dialog_open {
   background-color: #f0f0f0;
 }
 
-.module {
-  padding: 40px 20px;
-}
-
 /*===============     모듈 001 영역(기획전 타이틀)   ==================*/
 .evt_mdl_title {
   padding: 24px 20px;
@@ -7739,6 +7735,37 @@ body.dialog_open {
   font-weight: 500;
 }
 
+/*=======================     모듈 003 영역 (동영상)  =====================*/
+.module_wrap {
+  padding: 40px 20px;
+}
+
+.module_wrap h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.module_wrap.type3:not(first-of-type) {
+  padding-top: 55px;
+}
+
+.video_item {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.video_item .evt_video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
 /*===============     모듈 004 영역(스왑 배너)   ==================*/
 .evt_banner_wrap {
   padding-bottom: 30px;
@@ -7885,13 +7912,6 @@ body.dialog_open {
 
 /*===============     모듈 002 영역(앵커 메뉴)   ==================*/
 /*=======================     모듈 006 영역   =====================*/
-.module6_wrap h3 {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 28px;
-}
-
 .module6_item {
   width: 100%;
   margin-top: 20px;
@@ -7967,6 +7987,7 @@ body.dialog_open {
   color: #767676;
 }
 
+/*=======================     모듈 007 영역   =====================*/
 .module7_wrap {
   margin-top: 11px;
   padding: 40px 0 40px 20px;
@@ -7986,24 +8007,12 @@ body.dialog_open {
 }
 
 .module7_slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  overflow-x: auto;
+  padding-top: 20px;
 }
 
 .module7_slider li {
   width: 140px;
   margin-left: 20px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   cursor: pointer;
 }
 
@@ -8011,12 +8020,53 @@ body.dialog_open {
   margin: 0;
 }
 
-.module7_slider li img {
-  width: 100%;
+.module7_slider li:last-of-type {
+  margin-right: 20px;
 }
 
 .module7_slider li span {
   display: block;
+}
+
+.module7_slider .product_pic {
+  position: relative;
+  height: 0;
+  padding-top: 140px;
+  overflow: hidden;
+}
+
+.module7_slider .product_pic img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.module7_slider.nonswipe {
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.module7_slider.nonswipe li {
+  width: 47.3%;
+  margin: 0;
+}
+
+.module7_slider.nonswipe li:last-of-type {
+  margin-right: 0px;
+}
+
+.module7_slider.nonswipe .product_pic {
+  padding-top: 100%;
 }
 
 .module7_slider .title {
@@ -8045,8 +8095,8 @@ body.dialog_open {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -8062,6 +8112,7 @@ body.dialog_open {
 }
 
 .module7_slider .discount_rate {
+  margin-right: 5px;
   color: #da2128;
 }
 

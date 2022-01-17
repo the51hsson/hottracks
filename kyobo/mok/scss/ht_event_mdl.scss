@@ -8,9 +8,6 @@
 .module_section_bg{
   background-color: #f0f0f0;
 }
-.module{
-  padding:40px 20px;
-}
 
 /*===============     모듈 001 영역(기획전 타이틀)   ==================*/
 .evt_mdl_title{
@@ -143,6 +140,32 @@
 	}
 
 }
+/*=======================     모듈 003 영역 (동영상)  =====================*/
+.module_wrap{
+	padding:40px 20px;
+  h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height:28px;
+  }
+	&.type3:not(first-of-type){
+		padding-top:55px;
+	}
+}
+.video_item{
+	position:relative;
+	margin-top:20px;
+	padding-top:56.25%;
+	overflow: hidden;
+	.evt_video{
+		position:absolute;
+		width:100%;
+		height:100%;
+		left:0;
+		top:0;
+	}
+}
 
 /*===============     모듈 004 영역(스왑 배너)   ==================*/
 
@@ -274,14 +297,6 @@
 }
 /*===============     모듈 002 영역(앵커 메뉴)   ==================*/
 /*=======================     모듈 006 영역   =====================*/
-.module6_wrap{
-  h3{
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    line-height:28px;
-  }
-}
 .module6_item{
 	width:100%;
 	margin-top:20px;
@@ -340,7 +355,7 @@
 		color:#767676;
 	}  
 }
-//모듈 7 영역
+/*=======================     모듈 007 영역   =====================*/
 .module7_wrap{
 	margin-top:11px;
 	padding:40px 0 40px 20px;
@@ -357,26 +372,51 @@
 	}
 }
 .module7_slider{
-	display:flex;
-	flex-flow: row nowrap;
-	justify-content: flex-start;
-	overflow-x: auto;
 	//슬라이더 개별 상품 카드
+	padding-top:20px;
 	li{
 		width:140px;
 		margin-left:20px;
-		flex-shrink: 0;
 		cursor:pointer;
 		&:first-of-type{
 			margin:0;
 		}
-		img{
-			width:100%;
+		&:last-of-type{
+			margin-right:20px;
 		}
 		span{
 			display: block;
 		}
-	} 			
+	}
+	.product_pic{
+		position:relative;
+		height:0;
+		padding-top:140px;
+		overflow: hidden;
+		img{
+			width:100%;
+			position:absolute;
+			top:0;
+			left:0;
+
+		}
+	} 
+	&.nonswipe{
+		padding-right:20px;
+		display:flex;
+		justify-content: space-between;
+		flex-flow:row nowrap;
+		li{
+			width:47.3%;
+			margin:0;
+		}
+		li:last-of-type{
+			margin-right:0px;
+		}
+		.product_pic{
+			padding-top:100%;
+		}
+	}			
 	.title{
 		margin-top:12px;
 		font-size: 13px;
@@ -397,7 +437,7 @@
 	}  
 	.price_discount{
 		display:flex;
-		flex-flow: row nowrap;
+		flex-flow: row wrap;
 		justify-content: flex-start;
 		font-size: 15px;
 
@@ -410,6 +450,7 @@
 		line-height: 23px;
 	}
 	.discount_rate{
+		margin-right:5px;
 		color:#da2128;
 	}
 }
