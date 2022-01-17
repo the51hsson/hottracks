@@ -43,6 +43,7 @@ $(function(){
 
   if(document.querySelector('.evt_slider_wrap.deadline_section .deadline_bubble')){
     window.addEventListener('scroll', promotionEffect);
+    promotionEffect();
   }
 
   function promotionEffect(){

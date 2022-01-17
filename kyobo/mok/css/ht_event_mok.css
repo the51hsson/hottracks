@@ -7771,79 +7771,107 @@ body.dialog_open {
   color: #595959;
 }
 
-.evt_quick_menu_area {
-  margin-top: 40px;
-}
-
-.evt_quick_menu {
+.list_evt_area.spe_evt_area .small_pics_area {
+  padding-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 60px;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.evt_quick_menu li {
+.list_evt_area.spe_evt_area .small_pics_area li {
+  position: relative;
+  width: 74px;
+  height: 0;
+  padding-top: 74px;
+  margin-right: 12px;
+  overflow: hidden;
+}
+
+.list_evt_area.spe_evt_area .small_pics_area li img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.list_evt_area.spe_evt_area .small_pics_area li:last-of-type {
+  margin-right: 0;
+}
+
+.list_evt_area.spe_evt_area .to_event_list_btn {
+  height: 100%;
+  border: 1px dashed #d5d5d5;
+}
+
+.list_evt_area.spe_evt_area .txt_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 30%;
-  cursor: pointer;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.evt_quick_menu li span {
+.list_evt_area.spe_evt_area .rate {
   display: block;
+  margin-right: 3px;
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: -0.16px;
+  line-height: 26px;
+  color: #da2128;
 }
 
-.evt_quick_menu .ico {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+.list_evt_area.spe_evt_area .txt_account {
+  padding-top: 16px;
 }
 
-.evt_quick_menu .quick_type1 {
-  background: url(../images/guide/ico_hotdeal_quick1.svg) no-repeat center center;
-  background-size: 50%;
-  background-color: #f7f7f7;
+.list_evt_area.spe_evt_area .deadline_section .deadline_bubble {
+  padding: 12px 27px;
 }
 
-.evt_quick_menu .quick_type2 {
-  background: url(../images/guide/ico_hotdeal_quick2.svg) no-repeat center center;
-  background-size: 50%;
-  background-color: #f7f7f7;
+.list_evt_area.spe_evt_area .promotion_end_txt {
+  display: none;
 }
 
-.evt_quick_menu .quick_type3 {
-  background: url(../images/guide/ico_hotdeal_quick3.svg) no-repeat center center;
-  background-size: 50%;
-  background-color: #f7f7f7;
+.list_evt_area.spe_evt_area .promotion_upper_wrap {
+  display: block;
+  position: relative;
 }
 
-.evt_quick_menu .txt {
-  margin-top: 8px;
-  height: 19px;
-  font-size: 13px;
-  line-height: 19px;
-  letter-spacing: -0.13px;
-  white-space: nowrap;
+.list_evt_area.spe_evt_area .promotion_upper_wrap:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.list_evt_area.spe_evt_area .promotion_upper_wrap .promotion_end_txt {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  color: #fff;
+  text-align: center;
+  z-index: 5;
 }
 
 .evt_slider_wrap {
