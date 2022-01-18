@@ -3289,41 +3289,24 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   padding: 48px 0 32px 0;
 }
 
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_flower,
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_gifticon,
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_drop,
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_fortune {
-  margin: 0 auto;
-  position: relative;
-  height: 0;
-}
-
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_flower {
-  width: 50px;
-  padding-top: 61px;
-}
-
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_gifticon {
-  width: 96.5px;
-  padding-top: 90px;
-}
-
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_drop {
-  width: 52px;
-  padding-top: 65px;
-}
-
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_fortune {
-  width: 112px;
-  padding-top: 82px;
-}
-
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent img {
-  position: absolute;
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_pop_img {
   width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .evt_pop_img img {
+  max-width: 33%;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_cotent .sub_txt {
@@ -8154,6 +8137,7 @@ body.dialog_open {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
+  word-break: keep-all;
 }
 
 .hotdeal_slider li .price_area {

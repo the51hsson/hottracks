@@ -247,9 +247,9 @@ $(function(){
 
   function voteActive(e){
       if(voteActiveCheck(e)){
-        $('#evtVoteBtn').addClass('. btn_primary');
+        $('#evtVoteBtn').removeClass('disabled');
       }else{
-        $('#evtVoteBtn').removeClass('. btn_primary');
+        $('#evtVoteBtn').addClass('disabled');
       }
   }
 
