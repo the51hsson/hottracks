@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +19,7 @@
     <meta property="og:image" content="../../images/guide/sns.jpg">
     <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-    <title>교보핫트랙스-이벤트 결과 레이어 팝업</title>
+    <title>교보핫트랙스-MD-이벤트모듈 9-3</title>
 
     <!-- Plug-In css -->
     <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -38,7 +37,7 @@
     <!-- // Custom styles for this template -->
 
     <!-- ht_ Hottracks custom css -->
-    <link rel="stylesheet" href="../../css/ht_style_mok.css" />
+     <link rel="stylesheet" href="../../css/ht_event_mdl.css">
     <!--// ht_ Hottracks custom css -->
 
 
@@ -57,14 +56,22 @@
     <!-- // Plug-In javascript -->
 
     <!-- UI JavaScript -->
+    <!-- <script src="../../vendors/js/ui_mok.js"></script> -->
     <script src="../../js/front_bak.js"></script>
     <!-- // UI JavaScript -->
+    <script src="../../js/ht_event_list.js"></script>
+    <style>
+
+    </style>
+    <script>
+
+    </script>
 
 </head>
 
 <body>
-    <!-- SkipNav -->
-    <div class="skip_nav_wrap">
+      <!-- SkipNav -->
+      <div class="skip_nav_wrap">
         <a href="#headerWrapper">메뉴 바로가기</a>
         <a href="#containerWrapper">본문 바로가기</a>
     </div>
@@ -97,7 +104,7 @@
         <!-- 컨텐츠 -->
         <main id="containerWrapper" class="container_wrapper">
             <!-- data-target 과 id 매치 -->
-            <button type="button" class="btn_lg btn_primary" data-role="btn-dialog" data-target="#popEx1"><span class="text">팝업오픈</span></button>
+            <button type="button" class="btn_lg btn_primary" data-role="btn-dialog" data-target="#popFullHasBtnEx1"><span class="text">팝업오픈</span></button>
         </main>
         <!-- // 컨텐츠 -->
 
@@ -136,22 +143,38 @@
         <!-- // 독바 -->
     </div>
     <!-- // wrapper -->
-    <div id="popEx1" class="dialog_wrap">
+    <!-- 팝업 - full + 하단 버튼 -->
+    <div id="popFullHasBtnEx1" class="dialog_wrap has_btn" data-class="dialog_full">
+        <button type="button" id="votePopClose" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
+                class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">응모하기</div>
+        </div>
+        <!-- //dialog_header -->
         <!-- dialog_contents -->
-        <div class="dialog_contents evt_cotent">
-          <div class="evt_pop_img">
-              <img src="../../images/guide/evt_flower.svg" alt="핫트랙스 이벤트 당첨 아이콘" title="핫트랙스 이벤트 당첨 아이콘">
-          </div>
-          <div class="sub_txt">당첨 되셨습니다.</div>
-          <div class="main_msg">김미미님, 축하드립니다.</div> 
+        <div class="dialog_contents evt_apply_wrap">
+         <label for="evtOrderNum">주문번호</label>
+         <input type="number" pattern="\d*" class="evt_apply_input bd_img" id="evtOrderNum" disabled value="123456789">
+         <label for="evtUserNum">이름</label>
+         <input type="text" pattern="\d*" class="evt_apply_input bd_img"  id="evtUserNum" value="테스터">
+         <label for="evtUserPhone">전화번호</label>
+         <input type="text" class="evt_apply_input bd_img"  id="evtUserPhone" 
+           max-length="11" value="01012345678">
+         <label for="evtUserBirth">생년월일</label>
+         <input type="number" pattern="\d*" class="evt_apply_input bd_img" id="evtUserBirth" 
+          value="19920101" max-length="8">
         </div>
         <!-- //dialog_contents -->
         <!-- dialog_footer -->
-        <div class="dialog_footer evt_pop_footer">
-          <button type="button" class="btn_ip btn_primary" data-dialog-close><span class="text">확인</span></button>
+        <div class="dialog_footer">
+          <!--버튼 활성화 Class : btn_primary-->
+            <button type="button" id="evtApplyBtn" class="btn_md btn_primary" ><span class="text">응모하기</span></button>
         </div>
         <!-- //dialog_footer -->
     </div>
+    <!-- //팝업 - full + 하단 버튼 -->
+
 </body>
 
 </html>

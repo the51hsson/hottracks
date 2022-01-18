@@ -12,24 +12,26 @@ $(function(){
 
   if($('#swapAble1 li').length<=2){
     $('#swapAble1 ul').removeClass('swiper-wrapper').addClass('nonswipe');
+  }else{
+    var eventSwiper1 = new CustomSwiper('#swapAble1', {
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        freeMode: true,
+        observer: true,
+        observeParents: true,
+    });
   }
   if($('#swapAble2 li').length<=2){
     $('#swapAble2 ul').removeClass('swiper-wrapper').addClass('nonswipe');
+  }else{
+    var eventSwiper2 = new CustomSwiper('#swapAble2', {
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        freeMode: true,
+        observer: true,
+        observeParents: true,
+    });
   }
-  var eventSwiper1 = new CustomSwiper('#swapAble1', {
-    slidesPerView: 'auto',
-    spaceBetween: 16,
-    freeMode: true,
-    observer: true,
-    observeParents: true,
-});
-  var eventSwiper2 = new CustomSwiper('#swapAble2', {
-      slidesPerView: 'auto',
-      spaceBetween: 16,
-      freeMode: true,
-      observer: true,
-      observeParents: true,
-  });
    // 오늘만 특가 스와이프
    var horDealSwiper = new CustomSwiper('.mySwiper.hotdeal', {
       slidesPerView: 'auto',
@@ -40,7 +42,6 @@ $(function(){
   });
 
   //스크롤 애니메이션(마감임박 말풍선)
-
   if(document.querySelector('.evt_slider_wrap.deadline_section .deadline_bubble')){
     window.addEventListener('scroll', promotionEffect);
     promotionEffect();
@@ -108,16 +109,10 @@ $(function(){
             formatFractionTotal: function (number) {
               return KyoboHottracks.mok.setPrependZero(number, 2);
             },
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
+          }
     });
   }else{
     $('.evt_banner_wrap').eq(0).find('.option_box').addClass('hidden');
-    $('.evt_banner_wrap').eq(0).find('.swiper-button-prev').addClass('hidden');
-    $('.evt_banner_wrap').eq(0).find('.swiper-button-next').addClass('hidden');
   }
     $('.evt_banner_wrap').eq(0).find('.play_pause_box').click(function(){
       if ( $(this).hasClass('play') ) {
@@ -150,16 +145,10 @@ $(function(){
               formatFractionTotal: function (number) {
                 return KyoboHottracks.mok.setPrependZero(number, 2);
               },
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
             }
       });
     }else{
       $('.evt_banner_wrap').eq(1).find('.option_box').addClass('hidden')
-      $('.evt_banner_wrap').eq(1).find('.swiper-button-next').addClass('hidden');
-      $('.evt_banner_wrap').eq(1).find('.swiper-button-prev').addClass('hidden');
     }
     $('.evt_banner_wrap').eq(1).find('.play_pause_box').click(function(){
       if ( $(this).hasClass('play') ) {
@@ -192,16 +181,10 @@ $(function(){
           formatFractionTotal: function (number) {
             return KyoboHottracks.mok.setPrependZero(number, 2);
           },
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
         }
   });
   }else{
-      $('.evt_banner_wrap').eq(2).find('.option_box').addClass('hidden')
-      $('.evt_banner_wrap').eq(2).find('.swiper-button-next').addClass('hidden');
-      $('.evt_banner_wrap').eq(2).find('.swiper-button-prev').addClass('hidden');
+      $('.evt_banner_wrap').eq(2).find('.option_box').addClass('hidden');
     }
 
   $('.evt_banner_wrap').eq(2).find('.play_pause_box').click(function(){
@@ -241,7 +224,7 @@ $(function(){
 
 
   /*================================= HTR-M-EVT-MDL-009-3.html ==============================*/  
-//투표 참여하기 버튼 활성화 기능
+//투표 참여하기 버튼 활성화 기능(투표하기)
   $(document).on('click', '.evt_mdl9_pop_wrap .evt_vote_list input', voteActive);
   $('#userComment').keyup(voteActive);
 
