@@ -1230,6 +1230,21 @@
                 letter-spacing: -0.2px;
             }
         }
+        .dialog_contents.evt_full_img{
+            position:relative;
+            min-width:335px;
+            height:0;
+            margin:0;
+            padding-top:203px;
+            img{
+                position:absolute;
+                width:100%;
+                top:0;
+                left:50%;
+                right:0;
+                transform: translateX(-50%);
+            }
+        }
         .dialog_footer.evt_pop_footer{
             margin:0;
             &>.secondary{

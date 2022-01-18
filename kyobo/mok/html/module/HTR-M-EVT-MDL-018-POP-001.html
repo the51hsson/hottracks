@@ -97,6 +97,7 @@
         <!-- 컨텐츠 -->
         <main id="containerWrapper" class="container_wrapper">
             <!-- data-target 과 id 매치 -->
+            <button type="button" class="btn_lg btn_primary" data-role="btn-dialog" data-target="#popEx0"><span class="text">팝업오픈</span></button>
             <button type="button" class="btn_lg btn_primary" data-role="btn-dialog" data-target="#popEx1"><span class="text">팝업오픈</span></button>
         </main>
         <!-- // 컨텐츠 -->
@@ -135,7 +136,22 @@
         </section>
         <!-- // 독바 -->
     </div>
-    <!-- // wrapper -->
+     <!-- // pop wrapper(335*203 이미지) -->
+     <div id="popEx0" class="dialog_wrap">
+      <!-- dialog_contents -->
+      <div class="dialog_contents evt_full_img">
+        <div class="full_img_area">
+         <img src="" alt="">
+        </div>
+      </div>
+      <!-- //dialog_contents -->
+      <!-- dialog_footer -->
+      <div class="dialog_footer evt_pop_footer">
+        <button type="button" class="btn_ip btn_primary" data-dialog-close><span class="text">확인</span></button>
+      </div>
+      <!-- //dialog_footer -->
+  </div>
+    <!-- // pop wrapper(포춘쿠키) -->
     <div id="popEx1" class="dialog_wrap">
         <!-- dialog_contents -->
         <div class="dialog_contents evt_cotent">

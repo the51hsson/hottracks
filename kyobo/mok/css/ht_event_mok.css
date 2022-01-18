@@ -3342,6 +3342,24 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   letter-spacing: -0.2px;
 }
 
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_full_img {
+  position: relative;
+  min-width: 335px;
+  height: 0;
+  margin: 0;
+  padding-top: 203px;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents.evt_full_img img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  right: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_footer.evt_pop_footer {
   margin: 0;
 }

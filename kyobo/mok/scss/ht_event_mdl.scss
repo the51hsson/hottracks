@@ -600,7 +600,7 @@
 	}
 }
 //댓글 입력
-.div_comment_area{
+.comment_area{
 	padding-top: 40px;
 	.comment_txt_box{
 		display: block;
@@ -770,15 +770,35 @@
 	}
  }
 /*======================     모듈 14 영역   =======================*/
-.module14_comment_write{
-  border:1px solid red;
-  h3{
-    font-size: 16px;
-    line-height: 25px;
-    letter-spacing: -0.16px;
-  }
-  .comment{
-    width:100%;
-		border:1px solid blue;
-  }
+.cmt_wrap_mdl14{
+	padding:40px 20px;
+}
+.cmt_btn_area{
+	margin-top:24px;
+	button{
+		width:100%;
+		padding:15px 0;
+		border-radius: 4px;
+		background-color: #292929;
+		color:#fff;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		cursor: pointer;
+	}
+}
+.cmt_btn_icon{
+	display: block;
+	width:16px;
+	height:20px;
+	background:url('../images/guide/cmt_btn_ico.svg') no-repeat center center;
+	background-size: 95%;
+	margin-right:5px;
+
+}
+.cmt_btn_txt{
+	letter-spacing: -0.14px;
+	line-height: 20px;
 }
