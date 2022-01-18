@@ -8,7 +8,10 @@
 .module_section_bg{
   background-color: #f7f7f7;
 }
-
+.divide_section{
+	background-color: #f7f7f7;
+	padding-top:8px;
+}
 /*===============     모듈 001 영역(기획전 타이틀)   ==================*/
 .evt_mdl_title{
  padding:24px 20px;
@@ -532,6 +535,12 @@
 		line-height: 20px;
 		border: 1px solid #d5d5d5;
 		outline: none;
+		&:disabled{
+			color: #767676;
+			background-color: #f7f7f7;
+			pointer-events: none;
+			cursor: default;
+		}
 	}
 }
 /*===============     모듈 009-1 영역(전체 레이어 팝업/투표하기)   ==================*/
@@ -885,9 +894,52 @@
 		}
 	}
 }
+/*===============================  모듈 015 영역  ===========================*/
+.card_module{
+	padding:40px 0;
+	.evt_cards{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		li{
+			width:50%;
+			min-height:100% !important;
+			padding:50px 5px;
+			div{
+				text-align: center;
+				word-break: keep-all;
+			}
+		}
+		.title{
+      font-size: 16px;
+			line-height: 22px;
+			letter-spacing: -0.16px;
+		}
+		.desc{
+			margin-top:4px;
+			font-size: 13px;
+			line-height: 19px;
+			letter-spacing: -0.13px;
+		}
+	}
+	.btn_area{
+		margin-top:24px;
+		text-align: center;
+		button{
+			width:165px;
+			border:1px solid #767676;
+			border-radius: 4px;
+			cursor: pointer;
+			font-weight: 500px;
+			text-align: center;
+			letter-spacing: -0.14px;
+			line-height: 42px;
+		}
+	}
+}
+
 /*===============================  모듈 016 영역  ===========================*/
 .module_wrap.type1{
-	margin-top:8px;
 	background-color: #fff;
 	h3{
 		margin-top:40px;
@@ -898,23 +950,146 @@
 	}
 }
 .common_select{
- border:1px solid #d5d5d5;
- position:relative;
- line-height: 22px;
- letter-spacing: -0.14px;
- border-radius: 4px;
-  .selected_option, .selec_options li{
-		display: block;
-		padding:14px;
+	width:100%;
+	height:50px;
+	padding:14px 15px;
+	border:1px solid #d5d5d5;
+	position:relative;
+	line-height: 22px;
+	letter-spacing: -0.14px;
+	border-radius: 6px;
+	outline: 0;
+}
+
+//상품 리스트 영역
+.evt_products.row_dir.column_dir{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+ li{
+	width: calc((100% - 20px)/2);
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	cursor:pointer;
+	margin-top:20px;
+	&:nth-of-type(2){
+		margin-top:0;
 	}
-	.selec_options{
-		width:100%;
-		position:absolute;
-		top:100%;
-		left:0;
-		z-index: 3;
-		background-color: #fff;
-		border:1px solid blue;
-		display:none;
+ }
+ .product_pic{
+	 width:100%;
+	 padding-top: 100%;
+ }
+ .product_info{
+	 padding:12px 0 0 0;
+ }
+}
+.evt_products.row_dir{
+	padding-top:20px;
+	li{
+		margin-top:20px;
+    display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: center;
+		cursor:pointer;
+		span{
+			display: block;
+		}
+		&:first-of-type{
+			margin-top:0;
+		}
+	}
+	.product_pic{
+		position:relative;
+		width:158px;
+		height:0;
+		padding-top:158px;
+		overflow: hidden;
+		flex-shrink: 0;
+		img{
+			width:100%;
+			position:absolute;
+			top:0;
+			left:0;
+		}
+		.evt_good_count{
+			display: block;
+			padding:5px 12px 5px 28px;
+			position:absolute;
+			border-radius: 50px;
+			color:#fff;
+			font-size: 10px;
+			right:8px;
+			bottom:8px;
+			background-color: rgba(0,0,0,0.5);
+			z-index:5;
+			&:before{
+				content:"♡";
+				position:absolute;
+				left:12px;
+				top:4px;
+				font-size: 13px;
+			}
+		}
+	} 			
+	.product_info{
+		flex-grow:1;
+		padding-left:19px;
+	}
+	.product_company{
+		font-size: 12px;
+		color:#767676;
+		line-height:18px;
+		letter-spacing: -0.12px;
+	}
+	.title{
+		margin-top:2px;
+		font-size: 13px;
+		line-height: 19px;
+		letter-spacing: -0.13px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		word-break: keep-all;
+		}
+	.price_discount{
+		margin-top:8px;
+		display:flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		font-size: 15px;
+	}	
+	.price_origin{
+		font-size: 12px;
+		line-height: 22px;
+		text-decoration: line-through;
+		color:#767676;
+	}  
+	.discount_rate,
+	.fianl_price{
+		display: inline-block;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 22px;
+		margin-right:5px;
+	}
+	.discount_rate{
+		color:#da2128;
+	}
+	.badge_line{
+		margin-top:12px;
+		display: flex;
+		flex-flow:row wrap;
+	  justify-content: flex-start;
+		span{
+			margin-right:4px;
+		}
 	}
 }

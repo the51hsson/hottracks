@@ -1641,8 +1641,24 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .badge_line_gray {
   color: #595959;
-  background: #fff;
+  background-color: #fff4f1;
   border: 1px solid #d5d5d5;
+}
+
+.badge_primary_evt {
+  color: #dc3545;
+  background-color: #f5f5f5;
+  font-weight: normal;
+  padding: 0 8px;
+  line-height: 21px;
+}
+
+.badge_default_evt {
+  color: #292929;
+  background-color: #f5f5f5;
+  font-weight: normal;
+  padding: 0 8px;
+  line-height: 21px;
 }
 
 /* badge icon */
@@ -1682,7 +1698,9 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 .badge_xs {
   display: block;
   font-weight: normal;
-  padding: 0 5px;
+  padding: 0 4px;
+  height: 17px;
+  line-height: 17px;
 }
 
 /* 태그 */

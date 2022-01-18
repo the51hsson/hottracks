@@ -1278,8 +1278,22 @@ button.btn_text_link {
 }
 .badge_line_gray {
     color: #595959; 
-    background: #fff; 
+    background-color: #fff4f1; 
     border: 1px solid #d5d5d5;
+}
+.badge_primary_evt{
+    color:$btn-primary;
+    background-color: #f5f5f5;
+    font-weight:normal;
+    padding: 0 8px;
+    line-height:21px;
+}
+.badge_default_evt{
+  color:#292929;
+  background-color: #f5f5f5;
+  font-weight:normal;
+  padding: 0 8px;
+  line-height:21px;
 }
 /* badge icon */
 .badge_ico {
@@ -1303,7 +1317,7 @@ button.btn_text_link {
 }
 /* badge size */
 .badge_sm {display:block; min-height: 20px; min-width: 50px; padding: 0 10px; border-radius: 4px; font-size: 11px; font-weight: 400;}
-.badge_xs{ display:block; font-weight:normal; padding:0 5px;}
+.badge_xs{ display:block; font-weight:normal; padding: 0 4px;  height:17px; line-height: 17px;}
 
 /* 태그 */
 .tag_wrap {

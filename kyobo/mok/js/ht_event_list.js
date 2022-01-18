@@ -64,9 +64,15 @@ $(function(){
 
     return isShow; 
   }
-
   $('.evt_quick_menu_slide .swiper-slide').on('click',function(){
 			$(this).addClass('active').siblings('div').removeClass('active');
+      var imgEa = $('.evt_quick_menu_slide .swiper-slide').length;
+      for(var i=0; i<imgEa; i++){
+        $('.evt_quick_menu_slide .swiper-slide').eq(i).find('img')
+        .attr('src','../../images/guide/ico_evt_quick_0'+(i+1)+'.svg');
+      }
+      var origin_src = $(this).find('img').attr('src').split('.svg')[0];
+      $(this).find('img').attr('src', origin_src+'_active.svg');
   }); 
 
    /*================================= HTR-M-EVT-MDL-002.html ==============================*/  
@@ -273,5 +279,8 @@ $(function(){
         ckInputs.eq(i).prop('checked', false);
       }
       $('#userComment').val('');
-    })
+    });
+
+       /*================================= HTR-M-EVT-MDL-016.html ==============================*/ 
+       //셀렉트 박스 커스텀
 });
