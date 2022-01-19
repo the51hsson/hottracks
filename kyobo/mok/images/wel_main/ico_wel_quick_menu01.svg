@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        opacity: 0;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #da2128;
+      }
+
+      .cls-5 {
+        stroke: #040405;
+        stroke-width: 1.4px;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_3427" data-name="사각형 3427" class="cls-1" width="31.308" height="22.467" transform="translate(0 0)"/>
+    </clipPath>
+  </defs>
+  <g id="icon_live" transform="translate(0.346 4.999)">
+    <rect id="area" class="cls-2" width="32" height="32" transform="translate(-0.346 -4.999)"/>
+    <g id="그룹_1805" data-name="그룹 1805">
+      <g id="그룹_1804" data-name="그룹 1804" class="cls-3">
+        <path id="패스_36292" data-name="패스 36292" class="cls-4" d="M.739,15.97V3.918A1.462,1.462,0,0,1,1.831,2.161a1.181,1.181,0,0,1,.132-.025C3.481,1.926,29.478.721,29.478.721S30.6.459,30.6,1.769V17.437s.147,1.048-1.224,1.258-20.073-1.1-20.073-1.1L5.1,21V17.07H1.616a.991.991,0,0,1-.882-1.089V15.97"/>
+        <path id="패스_36293" data-name="패스 36293" class="cls-5" d="M.739,15.97V3.918A1.462,1.462,0,0,1,1.831,2.161a1.181,1.181,0,0,1,.132-.025C3.481,1.926,29.478.721,29.478.721S30.6.459,30.6,1.769V17.437s.147,1.048-1.224,1.258-20.073-1.1-20.073-1.1L5.1,21V17.07H1.616a.991.991,0,0,1-.882-1.089V15.97"/>
+      </g>
+    </g>
+    <g id="그룹_1807" data-name="그룹 1807">
+      <g id="그룹_1806" data-name="그룹 1806" class="cls-3">
+        <path id="패스_36294" data-name="패스 36294" class="cls-6" d="M7.584,6.555H6.17v6.3h4.416V11.814h-3Z"/>
+        <rect id="사각형_3428" data-name="사각형 3428" class="cls-6" width="1.414" height="6.303" transform="translate(11.486 6.555)"/>
+        <path id="패스_36295" data-name="패스 36295" class="cls-6" d="M15.2,6.555H13.631l2.38,6.3h1.474l2.39-6.3H18.3L16.746,11.3Z"/>
+        <path id="패스_36296" data-name="패스 36296" class="cls-6" d="M24.649,9.109H21.934v-1.5h3.177V6.555H20.52v6.3h4.6V11.814H21.934V10.126h2.715Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1, .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        opacity: 0.001;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4, .cls-6 {
+        stroke: #161615;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+
+      .cls-5 {
+        fill: #e84974;
+      }
+
+      .cls-6 {
+        stroke-linecap: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_3431" data-name="사각형 3431" class="cls-1" width="26.625" height="27.349" transform="translate(0 0)"/>
+    </clipPath>
+  </defs>
+  <g id="icon_gift" transform="translate(2.688 1.999)">
+    <rect id="area" class="cls-2" width="32" height="32" transform="translate(-2.688 -1.999)"/>
+    <g id="그룹_1809" data-name="그룹 1809">
+      <g id="그룹_1808" data-name="그룹 1808" class="cls-3">
+        <rect id="사각형_3430" data-name="사각형 3430" class="cls-4" width="3.99" height="13.539" transform="translate(11.546 13.06)"/>
+      </g>
+    </g>
+    <rect id="사각형_3432" data-name="사각형 3432" class="cls-5" width="8.618" height="13.539" transform="translate(2.927 13.06)"/>
+    <g id="그룹_1811" data-name="그룹 1811">
+      <g id="그룹_1810" data-name="그룹 1810" class="cls-3">
+        <rect id="사각형_3433" data-name="사각형 3433" class="cls-4" width="8.619" height="13.539" transform="translate(2.927 13.06)"/>
+      </g>
+    </g>
+    <rect id="사각형_3435" data-name="사각형 3435" class="cls-5" width="8.619" height="13.539" transform="translate(15.536 13.06)"/>
+    <g id="그룹_1813" data-name="그룹 1813">
+      <g id="그룹_1812" data-name="그룹 1812" class="cls-3">
+        <rect id="사각형_3436" data-name="사각형 3436" class="cls-4" width="8.619" height="13.539" transform="translate(15.536 13.06)"/>
+      </g>
+    </g>
+    <path id="패스_36297" data-name="패스 36297" class="cls-5" d="M15.536,7.968v5.093H25.875V7.968Z"/>
+    <g id="그룹_1815" data-name="그룹 1815">
+      <g id="그룹_1814" data-name="그룹 1814" class="cls-3">
+        <path id="패스_36298" data-name="패스 36298" class="cls-4" d="M15.536,7.968v5.093H25.875V7.968Z"/>
+      </g>
+    </g>
+    <rect id="사각형_3439" data-name="사각형 3439" class="cls-4" width="3.99" height="5.093" transform="translate(11.546 7.968)"/>
+    <path id="패스_36299" data-name="패스 36299" class="cls-5" d="M.75,7.967V13.06h10.8V7.967Z"/>
+    <g id="그룹_1817" data-name="그룹 1817">
+      <g id="그룹_1816" data-name="그룹 1816" class="cls-3">
+        <path id="패스_36300" data-name="패스 36300" class="cls-4" d="M11.546,7.968H.75v5.093h10.8Z"/>
+        <path id="패스_36301" data-name="패스 36301" class="cls-6" d="M13.568,7.169s-.913-3.348,3.043-5.884c0,0,3.043-1.724,4.261,1.015,0,0,1.2,2.059-2.579,5.667"/>
+        <path id="패스_36302" data-name="패스 36302" class="cls-6" d="M13.386,7.169s.913-3.348-3.043-5.884c0,0-3.043-1.724-4.261,1.015,0,0-1.2,2.059,2.579,5.667"/>
+      </g>
+    </g>
+  </g>
+</svg>
