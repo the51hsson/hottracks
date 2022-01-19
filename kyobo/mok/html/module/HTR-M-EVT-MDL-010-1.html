@@ -155,15 +155,18 @@
         <!-- dialog_contents -->
         <div class="dialog_contents evt_apply_wrap">
          <label for="evtOrderNum">주문번호</label>
-         <input type="number" pattern="\d*" class="evt_apply_input bd_img" id="evtOrderNum" disabled value="123456789">
+         <input type="number"  pattern="\d*" class="evt_apply_input bd_img" disabled value="123456789">
+
          <label for="evtUserNum">이름</label>
-         <input type="text" pattern="\d*" class="evt_apply_input bd_img"  id="evtUserNum" value="테스터">
+         <input type="text" pattern="\d*" class="evt_apply_input bd_img"  value="테스터">
+
          <label for="evtUserPhone">전화번호</label>
-         <input type="text" class="evt_apply_input bd_img"  id="evtUserPhone" 
-           max-length="11" value="01012345678">
+         <input type="number" class="evt_apply_input bd_img inputNum"
+           maxlength="11" value="01012345678">
+
          <label for="evtUserBirth">생년월일</label>
-         <input type="number" pattern="\d*" class="evt_apply_input bd_img" id="evtUserBirth" 
-          value="19920101" max-length="8">
+         <input type="number" pattern="\d*" class="evt_apply_input bd_img inputNum"
+          value="19920101" maxlength="8">
         </div>
         <!-- //dialog_contents -->
         <!-- dialog_footer -->

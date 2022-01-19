@@ -298,7 +298,26 @@ $(function(){
       }
       $('#userComment').val('');
     });
+       /*================================= HTR-M-EVT-MDL-010-1.html ============================*/
+       //응모하기 inputNum 숫자만 입력 가능 + maxlength 적용
+       var inputNums = document.querySelectorAll('.inputNum');
 
+       for(var iNum = 0; iNum<inputNums.length; iNum++){
+         console.log( document.querySelectorAll('.inputNum')[iNum]);
+          document.querySelectorAll('.inputNum')[iNum].addEventListener('keyup', inpunNumCustom);
+       }
+       function inpunNumCustom(){
+         var numCheck = /[~!@#$%^&*()_+|<>?:{}|ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;; 
+         var max = this.getAttribute('maxlength');
+         if(max > 0 && this.value.length > max){
+           this.value  = this.value.slice(0, max);
+         };
+
+         if(numCheck.test(this.value)){
+
+            this.value  = this.value.replace(type, '');
+         }
+       }
        /*================================= HTR-M-EVT-MDL-016.html ==============================*/ 
        //셀렉트 박스 커스텀
 });
