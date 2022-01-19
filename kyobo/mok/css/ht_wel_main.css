@@ -72,6 +72,10 @@ body {
   border: 0 !important;
 }
 
+.ht_ .wel_mc.sps-blw {
+  border-bottom: 1px solid #d5d5d5 !important;
+}
+
 .ht_ .wel_hero {
   padding: 0 20px;
 }

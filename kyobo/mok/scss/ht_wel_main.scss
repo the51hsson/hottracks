@@ -36,6 +36,9 @@ body {
   }
   .wel_mc {
     border:0 !important;
+    &.sps-blw {
+      border-bottom:1px solid #d5d5d5 !important;
+    }
   }
 
 
