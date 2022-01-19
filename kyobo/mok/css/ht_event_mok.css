@@ -7708,10 +7708,6 @@ body.dialog_open {
   margin: 0;
 }
 
-.list_evt_area .evt_item:nth-of-type(11) {
-  margin-top: 40px;
-}
-
 .list_evt_area .thumnail_evt {
   position: relative;
   padding-top: 57.2%;
