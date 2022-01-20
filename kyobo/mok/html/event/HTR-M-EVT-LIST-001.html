@@ -19,7 +19,7 @@
     <meta property="og:image" content="../../images/guide/sns.jpg">
     <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-    <title>교보핫트랙스-이벤트 당첨자 발표</title>
+    <title>교보핫트랙스-MD-이벤트기획전</title>
 
     <!-- Plug-In css -->
     <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -32,8 +32,12 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
     <!-- // font css -->
 
+    <!-- Custom styles for this template -->
+    <!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
+    <!-- // Custom styles for this template -->
+
     <!-- ht_ Hottracks custom css -->
-    <link rel="stylesheet" href="../../css/ht_event_mok.css">
+     <link rel="stylesheet" href="../../css/ht_event_mok.css">
     <!--// ht_ Hottracks custom css -->
 
 
@@ -52,7 +56,11 @@
     <!-- // Plug-In javascript -->
 
     <!-- UI JavaScript -->
+    <!-- <script src="../../vendors/js/ui_mok.js"></script> -->
     <script src="../../js/front_bak.js"></script>
+    
+    <!-- // UI JavaScript -->
+    <script src="../../js/ht_event_list.js"></script>
 </head>
 
 <body>
@@ -64,12 +72,14 @@
     <!-- //SkipNav -->
 
     <!-- wrapper -->
-    <div class="ht_ wrapper">
+    <!-- ht_ Hottracks ht_ 클래스 추가 -->
+    <!-- DESC : footer 없는 경우 [ no-footer ] 클래스 추가 -->
+    <!-- DESC : 상품상세와 같이 하단 구매 영역 있는 경우 클래스 .contents_detail_view 추가 -->
+    <div class="ht_ wrapper contents_detail_view" style="padding-bottom:50px;">
         <!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
         <header id="headerWrapper" class="ht_ header_wrapper">
             <div class="header_left">
                 <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
-                <a href="#" class="btn_header_home"><span class="hidden">홈으로</span></a>
             </div>
             <div class="header_center">
                 <div class="page_title prod_detail"></div>
@@ -85,84 +95,349 @@
             </div>
         </header>
         <!-- // 헤더 -->
-        <!-- 컨텐츠 -->
-        <main class="container_wrapper">
-            <section class="contents_evt_wrap">
-                <!--이벤트 타이틀 영역-->
-               <div class="evt_section_title">
-                 <h2>당첨자 발표</h2>
-                 <span class="evt_ck_area">
-                    <input type="checkbox" id="myEventCk" class="common_check">
-                    <label for="myEventCk" class="common_ck_label">내가 참여한 이벤트</label>
-                 </span>
-               </div>
-               <!--이벤트 메뉴 영역-->
-               <div class="scroll_tab scroll_box type_no1 scroll_hide"><!-- todo : type_no1 타입이 미정이라 임의로 클래스 생성함 -->
-                    <a href="#a" class="active"><span>전체</span></a>
-                    <a href="#a"><span>라이브</span></a>
-                    <a href="#a"><span>음반/영상</span></a>
-                    <a href="#a"><span>컬쳐</span></a>
-                    <a href="#a"><span>일반</span></a>
+        
+        <div class="evt_list_header">
+            <h2>이벤트</h2>
+        </div>
+        
+        <!-- 이벤트 퀵메뉴 -->
+        <div class="evt_quick_menu_slide">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide active">
+                        <a href="#a" class="active">
+                            <span class="ico">
+                                <img src="../../images/guide/ico_evt_quick_01_active.svg" alt="">
+                            </span>
+                            <span class="txt">기획전</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#a">
+                            <span class="ico">
+                                <img src="../../images/guide/ico_evt_quick_02.svg" alt="">
+                            </span>
+                            <span class="txt">이벤트</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#a">
+                            <span class="ico">
+                                <img src="../../images/guide/ico_evt_quick_03.svg" alt="">
+                            </span>
+                            <span class="txt">쿠폰존</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#a">
+                            <span class="ico">
+                                <img src="../../images/guide/ico_evt_quick_04.svg" alt="">
+                            </span>
+                            <span class="txt">매장이벤트</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#a">
+                            <span class="ico">
+                                <img src="../../images/guide/ico_evt_quick_05.svg" alt="">
+                            </span>
+                            <span class="txt">컬처이벤트</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#a">
+                            <span class="ico">
+                                <img src="../../images/guide/ico_evt_quick_06.svg" alt="">
+                            </span>
+                            <span class="txt">당첨자발표</span>
+                        </a>
+                    </div>
                 </div>
-                <!--이벤트 리스트 영역-->
-                <ul class="evt_list_card_ul">
-                    <li class="evt_list_item">
-                        <div class="category_area">
-                            <span>라이브</span>
-                            <span class="status_new">NEW</span>
+            </div>
+        </div>
+
+        <!-- 컨텐츠 -->
+        <main id="containerWrapper" class="container_wrapper">
+            <section>
+                <article class="evt_list_area">
+                    <div class="evt_menu">
+                        <div class="left_txt_sum">264건</div>                    
+                        <div class="sort_tab scroll_box">
+                            <a href="#a" class="active"><span>최신순</span></a>
+                            <a href="#a"><span>마감임박순</span></a>
+                            <a href="#a"><span>높은 할인율</span></a>
                         </div>
-                        <div class="list_title_area">
-                            핫트랙스 LIVE X 단순 생활 이벤트 당첨자 발표
+                    </div>
+
+                    <div class="list_evt_area">
+                        <div class="evt_item">
+                            <!--이벤트 종료 Class:  promotion_end-->
+                            <div class="thumnail_evt promotion_end" >
+                                <div class="promotion_status_txt">이벤트 종료</div>
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_01.png"  alt="핫트랙스 이벤트" title="핫트랙스 이벤트"/>
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>
                         </div>
-                        <div class="list_date_area">
-                            2021.11.08
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_02.png"  alt="핫트랙스 이벤트" title="핫트랙스 이벤트"/>
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                            
                         </div>
-                    </li>
-                    <li class="evt_list_item">
-                    <div class="category_area">
-                        <span>일반</span>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_03.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                            
+                        </div>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_04.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                               
+                        </div>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_05.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>
+                        </div>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_06.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                            
+                        </div>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_07.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                            
+                        </div>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_08.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                               
+                        </div>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_09.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                            
+                        </div>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_10.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                               
+                        </div>               
                     </div>
-                    <div class="list_title_area">
-                        GHOST9(고스트나인) - NOW:WHO WE ARE FACING
-                    </div>
-                    <div class="list_date_area">
-                        2021.11.08
-                    </div>
-                    </li>
-                    <li class="evt_list_item">
-                    <div class="category_area">
-                        <span>음반/영상</span>
-                    </div>
-                    <div class="list_title_area">
-                        영화 &lt;팜 스프링스&gt; 예매권 이벤트 당첨 발표
-                    </div>
-                    <div class="list_date_area">
-                        2021.11.08
-                    </div>
-                    </li>
-                    <li class="evt_list_item">
-                    <div class="category_area">
-                        <span>컬처</span>
-                    </div>
-                    <div class="list_title_area">
-                        영화 &lt;팜 스프링스&gt; 예매권 이벤트 당첨 발표
-                    </div>
-                    <div class="list_date_area">
-                        2021.11.08
-                    </div>
-                    </li>
-                    <li class="evt_list_item">
-                    <div class="category_area">
-                        <span>음반/영상</span>
-                    </div>
-                    <div class="list_title_area">
-                        VICTON 1ST CONCERT [NEW WORLD]DVD 발매기념
-                    </div>
-                    <div class="list_date_area">
-                        2021.11.08
-                    </div>
-                    </li>
-                </ul>
+                    <!--마감임박 영역( 마감 임박 11번째 사진에 나오게 처리)-->
+                    <section class="evt_slider_wrap deadline_section">
+                        <span class="deadline_character_area">
+                            <div class="deadline_bubble">
+                                <div class="txt">시간이 얼마 남지 않았어요<br/>마감 임박 이벤트 & 기획전을 확인하세요!</div>
+                            </div>
+                            <div class="deadline_character">
+                                <img class="bd_img" src="../../images/guide/deadline_character.png" alt="마감 임박 아이콘" title="마감 임박 아이콘">
+                            </div>
+                        </span>
+        
+                        <h2>마감임박</h2>
+                        <div class="swiper mySwiper evt" id="swapAble1">
+                            <!--상품 개수 2개이하일때 ul class="evt_slider nonswipe"로 설정-->
+                            <!-- 캐로셀 노출 시 class="swiper-wrapper evt_slider" -->
+                            <ul class="swiper-wrapper evt_slider">
+                                <li class="swiper-slide">
+                                    <div class="img">
+                                        <img class="bd_img" src="../../images/temp/@evt_thumnail_01.png"
+                                        alt="핫트랙스 마감임박" title="핫트랙스 마감임박">
+                                    </div>
+                                    <div class="item_info">
+                                    <span class="title">
+                                        <!--hidden으로 조정-->
+                                        <em class="mpt_discount hidden">67%</em>제3회 라이징스타 공모전<br/>최종 수상작 발표
+                                    </span>
+                                    <span class="sub">최종 수상작 발표(대상/우수상/참가상)</span>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="img">
+                                        <img class="bd_img" src="../../images/temp/@evt_thumnail_02.png" class="bd_img" 
+                                        alt="핫트랙스 마감임박" title="핫트랙스 마감임박">
+                                    </div>
+                                    <div class="item_info">
+                                    <span class="title">
+                                        <em class="mpt_discount">67%</em>
+                                        제3회 라이징스타 공모전<br/> 최종 수상작 발표
+                                    </span>
+                                    <span class="sub">최종 수상작 발표(대상/우수상/참가상)</span>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="img">
+                                        <img class="bd_img" src="../../images/temp/@evt_thumnail_01.png"
+                                        alt="핫트랙스 마감임박" title="핫트랙스 마감임박">
+                                    </div>
+                                    <div class="item_info">
+                                    <span class="title">제3회 라이징스타 공모전<br/>최종 수상작 발표</span>
+                                    <span class="sub">최종 수상작 발표(대상/우수상/참가상)</span>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="img">
+                                        <img class="bd_img" src="../../images/temp/@evt_thumnail_02.png" class="bd_img" 
+                                        alt="핫트랙스 마감임박" title="핫트랙스 마감임박">
+                                    </div>
+                                    <div class="item_info">
+                                    <span class="title">제3회 라이징스타 공모전<br/> 최종 수상작 발표</span>
+                                    <span class="sub">최종 수상작 발표(대상/우수상/참가상)</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!--마감임박 종료-->
+                    <div class="list_evt_area">
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_11.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                               
+                        </div>
+                
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_12.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                               
+                        </div>
+            
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_13.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                            
+                        </div>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_14.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                            
+                        </div>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_15.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                               
+                        </div>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_16.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>
+                        </div>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_17.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                            
+                        </div>
+
+                        <div class="evt_item">
+                            <div class="thumnail_evt">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_18.png" />
+                            </div>
+                            <div class="txt_account">
+                                <h3 class="txt_heading">제3회 라이징스타 공모전 최종 수상작 발표!</h3>
+                                <p class="txt_sub">최종 수상작 발표 (대상/우수상/참가상)</p>
+                                <p class="txt_period">2021.11.04 ~ 2021.11.15</p>
+                            </div>                                            
+                        </div>
+                   </div>    
+                </article>
                 <!--더보기 버튼 more_btn에 hidden Class  추가하면 버튼 안보임-->
                 <div class="btn_more_div">
                     <button class="more_btn">
@@ -170,62 +445,301 @@
                         <span class="btn_more_icon"></span>
                     </button>
                 </div>
+
             </section>
-      
+            <!-- 반응 최고 -->
+            <section class="evt_slider_wrap">
+                <h2>반응최고</h2>
+                <div class="swiper mySwiper evt" id="swapAble2">
+                    <!--상품 개수 2개이하일때  ul class="evt_slider nonswipe"로 설정-->
+                    <ul class="swiper-wrapper evt_slider">
+                        <li class="swiper-slide">
+                            <div class="img">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_01.png" class="bd_img" 
+                                alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+                            </div>
+                            <div class="item_info">
+                              <span class="title">
+                                   <em class="mpt_discount">67%</em>제3회 라이징스타 공모전<br/>최종 수상작 발표!
+                               </span>
+                              <span class="sub">최종 수상작 발표(대상/우수상/참가상)</span>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_02.png" class="bd_img" 
+                                alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+                            </div>
+                            <div class="item_info">
+                              <span class="title">제3회 라이징스타 공모전<br/>최종 수상작 발표!</span>
+                              <span class="sub">최종 수상작 발표(대상/우수상/참가상)</span>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_03.png" class="bd_img" 
+                                alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+                            </div>
+                            <div class="item_info">
+                              <span class="title">제3회 라이징스타 공모전<br/>최종 수상작 발표!</span>
+                              <span class="sub">최종 수상작 발표(대상/우수상/참가상)</span>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_03.png" class="bd_img" 
+                                alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+                            </div>
+                            <div class="item_info">
+                              <span class="title">제3회 라이징스타 공모전<br/>최종 수상작 발표!</span>
+                              <span class="sub">최종 수상작 발표(대상/우수상/참가상)</span>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img">
+                                <img class="bd_img" src="../../images/temp/@evt_thumnail_03.png" class="bd_img" 
+                                alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+                            </div>
+                            <div class="item_info">
+                              <span class="title">제3회 라이징스타 공모전<br/>최종 수상작 발표!</span>
+                              <span class="sub">최종 수상작 발표(대상/우수상/참가상)</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- 오늘만 특가 -->
+            <section class="hot_deal_wrap">
+                <div class="hot_deal_area">
+                   <div class="title_area">
+                       <h2>오늘만 특가</h2>
+                       <div class="countdown">
+                           <span class="time">05:53:02</span>
+                       </div>
+                   </div> 
+                   <div class="swiper mySwiper hotdeal">
+                        <ul class="swiper-wrapper hotdeal_slider">
+                            <li class="swiper-slide">
+                                <div class="product_pic">
+                                    <img class="bd_img" src="../../images/guide/@hotdeal_thumnail_01.png" alt="핫트랙스 핫딜 상품" title="핫트랙스 핫딜 상품">
+                                </div>
+                                <div class="title">파엘 육각 실리콘 코스터 6P 세트 컬러 택1.2줄까지 허용 2줄 이상 출력시 말줄임 처리</div>
+                                <div class="price_area">
+                                    <div class="discount_rate">12%</div>
+                                    <div class="fianl_price">17,500원</div>
+                                    <div class="badge_wrap badge_line badge_line">
+                                        <div class="badge_list">
+                                            <span class="badge badge_default badge_xs">무료배송</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="product_pic">
+                                    <img class="bd_img" src="../../images/guide/@hotdeal_thumnail_01.png" alt="핫트랙스 핫딜 상품" title="핫트랙스 핫딜 상품">
+                                </div>
+                                <div class="title">파엘 육각 실리콘 코스터 6P 세트 컬러 택1.2줄까지 허용 2줄 이상 출력시 말줄임 처리</div>
+                                <div class="price_area">
+                                    <div class="discount_rate">12%</div>
+                                    <div class="fianl_price">17,500원</div>
+                                    <div class="badge_wrap badge_line">
+                                        <div class="badge_list">
+                                            <span class="badge badge_default badge_xs">무료배송</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="product_pic">
+                                    <img class="bd_img" src="../../images/guide/@hotdeal_thumnail_01.png" alt="핫트랙스 핫딜 상품" title="핫트랙스 핫딜 상품">
+                                </div>
+                                <div class="title">파엘 육각 실리콘 코스터 6P 세트 컬러 택1.2줄까지 허용 2줄 이상 출력시 말줄임 처리</div>
+                                <div class="price_area">
+                                    <div class="discount_rate">12%</div>
+                                    <div class="fianl_price">17,500원</div>
+                                    <div class="badge_wrap badge_line">
+                                        <div class="badge_list">
+                                            <span class="badge badge_default badge_xs">무료배송</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="product_pic">
+                                    <img class="bd_img" src="../../images/guide/@hotdeal_thumnail_01.png" alt="핫트랙스 핫딜 상품" title="핫트랙스 핫딜 상품">
+                                </div>
+                                <div class="title">파엘 육각 실리콘 코스터 6P 세트 컬러 택1.2줄까지 허용 2줄 이상 출력시 말줄임 처리</div>
+                                <div class="price_area">
+                                    <div class="discount_rate">12%</div>
+                                    <div class="fianl_price">17,500원</div>
+                                    <div class="badge_wrap badge_line">
+                                        <div class="badge_list">
+                                            <span class="badge badge_default badge_xs">무료배송</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="product_pic">
+                                    <img class="bd_img" src="../../images/guide/@hotdeal_thumnail_01.png" alt="핫트랙스 핫딜 상품" title="핫트랙스 핫딜 상품">
+                                </div>
+                                <div class="title">파엘 육각 실리콘 코스터 6P 세트 컬러 택1.2줄까지 허용 2줄 이상 출력시 말줄임 처리</div>
+                                <div class="price_area">
+                                    <div class="discount_rate">12%</div>
+                                    <div class="fianl_price">17,500원</div>
+                                    <div class="badge_wrap badge_line">
+                                        <div class="badge_list">
+                                            <span class="badge badge_default badge_xs">무료배송</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="product_pic">
+                                    <img class="bd_img" src="../../images/guide/@hotdeal_thumnail_01.png" alt="핫트랙스 핫딜 상품" title="핫트랙스 핫딜 상품">
+                                </div>
+                                <div class="title">파엘 육각 실리콘 코스터 6P 세트 컬러 택1.2줄까지 허용 2줄 이상 출력시 말줄임 처리</div>
+                                <div class="price_area">
+                                    <div class="discount_rate">12%</div>
+                                    <div class="fianl_price">17,500원</div>
+                                    <div class="badge_wrap badge_line">
+                                        <div class="badge_list">
+                                            <span class="badge badge_default badge_xs">무료배송</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="product_pic">
+                                    <img class="bd_img" src="../../images/guide/@hotdeal_thumnail_01.png" alt="핫트랙스 핫딜 상품" title="핫트랙스 핫딜 상품">
+                                </div>
+                                <div class="title">파엘 육각 실리콘 코스터 6P 세트 컬러 택1.2줄까지 허용 2줄 이상 출력시 말줄임 처리</div>
+                                <div class="price_area">
+                                    <div class="discount_rate">12%</div>
+                                    <div class="fianl_price">17,500원</div>
+                                    <div class="badge_wrap badge_line">
+                                        <div class="badge_list">
+                                            <span class="badge badge_default badge_xs">무료배송</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="product_pic">
+                                    <img class="bd_img" src="../../images/guide/@hotdeal_thumnail_01.png" alt="핫트랙스 핫딜 상품" title="핫트랙스 핫딜 상품">
+                                </div>
+                                <div class="title">파엘 육각 실리콘 코스터 6P 세트 컬러 택1.2줄까지 허용 2줄 이상 출력시 말줄임 처리</div>
+                                <div class="price_area">
+                                    <div class="discount_rate">12%</div>
+                                    <div class="fianl_price">17,500원</div>
+                                    <div class="badge_wrap badge_line">
+                                        <div class="badge_list">
+                                            <span class="badge badge_default badge_xs">무료배송</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="product_pic">
+                                    <img class="bd_img" src="../../images/guide/@hotdeal_thumnail_01.png" alt="핫트랙스 핫딜 상품" title="핫트랙스 핫딜 상품">
+                                </div>
+                                <div class="title">파엘 육각 실리콘 코스터 6P 세트 컬러 택1.2줄까지 허용 2줄 이상 출력시 말줄임 처리</div>
+                                <div class="price_area">
+                                    <div class="discount_rate">12%</div>
+                                    <div class="fianl_price">17,500원</div>
+                                    <div class="badge_wrap badge_line">
+                                        <div class="badge_list">
+                                            <span class="badge badge_default badge_xs">무료배송</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                   </div>
+                </div>
+            </section>
         </main>
         <!-- // 컨텐츠 -->
         <!-- 푸터 -->
-        <footer class="footer_wrapper">
-            <div class="notice_wrap">
-                <span class="notice_text">공지사항</span>
-                <a href="#" class="notice_link">교보문고 개인정보 처리방침 개정안내</a>
-            </div>
+		<footer class="footer_wrapper">
+			<div class="notice_wrap">
+				<span class="notice_text">공지사항</span>
+				<a href="#" class="notice_link">교보문고 개인정보 처리방침 개정안내</a>
+			</div>
 
-            <div class="footer_body">
-                <div class="logo_box">
-                    <a href="#" class="logo_link">
-                        <img src="../../images/guide/ico_logo.svg" alt="핫트랙스">
-                    </a>
-                </div>
+			<div class="footer_body">
+				<div class="logo_box">
+					<a href="#" class="logo_link">
+						<img src="../../images/guide/ico_logo.svg" alt="핫트랙스">
+					</a>
+				</div>
 
-                <div class="footer_info_box">
-                    <div class="info_text_multi">
-                        <span class="info_text">대표이사 : 김상훈</span>
-                        <span class="gap">|</span>
-                        <address class="info_text">경기도 파주시 회동길 78(출판단지내)</address>
-                    </div>
-                    <span class="info_text">사업자등록번호 : 102-81-29258</span>
-                    <span class="info_text">개인정보보호책임자 : 김상훈</span>
-                    <span class="info_text"><span class="text_inner">통신판매업신고번호 : 제 2012-경기파주-3911호</span><a href="#" class="btn_footer_link">사업자정보확인</a></span>
-                </div>
+				<div class="footer_info_box">
+					<div class="info_text_multi">
+						<span class="info_text">대표이사 : 김상훈</span>
+						<span class="gap">|</span>
+						<address class="info_text">경기도 파주시 회동길 78(출판단지내)</address>
+					</div>
+					<span class="info_text">사업자등록번호 : 102-81-29258</span>
+					<span class="info_text">개인정보보호책임자 : 김상훈</span>
+					<span class="info_text"><span class="text_inner">통신판매업신고번호 : 제 2012-경기파주-3911호</span><a href="#" class="btn_footer_link">사업자정보확인</a></span>
+				</div>
 
-                <div class="footer_menu_box">
-                    <ul class="footer_menu_list">
-                        <li class="footer_menu_item"><a href="#" class="footer_menu_link">핫트합니다</a></li>
-                        <li class="footer_menu_item"><a href="#" class="footer_menu_link">공지사항</a></li>
-                        <li class="footer_menu_item privacy"><a href="#" class="footer_menu_link">개인정보처리방침</a></li>
-                        <li class="footer_menu_item"><a href="#" class="footer_menu_link">이용약관</a></li>
-                    </ul>
-                </div>
+				<div class="footer_menu_box">
+					<ul class="footer_menu_list">
+						<li class="footer_menu_item"><a href="#" class="footer_menu_link">핫트합니다</a></li>
+						<li class="footer_menu_item"><a href="#" class="footer_menu_link">공지사항</a></li>
+						<li class="footer_menu_item privacy"><a href="#" class="footer_menu_link">개인정보처리방침</a></li>
+						<li class="footer_menu_item"><a href="#" class="footer_menu_link">이용약관</a></li>
+					</ul>
+				</div>
 
-                <div class="footer_call_box"><span class="call_text">대표전화</span><span class="call_num"><a href="tel:16661112">1666-1112</a></span> <br><span class="call_text_sm">(평일 09:00~18:00 점심시간 12:00~13:00 )</span></div>
+				<div class="footer_call_box"><span class="call_text">대표전화</span><span class="call_num"><a href="tel:16661112">1666-1112</a></span> <br><span class="call_text_sm">(평일 09:00~18:00 점심시간 12:00~13:00 )</span></div>
 
-                <div class="copyright_box">
-                    <div class="copyright">@Hottracks Centre</div>
-                    <div class="sns_share_box">
-                        <a href="#" class="btn_sns_share insta"><span class="hidden">instagram 공유</span></a>
-                        <a href="#" class="btn_sns_share fb"><span class="hidden">facebook 공유</span></a>
-                        <a href="#" class="btn_sns_share youtube"><span class="hidden">youtube 공유</span></a>
-                        <a href="#" class="btn_sns_share twt"><span class="hidden">twitter 공유</span></a>
-                        <a href="#" class="btn_sns_share blog"><span class="hidden">blog 공유</span></a>
-                        
-                    </div>
-                </div>
-            </div>
+				<div class="copyright_box">
+					<div class="copyright">@Hottracks Centre</div>
+					<div class="sns_share_box">
+						<a href="#" class="btn_sns_share insta"><span class="hidden">instagram 공유</span></a>
+						<a href="#" class="btn_sns_share fb"><span class="hidden">facebook 공유</span></a>
+						<a href="#" class="btn_sns_share youtube"><span class="hidden">youtube 공유</span></a>
+						<a href="#" class="btn_sns_share twt"><span class="hidden">twitter 공유</span></a>
+						<a href="#" class="btn_sns_share blog"><span class="hidden">blog 공유</span></a>
+						
+					</div>
+				</div>
+			</div>
 
-        </footer>
-        <!-- // 푸터 -->
+		</footer>
+		<!-- // 푸터 -->
+
+		<!-- 독바 -->
+		<section class="docker_wrapper">
+			<!-- 탑버튼 -->
+			<div class="floating_wrapper">
+				<a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
+			</div>
+			<!-- // 탑버튼 -->
+
+			<ul class="docker_list">
+				<li class="docker_item"><a href="#" class="btn_docker_home"><span class="hidden">홈</span></a></li>
+				<li class="docker_item"><a href="#" class="btn_docker_search"><span class="hidden">검색</span></a></li>
+				<!-- DESC : 로그인 후 li.docker_item [ login ] class 추가 -->
+				<li class="docker_item my">
+					<a href="#" class="btn_docker_my">
+						<span class="img_box">
+							<img src="../../temporary/temp_docker_login_mok.png" alt="마이룸 임시이미지" />
+						</span>
+						<span class="hidden">마이룸</span>
+					</a>
+				</li>
+				<li class="docker_item"><a href="#" class="btn_docker_history"><span class="hidden">최근본상품</span></a></li>
+				<li class="docker_item"><a href="#" class="btn_docker_menu"><span class="hidden">전체메뉴</span></a></li>
+			</ul>
+		</section>
+		<!-- // 독바 -->
     </div>
     <!-- // wrapper -->
+
 </body>
+
 </html>
