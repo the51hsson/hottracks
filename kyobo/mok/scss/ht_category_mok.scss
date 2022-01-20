@@ -388,6 +388,27 @@
 				background-color: #da2128;
 			}
 		}
+		li.brand_li{
+			position:relative;
+			em{
+				display:none;
+				font-size: 11px;
+				color:#fff;
+				position:absolute;
+				background-color:#da2128;
+				top:8px;
+				right:8px;
+				min-width:18px;
+				height:18px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 19px;;
+			}
+			&.checked_status em{
+				display:block;
+			
+			}
+		}
 	}
 }
 //상품 리스트 영역
@@ -608,14 +629,29 @@
         display: flex;
 		flex-flow: row wrap;
 		justify-content: flex-start;
-			align-content: flex-start;
-	align-items:flex-start;
+	    align-content: flex-start;
+	    align-items:flex-start;
 		cursor:pointer;
 		span{
 			display: block;
 		}
 		&:first-of-type{
 			margin-top:0;
+		}
+	}
+	li.adult_prod{
+		.product_pic{
+			background-color: #f2f2f2;
+		}
+		.adult_block{
+			position:absolute;
+			width:100%;
+			top:50%;
+			transform: translateY(-50%);
+			text-align: center;
+			padding-top:35%;
+			background:url(../images/guide/@adult_block.svg) no-repeat center top / 30%;
+
 		}
 	}
 	.product_pic{

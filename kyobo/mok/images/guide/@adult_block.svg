@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="icon_19" transform="translate(7029 19530)">
+    <rect id="사각형_19613" data-name="사각형 19613" width="40" height="40" transform="translate(-7029 -19530)" fill="none"/>
+    <g id="그룹_109461" data-name="그룹 109461" transform="translate(-4.895 -34.895)">
+      <g id="타원_336" data-name="타원 336" transform="translate(-7022.105 -19493.105)" fill="#da2128" stroke="#000" stroke-width="1.5">
+        <circle cx="18" cy="18" r="18" stroke="none"/>
+        <circle cx="18" cy="18" r="17.25" fill="none"/>
+      </g>
+      <text id="_19" data-name="19" transform="translate(-7015.29 -19468.086)" fill="#fff" font-size="20" font-family="Roboto-Light, Roboto" font-weight="300" letter-spacing="-0.05em"><tspan x="0" y="0">19</tspan></text>
+    </g>
+    <g id="그룹_109460" data-name="그룹 109460" transform="translate(-7001.355 -19527.525)">
+      <g id="타원_337" data-name="타원 337" transform="translate(0.355 -0.474)" fill="#fff" stroke="#000" stroke-width="1.5">
+        <circle cx="6" cy="6" r="6" stroke="none"/>
+        <circle cx="6" cy="6" r="5.25" fill="none"/>
+      </g>
+      <g id="그룹_109459" data-name="그룹 109459" transform="translate(4.364 3.535)">
+        <line id="선_141" data-name="선 141" x2="3.982" transform="translate(0 1.991)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.5"/>
+        <line id="선_142" data-name="선 142" y2="3.982" transform="translate(1.991)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

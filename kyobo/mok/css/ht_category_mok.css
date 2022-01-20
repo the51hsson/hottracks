@@ -8150,6 +8150,29 @@ body.dialog_open {
   background-color: #da2128;
 }
 
+.ctg_floating_line .ctg_floating_menues li.brand_li {
+  position: relative;
+}
+
+.ctg_floating_line .ctg_floating_menues li.brand_li em {
+  display: none;
+  font-size: 11px;
+  color: #fff;
+  position: absolute;
+  background-color: #da2128;
+  top: 8px;
+  right: 8px;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 19px;
+}
+
+.ctg_floating_line .ctg_floating_menues li.brand_li.checked_status em {
+  display: block;
+}
+
 .ctg_prod_wrap {
   padding: 0 20px;
   color: #292929;
@@ -8481,6 +8504,21 @@ body.dialog_open {
 
 .evt_products li:first-of-type {
   margin-top: 0;
+}
+
+.evt_products li.adult_prod .product_pic {
+  background-color: #f2f2f2;
+}
+
+.evt_products li.adult_prod .adult_block {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  padding-top: 35%;
+  background: url(../images/guide/@adult_block.svg) no-repeat center top/30%;
 }
 
 .evt_products .product_pic {
