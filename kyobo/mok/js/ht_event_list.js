@@ -94,6 +94,9 @@ $(function(){
   //  배너 스와이프 (3타입으로 세번 반복 적용)
   // TODO 최종 1타입의 배너만 사용되므로 2가지는 삭제 해야됨 
   var evtSwiperType1, evtSwiperType2, evtSwiperType3;
+  // $('.evt_banner_wrap').each(function (i, ele){
+  //   if(ele.);
+  // })
   if($('.evt_banner_wrap').eq(0).find('li.swiper-slide').length > 1){
     evtSwiperType1 = new CustomSwiper('.evt_banner_wrap:nth-of-type(1) .swiper-container', {
         slidesPerView: 'auto',

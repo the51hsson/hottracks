@@ -1486,7 +1486,7 @@ body.dialog_open {
                 padding: 0;
                 background-color: #fff;
                 border: none;
-                border-radius: 4px;
+                //border-radius: 4px;
             }
             &:after {
                 content: "";
@@ -1681,13 +1681,16 @@ body.dialog_open {
             transform: translateY(100%);
             -webkit-backface-visibility: hidden;
             .dialog_wrap {
-                border-radius: 16px 16px 0 0;
+                //border-radius: 16px 16px 0 0;
                 .dialog_header {
                     margin: 0;
                     padding: 18px 54px 19px;
                     .dialog_title {
                         text-align: center;
                     }
+                }
+                .dialog_wrap.border_round {
+                   border-radius: 16px 16px 0 0;
                 }
                 .dialog_contents {
                     margin: 24px 20px 30px;

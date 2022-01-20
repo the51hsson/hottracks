@@ -638,6 +638,43 @@
         }
     }
 }
+/*========공통 체크박스=========*/
+.checkbox_cm{
+	display:none;	
+}
+.label_for_sp,
+.label_for_radio{
+	display:block;
+	position: relative;
+}
+.label_for_sp:before{
+	content:"";
+	position:absolute;
+	width:22px;
+	height:22px;
+	left:-28px;
+	top:-1px;
+	background:url(../images/guide/ico_unchecked_cm.svg) no-repeat 0 0 / 22px;
+	z-index:1;
+}
+.checkbox_cm:checked + .label_for_sp:before{
+	background:url(../images/guide/ico_checked_cm.svg) no-repeat 0 0 / 22px
+}
+/*========공통 라디오=========*/
+.label_for_radio:before{
+	content:"";
+	position:absolute;
+	width:22px;
+	height:22px;
+	left:-28px;
+	top:-1px;
+	background:url(../images/guide/ico_unchecked_radio_cm.svg) no-repeat 0 0 / 22px;
+	z-index:1;
+}
+.checkbox_cm:checked + .label_for_radio:before{
+	background:url(../images/guide/ico_checked_radio_cm.svg) no-repeat 0 0 / 22px
+}
+/*//공통 */
 @media(-webkit-min-device-pixel-ratio: 2) {
     .form_filter_box .form_chk_filter input + label .text:before {
         background-image: url('../images/ico_checkbox_mok@2x.png');

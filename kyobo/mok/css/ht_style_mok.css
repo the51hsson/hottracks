@@ -601,6 +601,21 @@ button.btn_primary.disabled, button.btn_primary[aria-disabled], button.btn_prima
   border-color: #DB8880;
 }
 
+.btn_outline_primary {
+  color: #dc3545;
+  border: solid 1px #dc3545;
+}
+
+.btn_outline_primary:hover {
+  background: #FFF4F1;
+  color: #DA2128;
+}
+
+.btn_outline_primary.disabled {
+  background: #fff;
+  color: #fff;
+}
+
 a.btn_light_gray, button.btn_light_gray {
   color: #fff;
   background: #767676;
@@ -1656,7 +1671,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .badge_primary_evt {
   color: #dc3545;
-  background-color: #f5f5f5;
+  background-color: #fff4f1;
   font-weight: normal;
   padding: 0 8px;
   line-height: 21px;
@@ -3683,7 +3698,6 @@ body.dialog_open {
   padding: 0;
   background-color: #fff;
   border: none;
-  border-radius: 4px;
 }
 
 .dialog_wrapper .ui-dialog .dialog_wrap:after {
@@ -3924,10 +3938,6 @@ body.dialog_open {
   -webkit-backface-visibility: hidden;
 }
 
-.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap {
-  border-radius: 16px 16px 0 0;
-}
-
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap .dialog_header {
   margin: 0;
   padding: 18px 54px 19px;
@@ -3935,6 +3945,10 @@ body.dialog_open {
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap .dialog_header .dialog_title {
   text-align: center;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap .dialog_wrap.border_round {
+  border-radius: 16px 16px 0 0;
 }
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap .dialog_contents {
@@ -5493,6 +5507,49 @@ body.dialog_open {
   margin-left: -1px;
 }
 
+/*========공통 체크박스=========*/
+.checkbox_cm {
+  display: none;
+}
+
+.label_for_sp,
+.label_for_radio {
+  display: block;
+  position: relative;
+}
+
+.label_for_sp:before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: -28px;
+  top: -1px;
+  background: url(../images/guide/ico_unchecked_cm.svg) no-repeat 0 0/22px;
+  z-index: 1;
+}
+
+.checkbox_cm:checked + .label_for_sp:before {
+  background: url(../images/guide/ico_checked_cm.svg) no-repeat 0 0/22px;
+}
+
+/*========공통 라디오=========*/
+.label_for_radio:before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: -28px;
+  top: -1px;
+  background: url(../images/guide/ico_unchecked_radio_cm.svg) no-repeat 0 0/22px;
+  z-index: 1;
+}
+
+.checkbox_cm:checked + .label_for_radio:before {
+  background: url(../images/guide/ico_checked_radio_cm.svg) no-repeat 0 0/22px;
+}
+
+/*//공통 */
 @media (-webkit-min-device-pixel-ratio: 2) {
   .form_filter_box .form_chk_filter input + label .text:before {
     background-image: url("../images/ico_checkbox_mok@2x.png");

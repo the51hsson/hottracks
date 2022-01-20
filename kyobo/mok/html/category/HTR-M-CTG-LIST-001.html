@@ -64,6 +64,8 @@
 </head>
 
 <body>
+	<!--블랙스크린-->
+	<!--브랜트 스티키 메뉴 소팅 선택 팝업-->
     <!-- SkipNav -->
     <div class="skip_nav_wrap">
         <a href="#headerWrapper">메뉴 바로가기</a>
@@ -138,7 +140,6 @@
           <button type="button" class="subMenu_btn"></button>
         </div>   
       </div>
-    
     <!-- 컨텐츠 -->
     <main id="containerWrapper" class="container_wrapper">
       <div class="module_wrap type2">
@@ -160,6 +161,11 @@
                 <span class="discount_rate">15%</span>
                 <span class="fianl_price">9,234,000원</span>
               </div>
+			  <div class="badge_line">
+				<span class="badge rounded badge_primary_evt">쿠폰</span>
+				<span class="badge rounded badge_default_evt">사은품</span>
+				<span class="badge rounded badge_default_evt">무료배송</span>
+			  </div>
             </li>
             <li class="swiper-slide">
               <div class="product_pic">
@@ -265,7 +271,7 @@
 				<span class="menu_nm_icon"></span>
 			</div>
 			<ul class="ctg_floating_menues">
-				<li class="brand_li">브랜드</li>
+				<li class="brand_li" data-role="btn-dialog" data-target="#popBottomHasBtnEx1">브랜드</li>
 				<li class="active">할인</li>
 				<li>쿠폰</li>
 				<li>핫트랙스 배송</li>
@@ -280,11 +286,431 @@
 				<span class="right_side">
 					<div class="sort_nm">신상품순</div>
 					<div class="ctg_list_icon">
-						<span class="hidden">두줄보기</span>
+						<span class="hidden list_sort_txt">두줄보기</span>
 					</div>
 				</span>
 			</div>
-			<ul class="evt_products row_dir column_dir">
+			<ul class="evt_products column_dir">
+				<li>
+					<div class="product_pic">
+						<span class="show_replace">
+							<div>아쉽지만<br/>품절이예요!</div>
+							<button type="button" class="replace_prod_btn">대체상품</button>
+						</span>
+						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
+					</div>
+					<div class="product_info">
+						<div class="product_company">dretec</div>
+						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+						<span class="price_origin">129,000원</span>
+						<div class="price_discount">
+							<span class="discount_rate">50%</span>
+							<span class="fianl_price">134,000원</span>
+						</div>
+						<div class="badge_line">
+							<span class="badge rounded badge_primary_evt">쿠폰</span>
+							<span class="badge rounded badge_default_evt">사은품</span>
+							<span class="badge rounded badge_default_evt">무료배송</span>
+						</div>
+						<div class="like_ck_line">
+							<span class="cmt">999+</span>
+							<span class="like">999+</span>
+						</div>
+					</div>
+				</li>
+				<!--Li - 품절인 경우 Class : sold_out ,
+					대체 상품 스왑이 있는 경우 Class : replace_prod 으로 대체 상품 버튼 조정 -->
+				<li class="sold_out replace_prod">
+					<div class="product_pic">
+						<span class="show_replace test1">
+							<div>아쉽지만<br/>품절이예요!</div>
+							<button type="button" class="replace_prod_btn">대체상품</button>
+						</span>
+						<img src="../../images/guide/module7_prod_sample2.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
+					</div>
+					<div class="product_info">
+						<div class="product_company">dretec</div>
+						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+						<span class="price_origin">129,000원</span>
+						<div class="price_discount">
+							<span class="discount_rate">50%</span>
+							<span class="fianl_price">134,000원</span>
+						</div>
+						<div class="badge_line">
+							<span class="badge rounded badge_primary_evt">쿠폰</span>
+							<span class="badge rounded badge_default_evt">사은품</span>
+							<span class="badge rounded badge_default_evt">무료배송</span>
+						</div>
+						<div class="like_ck_line">
+							<span class="cmt">999+</span>
+							<span class="like">999+</span>
+						</div>
+					</div>
+					<!--품절 대체 상품 스왑 article태그  class: show_bubble 추가하면 보임-->
+					<article class="replace_prod_swap">
+						<h4>하필 딱 품절이지만 괜찮아요</h4>
+						<div class="sub_title">찾으시는 상품과 비슷한 상품이 여기 있어요!</div>
+						<div class="swiper mySwiper">
+							<ul class="swiper-wrapper evt_slider">
+								<li class="swiper-slide">
+									<div class="img">
+										<img class="bd_img" src="../../images/guide/module7_prod_sample2.png" class="bd_img" 
+										alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+									</div>
+									<div class="product_info">
+										<div class="product_company">dretec</div>
+										<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+										<span class="price_origin">129,000원</span>
+										<div class="price_discount">
+											<span class="discount_rate">50%</span>
+											<span class="fianl_price">134,000원</span>
+										</div>
+										<div class="badge_line">
+											<span class="badge rounded badge_primary_evt">쿠폰</span>
+											<span class="badge rounded badge_default_evt">사은품</span>
+											<span class="badge rounded badge_default_evt">무료배송</span>
+										</div>
+										<div class="like_ck_line">
+											<span class="cmt">999+</span>
+											<span class="like">999+</span>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="img">
+										<img class="bd_img" src="../../images/guide/module7_prod_sample1.png" class="bd_img" 
+										alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+									</div>
+									<div class="product_info">
+										<div class="product_company">dretec</div>
+										<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+										<span class="price_origin">129,000원</span>
+										<div class="price_discount">
+											<span class="discount_rate">50%</span>
+											<span class="fianl_price">134,000원</span>
+										</div>
+										<div class="badge_line">
+											<span class="badge rounded badge_primary_evt">쿠폰</span>
+											<span class="badge rounded badge_default_evt">사은품</span>
+											<span class="badge rounded badge_default_evt">무료배송</span>
+										</div>
+										<div class="like_ck_line">
+											<span class="cmt">999+</span>
+											<span class="like">999+</span>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="img">
+										<img class="bd_img" src="../../images/guide/module7_prod_sample2.png" class="bd_img" 
+										alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+									</div>
+									<div class="product_info">
+										<div class="product_company">dretec</div>
+										<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+										<span class="price_origin">129,000원</span>
+										<div class="price_discount">
+											<span class="discount_rate">50%</span>
+											<span class="fianl_price">134,000원</span>
+										</div>
+										<div class="badge_line">
+											<span class="badge rounded badge_primary_evt">쿠폰</span>
+											<span class="badge rounded badge_default_evt">사은품</span>
+											<span class="badge rounded badge_default_evt">무료배송</span>
+										</div>
+										<div class="like_ck_line">
+											<span class="cmt">999+</span>
+											<span class="like">999+</span>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="img">
+										<img class="bd_img" src="../../images/guide/module7_prod_sample1.png" class="bd_img" 
+										alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+									</div>
+									<div class="product_info">
+										<div class="product_company">dretec</div>
+										<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+										<span class="price_origin">129,000원</span>
+										<div class="price_discount">
+											<span class="discount_rate">50%</span>
+											<span class="fianl_price">134,000원</span>
+										</div>
+										<div class="badge_line">
+											<span class="badge rounded badge_primary_evt">쿠폰</span>
+											<span class="badge rounded badge_default_evt">사은품</span>
+											<span class="badge rounded badge_default_evt">무료배송</span>
+										</div>
+										<div class="like_ck_line">
+											<span class="cmt">999+</span>
+											<span class="like">999+</span>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="img">
+										<img class="bd_img" src="../../images/guide/module7_prod_sample1.png" class="bd_img" 
+										alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+									</div>
+									<div class="product_info">
+										<div class="product_company">dretec</div>
+										<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+										<span class="price_origin">129,000원</span>
+										<div class="price_discount">
+											<span class="discount_rate">50%</span>
+											<span class="fianl_price">134,000원</span>
+										</div>
+										<div class="badge_line">
+											<span class="badge rounded badge_primary_evt">쿠폰</span>
+											<span class="badge rounded badge_default_evt">사은품</span>
+											<span class="badge rounded badge_default_evt">무료배송</span>
+										</div>
+										<div class="like_ck_line">
+											<span class="cmt">999+</span>
+											<span class="like">999+</span>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="img">
+										<img class="bd_img" src="../../images/guide/module7_prod_sample2.png" class="bd_img" 
+										alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+									</div>
+									<div class="product_info">
+										<div class="product_company">dretec</div>
+										<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+										<span class="price_origin">129,000원</span>
+										<div class="price_discount">
+											<span class="discount_rate">50%</span>
+											<span class="fianl_price">134,000원</span>
+										</div>
+										<div class="badge_line">
+											<span class="badge rounded badge_primary_evt">쿠폰</span>
+											<span class="badge rounded badge_default_evt">사은품</span>
+											<span class="badge rounded badge_default_evt">무료배송</span>
+										</div>
+										<div class="like_ck_line">
+											<span class="cmt">999+</span>
+											<span class="like">999+</span>
+										</div>
+									</div>
+								</li>							
+							</ul>
+						</div>
+						<!--닫기 버튼-->	
+						<button type="button" class="close_swap"></button>	
+					</article>
+				</li>
+				<li class="sold_out replace_prod">
+					<div class="product_pic">
+						<span class="show_replace">
+							<div>아쉽지만<br/>품절이예요!</div>
+							<button type="button" class="replace_prod_btn">대체상품</button>
+						</span>
+						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
+					</div>
+					<div class="product_info">
+						<div class="product_company">dretec</div>
+						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+						<span class="price_origin">129,000원</span>
+						<div class="price_discount">
+							<span class="discount_rate">50%</span>
+							<span class="fianl_price">134,000원</span>
+						</div>
+						<div class="badge_line">
+							<span class="badge rounded badge_primary_evt">쿠폰</span>
+							<span class="badge rounded badge_default_evt">사은품</span>
+							<span class="badge rounded badge_default_evt">무료배송</span>
+						</div>
+						<div class="like_ck_line">
+							<span class="cmt">999+</span>
+							<span class="like">999+</span>
+						</div>
+					</div>
+					<!--품절 대체 상품 스왑-->
+					<article class="replace_prod_swap">
+						<h4>하필 딱 품절이지만 괜찮아요</h4>
+						<div class="sub_title">찾으시는 상품과 비슷한 상품이 여기 있어요!</div>
+						<div class="swiper mySwiper">
+							<ul class="swiper-wrapper evt_slider">
+								<li class="swiper-slide">
+									<div class="img">
+										<img class="bd_img" src="../../images/guide/module7_prod_sample2.png" class="bd_img" 
+										alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+									</div>
+									<div class="product_info">
+										<div class="product_company">dretec</div>
+										<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+										<span class="price_origin">129,000원</span>
+										<div class="price_discount">
+											<span class="discount_rate">50%</span>
+											<span class="fianl_price">134,000원</span>
+										</div>
+										<div class="badge_line">
+											<span class="badge rounded badge_primary_evt">쿠폰</span>
+											<span class="badge rounded badge_default_evt">사은품</span>
+											<span class="badge rounded badge_default_evt">무료배송</span>
+										</div>
+										<div class="like_ck_line">
+											<span class="cmt">999+</span>
+											<span class="like">999+</span>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="img">
+										<img class="bd_img" src="../../images/guide/module7_prod_sample1.png" class="bd_img" 
+										alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+									</div>
+									<div class="product_info">
+										<div class="product_company">dretec</div>
+										<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+										<span class="price_origin">129,000원</span>
+										<div class="price_discount">
+											<span class="discount_rate">50%</span>
+											<span class="fianl_price">134,000원</span>
+										</div>
+										<div class="badge_line">
+											<span class="badge rounded badge_primary_evt">쿠폰</span>
+											<span class="badge rounded badge_default_evt">사은품</span>
+											<span class="badge rounded badge_default_evt">무료배송</span>
+										</div>
+										<div class="like_ck_line">
+											<span class="cmt">999+</span>
+											<span class="like">999+</span>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="img">
+										<img class="bd_img" src="../../images/guide/module7_prod_sample2.png" class="bd_img" 
+										alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+									</div>
+									<div class="product_info">
+										<div class="product_company">dretec</div>
+										<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+										<span class="price_origin">129,000원</span>
+										<div class="price_discount">
+											<span class="discount_rate">50%</span>
+											<span class="fianl_price">134,000원</span>
+										</div>
+										<div class="badge_line">
+											<span class="badge rounded badge_primary_evt">쿠폰</span>
+											<span class="badge rounded badge_default_evt">사은품</span>
+											<span class="badge rounded badge_default_evt">무료배송</span>
+										</div>
+										<div class="like_ck_line">
+											<span class="cmt">999+</span>
+											<span class="like">999+</span>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="img">
+										<img class="bd_img" src="../../images/guide/module7_prod_sample1.png" class="bd_img" 
+										alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+									</div>
+									<div class="product_info">
+										<div class="product_company">dretec</div>
+										<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+										<span class="price_origin">129,000원</span>
+										<div class="price_discount">
+											<span class="discount_rate">50%</span>
+											<span class="fianl_price">134,000원</span>
+										</div>
+										<div class="badge_line">
+											<span class="badge rounded badge_primary_evt">쿠폰</span>
+											<span class="badge rounded badge_default_evt">사은품</span>
+											<span class="badge rounded badge_default_evt">무료배송</span>
+										</div>
+										<div class="like_ck_line">
+											<span class="cmt">999+</span>
+											<span class="like">999+</span>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="img">
+										<img class="bd_img" src="../../images/guide/module7_prod_sample1.png" class="bd_img" 
+										alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+									</div>
+									<div class="product_info">
+										<div class="product_company">dretec</div>
+										<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+										<span class="price_origin">129,000원</span>
+										<div class="price_discount">
+											<span class="discount_rate">50%</span>
+											<span class="fianl_price">134,000원</span>
+										</div>
+										<div class="badge_line">
+											<span class="badge rounded badge_primary_evt">쿠폰</span>
+											<span class="badge rounded badge_default_evt">사은품</span>
+											<span class="badge rounded badge_default_evt">무료배송</span>
+										</div>
+										<div class="like_ck_line">
+											<span class="cmt">999+</span>
+											<span class="like">999+</span>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="img">
+										<img class="bd_img" src="../../images/guide/module7_prod_sample2.png" class="bd_img" 
+										alt="핫트랙스 반응최고" title="핫트랙스 반응최고">
+									</div>
+									<div class="product_info">
+										<div class="product_company">dretec</div>
+										<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+										<span class="price_origin">129,000원</span>
+										<div class="price_discount">
+											<span class="discount_rate">50%</span>
+											<span class="fianl_price">134,000원</span>
+										</div>
+										<div class="badge_line">
+											<span class="badge rounded badge_primary_evt">쿠폰</span>
+											<span class="badge rounded badge_default_evt">사은품</span>
+											<span class="badge rounded badge_default_evt">무료배송</span>
+										</div>
+										<div class="like_ck_line">
+											<span class="cmt">999+</span>
+											<span class="like">999+</span>
+										</div>
+									</div>
+								</li>							
+							</ul>
+						</div>
+						<!--닫기 버튼-->	
+						<button type="button" class="close_swap"></button>
+					</article>
+				</li>
+				<li>
+					<div class="product_pic">
+						<span class="show_replace">
+							<div>아쉽지만<br/>품절이예요!</div>
+							<button type="button" class="replace_prod_btn">대체상품</button>
+						</span>
+						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
+					</div>
+					<div class="product_info">
+						<div class="product_company">dretec</div>
+						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+						<span class="price_origin">129,000원</span>
+						<div class="price_discount">
+							<span class="discount_rate">50%</span>
+							<span class="fianl_price">134,000원</span>
+						</div>
+						<div class="badge_line">
+							<span class="badge rounded badge_primary_evt">쿠폰</span>
+							<span class="badge rounded badge_default_evt">사은품</span>
+							<span class="badge rounded badge_default_evt">무료배송</span>
+						</div>
+						<div class="like_ck_line">
+							<span class="cmt">999+</span>
+							<span class="like">999+</span>
+						</div>
+					</div>
+				</li>
 				<li>
 					<div class="product_pic">
 						<span class="show_replace">
@@ -313,114 +739,6 @@
 					</div>
 				</li>
 				<li class="sold_out">
-					<div class="product_pic">
-						<span class="show_replace">
-							<div>아쉽지만<br/>품절이예요!</div>
-							<button type="button" class="replace_prod_btn">대체상품</button>
-						</span>
-						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-					</div>
-					<div class="product_info">
-						<div class="product_company">dretec</div>
-						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-						<span class="price_origin">129,000원</span>
-						<div class="price_discount">
-							<span class="discount_rate">50%</span>
-							<span class="fianl_price">134,000원</span>
-						</div>
-						<div class="badge_line">
-							<span class="badge rounded badge_primary_evt">쿠폰</span>
-							<span class="badge rounded badge_default_evt">사은품</span>
-							<span class="badge rounded badge_default_evt">무료배송</span>
-						</div>
-						<div class="like_ck_line">
-							<span class="cmt">999+</span>
-							<span class="like">999+</span>
-						</div>
-					</div>
-				</li>
-				<li class="sold_out">
-					<div class="product_pic">
-						<span class="show_replace">
-							<div>아쉽지만<br/>품절이예요!</div>
-							<!-- <button type="button" class="replace_prod_btn">대체상품</button> -->
-						</span>
-						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-					</div>
-					<div class="product_info">
-						<div class="product_company">dretec</div>
-						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-						<span class="price_origin">129,000원</span>
-						<div class="price_discount">
-							<span class="discount_rate">50%</span>
-							<span class="fianl_price">134,000원</span>
-						</div>
-						<div class="badge_line">
-							<span class="badge rounded badge_primary_evt">쿠폰</span>
-							<span class="badge rounded badge_default_evt">사은품</span>
-							<span class="badge rounded badge_default_evt">무료배송</span>
-						</div>
-						<div class="like_ck_line">
-							<span class="cmt">999+</span>
-							<span class="like">999+</span>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="product_pic">
-						<span class="show_replace">
-							<div>아쉽지만<br/>품절이예요!</div>
-							<button type="button" class="replace_prod_btn">대체상품</button>
-						</span>
-						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-					</div>
-					<div class="product_info">
-						<div class="product_company">dretec</div>
-						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-						<span class="price_origin">129,000원</span>
-						<div class="price_discount">
-							<span class="discount_rate">50%</span>
-							<span class="fianl_price">134,000원</span>
-						</div>
-						<div class="badge_line">
-							<span class="badge rounded badge_primary_evt">쿠폰</span>
-							<span class="badge rounded badge_default_evt">사은품</span>
-							<span class="badge rounded badge_default_evt">무료배송</span>
-						</div>
-						<div class="like_ck_line">
-							<span class="cmt">999+</span>
-							<span class="like">999+</span>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="product_pic">
-						<span class="show_replace">
-							<div>아쉽지만<br/>품절이예요!</div>
-							<button type="button" class="replace_prod_btn">대체상품</button>
-						</span>
-						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-					</div>
-					<div class="product_info">
-						<div class="product_company">dretec</div>
-						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-						<span class="price_origin">129,000원</span>
-						<div class="price_discount">
-							<span class="discount_rate">50%</span>
-							<span class="fianl_price">134,000원</span>
-						</div>
-						<div class="badge_line">
-							<span class="badge rounded badge_primary_evt">쿠폰</span>
-							<span class="badge rounded badge_default_evt">사은품</span>
-							<span class="badge rounded badge_default_evt">무료배송</span>
-						</div>
-						<div class="like_ck_line">
-							<span class="cmt">999+</span>
-							<span class="like">999+</span>
-						</div>
-					</div>
-				</li>
-				<li>
 					<div class="product_pic">
 						<span class="show_replace">
 							<div>아쉽지만<br/>품절이예요!</div>
@@ -464,7 +782,6 @@
 	<!--좌우 스왑 배너-->
 		<section class="evt_slider_wrap">
 			<div class="swiper mySwiper evt" id="mdProductSwiper">
-				<!--상품 개수 2개이하일때  ul class="evt_slider nonswipe"로 설정-->
 				<ul class="swiper-wrapper evt_slider">
 					<li class="swiper-slide">
 						<div class="img">
@@ -594,7 +911,32 @@
 		</section>
     </div>
     <!-- // wrapper -->
-
+      <!-- 팝업 - bottom + 하단 버튼 -->
+	<div id="popBottomHasBtnEx1" class="dialog_wrap has_btn" data-class="dialog_bottom">
+		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+		<!-- dialog_header -->
+		<div class="dialog_header">
+			<div class="dialog_title">타이틀 길면 말줄임</div>
+		</div>
+		<!-- //dialog_header -->
+		<!-- dialog_contents -->
+		<div class="dialog_contents">
+			<div style="height: 1000px; background: rgba(255, 0, 0, .3);">
+				- 기본 팝업 (최대 w 335px / 사이드 여백 20px) <br /><br />
+				<button type="button" class="btn_lg btn_primary" data-role="btn-dialog" data-target="#popAlertEx1"><span class="text">팝업 위 팝업 열기</span></button>
+				<br /><br />
+				<button type="button" class="btn_lg btn_primary" data-role="btn-dialog" data-target="#popAlertEx1" data-dialog-close><span class="text">현재 팝업 닫고 새로운 팝업 열기</span></button>
+			</div>
+		</div>
+		<!-- //dialog_contents -->
+		<!-- dialog_footer -->
+		<div class="dialog_footer">
+			<button type="button" class="btn_md btn_light_gray" data-dialog-close><span class="text">취소</span></button>
+			<button type="button" class="btn_md btn_primary" data-dialog-close><span class="text">확인</span></button>
+		</div>
+		<!-- //dialog_footer -->
+	</div>
+	<!-- //팝업 - bottom + 하단 버튼 -->
 </body>
 
 </html>
