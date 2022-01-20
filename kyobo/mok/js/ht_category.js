@@ -52,8 +52,8 @@ $(function(){
   });
 
   //스티키 메뉴
-  $(document).on('click' , '.ctg_floating_menues li', function(e){
-    if(e.target.className == 'brand_li') { // 브랜드 보기 슬라이딩업
+  $(document).on('click' , '.ctg_floating_menues li', function(){
+    if($(this).hasClass('brand_li')) { // 브랜드 보기 슬라이딩업
       showBrandList();
       return; 
     }
