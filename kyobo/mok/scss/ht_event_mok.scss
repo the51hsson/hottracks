@@ -289,7 +289,7 @@
 	.to_event_list_btn{
 		height:100%;
 		border-radius: 4px;
-		background:url(../images/guide/evt_list_showMore.svg) no-repeat center center /cover;	
+		background:url(../images/guide/evt_list_showMore.svg) no-repeat center center / 99%;	
 	}
 
 	.txt_title{
@@ -661,12 +661,13 @@
 		letter-spacing: -0.13px;
 		font-size: 11px;
 		border:1px solid #D5D5D5;
+		margin-bottom:8px;
 		padding:0 8px 0 20px;
 		border-radius: 10px;
 		background:url(../images/guide/ico_coupon_evt.svg) no-repeat left 6px top 45% /12px;
 	}
 	.title{
-		margin-top:2px;
+		margin-bottom:8px;
 		font-size: 13px;
 		line-height: 19px;
 		letter-spacing: -0.13px;
@@ -678,7 +679,6 @@
 		word-break: keep-all;
 	}
 	.price_discount{
-		margin-top:8px;
 		display:flex;
 		flex-flow: row wrap;
 		justify-content: flex-start;
@@ -775,7 +775,7 @@
 }
 /*========================= 이벤트 리스트 종료 ===========================*/
 .contents_evt_wrap{
-  	padding:0 20px;
+  	padding:24px 20px 0 20px;
 }
 //이벤트 당첨자 발표 타이틀
  .evt_section_title{
