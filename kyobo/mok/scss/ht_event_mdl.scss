@@ -264,22 +264,22 @@ input[type=number] {
 			stroke: #fff !important;
 	}
 	.option_box {
-		  display:none; 
+		    display:none; 
 			position: absolute;
 			right:20px;
 			bottom:20px;
 			z-index: 1;
 			display: flex;
-			.btn_all {
-					position: absolute;
-					right: 0;
-					top:0;
-					display: block;
-					width: 25px;
-					height: 25px;
-					background: url(../images/guide/ico_plus_w.svg) no-repeat 50% / 9px;
-					z-index: 10;
-			}
+			// .btn_all {
+			// 		position: absolute;
+			// 		right: 0;
+			// 		top:0;
+			// 		display: block;
+			// 		width: 25px;
+			// 		height: 25px;
+			// 		background: url(../images/guide/ico_plus_w.svg) no-repeat 50% / 9px;
+			// 		z-index: 10;
+			// }
 
 	}
 	.swiper-pagination.swiper-pagination-fraction {

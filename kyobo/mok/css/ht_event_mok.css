@@ -7898,6 +7898,7 @@ body.dialog_open {
 .list_evt_area.spe_evt_area .to_event_list_btn {
   height: 100%;
   border: 1px dashed #d5d5d5;
+  border-radius: 4px;
 }
 
 .list_evt_area.spe_evt_area .txt_title {
@@ -8083,15 +8084,6 @@ body.dialog_open {
 .evt_slider_wrap.deadline_section .deadline_bubble:before {
   content: "";
   position: absolute;
-  border-top: 9px solid transparent;
-  border-left: 0 solid transparent;
-  border-right: 9px solid #ffc7b7;
-  border-bottom: 9px solid transparent;
-  -webkit-transform: rotate(110deg);
-          transform: rotate(110deg);
-  z-index: -1;
-  bottom: 0;
-  right: 2px;
 }
 
 .evt_slider_wrap.deadline_section .deadline_bubble .txt {

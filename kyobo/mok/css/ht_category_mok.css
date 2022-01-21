@@ -8826,6 +8826,7 @@ li.replace_prod .replace_prod_btn {
   position: relative;
   background-color: #eee;
   color: #767676;
+  border-radius: 4px;
 }
 
 .evt_slider .show_all_list span {

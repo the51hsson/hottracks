@@ -7977,17 +7977,6 @@ input[type=number] {
   display: flex;
 }
 
-.evt_banner_wrap .option_box .btn_all {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-  width: 25px;
-  height: 25px;
-  background: url(../images/guide/ico_plus_w.svg) no-repeat 50%/9px;
-  z-index: 10;
-}
-
 .evt_banner_wrap .swiper-pagination.swiper-pagination-fraction {
   position: static;
   height: 25px;
