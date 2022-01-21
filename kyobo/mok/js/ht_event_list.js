@@ -73,9 +73,57 @@ $(function(){
       }
       var origin_src = $(this).find('img').attr('src').split('.svg')[0];
       $(this).find('img').attr('src', origin_src+'_active.svg');
-  }); 
+  });
 
-   /*================================= HTR-M-EVT-MDL-002.html ==============================*/  
+  //셀렉트 박스 커스텀
+  $(document).on('click', '.selected_option', function(){
+	var arrowIcon = $(this).children('.selec_icon');
+	var thisOptionBox =  $(this).next('.option_ul');
+	//셀렉트 박스 여러개인 경우 다른 옵션박스 닫기
+	console.log($('.option_ul').not(thisOptionBox).length);
+	$('.option_ul').not(thisOptionBox).css('display', 'none');
+
+	  //옵션박스 나타나는 토글
+    if($(this).next('.option_ul').css('display') == 'none'){
+      $(this).next('.option_ul').css('display', 'block');
+	  $(arrowIcon).addClass('open'); 
+    }else{
+	  $(this).next('.option_ul').css('display', 'none');
+	  $(arrowIcon).removeClass('open'); 
+	}
+  });
+  //옵션 선택
+  $(document).on('click', '.option_ul li', function(){
+		var select = $(this).parent().prev('.selected_option').find('em').eq(0);
+		var arrowIcon  =  $(this).parent().prev('.selected_option').find('.selec_icon');
+		var thisVal = $(this).attr('data-val');
+		var thisTxt = $(this).text();
+     	 select.text(thisTxt).attr('data-val', thisVal);
+		 //화살표 에니메이션 
+		 $(arrowIcon).addClass('open'); 
+	    //옵션 박스 닫기
+	  	$(this).parent().css('display', 'none');
+		$(arrowIcon).removeClass('open'); 
+  });
+  //바디 영역 선택시 셀렉트 닫기
+  $(document).on('click', function(e){
+	  if(!$(e.target).parent().hasClass('option_ul') &&
+	     !$(e.target).parent().hasClass('selected_option') &&
+	     !$(e.target).parent().hasClass('title_selec')
+	    ){ 
+		  $('.option_ul').css('display', 'none');
+		  $('.selec_icon').removeClass('open');
+	  };
+  })
+   
+   /*================================= HTR-M-EVT-VIEW-000.html ==============================*/  
+   //이벤트 종료 블랙스크린 높이 구하기
+   if(location.href.match('HTR-M-EVT-VIEW-000-1-01.html')) {
+	var headerH = $('.ht_.header_wrapper').height();
+	var evtMdltitleH = $('.evt_mdl_title').height();
+	 $('.evt_end_dim').css('height', 'calc(100vh - '+( headerH - evtMdltitleH)+'px)');
+   };   
+
    //앵커 메뉴 버튼 활성화 기능
    $('.evt_mdl2_menu.anchor').children('li').click(function(){
       $(this).addClass('active').siblings('li').removeClass('active');;

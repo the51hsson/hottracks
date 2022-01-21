@@ -26,17 +26,14 @@ input[type=number] {
 }
 /*===============     모듈 001 영역(기획전 타이틀)   ==================*/
 .evt_mdl_title{
- padding:24px 20px;
+	position: relative;
+    padding:24px 20px;
  .tit_area{
-	 display: flex;
-	 flex-flow: row nowrap;
-	 justify-content: space-between;
-	 align-items: center;
-	 align-content: center;
+	 padding-right:30px;
  }
  .txt_heading{
-   font-size: 20px;
-	 line-height: 32px;
+     font-size: 20px;
+	 line-height: 29px;
 	 font-weight: 900;
 	 letter-spacing: -0.2px;
 	 display: -webkit-box;
@@ -47,22 +44,19 @@ input[type=number] {
 	 white-space: normal;
 	 word-break: keep-all;
  }
- .right_area{
-	 width:18px;
-	 height:18px;
-	 flex-shrink: 0;
-	 margin-left: 22px;
+ .btn_share{
+	 position:absolute;
+	 width:27px;
+	 height:27px;
+	 right:22px;
+	 top:30px;
 	 background: url(../images/ico/ico_share.png) no-repeat center center;
 	 background-size: cover;
 	 cursor: pointer;
  }
  .card_body{
 	 margin-top:8px;
-	 display: flex;
-	 flex-flow: row nowrap;
-	 justify-content: space-between;
-	 align-items: center;
-	 align-content: center;
+	 padding-right:47px;
  }
  //좌측 텍스트 영역
  .txt_account{
@@ -88,15 +82,19 @@ input[type=number] {
 		 color:#595959;
 	 }
  }
+
  //우측 할인율 표시 영역
  .box_circle{
 	 width:44px;
 	 height:44px;
 	 line-height: 44px;
-	 flex-shrink: 0;
 	 border-radius: 50%;
 	 background-color: #da2128;
 	 padding:0 3px;
+	 position:absolute;
+	 bottom:25px;
+	 right:22px;
+
  }
  .txt_per{
 	 font-size: 15px;
@@ -343,8 +341,12 @@ input[type=number] {
 			top:0;
 		}
 	}
+	.company{
+		font-size: 12px;
+		color:#767676;
+		margin-top:8px;
+	}
 	.title{
-		margin-top:12px;
 		width:100%;
 		font-size: 13px;
 		line-height: 19px;
@@ -358,7 +360,7 @@ input[type=number] {
 		 word-break: keep-all;
 	}
 	.price_area{
-		margin-top:8px;
+		margin-top:px;
 		display:flex;
 		flex-flow: row wrap;
 		justify-content: flex-start;

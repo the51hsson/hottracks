@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="icon" transform="translate(-667 -461.555)">
+    <g id="구성_요소_53_1" data-name="구성 요소 53 – 1" transform="translate(667 461.555)">
+      <path id="패스_37009" data-name="패스 37009" d="M30,0A30,30,0,1,1,0,30,30,30,0,0,1,30,0Z" opacity="0.15"/>
+    </g>
+    <g id="구성_요소_54_1" data-name="구성 요소 54 – 1" transform="translate(694 479.555)">
+      <rect id="사각형_958" data-name="사각형 958" width="5" height="16" fill="#fff"/>
+    </g>
+    <rect id="사각형_959" data-name="사각형 959" width="5" height="3" transform="translate(694 499.555)" fill="#fff"/>
+  </g>
+</svg>
