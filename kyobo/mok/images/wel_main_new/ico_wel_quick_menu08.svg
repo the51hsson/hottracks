@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.047" y1="0.147" x2="0.764" y2="0.818" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fdf25e"/>
+      <stop offset="1" stop-color="#ffd500"/>
+    </linearGradient>
+    <filter id="Union_151" x="10" y="11.998" width="40.004" height="40.002" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.047" y1="0.147" x2="0.764" y2="0.818" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff628c"/>
+      <stop offset="1" stop-color="#f42664"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.953" y1="0.147" x2="0.236" y2="0.818" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="0.047" y1="0.056" x2="0.954" y2="0.939" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffde09"/>
+      <stop offset="1" stop-color="#feaf11"/>
+    </linearGradient>
+    <filter id="Rectangle_19717" x="17.002" y="23" width="22" height="19" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-6" x1="0.946" y1="0.681" x2="0.141" y2="0.161" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-7" x1="0.934" y1="0.898" x2="0.065" y2="0" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="Group_110084" data-name="Group 110084" transform="translate(-280 -762)">
+    <g id="Group_110058" data-name="Group 110058" transform="translate(-507.998 -122)">
+      <g transform="matrix(1, 0, 0, 1, 788, 884)" filter="url(#Union_151)">
+        <path id="Union_151-2" data-name="Union 151" d="M23026,24137a2,2,0,0,1-2.006-2v-11h-1a2,2,0,0,1-2-2v-4a2,2,0,0,1,2-2h.129c-.328-1.135-.043-2.863,1.191-5.439,1.85-3.867,6.74.484,8.287,2.008a2,2,0,0,1,1.393-.566h2a2,2,0,0,1,1.4.566c1.549-1.523,6.439-5.875,8.289-2.008,1.234,2.576,1.518,4.3,1.189,5.439h.125a2,2,0,0,1,2,2v4a2,2,0,0,1-2,2h-1v11a2,2,0,0,1-2,2Z" transform="translate(-23007 -24095)" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="Path_37120" data-name="Path 37120" d="M-22204.234-23207.928s6.555-7.121,8.768-2.5,1.377,6.51-.578,7.154-9.105,0-9.105,0Z" transform="translate(23022.152 24109.986)" fill="url(#linear-gradient-2)"/>
+      <path id="Path_37121" data-name="Path 37121" d="M-22195.068-23207.928s-6.557-7.121-8.77-2.5-1.377,6.51.578,7.154,9.107,0,9.107,0Z" transform="translate(23009.154 24109.986)" fill="url(#linear-gradient-3)"/>
+      <g data-type="innerShadowGroup">
+        <path id="Rectangle_19717-2" data-name="Rectangle 19717" d="M0,0H22a0,0,0,0,1,0,0V17a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V0A0,0,0,0,1,0,0Z" transform="translate(805 907)" fill="url(#linear-gradient-4)"/>
+        <g transform="matrix(1, 0, 0, 1, 788, 884)" filter="url(#Rectangle_19717)">
+          <path id="Rectangle_19717-3" data-name="Rectangle 19717" d="M0,0H22a0,0,0,0,1,0,0V17a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V0A0,0,0,0,1,0,0Z" transform="translate(17 23)" fill="#fff"/>
+        </g>
+      </g>
+      <rect id="Rectangle_19718" data-name="Rectangle 19718" width="28" height="8" rx="2" transform="translate(802 905)" fill="url(#linear-gradient-4)"/>
+      <rect id="Rectangle_19719" data-name="Rectangle 19719" width="8" height="6" transform="translate(819 905) rotate(90)" fill="url(#linear-gradient-6)"/>
+      <rect id="Rectangle_19720" data-name="Rectangle 19720" width="13" height="6" transform="translate(819 913) rotate(90)" fill="url(#linear-gradient-7)"/>
+      <path id="Rectangle_19721" data-name="Rectangle 19721" d="M2,0H4A0,0,0,0,1,4,0V6A0,0,0,0,1,4,6H2A2,2,0,0,1,0,4V2A2,2,0,0,1,2,0Z" transform="translate(819 901) rotate(90)" fill="url(#linear-gradient-7)"/>
+    </g>
+  </g>
+</svg>

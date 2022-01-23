@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.047" y1="0.056" x2="0.95" y2="0.944" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff628c"/>
+      <stop offset="1" stop-color="#f42664"/>
+    </linearGradient>
+    <filter id="Union_150" x="10.533" y="10" width="38.928" height="43.428" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+    </filter>
+    <filter id="Union_150-2" x="10.533" y="10" width="38.928" height="43.428" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" x1="0.047" y1="0.056" x2="0.988" y2="1.041" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ffdbe5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.097" y1="0.025" x2="0.924" y2="0.878" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffde09"/>
+      <stop offset="1" stop-color="#feaf11"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="-0.008" y1="0.492" x2="0.975" y2="0.486" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5a5858"/>
+      <stop offset="1" stop-color="#1e1e1e"/>
+    </linearGradient>
+    <filter id="Exclusion_1" x="14.535" y="16.5" width="26.927" height="26.927" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-3"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-3"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-8" x1="-0.008" y1="0.508" x2="0.975" y2="0.514" xlink:href="#linear-gradient-5"/>
+    <filter id="Ellipse_641" x="22" y="26" width="16" height="16" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-10" x1="0.097" y1="0.025" x2="0.924" y2="0.878" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_110078" data-name="Group 110078" transform="translate(-120 -663)">
+    <g id="오늘만특가_아이콘" transform="translate(134.5 675.5)">
+      <g data-type="innerShadowGroup">
+        <g transform="matrix(1, 0, 0, 1, -14.5, -12.5)" filter="url(#Union_150)">
+          <path id="Union_150-3" data-name="Union 150" d="M22273.5,23397.461a12.883,12.883,0,0,1,1.541-6.133l-.66-.658a2,2,0,0,1,0-2.826l1.416-1.416a2,2,0,0,1,2.826,0l.412.412a12.9,12.9,0,0,1,6.432-2.3V23384h-1a2,2,0,1,1,0-4h4a2,2,0,0,1,0,4h-1v.537a12.885,12.885,0,0,1,6.432,2.3l.414-.414a2,2,0,0,1,2.83,0l1.41,1.416a1.993,1.993,0,0,1,0,2.826l-.662.664a12.965,12.965,0,1,1-24.389,6.127Z" transform="translate(-22258.46 -23367.5)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+        </g>
+        <path id="Union_150-4" data-name="Union 150" d="M22273.5,23397.461a12.883,12.883,0,0,1,1.541-6.133l-.66-.658a2,2,0,0,1,0-2.826l1.416-1.416a2,2,0,0,1,2.826,0l.412.412a12.9,12.9,0,0,1,6.432-2.3V23384h-1a2,2,0,1,1,0-4h4a2,2,0,0,1,0,4h-1v.537a12.885,12.885,0,0,1,6.432,2.3l.414-.414a2,2,0,0,1,2.83,0l1.41,1.416a1.993,1.993,0,0,1,0,2.826l-.662.664a12.965,12.965,0,1,1-24.389,6.127Z" transform="translate(-22272.965 -23380)" fill="url(#linear-gradient)"/>
+        <g transform="matrix(1, 0, 0, 1, -14.5, -12.5)" filter="url(#Union_150-2)">
+          <path id="Union_150-5" data-name="Union 150" d="M22273.5,23397.461a12.883,12.883,0,0,1,1.541-6.133l-.66-.658a2,2,0,0,1,0-2.826l1.416-1.416a2,2,0,0,1,2.826,0l.412.412a12.9,12.9,0,0,1,6.432-2.3V23384h-1a2,2,0,1,1,0-4h4a2,2,0,0,1,0,4h-1v.537a12.885,12.885,0,0,1,6.432,2.3l.414-.414a2,2,0,0,1,2.83,0l1.41,1.416a1.993,1.993,0,0,1,0,2.826l-.662.664a12.965,12.965,0,1,1-24.389,6.127Z" transform="translate(-22258.46 -23367.5)" fill="#fff"/>
+        </g>
+        <path id="Union_150-6" data-name="Union 150" d="M22273.5,23397.461a12.883,12.883,0,0,1,1.541-6.133l-.66-.658a2,2,0,0,1,0-2.826l1.416-1.416a2,2,0,0,1,2.826,0l.412.412a12.9,12.9,0,0,1,6.432-2.3V23384h-1a2,2,0,1,1,0-4h4a2,2,0,0,1,0,4h-1v.537a12.885,12.885,0,0,1,6.432,2.3l.414-.414a2,2,0,0,1,2.83,0l1.41,1.416a1.993,1.993,0,0,1,0,2.826l-.662.664a12.965,12.965,0,1,1-24.389,6.127Z" transform="translate(-22272.965 -23380)" fill="none" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+      <rect id="Rectangle_19703" data-name="Rectangle 19703" width="20" height="20" rx="10" transform="translate(3.5 7.5)" fill="url(#linear-gradient-3)"/>
+      <path id="Rectangle_19710" data-name="Rectangle 19710" d="M2,0H4A2,2,0,0,1,6,2V4A0,0,0,0,1,6,4H0A0,0,0,0,1,0,4V2A2,2,0,0,1,2,0Z" transform="translate(0 9.258) rotate(-45)" fill="url(#linear-gradient-4)"/>
+      <rect id="Rectangle_19707" data-name="Rectangle 19707" width="1" height="7" rx="0.5" transform="translate(17.969 12.355) rotate(45)" fill="url(#linear-gradient-5)"/>
+      <path id="Rectangle_19711" data-name="Rectangle 19711" d="M0,0H6A0,0,0,0,1,6,0V2A2,2,0,0,1,4,4H2A2,2,0,0,1,0,2V0A0,0,0,0,1,0,0Z" transform="translate(24.172 12.086) rotate(-135)" fill="url(#linear-gradient-4)"/>
+      <rect id="Rectangle_19708" data-name="Rectangle 19708" width="2" height="4" transform="translate(12.5 2.5)" fill="#f42664"/>
+      <g data-type="innerShadowGroup">
+        <path id="Exclusion_1-2" data-name="Exclusion 1" d="M12.964,25.927A12.964,12.964,0,0,1,3.8,3.8,12.964,12.964,0,1,1,22.13,22.13,12.879,12.879,0,0,1,12.964,25.927ZM12.965,3a10,10,0,1,0,10,10A10.011,10.011,0,0,0,12.965,3Z" transform="translate(0.535 4.5)" fill="url(#linear-gradient)"/>
+        <g transform="matrix(1, 0, 0, 1, -14.5, -12.5)" filter="url(#Exclusion_1)">
+          <path id="Exclusion_1-3" data-name="Exclusion 1" d="M12.964,25.927A12.964,12.964,0,0,1,3.8,3.8,12.964,12.964,0,1,1,22.13,22.13,12.879,12.879,0,0,1,12.964,25.927ZM12.965,3a10,10,0,1,0,10,10A10.011,10.011,0,0,0,12.965,3Z" transform="translate(15.04 17)" fill="#fff"/>
+        </g>
+        <path id="Exclusion_1-4" data-name="Exclusion 1" d="M12.964,25.927A12.964,12.964,0,0,1,3.8,3.8,12.964,12.964,0,1,1,22.13,22.13,12.879,12.879,0,0,1,12.964,25.927ZM12.965,3a10,10,0,1,0,10,10A10.011,10.011,0,0,0,12.965,3Z" transform="translate(0.535 4.5)" fill="none" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+      </g>
+      <rect id="Rectangle_19706" data-name="Rectangle 19706" width="1" height="4.829" rx="0.5" transform="translate(13.857 17.186) rotate(135)" fill="url(#linear-gradient-8)"/>
+      <g transform="matrix(1, 0, 0, 1, -14.5, -12.5)" filter="url(#Ellipse_641)">
+        <circle id="Ellipse_641-2" data-name="Ellipse 641" cx="2" cy="2" r="2" transform="translate(26 28)" fill="url(#linear-gradient-4)"/>
+      </g>
+      <rect id="Rectangle_19709" data-name="Rectangle 19709" width="8" height="4" rx="2" transform="translate(9.5)" fill="url(#linear-gradient-10)"/>
+    </g>
+  </g>
+</svg>
