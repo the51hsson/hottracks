@@ -33,9 +33,6 @@ body {
     }
     .mc_cont {
         position:relative;padding:40px 20px 50px 20px;
-        &.resp {
-            padding:0;
-        }
         .scroll_tab {
             width:calc(100% + 20px);margin-right:-20px;
         }
@@ -302,6 +299,9 @@ body {
 
     // 퀵메뉴 
     .wel_quick_menu {
+        padding:0;
+    }
+    .wel_quick_menu_cont {
         display:flex;justify-content:space-between;flex-wrap:wrap;padding:20px 20px 28px 20px;
         li {
             display:flex;flex-direction:column;justify-content:top;align-items:center;width:25%;margin-top:22px;
@@ -415,7 +415,7 @@ body {
     .wel_ad_banner {
         padding:35px 20px 40px 20px;background:#eee;
         li {
-            margin-top:12px;border-radius:100px;overflow:hidden;;box-shadow:0 2px 3px rgba(0,0,0,0.05);
+            margin-top:12px;overflow:hidden;;box-shadow:0 2px 3px rgba(0,0,0,0.05);
             &:first-child {
                 margin-top:0;
             }
@@ -433,7 +433,7 @@ body {
 
 
     // 라이브
-    .wel_live_wrap {
+    .wel_live {
         padding:60px 0 50px 0;
         background:#000;
         .mc_tit {
@@ -482,6 +482,9 @@ body {
             position:relative;width:90%;margin:20px auto 0 auto;
             img {
                 width:100%;
+            }
+            &:before {
+                position:absolute;left:-2px;top:-2px;width:calc(100% + 4px);height:calc(100% + 4px);background:url('../images/wel_main_new/wel_live_mask.svg') center/100% no-repeat;content:"";  content:"";
             }
             .wel_live_time {
                 position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);opacity:0;transition:opacity 0.4s;
@@ -721,6 +724,7 @@ body {
         .swiper-slide {
             width:58%;transform:scale(0.8);transition:transform 0.4s;
             .md_pick_box {
+                text-align:center;
                 .img {
                     position:relative;height:0;padding-top:100%;background:#f7f7f7;border-radius:8px;overflow:hidden;
                     img {
@@ -731,13 +735,7 @@ body {
                     }
                 }
                 .txt {
-                    position:relative;height:42px;margin:20px -10px 0 -10px;padding:2px 5px 0 5px;background:#fff;border:solid #000;border-width:1px 1px 2px 1px;border-radius:40px;;color:#000;font-size:16px;font-weight:700;line-height:34px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;transform:translateY(-10px);transition:all 0.4s;
-                    span {
-                        position:relative;padding-left:30px;
-                        &:before {
-                            position:absolute;left:0;top:2px;width:29px;height:29px;background:url("../images/wel_main_new/ico_md_pick_txt.png") center/100% no-repeat;content:"";
-                        }
-                    }
+                    position:relative;height:42px;margin:20px -10px 0 -10px;padding:2px 18px 0 18px;background:#fff;border:solid #000;border-width:1px 1px 2px 1px;border-radius:40px;;color:#000;font-size:16px;font-weight:700;line-height:38px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;transform:translateY(-10px);transition:all 0.4s;   display:inline-block;
                     &:before {
                         position:absolute;left:40px;top:-10px;width:0;height:0;border-bottom:10px solid #000;border-left:6px solid transparent;border-right:6px solid transparent;content:"";
                     }
@@ -1181,6 +1179,9 @@ body {
 
 
     // 띠배너
+    .wel_belt {
+        padding:0;
+    }
     .wel_belt_banner {position:relative;
         &.mt {
             margin-top:40px;
@@ -1196,6 +1197,9 @@ body {
                 width:100%;
             }
         }
+    }
+    .wel_belt02 {
+        padding:0;margin-top:40px;
     }
 
 
@@ -1283,7 +1287,7 @@ body {
             padding:0 20px;
         }
         .swiper-slide {
-            width:93%;padding:0 0 29px 0;
+            width:100%;padding:0;
             .curation_box {
                 background:#fff;overflow:hidden;
                 .img {
@@ -1307,6 +1311,11 @@ body {
                 &:before {
                     color:rgba(0,0,0,1);
                 }
+            }
+        }
+        .swiper-initialized {
+            .swiper-slide {
+                width:93%;padding:0 0 29px 0;
             }
         }
     }    
@@ -1432,6 +1441,12 @@ body {
         }
     }
     .scroll_box_new {
+        opacity:0;
+        &.active {
+            animation:fade both 0.6s 0.1s;
+        }
+    }
+    .li_resp_ty.ty02 .li {
         opacity:0;
         &.active {
             animation:fade both 0.6s 0.1s;
