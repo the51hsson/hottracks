@@ -3105,6 +3105,10 @@ body {
   color: black;
 }
 
+.ht_ .wel_category_cont .swiper-initialized {
+  margin-bottom: -29px;
+}
+
 .ht_ .wel_category_cont .swiper-initialized .swiper-slide {
   width: 93%;
   padding: 0 0 29px 0;
@@ -3270,7 +3274,7 @@ body {
 
 .ht_ .btn_wel_category {
   position: relative;
-  margin: -29px 20px -2px 20px;
+  margin: 0 20px -2px 20px;
   border-top: 1px dashed #d5d5d5;
   font-size: 13px;
   line-height: 19px;

@@ -1314,6 +1314,7 @@ body {
             }
         }
         .swiper-initialized {
+            margin-bottom:-29px;
             .swiper-slide {
                 width:93%;padding:0 0 29px 0;
             }
@@ -1389,7 +1390,7 @@ body {
         }
     }
     .btn_wel_category {
-        position:relative;margin:-29px 20px -2px 20px;border-top:1px dashed #d5d5d5;;font-size:13px;line-height:19px;text-align:right;
+        position:relative;margin:0 20px -2px 20px;border-top:1px dashed #d5d5d5;;font-size:13px;line-height:19px;text-align:right;
         .btn_category_more {
             display:inline-block;position:relative;margin-top:11px;color:#595959;padding-right:10px;
             &:after {
