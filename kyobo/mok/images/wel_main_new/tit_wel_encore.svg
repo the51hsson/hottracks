@@ -13,7 +13,7 @@
 	.st7{fill:#FFFFFF;}
 	.st8{fill:#2FF483;stroke:#000000;stroke-width:2;}
 	.st9{fill:#FEEB00;}
-	.st10{enable-background:new    ;}
+	.st10{enable-background:new;}
 
 
 .clap {animation:clap both infinite 2s;}
@@ -28,25 +28,23 @@
 }
 
 
-#clap_h2 {animation:clap_h2 both infinite 2s;transform-origin: 5% 70%}
+#clap_h2 {animation:clap_h2 both infinite 0.9s;transform-origin: 5% 70%}
 
 @keyframes clap_h2 {
-0% {transform:translate(0,0);}
-20% {transform:translate(0,0) scale(1.03);}
-40% {transform:translate(0,0) scale(1);}
-60% {transform:translate(0,0) scale(1.03);}
-80% {transform:translate(0,0) scale(1);}
-100% {transform:translate(0,0);}
+0% {transform:translate(0,0) scale(1);}
+25% {transform:translate(0,0) scale(1.03);}
+50% {transform:translate(0,0) scale(1);}
+75% {transform:translate(0,0) scale(1.03);}
+100% {transform:translate(0,0) scale(1);}
 }
 
-#clap_h1 {animation:clap_h1 both infinite 2s;transform-origin: 52% 70%}
+#clap_h1 {animation:clap_h1 both infinite 0.9s;transform-origin: 52% 70%}
 @keyframes clap_h1 {
-0% {transform:translate(0,0);}
-20% {transform:translate(0,0) scale(0.92);}
-40% {transform:translate(0,0) scale(1);}
-60% {transform:translate(0,0) scale(0.92);}
-80% {transform:translate(0,0) scale(1);}
-100% {transform:translate(0,0);}
+0% {transform:translate(0,0) scale(1);}
+25% {transform:translate(0,0) scale(0.92);}
+50% {transform:translate(0,0) scale(1);}
+75% {transform:translate(0,0) scale(0.92);}
+100% {transform:translate(0,0) scale(1);}
 }
 
 
