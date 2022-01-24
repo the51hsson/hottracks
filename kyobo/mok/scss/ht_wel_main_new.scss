@@ -543,8 +543,7 @@ body {
             input[type="checkbox"] {
                 position:absolute;left:-9999px;width:0;height:0;border:0;overflow:hidden;
                 + label {
-                    display:block;position:relative;width:40px;height:40px;background:url('../images/wel_main_new/ico_wel_live_alarm.svg') center/100% no-repeat;overflow:hidden;cursor:pointer;transition:background 0.4s;
-                    z-index:2;
+                    display:block;position:relative;width:40px;height:40px;background:url('../images/wel_main_new/ico_wel_live_alarm.svg') center/100% no-repeat;overflow:hidden;cursor:pointer;transition:background 0.4s;z-index:2;
                 }
                 &:checked + label {
                     background-image:url('../images/wel_main_new/ico_wel_live_alarm_on.svg');

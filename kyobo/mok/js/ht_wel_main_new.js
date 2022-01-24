@@ -94,7 +94,7 @@ $(function(){
         observeParents: true,
         slidesPerView: 'auto',
         centeredSlides: true,
-        loop: false,
+        loop:false,
         loopsSlide:1,
         spaceBetween:10,
         /*autoplay: {
@@ -213,6 +213,7 @@ $(function(){
             delay:5000,
             disableOnInteraction: false,
         },
+        loopAdditionalSlides: 1
     });
     var curationImg = new Swiper('.curation_img', {
         observer: true,
@@ -221,6 +222,7 @@ $(function(){
         loop: true,
         loopedSlides: 3,
         speed:600,
+        loopAdditionalSlides: 1
     });
     curationImg.controller.control = curationThumb;
     curationThumb.controller.control = curationImg;
