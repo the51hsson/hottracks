@@ -487,6 +487,7 @@ $(function(){
 									<div class="swiper-slide">
 										<div class="today_box">
 											<p class="img"><img src="../../images/wel_main_new/@img_today01.jpg" alt=""></p><!-- image size : 최소 434px 정사각형 -->
+											<!--<p class="img"></p> 이미지 없을 경우 공백 -->
 											<ul class="txt">
 												<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
 												<li class="s2"><strong>50%</strong>134,000원</li>
@@ -604,7 +605,7 @@ $(function(){
 											<!-- //img_wel_live -->
 											<!-- wel_live_box -->
 											<div class="wel_live_box">
-												<p class="img"><img src="../../images/wel_main_new/@img_wel_live02.jpg" alt=""></p><!-- image size : 최소 172px 정사각형 -->
+												<p class="img"><img src="../../images/wel_main_new/@img_wel_live02.jpg" alt=""></p>
 												<p class="txt">라이프앤피시스 스프링 스터디플래너</p>
 												<div class="alarm_chk">
 													<input type="checkbox" id="live_chk2"><!-- id 값과 label fot 값 동일! -->
@@ -637,6 +638,7 @@ $(function(){
 								<li class="li">
 									<a href="#n">
 										<p class="img"><img src="../../images/wel_main_new/@img_prod01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
+										<!--<p class="img"></p> 이미지 없을 경우 공백 -->
 										<ul class="txt">
 											<li class="s1">[스마트폰거치대/가방걸이] 픽스틱 P-DSCMPBH 픽스틱 P-DSCMPBH 픽스틱 P-DSCMPBH</li>
 											<li class="s2"><strong>29%</strong>9,900원</li>
@@ -647,7 +649,7 @@ $(function(){
 
 								<li class="li">
 									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_prod02.jpg" alt=""></p><!-- 이미지 없을 경우 공백 -->
+										<p class="img"><img src="../../images/wel_main_new/@img_prod02.jpg" alt=""></p>
 										<ul class="txt">
 											<li class="s1">[스마트폰거치대/가방걸이] 픽스틱 P-DSCMPBH</li>
 											<li class="s2"><strong>29%</strong>9,900원</li>
@@ -701,8 +703,7 @@ $(function(){
 
 					<!-- mc_cont : MD PICK -->
 					<div class="mc_cont wel_md_pick">
-						<h2 class="mc_tit"><img src="../../images/wel_main_new/tit_wel_md_pick.svg" alt=""></h2>
-
+						<h2 class="mc_tit"><img src="../../images/wel_main_new/tit_wel_md_pick.svg" alt="MD PICK"></h2>
 						<!-- wel_md_pick_cont -->
 						<div class="wel_md_pick_cont wel_cont">
 							<div class="swiper-container">
@@ -710,7 +711,8 @@ $(function(){
 									<!-- swiper-slide 반복 -->
 									<div class="swiper-slide">
 										<div class="md_pick_box">
-											<p class="img"><img src="../../images/wel_main_new/@img_md_pick01.jpg" alt=""></p>
+											<p class="img"><img src="../../images/wel_main_new/@img_md_pick01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
+											<!--<p class="img"></p> 이미지 없을 경우 공백 -->
 											<p class="txt"><span>자연의 싱싱함을 드려요</span></p>
 										</div>
 									</div>
@@ -747,6 +749,7 @@ $(function(){
 								<li class="li">
 									<a href="#n">
 										<p class="img"><img src="../../images/wel_main_new/@img_prod01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
+										<!--<p class="img"></p> 이미지 없을 경우 공백 -->
 										<ul class="txt">
 											<li class="s1">[스마트폰거치대/가방걸이] 픽스틱 P-DSCMPBH 픽스틱 P-DSCMPBH 픽스틱 P-DSCMPBH</li>
 											<li class="s2"><strong>29%</strong>9,900원</li>
@@ -942,17 +945,20 @@ $(function(){
 
 					<!-- mc_cont : 지금 이 상품을 -->
 					<div class="mc_cont wel_now">
+						<!-- wel_now_tit -->
 						<div class="wel_now_tit wel_cont">
-							<p class="s1"><img src="../../images/wel_main_new/tit_wel_now_bg.svg" alt=""></p>
+							<p class="s1"><img src="../../images/wel_main_new/tit_wel_now_bg.svg" alt=""></p><!-- 이미지 한개로 추후 수정 -->
 							<p class="s1"><img src="../../images/wel_main_new/tit_wel_now_bg.svg" alt=""></p>
 							<p class="s2"><img src="../../images/wel_main_new/tit_wel_now_star.svg" alt=""></p>
 							<p class="s3"><img src="../../images/wel_main_new/tit_wel_now_smile.svg" alt=""></p>
 							<h2 class="mc_tit">지금, 이 상품을<br><strong>가장 많이</strong> 보고 있어요</h2>
 						</div>
+						<!-- //wel_now_tit -->
+
 						<!-- scroll_tab -->
 						<div class="tab_ty scroll_box_new">
 							<a href="#tab1" class="on">
-								<img src="../../images/wel_main_new/ico_tab_ty11.png" alt="">
+								<img src="../../images/wel_main_new/ico_tab_ty11.png" alt=""><!-- image size : 정사각형 - 공통가이드 참조 -->
 								<span>NOW 인기</span>
 							</a>
 							<a href="#tab2" class="">
@@ -974,7 +980,7 @@ $(function(){
 						<div class="wel_cont">
 							<div class="wel_prod_view_cont tab_cont on" id="tab1">
 								<ul>
-									<li><a href="#n"><img src="../../images/wel_main_new/@img_now01.jpg" alt=""></a></li>
+									<li><a href="#n"><img src="../../images/wel_main_new/@img_now01.jpg" alt=""></a></li><!-- image size : 정사각형 - 공통가이드 참조 -->
 									<li><a href="#n"><img src="../../images/wel_main_new/@img_now02.jpg" alt=""></a></li>
 									<li><a href="#n"><img src="../../images/wel_main_new/@img_now03.jpg" alt=""></a></li>
 									<li><a href="#n"><img src="../../images/wel_main_new/@img_now04.jpg" alt=""></a></li>
@@ -1042,6 +1048,7 @@ $(function(){
 							<li class="li">
 								<a href="#n">
 									<p class="img"><img src="../../images/wel_main_new/@img_prod_box01.jpg" alt=""></p><!-- image size : 670*480px - 공통가이드 참조 -->
+									<!--<p class="img"></p> 이미지 없을 경우 공백 -->
 									<p class="ico">20%</p>
 									<p class="txt">올해는 득템 뉴이어 <em style="display:block;margin-left:2px;color:#da2128;">❤</em></p>
 								</a>
@@ -1050,7 +1057,7 @@ $(function(){
 
 							<li class="li">
 								<a href="#n">
-									<p class="img"><img src="../../images/wel_main_new/@img_prod_box02.jpg" alt=""></p><!-- 이미지 없을 경우 공백 -->
+									<p class="img"><img src="../../images/wel_main_new/@img_prod_box02.jpg" alt=""></p>
 									<p class="ico">20%</p>
 									<p class="txt">음악다방으로 놀러오세요</p>
 								</a>
@@ -1077,17 +1084,18 @@ $(function(){
 					
 					<!-- mc_cont : 큐레이션 -->
 					<div class="mc_cont wel_curation">
-						<h2 class="mc_tit"><img src="../../images/wel_main_new/tit_wel_curation.svg" alt=""></h2>
+						<h2 class="mc_tit"><img src="../../images/wel_main_new/tit_wel_curation.svg" alt="큐레이션"></h2>
 						<!-- wel_curation_cont -->
 						<div class="wel_curation_cont wel_cont">
 							<!-- curation_img -->
 							<div class="swiper-conainer curation_img">
 								<div class="swiper-wrapper">
+									<!-- swiper-slide : 반복 -->
 									<div class="swiper-slide">
 										<div class="curation_box">
 											<!-- curation_cont -->
-											<div class="curation_cont c1">
-												<p class="img"><img src="../../images/wel_main_new/@img_curation01.jpg" alt=""></p>
+											<div class="curation_cont c1"><!-- 컬러타입 : class="c1" 관리자 추후협의 -->
+												<p class="img"><img src="../../images/wel_main_new/@img_curation01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
 												<!-- curation_marker -->
 												<ul class="curation_marker">
 													<li class="li" style="left:55%;top:27%;">
@@ -1122,6 +1130,8 @@ $(function(){
 											<!-- //curation_cont -->
 										</div>
 									</div>
+									<!-- //swiper-slide : 반복 -->
+
 									<div class="swiper-slide">
 										<div class="curation_box">
 											<!-- curation_cont -->
@@ -1231,7 +1241,7 @@ $(function(){
 							<!-- curation_thumb -->
 							<div class="swiper-conainer curation_thumb">
 								<div class="swiper-wrapper">
-									<div class="swiper-slide c1">
+									<div class="swiper-slide c1"><!-- 컬러타입 : class="c1" 관리자 추후협의 -->
 										<span>#만원의행복</span>
 									</div>
 									<div class="swiper-slide c2">
@@ -1243,7 +1253,6 @@ $(function(){
 									<div class="swiper-slide c4">
 										<span>#바프준비</span>
 									</div>
-
 								</div> 
 							</div>
 							<!-- //curation_thumb -->
@@ -1283,12 +1292,12 @@ $(function(){
 					<!-- mc_cont : 카테고리 -->
 					<div class="mc_cont wel_category">
 						<h2 class="mc_tit">카테고리 베스트 <img src="../../images/wel_main_new/img_wel_category_smile.svg" alt=""></h2>
-						<!-- scroll_tab -->
+						<!-- wel_category_tab -->
 						<div class="wel_category_tab">
 							<!-- scroll_tab -->
 							<div class="tab_ty ty02 scroll_box_new">
 								<a href="#tab11" class="on">
-									<img src="../../images/wel_main_new/ico_tab_ty_c01.png" alt="">
+									<img src="../../images/wel_main_new/ico_tab_ty_c01.png" alt=""><!-- image size : 정사각형 - 공통가이드 참조 -->
 									<span>디자인문구</span>
 								</a>
 								<a href="#tab12" class="">
@@ -1350,401 +1359,403 @@ $(function(){
 							</div>
 							<!-- //scroll_tab -->
 						</div>
-						<!-- //scroll_tab -->
+						<!-- //wel_category_tab -->
 						
+						<div class="">
+							<div class="tab_cont on" id="tab11">
+								<!-- wel_category_rank -->
+								<ul class="wel_category_rank wel_cont">
+									<!-- .li 반복 --><!-- 8위 까지 노출 -->
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_rank01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
+											<!-- <p class="img"></p> 이미지 없을 경우 공백 -->
+											<ul class="txt">
+												<li class="s1">2022 컬러풀 2단 캘린더 체크리스트</li>
+												<li class="s2"><strong>20%</strong>12,300원</li>
+											</ul>
+										</a>
+									</li>
+									<!-- //.li 반복 -->
 
-						<div class="tab_cont on" id="tab11">
-							<!-- wel_category_rank -->
-							<ul class="wel_category_rank wel_cont">
-								<!-- .li 반복 --><!-- 8위 까지 노출 -->
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_rank01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
-										<ul class="txt">
-											<li class="s1">2022 컬러풀 2단 캘린더 체크리스트</li>
-											<li class="s2"><strong>20%</strong>12,300원</li>
-										</ul>
-									</a>
-								</li>
-								<!-- //.li 반복 -->
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_rank02.jpg" alt=""></p><!-- 이미지 없을 경우 공백 -->
+											<ul class="txt">
+												<li class="s1">어흥 호랑이목쿠션 안대 2종 세트</li>
+												<li class="s2"><strong>10%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_rank03.jpg" alt=""></p>
+											<ul class="txt">
+												<li class="s1">오렌지 수첩형 데일리 플래너</li>
+												<li class="s2"><strong>29%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_rank11.jpg" alt=""></p>
+											<ul class="txt">
+												<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드</li>
+												<li class="s2"><strong>29%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_rank12.jpg" alt=""></p>
+											<ul class="txt">
+												<li class="s1">[HBAF] 바프 시즈닝 아몬드</li>
+												<li class="s2"><strong>29%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_rank13.jpg" alt=""></p>
+											<ul class="txt">
+												<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드</li>
+												<li class="s2"><strong>29%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_prod01.jpg" alt=""></p>
+											<ul class="txt">
+												<li class="s1">[HBAF] 바프 시즈닝 아몬드</li>
+												<li class="s2"><strong>29%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_prod02.jpg" alt=""></p>
+											<ul class="txt">
+												<li class="s1">[HBAF] 바프 시즈닝 아몬드</li>
+												<li class="s2"><strong>29%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+								
+									<!-- 전체보기 -->
+									<li class="li li_btn">
+										<a href="#n">
+											<div class="btn_box_more">
+												<p>
+													<em>베스트</em><span>전체보기</span>
+												</p>
+											</div>
+										</a>
+									</li>
+									<!-- //전체보기 -->
+								</ul>
+								<!-- //wel_category_rank -->
 
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_rank02.jpg" alt=""></p><!-- 이미지 없을 경우 공백 -->
-										<ul class="txt">
-											<li class="s1">어흥 호랑이목쿠션 안대 2종 세트</li>
-											<li class="s2"><strong>10%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_rank03.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">오렌지 수첩형 데일리 플래너</li>
-											<li class="s2"><strong>29%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_rank11.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드</li>
-											<li class="s2"><strong>29%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_rank12.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">[HBAF] 바프 시즈닝 아몬드</li>
-											<li class="s2"><strong>29%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_rank13.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드</li>
-											<li class="s2"><strong>29%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_prod01.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">[HBAF] 바프 시즈닝 아몬드</li>
-											<li class="s2"><strong>29%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_prod02.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">[HBAF] 바프 시즈닝 아몬드</li>
-											<li class="s2"><strong>29%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-							
-								<!-- 전체보기 -->
-								<li class="li li_btn">
-									<a href="#n">
-										<div class="btn_box_more">
-											<p>
-												<em>베스트</em><span>전체보기</span>
-											</p>
+								<!-- wel_category_cont -->
+								<div class="wel_category_cont wel_cont">
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<!-- swiper-slide 반복 -->
+											<div class="swiper-slide">
+												<!-- li_resp_ty -->
+												<ul class="li_resp_ty">
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp01.jpg" alt=""></p><!-- image size : 670*384px - 공통가이드 참조 -->
+															<ul class="txt">
+																<li class="s1"><strong>33%</strong>내 취향이 담긴 플래너 찾기</li>
+															</ul>
+														</a>
+													</li>
+												</ul>
+												<!-- //li_resp_ty -->
+												<!-- li_s_ty -->
+												<ul class="li_s_ty">
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp01_1.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
+															<ul class="txt">
+																<li class="s1">큐피드곰 수첩형 데일리 플래너</li>
+																<li class="s2"><strong>69%</strong>13,950</li>
+															</ul>
+														</a>
+													</li>
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp01_2.jpg" alt=""></p>
+															<ul class="txt">
+																<li class="s1">퍼니디 조구만 스튜디오 심플 플래너</li>
+																<li class="s2"><strong>69%</strong>13,950</li>
+															</ul>
+														</a>
+													</li>
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp01_3.jpg" alt=""></p>
+															<ul class="txt">
+																<li class="s1">레인보우 새해다짐 심플 플래너 4종</li>
+																<li class="s2"><strong>69%</strong>13,950</li>
+															</ul>
+														</a>
+													</li>
+												</ul>
+												<!-- //li_s_ty -->
+											</div>
+											<!-- //swiper-slide 반복 -->
+
+											<div class="swiper-slide">
+												<!-- li_resp_ty -->
+												<ul class="li_resp_ty">
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp02.jpg" alt=""></p>
+															<ul class="txt">
+																<li class="s1"><strong>33%</strong>너는 짜증내지마, 내가 대신 내줄게</li>
+															</ul>
+														</a>
+													</li>
+												</ul>
+												<!-- //li_resp_ty -->
+												<!-- li_s_ty -->
+												<ul class="li_s_ty">
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp02_1.jpg" alt=""></p>
+															<ul class="txt">
+																<li class="s1">큐피드곰 노트북 양면 파우치(S/L)</li>
+																<li class="s2"><strong>69%</strong>13,950</li>
+															</ul>
+														</a>
+													</li>
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp02_2.jpg" alt=""></p>
+															<ul class="txt">
+																<li class="s1">퍼니디 조구만 스튜디오 에코백 카툰 풍선 총</li>
+																<li class="s2"><strong>69%</strong>13,950</li>
+															</ul>
+														</a>
+													</li>
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp02_3.jpg" alt=""></p>
+															<ul class="txt">
+																<li class="s1">여자 반지 링 레이어드 데일리 더블 하트 팬던트</li>
+																<li class="s2"><strong>69%</strong>13,950</li>
+															</ul>
+														</a>
+													</li>
+												</ul>
+												<!-- //li_s_ty -->
+											</div>
 										</div>
-									</a>
-								</li>
-								<!-- //전체보기 -->
-							</ul>
-							<!-- //wel_category_rank -->
-
-							<!-- wel_category_cont -->
-							<div class="wel_category_cont wel_cont">
-								<div class="swiper-container">
-									<div class="swiper-wrapper">
-										<!-- swiper-slide 반복 -->
-										<div class="swiper-slide">
-											<!-- li_resp_ty -->
-											<ul class="li_resp_ty">
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp01.jpg" alt=""></p><!-- image size : 670*384px - 공통가이드 참조 -->
-														<ul class="txt">
-															<li class="s1"><strong>33%</strong>내 취향이 담긴 플래너 찾기</li>
-														</ul>
-													</a>
-												</li>
-											</ul>
-											<!-- //li_resp_ty -->
-											<!-- li_s_ty -->
-											<ul class="li_s_ty">
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp01_1.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
-														<ul class="txt">
-															<li class="s1">큐피드곰 수첩형 데일리 플래너</li>
-															<li class="s2"><strong>69%</strong>13,950</li>
-														</ul>
-													</a>
-												</li>
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp01_2.jpg" alt=""></p>
-														<ul class="txt">
-															<li class="s1">퍼니디 조구만 스튜디오 심플 플래너</li>
-															<li class="s2"><strong>69%</strong>13,950</li>
-														</ul>
-													</a>
-												</li>
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp01_3.jpg" alt=""></p>
-														<ul class="txt">
-															<li class="s1">레인보우 새해다짐 심플 플래너 4종</li>
-															<li class="s2"><strong>69%</strong>13,950</li>
-														</ul>
-													</a>
-												</li>
-											</ul>
-											<!-- //li_s_ty -->
-										</div>
-										<!-- //swiper-slide 반복 -->
-
-										<div class="swiper-slide">
-											<!-- li_resp_ty -->
-											<ul class="li_resp_ty">
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp02.jpg" alt=""></p>
-														<ul class="txt">
-															<li class="s1"><strong>33%</strong>너는 짜증내지마, 내가 대신 내줄게</li>
-														</ul>
-													</a>
-												</li>
-											</ul>
-											<!-- //li_resp_ty -->
-											<!-- li_s_ty -->
-											<ul class="li_s_ty">
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp02_1.jpg" alt=""></p>
-														<ul class="txt">
-															<li class="s1">큐피드곰 노트북 양면 파우치(S/L)</li>
-															<li class="s2"><strong>69%</strong>13,950</li>
-														</ul>
-													</a>
-												</li>
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp02_2.jpg" alt=""></p>
-														<ul class="txt">
-															<li class="s1">퍼니디 조구만 스튜디오 에코백 카툰 풍선 총</li>
-															<li class="s2"><strong>69%</strong>13,950</li>
-														</ul>
-													</a>
-												</li>
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp02_3.jpg" alt=""></p>
-														<ul class="txt">
-															<li class="s1">여자 반지 링 레이어드 데일리 더블 하트 팬던트</li>
-															<li class="s2"><strong>69%</strong>13,950</li>
-														</ul>
-													</a>
-												</li>
-											</ul>
-											<!-- //li_s_ty -->
-										</div>
+										<div class="swiper-pagination"></div>
 									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-								<div class="btn_wel_category">
-									<a href="#n" class="btn_category_more"><span>전체보기</span></a>
-								</div>
-							</div>
-							<!-- //wel_category_cont -->
-						</div>
-
-						<div class="tab_cont" id="tab12">
-							<!-- wel_category_rank -->
-							<ul class="wel_category_rank wel_cont">
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_rank11.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드</li>
-											<li class="s2"><strong>29%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_rank12.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">[HBAF] 바프 시즈닝 아몬드</li>
-											<li class="s2"><strong>29%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_rank13.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드</li>
-											<li class="s2"><strong>29%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_rank01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
-										<ul class="txt">
-											<li class="s1">2022 컬러풀 2단 캘린더 체크리스트</li>
-											<li class="s2"><strong>20%</strong>12,300원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_rank02.jpg" alt=""></p><!-- 이미지 없을 경우 공백 -->
-										<ul class="txt">
-											<li class="s1">어흥 호랑이목쿠션 안대 2종 세트</li>
-											<li class="s2"><strong>10%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_rank03.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">오렌지 수첩형 데일리 플래너</li>
-											<li class="s2"><strong>29%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_prod01.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">[HBAF] 바프 시즈닝 아몬드</li>
-											<li class="s2"><strong>29%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_prod02.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">[HBAF] 바프 시즈닝 아몬드</li>
-											<li class="s2"><strong>29%</strong>9,900원</li>
-										</ul>
-									</a>
-								</li>
-							
-								<!-- 전체보기 -->
-								<li class="li li_btn">
-									<a href="#n">
-										<div class="btn_box_more">
-											<p>
-												<em>베스트</em><span>전체보기</span>
-											</p>
-										</div>
-									</a>
-								</li>
-								<!-- //전체보기 -->
-							</ul>
-							<!-- //wel_category_rank -->
-
-							<!-- wel_category_cont -->
-							<div class="wel_category_cont wel_cont">
-								<div class="swiper-container">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<!-- li_resp_ty -->
-											<ul class="li_resp_ty">
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp03.jpg" alt=""></p><!-- image size : 670*384px - 공통가이드 참조 -->
-														<ul class="txt">
-															<li class="s1"><strong>33%</strong>가장 많이 사랑받은 필기구 베스트 50</li>
-														</ul>
-													</a>
-												</li>
-											</ul>
-											<!-- //li_resp_ty -->
-											<!-- li_s_ty -->
-											<ul class="li_s_ty">
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp03_1.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
-														<ul class="txt">
-															<li class="s1">큐피드곰 노트북 양면 파우치(S/L)</li>
-															<li class="s2"><strong>69%</strong>13,950</li>
-														</ul>
-													</a>
-												</li>
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp03_2.jpg" alt=""></p>
-														<ul class="txt">
-															<li class="s1">퍼니디 조구만 스튜디오 에코백 카툰 풍선 총</li>
-															<li class="s2"><strong>69%</strong>13,950</li>
-														</ul>
-													</a>
-												</li>
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp03_3.jpg" alt=""></p>
-														<ul class="txt">
-															<li class="s1">여자 반지 링 레이어드 데일리 더블 하트 팬던트</li>
-															<li class="s2"><strong>69%</strong>13,950</li>
-														</ul>
-													</a>
-												</li>
-											</ul>
-											<!-- //li_s_ty -->
-										</div>
-										<div class="swiper-slide">
-											<!-- li_resp_ty -->
-											<ul class="li_resp_ty">
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp02.jpg" alt=""></p>
-														<ul class="txt">
-															<li class="s1"><strong>33%</strong>너는 짜증내지마, 내가 대신 내줄게</li>
-														</ul>
-													</a>
-												</li>
-											</ul>
-											<!-- //li_resp_ty -->
-											<!-- li_s_ty -->
-											<ul class="li_s_ty">
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp04_1.jpg" alt=""></p>
-														<ul class="txt">
-															<li class="s1">큐피드곰 노트북 양면 파우치(S/L)</li>
-															<li class="s2"><strong>69%</strong>13,950</li>
-														</ul>
-													</a>
-												</li>
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp04_2.jpg" alt=""></p>
-														<ul class="txt">
-															<li class="s1">퍼니디 조구만 스튜디오 에코백 카툰 풍선 총</li>
-															<li class="s2"><strong>69%</strong>13,950</li>
-														</ul>
-													</a>
-												</li>
-												<li class="li">
-													<a href="#n">
-														<p class="img"><img src="../../images/wel_main_new/@img_prod_resp04_3.jpg" alt=""></p>
-														<ul class="txt">
-															<li class="s1">여자 반지 링 레이어드 데일리 더블 하트 팬던트</li>
-															<li class="s2"><strong>69%</strong>13,950</li>
-														</ul>
-													</a>
-												</li>
-											</ul>
-											<!-- //li_s_ty -->
-										</div>
+									<div class="btn_wel_category">
+										<a href="#n" class="btn_category_more"><span>전체보기</span></a>
 									</div>
-									<div class="swiper-pagination"></div>
 								</div>
-								<div class="btn_wel_category">
-									<a href="#n" class="btn_category_more"><span>전체보기</span></a>
-								</div>
+								<!-- //wel_category_cont -->
 							</div>
-							<!-- //wel_category_cont -->
+
+							<div class="tab_cont" id="tab12">
+								<!-- wel_category_rank -->
+								<ul class="wel_category_rank wel_cont">
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_rank11.jpg" alt=""></p>
+											<ul class="txt">
+												<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드</li>
+												<li class="s2"><strong>29%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_rank12.jpg" alt=""></p>
+											<ul class="txt">
+												<li class="s1">[HBAF] 바프 시즈닝 아몬드</li>
+												<li class="s2"><strong>29%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_rank13.jpg" alt=""></p>
+											<ul class="txt">
+												<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드</li>
+												<li class="s2"><strong>29%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_rank01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
+											<ul class="txt">
+												<li class="s1">2022 컬러풀 2단 캘린더 체크리스트</li>
+												<li class="s2"><strong>20%</strong>12,300원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_rank02.jpg" alt=""></p><!-- 이미지 없을 경우 공백 -->
+											<ul class="txt">
+												<li class="s1">어흥 호랑이목쿠션 안대 2종 세트</li>
+												<li class="s2"><strong>10%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_rank03.jpg" alt=""></p>
+											<ul class="txt">
+												<li class="s1">오렌지 수첩형 데일리 플래너</li>
+												<li class="s2"><strong>29%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_prod01.jpg" alt=""></p>
+											<ul class="txt">
+												<li class="s1">[HBAF] 바프 시즈닝 아몬드</li>
+												<li class="s2"><strong>29%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+									<li class="li">
+										<a href="#n">
+											<p class="img"><img src="../../images/wel_main_new/@img_prod02.jpg" alt=""></p>
+											<ul class="txt">
+												<li class="s1">[HBAF] 바프 시즈닝 아몬드</li>
+												<li class="s2"><strong>29%</strong>9,900원</li>
+											</ul>
+										</a>
+									</li>
+								
+									<!-- 전체보기 -->
+									<li class="li li_btn">
+										<a href="#n">
+											<div class="btn_box_more">
+												<p>
+													<em>베스트</em><span>전체보기</span>
+												</p>
+											</div>
+										</a>
+									</li>
+									<!-- //전체보기 -->
+								</ul>
+								<!-- //wel_category_rank -->
+
+								<!-- wel_category_cont -->
+								<div class="wel_category_cont wel_cont">
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<!-- li_resp_ty -->
+												<ul class="li_resp_ty">
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp03.jpg" alt=""></p><!-- image size : 670*384px - 공통가이드 참조 -->
+															<ul class="txt">
+																<li class="s1"><strong>33%</strong>가장 많이 사랑받은 필기구 베스트 50</li>
+															</ul>
+														</a>
+													</li>
+												</ul>
+												<!-- //li_resp_ty -->
+												<!-- li_s_ty -->
+												<ul class="li_s_ty">
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp03_1.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
+															<ul class="txt">
+																<li class="s1">큐피드곰 노트북 양면 파우치(S/L)</li>
+																<li class="s2"><strong>69%</strong>13,950</li>
+															</ul>
+														</a>
+													</li>
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp03_2.jpg" alt=""></p>
+															<ul class="txt">
+																<li class="s1">퍼니디 조구만 스튜디오 에코백 카툰 풍선 총</li>
+																<li class="s2"><strong>69%</strong>13,950</li>
+															</ul>
+														</a>
+													</li>
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp03_3.jpg" alt=""></p>
+															<ul class="txt">
+																<li class="s1">여자 반지 링 레이어드 데일리 더블 하트 팬던트</li>
+																<li class="s2"><strong>69%</strong>13,950</li>
+															</ul>
+														</a>
+													</li>
+												</ul>
+												<!-- //li_s_ty -->
+											</div>
+											<div class="swiper-slide">
+												<!-- li_resp_ty -->
+												<ul class="li_resp_ty">
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp02.jpg" alt=""></p>
+															<ul class="txt">
+																<li class="s1"><strong>33%</strong>너는 짜증내지마, 내가 대신 내줄게</li>
+															</ul>
+														</a>
+													</li>
+												</ul>
+												<!-- //li_resp_ty -->
+												<!-- li_s_ty -->
+												<ul class="li_s_ty">
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp04_1.jpg" alt=""></p>
+															<ul class="txt">
+																<li class="s1">큐피드곰 노트북 양면 파우치(S/L)</li>
+																<li class="s2"><strong>69%</strong>13,950</li>
+															</ul>
+														</a>
+													</li>
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp04_2.jpg" alt=""></p>
+															<ul class="txt">
+																<li class="s1">퍼니디 조구만 스튜디오 에코백 카툰 풍선 총</li>
+																<li class="s2"><strong>69%</strong>13,950</li>
+															</ul>
+														</a>
+													</li>
+													<li class="li">
+														<a href="#n">
+															<p class="img"><img src="../../images/wel_main_new/@img_prod_resp04_3.jpg" alt=""></p>
+															<ul class="txt">
+																<li class="s1">여자 반지 링 레이어드 데일리 더블 하트 팬던트</li>
+																<li class="s2"><strong>69%</strong>13,950</li>
+															</ul>
+														</a>
+													</li>
+												</ul>
+												<!-- //li_s_ty -->
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+									<div class="btn_wel_category">
+										<a href="#n" class="btn_category_more"><span>전체보기</span></a>
+									</div>
+								</div>
+								<!-- //wel_category_cont -->
+							</div>
 						</div>
 					</div>
 					<!-- //mc_cont : 카테고리 -->
