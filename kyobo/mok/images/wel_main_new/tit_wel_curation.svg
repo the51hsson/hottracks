@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 251.78 69.19" style="enable-background:new 0 0 251.78 69.19;" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 251.78 69.19" style="enable-background:new 0 0 251.78 69.19;" xml:space="preserve">
 <style type="text/css">
-	.st0{enable-background:new    ;}
-	.st1{fill:none;stroke:#BC554F;}
-
-
+.st0{enable-background:new;}
+.st1{fill:none;stroke:#BC554F;}
 
 #a1 line {animation:width both infinite 6s;}
 #a2 line {animation:width2 both infinite 6s;}
@@ -19,8 +16,7 @@
 #b4 line {animation:height2 both infinite 6s;}
 #b5 line {animation:height both infinite 6s;}
 
-#text {animation:fade both infinite 6s;}
-
+#text {animation:text both infinite 6s;}
 
 @keyframes width {
 0% {transform:translateX(-100%);}
@@ -42,16 +38,15 @@
 22% {transform:translateY(0%);}
 100% {transform:translateY(0);}
 }
-@keyframes fade {
+@keyframes text {
 0% {opacity:0;}
 15% {opacity:0;}
 35% {opacity:1;}
 95% {opacity:1;}
 100% {opacity:0;}
 }
-
-
 </style>
+
 <g id="Layer_1">
 	<g id="text" transform="translate(35.812 12.625)">
 		<g class="st0">

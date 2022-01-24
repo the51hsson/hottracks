@@ -1,45 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 210 161" style="enable-background:new 0 0 210 161;" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 210 161" style="enable-background:new 0 0 210 161;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#DE0000;}
-	.st1{fill:#FEAA00;}
-	.st2{fill:#FFFFFF;}
-	.st3{filter:url(#ONLY_Hottracks);}
-	.st4{fill:#000107;}
+.st0{fill:#DE0000;}
+.st1{fill:#FEAA00;}
+.st2{fill:#FFFFFF;}
+.st3{filter:url(#ONLY_Hottracks);}
+.st4{fill:#000107;}
 
-
-#sun {position:relative;animation:sun both infinite linear 24s;transform-origin:50% 65%}
-
-@keyframes sun {
+#sunlight {position:relative;animation:sunlight both infinite linear 24s;transform-origin:50% 65%;}
+@keyframes sunlight {
 0% {transform:rotate(0deg)}
 100% {transform:rotate(360deg)}
 }
-/*
-#Path_36147 {position:relative;animation:fade both infinite linear 3s;}
-#Path_36146 .st1 {position:relative;animation:fade2 both infinite linear 3s 0.4s;}
-*/
+
 #Path_36147,
 #Path_36146 .st1,
-#Path_36146 .st2 {position:relative;animation:a1 both infinite linear 6s 0.4s;}
+#Path_36146 .st2 {position:relative;animation:sun both infinite linear 6s 0.4s;}
 
-@keyframes a1 {
+@keyframes sun {
 0% {transform:translateY(30%);}
 20% {transform:translateY(0%);}
 40% transform:translateY(30%);}
 100% transform:translateY(30%);}
-}
-
-@keyframes fade {
-0% {opacity:1;}
-50% {opacity:0.6;}
-100% {opacity:1;}
-}
-@keyframes fade {
-0% {opacity:1;}
-50% {opacity:0.2;}
-100% {opacity:1;}
 }
 </style>
 <filter  filterUnits="userSpaceOnUse" height="77.619" id="ONLY_Hottracks" width="187.097" x="12.412" y="83.353">
@@ -49,8 +32,7 @@
 	<feComposite  in2="blur" operator="in"></feComposite>
 	<feComposite  in="SourceGraphic" operator="over"></feComposite>
 </filter>
-<g id="sun">
-	
+<g id="sunlight">
 		<image style="overflow:visible;" width="410" height="410" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaCAYAAAA2BoVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6

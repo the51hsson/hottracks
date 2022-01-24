@@ -1,43 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 271 121" style="enable-background:new 0 0 271 121;" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 271 121" style="enable-background:new 0 0 271 121;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#1D1D1B;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{enable-background:new    ;}
-	.st2{fill:#020202;}
-	.st3{fill:#020202;stroke:#000000;}
-	.st4{fill:#2FF583;}
-	.st5{fill:none;stroke:#000000;}
-	.st6{fill:#F06A86;stroke:#080D4B;stroke-width:1.9992;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.9985;}
-	.st7{fill:#FEC211;}
-	.st8{fill:none;stroke:#080D4B;stroke-width:1.9992;stroke-miterlimit:3.9985;}
-	.st9{fill:#FFFFFF;}
-	.st10{stroke:#000000;stroke-width:1.0024;stroke-miterlimit:4.0098;}
-	.st11{fill:none;stroke:#000000;stroke-width:1.0024;stroke-miterlimit:4.0098;}
-	.st12{fill:none;stroke:#080D4B;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
-	.st13{fill:#FFFFFF;stroke:#707070;stroke-width:2;}
-	.st14{fill:#7582F0;}
-	.st15{fill:none;}
+.st0{fill:#FFFFFF;stroke:#1D1D1B;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.st1{enable-background:new    ;}
+.st2{fill:#020202;}
+.st3{fill:#020202;stroke:#000000;}
+.st4{fill:#2FF583;}
+.st5{fill:none;stroke:#000000;}
+.st6{fill:#F06A86;stroke:#080D4B;stroke-width:1.9992;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.9985;}
+.st7{fill:#FEC211;}
+.st8{fill:none;stroke:#080D4B;stroke-width:1.9992;stroke-miterlimit:3.9985;}
+.st9{fill:#FFFFFF;}
+.st10{stroke:#000000;stroke-width:1.0024;stroke-miterlimit:4.0098;}
+.st11{fill:none;stroke:#000000;stroke-width:1.0024;stroke-miterlimit:4.0098;}
+.st12{fill:none;stroke:#080D4B;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.st13{fill:#FFFFFF;stroke:#707070;stroke-width:2;}
+.st14{fill:#7582F0;}
+.st15{fill:none;}
 
 
-
-#bar1 {position:relative;animation:mdw both linear infinite 7s;}
-#bar2 {position:relative;animation:bar both linear infinite 7s;}
-#han1 {position:relative;animation:han1 both linear infinite 7s;   transform-origin:67% 29%;}
-#han2 {position:relative;animation:han2 both linear infinite 7s;   transform-origin:67% 29%;}
-
-#pic {animation:pick both linear infinite 7s;   transform-origin:59% 86%;}
-
-@keyframes pick{
-0% {transform:translate(0,0) rotate(0deg);opacity:0;}
-5% {transform:translate(0,0) rotate(0deg);opacity:1;}
-52% {transform:translate(0,0) rotate(0deg);}
-55% {transform:translate(0,-6deg) rotate(4deg);}
-60% {transform:translate(0,-12%) rotate(4deg);}
-100% {transform:translate(63%,-12%) rotate(4deg);}
-}
-
+#han1 {position:relative;animation:han1 both linear infinite 7s;transform-origin:67% 29%;}
+#han2 {position:relative;animation:han2 both linear infinite 7s;transform-origin:67% 29%;}
 
 @keyframes han1 {
 0% {transform:translate(55%,0) rotate(0deg);}
@@ -54,6 +38,9 @@
 100% {transform:translate(55%,0) rotate(0deg);}
 }
 
+
+#bar1 {position:relative;animation:mdw both linear infinite 7s;}
+#bar2 {position:relative;animation:bar both linear infinite 7s;}
 @keyframes bar {
 0% {transform:translate(55%,0);}
 35% {transform:translate(-8%,0);}
@@ -61,7 +48,6 @@
 60% {transform:translate(-8%,0);}
 100% {transform:translate(55%,0);}
 }
-
 @keyframes mdw {
 0% {transform:translateX(55%);}
 35% {transform:translateX(-8%);}
@@ -70,13 +56,21 @@
 }
 
 
+#pic {animation:pick both linear infinite 7s;transform-origin:59% 86%;}
+@keyframes pick{
+0% {transform:translate(0,0) rotate(0deg);opacity:0;}
+5% {transform:translate(0,0) rotate(0deg);opacity:1;}
+52% {transform:translate(0,0) rotate(0deg);}
+55% {transform:translate(0,-6deg) rotate(4deg);}
+60% {transform:translate(0,-12%) rotate(4deg);}
+100% {transform:translate(63%,-12%) rotate(4deg);}
+}
 
 
 .star {position:relative;animation:star both infinite 4s;}
 .star.s1 {transform-origin:18% 61%;}
 .star.s2 {transform-origin:5% 77%;animation-delay:0.5s;}
 .star.s3 {transform-origin:95% 72%;animation-delay:0.7s;}
-
 @keyframes star {
 0% {transform:scale(0.4);opacity:0;}	
 20% {transform:scale(1.1);opacity:1;}
@@ -84,7 +78,6 @@
 58% {transform:scale(1);}
 100% {transform:scale(1);}
 }
-
 </style>
 
 <g id="md">
