@@ -8488,7 +8488,8 @@ body.dialog_open {
           justify-content: flex-start;
 }
 
-.module_wrap.type2 .md_tab div {
+.module_wrap.type2 .md_tab a {
+  display: block;
   margin-left: 16px;
   font-size: 22px;
   letter-spacing: -0.022em;
@@ -8497,11 +8498,11 @@ body.dialog_open {
   color: rgba(0, 0, 0, 0.2);
 }
 
-.module_wrap.type2 .md_tab div:first-of-type {
+.module_wrap.type2 .md_tab a:first-of-type {
   margin-left: 0;
 }
 
-.module_wrap.type2 .md_tab div.active {
+.module_wrap.type2 .md_tab a.active {
   color: #000;
 }
 
@@ -8868,6 +8869,21 @@ body.dialog_open {
   margin-right: 0;
 }
 
+.evt_products .prod_item.adult_prod .product_pic {
+  background-color: #f2f2f2;
+}
+
+.evt_products .prod_item.adult_prod .adult_block {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  padding-top: 35%;
+  background: url(../images/guide/@adult_block.svg) no-repeat center top/30%;
+}
+
 .evt_products.row_dir {
   display: block;
   padding-top: 20px;
@@ -8906,21 +8922,6 @@ body.dialog_open {
   display: block;
 }
 
-.evt_products.row_dir .prod_item.adult_prod .product_pic {
-  background-color: #f2f2f2;
-}
-
-.evt_products.row_dir .prod_item.adult_prod .adult_block {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  text-align: center;
-  padding-top: 35%;
-  background: url(../images/guide/@adult_block.svg) no-repeat center top/30%;
-}
-
 .evt_products.row_dir .product_pic {
   position: relative;
   width: calc((100% - 20px )/2);
@@ -8949,6 +8950,20 @@ body.dialog_open {
   content: "";
   position: absolute;
   left: 40px !important;
+}
+
+.evt_products.row_dir .prod-wrapper .prod_item {
+  width: 140px;
+  margin: 0;
+}
+
+.evt_products.row_dir .prod-wrapper .prod_item .product_pic {
+  width: 140px;
+  padding-top: 140px;
+}
+
+.evt_products.row_dir .prod-wrapper .prod_item img {
+  width: 100%;
 }
 
 .replace_prod .replace_prod_btn {
