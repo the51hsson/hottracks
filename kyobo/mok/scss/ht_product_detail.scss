@@ -18,3 +18,25 @@
     }
 
 }
+.cpon_bubble{
+    position:relative;
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    font-size: 12px;
+    line-height: 17px;
+    padding:8px 16px 8px 10px;
+    border-radius: 50px;
+    &:before{
+        content:"";
+        position:absolute;
+        border-top:7px solid #000;
+        border-left:7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        transform: rotate(-180deg);
+        z-index: -1;
+        left:16px;
+        top:-12px;
+    }
+}
