@@ -1297,14 +1297,21 @@ button.btn_text_link {
     color:$btn-primary;
     background-color: #fff4f1;
     font-weight:normal;
-    padding: 0 8px;
+    padding: 0 6px;
     line-height:21px;
 }
 .badge_default_evt{
   color:#292929;
   background-color: #f5f5f5;
   font-weight:normal;
-  padding: 0 8px;
+  padding: 0 6px;
+  line-height:21px;
+}
+.badge_disabled{
+  background-color: #D5D5D5;
+  color:#000;
+  font-weight:normal;
+  padding: 0 6px;
   line-height:21px;
 }
 /* badge icon */

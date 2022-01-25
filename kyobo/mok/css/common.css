@@ -1038,10 +1038,10 @@ button.btn_sm {
 
 .product_info_area .tit_wrap .tit .tit_top .btn_share {
   cursor: pointer;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   background: url(../images/ico/ico_share.png) no-repeat 0 0;
-  background-size: 16px auto;
+  background-size: 18px auto;
 }
 
 .product_info_area .tit_wrap .tit .tit_bottom {
@@ -5094,7 +5094,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   color: #dc3545;
   background-color: #fff4f1;
   font-weight: normal;
-  padding: 0 8px;
+  padding: 0 6px;
   line-height: 21px;
 }
 
@@ -5102,7 +5102,15 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   color: #292929;
   background-color: #f5f5f5;
   font-weight: normal;
-  padding: 0 8px;
+  padding: 0 6px;
+  line-height: 21px;
+}
+
+.badge_disabled {
+  background-color: #D5D5D5;
+  color: #000;
+  font-weight: normal;
+  padding: 0 6px;
   line-height: 21px;
 }
 
