@@ -1,0 +1,20 @@
+@import "ht_product_mok.scss"; 
+.product_info_area{
+    .tit_wrap .rating_score_wrap{
+        margin-top:8px;
+        margin-bottom:12px;
+    }
+}
+.contents_wrap .product_info_area .price_wrap{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom:3px;
+    .sale_price, 
+    .real_price{
+        line-height: 32px;
+    }
+    .real_price{
+        margin-left:8px;
+    }
+
+}

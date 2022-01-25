@@ -1609,3 +1609,28 @@ ul.prod-wrapper.column_dir .title {
 .info_text_box.size_sm [class^=bul_item_].font_size_min + [class^=bul_item_].font_size_min {
   margin-top: 4px;
 }
+
+.product_info_area .tit_wrap .rating_score_wrap {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.contents_wrap .product_info_area .price_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 3px;
+}
+
+.contents_wrap .product_info_area .price_wrap .sale_price,
+.contents_wrap .product_info_area .price_wrap .real_price {
+  line-height: 32px;
+}
+
+.contents_wrap .product_info_area .price_wrap .real_price {
+  margin-left: 8px;
+}
