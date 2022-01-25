@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20.5 20.5" style="enable-background:new 0 0 20.5 20.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#B7BCCE;}
+	.st1{fill:#CEECF4;}
+	.st2{fill:#020202;}
+	.st3{fill:#F0C980;}
+	.st4{fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#F6999B;}
+
+#bg {position:relative;animation:bg both infinite linear 6s;transform-origin:50% 49%}
+
+@keyframes bg {
+0% {transform:rotate(0deg)}
+100% {transform:rotate(360deg)}
+}
+
+#heart {transform-origin:18% 80%;animation:heart both linear infinite 1.2s;}
+
+@keyframes heart {
+0% {transform:scale(1)}
+50% {transform:scale(0.6)}
+100% {transform:scale(1)}
+}
+
+#mus {animation:mus both linear infinite 1.6s;}
+
+@keyframes mus {
+0% {transform:translate(0,0);opacity:0}
+50% {transform:translate(-8%,10%);opacity:1}
+100% {transform:translate(0,0);opacity:0}
+}
+</style>
+<g id="bg">
+	<g>
+		<g>
+			<circle class="st0" cx="10.29" cy="10.07" r="8.72"/>
+			<g>
+				<circle cx="10.2" cy="10.07" r="3.68"/>
+				<circle class="st1" cx="10.2" cy="10.07" r="2.9"/>
+				<circle class="st2" cx="10.2" cy="10.07" r="1.79"/>
+				<circle class="st3" cx="10.2" cy="10.07" r="1.02"/>
+			</g>
+		</g>
+		<path class="st4" d="M15.37,17.22c-1.45,1.05-3.24,1.68-5.17,1.68c-4.87,0-8.82-3.95-8.82-8.82s3.95-8.82,8.82-8.82
+			s8.82,3.95,8.82,8.82c0,1.95-0.64,3.76-1.71,5.22"/>
+		<circle cx="16.48" cy="16.35" r="0.41"/>
+	</g>
+	<path class="st5" d="M10.28,15.23c0,0,4.58,0.2,5.02-5.22"/>
+	<path class="st5" d="M10.2,17.1c0,0,6.56-0.03,6.98-7.02"/>
+</g>
+<g id="heart">
+	<g>
+		<path d="M3.88,13.76c0,0-1.35-1.09-2.85,0.13c0,0-1.77,1.39-0.14,3.38l2.62,2.63c0,0,0.39,0.39,0.71,0l2.62-2.64
+			c0,0,1.65-1.82-0.25-3.46C6.58,13.8,5.46,12.77,3.88,13.76z"/>
+		<path class="st6" d="M3.54,14.62c0,0-0.88-0.95-2.11,0c0,0-0.93,0.8-0.14,2.03l2.54,2.55l2.66-2.66c0,0,0.69-1.12-0.26-1.96
+			c0,0-0.98-0.86-2.05,0.01C4.18,14.59,3.9,14.93,3.54,14.62z"/>
+	</g>
+</g>
+<g id="mus">
+	<g>
+		<g>
+			<circle cx="16.51" cy="5.32" r="1.63"/>
+			<path d="M17.37,4.31V1.15c0,0-0.06-0.27,0.25-0.36l2.1-0.57c0,0,0.36-0.1,0.47,0.25c0,0,0.04,0.31-0.19,0.41
+				s-0.04,0.01-0.04,0.01l-1.83,0.56v3.88L17.37,4.31z"/>
+		</g>
+		<circle class="st6" cx="16.51" cy="5.32" r="0.88"/>
+	</g>
+</g>
+</svg>
