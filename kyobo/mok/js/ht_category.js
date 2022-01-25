@@ -47,8 +47,8 @@ $(function(){
     $(this).removeClass('menuDown');
   });
 
-  $(document).on('click', '.md_tab div', function(){
-    $(this).addClass('active').siblings('div').removeClass('active');
+  $(document).on('click', '.md_tab a', function(){
+    $(this).addClass('active').siblings('a').removeClass('active');
   });
 
   //스티키 메뉴

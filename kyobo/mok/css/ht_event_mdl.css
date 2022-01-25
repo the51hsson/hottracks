@@ -7914,13 +7914,14 @@ body.dialog_open {
 .prod-wrapper .product_pic .evt_good_count .icon {
   float: left;
   width: 12px;
-  height: 12px;
+  height: 14px;
   background: url(../images/guide/ico_prod_like_icon.svg) no-repeat center center/12px;
 }
 
 .prod-wrapper .product_pic .evt_good_count .txt {
   float: left;
   margin-left: 3px;
+  line-height: 14px;
 }
 
 .prod-wrapper .company {

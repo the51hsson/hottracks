@@ -170,7 +170,8 @@
       display: flex;
 	  flex-flow:row nowrap;
 	  justify-content: flex-start;
-	  div{
+	  a{
+		  display:block;
 		  margin-left:16px;
 		  font-size:22px;
 		  letter-spacing: -0.022em;
@@ -178,10 +179,10 @@
 		  font-weight:700;
 		  color:rgba(0,0,0,0.2);
 	   }
-	   div:first-of-type {
+	   a:first-of-type {
 		margin-left:0;
 	   }
-	   div.active {
+	   a.active {
 		   color:#000;
 	   }
 	}
@@ -519,10 +520,6 @@
 		padding-top: 100%;
 		position: relative;
 	}
-	.product_info{
-		width:100%;
-		padding:12px 0 0 0;
-	}
 	.sold_out .product_pic:before{
 		content:"";
 		position:absolute;
@@ -579,6 +576,21 @@
 	.prod_item:nth-of-type(2n+1) .replace_prod_swap{
 		margin-right:0;
 	}
+	.prod_item.adult_prod{
+		.product_pic{
+			background-color: #f2f2f2;
+		}
+		.adult_block{
+			position:absolute;
+			width:100%;
+			top:50%;
+			transform: translateY(-50%);
+			text-align: center;
+			padding-top:35%;
+			background:url(../images/guide/@adult_block.svg) no-repeat center top / 30%;
+
+		}
+	}
 }
 .evt_products.row_dir{
 	display:block;
@@ -600,21 +612,6 @@
 		}
 		.company{
 			display: block;
-		}
-	}
-	.prod_item.adult_prod{
-		.product_pic{
-			background-color: #f2f2f2;
-		}
-		.adult_block{
-			position:absolute;
-			width:100%;
-			top:50%;
-			transform: translateY(-50%);
-			text-align: center;
-			padding-top:35%;
-			background:url(../images/guide/@adult_block.svg) no-repeat center top / 30%;
-
 		}
 	}
 	.product_pic{
@@ -641,8 +638,15 @@
 			content:"";
 			position:absolute;
 			left:40px !important;
+		}	
+	}
+	.prod-wrapper .prod_item{
+		width:140px;
+		margin:0;
+		.product_pic{
+			width:140px;
+			padding-top:140px;
 		}
-		
 	}
 }
 //품절 대체 상품 스왑이 있는 항목
