@@ -170,8 +170,7 @@
       display: flex;
 	  flex-flow:row nowrap;
 	  justify-content: flex-start;
-	  a{
-		  display:block;
+	  div{
 		  margin-left:16px;
 		  font-size:22px;
 		  letter-spacing: -0.022em;
@@ -179,10 +178,10 @@
 		  font-weight:700;
 		  color:rgba(0,0,0,0.2);
 	   }
-	   a:first-of-type {
+	   div:first-of-type {
 		margin-left:0;
 	   }
-	   a.active {
+	   div.active {
 		   color:#000;
 	   }
 	}
@@ -520,6 +519,10 @@
 		padding-top: 100%;
 		position: relative;
 	}
+	.product_info{
+		width:100%;
+		padding:12px 0 0 0;
+	}
 	.sold_out .product_pic:before{
 		content:"";
 		position:absolute;
@@ -638,15 +641,8 @@
 			content:"";
 			position:absolute;
 			left:40px !important;
-		}	
-	}
-	.prod-wrapper .prod_item{
-		width:140px;
-		margin:0;
-		.product_pic{
-			width:140px;
-			padding-top:140px;
 		}
+		
 	}
 }
 //품절 대체 상품 스왑이 있는 항목

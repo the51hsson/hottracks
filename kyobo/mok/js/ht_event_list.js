@@ -35,7 +35,7 @@ $(function(){
    // 오늘만 특가 스와이프
    var horDealSwiper = new CustomSwiper('.mySwiper.hotdeal', {
       slidesPerView: 'auto',
-      spaceBetween: 19,
+      spaceBetween: 12,
       freeMode: true,
       observer: true,
       observeParents: true,
@@ -80,7 +80,6 @@ $(function(){
 	var arrowIcon = $(this).children('.selec_icon');
 	var thisOptionBox =  $(this).next('.option_ul');
 	//셀렉트 박스 여러개인 경우 다른 옵션박스 닫기
-	console.log($('.option_ul').not(thisOptionBox).length);
 	$('.option_ul').not(thisOptionBox).css('display', 'none');
 
 	  //옵션박스 나타나는 토글
@@ -118,7 +117,7 @@ $(function(){
    
    /*================================= HTR-M-EVT-VIEW-000.html ==============================*/  
    //이벤트 종료 블랙스크린 높이 구하기
-   if($('.sub_body_wrap.evt_end_dim').length>0) {
+   if(location.href.match('HTR-M-EVT-VIEW-000-1-01.html')) {
 	var headerH = $('.ht_.header_wrapper').height();
 	var evtMdltitleH = $('.evt_mdl_title').height();
 	 $('.evt_end_dim').css('height', 'calc(100vh - '+( headerH - evtMdltitleH)+'px)');
@@ -207,7 +206,7 @@ $(function(){
     }else{
       var mdl7EventSwiper2 =  new CustomSwiper('#mdl7swapAble2', {
         slidesPerView: 'auto',
-        spaceBetween: 19,
+        spaceBetween: 0,
         freeMode: true,
         observer: true,
         observeParents: true,
