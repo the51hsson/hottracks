@@ -1725,6 +1725,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   padding: 0 4px;
   height: 17px;
   line-height: 17px;
+  font-size: 8px;
 }
 
 /* 태그 */
