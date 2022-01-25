@@ -99,14 +99,14 @@ function welLive(){
         observer: true,
         observeParents: true,
         slidesPerView: 'auto',
-        centeredSlides: false,
-        loop: true,
+        centeredSlides: true,
+        loop: false,
         loopsSlide: 1,
-        spaceBetween: 0,
-        autoplay: {
+        spaceBetween: 10,
+        /*autoplay: {
             delay:5000,
             disableOnInteraction: false,
-        },
+        },*/
         speed: 700,
 		pagination: {
 			el: $('.wel_live_cont').find('.swiper-pagination')[0],
@@ -131,15 +131,13 @@ $(function(){
     if(!$('.wel_live_cont').length) return;
     welLive();
 
-    $('.alarm_chk label').click(function(){ 
-        var chk = $(this).prev().is(':checked');
+    $('.alarm_chk input').click(function(){ 
+        var chk = $(this).is(':checked');
         if(chk){
-            $(this).prev().prop('checked', false);
             setTimeout(function(){
                 $('.wel_live_good_ani').addClass('on');
             }, 7000); 
         }else{
-            $(this).prev().prop('checked', true);
             $('.wel_live_good_ani').removeClass('on');
         }
     }); 
