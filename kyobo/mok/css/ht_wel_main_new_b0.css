@@ -800,16 +800,20 @@ body {
 }
 
 .ht_ .wel_ad_banner {
-  padding: 0;
-  background: #fff;
+  padding: 35px 20px 40px 20px;
+  background: #eee;
 }
 
 .ht_ .wel_ad_banner li {
-  border-top: 1px solid #e2e2e2;
+  margin-top: 12px;
+  border-radius: 100px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
 
 .ht_ .wel_ad_banner li:first-child {
-  border-top: 0;
+  margin-top: 0;
 }
 
 .ht_ .wel_ad_banner a {
@@ -3442,4 +3446,3 @@ body {
             transform: scale(1) rotate(-20deg);
   }
 }
-/*# sourceMappingURL=ht_wel_main_new_b1.css.map */

@@ -413,11 +413,11 @@ body {
     
     // 띠배너 
     .wel_ad_banner {
-        padding:0;background:#fff;
+        padding:35px 20px 40px 20px;background:#eee;
         li {
-            border-top:1px solid #e2e2e2;
+            margin-top:12px;border-radius:100px;overflow: hidden;box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
             &:first-child {
-                border-top:0;
+                margin-top:0;
             }
         }
         a {
