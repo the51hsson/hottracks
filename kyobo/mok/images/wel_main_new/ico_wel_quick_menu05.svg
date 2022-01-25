@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#28b20d"/>
+      <stop offset="1" stop-color="#8adf7a"/>
+    </linearGradient>
+    <filter id="Union_155" x="7.158" y="11.717" width="45.707" height="37.905" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5a5858"/>
+      <stop offset="1" stop-color="#1e1e1e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.888" y1="0.796" x2="0.266" y2="0.513" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffde09"/>
+      <stop offset="1" stop-color="#feaf11"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.441" y1="0.39" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ecffe8"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ecffe8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1e1e1e"/>
+      <stop offset="1" stop-color="#5a5858"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-8" x1="0.989" y1="0.211" x2="0.399" y2="0.613" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8adf7a"/>
+      <stop offset="1" stop-color="#28b20d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-11" x1="0.431" y1="0.931" x2="0.448" y2="0.164" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f42664"/>
+      <stop offset="1" stop-color="#ff628c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-12" x1="0.18" y1="0.052" x2="0.703" y2="0.948" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff628c"/>
+      <stop offset="1" stop-color="#f42664"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-13" x1="0.441" y1="0.39" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffeff3"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_110081" data-name="Group 110081" transform="translate(-40 -762)">
+    <g id="Group_110062" data-name="Group 110062" transform="translate(22310.527 23852.717)">
+      <g transform="matrix(1, 0, 0, 1, -22270.53, -23090.72)" filter="url(#Union_155)">
+        <path id="Union_155-2" data-name="Union 155" d="M-13.525,158.834a5.052,5.052,0,0,0-1.426-.053c-1.121.055-2.221.11-1.884-1.15a3.391,3.391,0,0,1,.82-1.464c-.767-.042-1.889-.626-2.655-.626a19.3,19.3,0,0,0-2.417.6,3.392,3.392,0,0,1,.845,1.49c.338,1.26-.764,1.205-1.886,1.15a5.073,5.073,0,0,0-1.424.053c-1.225.329-2.974,2.454-3.468.613a3.4,3.4,0,0,1,.176-2.262,9.612,9.612,0,0,1-8.186-7.294c-1.38-5.147,1.3-10.336,5.975-11.59a8.059,8.059,0,0,1,3.379-.171,8.519,8.519,0,0,1,7.007-3.844,8.525,8.525,0,0,1,7.037,3.887,8.068,8.068,0,0,1,3.608.13c4.679,1.254,7.354,6.443,5.975,11.59a9.615,9.615,0,0,1-8.184,7.293,3.4,3.4,0,0,1,.176,2.262c-.146.544-.4.741-.721.742C-11.539,160.188-12.662,159.065-13.525,158.834Z" transform="translate(46.55 -120.57)" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="Group_110061" data-name="Group 110061" transform="matrix(-0.966, 0.259, -0.259, -0.966, -22236.467, -23048.941)">
+        <path id="패스_37161" data-name="패스 37161" d="M.777,12.139a.439.439,0,0,1-.429-.53h0c.009-.041.868-4.146.015-6.6A5.65,5.65,0,0,1,.712.2a.439.439,0,0,1,.731.485,4.781,4.781,0,0,0-.252,4.036c.934,2.69.053,6.9.015,7.074A.439.439,0,0,1,.777,12.139Z" transform="matrix(0.996, -0.087, 0.087, 0.996, 8.063, 0.141)" fill="url(#linear-gradient-2)"/>
+        <path id="Path_37160" data-name="Path 37160" d="M3.509,4.386A3.48,3.48,0,0,0,7.017.934c0-1.906-2.24-.306-3.509-.306S0-.972,0,.934A3.48,3.48,0,0,0,3.509,4.386Z" transform="translate(6.268 5.625)" fill="url(#linear-gradient-3)"/>
+        <ellipse id="Ellipse_654" data-name="Ellipse 654" cx="8.771" cy="9.648" rx="8.771" ry="9.648" transform="translate(1.005 8.214)" fill="url(#linear-gradient-3)"/>
+        <path id="Path_37163" data-name="Path 37163" d="M2.884,0A6.252,6.252,0,0,0,0,3.811" transform="matrix(-0.966, -0.259, 0.259, -0.966, 5.491, 26.962)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+        <circle id="Ellipse_656" data-name="Ellipse 656" cx="0.658" cy="0.658" r="0.658" transform="matrix(-0.966, -0.259, 0.259, -0.966, 1.271, 27.602)" fill="#fff"/>
+        <path id="Union_153" data-name="Union 153" d="M.156,5.925a.642.642,0,0,1-.107-.182A.655.655,0,0,1,.231,5c.176-.147.332-.283.471-.407l-.008-.01A5.64,5.64,0,0,0,2.254.622a.664.664,0,0,1,.489-.6A.663.663,0,0,1,3.569.7a6.9,6.9,0,0,1-2.036,4.9l-.006-.006c-.136.14-.285.275-.446.411a.654.654,0,0,1-.925-.076ZM.695,4.579h0s-.006,0-.006.006Z" transform="translate(13.756 17.463) rotate(-7)" fill="url(#linear-gradient-5)"/>
+        <circle id="Ellipse_657" data-name="Ellipse 657" cx="0.658" cy="0.658" r="0.658" transform="matrix(-0.966, 0.259, -0.259, -0.966, 14.456, 25.067)" fill="url(#linear-gradient-6)"/>
+      </g>
+      <g id="Group_110060" data-name="Group 110060" transform="matrix(0.966, 0.259, -0.259, 0.966, -22240.473, -23075.252)">
+        <path id="패스_37161-2" data-name="패스 37161" d="M1.078,12.138a.438.438,0,0,1-.366-.2,5.65,5.65,0,0,1-.35-4.809C1.215,4.676.356.571.348.53A.439.439,0,0,1,1.205.347c.038.178.919,4.385-.015,7.074a4.814,4.814,0,0,0,.252,4.036.439.439,0,0,1-.365.681Z" transform="matrix(0.996, 0.087, -0.087, 0.996, 8.116, 15.277)" fill="url(#linear-gradient-7)"/>
+        <path id="Path_37160-2" data-name="Path 37160" d="M3.508,0A3.48,3.48,0,0,1,7.017,3.451c0,1.906-2.24.306-3.508.306S0,5.357,0,3.451A3.48,3.48,0,0,1,3.508,0Z" transform="translate(5.263 17.499)" fill="url(#linear-gradient-8)"/>
+        <ellipse id="Ellipse_654-2" data-name="Ellipse 654" cx="8.771" cy="9.648" rx="8.771" ry="9.648" fill="url(#linear-gradient-8)"/>
+      </g>
+      <g id="Group_110059" data-name="Group 110059" transform="translate(-22251.416 -23077)">
+        <path id="패스_37161-3" data-name="패스 37161" d="M1.427,14.911a.438.438,0,0,1-.38-.219A8.681,8.681,0,0,1,.22,12.4,8.866,8.866,0,0,1,.645,7.11,8.162,8.162,0,0,0,.661.642.439.439,0,1,1,1.439.236a7.51,7.51,0,0,1,.636,2.122,9.409,9.409,0,0,1-.619,5.087,8.326,8.326,0,0,0,.351,6.808.439.439,0,0,1-.379.658Z" transform="matrix(0.998, -0.07, 0.07, 0.998, 6.889, 15.414)" fill="url(#linear-gradient-7)"/>
+        <path id="Path_37160-3" data-name="Path 37160" d="M3.508,0A3.48,3.48,0,0,1,7.017,3.451c0,1.906-2.24.306-3.508.306S0,5.357,0,3.451A3.48,3.48,0,0,1,3.508,0Z" transform="translate(5.263 17.499)" fill="url(#linear-gradient-11)"/>
+        <ellipse id="Ellipse_654-3" data-name="Ellipse 654" cx="8.771" cy="9.648" rx="8.771" ry="9.648" fill="url(#linear-gradient-12)"/>
+        <circle id="Ellipse_655" data-name="Ellipse 655" cx="0.658" cy="0.658" r="0.658" transform="translate(6.578 1.727)" fill="#fff"/>
+        <path id="Union_154" data-name="Union 154" d="M.156,5.925a.642.642,0,0,1-.107-.182A.655.655,0,0,1,.231,5c.176-.147.332-.283.471-.407l-.008-.01A5.64,5.64,0,0,0,2.254.622a.664.664,0,0,1,.489-.6A.663.663,0,0,1,3.569.7a6.9,6.9,0,0,1-2.036,4.9l-.006-.006c-.136.14-.285.275-.446.411a.654.654,0,0,1-.925-.076ZM.695,4.579h0s-.006,0-.006.006Z" transform="translate(5.507 8.825) rotate(-173)" fill="url(#linear-gradient-13)"/>
+      </g>
+    </g>
+  </g>
+</svg>
