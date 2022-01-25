@@ -3,7 +3,7 @@ $(function(){
     //카테고리 리스트 스왑배너
     var mdProduct1 =  new CustomSwiper('#mdProduct1', {
       slidesPerView: 'auto',
-      spaceBetween: 19,
+      spaceBetween: 0,
       freeMode: true,
       observer: true,
       observeParents: true,
@@ -71,12 +71,12 @@ $(function(){
 
      if ($(this).hasClass('row_list')) {
          $(this).removeClass('row_list');
-         $('.evt_products').removeClass('row_dir');
+         $('.evt_products').removeClass('column_dir');
          $('.list_sort_txt').text('두줄보기');
 
      } else {
       $(this).addClass('row_list');
-      $('.evt_products').addClass('row_dir');
+      $('.evt_products').removeClass('column_dir');
       $('.list_sort_txt').text('한줄보기');
      }
   });

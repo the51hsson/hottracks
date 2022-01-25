@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.555" height="60.553" viewBox="0 0 58.555 60.553">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.953" y1="0.484" x2="0.001" y2="0.558" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e380ff"/>
+      <stop offset="1" stop-color="#a34cb9"/>
+    </linearGradient>
+    <filter id="Polygon_32" x="1.3" y="3.298" width="57.255" height="57.255" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.13" y1="0.173" x2="0.835" y2="0.89" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#f7d5ff"/>
+    </linearGradient>
+    <filter id="Ellipse_644">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-color="#73208a" flood-opacity="0.302" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" x1="0.938" y1="1" x2="0.14" y2="-0.12" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9431ac"/>
+      <stop offset="1" stop-color="#d850ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_110080" data-name="Group 110080" transform="translate(-280 -663)">
+    <g transform="matrix(1, 0, 0, 1, 280, 663)" filter="url(#Polygon_32)">
+      <path id="Polygon_32-2" data-name="Polygon 32" d="M17.589,2.014a2.656,2.656,0,0,1,4.029,1.079h0a2.656,2.656,0,0,0,2.752,1.589h0a2.656,2.656,0,0,1,2.949,2.949h0a2.656,2.656,0,0,0,1.589,2.752h0a2.656,2.656,0,0,1,1.079,4.029h0a2.656,2.656,0,0,0,0,3.177h0a2.656,2.656,0,0,1-1.079,4.029h0a2.656,2.656,0,0,0-1.589,2.752h0a2.656,2.656,0,0,1-2.949,2.949h0a2.656,2.656,0,0,0-2.752,1.589h0a2.656,2.656,0,0,1-4.029,1.079h0a2.656,2.656,0,0,0-3.177,0h0a2.656,2.656,0,0,1-4.029-1.079h0a2.656,2.656,0,0,0-2.752-1.589h0a2.656,2.656,0,0,1-2.949-2.949h0a2.656,2.656,0,0,0-1.589-2.752h0a2.656,2.656,0,0,1-1.079-4.029h0a2.656,2.656,0,0,0,0-3.177h0a2.656,2.656,0,0,1,1.079-4.029h0A2.656,2.656,0,0,0,4.682,7.631h0A2.656,2.656,0,0,1,7.631,4.682h0a2.656,2.656,0,0,0,2.752-1.589h0a2.656,2.656,0,0,1,4.029-1.079h0a2.656,2.656,0,0,0,3.177,0Z" transform="translate(27.93 50.55) rotate(-135)" fill="url(#linear-gradient)"/>
+    </g>
+    <g data-type="innerShadowGroup">
+      <circle id="Ellipse_644-2" data-name="Ellipse 644" cx="11" cy="11" r="11" transform="translate(297 680)" fill="url(#linear-gradient-2)"/>
+      <g transform="matrix(1, 0, 0, 1, 280, 663)" filter="url(#Ellipse_644)">
+        <circle id="Ellipse_644-3" data-name="Ellipse 644" cx="11" cy="11" r="11" transform="translate(17 17)" fill="#fff"/>
+      </g>
+    </g>
+    <path id="Path_37119" data-name="Path 37119" d="M.432-4.349h.9L3.752-1.38V-4.41H4.833V.529h-.9L1.513-2.44V.59H.432Zm5.256,0h3.6v.958H6.769v1.006h2.31v.958H6.769V-.368H9.341V.59H5.688Zm10.744,0L15.036.59H13.944l-.867-3.1L12.209.59H11.116l-1.4-4.939h1.158l.831,3.23.831-3.23h1.122l.826,3.218.837-3.218Z" transform="translate(300.068 692.91)" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>

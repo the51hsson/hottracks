@@ -2272,11 +2272,11 @@ body {
 
 .ht_ .wel_category_tab.on .scroll_tab a {
   position: relative;
-  z-index: 1;
   height: 43px;
   padding: 0 8px;
   font-size: 13px;
   line-height: 45px;
+  z-index: 1;
 }
 
 .ht_ .wel_category_tab.on .scroll_tab a:after {
