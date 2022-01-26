@@ -40,7 +40,8 @@ body {background:#fff;overflow-y:scroll;}
 #wrap .logo img {height:30px;margin:5px 6px 0 0;vertical-align:top;}
 .contents {position:relative;margin:45px 0;padding:0;text-align:center;}
 .contents ul {padding:0;}
-.contents .li {display:inline-block;position:relative;width:280px;margin:0 8%;}
+.contents .li {display:inline-block;position:relative;width:280px;margin:0 8%;animation:cont both 0.5s 0.2s;}
+.contents .li:nth-child(2){animation-delay:0.6s}
 .contents .li a {display:block;position:relative;}
 .contents .li .img {display:block;position:relative;border:1px solid #707070;box-sizing:border-box;border-radius:20px;box-shadow:10px 10px 10px rgba(0,0,0,0.1);}
 .contents .li .img:after {position:absolute;left:-1px;top:-1px;width:calc(100% + 2px);height:calc(100% + 2px);border:3px solid #da2128;box-sizing:border-box;border-radius:20px;content:"";opacity:0;transition:opacity 0.4s;}
@@ -71,9 +72,13 @@ body {background:#fff;overflow-y:scroll;}
 .contents .txt li {margin-top:10px;}
 }
 
+@media all and (max-width:500px) {
+.contents .li .txt {display:block;}
+}
+
 
 @keyframes cont {
-0% {transform:translateY(10px);opacity:0;}
+0% {transform:translateY(40px);opacity:0;}
 100% {transform:translateY(0);opacity:1;}
 }
 </style>
@@ -84,7 +89,7 @@ body {background:#fff;overflow-y:scroll;}
     <div class="logo"><img src="https://janghyun17.github.io/hottracks/common/logo.svg" alt=""> <span>MOBILE MAIN</span></div>
     <ul class="contents">
         <li class="li">
-			<a href="./HTR-M-WEL-MAIN-000.html" onclick="window.open(this.href,'','width=375,height=760,scrollbars=yes,resizable=yes'); return false;">
+			<a href="./HTR-M-WEL-MAIN-000.html" onclick="window.open(this.href,'','width=375,height=760,left=300,top=100,scrollbars=yes,resizable=yes'); return false;">
 				<p class="img"><img src="../../images/wel_main_new/@gate01.png" alt=""></p>
 				
 				<dl class="txt">
