@@ -22,7 +22,7 @@ $(function(){
 			reviewAnimation(1);
 		},
 	});
-
+    
 	// 상품정보 헤더 노출
 	
 	$(window).on('scroll', function(){  
@@ -145,7 +145,27 @@ $(function(){
 				return KyoboHottracks.mok.setPrependZero(number, 2);
 			},
 		}
-	})	
+	});
+	
+	//Q & A 펼치기 닫기
+	$(document).on('click', '.all_qa_wrap .btn_expand', function(){
+		if($(this).hasClass('btn_up')) {
+			$(this).parents('.review_inner').removeClass('active');
+			$(this).removeClass('btn_up').children('.txt').text('펼치기');
+			return;
+		}
+		$(this).parents('.review_inner').addClass('active');
+		$(this).addClass('btn_up').children('.txt').text('접기');
+
+	});
+	//카테고리 상품 리스트 찜하기 토글
+	$(document).on('click', '.module_wrap .evt_good_count', function(){
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		} else {
+			$(this).addClass('active');
+		}
+	});
 });
 
 // 상품상세 앵커탭 기능

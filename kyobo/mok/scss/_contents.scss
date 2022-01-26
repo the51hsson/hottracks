@@ -966,6 +966,7 @@
                 background: #F7F7F7;
                 padding: 20px;
                 margin-bottom: 20px;
+                display:none;
                 .question_area {
                     margin-bottom: 16px;
                 }
@@ -1016,6 +1017,11 @@
                 }            
             }
         } 
+    }
+    .review_inner.active {
+        .box_qa {
+            display: block;
+        }
     }
 }
 

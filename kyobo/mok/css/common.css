@@ -2013,6 +2013,7 @@ button.btn_sm {
   background: #F7F7F7;
   padding: 20px;
   margin-bottom: 20px;
+  display: none;
 }
 
 .all_qa_area .all_qa_wrap .review_inner .box_qa .question_area {
@@ -2069,6 +2070,10 @@ button.btn_sm {
   margin: 0 auto 4px;
   background: url(../images/ico/ico_lock.png) no-repeat 0 0;
   background-size: 17px 19px;
+}
+
+.all_qa_area .review_inner.active .box_qa {
+  display: block;
 }
 
 /**/
@@ -5494,6 +5499,13 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   float: left;
   margin-left: 3px;
   line-height: 14px;
+}
+
+.prod-wrapper .evt_good_count.active .icon {
+  float: left;
+  width: 12px;
+  height: 14px;
+  background: url(../images/guide/ico_prod_like_icon_active.svg) no-repeat center center/12px;
 }
 
 .prod-wrapper .company {

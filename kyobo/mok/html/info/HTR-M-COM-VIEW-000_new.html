@@ -186,12 +186,14 @@
                                     <dt class="txt_dt col_4">통합포인트</dt>
                                     <dd class="txt_dd col_8">
                                         <span class="txt_info">70원(1%적립)
-                                            <button class="ico_info"><span class="hidden">정보보기</span></button>
+                                            <button class="ico_info" data-role="btn-dialog" data-target="#popPointTotal">
+                                                <span class="hidden">정보보기</span>
+                                            </button>
                                         </span>
                                     </dd>
                                     <dt class="txt_dt col_4">카드 혜택</dt>
                                     <dd class="txt_dd col_8">
-                                        <span class="txt_info">신용카드 할인안내
+                                        <span class="txt_info"  data-role="btn-dialog" data-target="#popCreditDiscount">신용카드 할인안내
                                             <button class="ico_info"><span class="hidden">정보보기</span></button>
                                         </span>
                         
@@ -200,7 +202,9 @@
                                     <dd class="txt_dd col_8">
                                         <span class="d_block">
                                             <span class="txt_info">3,000원 (30,000원 이상 무료배송)
-                                                <button class="ico_info"><span class="hidden">정보보기</span></button>
+                                                <button class="ico_info" data-role="btn-dialog" data-target="#popDeliveryFee">
+                                                    <span class="hidden">정보보기</span>
+                                                </button>
                                             </span>
                                         </span>
                                         <a href="" class="link_delivery ico_more">묶음배송 상품 보기</a>
@@ -839,7 +843,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="review_inner"">
+                                                    <div class="review_inner">
                                                         <div class="review_info_area">
                                                             <span class="badge badge_sm badge_default rounded">구매자</span>
                                                             <span class="txt_user">ab*****</span>
@@ -1072,7 +1076,7 @@
                                             <p class="txt_msg">작성된 상품 문의가 없습니다.</p>
                                         </div>                             
                                         <!--// 작성된 상품문의가 없을경우 -->           
-                                        <div class="review_inner"  style="background:pink;">
+                                        <div class="review_inner">
                                             <div class="review_info_area">
                                                 <div class="left_area">
                                                     <span class="txt_user">ab*****</span>
@@ -1095,6 +1099,33 @@
                                                     <span class="ico_circle_more"></span>
                                                 </button>
                                             </div>
+                                            <div class="box_qa">
+                                                <div class="question_area">
+                                                    <div class="txt_tit">
+                                                        <img src="../../images/ico/ico_q.png" alt="question" width="30px" height="30px" />
+                                                    </div>
+                                                    <!-- <div class="qa_opt_area">
+                                                                <span>옵션 :</span>
+                                                                <span>01 Lavender </span>
+                                                            </div> -->
+                                                    <p class="txt_dec">
+                                                        제가 구매한 상품은 “Lavender” 인데 다른 컬러가 왔었어요.
+                                                        확인 부탁드립니다.
+                                                    </p>
+                                                </div>
+                                                <div class="answer_area">
+                                                    <div class="txt_tit">
+                                                        <img src="../../images/ico/ico_a.png" alt="answer" width="30px" height="30px" />
+                                                    </div>
+                                                    <p class="txt_dec">
+                                                        안녕하세요 고객님.
+                                                        서비스 이용에 불편을 드려 죄송합니다.
+                                                        해당 내용에 대한 문의는 고객센터(1588-9667)를 이용해 주시면 전문 상담원이 확인 후 응대 도와드리고 있습니다. 본 게시판은 상품정보제공에 관한 게시판으로 답변드리기
+                                                        어려운 점 고객님의 너그러운 양해 부탁드립니다. 이용에 불편을 드린 점 다시 한번 사과드립니다. 더 나은 서비스 제공을 위해 항상 노력하는 livework가 되겠습니다.
+                                                        감사합니다.
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="review_inner">
                                             <div class="review_info_area">
@@ -1115,8 +1146,8 @@
                                                 <p class="txt_review txt_bold">
                                                     배송이 잘못 왔습니다.
                                                 </p>
-                                                <button type="button" class="btn_expand btn_up">
-                                                    <span class="txt">접기</span>
+                                                <button type="button" class="btn_expand">
+                                                    <span class="txt">펼치기</span>
                                                     <span class="ico_circle_more"></span>
                                                 </button>
                                             </div>
@@ -1763,7 +1794,95 @@
         <!-- // 독바 -->
     </div>
     <!-- // wrapper -->
-
+    <!--통합 포인트 팝업-->
+    <div id="popPointTotal" class="dialog_wrap">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
+                class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">통합 포인트 안내</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents">
+            <ul class="bul_list">
+                <li class="bul_item_dot">핫트랙스 온라인/오프라인, 교보문고 온라인/오프라인, 모바일 교보문고에서 모두 적립·사용 가능!</li>
+                <li class="bul_item_dot">10원 이상의 포인트도 바로바로 사용! (영업점은 1,000원 단위 사용) 주문 시, 10원 단위부터 사용하실 수 있습니다.</li>
+                <li class="bul_item_dot">자동적립되는 편리한 포인트! <br>구매 후 어떤 절차나 과정없이 바로 자동으로 적립됩니다.</li>
+                <li class="bul_item_dot">
+                    포인트 확인도 폭 넓~게! <br>
+                    온라인 마이룸, 모바일, 무인가입기, 영업점 영수증 등에서 적립하거나 사용하신 포인트 내역을 확인하실 수 있습니다. <br>
+                    상품 구매 시 해당 상품의 적립률에 따라 지급되며 고객님께서 주문하신 상품이 발송완료 된 후 자동 지급됩니다.<br>
+                    단, 쿠폰 또는 마일리지, 통합포인트 사용 시 예상적립금이 변동될 수 있습니다.<br>
+                    (주문취소나 반품시에는 적립된 통합포인트가 다시 차감됩니다.)
+                </li>
+            </ul>
+        </div>
+        <!-- //dialog_contents -->
+    </div>
+    <!--//통합 포인트 팝업-->
+    <!--신용카드 할인 팝업-->
+    <div id="popCreditDiscount" class="dialog_wrap">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
+                class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">신용카드 할인 안내</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents">
+            <ul class="bul_list">
+                <li class="bul_item_dot">
+                    <strong>신한카드</strong><br>
+                    2~6개월, 12개월(부분) 무이자
+                </li>
+                <li class="bul_item_dot">
+                    <strong>하나카드</strong><br>
+                    2~3개월 무이자
+                </li>
+                <li class="bul_item_dot">
+                    <strong>국민카드</strong><br>
+                    2~5개월 무이자
+                </li>
+                <li class="bul_item_dot">
+                    <strong>비씨, NH농협, 현대, 삼성카드</strong><br>
+                    2~6개월 무이자
+                </li>
+                <li class="bul_item_dot">
+                    <b>유의사항</b><br>
+                    -법인,체크,선불,기프트,하이브리드 제외<br>
+                    -무이자 적용 최소결제 금액 등 상세 내용은 결제 팝업창에서 확인 요망
+                </li>
+            </ul>
+        </div>
+        <!-- //dialog_contents -->
+    </div>
+    <!--//신용카드 할인 팝업-->
+    <!--배송비 안내 팝업-->
+    <div id="popDeliveryFee" class="dialog_wrap">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
+                class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">배송비 안내</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents">
+            <div class="title_wrap title_size_def">
+                <p class="title_heading">2,000원</p>
+            </div>
+            <ul class="bul_list">
+                <li class="bul_item_dot">20,000원 이상 구매 시 무료배송</li>
+                <li class="bul_item_dot">도서 산간 지역 추가 요금 있음</li>
+            </ul>
+        </div>
+        <!-- //dialog_contents -->
+    </div>
+    <!--//배송비 안내 팝업-->
+    <!--상품 후기 적립금 팝업-->
+    <!--//상품 후기 적립금 팝업-->
 </body>
 
 </html>
