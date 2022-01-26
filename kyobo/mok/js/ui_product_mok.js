@@ -191,17 +191,18 @@ $(function(){
 	$('button[data-target="#popCart"]').click(function(){
 		footTabCustom(true);
 	});
-	$('button[data-target="#popBuy"]').click(function(){
-		footTabCustom(true);
-	});
 	$(document).on('click','.dialog_header .close', function(){
 		footTabCustom();
 	});
 	function footTabCustom(bool){
 		if(bool){
+			//Class:footer_wrap fixed_foot에 btm_pop_upper_foot 추가 시 팝업 위로 장바구니 버튼 노출
 			$('.footer_wrap.fixed_foot').addClass('btm_pop_upper_foot');
+			//뒤로가기 맨위로가기 안보이게
+			$('.btn_go_back ,.btn_go_top').css('opacity', '0');
 		}else{
 			$('.footer_wrap.fixed_foot').removeClass('btm_pop_upper_foot');
+			$('.btn_go_back ,.btn_go_top').css('opacity', '1');
 		}
 	}
 	//장바구니 팝업 상세 내용 닫기
