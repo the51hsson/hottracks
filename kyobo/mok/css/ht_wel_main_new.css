@@ -2960,6 +2960,14 @@ body {
   width: 36px;
 }
 
+.ht_ .sticky_cont {
+  margin-top: 40px;
+}
+
+.ht_ .sticky_cont:first-child {
+  margin-top: 0;
+}
+
 .ht_ .wel_category_rank {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1254,6 +1254,13 @@ body {
             }
         }
     }
+
+    .sticky_cont{
+        margin-top:40px;
+        &:first-child {
+            margin-top:0; 
+        }
+    }
     .wel_category_rank {
         display:flex;width:calc(100% + 20px);margin:15px -20px 0 0;overflow-x:auto;counter-reset:item;
         .li {
