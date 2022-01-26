@@ -81,7 +81,7 @@ function welToday(){
 			}
 		}
     };
-    welTodaySwiper = new Swiper($target.get(0), slideOption);
+    welTodaySwiper = new Swiper($target.get(), slideOption);
 }
 
 $(function(){
@@ -124,7 +124,7 @@ function welLive(){
             }
         }
     };
-    welLiveSwiper = new Swiper($target.get(0), slideOption);
+    welLiveSwiper = new Swiper($target.get(), slideOption);
 }
 
 $(function(){
@@ -167,7 +167,7 @@ function welMdPick(){
         speed: 700,
 		pagination: false
     };
-    welMdPickSwiper = new Swiper($target.get(0), slideOption);
+    welMdPickSwiper = new Swiper($target.get(), slideOption);
 }
 
 $(function(){
@@ -194,7 +194,7 @@ function welSearch(){
        },
         speed: 500,
     };
-    welSearchSwiper = new Swiper($target.get(0), slideOption);
+    welSearchSwiper = new Swiper($target.get(), slideOption);
 }
 
 $(function(){
@@ -300,35 +300,41 @@ $(function(){
 // 카테고리
 function welCategory(){
     var $target = $('.wel_category_cont  .swiper-container');
-    var slideOption = {
-        observer: true,
-        observeParents: true,
-        slidesPerView: 'auto',
-        //centeredSlides: true,
-        loop: true,
-        loopsSlide: 1,
-        spaceBetween: 20,
-        autoHeight: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-            
-        },
-        speed:700,
-        pagination: {
-            el: $('.wel_category_cont').find('.swiper-pagination')[0],
-            type: 'fraction',
-            formatFractionCurrent: function (number) {
-                return KyoboHottracks.mok.setPrependZero(number, 2);
+    $target.each(function (index, element) {
+        var $parent = $(this).parent('.wel_category_cont');
+        $parent.addClass('idxs_' + index);
+        
+        var slideOption = {
+            observer: true,
+            observeParents: true,
+            slidesPerView: 'auto',
+            //centeredSlides: true,
+            loop: true,
+            loopsSlide: 1,
+            spaceBetween: 20,
+            autoHeight: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                
             },
-            formatFractionTotal: function (number) {
-                return KyoboHottracks.mok.setPrependZero(number, 2);
+            speed:700,
+            pagination: {
+                el: ('.idxs_' + index + ' .swiper-pagination'),
+                type: 'fraction',
+                formatFractionCurrent: function (number) {
+                    return KyoboHottracks.mok.setPrependZero(number, 2);
+                },
+                formatFractionTotal: function (number) {
+                    return KyoboHottracks.mok.setPrependZero(number, 2);
+                }
             }
+        };
+
+        if($parent.find('.swiper-slide').length > 1) {
+            welCategorySwiper = new Swiper(this, slideOption);
         }
-    };
-    if($('.wel_category_cont .swiper-slide').length > 1) {
-        welCategorySwiper = new Swiper($target.get(0), slideOption);
-    }
+	});
 }
 $(function(){
     if(!$('.wel_category_cont').length) return;
