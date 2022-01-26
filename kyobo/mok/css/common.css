@@ -273,7 +273,7 @@ button.btn_sm {
 }
 
 .btn .txt.ico_comment {
-  background: url(../images/ico/ico_comment.png) no-repeat 0 3px;
+  background: url(../images/ico/ico_comment.png) no-repeat 0 1px;
   background-size: 20px auto;
   padding-left: 25px;
 }
@@ -592,7 +592,7 @@ button.btn_sm {
 }
 
 .rating_reaction_wrap .txt_value .ico_quotation {
-  background: url(../images/ico/ico_quotation.svg) no-repeat 0 1px;
+  background: url(../images/ico/ico_quotation.svg) no-repeat 0 -1px;
   background-size: 13px 13px;
   padding-left: 13px;
   margin-left: 3px;
@@ -959,7 +959,7 @@ button.btn_sm {
 /* hotpick 간격 */
 .hotpick_area {
   padding-top: 12px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .hotpick_area .hotpickslide_wrap {
@@ -1763,15 +1763,11 @@ button.btn_sm {
 }
 
 .slide_review_wrap .review_inner .review_comment_area .txt_review {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 40px;
+  word-break: keep-all;
+  line-height: 22px;
 }
 
 .slide_review_wrap .review_inner .review_comment_area .thumnail_review {
@@ -2011,7 +2007,6 @@ button.btn_sm {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 40px;
 }
 
 .all_qa_area .all_qa_wrap .review_inner .box_qa {
@@ -2365,6 +2360,7 @@ button.btn_sm {
 .all_review_wrap .review_inner .box_msg .txt_msg {
   font-size: 13px;
   color: #767676;
+  word-break: keep-all;
 }
 
 .all_review_wrap .review_inner .box_msg .txt_msg:before {
@@ -3122,7 +3118,7 @@ button.btn_sm {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 40px;
-  padding-bottom: 27px;
+  padding-bottom: 24px;
 }
 
 .msg_zoomin_area .txt_dec {

@@ -113,7 +113,7 @@
 /* hotpick 간격 */
 .hotpick_area {
     padding-top: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     .hotpickslide_wrap {
         margin-top: -4px;
         position: relative;
@@ -777,14 +777,10 @@
         }
         .review_comment_area {
             display: flex;
-            .txt_review {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;                
+            .txt_review {             
                 flex: 1;
-                height: 40px;
+                word-break: keep-all;
+                line-height:22px;
             }
             .thumnail_review {
                 display: flex;
@@ -872,6 +868,7 @@
                     margin: 0 auto 4px;
                     background: url(../images/ico/ico_info.svg) no-repeat 0 0;
                     background-size: 17px 17px;
+                   
                 }
                 font-size: 13px;
                 color: #767676;
@@ -962,7 +959,6 @@
                     -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;                
                     flex: 1;
-                    height: 40px;
                 }
             
             } 
@@ -1266,6 +1262,7 @@
                 }
                 font-size: 13px;
                 color: #767676;
+                word-break: keep-all;
             }
             .txt_secret {
                 font-size: 13px;
@@ -1892,7 +1889,7 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    padding-bottom: 27px;
+    padding-bottom: 24px;
     .txt_dec {
         position: relative;
         padding-left: 27px;

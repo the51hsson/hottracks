@@ -51,6 +51,7 @@
         padding:0;
         line-height:20px;
         margin-bottom:20px;
+        word-break: keep-all;
         .ico_more {
           display: inline-block;
           font-size: 13px;
@@ -137,8 +138,120 @@
         }
     }
 }
-.info_all_area{
-    .txt_dec{
-        word-break: keep-all;
+.product_area{
+    .info_all_area{
+        .txt_dec{
+            word-break: keep-all;
+        }
+    }
+    .product_detailinfo_area{
+        margin-top:24px;
+        flex-wrap: nowrap;
+         .list_info{
+            .txt_dt, 
+            .txt_dd{
+                padding:0;
+                margin-bottom:16px;
+                line-height: 20px;
+                word-break: keep-all;
+                &:last-of-type{
+                    margin-bottom:0;
+                }
+            }
+            .txt_dd{
+                padding-left:5px;
+            }
+         }
+
+    }
+}
+
+.btn .txt.ico_review{
+    background: url(../images/ico/ico_review.svg) no-repeat 0 5px;
+    background-size: 18px auto;
+    padding-left: 22px;      
+}
+.hotpick_area{
+    margin-bottom: 22px;
+    .tit_sub_area {
+        padding:12px 0 16px 0;
+        .tit{
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}
+
+.rating_reaction_wrap .txt_value{
+    color:#595959;
+}
+.review_best_area{
+    .tit_con_area{
+        padding-bottom: 24px;
+        .tit{
+            line-height:32px;
+        }
+    }
+    .tooltip_wrap{
+        width:22px;
+        height:32px;
+        background: url(../images/guide/ico_tooltip_guide.svg) no-repeat center center / 22px;
+    }
+    .progress_container{
+        .progressbar .bg_black{
+            background-color: #000;
+        }
+    }
+}
+
+.multi_review_area{
+    .right_area .form_sel select{
+      font-size: 13px;
+    }
+}
+
+.all_qa_wrap{
+    .review_inner .review_comment_area{
+        padding-bottom:50px;
+        position: relative;
+        .txt_review{
+            line-height: 20px;
+        }
+        .btn_expand{
+            position: absolute;
+            bottom:20px;
+            left:0;
+        }
+        .ico_circle_more{
+            position: relative;
+            width:20px;
+            height:20px;
+            background:url(../images/ico/ico_arrow.png) no-repeat center center /20px;
+            transform: rotate(180deg);
+        }
+        .btn_expand.btn_up{
+            .ico_circle_more{
+                position: relative;
+                width:20px;
+                height:20px;
+                background:url(../images/ico/ico_arrow.png) no-repeat center center /20px;
+                transform: rotate(0deg);
+            }
+        }
+    }
+    .review_inner.secret_cmt{
+        .txt_review{
+            position:relative;
+            padding-left:20px;
+            &:before{
+                content:"";
+                position:absolute;
+                width:18px;
+                height:18px;
+                left:0;
+                top:0; 
+                background: url(../images/ico/ico_lock.png) no-repeat center 1px /14px;
+            }
+        }
     }
 }
