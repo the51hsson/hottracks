@@ -1868,7 +1868,40 @@ body.dialog_open {
         }
     }
 }
+//공유하기 하단 팝업
+.share_sns_wrap{
+	padding:0 10px 30px 10px;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: space-around;
+	span{
+		display: block;
+		width:25%;
+		@for $sns from 5 through 8 {
+			&:nth-of-type(#{$sns}){
+				margin-top:20px;
+			}
+		} 
+	}
+	.icon{
+		position:relative;
+		height:0;
+		padding-top:53px;
+		img{
+			position:absolute;
+			top:0;
+			left:50%;
+			width:53px;
+			transform:translateX(-50%);
+		}
+	}
+	.txt{
+		font-size: 13px;
+		text-align: center;
+		margin-top:5px;
+	}
 
+}
 @media(-webkit-min-device-pixel-ratio: 2) {
     .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.arw_close .btn_dialog_close .ico_dialog_close {
         background-image: url('../images/ico_dialog_close_arw_mok@2x.png');

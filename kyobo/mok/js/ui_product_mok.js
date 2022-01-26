@@ -166,6 +166,71 @@ $(function(){
 			$(this).addClass('active');
 		}
 	});
+	//장바구니, 구매하기 버튼 하단 팝업 시 노출
+    footTabCustom();
+
+	$('button[data-target="#popCart"]').click(function(){
+		footTabCustom(true);
+	});
+	$('button[data-target="#popBuy"]').click(function(){
+		footTabCustom(true);
+	});
+	$(document).on('click','.dialog_header .close', function(){
+		footTabCustom();
+	});
+	function footTabCustom(bool){
+		if(bool){
+			$('.footer_wrap.fixed_foot').addClass('btm_pop_upper_foot');
+		}else{
+			$('.footer_wrap.fixed_foot').removeClass('btm_pop_upper_foot');
+		}
+	}
+
+	//셀렉트 박스 커스텀
+	$(document).on('click', '.selected_option', function(){
+	var arrowIcon = $(this).children('.selec_icon');
+	var thisOptionBox =  $(this).next('.option_ul');
+	//셀렉트 박스 여러개인 경우 다른 옵션박스 닫기
+	$('.option_ul').not(thisOptionBox).css('display', 'none');
+
+		//옵션박스 나타나는 토글
+	if($(this).next('.option_ul').css('display') == 'none'){
+		$(this).parent().addClass('active');
+		$(this).next('.option_ul').css('display', 'block');
+		$(arrowIcon).addClass('open'); 
+	}else{
+		$(this).parent().removeClass('active');
+		$(this).next('.option_ul').css('display', 'none');
+		$(arrowIcon).removeClass('open'); 
+	}
+	});
+	//옵션 선택
+	$(document).on('click', '.option_ul li', function(){
+		var select = $(this).parent().prev('.selected_option').find('em').eq(0);
+		var arrowIcon  =  $(this).parent().prev('.selected_option').find('.selec_icon');
+		var thisVal = $(this).attr('data-val');
+		var thisTxt = $(this).text();
+
+		select.text(thisTxt).attr('data-val', thisVal);
+		//화살표 에니메이션 
+		$(arrowIcon).addClass('open'); 
+		//옵션 박스 닫기
+		$(this).parents('.title_selec').removeClass('active');
+		$(this).parent().css('display', 'none');
+		$(arrowIcon).removeClass('open'); 
+	});
+	//바디 영역 선택시 셀렉트 닫기
+	$(document).on('click', function(e){
+		if( !$(e.target).parent().hasClass('option_ul') &&
+			!$(e.target).parent().hasClass('selected_option') &&
+			!$(e.target).parent().hasClass('title_selec')
+		){ 
+			$('.title_selec').removeClass('active');
+			$('.option_ul').css('display', 'none');
+			$('.selec_icon').removeClass('open');
+		};
+	})
+	   
 });
 
 // 상품상세 앵커탭 기능

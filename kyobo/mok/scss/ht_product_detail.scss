@@ -255,3 +255,120 @@
         }
     }
 }
+
+//장바구니 팝업(옵션 선택)
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap{
+    .dialog_header{
+        padding:0;
+        border:none;
+    }
+    .dialog_header .close{
+        width:25px;
+        height:25px;
+        margin:0 auto;
+        background:url(../images/guide/ico_arrow_down_light.svg) no-repeat center center /23px;
+    }
+    .dialog_contents{
+        margin-top:0;
+        .selec_lb{
+            margin-bottom:12px;
+        }
+        .title_selec{
+            border:1px solid #D5D5D5;
+            border-radius: 6px;
+            margin-bottom:16px;
+            &.active{
+                border:1px solid #000;
+            }
+            .selected_option{
+                position:relative;
+                padding:15px 37px 15px 14px;
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            .selec_icon{
+                position: absolute;
+                width:9px;
+                height:5px;
+                right:17px;
+                top:23px;
+                background:url(../images/guide/ico_arrow_down.svg) no-repeat center center / cover;
+                transform: rotate(180deg);
+            }
+            .selec_icon.open{
+                background:url(../images/guide/ico_arrow_down.svg) no-repeat center center / cover;
+                transform: rotate(0deg);
+            }
+            .option_ul{
+                max-height: 200px;
+                overflow:auto;
+                display: none;
+                border-top:1px solid #000;
+                li{
+                   height:50px;
+                   padding:15px 14px;
+                   &:active,
+                   &:hover{
+                       background-color: #F5F5F5;
+                   }
+                }
+            }
+        }
+        .buy_info{
+            background: #F7F7F7;
+            padding:16px;
+            .prod_nm{
+                padding-right:20px;
+                position:relative;
+                word-break: keep-all;
+                .close{
+                    position:absolute;
+                    width:15px;
+                    height:15px;
+                    top:0;
+                    right:0;
+                    background: url(../images/guide/ico_close_light.svg) no-repeat center center/ 13px;
+                }
+            }
+            .prod_count{
+                display: flex;
+                justify-content: flex-start;
+                .input_wrap{
+                    display: flex;
+                    justify-content: flex-start;
+                    background-color: #fff;
+                    width:102px;
+                    height:36px;
+                    border-radius: 6px;
+                    border:1px solid #767676;
+                    input{
+                        width:50px;
+                    }
+                }
+                button{
+                    display: block;
+                    width:12px;
+                    height:12px;
+                }
+            }
+        }
+        .buy_result{
+            display: flex;
+            justify-content: space-between;
+             font-weight: 700;
+             padding-bottom: 10px;
+            .result em{
+                color:#DA2128;
+                line-height: 26px;
+                margin:0 3px;
+            }
+            .total{
+                font-size: 18px;
+                line-height: 26px;
+                em{
+                    margin-right:3px;
+                }
+            }
+        }
+    }
+} 

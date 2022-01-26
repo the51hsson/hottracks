@@ -1904,3 +1904,157 @@ ul.prod-wrapper.column_dir .title {
   top: 0;
   background: url(../images/ico/ico_lock.png) no-repeat center 1px/14px;
 }
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_header {
+  padding: 0;
+  border: none;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_header .close {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  background: url(../images/guide/ico_arrow_down_light.svg) no-repeat center center/23px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents {
+  margin-top: 0;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .selec_lb {
+  margin-bottom: 12px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .title_selec {
+  border: 1px solid #D5D5D5;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .title_selec.active {
+  border: 1px solid #000;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .title_selec .selected_option {
+  position: relative;
+  padding: 15px 37px 15px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .title_selec .selec_icon {
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  right: 17px;
+  top: 23px;
+  background: url(../images/guide/ico_arrow_down.svg) no-repeat center center/cover;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .title_selec .selec_icon.open {
+  background: url(../images/guide/ico_arrow_down.svg) no-repeat center center/cover;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .title_selec .option_ul {
+  max-height: 200px;
+  overflow: auto;
+  display: none;
+  border-top: 1px solid #000;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .title_selec .option_ul li {
+  height: 50px;
+  padding: 15px 14px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .title_selec .option_ul li:active, .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .title_selec .option_ul li:hover {
+  background-color: #F5F5F5;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info {
+  background: #F7F7F7;
+  padding: 16px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_nm {
+  padding-right: 20px;
+  position: relative;
+  word-break: keep-all;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_nm .close {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: 0;
+  background: url(../images/guide/ico_close_light.svg) no-repeat center center/13px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .input_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #fff;
+  width: 102px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #767676;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .input_wrap input {
+  width: 50px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count button {
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_result .result em {
+  color: #DA2128;
+  line-height: 26px;
+  margin: 0 3px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_result .total {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_result .total em {
+  margin-right: 3px;
+}

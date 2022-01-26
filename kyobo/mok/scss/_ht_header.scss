@@ -587,6 +587,10 @@
             left: 0;
             bottom:0;
             z-index: 10;
+            //하단 슬라이딩 팝업+ 장바구니 , 구매하기 버튼 노출
+            &.btm_pop_upper_foot{
+                z-index: 200;
+            }
         }
         .prod_purchase_info_wrap { // 상품상세 하단 고정 버튼 영역
             padding: 6px 9px;

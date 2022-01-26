@@ -4167,6 +4167,61 @@ body.dialog_open {
   -webkit-animation: bottomPopAnimation 0.23s cubic-bezier(0.24, 0.6, 0.65, 1.01) forwards;
 }
 
+.share_sns_wrap {
+  padding: 0 10px 30px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.share_sns_wrap span {
+  display: block;
+  width: 25%;
+}
+
+.share_sns_wrap span:nth-of-type(5) {
+  margin-top: 20px;
+}
+
+.share_sns_wrap span:nth-of-type(6) {
+  margin-top: 20px;
+}
+
+.share_sns_wrap span:nth-of-type(7) {
+  margin-top: 20px;
+}
+
+.share_sns_wrap span:nth-of-type(8) {
+  margin-top: 20px;
+}
+
+.share_sns_wrap .icon {
+  position: relative;
+  height: 0;
+  padding-top: 53px;
+}
+
+.share_sns_wrap .icon img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 53px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.share_sns_wrap .txt {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 5px;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2) {
   .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.arw_close .btn_dialog_close .ico_dialog_close {
     background-image: url("../images/ico_dialog_close_arw_mok@2x.png");
@@ -7006,6 +7061,10 @@ body.dialog_open {
   z-index: 10;
 }
 
+.ht_ .footer_wrap.fixed_foot.btm_pop_upper_foot {
+  z-index: 200;
+}
+
 .ht_ .footer_wrap .prod_purchase_info_wrap {
   padding: 6px 9px;
 }
@@ -8279,61 +8338,6 @@ body.dialog_open {
 
 .evt_join_btn_wrap button {
   width: 100%;
-}
-
-.share_sns_wrap {
-  padding: 0 10px 30px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.share_sns_wrap span {
-  display: block;
-  width: 25%;
-}
-
-.share_sns_wrap span:nth-of-type(5) {
-  margin-top: 20px;
-}
-
-.share_sns_wrap span:nth-of-type(6) {
-  margin-top: 20px;
-}
-
-.share_sns_wrap span:nth-of-type(7) {
-  margin-top: 20px;
-}
-
-.share_sns_wrap span:nth-of-type(8) {
-  margin-top: 20px;
-}
-
-.share_sns_wrap .icon {
-  position: relative;
-  height: 0;
-  padding-top: 53px;
-}
-
-.share_sns_wrap .icon img {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 53px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.share_sns_wrap .txt {
-  font-size: 13px;
-  text-align: center;
-  margin-top: 5px;
 }
 
 /*========================= 이벤트 리스트 종료 ===========================*/
