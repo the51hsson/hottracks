@@ -166,6 +166,25 @@ $(function(){
 			$(this).addClass('active');
 		}
 	});
+	//대댓글 5개까지만 노출 후 전체 노출(ajax 콜백으로 호출)
+	prodDetailCmtShow(true);
+	function prodDetailCmtShow(bool){
+		var reCmtEA = $('.all_review_wrap .review_reply .reply_list').children('.reply_list_item').length;
+
+		if(bool){
+			for(var i=0; i<reCmtEA; i++){
+				if(i> 4) $('.all_review_wrap .review_reply .reply_list').children('.reply_list_item').eq(i).css('display', 'none');
+			}
+		}else{
+			$('.all_review_wrap .review_reply .reply_list').children('.reply_list_item').css('display', 'block');
+		}
+	
+	}
+	$(document).on('click', '.btn_expand.reply_cmt', function(){
+		if($(this).hasClass('active')) prodDetailCmtShow(false);
+		else prodDetailCmtShow(true);
+	})
+	
 	//장바구니, 구매하기 버튼 하단 팝업 시 노출
     footTabCustom();
 
@@ -185,6 +204,10 @@ $(function(){
 			$('.footer_wrap.fixed_foot').removeClass('btm_pop_upper_foot');
 		}
 	}
+	//장바구니 팝업 상세 내용 닫기
+	$(document).on('click', '.buy_info .close', function(){
+		$(this).closest('.buy_info').css('display', 'none');
+	});
 
 	//셀렉트 박스 커스텀
 	$(document).on('click', '.selected_option', function(){
@@ -192,6 +215,7 @@ $(function(){
 	var thisOptionBox =  $(this).next('.option_ul');
 	//셀렉트 박스 여러개인 경우 다른 옵션박스 닫기
 	$('.option_ul').not(thisOptionBox).css('display', 'none');
+	$('.title_selec').removeClass('active');
 
 		//옵션박스 나타나는 토글
 	if($(this).next('.option_ul').css('display') == 'none'){
@@ -229,7 +253,7 @@ $(function(){
 			$('.option_ul').css('display', 'none');
 			$('.selec_icon').removeClass('open');
 		};
-	})
+	});
 	   
 });
 

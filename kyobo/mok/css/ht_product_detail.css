@@ -1857,6 +1857,55 @@ ul.prod-wrapper.column_dir .title {
   font-size: 13px;
 }
 
+.all_review_wrap .review_reply {
+  border-top: 1px solid #eaeaea;
+  padding: 10px 4px 0 4px;
+  margin-top: 20px;
+}
+
+.all_review_wrap .review_reply .byte_check_wrap {
+  display: none;
+}
+
+.all_review_wrap .review_reply .byte_check_wrap.active {
+  display: block;
+}
+
+.all_review_wrap .review_reply .byte_check_wrap .form_textarea {
+  height: 80px;
+  padding: 12px 16px;
+}
+
+.all_review_wrap .review_reply .reply_list .reply_list_item {
+  position: relative;
+  padding: 20px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f7f7f7;
+  margin-top: 4px;
+  border-radius: 10px;
+}
+
+.all_review_wrap .review_reply .reply_list .reply_list_item .review_user_info:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 9px;
+  background-image: url("../images/guide/arw_reply.svg");
+  background-size: 8px 9px;
+  position: absolute;
+  top: 24px;
+  left: 20px;
+}
+
+.all_review_wrap .review_reply .reply_list .reply_list_item .info_text {
+  color: #000;
+}
+
+.all_review_wrap .review_reply .btn_more_body {
+  margin-top: 12px;
+}
+
 .all_qa_wrap .review_inner .review_comment_area {
   padding-bottom: 50px;
   position: relative;
@@ -1929,10 +1978,12 @@ ul.prod-wrapper.column_dir .title {
   border: 1px solid #D5D5D5;
   border-radius: 6px;
   margin-bottom: 16px;
+  color: #767676;
 }
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .title_selec.active {
   border: 1px solid #000;
+  color: #000;
 }
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .title_selec .selected_option {
@@ -1983,12 +2034,14 @@ ul.prod-wrapper.column_dir .title {
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info {
   background: #F7F7F7;
   padding: 16px;
+  margin-bottom: 16px;
 }
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_nm {
   padding-right: 20px;
   position: relative;
   word-break: keep-all;
+  margin-bottom: 10px;
 }
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_nm .close {
@@ -2007,6 +2060,15 @@ ul.prod-wrapper.column_dir .title {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .input_wrap {
@@ -2020,17 +2082,76 @@ ul.prod-wrapper.column_dir .title {
   width: 102px;
   height: 36px;
   border-radius: 6px;
-  border: 1px solid #767676;
+  border: 1px solid #707070;
 }
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .input_wrap input {
-  width: 50px;
+  width: 52px;
+  outline: none;
+  font-weight: 500;
+  text-align: center;
 }
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count button {
   display: block;
+  width: 45px;
+  height: 36px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .down_btn {
+  background: url(../images/guide/ico_input_down.svg) no-repeat center center/12px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .up_btn {
+  background: url(../images/guide/ico_input_up.svg) no-repeat center center/12px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .cpon {
+  position: relative;
+  height: 30px;
+  line-height: 16px;
+  padding: 6px 10px 6px 22px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #707070;
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .cpon.disabled {
+  color: #D5D5D5;
+  border: 1px solid #D5D5D5;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .cpon.disabled:before {
+  content: "";
+  position: absolute;
   width: 12px;
   height: 12px;
+  left: 8px;
+  top: 8px;
+  background: url(../images/guide/ico_coupon_down_gray.svg) no-repeat center center/10px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .cpon .highlight {
+  color: #DA2128;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .cpon:before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 8px;
+  top: 8px;
+  background: url(../images/guide/ico_coupon_down_black.svg) no-repeat center center/10px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .price {
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: auto;
 }
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_result {

@@ -914,9 +914,16 @@
                     flex-wrap: wrap;
                     margin-bottom: 12px;
                     font-size: 12px;
-                    color: rgb(118, 118, 118);
+                    color: #767676;
+                    .cmt_type{
+                        display: inline-block;
+                        border:1px solid #D5D5D5;
+                        border-radius: 20px;
+                        margin-left: 1px;
+                        padding:1px 7px;
+                    }	
                     .txt_user {
-                        margin-left: 0;
+                        margin-left: 5px;
                         display: inline-block;
                     }
                     .txt_date {
@@ -1127,7 +1134,7 @@
             flex-wrap: wrap;
             margin-bottom: 12px;
             font-size: 12px;
-            color: rgb(118, 118, 118);
+            color: rgb(118, 118, 118);	
             .txt_user {
                 margin-left: 8px;
                 display: inline-block;
@@ -1234,6 +1241,7 @@
             .review_btn_common {
                 display: flex;
                 font-size: 13px;
+                margin-left: auto;
                 .txt_count {
                     color: #000;
                     position: relative;
@@ -1306,6 +1314,7 @@
         }
     }
 }
+
 
 /* recomend area  */
 .recomened_area {

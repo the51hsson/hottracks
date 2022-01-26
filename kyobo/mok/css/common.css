@@ -1955,8 +1955,16 @@ button.btn_sm {
   color: #767676;
 }
 
+.all_qa_area .all_qa_wrap .review_inner .review_info_area .left_area .cmt_type {
+  display: inline-block;
+  border: 1px solid #D5D5D5;
+  border-radius: 20px;
+  margin-left: 1px;
+  padding: 1px 7px;
+}
+
 .all_qa_area .all_qa_wrap .review_inner .review_info_area .left_area .txt_user {
-  margin-left: 0;
+  margin-left: 5px;
   display: inline-block;
 }
 
@@ -2335,6 +2343,7 @@ button.btn_sm {
   display: -ms-flexbox;
   display: flex;
   font-size: 13px;
+  margin-left: auto;
 }
 
 .all_review_wrap .review_inner .review_more_area .review_btn_common .txt_count {
@@ -3259,11 +3268,6 @@ button.btn_sm {
   vertical-align: top;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.tooltip_wrap.active .btn_tooltip .ico_info {
-  background: #000 url(../images/ico/btn_tooltip_active_mok.png) no-repeat 0 0;
-  background-size: 22px 22px;
 }
 
 .tooltip_wrap.active .tooltip_inner {

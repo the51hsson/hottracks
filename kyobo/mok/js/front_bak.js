@@ -701,7 +701,7 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 						if(isExpanded){
 							allFoldBox = $(this).closest('.fold_box_wrap').find('.fold_box').not('.expanded');
 						}else{
-							$(selector).find('.fold_box').removeClass('expanded');		
+							$(selector).find('.fold_box').removeClass('expanded');	
 							allFoldBox = $(this).closest('.fold_box_wrap').find('.fold_box');
 						}
 
@@ -745,7 +745,7 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 			$(wrap).each(function(){
 				var tg, isToggle, isOpened, wrapMaxHeight, innerHeight, btnBeforeText, btnAfterText;
 				tg = $(this);
-				wrapMaxHeight = parseInt(tg.find(contents).css('max-height').replace('px', ''));
+				wrapMaxHeight = parseInt(tg.find(contents).css('max-height').replace('px', '')) || 0;
 				btnBeforeText = tg.find(btn).text();
 
 				function overflowChk() {
