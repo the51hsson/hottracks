@@ -594,6 +594,7 @@ body {
   position: relative;
   width: 56px;
   height: 56px;
+  margin: 0 auto;
   background: #f7f7f7;
   border-radius: 50%;
 }
