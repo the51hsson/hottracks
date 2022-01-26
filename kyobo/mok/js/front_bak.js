@@ -701,6 +701,7 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 						if(isExpanded){
 							allFoldBox = $(this).closest('.fold_box_wrap').find('.fold_box').not('.expanded');
 						}else{
+							$(selector).find('.fold_box').removeClass('expanded');		
 							allFoldBox = $(this).closest('.fold_box_wrap').find('.fold_box');
 						}
 
@@ -727,7 +728,6 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 			});
 		}
 	}
-
 	/**
 	 * max-height 영역 안에 요소가 넘치는 경우 auto overflow 처리
 	 * @param wrap 컨테이너 DOM 셀렉터 (default: '.auto_overflow_wrap')

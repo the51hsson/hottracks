@@ -246,6 +246,14 @@
 			}
 		}
 	}
+	.evt_good_count.active{
+		.icon{
+			float:left;
+			width:12px;
+			height:14px;
+			background:url(../images/guide/ico_prod_like_icon_active.svg) no-repeat center center /12px;
+		}
+	}
 	.company{
 		margin-bottom:2px;
 		font-size: 12px;

@@ -7932,6 +7932,13 @@ body.dialog_open {
   line-height: 14px;
 }
 
+.prod-wrapper .evt_good_count.active .icon {
+  float: left;
+  width: 12px;
+  height: 14px;
+  background: url(../images/guide/ico_prod_like_icon_active.svg) no-repeat center center/12px;
+}
+
 .prod-wrapper .company {
   margin-bottom: 2px;
   font-size: 12px;
