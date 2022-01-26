@@ -412,11 +412,17 @@ $(function(){
     if(!$('.sticky_tab').length) return;
     $(window).on('scroll', function() {
         $('.sticky_cont').each(function (index, element) {
-            if($(window).scrollTop() >= $(this).offset().top - 130) {
+            if($(window).scrollTop() >= $(this).offset().top - 127) {
                 $('.sticky_tab a').removeClass('on');
                 $('.sticky_tab a').eq(index).addClass('on');
             }
         });
+    });
+
+    var $sticky_tab = $('.sticky_tab a').on('click', function(e) {
+        e.preventDefault();
+        var idx = $(this).index();
+        $('html, body').animate({scrollTop: $('.sticky_cont').eq(idx).offset().top - 126 }, 500 );
     });
 });
 

@@ -2926,6 +2926,7 @@ body {
 
 .ht_ .wel_category_tab {
   position: relative;
+  height: 45px;
   z-index: 10;
 }
 
