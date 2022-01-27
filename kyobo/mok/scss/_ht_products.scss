@@ -365,7 +365,19 @@
 	.title{
 		margin-bottom:8px;
 		font-size: 13px;
-	}	
+	}
+	.discount_rate,
+	.final_price{
+		font-size: 16px;
+		line-height:22px;
+	  }	
+	.price_origin{
+		font-size: 11px;
+		line-height:22px;
+	}
+	.price_origin.no_discount{
+		font-size: 16px;
+	}
 }
 /* 1:1 비율 140*140*/
  .type_sm{
@@ -388,7 +400,7 @@
 	  }
 
 	.price_origin{
-		font-size: 12px;
+		font-size: 10px;
 	}
 	.badge_line{
 		margin-top:6px;
@@ -431,7 +443,10 @@
 	.price_origin{
 		line-height:15px;
 	}
-
+	.discount_rate,
+	.final_price{
+		font-size: 12px;
+	}
 	.price_origin{
 		font-size: 10px;
 	}  
@@ -448,7 +463,7 @@
 	}
 	
 	.price_origin.no_discount{
-		font-size: 10px;
+		font-size: 12px;
 	} 
 }
 /* 1:1 비율 74*74*/
