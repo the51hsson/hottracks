@@ -1063,7 +1063,7 @@
     }     
     .auto_overflow_wrap.overflow {
         &.active {
-            margin:0 -20px;
+            margin:0 ;//-20px;
             .auto_overflow_contents {                
                 .review_comment_area {
                     .txt_review {
@@ -1115,9 +1115,9 @@
                 }    
             }
 
-            .auto_overflow_footer {
-                padding: 0 20px;
-            }                 
+            // .auto_overflow_footer {
+            //     padding: 0 20px;
+            // }                 
         }
     }
 }
