@@ -832,22 +832,29 @@ input[type=number] {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: flex-start;
-		li{
+		.evt_card_item{
 			width:50%;
 			min-height:100% !important;
-			padding:50px 5px;
+			padding:40px 20px;
 			div{
-				text-align: center;
 				word-break: keep-all;
 			}
 		}
+		.discount{
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 22px;
+			margin-bottom: 8px;
+			color:#da2128;
+		}
 		.title{
-      font-size: 16px;
+            font-size: 16px;
 			line-height: 22px;
 			letter-spacing: -0.16px;
+			margin-bottom: 4px;
+			font-weight: 500;
 		}
 		.desc{
-			margin-top:4px;
 			font-size: 13px;
 			line-height: 19px;
 			letter-spacing: -0.13px;
@@ -857,14 +864,30 @@ input[type=number] {
 		margin-top:24px;
 		text-align: center;
 		button{
+			position:relative;
+			padding:12px 24px;
 			width:165px;
-			border:1px solid #767676;
+			margin:0 auto;
+			border:1px solid #f2f2f2;
 			border-radius: 4px;
 			cursor: pointer;
-			font-weight: 500px;
 			text-align: center;
+	        display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+		}
+		.txt{
+			line-height:20px;
+			font-weight: 500px;
 			letter-spacing: -0.14px;
-			line-height: 42px;
+			line-height: 20px;
+		}
+		.icon{
+			display: block;
+			width:12px;
+			height:20px;
+			margin-left:3px;
+			background: url(../images/guide/ico_arrow_right_btn.svg) no-repeat center top 40%/ 12px;
 		}
 	}
 }
