@@ -166,8 +166,9 @@ $(function(){
 			$(this).addClass('active');
 		}
 	});
-	//대댓글 5개까지만 노출 후 전체 노출(ajax 콜백으로 호출)
+	//대댓글 5개까지만 노출 후 전체 노출
 	prodDetailCmtShow(true);
+
 	function prodDetailCmtShow(bool){
 		var reCmtEA = $('.all_review_wrap .review_reply .reply_list').children('.reply_list_item').length;
 
@@ -188,21 +189,28 @@ $(function(){
 	//장바구니, 구매하기 버튼 하단 팝업 시 노출
     footTabCustom();
 
-	$('button[data-target="#popCart"]').click(function(){
-		footTabCustom(true);
+	$('button[data-target="#popCart"]').click(function(e){
+		footTabCustom(e, true);
 	});
 	$(document).on('click','.dialog_header .close', function(){
 		footTabCustom();
 	});
-	function footTabCustom(bool){
+	function footTabCustom(e, bool){
+		if(e) {
+			var popWrapId = e.target.dataset.target;
+			var selecDefault = $( popWrapId).find('.title_selec .selected_option .txt').text();
+			console.log(selecDefault);
+		}
+
 		if(bool){
 			//Class:footer_wrap fixed_foot에 btm_pop_upper_foot 추가 시 팝업 위로 장바구니 버튼 노출
 			$('.footer_wrap.fixed_foot').addClass('btm_pop_upper_foot');
 			//뒤로가기 맨위로가기 안보이게
-			$('.btn_go_back ,.btn_go_top').css('opacity', '0');
+			$('.btn_go_back,.btn_go_top').css('opacity', '0');
 		}else{
 			$('.footer_wrap.fixed_foot').removeClass('btm_pop_upper_foot');
-			$('.btn_go_back ,.btn_go_top').css('opacity', '1');
+			$('.btn_go_back,.btn_go_top').css('opacity', '1');
+			//셀렉박스 초기화
 		}
 	}
 	//장바구니 팝업 상세 내용 닫기
