@@ -47,19 +47,29 @@ $(function(){
     $(this).removeClass('menuDown');
   });
 
-  $(document).on('click', '.md_tab a', function(){
-    $(this).addClass('active').siblings('a').removeClass('active');
+  $(document).on('click', '.md_tab .md_anchor', function(){
+    $(this).addClass('active').siblings('.md_anchor').removeClass('active');
   });
 
   //스티키 메뉴
   $(document).on('click' , '.ctg_floating_menues li', function(){
-    if($(this).hasClass('brand_li')) { // 브랜드 보기 슬라이딩업
+    if($(this).hasClass('arrow_li')) { // 브랜드 보기 슬라이딩업
       showBrandList();
       return; 
     }
-    $(this).addClass('active').siblings('li').removeClass('active');
+    if($(this).hasClass('active')){
+      $(this).removeClass('active');
+    }else{
+      $(this).addClass('active');
+    }
   });
-
+ $(document).on('click', '.dialog_wrap[id^="ClickCksClose"] .dialog_contents .checkbox_cm', function(){
+  var closeBtn = $(this).parents('.dialog_wrap').find('button[data-dialog-close]');
+  setTimeout(function(){
+    $(closeBtn ).trigger('click');
+  }, 200);
+   
+ })
   //스티키 메뉴 브랜드 메뉴 클릭
   function  showBrandList(){
     
@@ -92,7 +102,15 @@ $(function(){
    //품절 대체 스왑 닫기
    $(document).on('click', '.replace_prod_swap .close_swap', function(){
      $(this).parents('.replace_prod_swap').removeClass('show_bubble');
-   })
+   });
+   	//카테고리 상품 리스트 찜하기 토글
+	$(document).on('click', '.evt_good_count', function(){
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		} else {
+			$(this).addClass('active');
+		}
+	});
 });
 
 $(function(){

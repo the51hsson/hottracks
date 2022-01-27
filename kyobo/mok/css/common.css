@@ -5549,6 +5549,13 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   color: #767676;
 }
 
+.prod-wrapper .price_line .price_origin.no_discount {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
 .prod-wrapper .badge_line {
   margin-top: 8px;
   display: -webkit-box;
@@ -5624,6 +5631,10 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   font-size: 18px;
 }
 
+.type_lg .price_origin.no_discount {
+  font-size: 18px;
+}
+
 /* 1:1 비율 158*158*/
 .type_md .prod_item {
   width: 158px;
@@ -5677,6 +5688,10 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   padding: 0 4px;
 }
 
+.type_sm .price_origin.no_discount {
+  font-size: 14px;
+}
+
 /* 1:1 비율 100*100*/
 .type_xs .prod_item {
   width: 99px;
@@ -5723,6 +5738,10 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   font-weight: normal;
   font-size: 8px;
   padding: 0 4px;
+}
+
+.type_xs .price_origin.no_discount {
+  font-size: 10px;
 }
 
 /* 1:1 비율 74*74*/

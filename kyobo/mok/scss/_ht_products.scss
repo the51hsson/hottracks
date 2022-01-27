@@ -283,6 +283,12 @@
 			text-decoration: line-through;
 			color:#767676;
 		}  
+		.price_origin.no_discount{
+			text-decoration: none;
+			color:#000;
+			font-weight:500;
+			margin-left:5px;
+		}
 	}
 
 	.badge_line{
@@ -344,6 +350,9 @@
 	.final_price{
 		font-size: 18px;
 	}
+	.price_origin.no_discount{
+		font-size: 18px;
+	}
 }
 /* 1:1 비율 158*158*/   
 .type_md{
@@ -378,20 +387,23 @@
 		  line-height:18px;
 	  }
 
-	  .price_origin{
-			font-size: 12px;
+	.price_origin{
+		font-size: 12px;
+	}
+	.badge_line{
+		margin-top:6px;
+		.badge{
+			margin-top:2px;
+			height:17px;
+			line-height: 17px;
+			font-weight: normal;
+			font-size: 8px;
+			padding: 0 4px;
 		}
-		.badge_line{
-			margin-top:6px;
-			.badge{
-				margin-top:2px;
-				height:17px;
-				line-height: 17px;
-				font-weight: normal;
-				font-size: 8px;
-				padding: 0 4px;
-			}
-		}  
+	}  
+	.price_origin.no_discount{
+		font-size: 14px;
+	}
 }
 /* 1:1 비율 100*100*/
 .type_xs{
@@ -434,9 +446,13 @@
 			padding: 0 4px;
 		}
 	}
+	
+	.price_origin.no_discount{
+		font-size: 10px;
+	} 
 }
 /* 1:1 비율 74*74*/
-.type_xxs{
+.type_xxs{	
 	.prod_item{
 		width:74px;
 	}

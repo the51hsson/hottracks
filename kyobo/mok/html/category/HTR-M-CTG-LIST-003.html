@@ -144,8 +144,9 @@
     <main id="containerWrapper" class="container_wrapper">
       <div class="module_wrap type2">
 			<span class="md_tab">
-				<a href="#" class="md_anchor active">MD추천</a>
+				<a href="#" class="md_anchor active">예약상품</a>
 				<a href="#" class="md_anchor">베스트</a>
+                <a href="#" class="md_anchor">신상품</a>
 			</span>
 			<!--슬라이드 영역-->
 			<div class="swiper" id="mdProduct1">
@@ -333,12 +334,12 @@
 		<hr class="divide_hr"/>
 		<!--스티키 메뉴-->
 		<article class="ctg_floating_line">
-			<div class="menu_nm"  data-role="btn-dialog" data-target="#ClickCksClose">
+			<div class="menu_nm" data-role="btn-dialog" data-target="#ClickCksClose">
 				<h3>스터디 플래너 전체</h3>
 				<span class="menu_nm_icon"></span>
 			</div>
 			<ul class="ctg_floating_menues">
-				<li class="arrow_li" data-role="btn-dialog" data-target="#popBottomBrand">브랜드</li>
+                <li class="arrow_li checked_status" data-role="btn-dialog" data-target="#popBottomBrand"><em>3</em>브랜드</li>
 				<li>할인</li>
 				<li>쿠폰</li>
 				<li>핫트랙스 배송</li>
@@ -443,8 +444,8 @@
 							  <div class="product_pic">
 								<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
 							  </div>
-							  <div class="company">dretec</div>
 							  <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+							  <div class="company">dretec</div>
 							  <div class="price_line">
 								<span class="discount_rate">15%</span>
 								<span class="final_price">9,234,000</span>
@@ -455,8 +456,8 @@
 							  <div class="product_pic">
 								<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
 							  </div>
-							  <div class="company">dretec</div>
 							  <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+							  <div class="company">dretec</div>
 							  <div class="price_line">
 								<span class="discount_rate">15%</span>
 								<span class="final_price">9,234,000</span>
@@ -467,8 +468,8 @@
 							  <div class="product_pic">
 								<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
 							  </div>
-							  <div class="company">dretec</div>
 							  <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+							  <div class="company">dretec</div>
 							  <div class="price_line">
 								<span class="discount_rate">15%</span>
 								<span class="final_price">9,234,000</span>
@@ -479,7 +480,6 @@
 							  <div class="product_pic">
 								<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
 							  </div>
-							  <div class="company">dretec</div>
 							  <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
 							  <div class="price_line">
 								<span class="discount_rate">15%</span>
@@ -491,8 +491,8 @@
 							  <div class="product_pic">
 								<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
 							  </div>
-							  <!-- <div class="company">dretec</div> -->
 							  <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+							  <div class="company">dretec</div>
 							  <div class="price_line">
 								<span class="discount_rate">15%</span>
 								<span class="final_price">9,234,000</span>
@@ -862,7 +862,7 @@
 		</section>
     </div>
     <!-- // wrapper -->
-	<!--스터디 플래너 하단 레이어 팝업-->
+    	<!--스터디 플래너 하단 레이어 팝업-->
 	<div id="ClickCksClose" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
 		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
 		<!-- dialog_header -->
@@ -872,55 +872,55 @@
 		<!-- //dialog_header -->
 		<!-- dialog_contents -->
 		<div class="dialog_contents checkbox_type">
-	       <ul class="cks_list">
-               <li>
-                   <label class="ck_label_wrap">
-                       <input type="radio"  name="test" class="checkbox_cm">
-                       <span class="label_for_radio">신상품순</span>
-                   </label>
-               </li>
-               <li>
-                <label class="ck_label_wrap">
-                    <input type="radio"  name="test"class="checkbox_cm">
-                    <span class="label_for_radio">판매 인기순</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="radio"  name="test"class="checkbox_cm">
-                    <span class="label_for_radio">낮은 가격순</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="radio"  name="test"class="checkbox_cm">
-                    <span class="label_for_radio">높은 가격순</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="radio"  name="test"class="checkbox_cm">
-                    <span class="label_for_radio">높은 할인율순</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="radio"  name="test"class="checkbox_cm">
-                    <span class="label_for_radio">찜 ♥ 많은순</span>
-                </label>
-            </li>  
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="radio"  name="test"class="checkbox_cm">
-                    <span class="label_for_radio">리뷰 평점순</span>
-                </label>
-            </li>
-           </ul>
+			<ul class="cks_list">
+				<li>
+					<label class="ck_label_wrap">
+						<input type="radio"  name="test" class="checkbox_cm">
+						<span class="label_for_radio">신상품순</span>
+					</label>
+				</li>
+				<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">판매 인기순</span>
+				</label>
+			</li>
+			<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">낮은 가격순</span>
+				</label>
+			</li>
+			<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">높은 가격순</span>
+				</label>
+			</li>
+			<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">높은 할인율순</span>
+				</label>
+			</li>
+			<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">찜 ♥ 많은순</span>
+				</label>
+			</li>  
+			<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">리뷰 평점순</span>
+				</label>
+			</li>
+			</ul>
 		</div>
 		<!-- //dialog_contents -->
 		<!-- dialog_footer -->
 		<div class="dialog_footer ctg_cks"></div>
-	  <!--//스터디 플래너 하단 레이어 팝업-->
+		<!--//스터디 플래너 하단 레이어 팝업-->
 	</div>
 	<!--//스터디 플래너 하단 레이어 팝업-->
 	<!--브랜드 골라보기 하단 레이어 팝업-->
@@ -934,54 +934,15 @@
 		<!-- dialog_contents -->
 		<div class="dialog_contents checkbox_type">
             <div class="search_area">
-                <input type="text" placeholder="브랜드명 검색">
-                <button type="button" class="search"></button>
+                <input type="text" placeholder="브랜드명 검색" value="아이코나">
             </div>
-	       <ul class="cks_list">
-               <li>
-                   <label class="ck_label_wrap">
-                       <input type="checkbox" class="checkbox_cm">
-                       <span class="label_for_sp">스터디 플래너 전체</span>
-                   </label>
-               </li>
-               <li>
-                <label class="ck_label_wrap">
-                    <input type="checkbox" class="checkbox_cm">
-                    <span class="label_for_sp">스터디 플래너 전체2</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="checkbox" class="checkbox_cm">
-                    <span class="label_for_sp">스터디 플래너 전체3</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="checkbox" class="checkbox_cm">
-                    <span class="label_for_sp">스터디 플래너 전체4</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="checkbox" class="checkbox_cm">
-                    <span class="label_for_sp">스터디 플래너 전체5</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="checkbox" class="checkbox_cm">
-                    <span class="label_for_sp">스터디 플래너 전체6</span>
-                </label>
-            </li>  
-           </ul>
+	        <div class="no_search_data">
+                <span class="no_search_data_icon"></span>
+                <span class="no_search_data_txt">검색 결과가 없습니다.</span>
+            </div>
 		</div>
 		<!-- //dialog_contents -->
 		<!-- dialog_footer -->
-		<div class="dialog_footer ctg_cks search">
-            <button type="button" class="btn_md btn_outline_primary" ><span class="text">초기화</span></button>
-			<button type="button" class="btn_md btn_primary" data-dialog-close><span class="text">상품보기</span></button>
-        </div>
 		<!-- //dialog_footer -->
 	</div>
 	<!--//브랜드 골라보기 하단 레이어 팝업-->
@@ -995,50 +956,50 @@
 		<!-- //dialog_header -->
 		<!-- dialog_contents -->
 		<div class="dialog_contents checkbox_type">
-	       <ul class="cks_list">
-               <li>
-                   <label class="ck_label_wrap">
-                       <input type="radio"  name="test"class="checkbox_cm">
-                       <span class="label_for_radio">신상품순</span>
-                   </label>
-               </li>
-               <li>
-                <label class="ck_label_wrap">
-                    <input type="radio"  name="test"class="checkbox_cm">
-                    <span class="label_for_radio">판매 인기순</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="radio"  name="test"class="checkbox_cm">
-                    <span class="label_for_radio">낮은 가격순</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="radio"  name="test"class="checkbox_cm">
-                    <span class="label_for_radio">높은 가격순</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="radio"  name="test"class="checkbox_cm">
-                    <span class="label_for_radio">높은 할인율순</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="radio"  name="test"class="checkbox_cm">
-                    <span class="label_for_radio">찜 ♥ 많은순</span>
-                </label>
-            </li>  
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="radio"  name="test"class="checkbox_cm">
-                    <span class="label_for_radio">리뷰 평점순</span>
-                </label>
-            </li>
-           </ul>
+			<ul class="cks_list">
+				<li>
+					<label class="ck_label_wrap">
+						<input type="radio"  name="test"class="checkbox_cm">
+						<span class="label_for_radio">신상품순</span>
+					</label>
+				</li>
+				<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">판매 인기순</span>
+				</label>
+			</li>
+			<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">낮은 가격순</span>
+				</label>
+			</li>
+			<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">높은 가격순</span>
+				</label>
+			</li>
+			<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">높은 할인율순</span>
+				</label>
+			</li>
+			<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">찜 ♥ 많은순</span>
+				</label>
+			</li>  
+			<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">리뷰 평점순</span>
+				</label>
+			</li>
+			</ul>
 		</div>
 		<!-- //dialog_contents -->
 		<!-- dialog_footer -->
