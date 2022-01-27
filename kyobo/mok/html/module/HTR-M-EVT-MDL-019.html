@@ -19,7 +19,7 @@
     <meta property="og:image" content="../../images/guide/sns.jpg">
     <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-    <title>교보핫트랙스-이벤트 당첨자 발표</title>
+    <title>교보핫트랙스-이벤트 모듈 8타입</title>
 
     <!-- Plug-In css -->
     <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -34,6 +34,7 @@
 
     <!-- ht_ Hottracks custom css -->
     <link rel="stylesheet" href="../../css/ht_event_mdl.css">
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
     <!--// ht_ Hottracks custom css -->
 
 
@@ -52,10 +53,81 @@
     <!-- // Plug-In javascript -->
 
     <!-- UI JavaScript -->
+    <!-- <script src="../../vendors/js/ui_mok.js"></script> -->
     <script src="../../js/front_bak.js"></script>
+    <script src="../../js/ht_event_list.js"></script>
+    <!-- // UI JavaScript -->
 </head>
 
 <body>
+<!-- 모듈 14 컨텐츠 -->
+  <!--댓글 입력 영역-->
+  <section class="comment_area cmt_wrap_mdl14">
+    <h2 class="tit">댓글 입력</h2>
+    <div class="cmt_imgs_wrap">
+        <ul class="cmt_imgs_list">
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지" >
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지">
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지">
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지" >
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지">
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지">
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지" >
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지">
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지">
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지" >
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지">
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지">
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지" >
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지">
+            </li>
+            <li class="cmt_img_item bd_img">
+                <img src="../../images/guide/@hotdeal_thumnail_01.png" alt="댓글 이미지"  title="댓글 이미지">
+            </li>
+        </ul>
+    </div>    
+    <div class="comment_txt_box bd_img">
+      <textarea name="" id="userComment" placeholder="댓글을 입력해 주세요."></textarea>
+      <span class="count_length_line">
+        <em class="count" id="commentEA">0</em>
+        <em class="count_defalut">/ 300자</em>
+      </span>
+    </div>
+    <div class="cmt_btn_area">
+      <button type="button">
+        <span class="cmt_btn_icon"></span>
+        <span class="cmt_btn_txt">등록하기</span>
+      </button>
+    </div>
+  </section>
+  <!--댓글 리스트 영역-->
   <section class="top_gray_section">
     <div class="comment_list_area">
         <!--타이틀 영역-->
@@ -66,7 +138,6 @@
             <label for="myEventCk" class="common_ck_label">내가 쓴 댓글 보기</label>
           </span>
         </div>
-           <!--댓글 리스트 영역-->
         <ul class="cmt_list_card_ul">
           <li>
             <div class="user_info">
@@ -76,12 +147,9 @@
             <div class="cmt_pd_title">1.꼬리별 스튜디오</div>
             <div class="user_cmt">
               <span class="cmt_content">디자인이 너무 귀엽고 취향이예요! 핫트랙스에서 상품으로 나오면 정말 잘 쓸 것 같아요~.</span>
-              <span class="cmt_img">
-                <img src="../../images/guide/@evt_comment_thumbnail1.png" alt="핫트랙스 이벤트 댓글" title="핫트랙스 이벤트 댓글" class="bd_img">
-              </span>
             </div>
           </li>
-          <li>
+          <li class="my_comment">
             <div class="user_info">
               <span class="user_id">abe10**</span>
               <span class="date">2021.07.11</span>
@@ -91,9 +159,17 @@
             <div class="cmt_pd_title">1.꼬리별 스튜디오</div>
             <div class="user_cmt">
               <span class="cmt_content">디자인이 너무 귀엽고 취향이예요! 핫트랙스에서 상품으로 나오면 정말 잘 쓸 것 같아요~.</span>
-              <span class="cmt_img">
-                <img src="../../images/guide/@evt_comment_thumbnail2.png" alt="핫트랙스 이벤트 댓글" title="핫트랙스 이벤트 댓글" class="bd_img">
-              </span>
+            </div>
+            <div class="mycomment_box bd_img">
+              <textarea name="" id="" placeholder="디자인이 너무 귀엽고 취향이예요! 핫트랙스에서 상품으로 나오면 정말 잘 쓸 것 같아요~."></textarea>
+              <div class="mycomment_box_bottom">
+                <span class="count_length_line">
+                  <em class="count" id="commentEA">0</em>
+                  <em class="count_defalut">/ 300자</em>
+                </span>
+                <button class="btn_black btn_cmt">취소</button>
+                <button class="btn_primary btn_cmt">등록</button>
+              </div>
             </div>
           </li>
           <li>
@@ -104,12 +180,9 @@
             <div class="cmt_pd_title">1.꼬리별 스튜디오</div>
             <div class="user_cmt">
               <span class="cmt_content">디자인이 너무 귀엽고 취향이예요! 핫트랙스에서 상품으로 나오면 정말 잘 쓸 것 같아요~.</span>
-              <span class="cmt_img">
-                <img src="../../images/guide/@evt_comment_thumbnail2.png" alt="핫트랙스 이벤트 댓글" title="핫트랙스 이벤트 댓글" class="bd_img">
-              </span>
             </div>
           </li>
-       </ul>
+        </ul>
       <!--더보기 버튼 more_btn에 hidden Class  추가하면 버튼 안보임-->
       <div class="btn_more_div">
         <button class="more_btn">
@@ -119,6 +192,7 @@
     </div>
     </div>
   </section>
-    <!-- // wrapper -->
+<!-- // wrapper -->
+
 </body>
 </html>

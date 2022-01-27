@@ -8091,6 +8091,23 @@ body.dialog_open {
   top: 0;
 }
 
+.nonswipe .discount_rate,
+.nonswipe .final_price {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.nonswipe .price_origin {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.nonswipe .price_line .price_origin.no_discount {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
 /* 1:1 비율 335*335*/
 .type_lg .prod_item {
   width: 335px;

@@ -13,6 +13,14 @@
 	background-color: #f7f7f7;
 	padding-top:8px;
 }
+.divide_underline{
+	display: block;
+	border:none;
+	width:100%;
+	height:40px;
+	margin:0;
+	background-color:#f0f0f0 ;
+}
 /* input type="number" 숫자키 안나오게  */
 /* Chrome, Safari, Edge, Opera  */
 input::-webkit-outer-spin-button,
@@ -175,6 +183,12 @@ input[type=number] {
   h3{
     text-align: center;
     font-size: 18px;
+    font-weight: 700;
+    line-height:28px;
+  }
+  .left_tit{
+	  text-align: left;
+	font-size: 18px;
     font-weight: 700;
     line-height:28px;
   }
@@ -391,13 +405,8 @@ input[type=number] {
 
 /*=======================     모듈 007 영역   =====================*/
 .module_wrap.type2{
-	margin-top:11px;
 	padding:40px 0 40px 20px;
-	background-color: #fff;
 	overflow:hidden;
-	&:first-of-type{
-		margin:0;
-	}
 	h3{
 		padding-right: 20px;
 		font-size: 18px;
@@ -405,12 +414,6 @@ input[type=number] {
 		letter-spacing: -0.18px;
 	}
 }
-//슬라이더 영역 등록 상품 2개인 경우
-// .module7_wrap.minimum_prod{
-// 	.module7_slider li{
-// 		width:158px;
-// 	}
-// }
 //모듈 8 영역
 .evt_module8_ul{
   background-color:#f0f0f0;
@@ -437,14 +440,6 @@ input[type=number] {
       letter-spacing: -0.14px;
     }
   }
-	.divide_underline{
-		display: block;
-		border:none;
-		width:100%;
-		height:40px;
-		margin:0;
-		background-color:#f0f0f0 ;
-	}
 }
 /*===============     모듈 010-2 영역(전체 레이어 팝업/응모하기)   ==================*/
 .evt_apply_wrap{
@@ -582,6 +577,7 @@ input[type=number] {
 		word-break: keep-all;
 	}
 }
+/*================================ MDL014 ==========================*/
 //댓글 입력
 .comment_area{
 	padding-top: 40px;
@@ -616,6 +612,73 @@ input[type=number] {
 	}
 	.count_defalut{
 		color:#767676;
+	}
+}
+.no_cmt_box{
+	height:140px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	span{
+		display: block;
+	}
+	.no_cmt_icon{
+		width:30px;
+		height:30px;
+		margin: 0 auto;
+		background:url(../images/guide/no_search_data_icon.svg) no-repeat center center  / cover;
+	}
+	.no_cmt_txt{
+		text-align: center;
+		margin-top:8px;
+		color:#767676;
+		line-height: 19px;
+		letter-spacing: -0.013em;
+	}
+}
+
+//019 댓글 입력 이미지 리스트
+.cmt_imgs_wrap{
+	overflow:hidden;
+}
+.cmt_imgs_list{
+	overflow-x: auto;
+	white-space: nowrap;
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row nowrap;
+	.cmt_img_item{
+		width:40px;
+		height:40px;
+		margin-right: 6px;
+		flex-shrink: 0;
+		border-radius: 4px;
+		overflow:hidden;
+		&:last-of-type{
+			margin-right: 0px;
+		}
+		img{
+			width:100%;
+		}
+		&.active{
+			border:4px solid #000;
+		}
+		&.active_non img{
+			opacity: 0.6;
+		}
+	}
+}
+/*===============  모듈 010 -1 , 009-1 (응모하기, 참여하기 버튼  ) ==============*/
+.btn_mdl_wrap{
+	padding:24px 20px 40px 20px;
+	&.type_pink{
+		background-color: #FAD9CC;
+	}
+	.btn_mdl{
+      display: block;
+	  width:100%
 	}
 }
 /*===============     모듈 009-2 영역 (내가 쓴 댓글 보기)  ==================*/
@@ -752,6 +815,11 @@ input[type=number] {
 /*======================     모듈 14 영역   =======================*/
 .cmt_wrap_mdl14{
 	padding:40px 20px;
+	.tit{
+		margin-bottom:16px;
+		line-height: 25px;
+		font-size: 16px;
+	}
 }
 .cmt_btn_area{
 	margin-top:24px;

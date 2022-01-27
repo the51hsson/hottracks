@@ -91,6 +91,7 @@ $(function(){
 	  $(arrowIcon).removeClass('open'); 
 	}
   });
+
   //옵션 선택
   $(document).on('click', '.option_ul li', function(){
 		var select = $(this).parent().prev('.selected_option').find('em').eq(0);
@@ -168,14 +169,13 @@ $(function(){
                 prevEl: ".swiper-button-prev",
               },
           });
-      } else {
+        } else {
           $(ele).find('.option_box').addClass('hidden');
           $(ele).find('.swiper-button-prev').addClass('hidden');
           $(ele).eq(0).find('.swiper-button-next').addClass('hidden');
       }
 
       $(ele).find('.play_pause_box').click(function(){
-        console.log($(this));
         if ( $(this).hasClass('play') ) {
             evtSwiperType.autoplay.stop();
             $(this).removeClass('play').addClass('pause');
@@ -188,32 +188,24 @@ $(function(){
 
 
   /*================================= HTR-M-EVT-MDL-007.html ==============================*/  
-     //시즌 BEST 상품 배너
-    //상품 개수 2개이하일때 ul class 설정
-    if($('#mdl7swapAble1 li').length <= 2){
-      $('#mdl7swapAble1 ul').removeClass('swiper-wrapper').addClass('nonswipe');
-    }else{
-      var mdl7EventSwiper1 =  new CustomSwiper('#mdl7swapAble1', {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        freeMode: true,
-        observer: true,
-        observeParents: true,
-    });
-    }
-    if($('#mdl7swapAble2 li').length <= 2){
-      $('#mdl7swapAble2 ul').removeClass('swiper-wrapper').addClass('nonswipe');
-    }else{
-      var mdl7EventSwiper2 =  new CustomSwiper('#mdl7swapAble2', {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        freeMode: true,
-        observer: true,
-        observeParents: true,
-    });
-    }
-
-
+     //시즌 BEST 상품 배너(type_sm 140*140)
+     //상품 개수 2개이하일때 ul class 설정
+	$('.mySwiper_sm').each(function () {
+		var $parent = $(this).parent('.module_wrap');
+		if($parent.find('.swiper-slide').length > 2) {
+			var  mdlEventSwiper_sm = new CustomSwiper(this, {
+			  slidesPerView: 'auto',
+			  spaceBetween: 16,
+			  freeMode: true,
+			  observer: true,
+			  observeParents: true,
+			}); 
+		} else {
+			console.log($parent.find('.prod-wrapper').length);
+			$parent.find('.prod-wrapper').removeClass('swiper-wrapper').addClass('nonswipe');
+		}
+	  });
+  
   /*================================= HTR-M-EVT-MDL-009-3.html ==============================*/  
 //투표 참여하기 버튼 활성화 기능(투표하기)
   $(document).on('click', '.evt_mdl9_pop_wrap .evt_vote_list input', voteActive);
@@ -292,6 +284,9 @@ $(function(){
       //      }
       //    }
        //} 
-       /*================================= HTR-M-EVT-MDL-016.html ==============================*/ 
-       //셀렉트 박스 커스텀
+    /*================================= HTR-M-EVT-VIEW-019.html ==============================*/  
+    //댓글 입력 이미지 리스트 활성화 
+    $(document).on('click', '.cmt_imgs_list .cmt_img_item', function(){
+       $(this).removeClass('active_non').addClass('active').siblings('.cmt_img_item').removeClass('active').addClass('active_non');
+    });
 });
