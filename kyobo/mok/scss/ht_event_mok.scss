@@ -166,30 +166,33 @@
 //스페셜 이벤트 리스트
 .list_evt_area.spe_evt_area{
 	.small_pics_area{
-		padding-top:12px;
+		margin-bottom:16px;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: flex-start;
-    li{
+		align-items: flex-start;
+	 }
+	.small_pics_item{
+		width:23%;
+		margin-right:12px;
+
+		&:last-of-type{
+		margin-right:0;
+		}
+		.pic_wrap {
 			position:relative;
-			width:74px;
 			height:0;
-			padding-top:74px;
-			margin-right:12px;
-			overflow:hidden;
+			padding-top:100%;
 			img{
 				position:absolute;
 				width:100%;
 				top:0;
 				left:0;
-			}
+			}	
 		}
-		li:last-of-type{
-			margin-right:0;
-		}
-	}
+	} 
+	
 	.to_event_list_btn{
-		height:100%;
 		border-radius: 4px;
 		background:url(../images/guide/evt_list_showMore.svg) no-repeat center center / 99%;	
 	}
@@ -207,9 +210,6 @@
 		letter-spacing: -0.16px;
 		line-height: 26px;
 		color:#da2128;
-	}
-	.txt_account{
-		padding-top:16px;
 	}
 	.deadline_section  .deadline_bubble{
 		padding:12px 27px;
