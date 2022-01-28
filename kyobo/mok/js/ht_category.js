@@ -52,16 +52,17 @@ $(function(){
   });
 
   //스티키 메뉴
-  $(document).on('click' , '.ctg_floating_menues li', function(){
-    if($(this).hasClass('arrow_li')) { // 브랜드 보기 슬라이딩업
-      showBrandList();
-      return; 
-    }
-    if($(this).hasClass('active')){
-      $(this).removeClass('active');
-    }else{
-      $(this).addClass('active');
-    }
+  // $(document).on('click' , '.ctg_floating_menues li', function(){
+  //   if($(this).hasClass('arrow_li')) { // 애로우 있는 화면 
+  //     showBrandList();
+  //     return; 
+  //   }
+    //2022-01-28 개발 요청 사항 : 개발에서 진행
+    // if($(this).hasClass('active')){
+    //   $(this).removeClass('active');
+    // }else{
+    //   $(this).addClass('active');
+    // }
   });
  $(document).on('click', '.dialog_wrap[id^="ClickCksClose"] .dialog_contents .checkbox_cm', function(){
   var closeBtn = $(this).parents('.dialog_wrap').find('button[data-dialog-close]');

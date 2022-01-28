@@ -114,7 +114,16 @@ $(function(){
 		  $('.option_ul').css('display', 'none');
 		  $('.selec_icon').removeClass('open');
 	  };
-  })
+  });
+  
+   //카테고리 상품 리스트 찜하기 토글
+	$(document).on('click', '.evt_good_count', function(){
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		} else {
+			$(this).addClass('active');
+		}
+	});
    
    /*================================= HTR-M-EVT-VIEW-000.html ==============================*/  
    //이벤트 종료 블랙스크린 높이 구하기
@@ -126,7 +135,7 @@ $(function(){
 
    //앵커 메뉴 버튼 활성화 기능
    $('.evt_mdl2_menu.anchor').children('li').click(function(){
-      $(this).addClass('active').siblings('li').removeClass('active');;
+      $(this).addClass('active').siblings('li').removeClass('active');
    });
   //  //앵커 태그 부드럽게 이동
   //  document.querySelectorAll('.evt_mdl2_menu a[href^="#"]').forEach(function(anchor){

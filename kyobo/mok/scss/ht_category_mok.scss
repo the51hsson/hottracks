@@ -377,6 +377,7 @@
 			font-size: 13px;
 			color:#767676;
 			letter-spacing: -0.013em;
+			box-sizing: border-box;
 			&:last-of-type{
 				margin-right:0;
 			}
@@ -387,12 +388,9 @@
 			&.active{
 				color:#fff;
 				background-color: #da2128;
+				border-color:#da2128;
 			}
 		}
-		// li .flCk:checked{
-		// 	color:#fff;
-		// 	background-color: #da2128;
-		// }
 		li.arrow_li{
 			position:relative;
 			em{

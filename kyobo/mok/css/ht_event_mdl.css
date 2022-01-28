@@ -8861,24 +8861,20 @@ input[type=number] {
   letter-spacing: -0.18px;
 }
 
-.evt_module8_ul {
-  background-color: #f0f0f0;
-}
-
-.evt_module8_ul > div {
+.evt_module8_card {
   padding: 40px 20px;
   background-color: #fff;
   cursor: pointer;
 }
 
-.evt_module8_ul > div .title {
+.evt_module8_card .title {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: -0.16px;
   font-weight: 500;
 }
 
-.evt_module8_ul > div .sub_title {
+.evt_module8_card .sub_title {
   margin-top: 4px;
   font-size: 13px;
   line-height: 19px;
@@ -8886,7 +8882,7 @@ input[type=number] {
   color: #767676;
 }
 
-.evt_module8_ul > div .content {
+.evt_module8_card .content {
   margin-top: 14px;
   line-height: 22px;
   letter-spacing: -0.14px;
@@ -9578,26 +9574,42 @@ input[type=number] {
 /*===============================  모듈 016 영역  ===========================*/
 .module_wrap.type1 {
   background-color: #fff;
+  padding: 0 20px;
 }
 
 .module_wrap.type1 h3 {
-  margin-top: 40px;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -0.18px;
   text-align: left;
+  margin-top: 20px;
+}
+
+.sticky_selec {
+  padding: 20px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  background-color: #fff;
 }
 
 .common_select {
   width: 100%;
   height: 50px;
-  padding: 14px 15px;
+  padding: 14px 25px 14px 15px;
   border: 1px solid #d5d5d5;
   position: relative;
   line-height: 22px;
   letter-spacing: -0.14px;
   border-radius: 6px;
   outline: 0;
+  color: #767676;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../images/guide/ico_selec_arrow.svg) no-repeat right 14px top 50%/9px;
 }
 
 ul.prod-wrapper.column_dir {
