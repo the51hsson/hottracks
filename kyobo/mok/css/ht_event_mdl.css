@@ -8675,7 +8675,7 @@ input[type=number] {
 .evt_banner_wrap .txt_box {
   position: absolute;
   z-index: 4;
-  bottom: 20px;
+  bottom: 40px;
   left: 20px;
   color: #fff;
 }
@@ -8686,7 +8686,7 @@ input[type=number] {
 
 .evt_banner_wrap .txt_box .txt_upper {
   font-size: 20px;
-  line-height: 28px;
+  line-height: 30px;
   font-weight: 500;
   letter-spacing: -0.2px;
 }
@@ -8695,74 +8695,46 @@ input[type=number] {
   font-size: 13px;
   letter-spacing: -0.13px;
   line-height: 19px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.evt_banner_wrap .swiper-button-next,
-.evt_banner_wrap .swiper-button-prev {
-  right: 10px;
-  padding: 30px;
-  color: #fff !important;
-  fill: #fff !important;
-  stroke: #fff !important;
-}
-
-.evt_banner_wrap .option_box {
+.evt_banner_wrap .swiper-button-next.evt:after,
+.evt_banner_wrap .swiper-button-prev.evt:after {
   display: none;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-.evt_banner_wrap .swiper-pagination.swiper-pagination-fraction {
-  position: static;
-  height: 25px;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.evt_banner_wrap .swiper-pagination.swiper-pagination-fraction .swiper-pagination-current,
-.evt_banner_wrap .swiper-pagination.swiper-pagination-fraction .swiper-pagination-total {
-  line-height: 25px;
-}
-
-.evt_banner_wrap .play_pause_box {
-  margin-right: 4px;
-}
-
-.evt_banner_wrap .play_pause_box [class^=btn_] {
-  display: block;
-  width: 25px;
-  height: 25px;
+.evt_banner_wrap .swiper-button-next.evt,
+.evt_banner_wrap .swiper-button-prev.evt {
+  right: 10px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
 }
 
-.evt_banner_wrap .play_pause_box .btn_play {
-  background: rgba(0, 0, 0, 0.3) url(../images/guide/ico_play.svg) no-repeat 50%/7px;
+.evt_banner_wrap .swiper-button-next.evt {
+  background: url(../images/guide/evt_mdl004_prev.svg) no-repeat center center/30px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
-.evt_banner_wrap .play_pause_box .btn_pause {
-  background: rgba(0, 0, 0, 0.3) url(../images/guide/ico_pause.svg) no-repeat 50%/5px;
+.evt_banner_wrap .swiper-button-prev.evt {
+  background: url(../images/guide/evt_mdl004_prev.svg) no-repeat center center/30px;
 }
 
-.evt_banner_wrap .play_pause_box.play .btn_play {
-  display: none;
+.evt_banner_wrap .swiper-button-next.swiper-button-disabled, .evt_banner_wrap .swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
 }
 
-.evt_banner_wrap .play_pause_box.play .btn_pause {
-  display: block;
+.evt_banner_wrap .swiper-pagination.bottom_up {
+  bottom: 20px;
 }
 
-.evt_banner_wrap .play_pause_box.pause .btn_play {
-  display: block;
+.evt_banner_wrap .swiper-pagination.bottom_up .swiper-pagination-bullet {
+  background-color: #eaeaea;
 }
 
-.evt_banner_wrap .play_pause_box.pause .btn_pause {
-  display: none;
+.evt_banner_wrap .swiper-pagination.bottom_up .swiper-pagination-bullet-active {
+  background-color: #fff;
 }
 
 /*===============     모듈 002 영역(앵커 메뉴)   ==================*/
@@ -9577,7 +9549,7 @@ input[type=number] {
   padding: 0 20px;
 }
 
-.module_wrap.type1 h3 {
+.module_wrap.type1 .tit {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -0.18px;

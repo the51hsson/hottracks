@@ -60,7 +60,7 @@ $(function(){
     var scrolltop  = $(window).scrollTop();
     var offsetTop = $(item).offset().top;
     var topMenuHeight = $('.evt_quick_menu_slide').height();
-    isShow = offsetTop - headerHeight - topMenuHeight - 200 < scrolltop
+    isShow = offsetTop - headerHeight - topMenuHeight - 200 < scrolltop;
 
     return isShow; 
   }
@@ -148,7 +148,7 @@ $(function(){
   // });
 
   /*================================= HTR-M-EVT-MDL-004.html ==============================*/
-  //  배너 스와이프 (3타입으로 세번 반복 적용)
+  //  배너 스와이프 
   var evtSwiperType1, evtSwiperType2, evtSwiperType3;
   $('.evt_banner_wrap .swiper-container').each(function (i, ele){
     if($(ele).find('li.swiper-slide').length > 1){
@@ -157,21 +157,9 @@ $(function(){
               speed: 500,
               spaceBetween: 10,
               centeredSlides: true,
-                  loop: true,
-                  loopsSlide:1,
-                  autoplay: {
-                      delay: 5000,
-                      disableOnInteraction: false,
-                    },
               pagination: {
                 el: $(ele).find('.swiper-pagination')[0],
-                type: 'fraction',
-                formatFractionCurrent: function (number) {
-                  return KyoboHottracks.mok.setPrependZero(number, 2);
-                },
-                formatFractionTotal: function (number) {
-                  return KyoboHottracks.mok.setPrependZero(number, 2);
-                },
+                type : 'bullets',
               },
               navigation: {
                 nextEl: ".swiper-button-next",
@@ -179,9 +167,10 @@ $(function(){
               },
           });
         } else {
-          $(ele).find('.option_box').addClass('hidden');
+          //이미지 한장인 경우 좌우 이동 버튼 안보이게, 이미지 dim 처리 안함
           $(ele).find('.swiper-button-prev').addClass('hidden');
-          $(ele).eq(0).find('.swiper-button-next').addClass('hidden');
+          $(ele).find('.swiper-button-next').addClass('hidden');
+          $(ele).find('.banner_dim').addClass('hidden');
       }
 
       $(ele).find('.play_pause_box').click(function(){

@@ -250,7 +250,7 @@ input[type=number] {
 	.txt_box{
 		position:absolute;
 		z-index:4;
-		bottom:20px;
+		bottom:40px;
 		left:20px;
 		color:#fff;
 		span{
@@ -258,7 +258,7 @@ input[type=number] {
 		}
 		.txt_upper{
 			font-size: 20px;
-			line-height:28px;
+			line-height:30px;
 			font-weight: 500;
 			letter-spacing: -0.2px;
 		}
@@ -266,76 +266,89 @@ input[type=number] {
 			font-size: 13px;
 			letter-spacing: -0.13px;
 			line-height:19px;
+			color:rgba(255,255,255,0.8)
 		}
 	}
-	.swiper-button-next,
-	.swiper-button-prev {
+	.swiper-button-next.evt:after,
+	.swiper-button-prev.evt:after{
+		display:none;
+	}
+	.swiper-button-next.evt,
+	.swiper-button-prev.evt {
 			right:10px;
-			padding: 30px;
-			color: #fff !important;
-			fill: #fff !important;
-			stroke: #fff !important;
+		    width:24px;
+			height:24px;
+			border-radius: 50%;
 	}
-	.option_box {
-		    display:none; 
-			position: absolute;
-			right:20px;
-			bottom:20px;
-			z-index: 1;
-			display: flex;
-			// .btn_all {
-			// 		position: absolute;
-			// 		right: 0;
-			// 		top:0;
-			// 		display: block;
-			// 		width: 25px;
-			// 		height: 25px;
-			// 		background: url(../images/guide/ico_plus_w.svg) no-repeat 50% / 9px;
-			// 		z-index: 10;
-			// }
+	.swiper-button-next.evt{
+		background: url(../images/guide/evt_mdl004_prev.svg) no-repeat center center/ 30px;
+		transform: rotate(180deg);
+	}
+	.swiper-button-prev.evt{
+		background: url(../images/guide/evt_mdl004_prev.svg) no-repeat center center/ 30px;
+	}
+	.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+		opacity: 1;
+	}
+	.swiper-pagination.bottom_up{
+		bottom:20px;
+		.swiper-pagination-bullet{
+			background-color: rgb(234, 234, 234);
+		}
+		.swiper-pagination-bullet-active{
+			background-color: #fff;
+		}
+	}
+	// .option_box {
+	// 	    display:none; 
+	// 		position: absolute;
+	// 		right:20px;
+	// 		bottom:20px;
+	// 		z-index: 1;
+	// 		display: flex;
 
-	}
-	.swiper-pagination.swiper-pagination-fraction {
-			position: static;
-			height: 25px;
-			transform: translateX(0);
-			background-color: rgba(0, 0, 0, 0.3);
-			.swiper-pagination-current,
-			.swiper-pagination-total {
-					line-height: 25px;
-			}
-	}
-	.play_pause_box {
-			margin-right: 4px;
-			[class^=btn_] {
-					display: block;
-					width: 25px;
-					height: 25px;
-					border-radius: 50%;
-			}
-			.btn_play {
-					background:rgba(0,0,0,.3) url(../images/guide/ico_play.svg) no-repeat 50% / 7px;
-			}
-			.btn_pause {
-					background:rgba(0,0,0,.3) url(../images/guide/ico_pause.svg) no-repeat 50% / 5px;
-			}
-			&.play {
-					.btn_play {
-							display: none;
-					}
-					.btn_pause {
-							display: block;
-					}
-			}
-			&.pause {
-					.btn_play {
-							display: block;
-					}
-					.btn_pause {
-							display: none;
-					}
-			}
-	}
+	// }
+	// .swiper-pagination.swiper-pagination-fraction {
+	// 		position: static;
+	// 		height: 25px;
+	// 		transform: translateX(0);
+	// 		background-color: rgba(0, 0, 0, 0.3);
+	// 		.swiper-pagination-current,
+	// 		.swiper-pagination-total {
+	// 				line-height: 25px;
+	// 		}
+	// }
+	// .play_pause_box {
+	// 		margin-right: 4px;
+	// 		[class^=btn_] {
+	// 				display: block;
+	// 				width: 25px;
+	// 				height: 25px;
+	// 				border-radius: 50%;
+	// 		}
+	// 		.btn_play {
+	// 				background:rgba(0,0,0,.3) url(../images/guide/ico_play.svg) no-repeat 50% / 7px;
+	// 		}
+	// 		.btn_pause {
+	// 				background:rgba(0,0,0,.3) url(../images/guide/ico_pause.svg) no-repeat 50% / 5px;
+	// 		}
+	// 		&.play {
+	// 				.btn_play {
+	// 						display: none;
+	// 				}
+	// 				.btn_pause {
+	// 						display: block;
+	// 				}
+	// 		}
+	// 		&.pause {
+	// 				.btn_play {
+	// 						display: block;
+	// 				}
+	// 				.btn_pause {
+	// 						display: none;
+	// 				}
+	// 		}
+	// }
 }
 /*===============     모듈 002 영역(앵커 메뉴)   ==================*/
 /*=======================     모듈 006 영역   =====================*/
