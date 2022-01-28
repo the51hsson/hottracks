@@ -63,7 +63,7 @@ $(function(){
     // }else{
     //   $(this).addClass('active');
     // }
-  });
+ // });
  $(document).on('click', '.dialog_wrap[id^="ClickCksClose"] .dialog_contents .checkbox_cm', function(){
   var closeBtn = $(this).parents('.dialog_wrap').find('button[data-dialog-close]');
   setTimeout(function(){
