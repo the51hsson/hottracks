@@ -8394,11 +8394,6 @@ body.dialog_open {
   background-color: #f7f7f7;
 }
 
-.divide_section {
-  background-color: #f7f7f7;
-  padding-top: 8px;
-}
-
 .divide_underline {
   display: block;
   border: none;
@@ -8406,6 +8401,15 @@ body.dialog_open {
   height: 40px;
   margin: 0;
   background-color: #f0f0f0;
+}
+
+.devide_underline_thin {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 8px;
+  margin: 0;
+  background-color: #f7f7f7;
 }
 
 /* input type="number" 숫자키 안나오게  */
@@ -8508,8 +8512,6 @@ input[type=number] {
 
 /*===============     모듈 002 영역(앵커 메뉴)   ==================*/
 .evt_mdl2_wrap {
-  padding-top: 8px;
-  background-color: #f7f7f7;
   -webkit-transition: -webkit-transform 1000ms ease-out;
   transition: -webkit-transform 1000ms ease-out;
   transition: transform 1000ms ease-out;
@@ -8600,7 +8602,8 @@ input[type=number] {
   background-color: #fff;
 }
 
-.module_wrap h3 {
+.module_wrap h3,
+.module_wrap .tit {
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -8659,25 +8662,23 @@ input[type=number] {
   z-index: 1;
 }
 
-.evt_banner_wrap .banner_dim {
-  display: block;
+.evt_banner_wrap .txt_box {
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: 3;
   top: 0;
   left: 0;
-  right: 0;
-  z-index: 3;
+  color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(84, 84, 84, 0)), to(rgba(0, 0, 0, 0.6)));
   background: linear-gradient(to bottom, rgba(84, 84, 84, 0) 50%, rgba(0, 0, 0, 0.6) 100%);
 }
 
-.evt_banner_wrap .txt_box {
+.evt_banner_wrap .txt_box .text_box_in {
+  display: block;
   position: absolute;
-  z-index: 4;
-  bottom: 40px;
   left: 20px;
-  color: #fff;
+  bottom: 40px;
 }
 
 .evt_banner_wrap .txt_box span {
@@ -8750,6 +8751,7 @@ input[type=number] {
   height: 0;
   padding-top: 100%;
   overflow: hidden;
+  margin-bottom: 12px;
 }
 
 .module6_item .product_pic img {
@@ -8767,8 +8769,9 @@ input[type=number] {
 
 .module6_item .title {
   width: 100%;
-  font-size: 13px;
-  line-height: 19px;
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: px;
   letter-spacing: -0.13px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -9026,6 +9029,11 @@ input[type=number] {
   padding-top: 40px;
 }
 
+.comment_area .cmt_tit {
+  line-height: 25px;
+  font-size: 16px;
+}
+
 .comment_area .comment_txt_box {
   display: block;
   margin-top: 16px;
@@ -9112,6 +9120,10 @@ input[type=number] {
 
 .cmt_imgs_wrap {
   overflow: hidden;
+}
+
+.cmt_imgs_wrap.cmt_inner_top {
+  margin-top: 20px;
 }
 
 .cmt_imgs_list {
@@ -9203,7 +9215,7 @@ input[type=number] {
   padding-left: 28px;
 }
 
-.cmt_list_card_ul li {
+.cmt_list_card_ul > li {
   padding: 20px 4px;
   border-bottom: 1px solid #eaeaea;
 }
@@ -9340,11 +9352,11 @@ input[type=number] {
 }
 
 /*======================     모듈 14 영역   =======================*/
-.cmt_wrap_mdl14 {
+.cmt_wrap {
   padding: 40px 20px;
 }
 
-.cmt_wrap_mdl14 .tit {
+.cmt_wrap .tit {
   margin-bottom: 16px;
   line-height: 25px;
   font-size: 16px;
@@ -9545,8 +9557,11 @@ input[type=number] {
 
 /*===============================  모듈 016 영역  ===========================*/
 .module_wrap.type1 {
-  background-color: #fff;
   padding: 0 20px;
+}
+
+.module_wrap.type1 .mdl_selec_list_wrap {
+  margin-bottom: 20px;
 }
 
 .module_wrap.type1 .tit {
@@ -9554,7 +9569,6 @@ input[type=number] {
   line-height: 28px;
   letter-spacing: -0.18px;
   text-align: left;
-  margin-top: 20px;
 }
 
 .sticky_selec {
@@ -9565,6 +9579,7 @@ input[type=number] {
   left: 0;
   z-index: 7;
   background-color: #fff;
+  margin-bottom: 20px;
 }
 
 .common_select {
@@ -9602,7 +9617,7 @@ ul.prod-wrapper.column_dir {
       align-content: flex-start;
 }
 
-ul.prod-wrapper.column_dir li {
+ul.prod-wrapper.column_dir .prod_item {
   width: calc((100% - 20px)/2);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9619,8 +9634,12 @@ ul.prod-wrapper.column_dir li {
   margin-top: 20px;
 }
 
-ul.prod-wrapper.column_dir li:nth-of-type(1), ul.prod-wrapper.column_dir li:nth-of-type(2) {
+ul.prod-wrapper.column_dir .prod_item:nth-of-type(1), ul.prod-wrapper.column_dir .prod_item:nth-of-type(2) {
   margin-top: 0;
+}
+
+ul.prod-wrapper.column_dir .prod_item:last-of-type {
+  margin-right: 0;
 }
 
 ul.prod-wrapper.column_dir .product_pic {
@@ -9628,8 +9647,8 @@ ul.prod-wrapper.column_dir .product_pic {
   padding-top: 100%;
 }
 
-ul.prod-wrapper.row_dir li {
-  margin-left: 0;
+ul.prod-wrapper.row_dir .prod_item {
+  margin: 0;
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9649,11 +9668,11 @@ ul.prod-wrapper.row_dir li {
   cursor: pointer;
 }
 
-ul.prod-wrapper.row_dir li span {
+ul.prod-wrapper.row_dir .prod_item span {
   display: block;
 }
 
-ul.prod-wrapper.row_dir li:first-of-type {
+ul.prod-wrapper.row_dir .prod_item:first-of-type {
   margin-top: 0;
 }
 
