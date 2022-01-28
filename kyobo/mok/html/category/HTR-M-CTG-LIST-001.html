@@ -332,21 +332,6 @@
         <!-- //wel_belt_banner -->
 		<hr class="divide_hr"/>
 		<!--스티키 메뉴-->
-		<script>
-			//퍼블 확인용(2022-01-28 개발 요청 사항 : 개발에서 진행)
-			$(document).on('click' , '.ctg_floating_menues li', function(){
-				if($(this).hasClass('arrow_li')) { // 애로우 있는 화면 
-				showBrandList();
-				return; 
-				}
-				
-				if($(this).hasClass('active')){
-				  $(this).removeClass('active');
-				}else{
-				  $(this).addClass('active');
-				}
-			});
-		</script>
 		<article class="ctg_floating_line">
 			<div class="menu_nm"  data-role="btn-dialog" data-target="#ClickCksClose">
 				<h3>스터디 플래너 전체</h3>
