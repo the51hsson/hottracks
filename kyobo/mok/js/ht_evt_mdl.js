@@ -1,6 +1,7 @@
 $(function(){
     //카테고리 상품 리스트 찜하기 토글
 	$(document).on('click', '.evt_good_count', function(){
+    console.log(111);
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
 		} else {
@@ -17,7 +18,7 @@ $(function(){
 });
    /*================================= HTR-M-EVT-MDL-002.html ==============================*/
       //앵커 메뉴 버튼 활성화 기능
-      $('.evt_mdl2_menu.anchor').children('li').click(function(){
+      $('.evt_mdl2_menu').children('li').click(function(){
         $(this).addClass('active').siblings('li').removeClass('active');
      }); 
   /*================================= HTR-M-EVT-MDL-004.html ==============================*/
@@ -56,7 +57,6 @@ $(function(){
       });  
   });
 
-
   /*================================= HTR-M-EVT-MDL-007.html ==============================*/  
      //시즌 BEST 상품 배너(type_sm 140*140)
      //상품 개수 2개이하일때 ul class 설정
@@ -71,7 +71,6 @@ $(function(){
 			  observeParents: true,
 			}); 
 		} else {
-			console.log($parent.find('.prod-wrapper').length);
 			$parent.find('.prod-wrapper').removeClass('swiper-wrapper').addClass('nonswipe');
 		}
 	  });

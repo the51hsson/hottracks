@@ -1,5 +1,6 @@
 $(function(){
   /*================================= HTR-M-EVT-LIST-000.html ==============================*/
+  //퀵메뉴 스와이프
   var eventQuickSwiper = new CustomSwiper('.evt_quick_menu_slide .swiper-container', {
     slidesPerView: 'auto',
     spaceBetween: 24,
@@ -32,13 +33,14 @@ $(function(){
       observeParents: true,
   });
 
-  //스크롤 애니메이션(마감임박 말풍선)
+  //스크롤 애니메이션
   if(document.querySelector('.evt_slider_wrap.deadline_section .deadline_bubble')){
     window.addEventListener('scroll', promotionEffect);
+    //마감임박 말풍선
     promotionEffect();
   }
 
-  function promotionEffect(){
+  function promotionEffect(){ //마감임박 말풍선
     if(bubbleHighlight('.deadline_section')){
       $('.deadline_character_area').fadeIn(200);
     }else{
@@ -105,17 +107,7 @@ $(function(){
 		  $('.option_ul').css('display', 'none');
 		  $('.selec_icon').removeClass('open');
 	  };
-  });
-  
-   //카테고리 상품 리스트 찜하기 토글
-	$(document).on('click', '.evt_good_count', function(){
-		if ($(this).hasClass('active')) {
-			$(this).removeClass('active');
-		} else {
-			$(this).addClass('active');
-		}
-	});
-   
+  }); 
    /*================================= HTR-M-EVT-VIEW-000.html ==============================*/  
    //이벤트 종료 블랙스크린 높이 구하기
    if(location.href.match('HTR-M-EVT-VIEW-000-1-01.html')) {
@@ -128,13 +120,13 @@ $(function(){
    $('.evt_mdl2_menu.anchor').children('li').click(function(){
       $(this).addClass('active').siblings('li').removeClass('active');
    });
-  //  //앵커 태그 부드럽게 이동
-  //  document.querySelectorAll('.evt_mdl2_menu a[href^="#"]').forEach(function(anchor){
-  //     anchor.addEventListener('click', function (e) {
-  //         e.preventDefault();
-  //         document.querySelector(this.getAttribute('href')).scrollIntoView({
-  //             behavior: 'smooth'
-  //         });
-  //     });
-  // });
+   //앵커 태그 부드럽게 이동
+   document.querySelectorAll('.evt_mdl2_menu a[href^="#"]').forEach(function(anchor){
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
 });

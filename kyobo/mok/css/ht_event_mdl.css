@@ -8516,13 +8516,16 @@ input[type=number] {
   transition: -webkit-transform 1000ms ease-out;
   transition: transform 1000ms ease-out;
   transition: transform 1000ms ease-out, -webkit-transform 1000ms ease-out;
+  padding-bottom: 30px;
 }
 
-.evt_mdl2_menu.anchor {
+.evt_mdl2_wrap.anchor {
+  padding: 0;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 60px;
   left: 0;
+  z-index: 100;
 }
 
 .evt_mdl2_menu {
@@ -8530,7 +8533,6 @@ input[type=number] {
   right: 0;
   top: 0;
   margin-top: 8px;
-  padding-bottom: 30px;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8583,7 +8585,7 @@ input[type=number] {
   width: 100%;
   height: 2px;
   background-color: #000;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   right: 0;
   z-index: 5;
@@ -8600,6 +8602,10 @@ input[type=number] {
 .module_wrap {
   padding: 40px 20px;
   background-color: #fff;
+}
+
+.module_wrap.list {
+  padding-bottom: 0;
 }
 
 .module_wrap h3,
@@ -8639,6 +8645,10 @@ input[type=number] {
 /*===============     모듈 004 영역(스왑 배너)   ==================*/
 .evt_banner_wrap {
   padding-bottom: 30px;
+}
+
+.evt_banner_wrap.list {
+  padding: 0;
 }
 
 .evt_banner_wrap .swiper-container {
@@ -9580,6 +9590,10 @@ input[type=number] {
   z-index: 7;
   background-color: #fff;
   margin-bottom: 20px;
+}
+
+.sticky_selec.anchor {
+  top: 60px;
 }
 
 .common_select {

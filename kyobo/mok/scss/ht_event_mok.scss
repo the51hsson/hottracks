@@ -607,7 +607,7 @@
  .btn_more_div{
 	margin-top:24px;
 	.more_btn{
-		width:71px;
+		//width:71px;
 		height:24px;
 		margin:0 auto;
 		@include flex(row, nowrap, space-between, center, center);
@@ -625,6 +625,7 @@
 		color:#767676;
 	}
 	.btn_more_icon{
+		margin-left:5px;
 		width:24px;
 		height:24px;
 		background:url(../images/ico/ico_arrow_large.png) no-repeat 0 0;
@@ -719,4 +720,25 @@
 }
 .btn_area{
 	border:none;
+}
+.evt_view_full_tit{
+	text-align: center;
+	background-color: #FAD9CC;
+	padding:40px 20px 0 20px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 29px;
+}
+.evt_view_full{
+	width:100%;
+}
+.evt_anchor_target{
+	width:100%;
+	height:60px;
+	margin-top:-60px;
+	visibility: hidden;
+	&.sticky_target{
+		height:140px;
+		margin-top:-140px;
+	}
 }
