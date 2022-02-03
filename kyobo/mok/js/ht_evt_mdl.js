@@ -158,6 +158,7 @@ $(function(){
       var thisTarget = $(this).children('option:selected').data('target') ;
       if(!thisTarget || $(thisTarget).length == 0) return;
       var Top = $(thisTarget).offset().top -150;
+      console.log(Top);
       $('html, body').animate({
 				scrollTop: Top
 			}, 200);
