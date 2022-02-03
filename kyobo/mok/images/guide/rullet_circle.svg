@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="318" height="318" viewBox="0 0 318 318">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_3636" data-name="사각형 3636" width="285" height="285" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="roulette" transform="translate(-29 -307)">
+    <g id="roulette_base">
+      <g id="타원_321" data-name="타원 321" transform="translate(31 309)" fill="#fff" stroke="#000" stroke-width="2">
+        <circle cx="157" cy="157" r="157" stroke="none"/>
+        <circle cx="157" cy="157" r="158" fill="none"/>
+      </g>
+      <g id="타원_317" data-name="타원 317" transform="translate(45 323)" fill="#fff" stroke="#000" stroke-width="2">
+        <circle cx="143" cy="143" r="143" stroke="none"/>
+        <circle cx="143" cy="143" r="144" fill="none"/>
+      </g>
+      <g id="roulette_base-2" data-name="roulette_base" transform="translate(331 609) rotate(180)">
+        <g id="그룹_2214" data-name="그룹 2214">
+          <path id="패스_36376" data-name="패스 36376" d="M285,142.866H142L213.5,19A142.909,142.909,0,0,1,285,142.866" transform="translate(1 0.134)" fill="#f7f7f7"/>
+          <path id="패스_36377" data-name="패스 36377" d="M285,142a142.946,142.946,0,0,1-71.49,123.862L142,142Z" transform="translate(1 1)" fill="#fff"/>
+          <path id="패스_36378" data-name="패스 36378" d="M214.01,265.862a143.158,143.158,0,0,1-143.03-.01L142.49,142h.01Z" transform="translate(0.5 1)" fill="#f7f7f7"/>
+          <path id="패스_36379" data-name="패스 36379" d="M142.99,142,71.48,265.852A142.921,142.921,0,0,1,0,142Z" transform="translate(0 1)" fill="#fff"/>
+          <path id="패스_36380" data-name="패스 36380" d="M142.99,142.866H0A142.934,142.934,0,0,1,71.49,19Z" transform="translate(0 0.134)" fill="#f7f7f7"/>
+          <path id="패스_36381" data-name="패스 36381" d="M214,19.138,142.5,143h-.01L70.99,19.138a143.155,143.155,0,0,1,143.01,0" transform="translate(0.5 0)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="roulette_base-3" data-name="roulette_base" transform="translate(45 324)">
+        <text id="_15_000" data-name="15,000" transform="translate(106.204 40.609)" font-size="18" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">15,000</tspan></text>
+        <text id="원" transform="translate(162.238 40.609)" font-size="18" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-weight="700"><tspan x="0" y="0">원</tspan></text>
+        <text id="_3만원_이상_결제시" data-name="3만원 이상 결제시" transform="translate(104.724 56.011)" fill="#767676" font-size="10" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="0" y="0">3만원 이상 결제시</tspan></text>
+        <text id="COUPON" transform="translate(122.404 21.23)" fill="#da2128" font-size="10" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">COUPON</tspan></text>
+        <text id="_3_000P" data-name="3,000P" transform="translate(39.931 116.372) rotate(-60)" font-size="18" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">3,000P</tspan></text>
+        <text id="_3만원_이상_결제시-2" data-name="3만원 이상 결제시" transform="matrix(0.5, -0.866, 0.866, 0.5, 48.709, 131.97)" fill="#767676" font-size="10" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="0" y="0">3만원 이상 결제시</tspan></text>
+        <text id="_8_000" data-name="8,000" transform="translate(69.824 220.405) rotate(-120)" font-size="18" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">8,000</tspan></text>
+        <text id="원-2" data-name="원" transform="translate(46.974 180.826) rotate(-120)" font-size="18" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-weight="700"><tspan x="0" y="0">원</tspan></text>
+        <text id="_3만원_이상_결제시-3" data-name="3만원 이상 결제시" transform="translate(86.485 218.459) rotate(-120)" fill="#767676" font-size="10" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="0" y="0">3만원 이상 결제시</tspan></text>
+        <text id="COUPON-2" data-name="COUPON" transform="translate(47.524 220.538) rotate(-120)" fill="#da2128" font-size="10" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">COUPON</tspan></text>
+        <text id="_2_000P" data-name="2,000P" transform="translate(171.157 244.391) rotate(180)" font-size="18" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">2,000P</tspan></text>
+        <text id="_3만원_이상_결제시-4" data-name="3만원 이상 결제시" transform="translate(180.274 228.989) rotate(180)" fill="#767676" font-size="10" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="0" y="0">3만원 이상 결제시</tspan></text>
+        <text id="_5_000" data-name="5,000" transform="translate(246.306 166.484) rotate(120)" font-size="18" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">5,000</tspan></text>
+        <text id="원-3" data-name="원" transform="translate(223.454 206.064) rotate(120)" font-size="18" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-weight="700"><tspan x="0" y="0">원</tspan></text>
+        <text id="_3만원_이상_결제시-5" data-name="3만원 이상 결제시" transform="translate(236.292 153.029) rotate(120)" fill="#767676" font-size="10" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="0" y="0">3만원 이상 결제시</tspan></text>
+        <text id="COUPON-3" data-name="COUPON" transform="translate(257.571 185.73) rotate(120)" fill="#da2128" font-size="10" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">COUPON</tspan></text>
+        <text id="_1_000P" data-name="1,000P" transform="translate(216.41 66.737) rotate(60)" font-size="18" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">1,000P</tspan></text>
+        <text id="_3만원_이상_결제시-6" data-name="3만원 이상 결제시" transform="matrix(0.5, 0.866, -0.866, 0.5, 198.513, 66.539)" fill="#767676" font-size="10" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="0" y="0">3만원 이상 결제시</tspan></text>
+        <g id="그룹_2333" data-name="그룹 2333">
+          <g id="그룹_2332" data-name="그룹 2332" clip-path="url(#clip-path)">
+            <rect id="사각형_3635" data-name="사각형 3635" width="284" height="284" transform="translate(0.5 0.5)" fill="none"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="start" transform="translate(0 -9)">
+      <path id="start-2" data-name="start" d="M126,63A63,63,0,1,1,63,0a63,63,0,0,1,63,63" transform="translate(124.5 412.5)" fill="#da2128" stroke="#fff" stroke-width="16"/>
+      <path id="btn" d="M122,61A61,61,0,1,1,61,0a61,61,0,0,1,61,61" transform="translate(127 414)" fill="#da2128" stroke="#000" stroke-width="2"/>
+      <text id="START-3" data-name="START" transform="translate(188 475)" fill="#fff" font-size="24" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-36.961" y="0">START</tspan></text>
+      <g id="icon" transform="translate(-4.377 -3)">
+        <g id="그룹_2342" data-name="그룹 2342" transform="translate(184.377 503.783) rotate(-90)">
+          <g id="그룹_2343" data-name="그룹 2343" transform="translate(0 0)">
+            <path id="패스_36461" data-name="패스 36461" d="M8.056,16.106a8.053,8.053,0,1,1,8.051-8.056" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+          </g>
+        </g>
+        <path id="패스_36462" data-name="패스 36462" d="M0,0,2.6,2.6,5.205,0" transform="translate(191.703 490.279) rotate(-90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

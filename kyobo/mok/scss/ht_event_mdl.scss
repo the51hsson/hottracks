@@ -839,6 +839,43 @@ input[type=number] {
 		background-size: cover;
 	}
  }
+ /*=======================  모듈 011 영역 (rullet) ==================*/
+ .rullet_wrap{
+	 position:relative;
+	 &>img{
+		 width:100%;
+	 }
+	 .rullet_circle{
+		 position:absolute;
+		 width:88%;
+		 left:50%;
+		 top:50%;
+		 transform: translate3d(-50%, -50%, 0);
+		 z-index: 10;
+		 &>img{
+			 width:100%;
+		 }
+	 }
+	 .rullet_pin{
+		 position: absolute;
+		 width:7.2%;
+		 left:50%;
+		 transform: translateX(-50%);
+		 top:-3%;
+		 z-index: 20;
+		 &>img{
+			 width:100%;
+		 }
+	 }
+	 .fotune_evt_btn{
+		 position:absolute;
+		 width:45%;
+		 height:50px;
+		 left:50%;
+		 transform: translateX(-50%);
+		 bottom:7%;
+	 }
+ }
 /*======================     모듈 14 영역   =======================*/
 .cmt_wrap{
 	padding:40px 20px;
