@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 63 38" style="enable-background:new 0 0 63 38;" xml:space="preserve">
+<style type="text/css">
+.st0{fill:#fff;}
+.st1{fill:#6a7ff0;}
+
+.s1 {animation:fade both infinite 3s;}
+.s2 {animation:fade2 both infinite 3s;}
+.s3 {animation:fade3 both infinite 3s;}
+
+@keyframes fade{
+0% {opacity:0;}
+40% {opacity:1;}
+90% {opacity:1;}
+100% {opacity:0;}
+}
+@keyframes fade2{
+0% {opacity:0;}
+10% {opacity:0;}
+50% {opacity:1;}
+90% {opacity:1;}
+100% {opacity:0;}
+}
+@keyframes fade3{
+0% {opacity:0;}
+20% {opacity:0;}
+60% {opacity:1;}
+90% {opacity:1;}
+100% {opacity:0;}
+}
+</style>
+<g id="bg">
+	<g>
+		<path id="Union_157_00000038407260373093346500000014488712533707896480_" class="st0" d="M33.68,26.5H14 C7.1,26.5,1.5,20.9,1.5,14S7.1,1.5,14,1.5h35c6.9,0,12.5,5.6,12.5,12.5S55.9,26.5,49,26.5h-8.07l-7.26,7.26L33.68,26.5z"/>
+		<path class="st1" d="M32.18,37.38V28H14C6.28,28,0,21.72,0,14S6.28,0,14,0h35c7.72,0,14,6.28,14,14s-6.28,14-14,14h-7.44 L32.18,37.38z M14,3C7.93,3,3,7.93,3,14s4.93,11,11,11h21.18v5.14L40.31,25H49c6.07,0,11-4.93,11-11S55.07,3,49,3H14z"/>
+	</g>
+</g>
+<g id="dot">
+	<circle class="s1" cx="25.8" cy="8.67" r="1.71"/>
+	<circle class="s2" cx="32.35" cy="8.67" r="1.71"/>
+	<circle class="s3" cx="38.91" cy="8.67" r="1.71"/>
+</g>
+</svg>
