@@ -250,11 +250,14 @@ function welCuration(){
     });
     curationImg.controller.control = curationThumb;
     curationThumb.controller.control = curationImg;
+
 }
 
 $(function(){
     if(!$('.wel_curation_cont').length) return;
-    welCuration();
+    if($('.curation_img').find('.swiper-slide').length > 1) {
+        welCuration();
+    }
 });
 
 function curation_btn(val){
@@ -302,7 +305,7 @@ function welCategory(){
     var $target = $('.wel_category_cont  .swiper-container');
     $target.each(function (index, element) {
         var $parent = $(this).parent('.wel_category_cont');
-        $parent.addClass('idxs_' + index);
+        $parent.addClass('pagn_idx_' + index);
         
         var slideOption = {
             observer: true,
@@ -320,7 +323,7 @@ function welCategory(){
             },
             speed:700,
             pagination: {
-                el: ('.idxs_' + index + ' .swiper-pagination'),
+                el: ('.pagn_idx_' + index + ' .swiper-pagination'),
                 type: 'fraction',
                 formatFractionCurrent: function (number) {
                     return KyoboHottracks.mok.setPrependZero(number, 2);
@@ -350,7 +353,7 @@ $(window).on('scroll', feScrollFn);
 $.fn.feScrollGet = function(){
     var offset = $(window).scrollTop() + $(window).height() * 0.9;
   	
-	$animate = $('.mc_cont, .wel_cont, .li_box_ty .li, .li_ty .li, .scroll_box_new,   .li_resp_ty.ty02 .li');
+	$animate = $('.mc_cont, .wel_cont, .li_box_ty .li, .li_ty .li, .tab_swiper,   .li_resp_ty.ty02 .li');
     $animate.each(function(i){
         var $ani = $(this),
             ani = $ani,
@@ -403,26 +406,39 @@ $(function(){
 			scrollEvent();  
 		});
 	}
-
-
-    
 });
 
+// Sticky Tab
+function tabStickySwiper(){
+    var $target = $('.tab_sticky_swiper');
+    var slideOption = {
+        slidesPerView: 'auto',
+        spaceBetween:5,
+        freeMode: true,
+        observer: true,
+        observeParents: true,
+        speed:0
+    };
+    stickySwiperCont = new Swiper($target.get(), slideOption);
+}
+
 $(function(){
-    if(!$('.sticky_tab').length) return;
+    if(!$('.tab_sticky_swiper').length) return;
+    tabStickySwiper();
+
     $(window).on('scroll', function() {
         $('.sticky_cont').each(function (index, element) {
             if($(window).scrollTop() >= $(this).offset().top - 127) {
                 $('.sticky_tab a').removeClass('on');
                 $('.sticky_tab a').eq(index).addClass('on');
-            }
+                stickySwiperCont.slideTo(index);
+            } 
         });
     });
-
-    var $sticky_tab = $('.sticky_tab a').on('click', function(e) {
+    $('.sticky_tab a').on('click', function(e) {
         e.preventDefault();
-        var idx = $(this).index();
-        $('html, body').animate({scrollTop: $('.sticky_cont').eq(idx).offset().top - 126 }, 500 );
+        var idx = $(this).closest('li').index();
+        $('html, body').stop().animate({scrollTop: $('.sticky_cont').eq(idx).offset().top - 126 }, 500 );
     });
 });
 
@@ -430,20 +446,62 @@ $(function(){
 
 
 // Tab
+function tabSwiper(){
+    var $target = $('.tab_swiper');
+    var slideOption = {
+        slidesPerView: 'auto',
+        spaceBetween:5,
+        freeMode: true,
+        observer: true,
+        observeParents: true,
+        speed:300,
+    };
+    tabSwiperCont = new Swiper($target.get(), slideOption);
+}
+
+$(function(){
+    if(!$('.tab_swiper').length) return;
+    tabSwiper();
+});
+
 $(function(){
     $.fn.tabTy = function(){
         $.each(this, function(i,v){
-            $(v).parent().find('a').removeClass('on');
+            $(v).closest('.tab_link').find('a').removeClass('on');
             $(v).addClass('on');
             var s = $(v).attr('href');
             $(s).parent().find('.tab_cont').removeClass('on');
             $(s).addClass('on');
         });
     };
-    $('.scroll_box_new a').click(function(){    
+    $('.tab_link a').click(function(){    
         $(this).tabTy();
         return false;
     });
+});
+
+
+
+// Tab
+function welOnly(){
+    var $target = $('.wel_only_cont');
+    var slideOption = {
+        slidesPerView: 'auto',
+        spaceBetween:0,
+        freeMode: true,
+        observer: true,
+        observeParents: true,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween:0,
+    };
+    welOnlySwiper = new Swiper($target.get(), slideOption);
+}
+
+$(function(){
+    if(!$('.wel_only_cont').length) return;
+    welOnly();
 });
 
 

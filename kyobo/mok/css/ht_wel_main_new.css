@@ -67,6 +67,23 @@ body {
   text-align: center;
 }
 
+.ht_ .mc_tit02 {
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -1px;
+}
+
+.ht_ .mc_tit02 img {
+  vertical-align: top;
+}
+
+.ht_ .mc_tit02.center {
+  text-align: center;
+}
+
 .ht_ .mc_txt {
   margin-top: 5px;
   color: #767676;
@@ -76,6 +93,32 @@ body {
 
 .ht_ .mc_txt.center {
   text-align: center;
+}
+
+.ht_ .mc_txt.ty02 {
+  margin: -5px 0 15px 0;
+}
+
+.ht_ .mc_dep {
+  padding-top: 48px;
+}
+
+.ht_ .mc_dep:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 8px;
+  background: #f7f7f7;
+  content: "";
+}
+
+.ht_ .tab_swiper {
+  overflow: hidden;
+}
+
+.ht_ .tab_swiper .swiper-slide {
+  width: auto;
 }
 
 .ht_ .tab_ty {
@@ -92,7 +135,6 @@ body {
   display: block;
   position: relative;
   height: 45px;
-  margin-left: 5px;
   padding: 0 15px 0 45px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -165,6 +207,89 @@ body {
 
 .ht_ .tab_cont.on {
   display: block;
+}
+
+.ht_ .btn_more_view {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ht_ .btn_more_view span {
+  display: inline-block;
+  position: relative;
+  padding-right: 30px;
+  color: #767676;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.ht_ .btn_more_view span:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: url("../images/wel_main_new/ico_more_view.svg") center/100% no-repeat;
+  content: "";
+}
+
+.ht_ .btn_more_view_box {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ht_ .btn_more_view_box strong {
+  display: inline-block;
+  position: relative;
+  height: 44px;
+  padding: 0 24px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+.ht_ .btn_more_view_box em {
+  display: inline-block;
+  position: relative;
+  margin-left: 5px;
+  padding-right: 15px;
+}
+
+.ht_ .btn_more_view_box em:after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  margin-top: -7px;
+  background: url("../images/curation_main/ico_btn_refresh.svg") center/100% no-repeat;
+  content: "";
+}
+
+.ht_ .btn_more_view_box.ty02 em {
+  padding-right: 6px;
+}
+
+.ht_ .btn_more_view_box.ty02 em:after {
+  width: 7px;
+  height: 7px;
+  margin-top: -9px;
+  background: none;
+  border: solid #000;
+  border-width: 1px 1px 0 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: "";
+  overflow: hidden;
 }
 
 .ht_ .wel_mc {
@@ -1512,32 +1637,6 @@ body {
   margin-top: 15px;
 }
 
-.ht_ .wel_encore .btn_more_view {
-  display: block;
-  width: 100%;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.ht_ .wel_encore .btn_more_view span {
-  display: inline-block;
-  position: relative;
-  padding-right: 30px;
-  color: #767676;
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.ht_ .wel_encore .btn_more_view span:after {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 24px;
-  height: 24px;
-  background: url("../images/wel_main_new/ico_more_view.svg") center/100% no-repeat;
-  content: "";
-}
-
 .ht_ .wel_encore .li_ty {
   margin-top: 0px;
 }
@@ -1918,31 +2017,22 @@ body {
 }
 
 .ht_ .wel_only_cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-top: -5px;
-  overflow-x: auto;
+  /*display:flex;width:100%;margin-top:-5px;overflow-x:auto;*/
+  overflow: hidden;
 }
 
 .ht_ .wel_only_cont > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  /*display:flex;flex-direction:column;flex-wrap:wrap;*/
   height: 500px;
+}
+
+.ht_ .wel_only_cont .swiper-slide {
+  height: auto;
 }
 
 .ht_ .wel_only_cont .li {
   width: 160px;
-  margin: 30px -4px 0 0;
-  padding-right: 20px;
+  padding: 25px 20px 0 0;
 }
 
 .ht_ .wel_only_cont .li a {
@@ -2282,6 +2372,17 @@ body {
   display: block;
   -webkit-animation: fade both 0.4s 0.1s;
           animation: fade both 0.4s 0.1s;
+}
+
+.ht_ .wel_search_cont02 {
+  position: relative;
+  margin: 15px 8px 0 8px;
+  background: #fff;
+  border: 2px solid #000;
+}
+
+.ht_ .wel_search_cont02 .wel_search_list {
+  padding: 0 15px 0 25px;
 }
 
 .ht_ .wel_now {
@@ -2924,22 +3025,22 @@ body {
   margin-top: 40px;
 }
 
+.ht_ .wel_belt02.mt {
+  margin-top: 0;
+}
+
 .ht_ .wel_category_tab {
   position: relative;
   height: 45px;
   z-index: 10;
 }
 
-.ht_ .wel_category_tab .tab_ty {
-  background: #fff;
-}
-
-.ht_ .wel_category_tab.on .tab_ty {
+.ht_ .wel_category_tab.on .tab_sticky_swiper {
+  position: fixed;
+  top: 50px;
   width: calc(100% + 40px);
   max-width: 750px;
   margin: 0 -20px;
-  position: fixed;
-  top: 50px;
   padding: 10px 56px 10px 20px;
   border: solid #d5d5d5;
   border-width: 1px 0;
@@ -2959,6 +3060,19 @@ body {
   position: relative;
   margin-left: 5px;
   width: 36px;
+}
+
+.ht_ .tab_sticky_swiper {
+  background: #fff;
+  overflow: hidden;
+}
+
+.ht_ .tab_sticky_swiper .swiper-slide {
+  width: auto;
+}
+
+.ht_ .tab_sticky_swiper .swiper-slide a {
+  margin: 0;
 }
 
 .ht_ .sticky_cont {
@@ -3442,11 +3556,11 @@ body {
           animation: fade both 0.6s 0.1s;
 }
 
-.ht_ .scroll_box_new {
+.ht_ .tab_swiper {
   opacity: 0;
 }
 
-.ht_ .scroll_box_new.active {
+.ht_ .tab_swiper.active {
   -webkit-animation: fade both 0.6s 0.1s;
           animation: fade both 0.6s 0.1s;
 }

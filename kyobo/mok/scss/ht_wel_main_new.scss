@@ -46,22 +46,45 @@ body {
             text-align:center;
         }
     }
+    .mc_tit02 {
+        margin-bottom:10px;color:#000;font-size:20px;font-weight:700;line-height:32px;letter-spacing:-1px;
+        img {
+            vertical-align:top;
+        }
+        &.center {
+            text-align:center;
+        }
+    }
     .mc_txt {
         margin-top:5px;color:#767676;font-size:14px;line-height:22px;
         &.center {
             text-align:center;
+        }
+        &.ty02 {
+            margin:-5px 0 15px 0;
+        }
+    }
+    .mc_dep {
+        padding-top:48px;
+        &:before {
+            position: absolute;left:0;top:0;width:100%;height:8px;background:#f7f7f7;content:"";
         }
     }
 
 
 
 
-
     // Tab
+    .tab_swiper {
+        overflow:hidden;
+        .swiper-slide {
+            width:auto;
+        }
+    }
     .tab_ty {
         display:flex;width:calc(100% + 40px);margin:0 -20px 20px -20px;padding:0 20px;overflow-x:auto;
         a {
-            display:block;position:relative;height:45px;margin-left:5px;padding:0 15px 0 45px;box-sizing:border-box;background:#fff;border-radius:22px;color:#000;font-size:12px;font-weight:700;line-height:45px;white-space:nowrap;
+            display:block;position:relative;height:45px;padding:0 15px 0 45px;box-sizing:border-box;background:#fff;border-radius:22px;color:#000;font-size:12px;font-weight:700;line-height:45px;white-space:nowrap;
             &:before {
                 position:absolute;left:0;top:0;width:100%;height:100%;border:1px solid #000;border-radius:22px;content:"";
             }
@@ -102,9 +125,41 @@ body {
         }
     }
 
+    // Btn
+    .btn_more_view {
+        display:block;width:100%;margin-top:20px;text-align:center;
+        span {
+            display:inline-block;position:relative;padding-right:30px;color:#767676;font-size:15px;line-height:24px;
+            &:after {
+                position:absolute;right:0;top:0;width:24px;height:24px;background:url('../images/wel_main_new/ico_more_view.svg') center/100% no-repeat;content:"";
+            }
+        }
+    }
+    .btn_more_view_box {
+        display:block;width:100%;margin-top:20px;text-align:center;
+        strong {
+            display:inline-block;position:relative;height:44px;padding:0 24px;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;color:#000;font-size:14px;font-weight:500;   line-height:44px;;
+        }
+        em {
+            display:inline-block;position:relative;margin-left:5px;padding-right:15px;
+            &:after {
+                position:absolute;right:0;top:50%;width:12px;height:12px;margin-top:-7px;background:url("../images/curation_main/ico_btn_refresh.svg") center/100% no-repeat;content:"";
+            }
+        }
+        &.ty02 {
+            em {
+                padding-right:6px;
+                &:after {
+                    width:7px;height:7px;margin-top:-9px;background:none;border:solid #000;border-width:1px 1px 0 0;transform:rotate(45deg);content:"";overflow:hidden;
+                }
+            }
+        }
+    }
+
+
     // main_menu 임시
     .wel_mc {
-        font-size:15px;font-weight:700;;
+        font-size:15px;font-weight:700;
         .menu_list_item {
             padding:0 15px 0 10px !important;
             &:first-child {
@@ -197,7 +252,7 @@ body {
         }
     }
     .hero_banner_box {
-        position:relative;;overflow:hidden;
+        position:relative;overflow:hidden;
         a {
             display:block;position:relative;
         }
@@ -216,7 +271,7 @@ body {
                 display:block;position:relative;opacity:0;
             }
             .s1 {
-                font-size:28px;font-weight:700;line-height:34px;;letter-spacing:-0.8px;;
+                font-size:28px;font-weight:700;line-height:34px;letter-spacing:-0.8px;
             }
             .s2 {
                 margin-top:14px;font-size:13px;font-weight:700;line-height:18px;opacity:0.8;
@@ -254,7 +309,7 @@ body {
     }
     @media only screen and (min-width:750px) {
         .pop_hero_cont {
-            left:50%;margin-left:-375px;;
+            left:50%;margin-left:-375px;
         }
     }
 
@@ -591,7 +646,7 @@ body {
     .wel_live_good_ani {
         display:none;position:absolute;right:5px;top:150px;
         i {
-            display:block;position:absolute;right:12px;bottom:30px;width:18px;height:18px;background:url('../images/wel_main_new/ico_heart.svg') center/100% no-repeat;opacity:0;;
+            display:block;position:absolute;right:12px;bottom:30px;width:18px;height:18px;background:url('../images/wel_main_new/ico_heart.svg') center/100% no-repeat;opacity:0;
             &:nth-child(1) {
                 animation:wel_live_good1 2s 0.2s linear infinite;
             }
@@ -667,15 +722,6 @@ body {
                 position:relative; width:300px;margin-top:15px;
             }
         }
-        .btn_more_view {
-            display:block;width:100%;margin-top:20px;text-align:center;
-            span {
-                display:inline-block;position:relative;padding-right:30px;color:#767676;font-size:15px;line-height:24px;
-                &:after {
-                    position:absolute;right:0;top:0;width:24px;height:24px;background:url('../images/wel_main_new/ico_more_view.svg') center/100% no-repeat;content:"";
-                }
-            }
-        }
         .li_ty {
             margin-top:0px;
         }
@@ -709,8 +755,8 @@ body {
         display:flex;justify-content:space-between;flex-wrap:wrap;margin:-28px -10px 0 -10px;
         .li {
             display:flex;flex-direction:column;position:relative;width:calc(50% - 20px);margin:28px 10px 0 10px;
-        a {
-            display:block;
+            a {
+                display:block;
             }
             .img {
                 position:relative;height:0;margin-bottom:15px;padding-top:100%;background:#f7f7f7;border-radius:8px;overflow:hidden;
@@ -762,7 +808,7 @@ body {
                     }
                 }
                 .txt {
-                    position:relative;height:42px;margin:20px -10px 0 -10px;padding:2px 18px 0 18px;background:#fff;border:solid #000;border-width:1px 1px 2px 1px;border-radius:40px;;color:#000;font-size:16px;font-weight:700;line-height:38px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;transform:translateY(-10px);transition:all 0.4s;   display:inline-block;
+                    position:relative;height:42px;margin:20px -10px 0 -10px;padding:2px 18px 0 18px;background:#fff;border:solid #000;border-width:1px 1px 2px 1px;border-radius:40px;color:#000;font-size:16px;font-weight:700;line-height:38px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;transform:translateY(-10px);transition:all 0.4s;   display:inline-block;
                     &:before {
                         position:absolute;left:40px;top:-10px;width:0;height:0;border-bottom:10px solid #000;border-left:6px solid transparent;border-right:6px solid transparent;content:"";
                     }
@@ -804,12 +850,15 @@ body {
         }
     }
     .wel_only_cont {
-        display:flex;width:100%;margin-top:-5px;overflow-x:auto;
+        /*display:flex;width:100%;margin-top:-5px;overflow-x:auto;*/overflow:hidden;
         > ul {
-            display:flex;flex-direction:column;flex-wrap:wrap;height:500px;
+            /*display:flex;flex-direction:column;flex-wrap:wrap;*/height:500px;
+        }
+        .swiper-slide {
+            height:auto;
         }
         .li {
-            width:160px;margin:30px -4px 0 0;padding-right:20px;
+            width:160px;padding:25px 20px 0 0;
             a {
                 display:block;
             }
@@ -873,7 +922,7 @@ body {
         }
     }
     .wel_search_cont {
-        position:relative;min-height:60px;;margin:15px 8px 0 8px;background:#fff;border:4px solid #000;
+        position:relative;min-height:60px;margin:15px 8px 0 8px;background:#fff;border:4px solid #000;
     }
     .wel_search_list {
         position:relative;padding:0 50px 0 30px;
@@ -906,7 +955,7 @@ body {
                     width:0;height:0;border-top:10px solid #2125da;border-left:6px solid transparent;border-right:6px solid transparent;
                 }
                 &.rk_se:after {
-                    right:11px;width:6px;height:2px;background:#292929;;transform:translateY(0);
+                    right:11px;width:6px;height:2px;background:#292929;transform:translateY(0);
                 }
             }
         }
@@ -940,7 +989,7 @@ body {
     
     .wel_search_cont {
         &.on {
-            margin-bottom:65px;;
+            margin-bottom:65px;
             .btn_wel_search {
                 &:after {
                     top:4px;transform:rotate(225deg);
@@ -951,7 +1000,12 @@ body {
             }   
         }
     }
-
+    .wel_search_cont02 {
+        position:relative;margin:15px 8px 0 8px;background:#fff;border:2px solid #000;
+        .wel_search_list {
+           padding:0 15px 0 25px;
+        }
+    }
 
 
 
@@ -962,13 +1016,13 @@ body {
         .wel_now_tit {
             display:inline-block;position:relative;padding-bottom:40px;text-align:center;
             .s1 {
-                position:absolute;left:5px;top:-25px;width:270px;;
+                position:absolute;left:5px;top:-25px;width:270px;
             }
             .s2 {
-                position:absolute;left:-7px;top:-35px;width:37px;;
+                position:absolute;left:-7px;top:-35px;width:37px;
             }
             .s3 {
-                position:absolute;right:-15px;top:-64px;width:64px;;
+                position:absolute;right:-15px;top:-64px;width:64px;
             }
         }
         .mc_tit {
@@ -1227,6 +1281,9 @@ body {
     }
     .wel_belt02 {
         padding:0;margin-top:40px;
+        &.mt {
+            margin-top:0;
+        }
     }
 
 
@@ -1235,13 +1292,9 @@ body {
     // 카테고리
     .wel_category_tab {
         position:relative;height:45px;z-index:10;
-        .tab_ty {
-        background:#fff;
-        }
         &.on{
-            .tab_ty {
-                width:calc(100% + 40px);max-width:750px;margin:0 -20px;
-                position:fixed;top:50px;padding:10px 56px 10px 20px;border:solid #d5d5d5;border-width:1px 0;box-sizing:border-box;
+            .tab_sticky_swiper {
+                position:fixed;top:50px;width:calc(100% + 40px);max-width:750px;margin:0 -20px;padding:10px 56px 10px 20px;border:solid #d5d5d5;border-width:1px 0;box-sizing:border-box;
             }
         }
     }
@@ -1255,12 +1308,24 @@ body {
         }
     }
 
+    .tab_sticky_swiper {
+        background:#fff;overflow:hidden;
+        .swiper-slide {
+            width:auto;
+            a {
+                margin: 0;
+            }
+        } 
+    }
     .sticky_cont{
         margin-top:40px;
         &:first-child {
             margin-top:0; 
         }
     }
+
+
+
     .wel_category_rank {
         display:flex;width:calc(100% + 20px);margin:15px -20px 0 0;overflow-x:auto;counter-reset:item;
         .li {
@@ -1405,7 +1470,7 @@ body {
                 display:flex;position:relative;height:74px;padding:0 10% 0 94px;box-sizing:border-box;flex-direction:column;justify-content:center;
             }
             .img {
-                position:absolute;left:0;top:0;width:74px;;height:74px;background:#f7f7f7;border-radius:8px;overflow:hidden;
+                position:absolute;left:0;top:0;width:74px;height:74px;background:#f7f7f7;border-radius:8px;overflow:hidden;
                 img {
                     position:absolute;left:50%;top:50%;width:100%;height:auto;transform:translate(-50%,-50%);
                 }
@@ -1424,7 +1489,7 @@ body {
         }
     }
     .btn_wel_category {
-        position:relative;margin:0 20px -2px 20px;border-top:1px dashed #d5d5d5;;font-size:13px;line-height:19px;text-align:right;
+        position:relative;margin:0 20px -2px 20px;border-top:1px dashed #d5d5d5;font-size:13px;line-height:19px;text-align:right;
         .btn_category_more {
             display:inline-block;position:relative;margin-top:11px;color:#595959;padding-right:10px;
             &:after {
@@ -1475,7 +1540,7 @@ body {
             animation:fade both 0.6s 0.1s;
         }
     }
-    .scroll_box_new {
+    .tab_swiper {
         opacity:0;
         &.active {
             animation:fade both 0.6s 0.1s;
@@ -1521,3 +1586,6 @@ body {
 
 
 
+
+
+  
