@@ -1062,6 +1062,9 @@ input[type=number] {
 	color:#767676;
 	appearance: none;
 	background:url(../images/guide/ico_selec_arrow.svg) no-repeat right 14px top 50% /9px;
+	option{
+        height:50px;
+    }
 }
 
 //상품 리스트 영역

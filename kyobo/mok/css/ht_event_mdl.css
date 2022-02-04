@@ -9660,6 +9660,10 @@ input[type=number] {
   background: url(../images/guide/ico_selec_arrow.svg) no-repeat right 14px top 50%/9px;
 }
 
+.common_select option {
+  height: 50px;
+}
+
 ul.prod-wrapper.column_dir {
   display: -webkit-box;
   display: -ms-flexbox;

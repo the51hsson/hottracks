@@ -8390,6 +8390,30 @@ body.dialog_open {
   color: #767676;
 }
 
+@font-face {
+  font-family: 'Gmarket Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Gmarket Sans Bold"), local("GmarketSans-Bold"), url("../font/GmarketSansBold.woff2") format("woff2"), url("../font/GmarketSansBold.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Gmarket Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Gmarket Sans Medium"), local("GmarketSans-Medium"), url("../font/GmarketSansMedium.woff2") format("woff2"), url("../font/GmarketSansMedium.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Gmarket Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Gmarket Sans Light"), local("GmarketSans-Light"), url("../font/GmarketSansLight.woff2") format("woff2"), url("../font/GmarketSansLight.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 .devide_underline_thin {
   display: block;
   border: none;
@@ -8436,48 +8460,57 @@ body.dialog_open {
   background-color: #000;
 }
 
-.tod_alarm_banner {
+.tod_full_banner {
   position: relative;
   text-align: center;
-  padding-bottom: 40px;
-  padding-top: 8px;
   background-color: #FFEB01;
+  height: 150px;
+  overflow: hidden;
 }
 
-.tod_alarm_banner .img_wrap {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
+.tod_full_banner.none_timer {
+  padding: 0;
+  background-color: #86CCFF;
 }
 
-.tod_alarm_banner .img_wrap > img {
-  width: 100%;
+.tod_full_banner img {
+  height: 100%;
 }
 
-.tod_alarm_banner .img_wrap .timer {
+.tod_full_banner img.btm {
+  width: 95px;
+  left: 50%;
+  -webkit-transform: translateX(85%);
+          transform: translateX(85%);
+  position: absolute;
+  bottom: -50px;
+  z-index: 5;
+}
+
+.tod_full_banner .timer {
   position: absolute;
   font-weight: 900;
   color: #fff;
-  line-height: 25px;
-  font-size: 4.5vw;
+  line-height: 21px;
+  font-size: 16px;
   left: 50%;
-  bottom: 12%;
+  bottom: 40px;
   -webkit-transform: translateX(-55%);
           transform: translateX(-55%);
   z-index: 10;
 }
 
-.tod_alarm_banner .btn_share {
+.tod_full_banner .btn_share {
   width: 20px;
   height: 20px;
   position: absolute;
   z-index: 10;
-  top: 30px;
-  right: 3%;
+  top: 20px;
+  right: 20px;
   background: url(../images/guide/ico_tod_share.svg) no-repeat center center/20px;
 }
 
-.tod_alarm_banner .holdeal_mail_direct {
+.tod_full_banner .holdeal_mail_direct {
   position: absolute;
   width: 100%;
   left: 0;
@@ -8498,47 +8531,29 @@ body.dialog_open {
           align-items: center;
 }
 
-.tod_alarm_banner .holdeal_mail_direct span {
+.tod_full_banner .holdeal_mail_direct span {
   display: block;
 }
 
-.tod_alarm_banner .holdeal_mail_direct .icon {
+.tod_full_banner .holdeal_mail_direct .icon {
   width: 18px;
   height: 18px;
   background: url(../images/guide/ico_tod_bell.svg) no-repeat center center/18px;
 }
 
-.tod_alarm_banner .holdeal_mail_direct .txt {
+.tod_full_banner .holdeal_mail_direct .txt {
   font-weight: 500;
   font-size: 13px;
   line-height: 19px;
   margin: 0 3px;
 }
 
-.tod_alarm_banner .holdeal_mail_direct .arrow {
+.tod_full_banner .holdeal_mail_direct .arrow {
   background: url(../images/guide/ico_selec_arrow.svg) no-repeat center center/9px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   width: 9px;
   height: 18px;
-}
-
-.tod_full_banner {
-  position: relative;
-}
-
-.tod_full_banner > img {
-  width: 100%;
-}
-
-.tod_full_banner .btn_share {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  z-index: 10;
-  top: 20px;
-  right: 20px;
-  background: url(../images/guide/ico_tod_share.svg) no-repeat center center/20px;
 }
 
 .hotdeal_product_pic {
@@ -8724,6 +8739,10 @@ body.dialog_open {
   background: url(../images/guide/ico_selec_arrow.svg) no-repeat right 14px top 50%/9px;
 }
 
+.common_select option {
+  height: 50px;
+}
+
 ul.prod-wrapper.column_dir {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8901,14 +8920,15 @@ ul.prod-wrapper.row_dir .title {
   position: relative;
   color: #fff;
   background-color: #000;
-  padding: 11px 24px;
+  padding: 11px 24px 8px 24px;
   border-radius: 50px;
 }
 
 .timer_bubble_area .timer_bubble span {
   display: block;
   text-align: center;
-  line-height: 17px;
+  line-height: 16px;
+  font-family: 'Gmarket Sans';
 }
 
 .timer_bubble_area .timer_bubble:before {
@@ -8926,10 +8946,11 @@ ul.prod-wrapper.row_dir .title {
 }
 
 .timer_bubble_area .timer {
-  font-weight: 500;
+  font-weight: 900;
 }
 
 .timer_bubble_area .txt {
+  display: block;
   font-size: 13px;
 }
 
