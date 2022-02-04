@@ -16,8 +16,9 @@ $(function(){
     //스티키 샐렉트 메뉴 선택 시 해당 위치로 이동
     $(document).on('change', '.sticky_selec .common_select', function(){
         var thisTarget = $(this).children('option:selected').data('target') ;
+        var fixedTopHeight = 150; 
         if(!thisTarget || $(thisTarget).length == 0) return;
-        var Top = $(thisTarget).offset().top - 150;
+        var Top = $(thisTarget).offset().top - fixedTopHeight;
         $('html, body').animate({
                   scrollTop: Top
               }, 200);
