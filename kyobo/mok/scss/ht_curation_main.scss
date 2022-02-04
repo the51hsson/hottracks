@@ -1,29 +1,3 @@
-body {
-    background:#f7f7f7;
-}
-
-// Font : Gmarket Sans
-@font-face {
-	font-family:'Gmarket Sans';font-style:normal;font-weight:700;
-	src:local('Gmarket Sans Bold'), local('GmarketSans-Bold'),
-	url('../font/GmarketSansBold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('../font/GmarketSansBold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-	font-family:'Gmarket Sans';font-style:normal;font-weight:500;
-	src:local('Gmarket Sans Medium'), local('GmarketSans-Medium'),
-	url('../font/GmarketSansMedium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('../font/GmarketSansMedium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-	font-family:'Gmarket Sans';font-style:normal;font-weight:300;
-	src:local('Gmarket Sans Light'), local('GmarketSans-Light'),
-	url('../font/GmarketSansLight.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('../font/GmarketSansLight.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-
-
 
 
 .ht_ {
@@ -81,7 +55,7 @@ body {
 
 
 
-    // hero_box : 상단 탭
+    // hero_box :상단 탭
     .hero_box {
         padding:15px 20px 20px 20px;text-align:center;
     }
@@ -140,7 +114,7 @@ body {
 
 
 
-    // 이럴 땐? 이런상품 : cur_prod
+    // 이럴 땐? 이런상품 :cur_prod
     .cur_prod {
         .mc_tit {
             margin-bottom:20px;font-size:30px;font-weight:400;line-height:36px;
@@ -194,12 +168,38 @@ body {
                     padding-right:4px;font-size:12px;
                 } 
                 em {
-                    display:inline-block;color:#767676;font-size:10px;text-decoration:line-through;
+                    display:inline-block;color:#767676;font-size:10px;font-weight:400;text-decoration:line-through;
                 }
             }
         }
-        &.on {
-            animation:fade both 0.6s;
+
+        &.ty02 {
+            .swiper-slide {
+                width:38%;margin:0 16px 0 0;
+                &:first-child {
+                    margin-left:20px;
+                }
+                &:last-child {
+                    margin-right:20px;
+                }
+            }
+            .txt {
+                .s1 {
+                    font-size:13px;line-height:19px;
+                }
+                .s2 {
+                    line-height:18px;
+                    strong {
+                        padding-right:4px;color:#da2128;font-size:14px;
+                    }
+                    span {
+                        padding-right:4px;font-size:14px;
+                    } 
+                    em {
+                        display:inline-block;color:#767676;font-size:10px;text-decoration:line-through;
+                    }
+                }
+            }
         }
     }
 
@@ -208,9 +208,9 @@ body {
 
 
 
-    // What’s in your bag : cur_new
+    // What’s in your bag :cur_new
     .cur_new {
-        padding-top:75px;background:#f7f7f7;
+        padding-top:75px;background:#f7f7f7;overflow:hidden;
         .mc_tit {
             margin-bottom:20px;font-size:30px;font-weight:400;line-height:36px;
         }
@@ -218,7 +218,7 @@ body {
     .cur_new_msg {
         position:absolute;right:0;top:30px;
         &:before {
-            position:absolute;right:-2px;top:0;width:79px;height:76px;background:url("../images/curation_main/ico_cur_new.svg") center/100% no-repeat;content:"";
+            position:absolute;right:0;top:0;width:79px;height:76px;background:url("../images/curation_main/ico_cur_new.svg") center/100% no-repeat;content:"";
         }
         p {
             position:relative;right:70px;top:22px;padding:9px 15px 7px 15px;background:#d4ff1a;border:solid #000;border-width:2px 2px 3px 2px;border-radius:30px;color:#000;font-size:14px;font-weight:500;line-height:18px;
@@ -243,7 +243,7 @@ body {
         }
     }
     .movie_frame {
-        position: relative;height:0;padding-top:57%;
+        position:relative;height:0;padding-top:57%;
         iframe {
             position:absolute;left:0;top:0;width:100%;height:100%;border:0;
         }
@@ -384,35 +384,35 @@ body {
                     padding-right:4px;font-size:16px;
                 } 
                 em {
-                    display:inline-block;color:#767676;font-size:12px;text-decoration:line-through;
+                    display:inline-block;color:#767676;font-size:12px;font-weight:400;text-decoration:line-through;
                 }
             }
-        }
-        .good_count {
-            position:absolute;right:10px;bottom:10px;height:24px;padding:0 12px;background:rgba(0,0,0,0.5);border-radius:12px;color:#fff;font-size:10px;line-height:25px;
-            span {
-                display:inline-block;position:relative;padding-left:16px;
-                &:before {
-                    position:absolute;left:0;top:5px;width:12px;height:14px;background:url("../images/guide/ico_prod_like_icon.svg") center/100% no-repeat;content:"";
-                }
-            }
-            &.active {
-                span:before {
-                    background-image:url("../images/guide/ico_prod_like_icon_active.svg")
-                }
-            }
-        }
-        .sold_out_msg {
-            position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.6);color:#fff;text-align:center;
-        }
-        .sold_out_msg_txt {
-            position:absolute;left:0;top:50%;width:100%;transform:translateY(-50%);
-        }
-        .sold_out_msg span {
-            display:inline-block;height:22px;margin:11px auto 0 auto;padding:0 6px;background-color:#fff;border-radius:4px;color:#000;font-size:12px;line-height:22px;
         }
     }
 
+    .prod_like_count {
+        position:absolute;right:10px;bottom:10px;height:24px;padding:0 12px;background:rgba(0,0,0,0.5);border-radius:12px;color:#fff;font-size:10px;line-height:25px;
+        span {
+            display:inline-block;position:relative;padding-left:16px;
+            &:before {
+                position:absolute;left:0;top:5px;width:12px;height:14px;background:url("../images/guide/ico_prod_like_icon.svg") center/100% no-repeat;content:"";
+            }
+        }
+        &.active {
+            span:before {
+                background-image:url("../images/guide/ico_prod_like_icon_active.svg")
+            }
+        }
+    }
+    .prod_soldout_msg {
+        position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.6);color:#fff;text-align:center;
+    }
+    .prod_soldout_msg_txt {
+        position:absolute;left:0;top:50%;width:100%;transform:translateY(-50%);
+    }
+    .prod_soldout_msg span {
+        display:inline-block;height:22px;margin:11px auto 0 auto;padding:0 6px;background-color:#fff;border-radius:4px;color:#000;font-size:12px;line-height:22px;
+    }
 
 
 
@@ -423,9 +423,12 @@ body {
     .tag_li {
         font-size:0;
         a {
-            display:inline-block;position:relative;height:45px;margin:12px 5px 0 0;padding:0 18px 0 42px;background:#fff;border:1px solid #ccc;border-radius:30px;box-sizing:border-box;color:#000;font-size:12px;line-height:43px;
-            img {
-                position: absolute;left:7px;top:7px;width:30px;height:30px;border-radius:50%;
+            display:inline-block;position:relative;height:45px;margin:12px 5px 0 0;padding:0 18px 0 28px;background:#fff;border:1px solid #ccc;border-radius:30px;box-sizing:border-box;color:#000;font-size:12px;line-height:43px;
+            /*img {
+                position:absolute;left:7px;top:7px;width:30px;height:30px;border-radius:50%;
+            }*/
+            &:before {
+                position:absolute;left:18px;top:0;content:"#";
             }
         }
     }
@@ -460,7 +463,7 @@ body {
 
     //최근에 검색하셨나요? cur_recent
     .cur_recent {
-        background:#f7f7f7;
+        background: #f5ede2 url("../images/wel_main_new/bg_wel_curation.jpg") center top/32px repeat;
         .mc_tit02 {
             img {
                 height:38px;
@@ -500,8 +503,138 @@ body {
                 margin-top:4px;
             } 
         }
-    
     }
+
+
+
+
+
+
+    // 이 브랜드 어떠세요?
+    .cur_brand_recommend {
+        .mc_tit02 {
+            img {
+                height:28px;margin-left:4px;
+            }
+        }
+        .cur_brand_cont {
+            padding:0;background:#fff;
+            .cur_brand_tit {
+                background:#f4f4f4;border-radius:8px;
+                .s1 {
+                    a {
+                        display:flex;width:100%;height:60px;padding:5px 10px 5px 64px;align-items:center;justify-content:left;
+                    }
+                    .img {
+                        position:absolute;left:10px;top:10px;width:40px;height:40px;border-radius:50%;overflow:hidden;;
+                        img {
+                            position:absolute;left:50%;top:50%;width:100%;height:auto;transform:translate(-50%,-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cur_brand_cont {
+        position:relative;margin:20px -20px 25px -20px;padding:30px 0;background:#f7f7f7;
+        .cur_brand_tit {
+            position:relative;margin:0 20px -5px 20px;
+            .s1 {
+                position:relative;color:#000;font-size:14px;font-weight:500;line-height:20px;
+                a {
+                    display:block;position:relative;
+                }
+                span {
+                    display:inline-block;position:relative;max-width:calc(100% - 20px);padding-right:12px;/*white-space:nowrap;text-overflow:ellipsis;overflow:hidden;*/
+                    &:after {
+                        position:absolute;right:2px;top:50%;width:7px;height:7px;margin-top:-5px;border:solid #767676;border-width:1px 1px 0 0;transform:rotate(45deg);content:"";overflow:hidden;
+                    }
+                }
+            }
+            .s2 {
+                color:#767676;font-size:12px;line-height:18px;
+            }
+        }
+    }
+
+
+
+    // 찜한 브랜드
+    .cur_brand_select {
+        .mc_tit02 {
+            img {
+                height:28px;margin-left:4px;
+            }
+        }
+    }
+
+
+
+
+
+    // 최근 본 상품을 추천
+    .cur_prod_view {
+        overflow:hidden; 
+    }
+    .cur_prod_view_list {
+        position:relative;margin:0 -20px -20px -20px;  padding:10px 20px 60px 20px; z-index:2;
+        .swiper-slide {
+            width:64px;height:64px;margin-right:12px;
+            &:last-child {
+                margin-right:0;
+            }
+            .img {
+                position:relative;height:0;margin-bottom:15px;padding-top:100%;background:#f7f7f7;border-radius:4px;overflow:hidden;
+                img {
+                    position:absolute;left:50%;top:50%;width:100%;height:auto;transform:translate(-50%,-50%);opacity:0.5;transition:opacity 0.4s;
+                }
+                &:after {
+                    position:absolute;left:0;top:0;width:100%;height:100%;border:3px solid #000;border-radius:4px;box-sizing:border-box;content:"";opacity:0;transition:opacity 0.4s;
+                }
+            }
+            .txt {
+                display:none;position:absolute;left:0;top:72px;width:calc(100vw - 40px);max-width:700px;
+                span {
+                    display:inline-block;padding:8px 15px;
+                    background:#000;color:#fff;font-size:12px;font-weight:500;line-height:18px;border-radius:18px;
+                    &:after {
+                        position:absolute;left:27px;top:-6px;width:0;height:0;border-bottom:7px solid #000;border-left:6px solid transparent;border-right:6px solid transparent;content:"";
+                    }                    
+                }
+            }
+
+            &:nth-last-child(-n + 3) {
+                .txt {
+                    left:inherit;right:0;text-align:right;
+                    span {
+                        &:after {
+                            left:inherit;right:27px;
+                        }  
+                    }     
+                }
+            }
+        }
+        .on {
+            .img {
+                img {
+                    opacity:1;
+                }
+                &:after {
+                    opacity:1;
+                }
+            }
+            .txt {
+                display:block;
+            }
+        }
+    }
+    .cur_prod_view_cont {
+        position:relative;margin:0 -20px;
+    }
+
+
+
 
 
 
@@ -518,26 +651,26 @@ body {
 
 
     .images {
-        width:100%;position: relative;
+        width:100%;position:relative;
     }
     
     .image {
-        display: inline-block;
-        position: absolute;
+        display:inline-block;
+        position:absolute;
         width:50%;
-        padding: 10px;
-        box-sizing: border-box;
+        padding:10px;
+        box-sizing:border-box;
     }
     
     .image > img {
-    width: 100%;
+    width:100%;
     }
     
     .image > span {
-    position: absolute;
-    color: white;
-    bottom: 25px;
-    right: 25px;
+    position:absolute;
+    color:white;
+    bottom:25px;
+    right:25px;
     }
       
       
