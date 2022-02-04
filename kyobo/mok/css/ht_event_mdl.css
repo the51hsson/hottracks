@@ -7905,7 +7905,7 @@ body.dialog_open {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 20px !important;
+  padding-right: 0px !important;
 }
 
 .evt_slider.nonswipe .evt_item {
@@ -7940,10 +7940,6 @@ body.dialog_open {
 
 .prod-wrapper .prod_item:first-of-type {
   margin: 0;
-}
-
-.prod-wrapper .prod_item:last-of-type {
-  margin-right: 20px;
 }
 
 .prod-wrapper .prod_item span {
@@ -8066,7 +8062,7 @@ body.dialog_open {
 }
 
 .nonswipe {
-  padding-right: 20px !important;
+  padding-right: 0px !important;
 }
 
 .nonswipe .evt_item {
@@ -8309,7 +8305,7 @@ body.dialog_open {
 }
 
 .nonswipe {
-  padding-right: 20px;
+  padding-right: 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8837,6 +8833,10 @@ input[type=number] {
 .module_wrap.type2 {
   padding: 40px 0 40px 20px;
   overflow: hidden;
+}
+
+.module_wrap.type2 .swiper {
+  padding-right: 20px;
 }
 
 .module_wrap.type2 h3 {

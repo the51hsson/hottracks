@@ -5415,7 +5415,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 20px !important;
+  padding-right: 0px !important;
 }
 
 .evt_slider.nonswipe .evt_item {
@@ -5450,10 +5450,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .prod-wrapper .prod_item:first-of-type {
   margin: 0;
-}
-
-.prod-wrapper .prod_item:last-of-type {
-  margin-right: 20px;
 }
 
 .prod-wrapper .prod_item span {
@@ -5576,7 +5572,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 }
 
 .nonswipe {
-  padding-right: 20px !important;
+  padding-right: 0px !important;
 }
 
 .nonswipe .evt_item {
@@ -5819,7 +5815,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 }
 
 .nonswipe {
-  padding-right: 20px;
+  padding-right: 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

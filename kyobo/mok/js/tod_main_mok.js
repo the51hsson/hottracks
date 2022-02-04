@@ -5,7 +5,6 @@ $(function(){
     });
   //상품 리스트 찜하기 토글
 	$(document).on('click', '.evt_good_count', function(){
-        console.log(111);
             if ($(this).hasClass('active')) {
                 $(this).removeClass('active');
             } else {

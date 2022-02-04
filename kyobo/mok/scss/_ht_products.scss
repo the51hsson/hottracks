@@ -170,7 +170,7 @@
      display: flex;
 	 flex-flow:row nowrap;
 	 justify-content: space-between;
-	 padding-right: 20px !important;
+	 padding-right: 0px !important;
 	 .evt_item{
 		  width:calc(( 100% - 20px ) / 2) ;
           margin:0;
@@ -202,9 +202,9 @@
 		&:first-of-type{
 			margin:0;
 		}
-		&:last-of-type{
-			margin-right:20px;
-		}
+		// &:last-of-type{
+		// 	margin-right:20px;
+		// }
 		span{
 			display: block;
 		}
@@ -304,7 +304,7 @@
 }
 //스왑 기능 없을때(1:1)
 .nonswipe{
-	padding-right: 20px !important;
+	padding-right: 0px !important;
 	.evt_item{
 		width:100%;
 		margin-top:22px;
@@ -514,7 +514,7 @@
 }
 //상품 개수 2개 이하로 스왑 기능 없을때
 .nonswipe{
-	padding-right:20px;
+	padding-right:0 !important;
 	display:flex;
 	justify-content: space-between;
 	flex-flow:row nowrap;
