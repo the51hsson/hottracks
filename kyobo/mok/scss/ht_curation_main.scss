@@ -45,15 +45,6 @@
 
 
 
-    .box {
-        margin:20px 0;padding:60px 20px;border-top:8px solid #f7f7f7;
-        .tit {
-            color:#000;font-size:20px;font-weight:700;line-height:32px;
-        }
-
-    }
-
-
 
     // hero_box :상단 탭
     .hero_box {
@@ -107,14 +98,52 @@
 
 
 
-    //
+    //라이프스타일
     .curation_list {
-        padding:55px 20px;background:#f5ede2 url('../images/wel_main_new/bg_wel_curation.jpg') center top/32px repeat;overflow:hidden;
+        padding:35px 20px;background:#f5ede2 url('../images/wel_main_new/bg_wel_curation.jpg') center top/32px repeat;overflow:hidden;
         .mc_tit {
             margin-bottom:20px;text-align:center;
             img {
                 width:252px;
             }
+        }
+        .cur_eyebrow {
+            position:relative;margin-bottom:5px;color:#000;font-size:14px;font-weight:700;line-height:24px;text-align:center;letter-spacing:4px;
+            span {
+                display:inline-block;position:relative;padding:0 7px;color:#000;
+                &:before {
+                    position:absolute;left:-2px;top:8px;width:calc(100% + 4px);height:14px;background:#2ff37d;content:"";z-index: 0;
+                }
+            }
+            em {
+                position: relative;
+            }
+        }
+    }
+    .curation_list_cont {
+        margin:0 -10px;
+        > ul {
+            position: relative;
+        }
+        .li {
+            display:inline-block;position:absolute;width:50%;padding:10px;box-sizing:border-box;
+            > img {
+                width:100%;border:1px solid #000;
+            }
+        }
+        .curation_marker {
+            position: absolute;left:10px;top:10px;width:calc(100% - 20px);height:calc(100% - 20px);
+            > li {
+                position:absolute;
+                display:block;width:12px;height:12px;background:none;box-sizing:border-box;border-radius:50%;z-index:2;
+                &:before {
+                    position:absolute;left:50%;top:50%;width:12px;height:12px;background:#000;border-radius:50%;content:"";transform:translate(-50%,-50%);
+                }
+                &:after {
+                    position:absolute;left:50%;top:50%;width:10px;height:10px;background:#EBFF00;border-radius:50%;content:"";transform:translate(-50%,-50%);
+                }
+            }
+
         }
     }
 
@@ -338,7 +367,7 @@
             span {
                 display:inline-block;position:relative;color:#000;font-size:16px;font-weight:700;line-height:24px;
                 &:before {
-                    position:absolute;left:-2px;top:12px;width:calc(100% + 4px);height:14px;background:#a5e2ff;content:"";z-index: 0;
+                    position:absolute;left:-2px;top:12px;width:calc(100% + 4px);height:14px;background:#2ff37d;content:"";z-index: 0;
                 }
             }
             em {
@@ -670,66 +699,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .images {
-        width:100%;position:relative;
-    }
-    
-    .image {
-        display:inline-block;
-        position:absolute;
-        width:50%;
-        padding:10px;
-        box-sizing:border-box;
-    }
-    
-    .image > img {
-    width:100%;
-    }
-    
-    .image > span {
-    position:absolute;
-    color:white;
-    bottom:25px;
-    right:25px;
-    }
-      
-      
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
