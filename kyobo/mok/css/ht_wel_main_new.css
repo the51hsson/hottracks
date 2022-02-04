@@ -201,6 +201,18 @@ body {
   border-color: #000;
 }
 
+.ht_ .tab_ty.ty03 a {
+  padding: 0 20px;
+}
+
+.ht_ .tab_ty.ty03 a:before {
+  border-color: #ddd;
+}
+
+.ht_ .tab_ty.ty03 a.on:before {
+  border-color: #000;
+}
+
 .ht_ .tab_cont {
   display: none;
 }

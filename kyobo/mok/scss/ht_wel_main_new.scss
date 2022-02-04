@@ -117,6 +117,19 @@ body {
                 }
             }
         }
+        &.ty03 {
+            a {
+                padding:0 20px;
+                &:before {
+                    border-color:#ddd;
+                }
+                &.on {
+                    &:before {
+                        border-color:#000;
+                    }
+                }
+            }
+        }
     }
     .tab_cont {
         display:none;
