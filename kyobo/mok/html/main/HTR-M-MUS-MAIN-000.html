@@ -255,9 +255,56 @@
 									<button class="btn_pause"><span class="hidden">pause</span></button>
 								</div>
 								<div class="swiper-pagination"></div>
-								<a href="#a" class="btn_all"><span class="hidden">전체보기</span></a>
+								<button href="#none" class="btn_all" onclick="btnHeroListOp();"><span class="hidden">전체보기</span></buton>
 							</div>
 						</div>
+						<!-- pop_hero : 히어로 배너 리스트 -->
+						<div class="pop_hero">
+							<!-- pop_hero_cont -->
+							<div class="pop_hero_cont">
+								<!-- pop_hero_inner -->
+								<div class="pop_hero_inner">
+									<!-- hero_banner_box -->
+									<ul class="hero_banner_box">
+										<li class="here_banner_item">
+											<!-- <div class="here_banner_box"> -->
+												<p class="album_tit">
+													RED VELVET(레드벨벳) <br>
+													QUENENCOM [미니 6집]
+												</p>
+												<p class="album_info">긍정 에너지 타이틀 곡 'Queendom'</p>
+												<img src="../../images/guide/@here_music_01.png" alt="레드벨벳 엘범" class="bd_img">
+											<!-- </div> -->
+										</li>
+										<li class="here_banner_item">
+											<!-- <div class="here_banner_box"> -->
+												<p class="album_tit">
+													RED VELVET(레드벨벳) <br>
+													QUENENCOM [미니 6집]
+												</p>
+												<p class="album_info">긍정 에너지 타이틀 곡 'Queendom'</p>
+												<img src="../../images/guide/@here_music_01.png" alt="레드벨벳 엘범" class="bd_img">
+											<!-- </div> -->
+										</li>
+										<li class="here_banner_item">
+											<!-- <div class="here_banner_box"> -->
+												<p class="album_tit">
+													RED VELVET(레드벨벳) <br>
+													QUENENCOM [미니 6집]
+												</p>
+												<p class="album_info">긍정 에너지 타이틀 곡 'Queendom'</p>
+												<img src="../../images/guide/@here_music_01.png" alt="레드벨벳 엘범" class="bd_img">
+											<!-- </div> -->
+										</li>
+									</ul>
+									<!-- //hero_banner_box -->
+								</div>
+								<!-- //pop_hero_inner -->
+								<button class="btn_pop_hero_cl" onclick="btnHeroListCl()"><span><em class="hidden">히어로 배너 리스트 전체보기 닫기</em></span></button>
+							</div>
+							<!-- //pop_hero_cont -->
+						</div>
+						<!-- //pop_hero : 히어로 배너 리스트 -->
 					</div>
 					<!--// 히어로배너 -->
 
@@ -436,10 +483,6 @@
 									</div>
 								</div>
 							</div>
-							<div class="btn_wrap">
-								<button type="button" class="btn_sm btn_line_primary"><span class="text">자세히 보기</span></button>
-								<button type="button" class="btn_sm btn_primary"><span class="text">장바구니 담기</span></button>
-							</div>
 						</div>
 						<div class="chart_box">
 							<div class="rank_txt">
@@ -466,10 +509,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="btn_wrap">
-								<button type="button" class="btn_sm btn_line_primary"><span class="text">자세히 보기</span></button>
-								<button type="button" class="btn_sm btn_primary"><span class="text">장바구니 담기</span></button>
 							</div>
 						</div>
 						<div class="chart_box">
@@ -498,10 +537,6 @@
 									</div>
 								</div>
 							</div>
-							<div class="btn_wrap">
-								<button type="button" class="btn_sm btn_line_primary"><span class="text">자세히 보기</span></button>
-								<button type="button" class="btn_sm btn_primary"><span class="text">장바구니 담기</span></button>
-							</div>
 						</div>
 						<div class="chart_box">
 							<div class="rank_txt">
@@ -529,10 +564,6 @@
 									</div>
 								</div>
 							</div>
-							<div class="btn_wrap">
-								<button type="button" class="btn_sm btn_line_primary"><span class="text">자세히 보기</span></button>
-								<button type="button" class="btn_sm btn_primary"><span class="text">장바구니 담기</span></button>
-							</div>
 						</div>
 						<div class="chart_box">
 							<div class="rank_txt">
@@ -559,10 +590,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="btn_wrap">
-								<button type="button" class="btn_sm btn_line_primary"><span class="text">자세히 보기</span></button>
-								<button type="button" class="btn_sm btn_primary"><span class="text">장바구니 담기</span></button>
 							</div>
 						</div>
 					</div>
@@ -702,18 +729,10 @@
 								<div class="swiper-slide">
 									<img src="../../images/guide/@fan_sign.png" alt="">
 									<div class="txt_box">
-										<p class="artist_name">VERIVERI</p>
 										<p class="album_name">
 											6th MINI ALBUM SERIES’O’ <br>[ROUND 2 : HOLE] 발매기념 사인회
 										</p>
-										<div class="badge_wrap">
-											<div class="badge_list_box">
-												<span class="badge badge_sm badge_default">#영상통화사인회</span>
-												<span class="badge badge_sm badge_default">#온라인몰</span>
-											</div>
-										</div>
 										<p class="period_txt">응모기간 10월 22일 ~ 10월 28일</p>
-										<button type="button" class="btn_sm btn_primary"><span class="text">응모하기</span></button>
 									</div>
 								</div>
 								<div class="swiper-slide">
@@ -723,31 +742,16 @@
 										<p class="album_name">
 											6th MINI ALBUM SERIES’O’ <br>[ROUND 2 : HOLE] 발매기념 사인회
 										</p>
-										<div class="badge_wrap">
-											<div class="badge_list_box">
-												<span class="badge badge_sm badge_default">#영상통화사인회</span>
-												<span class="badge badge_sm badge_default">#온라인몰</span>
-											</div>
-										</div>
 										<p class="period_txt">응모기간 10월 22일 ~ 10월 28일</p>
-										<button type="button" class="btn_sm btn_primary"><span class="text">응모하기</span></button>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<img src="../../images/guide/@fan_sign.png" alt="">
 									<div class="txt_box">
-										<p class="artist_name">VERIVERI</p>
 										<p class="album_name">
 											6th MINI ALBUM SERIES’O’ <br>[ROUND 2 : HOLE] 발매기념 사인회
 										</p>
-										<div class="badge_wrap">
-											<div class="badge_list_box">
-												<span class="badge badge_sm badge_default">#영상통화사인회</span>
-												<span class="badge badge_sm badge_default">#온라인몰</span>
-											</div>
-										</div>
 										<p class="period_txt">응모기간 10월 22일 ~ 10월 28일</p>
-										<button type="button" class="btn_sm btn_primary"><span class="text">응모하기</span></button>
 									</div>
 								</div>
 							</div>
@@ -825,10 +829,6 @@
 									<span class="badge badge_sm badge_default">수입</span>
 									<span class="badge badge_sm badge_default">예약</span>
 								</div>
-							</div>
-							<div class="btn_wrap">
-								<button type="button" class="btn_sm btn_line_primary"><span class="text">자세히 보기</span></button>
-								<button type="button" class="btn_sm btn_primary"><span class="text">장바구니 담기</span></button>
 							</div>
 						</div>
 					</div>

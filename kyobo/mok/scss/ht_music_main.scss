@@ -1,6 +1,7 @@
 @import "_variables.scss"; 
 @import "_functions.scss";
 @import "_mixins.scss";
+@import "_ht_products.scss"; //상품 공통
 .ht_ {
     .reserved_product_wrap {
         .scroll_type .swiper-pagination {
@@ -33,7 +34,7 @@
             }
             .main_tab_menu {
                 padding:0 20px;
-                margin:10px 0 20px;
+                margin:12px 0 20px;
                 a {
                     font-size: 22px;
                     font-weight: 700;
@@ -601,9 +602,9 @@
                                 color:#d53020;
                             }
                         }
-                        .badge_wrap {
-                            margin-bottom: 24px;
-                        }
+                        // .badge_wrap {
+                        //     margin-bottom: 24px;
+                        // }
                     }
                     .btn_wrap {
                         width: 100%;
@@ -671,19 +672,12 @@
                 .btn_sm {
                     min-width: 165px;
                 }
-                .artist_name {
-                    color:#595959;
-                    font-size: 13px;
-                }
                 .album_name {
                     font-weight: 500;
                     color:#000;
                     font-size: 14px;
                     line-height: 22px;
                     margin-bottom: 10px;
-                }
-                .badge_wrap {
-                    margin-bottom: 20px;
                 }
                 .period_txt {
                     color:#595959;
@@ -1038,3 +1032,265 @@
     }
 }
 
+    // 히어로 팝업 
+    .pop_hero {
+        display:none;position:fixed;left:0;bottom:0;width:100%;height:100%;z-index:100;
+        &:before {
+            position:absolute;left:0;top:0;width:100%;height:120%;background:rgba(0,0,0,0.5);content:"";opacity:0;transition:opacity 0.6s;
+        }
+        &.on {
+            display:block;
+            &:before {
+                opacity:1;
+            }
+            .pop_hero_cont {
+                animation:pop_hero_op both 0.5s 0.2s; 
+            }
+        }
+        &.off {
+            display:block;
+            &:before {
+                opacity:0;
+            }
+            .pop_hero_cont {
+                animation:pop_hero_cl both 0.5s 0s; 
+            }
+        }
+    }
+    .pop_hero_cont {
+        position:absolute;left:0;bottom:0;width:100%;max-width:750px;height:calc(100% - 128px);background:#fff;box-sizing:border-box;  
+    }
+    @media only screen and (min-width:750px) {
+        .pop_hero_cont {
+            left:50%;margin-left:-375px;
+        }
+    }
+
+    .pop_hero_inner {
+        position:absolute;left:0;bottom:0;width:100%;height:calc(100% - 20px);padding-bottom:78px;box-sizing:border-box;overflow-y:auto;
+        .hero_banner_box {
+            > li {
+                margin:0 20px 12px 20px;border-radius:4px;overflow:hidden;
+            }
+        }
+        .txt {
+            span {
+                display:block;position:relative;opacity:1;
+            }
+        }
+        .here_banner_item {
+            display: flex;
+            flex-direction: column;
+            height: 292px;
+            padding:20px;
+            background-color: #fa607b;
+            border-radius: 4px;
+            color:#fff;
+            img {
+                width: 130px;
+                margin-top: auto;
+            }
+        }
+    }
+    .btn_pop_hero_cl {
+        position:absolute;left:50%;top:-51px;width:36px;height:36px;margin-left:-18px;background:rgba(0,0,0,0.8);border-radius:50%;  transform:rotate(45deg);
+        span {
+            position:absolute;left:50%;top:50%;width:19px;height:19px;transform:translate(-50%,-50%);
+            &:before {
+                position:absolute;left:9px;top:0;width:1px;height:100%;background:#fff;content:"";z-index:1;
+            }
+            &:after {
+                position:absolute;left:0;top:9px;width:100%;height:1px;background:#fff;content:"";z-index:1;
+            }
+        }
+    }
+
+    @keyframes pop_hero_op {
+    0% {transform:translateY(100px);opacity:0;}
+    100% {transform:translateY(0);opacity:1;}
+    }
+    @keyframes pop_hero_cl {
+    0% {transform:translateY(0);opacity:1;}
+    100% {transform:translateY(100px);opacity:0;}
+    }
+
+
+/*==============================  HTR-M-MUS-MAIN-000-POP-001–1.html ===========================*/
+.contert_list_wrap {
+    border:1px solid red;
+    padding: 0 20px;
+    margin-top:12px;
+    &>.tit {
+        line-height:32px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .concert_list {
+        border:1px solid blue;
+        .concert_item {
+            border-bottom:1px solid 
+        }
+    }
+}
+/*========================= HTR-M-MUS-MAIN-000-POP-100-1–1.html ========================*/
+.prod_list_wrap{
+    padding: 0 20px;
+    margin-top:24px;
+    .tit{
+        line-height: 21px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+}
+//닫기 타이틀
+.title_header {
+    position:sticky;
+    top:0;
+    left:0;
+    z-index: 120;
+    background-color: #fff;;
+    .pop_like_header {
+        padding:17px 0;
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
+        .title {
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: -0.01em;
+            font-weight: 500;
+            display: block;
+            overflow: hidden;
+            max-width: 100%;
+            height: auto;
+            max-height: none;
+            -webkit-box-orient: inherit;
+            -webkit-line-clamp: inherit;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .btn_tit_close {
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        width: 24px;
+        height: 24px;
+        padding: 3px;
+        .ico_dialog_close {
+            position: relative;
+            z-index: 3;
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-image: url('../images/guide/btn_dialog_close.svg');
+            background-size: 24px 24px;
+        }
+    }
+}
+
+//상품 리스트 영역
+.prod-wrapper.column_dir {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+    padding-top:12px;
+    .prod_item {
+        width: calc((100% - 20px)/2);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        cursor:pointer;
+        margin:0;
+        margin-top:20px;
+        &:nth-of-type(1),
+        &:nth-of-type(2){
+            margin-top:0;
+        }
+        &:last-of-type{
+            margin-right:0;
+        }
+    }
+    .product_pic {
+        width:100%;
+        padding-top: 100%;
+    }
+    .title {
+        margin-bottom:8px;
+    }
+}
+.prod-wrapper.row_dir {
+	.prod_item { 
+		margin:0;
+		margin-top:20px;
+        display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: center;
+		cursor:pointer;
+		span{
+			display: block;
+		}
+		&:first-of-type{
+			margin-top:0;
+		}
+	}
+	.product_pic {
+		position:relative;
+		width:158px;
+		height:0;
+		padding-top:158px;
+		overflow: hidden;
+		flex-shrink: 0;
+		margin-bottom:0;
+		img{
+			width:100%;
+			position:absolute;
+			top:0;
+			left:0;
+		}
+	} 			
+	.product_info {
+		flex-grow:1;
+		padding-left:19px;
+	}
+	.title {
+		margin-bottom:8px;
+	}
+}
+ //더보기 버튼 영역
+ .btn_more_div {
+	margin-top:24px;
+	.more_btn {
+		height:24px;
+		margin:0 auto;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
+		appearance: none;
+		cursor:pointer;
+	}
+	.more_btn.hidden {
+		display:none;
+	}
+	.txt {
+		line-height:24px;
+		font-size: 15px;
+		font-weight:500;
+		letter-spacing: -0.15px;
+		color:#767676;
+	}
+	.btn_more_icon {
+		margin-left:6px;
+		width:24px;
+		height:24px;
+		background:url(../images/ico/ico_arrow_large.png) no-repeat 0 0;
+		background-size: cover;
+	}
+ }

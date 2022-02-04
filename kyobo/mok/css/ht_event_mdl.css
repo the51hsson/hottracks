@@ -9678,7 +9678,7 @@ input[type=number] {
   height: 50px;
 }
 
-ul.prod-wrapper.column_dir {
+.prod-wrapper.column_dir {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9696,7 +9696,7 @@ ul.prod-wrapper.column_dir {
       align-content: flex-start;
 }
 
-ul.prod-wrapper.column_dir .prod_item {
+.prod-wrapper.column_dir .prod_item {
   width: calc((100% - 20px)/2);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9713,20 +9713,24 @@ ul.prod-wrapper.column_dir .prod_item {
   margin-top: 20px;
 }
 
-ul.prod-wrapper.column_dir .prod_item:nth-of-type(1), ul.prod-wrapper.column_dir .prod_item:nth-of-type(2) {
+.prod-wrapper.column_dir .prod_item:nth-of-type(1), .prod-wrapper.column_dir .prod_item:nth-of-type(2) {
   margin-top: 0;
 }
 
-ul.prod-wrapper.column_dir .prod_item:last-of-type {
+.prod-wrapper.column_dir .prod_item:last-of-type {
   margin-right: 0;
 }
 
-ul.prod-wrapper.column_dir .product_pic {
+.prod-wrapper.column_dir .product_pic {
   width: 100%;
   padding-top: 100%;
 }
 
-ul.prod-wrapper.row_dir .prod_item {
+.prod-wrapper.column_dir .title {
+  margin-bottom: 8px;
+}
+
+.prod-wrapper.row_dir .prod_item {
   margin: 0;
   margin-top: 20px;
   display: -webkit-box;
@@ -9747,15 +9751,15 @@ ul.prod-wrapper.row_dir .prod_item {
   cursor: pointer;
 }
 
-ul.prod-wrapper.row_dir .prod_item span {
+.prod-wrapper.row_dir .prod_item span {
   display: block;
 }
 
-ul.prod-wrapper.row_dir .prod_item:first-of-type {
+.prod-wrapper.row_dir .prod_item:first-of-type {
   margin-top: 0;
 }
 
-ul.prod-wrapper.row_dir .product_pic {
+.prod-wrapper.row_dir .product_pic {
   position: relative;
   width: 158px;
   height: 0;
@@ -9766,21 +9770,21 @@ ul.prod-wrapper.row_dir .product_pic {
   margin-bottom: 0;
 }
 
-ul.prod-wrapper.row_dir .product_pic img {
+.prod-wrapper.row_dir .product_pic img {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-ul.prod-wrapper.row_dir .product_info {
+.prod-wrapper.row_dir .product_info {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding-left: 19px;
 }
 
-ul.prod-wrapper.row_dir .title {
+.prod-wrapper.row_dir .title {
   margin-bottom: 8px;
 }
 

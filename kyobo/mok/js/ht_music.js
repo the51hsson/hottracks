@@ -63,7 +63,7 @@ $(function(){
             $(this).removeClass('pause').addClass('play');
         }
     });
-
+    
 
     // 예약 상품 스와이프
     var reservedSwiper = new CustomSwiper('.reserved_product_wrap .swiper-container', {
@@ -289,3 +289,16 @@ $(function(){
     });
 
 });
+//히어로 배너 팝업
+function btnHeroListOp(){
+    $('body').css('overflow','hidden');
+    $('.pop_hero').addClass('on');
+}
+
+function btnHeroListCl(){
+    $('body').css('overflow','');
+    $('.pop_hero').addClass('off');
+    setTimeout(function(){
+        $('.pop_hero').removeClass('off').removeClass('on');
+    }, 600);
+}
