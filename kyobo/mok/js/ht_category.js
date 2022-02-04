@@ -22,7 +22,7 @@ $(function(){
       $parent.addClass('idx_' + index);
 
       if($parent.find('.swiper-slide').length > 1) {
-          var beltBannerSwiper = new CustomSwiper(this, {
+          var replaceSwiper = new CustomSwiper(this, {
             slidesPerView: 'auto',
             spaceBetween: 16,
             freeMode: true,

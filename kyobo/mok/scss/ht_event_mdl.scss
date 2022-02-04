@@ -444,7 +444,6 @@ input[type=number] {
 .evt_module8_card {
     padding:40px 20px;
     background-color: #fff;
-    cursor: pointer;
     .title {
 		font-size: 16px;
 		line-height: 26px;
@@ -853,7 +852,7 @@ input[type=number] {
 		 width:88%;
 		 left:50%;
 		 top:50%;
-		 transform: translate3d(-50%, -50%, 0);
+		 transform: translate3d(-50%, -50%, 0);;
 		 z-index: 10;
 		 &>img{
 			 width:100%;
@@ -879,8 +878,18 @@ input[type=number] {
 		 bottom:7%;
 	 }
  }
+/*======================     모듈 13 영역   =======================*/
+ .evt_step_wrap {
+	 display: flex;
+	 flex-flow: row wrap;
+	 justify-content: flex-start;
+	 margin-top:20px;
+	 .step_item img {
+		width:100%;
+	 }
+ }
 /*======================     모듈 14 영역   =======================*/
-.cmt_wrap{
+.cmt_wrap {
 	padding:40px 20px;
 	.tit{
 		margin-bottom:16px;
@@ -1148,6 +1157,9 @@ ul.prod-wrapper.row_dir{
 .hot_deal_area{
 	padding: 40px 0 40px 20px;
 	background-color: #fff;
+	.swiper{
+		padding-right:20px;
+	}
 	.title_area{
 		display: flex;
 		flex-flow: row nowrap;

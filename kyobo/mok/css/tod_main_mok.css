@@ -7874,10 +7874,6 @@ body.dialog_open {
   z-index: 3;
 }
 
-.evt_slider .evt_item:last-of-type {
-  margin-right: 20px;
-}
-
 .evt_slider .title {
   margin-top: 12px;
   font-weight: 500;

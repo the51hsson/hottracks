@@ -5384,10 +5384,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   z-index: 3;
 }
 
-.evt_slider .evt_item:last-of-type {
-  margin-right: 20px;
-}
-
 .evt_slider .title {
   margin-top: 12px;
   font-weight: 500;

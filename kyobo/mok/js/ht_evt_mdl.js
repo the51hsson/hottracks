@@ -7,7 +7,7 @@ $(function(){
 			$(this).addClass('active');
 		}
 	});
-    // 오늘만 특가 스와이프(1개)
+  // 오늘만 특가 스와이프(1개)
    var horDealSwiper = new CustomSwiper('.mySwiper.hotdeal', {
     slidesPerView: 'auto',
     spaceBetween: 12,
@@ -16,10 +16,11 @@ $(function(){
     observeParents: true,
 });
    /*================================= HTR-M-EVT-MDL-002.html ==============================*/
+   //2022-02-04 개발에서 진행 예정
       //앵커 메뉴 버튼 활성화 기능
-      $('.evt_mdl2_menu').children('li').click(function(){
-        $(this).addClass('active').siblings('li').removeClass('active');
-     }); 
+    //   $('.evt_mdl2_menu').children('li').click(function(){
+    //     $(this).addClass('active').siblings('li').removeClass('active');
+    //  }); 
   /*================================= HTR-M-EVT-MDL-004.html ==============================*/
   //  배너 스와이프 
   $('.evt_banner_wrap .swiper-container').each(function (i, ele){
@@ -62,6 +63,7 @@ $(function(){
 	$('.mySwiper_sm').each(function () {
 		var $parent = $(this).parent('.module_wrap');
 		if($parent.find('.swiper-slide').length > 2) {
+
 			var  mdlEventSwiper_sm = new CustomSwiper(this, {
 			  slidesPerView: 'auto',
 			  spaceBetween: 16,
@@ -152,6 +154,16 @@ $(function(){
       //      }
       //    }
        //} 
+    /*=================================== HTR-M-EVT-MDL-013.html =================================*/ 
+    stepEvtCalc();  //하단 스텝 이미지 너비값 계산
+
+    function stepEvtCalc(){
+      var colLength = $('.evt_step_wrap').data('column');
+      var wRate = 100 / colLength;
+      
+      wRate = Math.floor(wRate * 100) / 100;
+      $('.evt_step_wrap').find('.step_item').css('width', wRate +'%');
+    }
     /*================================= HTR-M-EVT-VIEW-015, 016.html ==============================*/  
     //스티키 샐렉트 메뉴 선택 시 해당 위치로 이동
     $(document).on('change', '.sticky_selec .common_select', function(){

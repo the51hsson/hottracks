@@ -11,19 +11,33 @@ $(function(){
 
   // 마감임박, 반응최고 스와이프
   //상품 개수 2개이하일때 ul class="evt_slider nonswipe"로 설정
- $('.swiper-wrapper.evt_slider').each(function(i, ele){
-    if($(ele).children('li').length <= 2){
-       $(ele).removeClass('swiper-wrapper').addClass('nonswipe');
+ $('.swiper.mySwiper.evt').each(function(i, ele){
+    if($(ele).find('li').length > 2){
+      var eventSwiper = new CustomSwiper(this, {
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        freeMode: true,
+        observer: true,
+        observeParents: true,
+    });
     }else{
-      var eventSwiper1 = new CustomSwiper('#swapAble1', {
-          slidesPerView: 'auto',
-          spaceBetween: 16,
-          freeMode: true,
-          observer: true,
-          observeParents: true,
-      });
+      $(ele).find('.swiper-wrapper').removeClass('swiper-wrapper').addClass('nonswipe');
+  
     }
  });
+
+//    //품절 대체 상품 스왑배너
+//    $('.swiper.mySwiper').each(function (i, ele) {
+//     if($parent.find('.swiper-slide').length > 1) {
+//         var replaceSwiper = new CustomSwiper(this, {
+//           slidesPerView: 'auto',
+//           spaceBetween: 16,
+//           freeMode: true,
+//           observer: true,
+//           observeParents: true,
+//         }); 
+//     }
+// });
    // 오늘만 특가 스와이프(1개)
    var horDealSwiper = new CustomSwiper('.mySwiper.hotdeal', {
       slidesPerView: 'auto',

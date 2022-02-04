@@ -146,10 +146,6 @@
 	
 			}
 		}
-
-		&:last-of-type{
-			margin-right: 20px;
-		}
 	}
 	.title{
 		margin-top: 12px;
@@ -202,9 +198,6 @@
 		&:first-of-type{
 			margin:0;
 		}
-		// &:last-of-type{
-		// 	margin-right:20px;
-		// }
 		span{
 			display: block;
 		}
