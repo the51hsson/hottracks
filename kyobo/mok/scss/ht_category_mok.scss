@@ -94,6 +94,7 @@
     white-space: nowrap;
     margin-top:16px;
 	font-size:12px;
+	font-weight: 900;;
     line-height: 19px;
     letter-spacing: -0.13px;
 	color:#595959;
@@ -173,6 +174,8 @@
 			border-radius: 12px;
 			overflow: hidden;
 			box-sizing: border-box;
+			height:auto;
+			min-height: 100% !important;
 			.product_pic{
 				padding-top: 217px;
 			}

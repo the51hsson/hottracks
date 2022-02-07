@@ -7852,6 +7852,7 @@ body.dialog_open {
   height: 0;
   padding-top: 60%;
   margin-bottom: 12px;
+  overflow: hidden;
 }
 
 .evt_slider .evt_item .img_wrap img {

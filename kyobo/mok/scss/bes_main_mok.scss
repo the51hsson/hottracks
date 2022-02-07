@@ -1,0 +1,413 @@
+@charset "UTF-8";
+@import "_variables.scss"; 
+@import "_mixins.scss";
+@import "_ht_reset.scss"; // eric meyer reset 2.0, _ht : 핫트랙스 접두어
+@import "_ht_components.scss"; // button, form, tab, swiper, fixed content, folding, list, table, box등 ...
+@import "_ht_header.scss"; // todo : layout으로 추가 할 것
+@import "_ht_products.scss";
+
+// Font : Gmarket Sans
+@font-face {
+	font-family:'Gmarket Sans';font-style:normal;font-weight:700;
+	src:local('Gmarket Sans Bold'), local('GmarketSans-Bold'),
+	url('../font/GmarketSansBold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../font/GmarketSansBold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+	font-family:'Gmarket Sans';font-style:normal;font-weight:500;
+	src:local('Gmarket Sans Medium'), local('GmarketSans-Medium'),
+	url('../font/GmarketSansMedium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../font/GmarketSansMedium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+	font-family:'Gmarket Sans';font-style:normal;font-weight:300;
+	src:local('Gmarket Sans Light'), local('GmarketSans-Light'),
+	url('../font/GmarketSansLight.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../font/GmarketSansLight.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+.ctg_list_wrap{
+    .tit{
+        padding:0 20px;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.18px;
+        text-align: left;
+        margin-bottom:12px;
+    }
+}
+//상단 메뉴 1depth 
+.ctg_topMenu {
+    width:100%;
+    overflow: hidden;
+    position:relative;
+    background-color: #F7F7F7;
+    .inner_wrap{
+      width:100%;
+      overflow-x: auto;
+      display:flex;
+      flex-flow:row nowrap;
+      padding:20px;
+
+    }
+    a{
+      flex-shrink: 0;
+      display: block;
+      position:relative;
+      letter-spacing: -0.15px;
+      font-weight:500;
+      color:rgba(0,0,0,0.2);
+      white-space: nowrap;
+      margin-left:16px;
+      font-size: 16px;
+  
+      &:first-of-type{
+        margin-left:0px;
+      }
+      &.active{
+        color:#000;
+      }
+     
+    }
+}
+//소팅 메뉴
+.menu_sort{
+    padding:0 20px;
+    margin-top:16px;
+    .btn_sort{
+        line-height:20px;
+        font-size: 13px;
+        margin-right:16px;
+        position:relative;
+        color:#595959;
+        &.active{
+            color:#000;
+            font-weight: 500;
+        }
+        &:first-of-type:before{
+            display: none;;
+        }
+        &:before{
+            content:"|";
+            position:absolute;
+            color:#595959;
+            top:0;
+            left:-10px;
+        }
+
+    }
+
+}
+//업데이트 타이머
+.update_txt{
+    padding:0 20px;
+    margin-top: 15px;
+    font-size: 12px;
+    color:#767676;
+    em{
+        line-height:17px;
+    }
+    .timer{
+        margin: 0 3px;
+    }
+    .btn_info{
+        width:17px;
+        height:17px;
+        background:url(../images/guide/btn_tooltip_mok.png) no-repeat center center/ 15px;
+    }
+}
+.sticky_selec{
+	padding:20px;
+	position: sticky;
+	top:60px;
+	left:0;
+	z-index: 7;
+	background-color: #fff;
+	&.anchor{
+		top:60px;
+	}
+}
+.common_select{
+	width:100%;
+	height:50px;
+	padding:14px 25px 14px 15px;
+	border:1px solid #d5d5d5;
+	position:relative;
+	line-height: 22px;
+	letter-spacing: -0.14px;
+	border-radius: 6px;
+	outline: 0;
+	color:#767676;
+	appearance: none;
+	background:url(../images/guide/ico_selec_arrow.svg) no-repeat right 14px top 50% /9px;
+    option{
+        height:50px;
+    } 
+}
+//MD 추천 스와이퍼
+.ctg_top_swiper{
+    padding-bottom:30px;
+    margin-bottom:30px;
+    background:url(../images/guide/md_top_banner_bg.svg) repeat center center;
+    .banner_title{
+        border:1px solid red;
+        .tit{
+            height:32px;
+            background:url(../images/guide/tod_banner_txt_img.png) no-repeat center center;
+
+        }
+        .sub{
+            text-align: center;
+            line-height:22px;
+            margin-top:7px;
+        }
+    }
+    .prod-wrapper{
+        padding-top:16px;
+    }
+    .swiper-slide{
+        width:217px;
+        border:2px solid #000;
+        border-radius: 12px;
+        overflow: hidden;
+        box-sizing: border-box;
+        height:auto;
+        min-height: 100% !important;
+        .product_pic{
+            padding-top: 217px;
+        }
+        img{
+            width:100%;
+            height:auto;
+        }
+        .product_info{
+            padding:0 20px 20px 20px;
+        }
+    }
+    .swiper-pagination.out_bottom {
+        height:auto;
+        padding:0;
+        background-color: #fff;
+        bottom:0px;
+        line-height:16px;
+        .swiper-pagination-current{
+            color:#000;
+            line-height:16px;
+        }
+        .swiper-pagination-total{
+            line-height:16px;
+        }
+    }
+}
+//상품 리스트 영역
+ul.prod-wrapper.column_dir{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+    padding:0;
+ .prod_item{
+	width: calc((100% - 20px)/2);
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	cursor:pointer;
+	margin-top:20px;
+	&:nth-of-type(1),
+	&:nth-of-type(2){
+		margin-top:0;
+	}
+	&:last-of-type{
+		margin-right:0;
+	}
+ }
+ .product_pic{
+	 width:100%;
+	 padding-top: 100%;
+ }
+}
+ul.prod-wrapper.row_dir{
+    margin-top:20px;
+    padding:20px 20px 0 20px;
+	.prod_item{ 
+        position:relative;
+		margin:0;
+		margin-top:40px;
+        display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: center;
+		cursor:pointer;
+		span{
+			display: block;
+		}
+		&:first-of-type{
+			margin-top:0;
+		}
+	}
+    .lankiing_bubble_area{
+        position:absolute;
+        right:-20px;
+        top:-25px;
+        padding-right:40px;
+        &:before{
+            content:"";
+            position:absolute;
+            width:55px;
+            height:70px;
+            right:-15px;
+            top:-14px;
+    
+            background:url(../images/guide/lanking_bubble_thumb.svg) no-repeat center center / 55px;
+        }
+        .lankiing_bubble{
+            position:relative;
+            width:130px;
+            height:56px;
+            padding:10px 20px;
+            line-height:20px;
+            font-weight: 700;
+            background:url(../images/guide/lanking_bubble.svg) no-repeat center center / 120px;
+            &:before{
+                content:"";
+                position:absolute;
+                width:12px;
+                height:15px;
+                background: url(../images/guide/lanking_bubble_icon.svg) no-repeat center center/ 10px;
+                transform: rotate(180deg);
+                bottom:8px;
+                right:38px;
+            }
+        }
+
+    }
+    .langking{
+        position: absolute;
+        display: block;
+        width:50px;
+        height:50px;
+        text-align: center;
+        line-height: 50px;
+        top:-20px;
+        left:-10px;
+        z-index: 30;
+        color:#000;
+        font-weight: 700;
+        padding-right:13px;
+        background:url(../images/guide/lank_noraml.svg) no-repeat center center / 48px;
+        &:before{
+            width:10px;
+            height:15px;
+            top:18px;
+            right:12px;
+        }
+        &.down:before{
+            content:"";
+            position:absolute;
+            background:url(../images/guide/lank_noraml_up.svg) no-repeat center center / 9px;
+            transform: rotate(180deg);
+        }
+        &.up:before{
+            content:"";
+            position:absolute;
+            background:url(../images/guide/lank_noraml_up.svg) no-repeat center center / 9px;
+        }
+        &.same:before{
+            content:"";
+            position:absolute;
+            width:7px;
+            height:2px;
+            right:14px;
+            background-color: #000;
+            top:50%;
+            margin-top:-2px;
+    
+        }
+    }
+    @for $lank from 1 through 5 {
+        .prod_item:nth-of-type(#{$lank})  .langking{
+            color:#fff;
+            background:url(../images/guide/lank_hot.svg) no-repeat center center / 48px;
+            border:none;
+            &.down:before{
+                content:"";
+                position:absolute;
+                background:url(../images/guide/lank_hot_up.svg) no-repeat center center / 9px;
+                transform: rotate(180deg);
+            }
+            &.up:before{
+                content:"";
+                position:absolute;
+                background:url(../images/guide/lank_hot_up.svg) no-repeat center center / 9px;
+            }
+            &.same:before{
+                content:"";
+                position:absolute;
+                width:7px;
+                height:2px;
+                right:14px;
+                background-color: #fff;
+                top:50%;
+                margin-top:-2px;
+        
+            }
+        }
+        
+    }
+	.product_pic{
+		position:relative;
+		width:158px;
+		height:0;
+		padding-top:158px;
+		overflow: hidden;
+		flex-shrink: 0;
+		margin-bottom:0;
+		img{
+			width:100%;
+			position:absolute;
+			top:0;
+			left:0;
+		}
+	} 			
+	.product_info{
+		flex-grow:1;
+		padding-left:19px;
+	}
+	.title{
+		margin-bottom:8px;
+	}
+    
+}
+//더보기 버튼 영역
+.btn_more_div{
+	margin-top:26px;
+	.more_btn{
+		width:71px;
+		height:24px;
+		margin:0 auto;
+		display:flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
+		appearance: none;
+		cursor:pointer;
+	}
+	.more_btn.hidden{
+		display:none;
+	}
+	.txt{
+		line-height:24px;
+		font-size: 15px;
+		font-weight:500;
+		letter-spacing: -0.15px;
+		color:#767676;
+	}
+	.btn_more_icon{
+		width:24px;
+		height:24px;
+		background:url(../images/ico/ico_arrow_large.png) no-repeat 0 0;
+		background-size: 24px auto;
+	}
+ }

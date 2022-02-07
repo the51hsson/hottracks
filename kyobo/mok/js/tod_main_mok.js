@@ -21,5 +21,32 @@ $(function(){
         $('html, body').animate({
                   scrollTop: Top
               }, 200);
-      });     
+    }); 
+    //MD 추천 상단스왑
+    $('.swiper-container.ctg_top_swiper').each(function(i, ele){
+        var ctgSwiper = new Swiper(this,  {
+          observer: true,
+          observeParents: true,
+          slidesPerView: 'auto',
+          centeredSlides: true,
+          loop: true,
+          loopsSlide: 1,
+          spaceBetween: 20,
+          autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+          },
+          speed: 700,
+          pagination: {
+            el: $(ele).find('.swiper-pagination')[0],
+            type: 'fraction',
+            formatFractionCurrent: function (number) {
+              return KyoboHottracks.mok.setPrependZero(number, 2);
+            },
+            formatFractionTotal: function (number) {
+              return KyoboHottracks.mok.setPrependZero(number, 2);
+            }
+          }
+      });
+    })
 })
