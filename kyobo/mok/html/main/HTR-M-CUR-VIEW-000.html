@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="Author" content="SEO 기획 정의 내용 반영" />
+    <meta name="keywords" content="SEO 기획 정의 내용 반영" />
+    <meta name="description" content="SEO 기획 정의 내용 반영" />
+    <meta name="subject" content="SEO 기획 정의 내용 반영" />
+    <!-- DESC : 성인컨텐츠인 경우 추가하는 meta tag -->
+    <!--<meta name="rating" content="adult" />-->
+
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta property="og:title" content="핫트랙스">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../../images/guide/sns.jpg">
+    <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
+    <title>큐레이션 - 취향 발견 : 상세</title>
+
+    <!-- Plug-In css -->
+    <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../../vendors/lib/swiper-7.2.0/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../vendors/lib/star-rating/css/star-rating.min.css" />
+    <!-- // Plug-In css -->
+
+    <!-- font css -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
+    <!-- // font css -->
+
+    <!-- Custom styles for this template -->
+    <!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
+    <!-- // Custom styles for this template -->
+
+    <!--// ht_ Hottracks custom css -->
+    <link rel="stylesheet" href="../../css/ht_style_mok.css" />
+    <link rel="stylesheet" href="../../css/ht_wel_main_new.css" /><!-- 메인 css -->
+
+
+    <!-- Plug-In javascript -->
+    <script src="../../vendors/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="../../vendors/lib/jquery-ui-1.12.1/jquery.ui.spinner.js"></script>
+    <script src="../../vendors/lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../vendors/lib/swiper-7.2.0/js/swiper-bundle.min.js"></script>
+    <script src="../../vendors/lib/star-rating/js/star-rating.min.js"></script>
+    <script src="../../vendors/lib/star-rating/themes/krajee-gly/theme.min.js"></script>
+    <script src="../../vendors/lib/star-rating/js/locales/ko.js"></script>
+    <script src="../../vendors/lib/scrollpos-styler/scrollPosStyler.min.js"></script>
+    <script src="../../vendors/lib/css-element-queries/ResizeSensor.js"></script>
+    <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
+    <!-- // Plug-In javascript -->
+
+    <!-- UI JavaScript -->
+    <!-- <script src="../../vendors/js/ui_mok.js"></script> -->
+    <script src="../../js/front_bak.js"></script>
+
+    <script src="../../js/ht_wel_main_new.js"></script><!-- 메인 script -->
+    <!-- // UI JavaScript -->
+
+</head>
+
+<body>
+ <!-- SkipNav -->
+ <div class="skip_nav_wrap">
+    <a href="#headerWrapper">메뉴 바로가기</a>
+    <a href="#containerWrapper">본문 바로가기</a>
+</div>
+<!-- //SkipNav -->
+
+<!-- wrapper -->
+<div class="ht_ wrapper contents_detail_view">
+    <!-- header -->
+    <header id="headerWrapper" class="ht_ header_wrapper">
+        <div class="header_left">
+            <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
+        </div>
+        <div class="header_center">
+            <div class="page_title prod_detail"></div>
+        </div>
+        <div class="header_right">
+            <!-- DESC : 상품정보 부터 검색버튼 비활성화 -->
+            <a href="#" class="btn_header_search"><span class="hidden">검색</span></a>
+            <a href="#" class="btn_header_cart">
+                <span class="hidden">장바구니</span>
+                <!-- DESC :: 0개인경우 count 영역 미노출 / 최대 99 -->
+                <span class="count">99</span>
+            </a>
+        </div>
+    </header>
+    <!-- //header -->
+
+
+    <!-- 큐레이션 메인 컨텐츠 -->
+    <div class="wel_main_wrap">
+        <!-- 큐레이션 상세 -->
+        <div class="mc_cont cur_view">
+            <!-- wel_curation_cont -->
+            <div class="wel_curation_cont">
+                <!-- curation_img -->
+                <div class="swiper-conainer curation_img">
+                    <div class="swiper-wrapper">
+                        <!-- swiper-slide  -->
+                        <div class="swiper-slide">
+                            <div class="curation_box">
+                                <!-- curation_cont -->
+                                <div class="curation_cont">
+                                    <p class="img"><img src="../../images/wel_main_new/@img_curation02.jpg" alt=""></p>
+                                    <!-- curation_marker -->
+                                    <ul class="curation_marker">
+                                        <!-- 기본 : 우측하단 툴팁
+                                            .ct_rt : 우측상단 툴팁 
+                                            .ct_lb : 좌측하단 툴팁
+                                            .ct_lt : 좌측상단 툴팁
+                                        -->
+                                        <li class="li" style="left:58%;top:48%;">
+                                            <button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+                                            <ul class="curation_tooltip ct_lb">
+                                                <li class="s1">2022 캘린더 레트로<br>감성 일력</li>
+                                                <li class="s2">
+                                                    <strong>50%</strong>
+                                                    <span>134,000</span>
+                                                    <em>129,000</em>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="li" style="left:21%;top:40%;">
+                                            <button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+                                            <ul class="curation_tooltip">
+                                                <li class="s1">2022 캘린더 레트로<br>감성 일력</li>
+                                                <li class="s2">
+                                                    <strong>50%</strong>
+                                                    <span>134,000</span>
+                                                    <em>129,000</em>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="li on" style="left:59%;top:76%;">
+                                            <button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+                                            <ul class="curation_tooltip ct_lt">
+                                                <li class="s1">2022 캘린더 레트로<br>감성 일력</li>
+                                                <li class="s2">
+                                                    <strong>50%</strong>
+                                                    <span>134,000</span>
+                                                    <em>129,000</em>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!-- //curation_marker -->
+                                </div>
+                                <!-- //curation_cont -->
+                            </div>
+                        </div>
+                        <!-- //swiper-slide -->
+                    </div> 
+                </div>
+                <!-- //curation_img -->
+            </div>
+            <!-- //wel_curation_cont -->
+            
+            <!-- cur_view_txt -->
+            <div class="cur_view_txt">
+                <h2 class="cur_tit c2"><span><em># 나를 위한 계획 세우기</em></span></h2>
+                <p>때로는 일상적인 곳에서 영감을 받아 참신한 아이디어를 떠올리기도 하죠. 취향을 꾹꾹 눌러 담은 아이템으로 책상 위를 가득 채워 작업에 새로운 영감을 얻어보세요.</p>
+            </div>
+            <!-- //cur_view_txt -->
+        </div>
+        <!-- //큐레이션 상세 -->
+
+
+
+        <!-- 관련제품 -->
+        <div class="mc_cont mc_dep">
+            <h2 class="mc_tit02">관련제품</h2>
+
+            <!-- prod_list -->
+            <ul class="prod_list ty02"><!-- 1단 class="ty02" -->
+                <!-- .li 반복 -->
+                <li class="li">
+                    <a href="#n">
+                        <div class="img">
+                            <img src="../../images/wel_main_new/@img_prod01.jpg" alt="">
+                            <p class="prod_like_count active"><span>999+</span></p><!-- 좋아요 활성화 class="active" -->
+                        </div>
+                        <ul class="txt">
+                            <li class="s0">dretec</li>
+                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+                            <li class="s2">
+                                <strong>50%</strong>
+                                <span>134,000</span>
+                                <em>129,000</em>
+                            </li>
+                            <li class="ico_marker_area">
+                                <span class="ico_marker on">쿠폰</span>
+                                <span class="ico_marker">사은품</span>
+                                <span class="ico_marker">무료배송</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <!-- //.li 반복 -->
+
+
+                <li class="li">
+                    <a href="#n"><!-- 대체 상품 링크 -->
+                        <div class="img">
+                            <img src="../../images/wel_main_new/@img_prod02.jpg" alt="">
+                            <p class="prod_like_count"><span>999+</span></p>
+                            <!-- prod_soldout_msg -->
+                            <div class="prod_soldout_msg">
+                                <div class="prod_soldout_msg_txt">
+                                    <p>아쉽지만<br>품절이에요!</p>
+                                    <span>대체상품</span>
+                                </div>
+                            </div>
+                            <!-- //prod_soldout_msg -->
+                        </div>
+                        <ul class="txt">
+                            <li class="s0">dretec</li>
+                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+                            <li class="s2">
+                                <strong>50%</strong>
+                                <span>134,000</span>
+                                <em>129,000</em>
+                            </li>
+                            <li class="ico_marker_area">
+                                <span class="ico_marker on">쿠폰</span>
+                                <span class="ico_marker">사은품</span>
+                                <span class="ico_marker">무료배송</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#n">
+                        <div class="img">
+                            <img src="../../images/wel_main_new/@img_prod03.jpg" alt="">
+                            <p class="prod_like_count active"><span>999+</span></p>
+                        </div>
+                        <ul class="txt">
+                            <li class="s0">dretec</li>
+                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+                            <li class="s2">
+                                <strong>50%</strong>
+                                <span>134,000</span>
+                                <em>129,000</em>
+                            </li>
+                            <li class="ico_marker_area">
+                                <span class="ico_marker on">쿠폰</span>
+                                <span class="ico_marker">사은품</span>
+                                <span class="ico_marker">무료배송</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#n">
+                        <div class="img">
+                            <img src="../../images/wel_main_new/@img_prod04.jpg" alt="">
+                            <p class="prod_like_count"><span>999+</span></p>
+                        </div>
+                        <ul class="txt">
+                            <li class="s0">dretec</li>
+                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+                            <li class="s2">
+                                <strong>50%</strong>
+                                <span>134,000</span>
+                                <em>129,000</em>
+                            </li>
+                            <li class="ico_marker_area">
+                                <span class="ico_marker on">쿠폰</span>
+                                <span class="ico_marker">사은품</span>
+                                <span class="ico_marker">무료배송</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#n">
+                        <div class="img">
+                            <img src="../../images/wel_main_new/@img_prod05.jpg" alt="">
+                            <p class="prod_like_count"><span>999+</span></p>
+                        </div>
+                        <ul class="txt">
+                            <li class="s0">dretec</li>
+                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+                            <li class="s2">
+                                <strong>50%</strong>
+                                <span>134,000</span>
+                                <em>129,000</em>
+                            </li>
+                            <li class="ico_marker_area">
+                                <span class="ico_marker on">쿠폰</span>
+                                <span class="ico_marker">사은품</span>
+                                <span class="ico_marker">무료배송</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="#n">
+                        <div class="img">
+                            <img src="../../images/wel_main_new/@img_prod06.jpg" alt="">
+                            <p class="prod_like_count"><span>999+</span></p>
+                        </div>
+                        <ul class="txt">
+                            <li class="s0">dretec</li>
+                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+                            <li class="s2">
+                                <strong>50%</strong>
+                                <span>134,000</span>
+                                <em>129,000</em>
+                            </li>
+                            <li class="ico_marker_area">
+                                <span class="ico_marker on">쿠폰</span>
+                                <span class="ico_marker">사은품</span>
+                                <span class="ico_marker">무료배송</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            <!-- //prod_list  -->
+
+            <button class="btn_more_view"><span><em class="hidden">관련제품</em>더보기</span></button>
+        </div>
+        <!-- //관련제품 -->
+
+
+
+        <!-- 더 많은 라이프스타일 큐레이션 보기 -->
+        <div class="mc_cont cur_more_cont">
+            <h2 class="mc_tit02"><strong class="point_line"><em>더 많은</em></strong><br>라이프스타일 큐레이션 보기</h2>
+            <div class="tag_li">
+                <a href="#n">먼지 한 톨 없는 정리정돈 끝판왕</a>
+                <a href="#n">바른생활 어린이 다꾸템</a>
+                <a href="#n">레트로 덕후감</a>
+                <a href="#n">스타일리스트라면? 몰라서 안되는 필수 아이템</a>
+                <a href="#n">영을 채우는 취향 가득 데스크</a>
+            </div>
+
+            <button class="btn_more_view"><span><em class="hidden">더 많은 라이프스타일 큐레이션</em>더보기</span></button>
+        </div>
+        <!-- //더 많은 라이프스타일 큐레이션 보기-->
+
+
+        <!-- mc_cont : 광고배너 -->
+        <div class="mc_cont wel_belt02">
+            <h2 class="hidden">광고배너</h2>
+            <!-- wel_belt_banner -->
+            <div class="wel_belt_banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#n"><img src="../../images/wel_main_new/@img_belt_banner02.jpg" alt="모바일 첫 구매 3,000원 쿠폰"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination out_bottom"></div>
+            </div>
+            <!-- //wel_belt_banner -->
+        </div>
+        <!-- //mc_cont : 광고배너 -->
+    </div>
+    <!-- //큐레이션 메인 컨텐츠 -->
+
+    <!-- 푸터 -->
+    <footer class="footer_wrapper">
+        <div class="notice_wrap">
+            <span class="notice_text">공지사항</span>
+            <a href="#" class="notice_link">교보문고 개인정보 처리방침 개정안내</a>
+        </div>
+
+        <div class="footer_body">
+            <div class="logo_box">
+                <a href="#" class="logo_link">
+                    <img src="../../images/guide/ico_logo.svg" alt="핫트랙스">
+                </a>
+            </div>
+
+            <div class="footer_info_box">
+                <div class="info_text_multi">
+                    <span class="info_text">대표이사 : 김상훈</span>
+                    <span class="gap">|</span>
+                    <address class="info_text">경기도 파주시 회동길 78(출판단지내)</address>
+                </div>
+                <span class="info_text">사업자등록번호 : 102-81-29258</span>
+                <span class="info_text">개인정보보호책임자 : 김상훈</span>
+                <span class="info_text"><span class="text_inner">통신판매업신고번호 : 제 2012-경기파주-3911호</span><a href="#" class="btn_footer_link">사업자정보확인</a></span>
+            </div>
+
+            <div class="footer_menu_box">
+                <ul class="footer_menu_list">
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">핫트합니다</a></li>
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">공지사항</a></li>
+                    <li class="footer_menu_item privacy"><a href="#" class="footer_menu_link">개인정보처리방침</a></li>
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">이용약관</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_call_box"><span class="call_text">대표전화</span><span class="call_num"><a href="tel:16661112">1666-1112</a></span> <br><span class="call_text_sm">(평일 09:00~18:00 점심시간 12:00~13:00 )</span></div>
+
+            <div class="copyright_box">
+                <div class="copyright">@Hottracks Centre</div>
+                <div class="sns_share_box">
+                    <a href="#" class="btn_sns_share insta"><span class="hidden">instagram 공유</span></a>
+                    <a href="#" class="btn_sns_share fb"><span class="hidden">facebook 공유</span></a>
+                    <a href="#" class="btn_sns_share youtube"><span class="hidden">youtube 공유</span></a>
+                    <a href="#" class="btn_sns_share twt"><span class="hidden">twitter 공유</span></a>
+                    <a href="#" class="btn_sns_share blog"><span class="hidden">blog 공유</span></a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- // 푸터 --> 
+</div>   
+<!-- //wrapper -->
+</body>
+</html>
