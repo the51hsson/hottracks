@@ -465,6 +465,7 @@
 		top:0;
 		left:0;
 		z-index: 1;
+		overflow: hidden;
 	}
 	.show_replace{
 		display: none;
@@ -513,9 +514,21 @@
 	}
 	.prod_item.adult_prod{
 		.product_pic{
+			position: relative;
 			background-color: #fff;
-			border:2px solid black;
 			border-radius: 12px;
+			&:before{
+				content:"";
+				position:absolute;
+				width:100%;
+				height:100%;
+				border-radius: 12px;
+				left:0;
+				top:0;
+				z-index: 3;
+				border:2px solid #000;
+
+			}
 		}
 		.adult_block{
 			position:absolute;
