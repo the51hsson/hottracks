@@ -5360,7 +5360,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 .evt_slider .evt_item .img_wrap {
   position: relative;
   height: 0;
-  padding-top: 56.96%;
+  padding-top: 60%;
   margin-bottom: 12px;
 }
 
@@ -5383,6 +5383,31 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   left: 8px;
   top: 8px;
   z-index: 3;
+}
+
+.evt_slider .evt_item.more_items {
+  width: 100px;
+  height: 192px;
+}
+
+.evt_slider .evt_item.more_items a {
+  height: 192px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+  background: url(../images/guide/btn_add_banner.svg) no-repeat center top 30%/30px;
+  background-color: #F7F7F7;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #767676;
 }
 
 .evt_slider .discount {

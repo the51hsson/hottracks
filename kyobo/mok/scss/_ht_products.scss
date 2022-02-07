@@ -116,7 +116,7 @@
 	padding-top: 20px;
 	padding-right: 20px;
 	.evt_item{
-		width:320px;
+		width: 320px;
         cursor: pointer;
 		span{
 			display: block;
@@ -124,7 +124,7 @@
 		.img_wrap{
 			position:relative;
 			height:0;
-			padding-top:56.96%;
+			padding-top:60%;
 			margin-bottom:12px;
 			img{
 				position:absolute;
@@ -146,6 +146,23 @@
 				z-index: 3;
 	
 			}
+		}
+	}
+	.evt_item.more_items{
+		width:100px;
+		height:192px;
+		a{
+			height:192px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding-top:30px;
+			background: url(../images/guide/btn_add_banner.svg) no-repeat center top 30%/ 30px;
+			background-color: #F7F7F7;
+			border-radius: 12px;
+			font-size: 12px;
+			color:#767676;
 		}
 	}
 	.discount {
