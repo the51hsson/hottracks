@@ -3814,6 +3814,8 @@ body {
   background: #2ff37d;
   content: "";
   z-index: 0;
+  -webkit-animation: pointLine2 both ease-in infinite 6s;
+          animation: pointLine2 both ease-in infinite 6s;
 }
 
 .ht_ .curation_list .cur_eyebrow em {
@@ -3902,7 +3904,7 @@ body {
 .ht_ .cur_prod .mc_tit img {
   display: inline-block;
   width: 32px;
-  margin: -9px 0 0 8px;
+  margin: -19px 0 -10px 8px;
 }
 
 .ht_ .cur_prod .li_resp_ty.ty02 {
@@ -4098,6 +4100,8 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
+  -webkit-animation: curNewMsg both infinite 5s;
+          animation: curNewMsg both infinite 5s;
 }
 
 .ht_ .cur_new_msg p:before {
@@ -4136,6 +4140,62 @@ body {
 
 .ht_ .cur_new_msg.ty02:before {
   background-image: url("../images/curation_main/ico_cur_new02.svg");
+}
+
+@-webkit-keyframes curNewMsg {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(30%) scale(0.5);
+            transform: translateX(30%) scale(0.5);
+  }
+  10% {
+    opacity: 0;
+    -webkit-transform: translateX(30%) scale(0.5);
+            transform: translateX(30%) scale(0.5);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateX(0%) scale(1);
+            transform: translateX(0%) scale(1);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translateX(0%) scale(1);
+            transform: translateX(0%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(30%) scale(0.5);
+            transform: translateX(30%) scale(0.5);
+  }
+}
+
+@keyframes curNewMsg {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(30%) scale(0.5);
+            transform: translateX(30%) scale(0.5);
+  }
+  10% {
+    opacity: 0;
+    -webkit-transform: translateX(30%) scale(0.5);
+            transform: translateX(30%) scale(0.5);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateX(0%) scale(1);
+            transform: translateX(0%) scale(1);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translateX(0%) scale(1);
+            transform: translateX(0%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(30%) scale(0.5);
+            transform: translateX(30%) scale(0.5);
+  }
 }
 
 .ht_ .cur_new_img {
@@ -4433,6 +4493,8 @@ body {
   background: #fffe58;
   content: "";
   z-index: 0;
+  -webkit-animation: pointLine both ease-in infinite 3.5s;
+          animation: pointLine both ease-in infinite 3.5s;
 }
 
 .ht_ .cur_view_txt .cur_tit em {
@@ -4488,7 +4550,7 @@ body {
   top: 10px;
   width: 75px;
   height: 75px;
-  background: url("../images/curation_main/ico_cur_join.png") center/100% no-repeat;
+  background: url("../images/curation_main/ico_cur_join.svg") center/100% no-repeat;
   content: "";
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -4887,6 +4949,8 @@ body {
   background: #bff06f;
   content: "";
   z-index: 0;
+  -webkit-animation: pointLine both ease-in infinite 3s;
+          animation: pointLine both ease-in infinite 3s;
 }
 
 .ht_ .point_line em {
@@ -4903,6 +4967,54 @@ body {
 
 .ht_ .point_line.ty04:before {
   background: #f5c9ef;
+}
+
+@-webkit-keyframes pointLine {
+  0% {
+    width: 0;
+  }
+  12% {
+    width: calc(100% + 4px);
+  }
+  100% {
+    width: calc(100% + 4px);
+  }
+}
+
+@keyframes pointLine {
+  0% {
+    width: 0;
+  }
+  12% {
+    width: calc(100% + 4px);
+  }
+  100% {
+    width: calc(100% + 4px);
+  }
+}
+
+@-webkit-keyframes pointLine2 {
+  0% {
+    width: 0;
+  }
+  7% {
+    width: calc(100% + 4px);
+  }
+  100% {
+    width: calc(100% + 4px);
+  }
+}
+
+@keyframes pointLine2 {
+  0% {
+    width: 0;
+  }
+  7% {
+    width: calc(100% + 4px);
+  }
+  100% {
+    width: calc(100% + 4px);
+  }
 }
 
 .ht_ .prod_list {

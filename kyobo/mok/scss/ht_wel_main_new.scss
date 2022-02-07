@@ -1670,7 +1670,7 @@ body {
             span {
                 display:inline-block;position:relative;padding:0 7px;color:#000;
                 &:before {
-                    position:absolute;left:-2px;top:8px;width:calc(100% + 4px);height:14px;background:#2ff37d;content:"";z-index:0;
+                    position:absolute;left:-2px;top:8px;width:calc(100% + 4px);height:14px;background:#2ff37d;content:"";z-index:0;animation:pointLine2 both ease-in infinite 6s;
                 }
             }
             em {
@@ -1714,7 +1714,7 @@ body {
         .mc_tit {
             margin-bottom:20px;font-size:30px;font-weight:400;line-height:36px;
             img {
-                display:inline-block;width:32px;margin:-9px 0 0 8px;
+                display:inline-block;width:32px;margin:-19px 0 -10px 8px;
             }
         }
         .li_resp_ty.ty02 {
@@ -1816,7 +1816,7 @@ body {
             position:absolute;right:0;top:0;width:77px;height:78px;background:url("../images/curation_main/ico_cur_new.svg") center/100% no-repeat;content:"";
         }
         p {
-            position:relative;right:70px;top:22px;padding:9px 15px 7px 15px;background:#d4ff1a;border:solid #000;border-width:2px 2px 3px 2px;border-radius:30px;color:#000;font-size:14px;font-weight:500;line-height:18px;
+            position:relative;right:70px;top:22px;padding:9px 15px 7px 15px;background:#d4ff1a;border:solid #000;border-width:2px 2px 3px 2px;border-radius:30px;color:#000;font-size:14px;font-weight:500;line-height:18px;animation:curNewMsg both infinite 5s;
             &:before {
                 position:absolute;right:-11px;top:50%;width:0;height:0;border-left:10px solid #000;border-top:7px solid transparent;border-bottom:7px solid transparent;content:"";transform:translateY(-51%);z-index:2; 
             }
@@ -1831,6 +1831,14 @@ body {
             } 
         }
     }
+    @keyframes curNewMsg{
+    0% {opacity:0;transform:translateX(30%) scale(0.5);}
+    10% {opacity:0;transform:translateX(30%) scale(0.5);}
+    20% {opacity:1;transform:translateX(0%) scale(1);}
+    95% {opacity:1;transform:translateX(0%) scale(1);}
+    100% {opacity:0;transform:translateX(30%) scale(0.5);}
+    }
+
     .cur_new_img {
         margin:0 -20px;overflow:hidden;
         img {
@@ -1943,7 +1951,7 @@ body {
 
 
 
-    // 큐레이션 상세 : cur_view
+    // 큐레이션 상세 : .cur_view
     .cur_view {
         padding:0 0 45px 0;overflow:hidden;
         .swiper-slide {
@@ -1967,7 +1975,7 @@ body {
             span {
                 display:inline-block;position:relative;color:#000;font-size:20px;font-weight:700;line-height:26px;
                 &:before {
-                    position:absolute;left:-2px;top:16px;width:calc(100% + 4px);height:14px;background:#fffe58;content:"";z-index: 0;
+                    position:absolute;left:-2px;top:16px;width:calc(100% + 4px);height:14px;background:#fffe58;content:"";z-index:0;animation:pointLine both ease-in infinite 3.5s;
                 }
             }
             em {
@@ -2005,7 +2013,7 @@ body {
    .cur_join_msg {
         padding-top:10px;text-align:center;
         &:before {
-            position:absolute;left:50%;top:10px;width:75px;height:75px;background:url("../images/curation_main/ico_cur_join.png") center/100% no-repeat;content:"";transform:translateX(-50%);
+            position:absolute;left:50%;top:10px;width:75px;height:75px;background:url("../images/curation_main/ico_cur_join.svg") center/100% no-repeat;content:"";transform:translateX(-50%);
         }
         p {
             padding-top:88px;
@@ -2248,7 +2256,7 @@ body {
     .point_line {
         position:relative;
         &:before {
-            position:absolute;left:-2px;top:15px;width:calc(100% + 4px);height:14px;background:#bff06f;content:"";z-index:0;
+            position:absolute;left:-2px;top:15px;width:calc(100% + 4px);height:14px;background:#bff06f;content:"";z-index:0;animation:pointLine both ease-in infinite 3s;
         }
         em {
             position:relative;
@@ -2263,7 +2271,16 @@ body {
             background:#f5c9ef;
         }
     }
-
+    @keyframes pointLine {
+    0% {width:0;}
+    12% {width:calc(100% + 4px);}
+    100% {width:calc(100% + 4px);}
+    }
+    @keyframes pointLine2 {
+    0% {width:0;}
+    7% {width:calc(100% + 4px);}
+    100% {width:calc(100% + 4px);}
+    }
 
 
 
