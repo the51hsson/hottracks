@@ -22,11 +22,10 @@
     flex-shrink: 0;
     display: block;
     position:relative;
-	padding:0 13px 13px 13px;
-    font-size:15px;
+	padding:0 13px 16px 13px;
     letter-spacing: -0.15px;
     font-weight:500;
-    color:#595959;
+    color:rgba(0,0,0,0.2);
     white-space: nowrap;
     border-bottom:1px solid #d5d5d5;
 
@@ -37,7 +36,7 @@
       padding-right:20px;
     }
     &.active{
-      color:#da2128;
+      color:#000;
     }
     &:after{
       content:"";
@@ -52,16 +51,6 @@
     }
     &:first-of-type:after{
       display: none;
-    }
-    &.active:before{
-      content:"";
-      position:absolute;
-      width:calc(100% - 27px);
-      height:3px;
-      bottom:-1px;
-      left:13px;
-      background-color:#da2128;
-	  z-index:2;
     }
   }
   &.depth2{
@@ -89,6 +78,7 @@
 .sub_menu_wrap{
   padding:20px;
   background-color: #f7f7f7;
+  display: none;
 }
 .ctg_subMenu{
   display:flex;
@@ -104,16 +94,17 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-top:16px;
-	font-size:13px;
+	font-size:12px;
     line-height: 19px;
     letter-spacing: -0.13px;
+	color:#595959;
     cursor:pointer;
     @for $mn from 1 through 3{
       &:nth-of-type(#{$mn}){
         margin-top:0;
       }
 	  &.active{
-		color:#da2128;
+		font-weight: 700;
 	  }
     }
   }
@@ -131,7 +122,7 @@
     width:20px;
     height:20px;
     margin:0 auto;
-    background:url(../images/ico/ico_arrow_large.png) no-repeat center center;
+    background:url(../images/ico/ico_arrow_large.svg) no-repeat center center;
     background-size: cover; 
     cursor: pointer;
     &.menuDown{
@@ -141,11 +132,8 @@
 }
 //슬라이더 영역
 .module_wrap {
-	padding:40px 20px;
-}
-.module_wrap.type2 {
 	margin-top:11px;
-	padding:40px 0 40px 20px;
+	padding-top:40px;
 	background-color: #fff;
 	overflow:hidden;
 	&:first-of-type{
@@ -157,12 +145,12 @@
 	.md_tab {
       display: flex;
 	  flex-flow:row nowrap;
-	  justify-content: flex-start;
+	  justify-content: center;
 	  .md_anchor{
 		  margin-left:16px;
 		  font-size:22px;
 		  letter-spacing: -0.022em;
-		  line-height:32px;
+		  line-height:26px;
 		  font-weight:700;
 		  color:rgba(0,0,0,0.2);
 	   }
@@ -173,8 +161,47 @@
 		   color:#000;
 	   }
 	}
-
+	//MD추천 스와이퍼
+	.ctg_top_swiper{
+		padding-bottom:30px;
+		margin-bottom:30px;
+		.prod-wrapper{
+			padding-top:16px;
+		}
+		.swiper-slide{
+			width:217px;
+			border:2px solid #000;
+			border-radius: 12px;
+			overflow: hidden;
+			box-sizing: border-box;
+			.product_pic{
+				padding-top: 217px;
+			}
+			img{
+				width:100%;
+				height:auto;
+			}
+			.product_info{
+				padding:0 20px 20px 20px;
+			}
+		}
+		.swiper-pagination.out_bottom {
+			height:auto;
+			padding:0;
+			background-color: #fff;
+			bottom:0px;
+			line-height:16px;
+			.swiper-pagination-current{
+				color:#000;
+				line-height:16px;
+			}
+			.swiper-pagination-total{
+				line-height:16px;
+			}
+		}
+	}
 }
+
 //슬라이더 영역 등록 상품 2개인 경우
 .module7_wrap.minimum_prod{
 	.module_slider_sm li{
@@ -225,7 +252,7 @@
 	left:0;
 	z-index:20;
 	background-color: #fff;
-	margin-top:40px;
+	margin-top:32px;
 	span{
 		display: block;
 	}
@@ -252,13 +279,14 @@
 		display: flex;
 		flex-flow: row nowrap;
 		overflow-x: auto;
-		padding-right:20px;
+		padding: 1px 20px 1px 0;
+
 		li{ 
 			flex-shrink: 0;
 			padding:8px 14px;
 			border:1px solid #d5d5d5;
-			border-radius: 4px;
-			margin-right: 8px;
+			border-radius: 20px;
+			margin-right: 4px;
 			font-size: 13px;
 			color:#767676;
 			letter-spacing: -0.013em;
@@ -272,8 +300,8 @@
 			}
 			&.active{
 				color:#fff;
-				background-color: #da2128;
-				border-color:#da2128;
+				background-color: #000;
+				border-color:#000;
 			}
 		}
 		li.arrow_li{
@@ -283,7 +311,7 @@
 				font-size: 11px;
 				color:#fff;
 				position:absolute;
-				background-color:#da2128;
+				background-color:#000;
 				top:8px;
 				right:8px;
 				min-width:18px;
@@ -304,7 +332,7 @@
 	padding:0 20px;
 	color:#292929;
 	.prod_list_info{
-	   margin-top: 10px;
+	   margin-top: 20px;
 	   display: flex;
 	   flex-flow: row nowrap;
 	   justify-content: space-between;
@@ -313,11 +341,15 @@
 		display: block;
 		line-height: 19px;
 	}
+	.prod_ea{
+		color:#767676;
+	}
 	.right_side{
 		display: flex;
 		flex-flow: row nowrap;
 	}
 	.sort_nm{
+		font-weight: 500;
 		padding-right:14px;
 		background:url(../images/guide/arrow_down.svg) no-repeat right 0px top 50% / 10px;
 	}
@@ -335,14 +367,14 @@
 .replace_prod_swap{
 	position:relative;
 	display:none;
-	background-color: #fff4f1;
+	background-color: #F2E3CB;
 	width: 100vw;
 	padding:32px 0 32px 20px;
 	margin:36px -20px 0 -20px;
 	&:before{
 		content:"";
 		position:absolute;
-		border-top:12px solid #fff4f1;
+		border-top:12px solid #F2E3CB;
 		border-left:12px solid transparent;
 		border-right: 12px solid transparent;
 		border-bottom: 12px solid transparent;
@@ -361,21 +393,33 @@
 		height: 24px;
 		background-image: url(../images/guide/btn_dialog_close.svg);
 		background-size: 24px 24px;
-		top:32px;
+		top:35px;
 		right:20px;
 		}
-	h4{
-		font-size:20px;
-		line-height: 29px;
-		font-weight: 700;
-		letter-spacing: -0.02em;
+	.tit{
+		position:relative;
+		width:calc(100% - 45px);
 		color:#000;
+		.txt{
+			float:left;
+			font-size:20px;
+			line-height: 29px;
+			font-weight: 700;
+			letter-spacing: -0.02em;
+		}
+		.replace_icon{
+			float:left;
+			width:32px;
+			height:32px;
+			margin-left:5px;
+			background:url(../images/guide/replace_swipe_icon.png) no-repeat center center/30px;
+		}
 	}
 	.sub_title{
-		margin-top:8px;
 		line-height: 20px;
 		letter-spacing: -0.014em;
 		color:#767676;
+		clear:both;
 	}
 	.prod-wrapper .prod_item{
 		width:140px;
@@ -411,7 +455,6 @@
 	}
 	.product_info{
 		width:100%;
-		padding:12px 0 0 0;
 	}
 	.sold_out .product_pic:before{
 		content:"";
@@ -419,7 +462,7 @@
 		width:100%;
 		height:100%;
 		background-color: rgba(0,0,0,0.6);
-		border-radius: 4px;
+		border-radius: 12px;
 		top:0;
 		left:0;
 		z-index: 1;
@@ -431,6 +474,7 @@
 	    text-align: center;
 		color:#fff;
 		font-size: 13px;
+		font-weight: 700;
 		z-index: 2;
 		top:50%;
 		left:0;
@@ -446,9 +490,8 @@
 		height:24px;
 		padding:0 6px;
 		background-color: #fff;
-		border:1px solid #767676;
 		border-radius: 4px;
-		line-height:22px;
+		line-height:24px;
 		color:#000;
 		font-size: 12px;
 		display:none;
@@ -471,7 +514,9 @@
 	}
 	.prod_item.adult_prod{
 		.product_pic{
-			background-color: #f2f2f2;
+			background-color: #fff;
+			border:2px solid black;
+			border-radius: 12px;
 		}
 		.adult_block{
 			position:absolute;
@@ -480,6 +525,8 @@
 			transform: translateY(-50%);
 			text-align: center;
 			padding-top:35%;
+			font-weight: 700;
+			font-size: 13px;
 			background:url(../images/guide/@adult_block.svg) no-repeat center top / 30%;
 
 		}

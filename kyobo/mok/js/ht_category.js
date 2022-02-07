@@ -1,13 +1,35 @@
 $(function(){
   /*=================================== HTR-M-CTG-LIST-001.html ==============================*/
-    //카테고리 리스트 스왑배너
-    var mdProduct1 =  new CustomSwiper('#mdProduct1', {
-      slidesPerView: 'auto',
-      spaceBetween: 19,
-      freeMode: true,
+  //카테고리 리스트 스왑배너
+  $('.swiper-container.ctg_top_swiper').each(function(i, ele){
+    var ctgSwiper = new Swiper(this,  {
       observer: true,
       observeParents: true,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      loop: true,
+      loopsSlide: 1,
+      spaceBetween: 20,
+      autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+      },
+      speed: 700,
+      pagination: {
+        el: $(ele).find('.swiper-pagination')[0],
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+          return KyoboHottracks.mok.setPrependZero(number, 2);
+        },
+        formatFractionTotal: function (number) {
+          return KyoboHottracks.mok.setPrependZero(number, 2);
+        }
+      }
   });
+
+  })
+
+
     //카테고리 리스트 하단 스왑배너
   var mdProductSwiper = new CustomSwiper('#mdProductSwiper', {
       slidesPerView: 'auto',
@@ -36,6 +58,16 @@ $(function(){
   $(document).on('click' , '.ctg_topMenu a, .sub_menu_wrap .ctg_subMenu a', function(){
     $(this).addClass('active').siblings('a').removeClass('active');
   });
+
+ //2depth 선택 => 3depth 열림 
+ $(document).on('click', '.ctg_topMenu.depth2 a', function(){
+
+   if($(this).hasClass('depth3_none')) {
+     $('.sub_menu_wrap').css('display', 'none');
+   } else { 
+     $('.sub_menu_wrap').css('display', 'block');
+   }
+ });
 
  //3depth 토글 버튼
   $(document).on('click', '.sub_menu_wrap .subMenu_btn', function(){
