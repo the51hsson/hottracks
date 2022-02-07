@@ -19,7 +19,7 @@
 <meta property="og:image" content="../../images/guide/sns.jpg">
 <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-<title>큐레이션 메인 - 취향 발견</title>
+<title>큐레이션 메인 - 맞춤 추천</title>
 
 <!-- Plug-In css -->
 <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -229,262 +229,115 @@
 					<div class="hero_box">
 						<p class="hero_txt"><strong>김미미님</strong>을 위한</p>
 						<ul class="hero_tab">
-							<li><a href="#" class="on"><span>취향발견</span></a></li><!-- 활성화 class="on" -->
-							<li><a href="#"><span>맞춤추천</span></a></li>
+							<li><a href="#"><span>취향발견</span></a></li>
+							<li><a href="#" class="on"><span>맞춤추천</span></a></li><!-- 활성화 class="on" -->
 						</ul>		
 					</div>
 					<!-- //hero_box -->
 
 
 
-					<!-- 라이프스타일 -->
-					<div class="mc_cont curation_list">
-						<p class="cur_eyebrow"><span><em>라이프스타일</em></span></p>
-						<h2 class="mc_tit"><img src="../../images/wel_main_new/tit_wel_curation.svg" alt="큐레이션"></h2>
-
-						<!-- curation_list_cont -->
-						<div class="curation_list_cont">
-							<ul>
-								<!-- class="lis" 반복 -->
-								<li class="lis">
-									<img src="../../images/wel_main_new/@img_curation01.jpg" alt="">
-									<!-- curation_marker -->
-									<ul class="curation_marker">
-										<li style="left:55%;top:27%;"></li>
-										<li style="left:78%;top:65%;"></li>
-										<li style="left:6%;top:70%;"></li>
-									</ul>
-									<!-- //curation_marker -->
-								</li>
-								<!-- //class="lis" 반복 -->
-
-
-								<li class="lis">
-									<img src="../../images/wel_main_new/@img_curation05.jpg" alt="">
-									<!-- curation_marker -->
-									<ul class="curation_marker">
-										<li style="left:58%;top:48%;"></li>
-										<li style="left:21%;top:40%;"></li>
-										<li style="left:59%;top:76%;"></li>
-									</ul>
-									<!-- //curation_marker -->
-								</li>
-								<li class="lis">
-									<img src="../../images/wel_main_new/@img_curation03.jpg" alt="">
-									<!-- curation_marker -->
-									<ul class="curation_marker">
-										<li style="left:45%;top:48%;"></li>
-										<li style="left:63%;top:71%;"></li>
-										<li style="left:10%;top:37%;"></li>
-									</ul>
-									<!-- //curation_marker -->
-								</li>
-								<li class="lis">
-									<img src="../../images/wel_main_new/@img_curation02.jpg" alt="">
-									<!-- curation_marker -->
-									<ul class="curation_marker">
-										<li style="left:58%;top:48%;"></li>
-										<li style="left:21%;top:40%;"></li>
-										<li style="left:59%;top:76%;"></li>
-									</ul>
-									<!-- //curation_marker -->
-								</li>
-								<li class="lis">
-									<img src="../../images/wel_main_new/@img_curation04.jpg" alt="">
-									<!-- curation_marker -->
-									<ul class="curation_marker">
-										<li style="left:23%;top:59%;"></li>
-										<li style="left:23%;top:29%;"></li>
-										<li style="left:77%;top:58%;"></li>
-									</ul>
-									<!-- //curation_marker -->
-								</li>
-							</ul>
-						</div>
-						<!-- //curation_list_cont -->
-						<!--<button class="btn_more_view"><span><em class="hidden">라이프스타일 큐레이션</em>더보기</span></button> 삭제 -->
+					<!-- cur_join_msg -->
+					<div class="mc_cont cur_join_msg">
+						<p>로그인 하시면 <strong>더 정확한 추천</strong>이 가능해요!<br>회원가입하고 <strong>다양한 쿠폰혜택</strong> 받아보세요!</p>
+						<a href="#n">회원가입 및 로그인</a>
 					</div>
-					<!-- //라이프스타일 -->
+					<!-- //cur_join_msg -->
 
 
 
-					<!-- 이럴 땐? 이런상품 -->
-					<div class="mc_cont cur_prod">
-						<h2 class="mc_tit">이럴 땐? 이런상품 <img src="../../images/curation_main/tit_cur_prod.svg" alt=""></h2>
+					<!-- mc_cont : 실시간 쇼핑 검색어 -->
+					<div class="mc_cont wel_search">
+						<h2 class="mc_tit center">실시간 쇼핑 검색어</h2>
 
-						<!-- tab_swiper -->
-						<div class="tab_swiper tab_ty ty03 tab_link"><!-- tab_link / tab_cont : 확인용 - Ajax 처리시 해당 class 삭제 -->
-							<ul class="swiper-wrapper">
-								<li class="swiper-slide">
-									<a href="#cur_prod01" class="on"><!-- 활성화  class="on" -->
-										<span>계절특유의 온도</span>
-									</a>
-								</li>
-								<li class="swiper-slide">
-									<a href="#cur_prod02">
-										<span>결혼하는 나의 베프에게</span>
-									</a>
-								</li>
-								<li class="swiper-slide">
-									<a href="#n">
-										<span>번아웃 직전</span>
-									</a>
-								</li>
-								<li class="swiper-slide">
-									<a href="#n">
-										<span>3분힐링템</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!-- //tab_swiper -->
-
-						<!-- cur_prod_list -->
-						<div class="cur_prod_list tab_cont on" id="cur_prod01"><!-- tab_link / tab_cont .on : 확인용 - Ajax 처리시 해당 class 삭제 -->
-							<!-- li_resp_ty -->
-							<ul class="li_resp_ty ty02">
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/wel_main_new/@img_prod_boxB3.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">계절 특유의 온도</li>
-											<li class="s2">손이 닿는 곳곳마다 따듯함을 더해 줄 존재가 항상 있을 수 있기를</li>
-											<li class="s3">
-												<span class="ico_marker">#집콕생활</span>
-												<span class="ico_marker">#충전완료</span>
-												<span class="ico_marker">#힐링이필요해</span>
-											</li>
-										</ul>
-									</a>
-								</li>
-							</ul>
-							<!-- //li_resp_ty -->
-
-							<!-- cur_prod_img -->
-							<div class="cur_prod_img">
-								<ul class="swiper-wrapper">
-									<!-- li.swiper-slide 반복 -->
-									<li class="swiper-slide">
-										<a href="#n">
-											<p class="img"><img src="../../images/wel_main_new/@img_prod01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
-										</a>
-									</li>
-									<!-- //li.swiper-slide 반복 -->
+						<!-- wel_search_cont -->
+						<div class="wel_search_cont02">
+							<!-- wel_belt_banner -->
+							<div class="wel_search_list">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<!-- swiper-slide : 반복 -->
+										<div class="swiper-slide">
+											<a href="#n">
+												<em>1</em>
+												<p>NTC</p>
+												<i class="rk_up"><span class="hidden">상승</span></i><!-- 순위상승 class="rk_up" -->
+											</a>
+										</div>
+										<!-- //swiper-slide : 반복 -->
 
 
-									<li class="swiper-slide">
-										<a href="#n">
-											<p class="img"><img src="../../images/wel_main_new/@img_prod02.jpg" alt=""></p>
-										</a>
-									</li>
-									<li class="swiper-slide">
-										<a href="#n">
-											<p class="img"><img src="../../images/wel_main_new/@img_prod03.jpg" alt=""></p>
-										</a>
-									</li>
-									<li class="swiper-slide">
-										<a href="#n">
-											<p class="img"><img src="../../images/wel_main_new/@img_prod04.jpg" alt=""></p>
-										</a>
-									</li>
-								</ul>
+										<div class="swiper-slide">
+											<a href="#n">
+												<em>2</em>
+												<p>COLDE</p>
+												<i class="rk_se"><span class="hidden">동일</span></i><!-- 순위동일 class="rk_se" -->
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#n">
+												<em>3</em>
+												<p>다이어리</p>
+												<i class="rk_dn"><span class="hidden">하락</span></i><!-- 순위하락 class="rk_dn" -->
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#n">
+												<em>4</em>
+												<p>스마트폰거치대/가방걸이 스마트폰거치대/가방걸이 스마트폰거치대/가방걸이</p>
+												<i class="rk_up"><span class="hidden">상승</span></i>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#n">
+												<em>5</em>
+												<p>스티커</p>
+												<i class="rk_se"><span class="hidden">동일</span></i>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#n">
+												<em>6</em>
+												<p>몬스타엑스</p>
+												<i class="rk_dn"><span class="hidden">하락</span></i>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#n">
+												<em>7</em>
+												<p>라이브워크</p>
+												<i class="rk_up"><span class="hidden">상승</span></i>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#n">
+												<em>8</em>
+												<p>필통</p>
+												<i class="rk_se"><span class="hidden">동일</span></i>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#n">
+												<em>9</em>
+												<p>달력</p>
+												<i class="rk_dn"><span class="hidden">하락</span></i>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#n">
+												<em>10</em>
+												<p>세븐틴</p>
+												<i class="rk_up"><span class="hidden">상승</span></i>
+											</a>
+										</div>
+									</div>
+								</div>
 							</div>
-							<!-- //cur_prod_img -->
+							<!-- //wel_belt_banner -->
 						</div>
-						<!-- //cur_prod_list -->
-
-						<!-- cur_prod_list : 확인용 -->
-						<div class="cur_prod_list tab_cont" id="cur_prod02">
-							<p style="height:300px;background-color:#eee;border-radius:8px;">
-						</div>
-						<!-- //cur_prod_list : 확인용 -->
+						<!-- //wel_search_cont -->
 					</div>
-					<!-- //이럴 땐? 이런상품 -->
-
-
-					
-					<!-- What’s in your bag -->
-					<div class="mc_cont mc_dep cur_new">
-						<h2 class="mc_tit">What’s<br>in your bag</h2>
-						<div class="cur_new_msg">
-							<p>핫트랙스의<br>내돈내산 찐템!</p>
-						</div>
-
-						<!-- cur_new_img : 동영상일 경우 -->
-						<div class="cur_new_img cur_mov">
-							<p class="movie_frame">
-								<iframe src="https://www.youtube.com/embed/nBY0rwBvaSY"></iframe>
-							</p>
-						</div>
-						<!-- //cur_new_img : 동영상일 경우 -->
-						<!-- box_txt -->
-						<ul class="box_txt">
-							<li class="s1">
-								<p class="img"><img src="../../images/wel_main_new/@img_now04.jpg" alt=""></p>
-								<p>이것저것 하고 싶은 게 많은 MD <strong>이봉봉</strong></p>
-							</li>
-							<li class="s2">
-								<p class="t1"><strong>어지러운 가방 속, 질서가 필요하다면</strong></p>
-								<p>충전기, 볼펜, 이런저런 영수증까지 가득한 자유분방한  가방속을 조금 더 신경 써서 정리하기로 했어요.<br>칸이 나뉘어져 있고 가벼운 수납 파우치를 찾던 끝에 내린  결정은 툴 파우치였어요. 평범하지만 체계적인 가방 정리를  원한다면,  ALTNA 툴파우치를 추천해요.</p>
-							</li>
-						</ul>
-						<!-- //box_txt -->
-						<br><br>
-
-						<!-- cur_new_img : 이미지 일 경우 -->
-						<div class="cur_new_img">
-							<p><img src="../../images/curation_main/@img_cur_new01.jpg" alt=""></p>
-						</div>
-						<!-- //cur_new_img : 이미지 일 경우 -->
-						<!-- box_txt -->
-						<ul class="box_txt">
-							<li class="s1">
-								<p class="img"><img src="../../images/wel_main_new/@img_now04.jpg" alt=""></p>
-								<p>이것저것 하고 싶은 게 많은 MD <strong>이봉봉</strong></p>
-							</li>
-							<li class="s2">
-								<p class="t1"><strong>어지러운 가방 속, 질서가 필요하다면</strong></p>
-								<p>충전기, 볼펜, 이런저런 영수증까지 가득한 자유분방한  가방속을 조금 더 신경 써서 정리하기로 했어요.<br>칸이 나뉘어져 있고 가벼운 수납 파우치를 찾던 끝에 내린  결정은 툴 파우치였어요. 평범하지만 체계적인 가방 정리를  원한다면,  ALTNA 툴파우치를 추천해요.</p>
-							</li>
-						</ul>
-						<!-- //box_txt -->
-
-						<!-- li_s_ty02 -->
-						<ul class="li_s_ty02">
-							<!-- .li 반복 -->
-							<li class="li">
-								<a href="#n">
-									<p class="img"><img src="../../images/wel_main_new/@img_prod01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
-									<ul class="txt">
-										<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-										<li class="s2">
-											<strong>69%</strong>
-											<span>1,234,000</span>
-											<em>1,299,000</em>
-										</li>
-									</ul>
-								</a>
-							</li>
-							<!-- //.li 반복 -->
-
-
-							<li class="li">
-								<a href="#n">
-									<p class="img"><img src="../../images/wel_main_new/@img_prod02.jpg" alt=""></p>
-									<ul class="txt">
-										<li class="s1">퍼니디 조구만 스튜디오 에코백 카툰 풍선 총</li>
-										<li class="s2">
-											<strong>69%</strong>
-											<span>13,950</span>
-											<em>1,299,000</em>
-										</li>
-									</ul>
-								</a>
-							</li>
-						</ul>
-						<!-- //li_s_ty02 -->
-					</div>
-					<!-- //What’s in your bag -->
+					<!-- //mc_cont : 실시간 쇼핑 검색어 -->
 
 
 
