@@ -93,7 +93,7 @@ $(function(){
 
 
 function scrollEvent2() {
-    let images = document.querySelectorAll(".image");
+    let images = document.querySelectorAll('.curation_list_cont .li');
     let imgStack = [0, 0];
     let colWidth = 100;
     for(let i = 0; i < images.length; i++) {
@@ -103,7 +103,7 @@ function scrollEvent2() {
         imgStack[minIndex] += (images[i].children[0].height + 20);
         images[i].style.transform = `translateX(${x}%) translateY(${y}px)`;
         if(i === images.length - 1) {
-            document.querySelector(".images").style.height = `${Math.max.apply(0, imgStack)}px`;
+            document.querySelector('.curation_list_cont > ul').style.height = `${Math.max.apply(0, imgStack)}px`;
         }
     }
 }

@@ -79,19 +79,6 @@
   border-color: #000;
 }
 
-.ht_ .box {
-  margin: 20px 0;
-  padding: 60px 20px;
-  border-top: 8px solid #f7f7f7;
-}
-
-.ht_ .box .tit {
-  color: #000;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 32px;
-}
-
 .ht_ .hero_box {
   padding: 15px 20px 20px 20px;
   text-align: center;
@@ -181,7 +168,7 @@
 }
 
 .ht_ .curation_list {
-  padding: 55px 20px;
+  padding: 35px 20px;
   background: #f5ede2 url("../images/wel_main_new/bg_wel_curation.jpg") center top/32px repeat;
   overflow: hidden;
 }
@@ -193,6 +180,107 @@
 
 .ht_ .curation_list .mc_tit img {
   width: 252px;
+}
+
+.ht_ .curation_list .cur_eyebrow {
+  position: relative;
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.ht_ .curation_list .cur_eyebrow span {
+  display: inline-block;
+  position: relative;
+  padding: 0 7px;
+  color: #000;
+}
+
+.ht_ .curation_list .cur_eyebrow span:before {
+  position: absolute;
+  left: -2px;
+  top: 8px;
+  width: calc(100% + 4px);
+  height: 14px;
+  background: #2ff37d;
+  content: "";
+  z-index: 0;
+}
+
+.ht_ .curation_list .cur_eyebrow em {
+  position: relative;
+}
+
+.ht_ .curation_list_cont {
+  margin: 0 -10px;
+}
+
+.ht_ .curation_list_cont > ul {
+  position: relative;
+}
+
+.ht_ .curation_list_cont .li {
+  display: inline-block;
+  position: absolute;
+  width: 50%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ht_ .curation_list_cont .li > img {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.ht_ .curation_list_cont .curation_marker {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
+
+.ht_ .curation_list_cont .curation_marker > li {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.ht_ .curation_list_cont .curation_marker > li:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.ht_ .curation_list_cont .curation_marker > li:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: #EBFF00;
+  border-radius: 50%;
+  content: "";
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .ht_ .cur_prod .mc_tit {
@@ -655,7 +743,7 @@
   top: 12px;
   width: calc(100% + 4px);
   height: 14px;
-  background: #a5e2ff;
+  background: #2ff37d;
   content: "";
   z-index: 0;
 }
@@ -1248,29 +1336,4 @@
 .ht_ .cur_prod_view_cont {
   position: relative;
   margin: 0 -20px;
-}
-
-.ht_ .images {
-  width: 100%;
-  position: relative;
-}
-
-.ht_ .image {
-  display: inline-block;
-  position: absolute;
-  width: 50%;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.ht_ .image > img {
-  width: 100%;
-}
-
-.ht_ .image > span {
-  position: absolute;
-  color: white;
-  bottom: 25px;
-  right: 25px;
 }
