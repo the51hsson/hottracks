@@ -440,7 +440,7 @@ body {
 
     // 오늘만 특가 
     .wel_today {
-        padding:35px 0 45px 0;background:#ffeb01;text-align:center;
+        padding:35px 0 45px 0;background:#ffeb01;text-align:center;overflow:hidden;
         .wel_today_time {
             position:relative;z-index:2;
         }

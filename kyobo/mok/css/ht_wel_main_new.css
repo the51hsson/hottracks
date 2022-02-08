@@ -816,6 +816,7 @@ body {
   padding: 35px 0 45px 0;
   background: #ffeb01;
   text-align: center;
+  overflow: hidden;
 }
 
 .ht_ .wel_today .wel_today_time {
