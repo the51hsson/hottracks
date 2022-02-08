@@ -25,7 +25,7 @@
 	url('../font/GmarketSansLight.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
 	url('../font/GmarketSansLight.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-.ctg_list_wrap{
+.wrap{
     .tit{
         padding:0 20px;
         font-size: 18px;
@@ -73,8 +73,12 @@
 .menu_sort{
     padding:0 20px;
     margin-top:16px;
+    &.list_inner_sort{
+        padding:0;
+        margin-bottom:16px;
+    }
     .btn_sort{
-        line-height:20px;
+        line-height:21px;
         font-size: 13px;
         margin-right:16px;
         position:relative;
@@ -145,14 +149,17 @@
 }
 //MD 추천 스와이퍼
 .ctg_top_swiper{
-    padding-bottom:30px;
-    margin-bottom:30px;
-    background:url(../images/guide/md_top_banner_bg.svg) repeat center center;
+    padding:30px 0 60px 0;
+    margin-bottom:24px;
+    background:url(../images/guide/md_top_banner_bg.svg) no-repeat;
+    background-size: cover;
     .banner_title{
-        border:1px solid red;
+        padding:20px;
+        background: url(../images/guide/banr_title_bg.svg) no-repeat center top;
+        background-size: auto 83px;
         .tit{
-            height:32px;
-            background:url(../images/guide/tod_banner_txt_img.png) no-repeat center center;
+            height:37px;
+            background:url(../images/guide/tod_banner_txt_img.png) no-repeat center center /auto ;
 
         }
         .sub{
@@ -161,52 +168,58 @@
             margin-top:7px;
         }
     }
-    .prod-wrapper{
+    .prod-wrapper {
         padding-top:16px;
     }
-    .swiper-slide{
+    .swiper-slide {
         width:217px;
-        border:2px solid #000;
         border-radius: 12px;
         overflow: hidden;
         box-sizing: border-box;
         height:auto;
         min-height: 100% !important;
+        box-shadow: 1px -1px 7px 3px rgba(0,0,0,0.2);
         .product_pic{
             padding-top: 217px;
+            margin-bottom:0;
         }
         img{
             width:100%;
             height:auto;
         }
         .product_info{
-            padding:0 20px 20px 20px;
+            padding:12px 20px 20px 20px;
+            background-color: #fff;
         }
     }
     .swiper-pagination.out_bottom {
         height:auto;
         padding:0;
-        background-color: #fff;
-        bottom:0px;
+        background-color: rgba(0,0,0,0);
+        bottom:30px;
         line-height:16px;
         .swiper-pagination-current{
             color:#000;
             line-height:16px;
         }
-        .swiper-pagination-total{
+        .swiper-pagination-total {
             line-height:16px;
+            color:rgba(0,0,0,0.6);
+            &:before {
+                color:rgba(0,0,0,0.6);
+            }
         }
     }
 }
 //상품 리스트 영역
-ul.prod-wrapper.column_dir{
+ul.prod-wrapper.column_dir {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content:space-between;
 	align-items: flex-start;
 	align-content: flex-start;
     padding:0;
- .prod_item{
+ .prod_item {
 	width: calc((100% - 20px)/2);
 	display: flex;
 	flex-flow: column wrap;
@@ -221,12 +234,12 @@ ul.prod-wrapper.column_dir{
 		margin-right:0;
 	}
  }
- .product_pic{
+ .product_pic {
 	 width:100%;
 	 padding-top: 100%;
  }
 }
-ul.prod-wrapper.row_dir{
+ul.prod-wrapper.row_dir {
     margin-top:20px;
     padding:20px 20px 0 20px;
 	.prod_item{ 
@@ -239,50 +252,14 @@ ul.prod-wrapper.row_dir{
 		align-content: center;
 		align-items: center;
 		cursor:pointer;
-		span{
+		span {
 			display: block;
 		}
-		&:first-of-type{
+		&:first-of-type {
 			margin-top:0;
 		}
 	}
-    .lankiing_bubble_area{
-        position:absolute;
-        right:-20px;
-        top:-25px;
-        padding-right:40px;
-        &:before{
-            content:"";
-            position:absolute;
-            width:55px;
-            height:70px;
-            right:-15px;
-            top:-14px;
-    
-            background:url(../images/guide/lanking_bubble_thumb.svg) no-repeat center center / 55px;
-        }
-        .lankiing_bubble{
-            position:relative;
-            width:130px;
-            height:56px;
-            padding:10px 20px;
-            line-height:20px;
-            font-weight: 700;
-            background:url(../images/guide/lanking_bubble.svg) no-repeat center center / 120px;
-            &:before{
-                content:"";
-                position:absolute;
-                width:12px;
-                height:15px;
-                background: url(../images/guide/lanking_bubble_icon.svg) no-repeat center center/ 10px;
-                transform: rotate(180deg);
-                bottom:8px;
-                right:38px;
-            }
-        }
-
-    }
-    .langking{
+    .langking {
         position: absolute;
         display: block;
         width:50px;
@@ -352,10 +329,9 @@ ul.prod-wrapper.row_dir{
                 margin-top:-2px;
         
             }
-        }
-        
+        }  
     }
-	.product_pic{
+	.product_pic {
 		position:relative;
 		width:158px;
 		height:0;
@@ -370,14 +346,131 @@ ul.prod-wrapper.row_dir{
 			left:0;
 		}
 	} 			
-	.product_info{
+	.product_info {
 		flex-grow:1;
 		padding-left:19px;
 	}
-	.title{
+	.title {
 		margin-bottom:8px;
 	}
     
+}
+//말풍선(한줄 정렬)
+.list_block {
+    position:relative;
+
+    .lanking_bubble_area {
+        position:absolute;
+        right:0;
+        bottom:145px;
+        padding-right:40px;
+        z-index:10;
+        .icon{
+            content:"";
+            width:0px;
+            height:0px;
+            position:absolute;
+            right:-15px;
+            top:-14px;
+            z-index: 13;
+            background: url(../images/guide/lanking_bubble_thumb.svg) no-repeat center center/ 55px;
+            transition: width 0.2s ease-in-out;
+        }
+        .icon_show{
+            width:55px;
+            height:70px;   
+        }
+    }
+    .lanking_bubble {
+        position:relative;
+        width:130px;
+        height:56px;
+        padding:10px 20px;
+        line-height:20px;
+        font-weight: 700;
+        background:url(../images/guide/lanking_bubble.svg) no-repeat center center / 120px;
+        &:before{
+            content:"";
+            position:absolute;
+            width:12px;
+            height:15px;
+            background: url(../images/guide/lanking_bubble_icon.svg) no-repeat center center/ 10px;
+            transform: rotate(180deg);
+            bottom:8px;
+            right:38px;
+        }
+    }    
+}
+//말풍선(두줄 정렬)
+.list_column_block{
+    position:relative;
+    .lanking_bubble_area {
+        position:absolute;
+        right:-20px;
+        bottom:45%;
+        z-index:10;
+    }
+    .icon{
+        content:"";
+        width:0px;
+        height:0px;
+        position:absolute;
+        top:-15px;
+        left:5px;
+        z-index: 13;
+        background: url(../images/guide/lanking_bubble_new.svg) no-repeat center center/ 65px;
+        transition: height 0.2s ease-in-out;
+    }
+    .icon_show{
+        width:70px;
+        height:30px;
+    
+    }
+    .lanking_bubble {
+        position:relative;  
+        width:140px;
+        height:68px;
+        padding:15px 20px;
+        line-height:20px;
+        font-weight: 700;
+        background:url(../images/guide/lanking_bubble.svg) no-repeat center center / 135px;
+        &:before{
+            content:"";
+            position:absolute;
+            width:12px;
+            height:15px;
+            background: url(../images/guide/lanking_bubble_icon.svg) no-repeat center center/ 10px;
+            transform: rotate(180deg);
+            bottom:18px;
+            right:68px;
+        }
+    }  
+}
+//신상품 리스트
+.prod_list_wrap{
+     padding:0 20px;
+     .tit{
+         line-height:35px;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: -0.01;
+        margin-bottom:12px;
+     }
+
+}
+//솔로 배너
+.solo_banner{
+    margin: 30px 0;
+    img{
+        width:100%;
+    }
+}
+//띠배너
+.belt_banner {
+    margin-top:60px;
+    & > img {
+        width:100%;
+    }
 }
 //더보기 버튼 영역
 .btn_more_div{
