@@ -3975,19 +3975,19 @@ body {
 }
 
 .ht_ .cur_prod_img {
-  margin-top: 20px;
+  margin: 20px -20px 0 -20px;
   overflow: hidden;
 }
 
 .ht_ .cur_prod_img .swiper-slide {
-  width: calc((100% - 40px) / 3);
+  width: calc((100% - 10px) / 3);
   margin-left: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.ht_ .cur_prod_img .swiper-slide:first-child {
-  margin-left: 0;
+.ht_ .cur_prod_img .swiper-slide:last-child {
+  margin-right: 20px;
 }
 
 .ht_ .cur_prod_img a {
@@ -4060,6 +4060,10 @@ body {
   font-size: 10px;
   font-weight: 400;
   text-decoration: line-through;
+}
+
+.ht_ .cur_prod_img.ty02 {
+  margin: 20px 0 0 0;
 }
 
 .ht_ .cur_prod_img.ty02 .swiper-slide {
@@ -4649,6 +4653,22 @@ body {
   color: #fff;
 }
 
+.ht_ .cur_recent .cur_prod_img {
+  margin: 20px 0 0 0;
+}
+
+.ht_ .cur_recent .cur_prod_img .swiper-slide {
+  width: calc((100% - 40px) / 3);
+}
+
+.ht_ .cur_recent .cur_prod_img .swiper-slide:first-child {
+  margin-left: 0;
+}
+
+.ht_ .cur_recent .cur_prod_img .swiper-slide:last-child {
+  margin-right: 0;
+}
+
 .ht_ .cur_recent .cur_prod_img .img:after {
   position: absolute;
   left: 0;
@@ -4670,6 +4690,10 @@ body {
 
 .ht_ .cur_recommend .cur_prod_banner {
   margin: 22px 0 20px 0;
+}
+
+.ht_ .cur_recommend .mc_tit02 + .prod_list {
+  margin-top: -10px;
 }
 
 .ht_ .cur_prod_banner {
@@ -4977,6 +5001,72 @@ body {
   margin: 0 -20px;
 }
 
+.ht_ .liv_list .li {
+  position: relative;
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.ht_ .liv_list .li:first-child {
+  margin-top: 0;
+}
+
+.ht_ .liv_list .li .img {
+  position: relative;
+  width: 42%;
+}
+
+.ht_ .liv_list .li .img .img_a {
+  position: relative;
+  height: 0;
+  padding-top: 150%;
+  background: #f7f7f7;
+}
+
+.ht_ .liv_list .li .wel_live_time {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
+  text-align: center;
+}
+
+.ht_ .liv_list .li .wel_live_time span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.ht_ .liv_list .li .wel_live_time em {
+  font-family: 'Gmarket Sans';
+}
+
+.ht_ .liv_list .li .wel_live_time p {
+  margin-top: -8px;
+  font-size: px;
+  font-weight: 700;
+  line-height: 54px;
+}
+
+.ht_ .liv_list .li .txt {
+  width: calc(58% - 20px);
+  margin-left: 20px;
+}
+
 .ht_ .point_line {
   position: relative;
 }
@@ -5008,6 +5098,10 @@ body {
 
 .ht_ .point_line.ty04:before {
   background: #f5c9ef;
+}
+
+.ht_ .point_line.ty05:before {
+  background: #ffff58;
 }
 
 @-webkit-keyframes pointLine {
