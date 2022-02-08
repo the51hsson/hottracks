@@ -8459,7 +8459,6 @@ body.dialog_open {
 }
 
 .ctg_topMenu.depth2 a {
-  font-size: 13px;
   line-height: 22px;
   letter-spacing: -0.13px;
   padding: 12px 8px 13px 8px;
@@ -8990,7 +8989,7 @@ body.dialog_open {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 12px;
+  border-radius: 5%;
   top: 0;
   left: 0;
   z-index: 1;

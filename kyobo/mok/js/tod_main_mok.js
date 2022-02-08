@@ -43,21 +43,21 @@ $(function(){
 	
 
    //말풍선 효과
-	if($('.lanking_bubble_area').length > 0){
+	if($('.ranking_bubble_area').length > 0){
 		window.addEventListener('scroll', promotionEffect);
 		promotionEffect();
 	}
 	
 	function promotionEffect(){
-       var bubbles = document.querySelectorAll('.lanking_bubble_area');
+       var bubbles = document.querySelectorAll('.ranking_bubble_area');
 	   for(var i=0; i< bubbles.length; i++){
 		 if(bubbleHighlight(bubbles[i])){
 			$(bubbles[i]).css('visibility', 'visible');
-			$(bubbles[i]).find('.icon').addClass('icon_show');
+			$(bubbles[i]).find('.rank_icon').addClass('icon_show');
 
 		 }else{
 			$(bubbles[i]).css('visibility', 'hidden');
-			$(bubbles[i]).find('.icon').removeClass('icon_show');
+			$(bubbles[i]).find('.rank_icon').removeClass('icon_show');
 		 };
 	   }
 

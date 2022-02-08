@@ -112,18 +112,22 @@
         <div class="update_txt">
             <em>다음 업데이트까지</em>
             <em class="timer">02:52:39</em>
-            <button type="button" class="btn_info"></button>
+            <button type="button" class="btn_info" data-role="btn-dialog" data-target="#popEx1"></button>
         </div>
         <section class="list_section">
+            <!--div class="list_block" 으로 상품이 반복되는 구조-->
             <div class="list_block">
                 <ul class="prod-wrapper row_dir">
                     <li class="prod_item">
-                        <span class="langking up">01</span>
+                        <div class="rangking up">
+                            <em class="rank">01</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
-                            <span class="evt_good_count">
+                            <button class="evt_good_count">
                                 <div class="icon"></div>
                                 <!-- <div class="txt"></div> -->
-                            </span>
+                            </button>
                             <img src="../../images/guide/@tod_prod_sample4.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
                         </div>
                         <div class="product_info">
@@ -142,12 +146,15 @@
                         </div>
                     </li>
                     <li class="prod_item">
-                        <span class="langking down">02</span>
+                        <div class="rangking down">
+                            <em class="rank">100</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
-                            <span class="evt_good_count">
+                            <button class="evt_good_count">
                                 <div class="icon"></div>
                                 <div class="txt">80</div>
-                            </span>
+                            </button>
                             <img src="../../images/guide/@tod_prod_sample5.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
                         </div>
                         <div class="product_info">
@@ -166,12 +173,15 @@
                         </div>
                     </li>
                     <li class="prod_item">
-                        <span class="langking same">03</span>
+                        <div class="rangking same">
+                            <em class="rank">03</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
-                            <span class="evt_good_count">
+                            <button class="evt_good_count">
                                 <div class="icon"></div>
                                 <!-- <div class="txt"></div> -->
-                            </span>
+                            </button>
                             <img src="../../images/guide/@tod_prod_sample4.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
                         </div>
                         <div class="product_info">
@@ -190,12 +200,15 @@
                         </div>
                     </li>
                     <li class="prod_item">
-                        <span class="langking up">04</span>
+                        <div class="rangking up">
+                            <em class="rank">04</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
-                            <span class="evt_good_count">
+                            <button class="evt_good_count">
                                 <div class="icon"></div>
                                 <div class="txt">80</div>
-                            </span>
+                            </button>
                             <img src="../../images/guide/@tod_prod_sample3.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
                         </div>
                         <div class="product_info">
@@ -214,12 +227,15 @@
                         </div>
                     </li>
                     <li class="prod_item">
-                        <span class="langking same">05</span>
+                        <div class="rangking same">
+                            <em class="rank">05</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
-                            <span class="evt_good_count">
+                            <button class="evt_good_count">
                                 <div class="icon"></div>
                                 <!-- <div class="txt"></div> -->
-                            </span>
+                            </button>
                             <img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
                         </div>
                         <div class="product_info">
@@ -238,12 +254,15 @@
                         </div>
                     </li>
                     <li class="prod_item">
-                        <span class="langking down">06</span>
+                        <div class="rangking down">
+                            <em class="rank">06</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
-                            <span class="evt_good_count">
+                            <button class="evt_good_count">
                                 <div class="icon"></div>
                                 <div class="txt">80</div>
-                            </span>
+                            </button>
                             <img src="../../images/guide/@tod_prod_sample1.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
                         </div>
                         <div class="product_info">
@@ -262,12 +281,15 @@
                         </div>
                     </li>
                     <li  class="prod_item">
-                        <span class="langking same">07</span>
+                        <div class="rangking same">
+                            <em class="rank">07</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
-                            <span class="evt_good_count">
+                            <button class="evt_good_count">
                                 <div class="icon"></div>
                                 <div class="txt">80</div>
-                            </span>
+                            </button>
                             <img src="../../images/guide/@tod_prod_sample1.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
                         </div>
                         <div class="product_info">
@@ -286,20 +308,23 @@
                         </div>
                     </li>
                 </ul>
-                <article class="lanking_bubble_area">
-                    <div class="icon"></div>
-                    <div class="lanking_bubble">요즘 불티나게 <br/>팔리는 중</div>
+                <article class="ranking_bubble_area">
+                    <div class="rank_icon"></div>
+                    <div class="ranking_bubble">요즘 불티나게 <br/>팔리는 중</div>
                 </article>
             </div>
             <div class="list_block">
                 <ul class="prod-wrapper row_dir">
                     <li class="prod_item">
-                        <span class="langking up">01</span>
+                        <div class="rangking up">
+                            <em class="rank">08</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
-                            <span class="evt_good_count">
+                            <button class="evt_good_count">
                                 <div class="icon"></div>
                                 <!-- <div class="txt"></div> -->
-                            </span>
+                            </button>
                             <img src="../../images/guide/@tod_prod_sample4.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
                         </div>
                         <div class="product_info">
@@ -318,12 +343,15 @@
                         </div>
                     </li>
                     <li class="prod_item">
-                        <span class="langking down">02</span>
+                        <div class="rangking down">
+                            <em class="rank">09</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
-                            <span class="evt_good_count">
+                            <button class="evt_good_count">
                                 <div class="icon"></div>
                                 <div class="txt">80</div>
-                            </span>
+                            </button>
                             <img src="../../images/guide/@tod_prod_sample5.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
                         </div>
                         <div class="product_info">
@@ -342,12 +370,15 @@
                         </div>
                     </li>
                     <li class="prod_item">
-                        <span class="langking same">03</span>
+                        <div class="rangking same">
+                            <em class="rank">10</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
-                            <span class="evt_good_count">
+                            <button class="evt_good_count">
                                 <div class="icon"></div>
                                 <!-- <div class="txt"></div> -->
-                            </span>
+                            </button>
                             <img src="../../images/guide/@tod_prod_sample4.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
                         </div>
                         <div class="product_info">
@@ -366,7 +397,10 @@
                         </div>
                     </li>
                     <li class="prod_item">
-                        <span class="langking up">04</span>
+                        <div class="rangking up">
+                            <em class="rank">01</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
                             <span class="evt_good_count">
                                 <div class="icon"></div>
@@ -390,12 +424,12 @@
                         </div>
                     </li>
                     <li class="prod_item">
-                        <span class="langking same">05</span>
+                        <span class="rangking same">05</span>
                         <div class="product_pic">
-                            <span class="evt_good_count">
+                            <button class="evt_good_count">
                                 <div class="icon"></div>
                                 <!-- <div class="txt"></div> -->
-                            </span>
+                            </button>
                             <img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
                         </div>
                         <div class="product_info">
@@ -414,7 +448,10 @@
                         </div>
                     </li>
                     <li class="prod_item">
-                        <span class="langking down">06</span>
+                        <div class="rangking up">
+                            <em class="rank">12</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
                             <span class="evt_good_count">
                                 <div class="icon"></div>
@@ -437,13 +474,16 @@
                             </div>
                         </div>
                     </li>
-                    <li  class="prod_item">
-                        <span class="langking same">07</span>
+                    <li class="prod_item">
+                        <div class="rangking up">
+                            <em class="rank">13</em>
+                            <em class="rank_icon"></em>
+                        </div>
                         <div class="product_pic">
-                            <span class="evt_good_count">
+                            <button class="evt_good_count">
                                 <div class="icon"></div>
                                 <div class="txt">80</div>
-                            </span>
+                            </button>
                             <img src="../../images/guide/@tod_prod_sample1.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
                         </div>
                         <div class="product_info">
@@ -462,9 +502,9 @@
                         </div>
                     </li>
                 </ul>
-                <article class="lanking_bubble_area">
-                    <div class="icon"></div>
-                    <div class="lanking_bubble">요즘 불티나게 <br/>팔리는 중</div>
+                <article class="ranking_bubble_area">
+                    <div class="rank_icon"></div>
+                    <div class="ranking_bubble">요즘 불티나게 <br/>팔리는 중</div>
                 </article>
             </div>
         </section>
@@ -525,7 +565,26 @@
             </div>
         </div>
     </footer>
-    <!-- //module 016 -->
+    <!--업데이트 타이머 팝업-->
+    <div id="popEx1" class="dialog_wrap">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
+                class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">베스트 랭킹 순위</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents">
+            <ul class="bul_list">
+                <li class="bul_item_dot">핫트랙스 베스트 상품은 최근 24시간 동안의 판매량, 누적 리뷰 수, 찜 수를 반영하여 
+                    3시간 기준으로 업데이트하고 있습니다.
+               </li>
+            </ul>
+        </div>
+        <!-- //dialog_contents -->
+    </div>
+    <!--//업데이트 타이머 팝업-->
 </body>
 
 </html>

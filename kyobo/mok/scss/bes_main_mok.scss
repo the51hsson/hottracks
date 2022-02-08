@@ -73,6 +73,8 @@
 .menu_sort{
     padding:0 20px;
     margin-top:16px;
+    overflow-x: auto;
+    white-space: nowrap;
     &.list_inner_sort{
         padding:0;
         margin-bottom:16px;
@@ -160,7 +162,6 @@
         .tit{
             height:37px;
             background:url(../images/guide/tod_banner_txt_img.png) no-repeat center center /auto ;
-
         }
         .sub{
             text-align: center;
@@ -178,6 +179,7 @@
         box-sizing: border-box;
         height:auto;
         min-height: 100% !important;
+        background-color: #fff;
         box-shadow: 1px -1px 7px 3px rgba(0,0,0,0.2);
         .product_pic{
             padding-top: 217px;
@@ -238,6 +240,7 @@ ul.prod-wrapper.column_dir {
 	 width:100%;
 	 padding-top: 100%;
  }
+
 }
 ul.prod-wrapper.row_dir {
     margin-top:20px;
@@ -259,10 +262,39 @@ ul.prod-wrapper.row_dir {
 			margin-top:0;
 		}
 	}
-    .langking {
+    .product_pic {
+        position:relative;
+        width:158px;
+        height:0;
+        padding-top:158px;
+        overflow: hidden;
+        flex-shrink: 0;
+        margin-bottom:0;
+        img{
+            width:100%;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+    } 			
+    .product_info {
+        flex-grow:1;
+        padding-left:19px;
+    }
+    .title {
+        margin-bottom:8px;
+    }
+}
+//랭킹
+.list_section{
+    .rangking {
         position: absolute;
-        display: block;
-        width:50px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width:52px;
         height:50px;
         text-align: center;
         line-height: 50px;
@@ -271,26 +303,28 @@ ul.prod-wrapper.row_dir {
         z-index: 30;
         color:#000;
         font-weight: 700;
-        padding-right:13px;
-        background:url(../images/guide/lank_noraml.svg) no-repeat center center / 48px;
-        &:before{
+        background:url(../images/guide/lank_noraml.svg) no-repeat center center / 50px;
+        .rank_icon{
             width:10px;
             height:15px;
-            top:18px;
-            right:12px;
+            margin-left:2px;
+            margin-top:-1px;
         }
-        &.down:before{
-            content:"";
-            position:absolute;
+        .rank{
+            display: block;
+        }
+        &.down .rank_icon{
             background:url(../images/guide/lank_noraml_up.svg) no-repeat center center / 9px;
             transform: rotate(180deg);
         }
-        &.up:before{
-            content:"";
-            position:absolute;
+        &.up .rank_icon{
             background:url(../images/guide/lank_noraml_up.svg) no-repeat center center / 9px;
+            margin-top:-2px;
         }
-        &.same:before{
+        &.same .rank_icon{
+            position:relative;
+        }
+        &.same .rank_icon:before{
             content:"";
             position:absolute;
             width:7px;
@@ -298,27 +332,34 @@ ul.prod-wrapper.row_dir {
             right:14px;
             background-color: #000;
             top:50%;
+            left:0;
             margin-top:-2px;
     
         }
     }
     @for $lank from 1 through 5 {
-        .prod_item:nth-of-type(#{$lank})  .langking{
+        .list_block:first-of-type .prod_item:nth-of-type(#{$lank}) .rangking{
             color:#fff;
-            background:url(../images/guide/lank_hot.svg) no-repeat center center / 48px;
+            background:url(../images/guide/lank_hot.svg) no-repeat center center / 50px;
             border:none;
-            &.down:before{
-                content:"";
-                position:absolute;
+    
+            .rank{
+                display: block;
+            }
+            .rank_icon{
+                display: block;
+                width:10px;
+            }
+            &.down .rank_icon{
                 background:url(../images/guide/lank_hot_up.svg) no-repeat center center / 9px;
                 transform: rotate(180deg);
             }
-            &.up:before{
-                content:"";
-                position:absolute;
+            &.up .rank_icon{
                 background:url(../images/guide/lank_hot_up.svg) no-repeat center center / 9px;
+                transform: rotate(360deg);
             }
-            &.same:before{
+    
+            &.same .rank_icon:before{
                 content:"";
                 position:absolute;
                 width:7px;
@@ -327,45 +368,25 @@ ul.prod-wrapper.row_dir {
                 background-color: #fff;
                 top:50%;
                 margin-top:-2px;
-        
+                left:0;
+                z-index: 20;
             }
         }  
     }
-	.product_pic {
-		position:relative;
-		width:158px;
-		height:0;
-		padding-top:158px;
-		overflow: hidden;
-		flex-shrink: 0;
-		margin-bottom:0;
-		img{
-			width:100%;
-			position:absolute;
-			top:0;
-			left:0;
-		}
-	} 			
-	.product_info {
-		flex-grow:1;
-		padding-left:19px;
-	}
-	.title {
-		margin-bottom:8px;
-	}
-    
 }
+
+
 //말풍선(한줄 정렬)
 .list_block {
     position:relative;
-
-    .lanking_bubble_area {
+    
+    .ranking_bubble_area {
         position:absolute;
         right:0;
         bottom:145px;
         padding-right:40px;
         z-index:10;
-        .icon{
+        .rank_icon{
             content:"";
             width:0px;
             height:0px;
@@ -374,14 +395,14 @@ ul.prod-wrapper.row_dir {
             top:-14px;
             z-index: 13;
             background: url(../images/guide/lanking_bubble_thumb.svg) no-repeat center center/ 55px;
-            transition: width 0.2s ease-in-out;
         }
         .icon_show{
             width:55px;
             height:70px;   
+            transition: width 0.2s ease-in-out;
         }
     }
-    .lanking_bubble {
+    .ranking_bubble {
         position:relative;
         width:130px;
         height:56px;
@@ -404,13 +425,13 @@ ul.prod-wrapper.row_dir {
 //말풍선(두줄 정렬)
 .list_column_block{
     position:relative;
-    .lanking_bubble_area {
+    .ranking_bubble_area {
         position:absolute;
         right:-20px;
         bottom:45%;
         z-index:10;
     }
-    .icon{
+    .rank_icon{
         content:"";
         width:0px;
         height:0px;
@@ -419,14 +440,13 @@ ul.prod-wrapper.row_dir {
         left:5px;
         z-index: 13;
         background: url(../images/guide/lanking_bubble_new.svg) no-repeat center center/ 65px;
-        transition: height 0.2s ease-in-out;
     }
     .icon_show{
         width:70px;
         height:30px;
-    
+        transition: height 0.2s ease-in-out;
     }
-    .lanking_bubble {
+    .ranking_bubble {
         position:relative;  
         width:140px;
         height:68px;
@@ -450,11 +470,12 @@ ul.prod-wrapper.row_dir {
 .prod_list_wrap{
      padding:0 20px;
      .tit{
-         line-height:35px;
+        line-height:35px;
         font-weight: 700;
         font-size: 20px;
         letter-spacing: -0.01;
         margin-bottom:12px;
+        padding:0;
      }
 
 }
