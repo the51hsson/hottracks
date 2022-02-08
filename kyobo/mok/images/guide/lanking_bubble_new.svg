@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69.07" height="37.381" viewBox="0 0 69.07 37.381">
+  <defs>
+    <filter id="NEW" x="10.07" y="10.381" width="59" height="27" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_말풍선" data-name="@말풍선" transform="translate(158.48 68.515) rotate(180)">
+    <g transform="matrix(-1, 0, 0, -1, 158.48, 68.52)" filter="url(#NEW)">
+      <text id="NEW-2" data-name="NEW" transform="translate(11.07 27.38)" fill="#ffed12" stroke="#000" stroke-width="1" font-weight="bolder" font-size="20" font-family="Gmarket Sans" letter-spacing="-0.025em"><tspan x="0" y="0">NEW</tspan></text>
+    </g>
+    <g id="그룹_110093" data-name="그룹 110093" transform="matrix(-0.921, 0.391, -0.391, -0.921, 167.072, 58.647)">
+      <line id="선_774" data-name="선 774" y1="6.817" transform="translate(19.113 1.088)" fill="#ffb200"/>
+      <line id="선_775" data-name="선 775" y1="6.817" transform="translate(19.113 1.088)" fill="none" stroke="#040405" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <line id="선_779" data-name="선 779" y1="6.294" x2="2.617" transform="translate(24.719 3.211)" fill="none" stroke="#040405" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+      <line id="선_777" data-name="선 777" x1="3.344" y1="5.721" transform="translate(10.163 3.785)" fill="none" stroke="#040405" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>
