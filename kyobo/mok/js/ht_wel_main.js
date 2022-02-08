@@ -521,6 +521,7 @@ $(function(){
 
 
 //// 큐레이션 메인
+/*
 function curScrollEvent() {
     var images = document.querySelectorAll('.curation_list_cont .lis');
     var imgStack = [0, 0];
@@ -544,6 +545,12 @@ $(function(){
     }
     $(window).resize(function() {
         curScrollEvent();  
+    });
+});
+*/
+$(function(){
+    $('.cur_view .btn_cur_view').click(function(){    
+        return false;
     });
 });
 
@@ -655,6 +662,28 @@ function feScrollFn(){
 
 
 
+
+// 띠배너 스와이프
+$(function(){
+    if(!$('.liv_replay').length) return;
+    $('.liv_replay .swiper-container').each(function (index, element) {
+        var $parent = $(this).parent('.liv_replay');
+        $parent.addClass('idx_' + index);
+
+        //if($parent.find('.swiper-slide').length > 1) {
+            var beltBannerSwiper = new CustomSwiper(this, {
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                loop: true,
+                loopsSlide:1,
+                autoHeight: true,
+                pagination: '.swiper-pagination'
+
+            }); 
+        //}
+	});
+});
 
 
 
