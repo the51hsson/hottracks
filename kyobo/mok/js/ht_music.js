@@ -287,6 +287,14 @@ $(function(){
     $('.img_box .btn_like').on('click',function(){
         $(this).toggleClass('active');
     });
+    //상품 리스트 찜하기 토글
+	$(document).on('click', '.evt_good_count', function(){
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		} else {
+			$(this).addClass('active');
+		}
+	});
 
 });
 //히어로 배너 팝업
