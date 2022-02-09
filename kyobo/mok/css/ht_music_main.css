@@ -736,20 +736,81 @@
 }
 
 .ht_ .main_cont_wrap.music .main_tab_menu {
-  padding: 0 20px;
-  margin: 12px 0 20px;
+  width: 75%;
+  max-width: 480px;
+  margin: 12px auto 30px auto;
+  text-align: center;
+  border: 1px solid #D5D5D5;
+  border-radius: 50px;
+  white-space: nowrap;
 }
 
 .ht_ .main_cont_wrap.music .main_tab_menu a {
-  font-size: 22px;
-  font-weight: 700;
-  opacity: .2;
-  margin-right: 20px;
+  position: relative;
+  display: inline-block;
+  width: calc(100% / 3);
+  margin-left: -4px;
+  font-size: 13px;
+  color: #595959;
   letter-spacing: -0.02em;
 }
 
+.ht_ .main_cont_wrap.music .main_tab_menu a:first-of-type {
+  margin: 0;
+}
+
 .ht_ .main_cont_wrap.music .main_tab_menu a.active {
-  opacity: 1;
+  color: #fff;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.ht_ .main_cont_wrap.music .main_tab_menu a.active .icon {
+  display: inline-block;
+}
+
+.ht_ .main_cont_wrap.music .main_tab_menu a.active:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 110%;
+  height: 100%;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+  background-color: #000;
+  z-index: -1;
+  border-radius: 50px;
+  padding-right: 20px;
+  -webkit-transition: left 0.2s ease-in-out;
+  transition: left 0.2s ease-in-out;
+}
+
+.ht_ .main_cont_wrap.music .main_tab_menu a:first-of-type.active:before {
+  content: "";
+  -webkit-transform: translateX(-1%);
+          transform: translateX(-1%);
+}
+
+.ht_ .main_cont_wrap.music .main_tab_menu a:last-of-type.active:before {
+  content: "";
+  -webkit-transform: translateX(-8%);
+          transform: translateX(-8%);
+}
+
+.ht_ .main_cont_wrap.music .main_tab_menu .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 44px;
+  background: url(../images/guide/muse_menu_active_icon.svg) no-repeat left center/20px;
+  display: none;
+}
+
+.ht_ .main_cont_wrap.music .main_tab_menu .txt {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 44px;
 }
 
 .ht_ .main_cont_wrap.music .btn_more_link {
@@ -1927,9 +1988,13 @@
   margin-top: 20px;
 }
 
-.ht_ .main_cont_wrap .special_sale_wrap .img_box .btn_like {
-  right: 4px;
-  bottom: 4px;
+.ht_ .main_cont_wrap .special_sale_wrap .prod_item {
+  height: auto;
+  min-height: 100%;
+}
+
+.ht_ .main_cont_wrap .special_sale_wrap .prod_item .product_pic {
+  padding-top: 100%;
 }
 
 .ht_ .product_list .product_tit,
@@ -2281,6 +2346,14 @@
             transform: translateY(100px);
     opacity: 0;
   }
+}
+
+.belt_banner_btm {
+  margin-top: 80px;
+}
+
+.belt_banner_btm > img {
+  width: 100%;
 }
 
 /*==============================  HTR-M-MUS-MAIN-000-POP-001–1.html ===========================*/
