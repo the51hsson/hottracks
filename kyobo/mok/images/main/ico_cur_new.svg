@@ -9,19 +9,59 @@
 .st4{fill:#DDDDDD;}
 .st5{fill:#CDCCCC;}
 .st6{fill:#FEC211;stroke:#000;stroke-linecap:round;stroke-linejoin:round;}
-.st7{enable-background:new;animation:fade both infinite 3s;}
+.st7{enable-background:new;}
 .st8{fill:none;stroke:#000;}
 
 
 .star {position:relative;animation:star linear both infinite 3s;}
 .star.s1 {transform-origin:6% 22%;}
 .star.s2 {transform-origin:21% 6%;animation-delay:0.5s;}
+
 @keyframes star {
 0% {transform:scale(0.4);opacity:0;}	
 20% {transform:scale(1.1);opacity:1;}
 40% {transform:scale(0.6);}	
 58% {transform:scale(1);}
 100% {transform:scale(1);}
+}
+
+.a1 {animation:fade both infinite 3s;}
+.a2 {animation:fade2 both infinite 3s;}
+
+@keyframes fade {
+0% {opacity:0;}	
+5% {opacity:0;}	
+35% {opacity:1;}
+90% {opacity:1;}
+100% {opacity:0;}
+}
+@keyframes fade2 {
+0% {opacity:0;}	
+20% {opacity:0;}
+50% {opacity:1;}
+90% {opacity:1;}
+100% {opacity:0;}
+}
+
+
+/*
+@keyframes fade {
+0% {opacity:0;}	
+5% {opacity:0;}	
+25% {opacity:1;}
+45% {opacity:0.1;}
+60% {opacity:1;}
+75% {opacity:1;}
+100% {opacity:0;}
+}
+@keyframes fade2 {
+0% {opacity:0;}	
+10% {opacity:0;}	
+30% {opacity:1;}
+50% {opacity:0.1;}
+65% {opacity:1;}
+75% {opacity:1;}
+100% {opacity:0;}
 }
 @keyframes fade {
 0% {opacity:0.1;}	
@@ -30,6 +70,7 @@
 75% {opacity:1;}
 100% {opacity:0.1;}
 }
+*/
 </style>
 <path id="Path_37313" class="st0" d="M65.52,21.05v14.98h-3.21V21.05c-0.05-4.55-3.78-8.2-8.34-8.15c-4.48,0.05-8.11,3.67-8.15,8.15
 	v14.98h-3.21V21.05c0-6.33,5.13-11.46,11.46-11.46C60.39,9.59,65.52,14.72,65.52,21.05"/>
@@ -58,26 +99,26 @@
 	c0.06-0.29,0.29-0.51,0.58-0.58l0.74-0.16c1.03-0.22,1.83-1.02,2.04-2.05l0.16-0.74c0.09-0.41,0.48-0.66,0.89-0.58
 	C16.98,0.08,17.21,0.3,17.27,0.59z"/>
 <g transform="matrix(1, 0, 0, 1, -22337.82, -22941.83)">
-	<g class="st7">
+	<g class="st7 a1">
 		<path class="st0" d="M22367.84,22986.57c1.07,0,2.35-0.16,3.19-0.46v2.37c-0.82,0.34-2.27,0.48-3.43,0.48h-3.14v-12.74h2.64v10.36
 			H22367.84z M22377.83,22975.93v13.67h-2.53v-6.08h-1.14v5.84h-2.5v-13.36h2.5v4.96h1.14v-5.03H22377.83z"/>
 		<path class="st0" d="M22393.04,22982.68v2.22h-13.83v-2.22h5.55v-1.04h-4.72v-5.71h12.17v2.18h-9.46v1.36h9.62v2.18h-4.88v1.04
 			H22393.04z M22382.77,22987.34h9.64v2.26h-12.39v-4.07h2.75V22987.34z"/>
 	</g>
-	<g class="st7">
+	<g class="st7 a1">
 		<path class="st8" d="M22367.84,22986.57c1.07,0,2.35-0.16,3.19-0.46v2.37c-0.82,0.34-2.27,0.48-3.43,0.48h-3.14v-12.74h2.64v10.36
 			H22367.84z M22377.83,22975.93v13.67h-2.53v-6.08h-1.14v5.84h-2.5v-13.36h2.5v4.96h1.14v-5.03H22377.83z"/>
 		<path class="st8" d="M22393.04,22982.68v2.22h-13.83v-2.22h5.55v-1.04h-4.72v-5.71h12.17v2.18h-9.46v1.36h9.62v2.18h-4.88v1.04
 			H22393.04z M22382.77,22987.34h9.64v2.26h-12.39v-4.07h2.75V22987.34z"/>
 	</g>
-	<g class="st7">
+	<g class="st7 a2">
 		<path class="st0" d="M22367.84,23002.57c1.07,0,2.35-0.16,3.19-0.46v2.37c-0.82,0.34-2.27,0.48-3.43,0.48h-3.14v-12.74h2.64v10.36
 			H22367.84z M22377.83,22991.93v13.67h-2.53v-6.08h-1.14v5.84h-2.5v-13.37h2.5v4.96h1.14v-5.03H22377.83z"/>
 		<path class="st0" d="M22379.21,23000.19v-2.51c2.16-0.26,3.59-2.67,3.63-5.68l2.72,0.16c0,1.06-0.18,2.1-0.51,3.06l3.89,2.9
 			l-1.62,1.89l-3.35-2.64C22382.85,22998.99,22381.18,23000.09,22379.21,23000.19z M22382.73,23003.16h9.51v2.43h-12.26v-4.79h2.75
 			V23003.16z M22393.65,22994.51v2.62h-1.6v4.91h-2.71v-10.12h2.71v2.58H22393.65z"/>
 	</g>
-	<g class="st7">
+	<g class="st7 a2">
 		<path class="st8" d="M22367.84,23002.57c1.07,0,2.35-0.16,3.19-0.46v2.37c-0.82,0.34-2.27,0.48-3.43,0.48h-3.14v-12.74h2.64v10.36
 			H22367.84z M22377.83,22991.93v13.67h-2.53v-6.08h-1.14v5.84h-2.5v-13.37h2.5v4.96h1.14v-5.03H22377.83z"/>
 		<path class="st8" d="M22379.21,23000.19v-2.51c2.16-0.26,3.59-2.67,3.63-5.68l2.72,0.16c0,1.06-0.18,2.1-0.51,3.06l3.89,2.9
