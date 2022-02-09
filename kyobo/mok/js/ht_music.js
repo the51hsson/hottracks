@@ -210,15 +210,19 @@ $(function(){
         clearInterval(autoPop);
         $(this).addClass('active').siblings('li').removeClass('active');
         $('.record_info_area .img_box img').attr('src',$(this).find('img').attr('src'));
+        $('.record_info_area .overseas_hot_prod_info').html($(this).find('.info_txt').html());
+
         autoPop = setInterval(function() {
             nextPopSlide();
         }, 5000);
     });
     $('.record_info_area .img_box img').attr('src',$('.thumb_img_list li.active img').attr('src'));
+   
 
     function nextPopSlide() {
         var allSlide = $('.thumb_img_list li');
         var imgSrc = allSlide.find('img').attr('src');
+        var prodInfo;
         allSlide.each(function(index,item){
             if($(this).hasClass('active')) {
                 currentIndex = index;
@@ -236,8 +240,9 @@ $(function(){
         allSlide.removeClass('active');
 	    allSlide.eq(newIndex).addClass('active');
         imgSrc = allSlide.eq(newIndex).find('img').attr('src');
+        prodInfo =  allSlide.eq(newIndex).find('.info_txt').html();
         $('.record_info_area .img_box img').attr('src',imgSrc);
-        // console.log(newIndex);
+        $('.record_info_area .overseas_hot_prod_info').html(prodInfo);
     }
 
     // LP SHOP 스와이프

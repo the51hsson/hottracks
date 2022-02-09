@@ -422,14 +422,16 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 
 		if( $(selector).length > 0 ) {
 			var dialogClass, containerId, dialogId, containerClasses;
-
+			//2022-02-10 개발 요청으로 추가(다른 이벤트 후 팝업 열리게 컨트롤)
+			var prevEvent;
+          		
 			$(selector).each(function() {
 				if ( $(this).parents('.ui-dialog').length > 0 ) return false;
 
 				containerId = 'body';
 				containerClasses = 'dialog_wrapper';
-				dialogClass = '';
-
+				dialogClass = 'data-preaction';
+	
 				// dialog multi class 추가
 				if ($(this).data('class') !== undefined) {
 					if (isNaN(parseInt($(this).data('class')))) {
@@ -463,7 +465,6 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 						var that = $(this);
 						var papa = that.closest('.ui-dialog');
 						var container = that.closest('.' + containerClasses);
-
 
 						// 팝업 닫기 시, 기존 스크롤 위치로 이동위해 현재 스크롤값 저장(상단 이동 막기)
 						if($('.ui-dialog-content:visible').length === 0){
@@ -512,12 +513,15 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 
 				if ($(btnOpen).length > 0) {
 					$(btnOpen).each(function (index) {
-						$(this).off('click').on('click', function (event) {
-							var popTgId = $(this).data('target');
-
-							event.preventDefault();
-							dialogOnOff().popOpen(popTgId);
-						});
+						prevEvent = $(this).data('prev');   
+                        if(!prevEvent) {
+                            $(this).off('click').on('click', function (event) {
+                                var popTgId = $(this).data('target');
+    
+                                event.preventDefault();
+                                dialogOnOff().popOpen(popTgId);
+                            });
+                        }
 					});
 				}
 

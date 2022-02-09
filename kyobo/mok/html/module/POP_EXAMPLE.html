@@ -97,7 +97,21 @@
         <!-- 컨텐츠 -->
         <main id="containerWrapper" class="container_wrapper">
             <!-- data-target 과 id 매치 -->
-            <button class="btn_lg btn_primary" id="testBtn" data-role="btn-dialog" data-target="#popBottomHasBtnEx1" ><span class="text">팝업오픈</span></button>
+            <button class="btn_lg btn_primary"  id="testBtn" 
+             data-role="btn-dialog" data-target="#popPointTotal"  data-target="#popPointTotal" data-prev = "yes">
+                <span class="text">3초 후 팝업오픈</span>
+            </button>
+            
+            <button class="btn_lg btn_primary"  id="testBtn2" 
+            data-role="btn-dialog" data-target="#popPointTotal"  data-target="#popPointTotal2" data-prev = "yes">
+               <span class="text">1초 후 팝업오픈</span>
+           </button>
+
+           <button class="btn_lg btn_primary" 
+           data-role="btn-dialog" data-target="#popPointTotal"  data-target="#popPointTotal2">
+              <span class="text">팝업오픈(data-prev 없음)</span>
+          </button>
+           
         </main>
         <!-- // 컨텐츠 -->
 
@@ -136,24 +150,24 @@
         <!-- // 독바 -->
     </div>
     <!-- // wrapper -->
-   <!-- 팝업 - bottom + 하단 버튼 -->
-	<div id="popBottomHasBtnEx1" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
-		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
-		<!-- dialog_header -->
-		<div class="dialog_header">
-			<div class="dialog_title">스터디플래너 전체</div>
-		</div>
-		<!-- //dialog_header -->
-		<!-- dialog_contents -->
-		<div class="dialog_contents checkbox_type">
-	       <ul class="cks_list">
-               <li>
-                   <label class="ck_label_wrap">
-                       <input type="checkbox" class="checkbox_cm">
-                       <span class="label_for_sp">스터디 플래너 전체</span>
-                   </label>
-               </li>
-               <li>
+    <!--3초 후  팝업-->
+    <div id="popPointTotal" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">스터디플래너 전체</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents checkbox_type">
+        <ul class="cks_list">
+            <li>
+                <label class="ck_label_wrap">
+                    <input type="checkbox" class="checkbox_cm">
+                    <span class="label_for_sp">스터디 플래너 전체</span>
+                </label>
+            </li>
+            <li>
                 <label class="ck_label_wrap">
                     <input type="checkbox" class="checkbox_cm">
                     <span class="label_for_sp">스터디 플래너 전체2</span>
@@ -183,15 +197,91 @@
                     <span class="label_for_sp">스터디 플래너 전체6</span>
                 </label>
             </li>  
-           </ul>
-		</div>
-		<!-- //dialog_contents -->
-		<!-- dialog_footer -->
-		<div class="dialog_footer ctg_cks"></div>
-		<!-- //dialog_footer -->
-	</div>
-	<!-- //팝업 - bottom + 하단 버튼 -->
+        </ul>
+        </div>
+        <!-- //dialog_contents -->
+        <!-- dialog_footer -->
+        <div class="dialog_footer ctg_cks"></div>
         <!-- //dialog_footer -->
     </div>
+     <!--//1초 후  팝업-->
+    <div id="popPointTotal" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">스터디플래너 전체</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents checkbox_type">
+        <ul class="cks_list">
+            <li>
+                <label class="ck_label_wrap">
+                    <input type="checkbox" class="checkbox_cm">
+                    <span class="label_for_sp">스터디 플래너 전체</span>
+                </label>
+            </li>
+            <li>
+                <label class="ck_label_wrap">
+                    <input type="checkbox" class="checkbox_cm">
+                    <span class="label_for_sp">스터디 플래너 전체2</span>
+                </label>
+            </li>
+            <li>
+                <label class="ck_label_wrap">
+                    <input type="checkbox" class="checkbox_cm">
+                    <span class="label_for_sp">스터디 플래너 전체3</span>
+                </label>
+            </li>
+            <li>
+                <label class="ck_label_wrap">
+                    <input type="checkbox" class="checkbox_cm">
+                    <span class="label_for_sp">스터디 플래너 전체4</span>
+                </label>
+            </li>
+            <li>
+                <label class="ck_label_wrap">
+                    <input type="checkbox" class="checkbox_cm">
+                    <span class="label_for_sp">스터디 플래너 전체5</span>
+                </label>
+            </li>
+            <li>
+                <label class="ck_label_wrap">
+                    <input type="checkbox" class="checkbox_cm">
+                    <span class="label_for_sp">스터디 플래너 전체6</span>
+                </label>
+            </li>  
+        </ul>
+        </div>
+        <!-- //dialog_contents -->
+        <!-- dialog_footer -->
+        <div class="dialog_footer ctg_cks"></div>
+        <!-- //dialog_footer -->
+    </div>
+     <!--//1초 후  팝업-->
+
 </body>
+<script>
+document.getElementById('testBtn').addEventListener('click', function(){
+    this.setAttribute('data-prev', null);
+    KyoboHottracks.mok.setUIDialog();
+    var target = $(this).data('target');
+
+    setTimeout(function(){
+        KyoboHottracks.mok.dialogOnOff().popOpen(target);
+        console.log('3초 후 이벤트 발생');   
+     }, 3000);
+   });
+
+document.getElementById('testBtn2').addEventListener('click', function(){
+    this.setAttribute('data-prev', null);
+    KyoboHottracks.mok.setUIDialog();
+    var target = $(this).data('target');
+
+    setTimeout(function(){
+        KyoboHottracks.mok.dialogOnOff().popOpen(target);
+        console.log('1초 후 이벤트 발생');  
+      }, 1000);
+});
+</script>
 </html>

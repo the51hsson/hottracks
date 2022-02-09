@@ -1787,6 +1787,10 @@
   opacity: 1;
 }
 
+.ht_ .main_cont_wrap .overseas_hot_wrap .thumb_img_list li .info_txt {
+  display: none;
+}
+
 .ht_ .main_cont_wrap .overseas_hot_wrap .record_info_area .img_box {
   width: 73%;
 }
