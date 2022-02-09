@@ -83,9 +83,9 @@ $(function(){
   });
 
   //스티키 메뉴
-  $(document).on('click' , '.ctg_floating_menues li', function(){
+  $(document).on('click' , '.ctg_floating_menues li, .ctg_floating_menues button', function(){
     if($(this).hasClass('arrow_li')) { // 애로우 있는 화면 
-      showBrandList();
+
       return; 
     }
     // 2022-01-28 개발 요청 사항 : 개발에서 진행
@@ -95,17 +95,14 @@ $(function(){
     //   $(this).addClass('active');
     // }
  });
+ //체크박스, 라디오 선택 시 팝업 닫히게
  $(document).on('click', '.dialog_wrap[id^="ClickCksClose"] .dialog_contents .checkbox_cm', function(){
-  var closeBtn = $(this).parents('.dialog_wrap').find('button[data-dialog-close]');
-  setTimeout(function(){
-    $(closeBtn ).trigger('click');
-  }, 200);
-   
- })
-  //스티키 메뉴 브랜드 메뉴 클릭
-  function  showBrandList(){
-    
-  }
+    var closeBtn = $(this).parents('.dialog_wrap').find('button[data-dialog-close]');
+    setTimeout(function(){
+      $(closeBtn ).trigger('click');
+    }, 200);
+ });
+
   //상품 리스트 정렬 방식 토글 버튼
   $('.ctg_prod_wrap .ctg_list_icon').click(function(){
     //품절 대체 스왑 display:none으로 초기화 

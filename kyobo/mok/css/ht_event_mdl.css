@@ -3735,6 +3735,46 @@ body.dialog_open {
   white-space: nowrap;
 }
 
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_header .dialog_title_sub {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_header .dialog_title_sub .icon_mus {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: url(../images/guide/mus_pop_sub_tit_icon.svg) no-repeat left center/16px;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_header .dialog_title_sub .date {
+  position: relative;
+  margin-right: 5px;
+}
+
+.dialog_wrapper .ui-dialog .dialog_wrap .dialog_header .dialog_title_sub .date:before {
+  content: ",";
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+  z-index: 3;
+}
+
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -4284,6 +4324,127 @@ body.dialog_open {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+/*=================================  기획전 리스트 ==========================================*/
+.dialog_contents.checkbox_type .cks_list {
+  padding: 1px 0;
+}
+
+.dialog_contents.checkbox_type .cks_list li {
+  letter-spacing: -0.014em;
+  margin-top: 19px;
+}
+
+.dialog_contents.checkbox_type .cks_list li:first-of-type {
+  margin-top: 0;
+}
+
+.dialog_contents.checkbox_type .cks_list span {
+  line-height: 20px;
+}
+
+.dialog_contents.checkbox_type .search_area {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 15px 46px 15px 14px;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.dialog_contents.checkbox_type .search_area input {
+  outline: none;
+  width: 100%;
+}
+
+.dialog_contents.checkbox_type .search_area .search {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 14px;
+  top: 50%;
+  margin-top: -10px;
+  background: url(../images/guide/ico_search_icon.svg) no-repeat center center/16px;
+}
+
+.dialog_contents.checkbox_type .no_search_data {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dialog_contents.checkbox_type .no_search_data span {
+  display: block;
+}
+
+.dialog_contents.checkbox_type .no_search_data_icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  background: url(../images/guide/no_search_data_icon.svg) no-repeat center center/cover;
+}
+
+.dialog_contents.checkbox_type .no_search_data_txt {
+  text-align: center;
+  margin-top: 8px;
+  color: #767676;
+  line-height: 19px;
+  letter-spacing: -0.013em;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.checkbox_btm .dialog_footer.ctg_cks {
+  padding-bottom: 32px;
+  margin: 0;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.checkbox_btm .dialog_footer.ctg_cks.search {
+  padding-top: 20px;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.checkbox_btm .dialog_footer.ctg_cks.search .btn_outline_primary {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.checkbox_btm .dialog_footer.ctg_cks.search .btn_primary {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.ck_label_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 28px;
 }
 
 /* s: swiper common */

@@ -153,7 +153,8 @@
 		overflow-x: auto;
 		padding: 1px 20px 1px 0;
 
-		li { 
+		li,
+        button { 
 			flex-shrink: 0;
 			padding:8px 14px;
 			border:1px solid #d5d5d5;
@@ -801,3 +802,74 @@ ul.prod-wrapper.row_dir {
         }  
     }
 }
+/*===================================== 음반 리스트 팝업 =================================*/
+#ClickCksClose_year .vertical_swap_contents{
+    background-color: #F7F7F7;
+     height:300px;
+	 margin:0;
+	 .swiper-wrapper.ck_list{
+       height:250px;
+	   .swiper-slide{
+		   height:50px;
+		   text-align: center;
+		   line-height: 50px;
+		   &.swiper-slide-active{
+			   background-color: #fff;
+			   font-weight: 700;
+;
+		   }
+	   }
+	 }
+	 .dialog_footer.ctg_cks {
+		 margin-top:0;
+		 background-color: #F7F7F7;
+	 }
+}
+// .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.vertical_swap_content .dialog_footer{
+//   margin-top:0;
+// }
+//.dialog_contents .vertical_swap_area {
+    // display: flex;
+    // flex-flow:  row nowrap;
+    // justify-content: flex-start;
+
+    // .ck_list {
+    //     position:relative;
+    //     height:auto;
+    //     top:0;
+    //     left:0;
+    //     width:100%;
+    //     background-color: #F7F7F7;
+    //     &.solo {
+    //         width:100%;
+    //     }
+    //     &.twin_yaer{
+    //         width:70%;
+    //     }
+    //     &.twin_month{
+    //         width:30%;
+    //     }
+    //     // .ck_item {   
+    //     //     border:1px solid red;
+    //     // }
+    //     .date_lb {
+    //         .date_radio{
+    //             display: none;
+    //         }
+    //         .date_radio:checked + .txt {
+    //             color:#000;
+    //             font-weight: 700;
+    //             background-color: #fff;
+    //         }
+    //         .txt{
+    //             padding: 10px 0;
+    //             display:block;
+    //             text-align: center;
+    //             line-height: 30px;
+    //             font-size: 18px;
+    //             color:#767676;
+               
+    //         }
+    //     }
+    // }
+//}

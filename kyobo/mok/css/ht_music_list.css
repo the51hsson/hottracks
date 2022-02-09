@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .module_wrap {
   margin-top: 30px;
   background-color: #fff;
@@ -197,7 +198,8 @@
   padding: 1px 20px 1px 0;
 }
 
-.ctg_floating_line .ctg_floating_menues li {
+.ctg_floating_line .ctg_floating_menues li,
+.ctg_floating_line .ctg_floating_menues button {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding: 8px 14px;
@@ -210,17 +212,20 @@
   background-color: #fff;
 }
 
-.ctg_floating_line .ctg_floating_menues li:last-of-type {
+.ctg_floating_line .ctg_floating_menues li:last-of-type,
+.ctg_floating_line .ctg_floating_menues button:last-of-type {
   margin-right: 0;
 }
 
-.ctg_floating_line .ctg_floating_menues li.arrow_li {
+.ctg_floating_line .ctg_floating_menues li.arrow_li,
+.ctg_floating_line .ctg_floating_menues button.arrow_li {
   padding-right: 35px;
   background: url(../images/guide/arrow_down.svg) no-repeat right 14px top 50%/9px;
   background-color: #fff;
 }
 
-.ctg_floating_line .ctg_floating_menues li.active {
+.ctg_floating_line .ctg_floating_menues li.active,
+.ctg_floating_line .ctg_floating_menues button.active {
   color: #fff;
   background-color: #000;
   border-color: #000;
@@ -1200,4 +1205,31 @@ ul.prod-wrapper.row_dir .title {
   margin-top: -2px;
   left: 0;
   z-index: 20;
+}
+
+/*===================================== 음반 리스트 팝업 =================================*/
+#ClickCksClose_year .vertical_swap_contents {
+  background-color: #F7F7F7;
+  height: 300px;
+  margin: 0;
+}
+
+#ClickCksClose_year .vertical_swap_contents .swiper-wrapper.ck_list {
+  height: 250px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .swiper-wrapper.ck_list .swiper-slide {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .swiper-wrapper.ck_list .swiper-slide.swiper-slide-active {
+  background-color: #fff;
+  font-weight: 700;
+}
+
+#ClickCksClose_year .vertical_swap_contents .dialog_footer.ctg_cks {
+  margin-top: 0;
+  background-color: #F7F7F7;
 }

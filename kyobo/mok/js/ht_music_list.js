@@ -1,15 +1,15 @@
 $(function(){
-    //스티키 메뉴
-  $(document).on('click' , '.ctg_floating_menues li', function(){
+//스티키 메뉴
+  $(document).on('click' , '.ctg_floating_menues li, .ctg_floating_menues button', function(){
         if($(this).hasClass('arrow_li')) { // 애로우 있는 화면 
         return; 
         }
-        //개발에서 진행예정으로 주석 처리 예정
-        if($(this).hasClass('active')){
-          $(this).removeClass('active');
-        }else{
-          $(this).addClass('active');
-        }
+        //개발에서 진행예정
+        // if($(this).hasClass('active')){
+        //   $(this).removeClass('active');
+        // }else{
+        //   $(this).addClass('active');
+        // }
     });
 
     //상품 리스트 정렬 방식 토글 버튼
@@ -49,6 +49,14 @@ $(function(){
 			$(this).addClass('active');
 		}
 	});
+    //체크박스, 라디오 선택 시 팝업 닫히게
+    $(document).on('click', '.dialog_wrap[id^="ClickCksClose"] .dialog_contents .checkbox_cm', function(){
+        var closeBtn = $(this).parents('.dialog_wrap').find('button[data-dialog-close]');
+        setTimeout(function(){
+        $(closeBtn ).trigger('click');
+        }, 200);
+    });
+ 
  /*=================================== HTR-M-CTG-LIST-001.html ==============================*/
   //예약 상품, 베스트, 신상품   스왑배너
     $('.swiper-container.ctg_top_swiper').each(function(i, ele){
