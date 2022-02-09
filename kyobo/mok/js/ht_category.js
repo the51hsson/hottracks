@@ -144,7 +144,7 @@ $(function(){
 		}
 	});
 });
-
+//광고 배너
 $(function(){
   if (!$('.wel_belt_banner').length) return;
   $('.wel_belt_banner .swiper-container').each(function (index, element) {

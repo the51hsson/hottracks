@@ -290,7 +290,9 @@
 		font-size: 13px;
 		font-weight: 500;
 		margin-bottom:8px;
-		}
+		line-height:20px;
+		height:40px;
+	}
 	.price_line{
       display:flex;
 	  flex-flow: row wrap;
@@ -309,8 +311,9 @@
 		.price_origin{
 			text-decoration: line-through;
 			color:#767676;
-			font-size: 10px;
+			font-size: 12px;
 			line-height:22px;
+			margin-top:1px;
 		}  
 		.price_origin.no_discount{
 			text-decoration: none;
@@ -416,7 +419,7 @@
 		line-height:22px;
 	  }	
 	.price_origin{
-		font-size: 11px;
+		font-size: 12px;
 		line-height:22px;
 	}
 	.price_origin.no_discount{

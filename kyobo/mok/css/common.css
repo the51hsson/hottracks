@@ -5552,6 +5552,8 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   font-size: 13px;
   font-weight: 500;
   margin-bottom: 8px;
+  line-height: 20px;
+  height: 40px;
 }
 
 .prod-wrapper .price_line {
@@ -5581,8 +5583,9 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 .prod-wrapper .price_line .price_origin {
   text-decoration: line-through;
   color: #767676;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 22px;
+  margin-top: 1px;
 }
 
 .prod-wrapper .price_line .price_origin.no_discount {
@@ -5710,7 +5713,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 }
 
 .type_md .price_origin {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 22px;
 }
 

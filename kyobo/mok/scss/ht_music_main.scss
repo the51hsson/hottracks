@@ -33,14 +33,23 @@
                 }
             }
             .main_tab_menu {
+                position:relative;
                 width:75%;
                 max-width:480px;
                 margin:12px auto 30px auto;
                 text-align: center;
-                border:1px solid #D5D5D5;
-                border-radius: 50px;
                 white-space: nowrap;
-               // padding-left:calc(100% * 0.3 * 0.1);
+                &:before {
+                    content:"";
+                    width:100%;
+                    height:100%;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    border:1px solid #D5D5D5;
+                    border-radius: 50px;
+                    z-index: -2;
+                }
                 a {
                     position:relative;
                     display:inline-block;
@@ -48,10 +57,11 @@
                     margin-left:-4px;
                     font-size: 13px;
                     color:#595959;
-                    letter-spacing: -0.02em;
+                    letter-spacing: -0.02em;            
                     &:first-of-type {
                         margin:0;
                     }
+
                     &.active {
                         color:#fff;
                         font-weight: 700;
@@ -64,9 +74,9 @@
                         content:"";
                         position:absolute;
                         left:0;
-                        top:0;
+                        top:-1px;
                         width:110%;
-                        height:100%;
+                        height:calc( 100% + 2px);
                         transform: translateX(-10%);
                         background-color: #000;
                         z-index: -1;
@@ -74,11 +84,11 @@
                         padding-right:20px;
                         transition: left 0.2s ease-in-out;
                     }
-                    &:first-of-type.active:before{
+                    &:first-of-type.active:before {
                         content:"";
                         transform: translateX(-1%);
                     }
-                    &:last-of-type.active:before{
+                    &:last-of-type.active:before {
                         content:"";
                         transform: translateX(-8%);
                     }
@@ -1187,7 +1197,7 @@
 
  //띠배너
 .belt_banner_btm {
-    margin-top:80px;
+    margin-top:60px;
     & > img {
         width:100%;
     }
@@ -1338,6 +1348,7 @@
 	}
 	.title {
 		margin-bottom:8px;
+        height: auto;
 	}
 }
  //더보기 버튼 영역
