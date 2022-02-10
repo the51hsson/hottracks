@@ -160,6 +160,10 @@
     }
 }
 .module6_item {
+	margin-top:20px;
+	&:first-of-type {
+		margin-top:0;
+	}
 	.product_pic {
 		position:relative;
 		height:0;

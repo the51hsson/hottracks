@@ -8585,6 +8585,27 @@ body.dialog_open {
   color: #767676;
 }
 
+.adult_prod .product_pic {
+  position: relative;
+  background-color: #fff;
+}
+
+.adult_prod .adult_block {
+  position: absolute;
+  width: calc( 100% - 4px);
+  height: calc( 100% - 4px);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  padding-top: 50%;
+  font-weight: 700;
+  font-size: 13px;
+  background: url(../images/guide/@adult_block.svg) no-repeat center top 30%/30%;
+  border-radius: 12px;
+  border: 2px solid #000;
+}
+
 .module_section_bg {
   background-color: #f7f7f7;
 }

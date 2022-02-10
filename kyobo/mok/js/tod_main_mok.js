@@ -65,10 +65,12 @@ $(function(){
 	function bubbleHighlight(item){
 		var isShow
 		var headerHeight = $('#headerWrapper').height();
+		var stickMenuHeight = $('.ctg_topMenu').height();
 		var scrolltop  = $(window).scrollTop();
 		var offsetTop = $(item).offset().top;
 
-		isShow = (offsetTop - headerHeight - 200 > 0 ) && (offsetTop - headerHeight - 200 < scrolltop);
+		isShow = (offsetTop - headerHeight - stickMenuHeight - 200 > 0 ) &&
+		         (offsetTop - headerHeight - stickMenuHeight - 200 < scrolltop);
 		return isShow; 
 	}
     /*================================= HTR-M-EVT-VIEW-015, 016.html ==============================*/  
