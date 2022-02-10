@@ -284,24 +284,23 @@
 
 .ht_ .liv_new_msg p {
   position: relative;
-  right: 20px;
+  right: 11px;
   top: 0;
   padding: 11px 10px 9px 10px;
   background: #d4ff1a;
   border: solid #000;
-  border-width: 2px 2px 3px 2px;
+  border-width: 2px 3px 3px 2px;
   border-radius: 30px;
   color: #000;
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
-  -webkit-animation: livNewMsg both infinite 5s;
-          animation: livNewMsg both infinite 5s;
+  /*animation:livNewMsg both infinite 5s;*/
 }
 
 .ht_ .liv_new_msg p:before {
   position: absolute;
-  right: 26px;
+  right: 16px;
   bottom: -11px;
   width: 0;
   height: 0;
@@ -314,7 +313,7 @@
 
 .ht_ .liv_new_msg p:after {
   position: absolute;
-  right: 27px;
+  right: 17px;
   bottom: -7px;
   width: 0;
   height: 0;
@@ -327,7 +326,7 @@
 
 .ht_ .liv_new_msg p em {
   position: absolute;
-  right: 14px;
+  right: 7px;
   top: -16px;
   width: 32px;
   height: 32px;
@@ -659,7 +658,7 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin: 0 5px 15px 25px;
+  margin: 0 0 15px 25px;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -734,7 +733,7 @@
   width: calc(100% - 2px);
   height: calc(100% - 2px);
   background: #fff;
-  border-radius: 10px;
+  border-radius: 11px;
   content: "";
 }
 

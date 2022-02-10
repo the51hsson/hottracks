@@ -718,3 +718,21 @@ $(function(){
 
 
 
+// 미리 만나는 라이브
+function livNewMsg(){
+	var offsetPosition = $('.liv_list .li:first-child .alarm_chk02').offset();
+	var y = offsetPosition.top - $('.liv_list').offset().top + 35;
+	$('.liv_new_msg').css('top', y);
+	console.log(y)
+
+}
+$(function(){
+    if(!$('.liv_new_msg').length) return;
+	livNewMsg();
+	$(window).resize(function() {
+		livNewMsg();
+	});
+});
+
+
+
