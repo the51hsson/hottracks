@@ -1201,6 +1201,9 @@
  //띠배너
 .belt_banner_btm {
     margin-top:60px;
+    &.type_top {
+        margin:0;
+    }
     & > img {
         width:100%;
     }
@@ -1209,7 +1212,6 @@
 
 /*==============================  HTR-M-MUS-MAIN-000-POP-001–1.html ===========================*/
 .contert_list_wrap {
-    border:1px solid red;
     padding: 0 20px;
     margin-top:12px;
     &>.tit {

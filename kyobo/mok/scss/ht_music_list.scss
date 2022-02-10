@@ -834,49 +834,92 @@ ul.prod-wrapper.row_dir {
 }
 
 #ClickCksClose_year .vertical_swap_contents,
-#ClickCksClose_month .vertical_swap_contents{
-    background-color: #F7F7F7;
+#ClickCksClose_month .vertical_swap_contents,
+#ClickCksClose_week .vertical_swap_contents,
+#ClickCksClose_day .vertical_swap_contents{
+     background-color: #F7F7F7;
      height:300px;
 	 margin:0;
 	 padding:0 20px;
+	 position:relative;
+	 &:before {
+		content:"";
+		position: absolute;
+		left:20px;
+		top:100px;
+		width:calc(100% - 40px);
+		height:50px;
+		background-color: #fff;
+		
+	}
+	.swiper-wrapper.ck_list{
+		height:250px;
+	}
+	.swiper-slide{
+		height:50px;
+		line-height: 50px;
+		font-size: 16px;
+		text-align: center;
+		&.swiper-slide-active {
+			font-weight: 700;
+			font-size: 20px;
+		}
+		&.swiper-slide-prev,
+		&.swiper-slide-next{
+			font-size: 18px;
+		}
+	}
 	 .type_month {
 		 display: flex;
 		 flex-flow: row nowrap;
 		 .chart_date_swap {
-			border:1px solid red;
 			&:first-of-type {
-				flex:7 1 auto;
+				flex:1 1 auto;
+				padding-right:10px;
+				.swiper-slide {
+					text-align: right;
+				}
 			}
 			&:last-of-type {
-				flex:3 1 auto;
+				flex:1 1 auto;
+				padding-left:10px;
+				.swiper-slide {
+					text-align: left;
+				}
 			}
+			
 		 }
 	 }
-	 .swiper-wrapper.ck_list{
-       height:250px;
-	   .swiper-slide{
-		   height:50px;
-		   text-align: center;
-		   line-height: 50px;
-		   font-size: 16px;
-		   &.swiper-slide-active {
-			   background-color: #fff;
-			   font-weight: 700;
-			   font-size: 20px;
+	 .type_week {
+		display: flex;
+		flex-flow: row nowrap;
+		.chart_date_swap {
+		   &:first-of-type {
+			   flex:4 1 auto;
+			   padding-right:10px;
+			   .swiper-slide {
+				text-align: right;
+			   }
 		   }
-		   &.swiper-slide-prev,
-		   &.swiper-slide-next{
-			   font-size: 18px;
+		   &:nth-of-type(2) {
+			flex:2 1 auto;
+		}
+		   &:last-of-type {
+			   flex:4 1 auto;
+			   padding-left:10px;
+			   .swiper-slide {
+				text-align: left;
+		    	}
 		   }
-	   }
-	 }
+		   
+		}
+	}
 	 .dialog_footer.ctg_cks {
 		 margin-top:0;
 		 padding:0;
 		 background-color: #F7F7F7;
 		 .btn_black {
 			 background-color: #000;
-
 		 }
 	 }
 }
