@@ -966,7 +966,7 @@ body.ht_view {
 }
 
 .ht_ .wel_today_cont .swiper-slide .today_box .txt {
-  min-height: 1;
+  min-height: 141px;
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
