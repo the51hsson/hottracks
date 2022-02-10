@@ -966,7 +966,7 @@ body.ht_view {
 }
 
 .ht_ .wel_today_cont .swiper-slide .today_box .txt {
-  min-height: 1;
+  min-height: 141px;
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1323,6 +1323,10 @@ body.ht_view {
   width: 100px;
   height: 100px;
   background: url("../images/main/btn_play.svg") center/52px no-repeat;
+}
+
+.ht_ .wel_live_cont .liv_timeline_marker strong {
+  margin-right: 0;
 }
 
 .ht_ .live_btn {

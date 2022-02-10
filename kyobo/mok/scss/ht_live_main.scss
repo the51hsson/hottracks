@@ -161,15 +161,15 @@
     .liv_new_msg {
         position:absolute;right:0;top:30px;z-index:2;
         p {
-            position:relative;right:20px;top:0;padding:11px 10px 9px 10px;background:#d4ff1a;border:solid #000;border-width:2px 2px 3px 2px;border-radius:30px;color:#000;font-size:12px;font-weight:500;line-height:18px;animation:livNewMsg both infinite 5s;
+            position:relative;right:11px;top:0;padding:11px 10px 9px 10px;background:#d4ff1a;border:solid #000;border-width:2px 3px 3px 2px;border-radius:30px;color:#000;font-size:12px;font-weight:500;line-height:18px;animation:livNewMsg both infinite 5s;
             &:before {
-                position:absolute;right:26px;bottom:-11px;width:0;height:0;border-top:10px solid #000;border-left:9px solid transparent;border-right:9px solid transparent;content:"";z-index:2; 
+                position:absolute;right:16px;bottom:-11px;width:0;height:0;border-top:10px solid #000;border-left:9px solid transparent;border-right:9px solid transparent;content:"";z-index:2; 
             }
             &:after {
-                position:absolute;right:27px;bottom:-7px;width:0;height:0;border-top:10px solid #d4ff1a;border-left:9px solid transparent;border-right:9px solid transparent;content:"";z-index:2;
+                position:absolute;right:17px;bottom:-7px;width:0;height:0;border-top:10px solid #d4ff1a;border-left:9px solid transparent;border-right:9px solid transparent;content:"";z-index:2;
             }
             em {
-                position:absolute;right:14px;top:-16px;width:32px;height:32px;background:url("../images/main/ico_liv_msg.svg") center/100% no-repeat;content:"";
+                position:absolute;right:7px;top:-16px;width:32px;height:32px;background:url("../images/main/ico_liv_msg.svg") center/100% no-repeat;content:"";
             }
         }
     }
@@ -260,18 +260,18 @@
     .calendar_tab {
         display:flex;width:100%;
         .swiper-slide {
-            padding:0 5px;box-sizing:border-box;
+            padding:0 2px;box-sizing:border-box;
         }
         .li {
-            display:block;position:relative;width:100%;height:65px;padding-top:9px;border-radius:22px;box-sizing:border-box;color:#fff;font-size:12px;font-weight:700;text-align:center;cursor:pointer;
+            display:block;position:relative;width:100%;height:65px;border-radius:22px;box-sizing:border-box;color:#fff;font-size:12px;font-weight:700;text-align:center;cursor:pointer;
             em {
-                display:block;position:relative;padding-top:8px;color:#767676;font-size:11px;font-weight:700;line-height:11px;
+                display:block;position:relative;padding-top:10px;color:#767676;font-size:11px;font-weight:700;line-height:11px;
                 &:before {
                     position:absolute;left:50%;top:0;width:4px;height:4px;margin-left:-2px;background:#797979;border-radius:50%;content:"";
                 }
             }   
             span {
-                display:block;margin-top:4px;font-size:20px;font-weight:700;line-height:20px;;
+                display:block;margin-top:4px;font-size:20px;font-weight:700;line-height:20px;letter-spacing:-1px;
             }
             &.hue {
                 span {
@@ -329,7 +329,7 @@
         }
     }
     .liv_timeline_marker {
-        display:flex;position:relative;margin:0 5px 15px 25px;
+        display:flex;position:relative;margin:0 0 15px 25px;border-radius:12px;overflow:hidden;
         strong {
             display:inline-block;position:relative;height:24px;margin-right:10px;padding:0 10px;background:rgba(0,0,0,0.6);border-radius:12px;box-sizing:border-box;color:#fff;font-size:14px;font-weight:700;line-height:25px;overflow:hidden;
             &.on {
@@ -350,7 +350,7 @@
                     background:linear-gradient(90deg, #f00 42%, #ffc400 50%, #f00 58%) center no-repeat;background-origin:border-box;content:"";animation:btn_wel_live 2.2s linear infinite;
                 }
                 &:after {
-                    position:absolute;left:1px;top:1px;width:calc(100% - 2px);height:calc(100% - 2px);background:#fff;border-radius:10px;content:"";
+                    position:absolute;left:1px;top:1px;width:calc(100% - 2px);height:calc(100% - 2px);background:#fff;border-radius:11px;content:"";
                 }
                 em {
                     position:relative;color:#ff2700;z-index:2;
@@ -448,8 +448,8 @@
 
 
 
-    // 라이브 상세 : liv_view
-    .liv_view {
+    // 라이브 상세 : liv_detail
+    .liv_detail {
         position:relative;
         .img {
             position:relative;margin:-40px -20px 30px -20px;
@@ -458,7 +458,7 @@
             }
         }
         .liv_timeline_marker {
-            margin:0;padding-right:40px;
+            margin:0;padding-right:40px;border-radius:0;overflow:inherit;
         }
         .btn_liv_share {
             display:block;position:absolute;right:-15px;top:-15px;width:50px;height:50px;background:url('../images/guide/ico_tod_share.svg') center/20px no-repeat;
@@ -616,3 +616,8 @@
         }
     }
 }
+
+
+
+
+

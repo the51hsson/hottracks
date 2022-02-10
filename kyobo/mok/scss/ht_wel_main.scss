@@ -503,7 +503,7 @@ body {
                     }
                 }
                 .txt {
-                    min-height:1;padding:20px;box-sizing:border-box;text-align:left;
+                    min-height:141px;padding:20px;box-sizing:border-box;text-align:left;
                     .s1 {
                         display:-webkit-box;min-height:37px;margin-top:-2px;color:#000;font-size:13px;font-weight:500;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
                     }
@@ -672,6 +672,11 @@ body {
                 .btn_liv_play {
                     width:100px;height:100px;background:url('../images/main/btn_play.svg') center/52px no-repeat;
                 }
+            }
+        }
+        .liv_timeline_marker {
+            strong {
+                margin-right:0;
             }
         }
     }
