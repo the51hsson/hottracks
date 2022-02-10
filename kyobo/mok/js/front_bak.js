@@ -430,7 +430,7 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 
 				containerId = 'body';
 				containerClasses = 'dialog_wrapper';
-				dialogClass = 'data-preaction';
+				dialogClass = '';
 	
 				// dialog multi class 추가
 				if ($(this).data('class') !== undefined) {
