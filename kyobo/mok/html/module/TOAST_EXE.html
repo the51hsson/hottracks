@@ -98,83 +98,17 @@
         <main id="containerWrapper" class="container_wrapper">
             <!-- data-target 과 id 매치 -->
             <!--dataset : data-prev 사용하면 팝업 바로 오픈 안시킴-->
-            <button class="btn_lg btn_primary"  id="testBtn" onclick="firstBtn(this);"
-             data-role="btn-dialog" data-target="#popPointTotal"  data-target="#popPointTotal" data-prev>
-                <span class="text">3초 후 팝업오픈</span>
+            <button class="btn_lg btn_primary"  onclick ="toastBtn();">
+                <span class="text">토스트 메세지</span>
             </button>         
         </main>
         <!-- // 컨텐츠 -->
     </div>
     <!-- // wrapper -->
-    <!--3초 후  팝업-->
-    <div id="popPointTotal" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
-        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
-        <!-- dialog_header -->
-        <div class="dialog_header">
-            <div class="dialog_title">스터디플래너 전체</div>
-        </div>
-        <!-- //dialog_header -->
-        <!-- dialog_contents -->
-        <div class="dialog_contents checkbox_type">
-        <ul class="cks_list">
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="checkbox" class="checkbox_cm">
-                    <span class="label_for_sp">스터디 플래너 전체</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="checkbox" class="checkbox_cm">
-                    <span class="label_for_sp">스터디 플래너 전체2</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="checkbox" class="checkbox_cm">
-                    <span class="label_for_sp">스터디 플래너 전체3</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="checkbox" class="checkbox_cm">
-                    <span class="label_for_sp">스터디 플래너 전체4</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="checkbox" class="checkbox_cm">
-                    <span class="label_for_sp">스터디 플래너 전체5</span>
-                </label>
-            </li>
-            <li>
-                <label class="ck_label_wrap">
-                    <input type="checkbox" class="checkbox_cm">
-                    <span class="label_for_sp">스터디 플래너 전체6</span>
-                </label>
-            </li>  
-        </ul>
-        </div>
-        <!-- //dialog_contents -->
-        <!-- dialog_footer -->
-        <div class="dialog_footer ctg_cks"></div>
-        <!-- //dialog_footer -->
-    </div>
-    <!--//3초 후  팝업-->
 </body>
 <script>
-
-  function firstBtn(thisBtn){
-        thisBtn.setAttribute('data-prev', null);
-        KyoboHottracks.mok.setUIDialog();
-        var target =thisBtn.getAttribute('data-target'); 
-
-        setTimeout(function(){
-            KyoboHottracks.mok.dialogOnOff().popOpen(target);
-            console.log('3초 후 이벤트 발생');   
-        }, 3000);
+    function toastBtn(){
+        KyoboHottracks.mok.setToastMessage('장바구니에 상품이 담겼습니다.<br>두줄 테스트입니다.', 100);
     }
- 
-
 </script>
 </html>
