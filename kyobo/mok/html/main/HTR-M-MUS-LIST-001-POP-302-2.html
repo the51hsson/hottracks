@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="Author" content="SEO 기획 정의 내용 반영" />
+    <meta name="keywords" content="SEO 기획 정의 내용 반영"/>
+    <meta name="description" content="SEO 기획 정의 내용 반영" />
+    <meta name="subject" content="SEO 기획 정의 내용 반영" />
+    <!-- DESC : 성인컨텐츠인 경우 추가하는 meta tag -->
+    <!--<meta name="rating" content="adult" />-->
+    
+    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta property="og:title" content="핫트랙스">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../../images/guide/sns.jpg">
+    <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
+    <title>음반메인</title>
+    
+    <!-- Plug-In css -->
+    <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../../vendors/lib/swiper-7.2.0/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../vendors/lib/star-rating/css/star-rating.min.css" />
+    <!-- // Plug-In css -->
+    
+    <!-- font css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
+    <!-- // font css -->
+    
+    <!-- Custom styles for this template -->
+    <!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
+    <!-- // Custom styles for this template -->
+    
+    <!-- ht_ Hottracks custom css -->
+    <link rel="stylesheet" href="../../css/ht_style_mok.css" />
+    <link rel="stylesheet" href="../../css/ht_music_main.css" />
+    <link rel="stylesheet" href="../../css/ht_music_list.css" />
+    <!--// ht_ Hottracks custom css -->
+    
+    
+    <!-- Plug-In javascript -->
+    <script src="../../vendors/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script src="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="../../vendors/lib/jquery-ui-1.12.1/jquery.ui.spinner.js"></script>
+    <script src="../../vendors/lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../vendors/lib/swiper-7.2.0/js/swiper-bundle.min.js"></script>
+    <script src="../../vendors/lib/star-rating/js/star-rating.min.js"></script>
+    <script src="../../vendors/lib/star-rating/themes/krajee-gly/theme.min.js"></script>
+    <script src="../../vendors/lib/star-rating/js/locales/ko.js"></script>
+    <script src="../../vendors/lib/scrollpos-styler/scrollPosStyler.min.js"></script>
+    <script src="../../vendors/lib/css-element-queries/ResizeSensor.js"></script>
+    <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
+    <!-- // Plug-In javascript -->
+    
+    <!-- UI JavaScript -->
+    <script src="../../js/circletype.min.js"></script>
+    <script src="../../js/front_bak.js"></script>
+    <script src="../../js/ht_music_list.js"></script>
+    <!-- // UI JavaScript -->
+</head>
+
+<body>
+    <!-- SkipNav -->
+    <div class="skip_nav_wrap">
+        <a href="#headerWrapper">메뉴 바로가기</a>
+        <a href="#containerWrapper">본문 바로가기</a>
+    </div>
+    <!-- //SkipNav -->
+
+    <!-- wrapper -->
+    <!-- ht_ Hottracks ht_ 클래스 추가 -->
+    <!-- DESC : footer 없는 경우 [ no-footer ] 클래스 추가 -->
+    <!-- DESC : 상품상세와 같이 하단 구매 영역 있는 경우 클래스 .contents_detail_view 추가 -->
+    <div class="ht_ wrapper contents_detail_view">
+        <!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
+        <header id="headerWrapper" class="ht_ header_wrapper">
+            <div class="header_left">
+                <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
+            </div>
+            <div class="header_center">
+                <div class="page_title prod_detail"></div>
+            </div>
+            <div class="header_right">
+                <!-- DESC : 상품정보 부터 검색버튼 비활성화 -->
+                <a href="#" class="btn_header_search"><span class="hidden">검색</span></a>
+                <a href="#" class="btn_header_cart">
+                    <span class="hidden">장바구니</span>
+                    <!-- DESC :: 0개인경우 count 영역 미노출 / 최대 99 -->
+                    <span class="count">99</span>
+                </a>
+            </div>
+        </header>
+        <!-- // 헤더 -->
+        <!-- 컨텐츠 -->
+        <main id="containerWrapper" class="container_wrapper">
+            <button class="btn_lg btn_primary" data-role="btn-dialog" data-target="#ClickCksClose_week" >
+                <span class="text">팝업 오픈</span>
+            </button>         
+        </main>
+        <!-- // 컨텐츠 -->
+    </div>
+    <!-- // wrapper -->
+    <!-- 팝업 (ctg_floating_menues 주간) -->
+    <div id="ClickCksClose_week" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">차트 선택</div>
+            <div class="dialog_title_sub">
+                <em class="icon_mus"></em>
+                <em class="date">2021년 11월</em>
+                <em class="rate">월간</em>
+            </div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents vertical_swap_contents">
+            <div class="vertical_swap_area type_week">
+                <div class="swiper chart_date_swap">
+                    <ul class="swiper-wrapper ck_list">
+                        <li class="swiper-slide">2017년</li>
+                        <li class="swiper-slide">2018년</li>
+                        <li class="swiper-slide">2019년</li>
+                        <li class="swiper-slide">2020년</li>
+                        <li class="swiper-slide">2021년</li>
+                        <li class="swiper-slide">2022년</li>
+                        <li class="swiper-slide">2023년</li>
+                        <li class="swiper-slide">2017년</li>
+                        <li class="swiper-slide">2018년</li>
+                        <li class="swiper-slide">2019년</li>
+                        <li class="swiper-slide">2020년</li>
+                        <li class="swiper-slide">2021년</li>
+                        <li class="swiper-slide">2022년</li>
+                        <li class="swiper-slide">2023년</li>
+                    </ul>
+                </div>  
+                <div class="swiper chart_date_swap">
+                    <ul class="swiper-wrapper ck_list">
+                        <li class="swiper-slide">01월</li>
+                        <li class="swiper-slide">02월</li>
+                        <li class="swiper-slide">03월</li>
+                        <li class="swiper-slide">04월</li>
+                        <li class="swiper-slide">05월</li>
+                        <li class="swiper-slide">06월</li>
+                        <li class="swiper-slide">07월</li>
+                        <li class="swiper-slide">08월</li>
+                        <li class="swiper-slide">09월</li>
+                        <li class="swiper-slide">10월</li>
+                        <li class="swiper-slide">11월</li>
+                        <li class="swiper-slide">12월</li>
+                    </ul>
+                </div> 
+                <div class="swiper chart_date_swap">
+                    <ul class="swiper-wrapper ck_list">
+                        <li class="swiper-slide">1주</li>
+                        <li class="swiper-slide">2주</li>
+                        <li class="swiper-slide">3주</li>
+                        <li class="swiper-slide">4주</li>
+                        <li class="swiper-slide">5주</li>
+                    </ul>
+                </div>   
+            </div>
+            <!-- //dialog_contents -->
+            <!-- dialog_footer -->
+            <div class="dialog_footer ctg_cks">
+                <button type="button" class="btn_ip btn_black" data-dialog-close><span class="text">확인</span></button>
+            </div>
+        <!-- //dialog_footer -->
+        </div>
+    </div>  
+    <!-- 팝업 (ctg_floating_menues 주간) -->
+</body>
+
+</html>

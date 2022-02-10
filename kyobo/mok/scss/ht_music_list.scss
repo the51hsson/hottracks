@@ -819,13 +819,19 @@ ul.prod-wrapper.row_dir {
 			margin-right:3px;
 			background:url(../images/guide/mus_pop_sub_tit_icon.svg) no-repeat left center /13px;
 		}
-		.date {
+		.year,
+		.month,
+		.week,
+		.day {
+			margin-right:3px;
+		}
+		.rate {
 			position:relative;
-			margin-right: 5px;
+			margin-left: 5px;
 			&:before {
 				content:",";
 				position:absolute;
-				right:-3px;
+				left:-3px;
 				bottom:-3px;
 				z-index: 3;
 			}
@@ -900,6 +906,13 @@ ul.prod-wrapper.row_dir {
 			   .swiper-slide {
 				text-align: right;
 			   }
+			   .swiper-slide-active{
+				   padding-right:5px
+			   }
+			   .swiper-slide-prev,
+			   .swiper-slide-next{
+			    	padding-right:2px
+			   }
 		   }
 		   &:nth-of-type(2) {
 			flex:2 1 auto;
@@ -910,6 +923,13 @@ ul.prod-wrapper.row_dir {
 			   .swiper-slide {
 				text-align: left;
 		    	}
+				.swiper-slide-active{
+					padding-left:5px;
+				}
+				.swiper-slide-prev,
+				.swiper-slide-next{
+					padding-left:2px;
+				}
 		   }
 		   
 		}
