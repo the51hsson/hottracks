@@ -58,7 +58,7 @@ $(function(){
     });
  
  /*=================================== HTR-M-CTG-LIST-001.html ==============================*/
-  //예약 상품, 베스트, 신상품   스왑배너
+  //예약 상품, 베스트, 신상품  스왑배너
     $('.swiper-container.ctg_top_swiper').each(function(i, ele){
         var ctgSwiper = new Swiper(this,  {
             observer: true,

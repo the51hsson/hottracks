@@ -97,57 +97,13 @@
         <!-- 컨텐츠 -->
         <main id="containerWrapper" class="container_wrapper">
             <!-- data-target 과 id 매치 -->
-            <button class="btn_lg btn_primary"  id="testBtn" 
-             data-role="btn-dialog" data-target="#popPointTotal"  data-target="#popPointTotal" data-prev = "yes">
+            <!--dataset : data-prev 사용하면 팝업 바로 오픈 안시킴-->
+            <button class="btn_lg btn_primary"  id="testBtn" onclick="firstBtn(this);"
+             data-role="btn-dialog" data-target="#popPointTotal"  data-target="#popPointTotal" data-prev>
                 <span class="text">3초 후 팝업오픈</span>
-            </button>
-            
-            <button class="btn_lg btn_primary"  id="testBtn2" 
-            data-role="btn-dialog" data-target="#popPointTotal"  data-target="#popPointTotal2" data-prev = "yes">
-               <span class="text">1초 후 팝업오픈</span>
-           </button>
-
-           <button class="btn_lg btn_primary" 
-           data-role="btn-dialog" data-target="#popPointTotal"  data-target="#popPointTotal2">
-              <span class="text">팝업오픈(data-prev 없음)</span>
-          </button>
-           
+            </button>         
         </main>
         <!-- // 컨텐츠 -->
-
-        <!-- 독바 -->
-        <section class="footer_wrap fixed_foot">
-            <!-- todo : footer_wrap에서 product_btn_foot등으로 변경 여지 있음 -->
-            <!-- 상품상세 하단 고정영역 -->
-            <div class="prod_purchase_info_wrap">
-                <!-- CASE 1. 기본 -->
-                <!-- DESC : 버튼 풀배열인경우 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
-                <div class="btn_wrap multi">
-                    <button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span
-                            class="hidden">찜하기</span></button>
-                    <button type="button" class="btn_gift size_lg"><span class="ico_gift"></span><span
-                            class="text">선물하기</span></button>
-
-                    <!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
-                    <div class="btn_wrap overlap">
-                        <button type="button" class="btn_ip btn_light_gray"><span class="text">장바구니</span></button>
-                        <button type="button" class="btn_ip btn_primary"><span class="text">구매하기</span></button>
-                    </div>
-                </div>
-                <!-- // CASE 1. 기본 -->
-
-            </div>
-            <!-- // 상품상세 하단 고정영역 -->
-            <div class="floating_wrapper">
-                <!-- 탑버튼 -->
-                <a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
-                <!-- // 탑버튼 -->
-                <!-- 백버튼 -->
-                <a href="#" class="btn_go_back"><span class="hidden">이전 화면으로</span></a>
-                <!--// 백버튼-->
-            </div>
-        </section>
-        <!-- // 독바 -->
     </div>
     <!-- // wrapper -->
     <!--3초 후  팝업-->
@@ -262,26 +218,18 @@
 
 </body>
 <script>
-document.getElementById('testBtn').addEventListener('click', function(){
-    this.setAttribute('data-prev', null);
-    KyoboHottracks.mok.setUIDialog();
-    var target = $(this).data('target');
 
-    setTimeout(function(){
-        KyoboHottracks.mok.dialogOnOff().popOpen(target);
-        console.log('3초 후 이벤트 발생');   
-     }, 3000);
-   });
+  function firstBtn(thisBtn){
+        thisBtn.setAttribute('data-prev', null);
+        KyoboHottracks.mok.setUIDialog();
+        var target =thisBtn.getAttribute('data-target'); 
 
-document.getElementById('testBtn2').addEventListener('click', function(){
-    this.setAttribute('data-prev', null);
-    KyoboHottracks.mok.setUIDialog();
-    var target = $(this).data('target');
+        setTimeout(function(){
+            KyoboHottracks.mok.dialogOnOff().popOpen(target);
+            console.log('3초 후 이벤트 발생');   
+        }, 3000);
+    }
+ 
 
-    setTimeout(function(){
-        KyoboHottracks.mok.dialogOnOff().popOpen(target);
-        console.log('1초 후 이벤트 발생');  
-      }, 1000);
-});
 </script>
 </html>

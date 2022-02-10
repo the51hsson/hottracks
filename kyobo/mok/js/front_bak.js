@@ -513,8 +513,8 @@ KyoboHottracks.mok = KyoboHottracks.mok || (function () {
 
 				if ($(btnOpen).length > 0) {
 					$(btnOpen).each(function (index) {
-						prevEvent = $(this).data('prev');   
-                        if(!prevEvent) {
+						prevEvent = $(this).data('prev'); 
+                        if(prevEvent == undefined) {
                             $(this).off('click').on('click', function (event) {
                                 var popTgId = $(this).data('target');
     

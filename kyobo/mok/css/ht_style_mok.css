@@ -3744,46 +3744,6 @@ body.dialog_open {
   white-space: nowrap;
 }
 
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_header .dialog_title_sub {
-  margin-top: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_header .dialog_title_sub .icon_mus {
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin-right: 3px;
-  background: url(../images/guide/mus_pop_sub_tit_icon.svg) no-repeat left center/16px;
-}
-
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_header .dialog_title_sub .date {
-  position: relative;
-  margin-right: 5px;
-}
-
-.dialog_wrapper .ui-dialog .dialog_wrap .dialog_header .dialog_title_sub .date:before {
-  content: ",";
-  position: absolute;
-  right: -3px;
-  bottom: -3px;
-  z-index: 3;
-}
-
 .dialog_wrapper .ui-dialog .dialog_wrap .dialog_contents {
   -webkit-box-flex: 1;
       -ms-flex: 1;

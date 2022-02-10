@@ -1518,32 +1518,6 @@ body.dialog_open {
                     text-overflow: ellipsis;
                     white-space: nowrap;
                 }
-                .dialog_title_sub {
-                    margin-top:8px;
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
-                    .icon_mus{
-                        display: block;
-                        width:20px;
-                        height:20px;
-                        margin-right:3px;
-                        background:url(../images/guide/mus_pop_sub_tit_icon.svg) no-repeat left center /16px;
-                    }
-                    .date {
-                        position:relative;
-                        margin-right: 5px;
-                        &:before {
-                            content:",";
-                            position:absolute;
-                            right:-3px;
-                            bottom:-3px;
-                            z-index: 3;
-                        }
-                    }
-                }
             }
             .dialog_contents {
                 flex: 1;

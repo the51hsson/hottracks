@@ -1208,28 +1208,122 @@ ul.prod-wrapper.row_dir .title {
 }
 
 /*===================================== 음반 리스트 팝업 =================================*/
-#ClickCksClose_year .vertical_swap_contents {
+.dialog_header {
+  border-bottom: 1px solid #fff !important;
+}
+
+.dialog_header .dialog_title_sub {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.dialog_header .dialog_title_sub .icon_mus {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: url(../images/guide/mus_pop_sub_tit_icon.svg) no-repeat left center/13px;
+}
+
+.dialog_header .dialog_title_sub .date {
+  position: relative;
+  margin-right: 5px;
+}
+
+.dialog_header .dialog_title_sub .date:before {
+  content: ",";
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+  z-index: 3;
+}
+
+#ClickCksClose_year .vertical_swap_contents,
+#ClickCksClose_month .vertical_swap_contents {
   background-color: #F7F7F7;
   height: 300px;
   margin: 0;
+  padding: 0 20px;
 }
 
-#ClickCksClose_year .vertical_swap_contents .swiper-wrapper.ck_list {
+#ClickCksClose_year .vertical_swap_contents .type_month,
+#ClickCksClose_month .vertical_swap_contents .type_month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_month .chart_date_swap,
+#ClickCksClose_month .vertical_swap_contents .type_month .chart_date_swap {
+  border: 1px solid red;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_month .chart_date_swap:first-of-type,
+#ClickCksClose_month .vertical_swap_contents .type_month .chart_date_swap:first-of-type {
+  -webkit-box-flex: 7;
+      -ms-flex: 7 1 auto;
+          flex: 7 1 auto;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_month .chart_date_swap:last-of-type,
+#ClickCksClose_month .vertical_swap_contents .type_month .chart_date_swap:last-of-type {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 auto;
+          flex: 3 1 auto;
+}
+
+#ClickCksClose_year .vertical_swap_contents .swiper-wrapper.ck_list,
+#ClickCksClose_month .vertical_swap_contents .swiper-wrapper.ck_list {
   height: 250px;
 }
 
-#ClickCksClose_year .vertical_swap_contents .swiper-wrapper.ck_list .swiper-slide {
+#ClickCksClose_year .vertical_swap_contents .swiper-wrapper.ck_list .swiper-slide,
+#ClickCksClose_month .vertical_swap_contents .swiper-wrapper.ck_list .swiper-slide {
   height: 50px;
   text-align: center;
   line-height: 50px;
+  font-size: 16px;
 }
 
-#ClickCksClose_year .vertical_swap_contents .swiper-wrapper.ck_list .swiper-slide.swiper-slide-active {
+#ClickCksClose_year .vertical_swap_contents .swiper-wrapper.ck_list .swiper-slide.swiper-slide-active,
+#ClickCksClose_month .vertical_swap_contents .swiper-wrapper.ck_list .swiper-slide.swiper-slide-active {
   background-color: #fff;
   font-weight: 700;
+  font-size: 20px;
 }
 
-#ClickCksClose_year .vertical_swap_contents .dialog_footer.ctg_cks {
+#ClickCksClose_year .vertical_swap_contents .swiper-wrapper.ck_list .swiper-slide.swiper-slide-prev, #ClickCksClose_year .vertical_swap_contents .swiper-wrapper.ck_list .swiper-slide.swiper-slide-next,
+#ClickCksClose_month .vertical_swap_contents .swiper-wrapper.ck_list .swiper-slide.swiper-slide-prev,
+#ClickCksClose_month .vertical_swap_contents .swiper-wrapper.ck_list .swiper-slide.swiper-slide-next {
+  font-size: 18px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .dialog_footer.ctg_cks,
+#ClickCksClose_month .vertical_swap_contents .dialog_footer.ctg_cks {
   margin-top: 0;
+  padding: 0;
   background-color: #F7F7F7;
+}
+
+#ClickCksClose_year .vertical_swap_contents .dialog_footer.ctg_cks .btn_black,
+#ClickCksClose_month .vertical_swap_contents .dialog_footer.ctg_cks .btn_black {
+  background-color: #000;
 }

@@ -707,7 +707,68 @@
         </div>
 		<!-- //dialog_footer -->
 	    </div>
+    </div>  
     <!-- //팝업 (ctg_floating_menues 연간) -->
+    <!-- 팝업 (ctg_floating_menues 월간) -->
+    <div id="ClickCksClose_month" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
+		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+		<!-- dialog_header -->
+		<div class="dialog_header">
+			<div class="dialog_title">차트 선택</div>
+            <div class="dialog_title_sub">
+                <em class="icon_mus"></em>
+                <em class="date">2021년 11월</em>
+                <em class="rate">월간</em>
+            </div>
+		</div>
+		<!-- //dialog_header -->
+		<!-- dialog_contents -->
+		<div class="dialog_contents vertical_swap_contents">
+            <div class="vertical_swap_area type_month">
+                <div class="swiper chart_date_swap">
+                    <ul class="swiper-wrapper ck_list">
+                        <li class="swiper-slide">2017년</li>
+                        <li class="swiper-slide">2018년</li>
+                        <li class="swiper-slide">2019년</li>
+                        <li class="swiper-slide">2020년</li>
+                        <li class="swiper-slide">2021년</li>
+                        <li class="swiper-slide">2022년</li>
+                        <li class="swiper-slide">2023년</li>
+                        <li class="swiper-slide">2017년</li>
+                        <li class="swiper-slide">2018년</li>
+                        <li class="swiper-slide">2019년</li>
+                        <li class="swiper-slide">2020년</li>
+                        <li class="swiper-slide">2021년</li>
+                        <li class="swiper-slide">2022년</li>
+                        <li class="swiper-slide">2023년</li>
+                    </ul>
+                </div>  
+                <div class="swiper chart_date_swap">
+                    <ul class="swiper-wrapper ck_list">
+                        <li class="swiper-slide">01월</li>
+                        <li class="swiper-slide">02월</li>
+                        <li class="swiper-slide">03월</li>
+                        <li class="swiper-slide">04월</li>
+                        <li class="swiper-slide">05월</li>
+                        <li class="swiper-slide">06월</li>
+                        <li class="swiper-slide">07월</li>
+                        <li class="swiper-slide">08월</li>
+                        <li class="swiper-slide">09월</li>
+                        <li class="swiper-slide">10월</li>
+                        <li class="swiper-slide">11월</li>
+                        <li class="swiper-slide">12월</li>
+                    </ul>
+                </div>   
+            </div>
+            <!-- //dialog_contents -->
+            <!-- dialog_footer -->
+            <div class="dialog_footer ctg_cks">
+                <button type="button" class="btn_ip btn_black" data-dialog-close><span class="text">확인</span></button>
+            </div>
+		<!-- //dialog_footer -->
+	    </div>
+    </div>  
+    <!-- 팝업 (ctg_floating_menues 월간) -->
 
 </body>
 </html>
@@ -715,9 +776,12 @@
         <script>
             var swiper = new Swiper(".chart_date_swap", {
               direction: "vertical",
-              loop:true,
+              loop:false,
               slidesPerView: 5,
+              initialSlide: 5,
               centeredSlides: true,
+              centeredSlidesBounds: true,
+            
               pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
