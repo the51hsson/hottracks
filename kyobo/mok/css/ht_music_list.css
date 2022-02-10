@@ -702,16 +702,17 @@
   margin-left: auto;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 18px;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.2);
 }
 
 .wrap .tit_area .sub_tit .sub {
   float: left;
-  margin-right: 16px;
+  display: block;
+  margin-right: 10px;
   line-height: 32px;
   white-space: nowrap;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 18px;
 }
 
 .wrap .tit_area .sub_tit .sub:last-of-type {
