@@ -73,6 +73,10 @@ $(function(){
 		         (offsetTop - headerHeight - stickMenuHeight - 200 < scrolltop);
 		return isShow; 
 	}
+	//베스트, 신상품, 무료배송 서브 메뉴 활성화 기능
+	$(document).on('click', '.menu_sort .btn_sort', function(){
+		$(this).addClass('active').siblings().removeClass('active');
+	})
     /*================================= HTR-M-EVT-VIEW-015, 016.html ==============================*/  
     //스티키 샐렉트 메뉴 선택 시 해당 위치로 이동
     $(document).on('change', '.sticky_selec .common_select', function(){
