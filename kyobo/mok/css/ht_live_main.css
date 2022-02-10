@@ -295,7 +295,8 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
-  /*animation:livNewMsg both infinite 5s;*/
+  -webkit-animation: livNewMsg both infinite 5s;
+          animation: livNewMsg both infinite 5s;
 }
 
 .ht_ .liv_new_msg p:before {

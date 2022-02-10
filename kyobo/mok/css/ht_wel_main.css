@@ -1325,6 +1325,10 @@ body.ht_view {
   background: url("../images/main/btn_play.svg") center/52px no-repeat;
 }
 
+.ht_ .wel_live_cont .liv_timeline_marker strong {
+  margin-right: 0;
+}
+
 .ht_ .live_btn {
   position: relative;
   margin-top: 14px;

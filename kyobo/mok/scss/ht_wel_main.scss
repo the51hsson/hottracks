@@ -674,6 +674,11 @@ body {
                 }
             }
         }
+        .liv_timeline_marker {
+            strong {
+                margin-right:0;
+            }
+        }
     }
     .live_btn {
         position:relative;margin-top:14px;opacity:0;transition:opacity 0.4s;
