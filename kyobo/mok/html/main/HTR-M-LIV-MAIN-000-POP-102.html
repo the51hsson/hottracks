@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+<meta name="Author" content="SEO 기획 정의 내용 반영" />
+<meta name="keywords" content="SEO 기획 정의 내용 반영"/>
+<meta name="description" content="SEO 기획 정의 내용 반영" />
+<meta name="subject" content="SEO 기획 정의 내용 반영" />
+<!-- DESC : 성인컨텐츠인 경우 추가하는 meta tag -->
+<!--<meta name="rating" content="adult" />-->
+
+<meta name="Robots" content="noindex, nofollow" />
+<meta name="msapplication-TileColor" content="#000000">
+<meta property="og:title" content="핫트랙스">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../../images/guide/sns.jpg">
+<link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
+<title>라이브</title>
+
+<!-- Plug-In css -->
+<link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+<link rel="stylesheet" href="../../vendors/lib/swiper-7.2.0/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../../vendors/lib/star-rating/css/star-rating.min.css" />
+<!-- // Plug-In css -->
+
+<!-- font css -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
+<!-- // font css -->
+
+<!-- Custom styles for this template -->
+<!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
+<!-- // Custom styles for this template -->
+
+<!-- ht_ Hottracks custom css -->
+<link rel="stylesheet" href="../../css/ht_style_mok.css" />
+<link rel="stylesheet" href="../../css/ht_wel_main.css" /><!-- 메인 css -->
+<!--// ht_ Hottracks custom css -->
+
+
+<!-- Plug-In javascript -->
+<script src="../../vendors/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="../../vendors/lib/jquery-ui-1.12.1/jquery.ui.spinner.js"></script>
+<script src="../../vendors/lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+<script src="../../vendors/lib/swiper-7.2.0/js/swiper-bundle.min.js"></script>
+<script src="../../vendors/lib/star-rating/js/star-rating.min.js"></script>
+<script src="../../vendors/lib/star-rating/themes/krajee-gly/theme.min.js"></script>
+<script src="../../vendors/lib/star-rating/js/locales/ko.js"></script>
+<script src="../../vendors/lib/scrollpos-styler/scrollPosStyler.min.js"></script>
+<script src="../../vendors/lib/css-element-queries/ResizeSensor.js"></script>
+<script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
+<!-- // Plug-In javascript -->
+
+<!-- UI JavaScript -->
+<script src="../../js/circletype.min.js"></script>
+<script src="../../js/front_bak.js"></script>
+
+<script src="../../js/ht_wel_main.js"></script><!-- 메인 script -->
+<!-- // UI JavaScript -->
+<link rel="stylesheet" href="../../css/ht_live_main.css" /><!-- 메인 css -->
+</head>
+
+<body class="ht_view"><!-- 상세 팝업 : class="ht_view" -->
+	<div class="skip_nav_wrap">
+		<a href="#headerWrapper">메뉴 바로가기</a>
+		<a href="#containerWrapper">본문 바로가기</a>
+	</div>
+	<!-- wrapper -->
+	<!--DESC : 에러페이지인 경우 [error] 클래스 추가 -->
+
+	<!-- ht_ Hottracks ht_ 클래스 추가 -->
+	<div class="wrapper ht_">
+		<!-- 컨텐츠 -->
+		<main id="containerWrapper" class="container_wrapper">
+			
+			<!-- title_header -->
+            <div class="title_header" >
+                <button type="button" class="btn_tit_close"><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+                <div class="pop_like_header">
+                    <div class="title">핫트랙스 라이브 12월 캘린더</div>
+                </div>
+            </div>
+			<!-- //title_header -->
+
+			<!-- 라이브 컨텐츠 -->
+			<div class="wel_main_wrap">
+
+<script>
+$(function(){
+	$('.calendar_tab .today em').text('오늘');
+	var idx = $('.calendar_tab .today').index();
+	calendarTabSwiperCont.slideTo(idx - 4, 0, false);
+});
+</script>
+					
+				<!-- 라이브 캘린더 -->
+				<div class="mc_cont liv_calendar">
+					<!-- calendar_tab_wrap -->
+					<div class="calendar_tab_wrap">
+						<!-- calendar_tab -->
+						<div class="calendar_tab">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<button class="li hue" disabled>
+										<em>일</em>
+										<span>30</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li">
+										<em>월</em>
+										<span>31</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li" disabled>
+										<em>화</em>
+										<span>1</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li hue">
+										<em>수</em>
+										<span>2</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li">
+										<em>목</em>
+										<span>3</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li">
+										<em>금</em>
+										<span>4</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li hue" disabled>
+										<em>토</em>
+										<span>5</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li hue" disabled>
+										<em>일</em>
+										<span>6</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li">
+										<em>월</em>
+										<span>7</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li" disabled><!-- 방송없음 : disabled -->
+										<em>화</em>
+										<span>8</span>
+									</a>
+								</li>
+								<li class="swiper-slide"><!-- 오늘 class="today" / 선택 class="on" -->
+									<button class="li">
+										<em>수</em>
+										<span>9</span>
+									</button>
+								</li>
+								<li class="swiper-slide on">
+									<button class="li" disabled>
+										<em>목</em>
+										<span>10</span>
+									</button>
+								</li>
+								<li class="swiper-slide today"">
+									<button class="li">
+										<em>금</em>
+										<span>11</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li hue">
+										<em>토</em>
+										<span>12</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li hue">
+										<em>일</em>
+										<span>13</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li">
+										<em>월</em>
+										<span>14</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li">
+										<em>화</em>
+										<span>15</span>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<button class="li">
+										<em>수</em>
+										<span>16</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li">
+										<em>목</em>
+										<span>17</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li" disabled>
+										<em>금</em>
+										<span>18</span>
+									</button>
+								</li>
+								<li class="swiper-slide">
+									<button class="li" disabled>
+										<em>토</em>
+										<span>19</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<!-- //calendar_tab -->
+					</div>
+					<!-- //calendar_tab_wrap -->
+
+					<!-- ht_msg_box
+					<div class="ht_msg_box">
+						<p class="ico"><img src="../../images/main/ico_liv_txt.svg" alt=""></p>
+						<p class="txt">아쉽지만 오늘은 준비된 라이브가 없어요<br>대신 가장 가까운 다음 라이브 소식을 알려 드릴게요</p>
+					</div>
+					//ht_msg_box -->
+
+					<!-- liv_timeline -->
+					<ul class="liv_timeline">
+						<!-- .li 반복 -->
+						<li class="li">
+							<!-- liv_timeline_marker -->
+							<div class="liv_timeline_marker">
+								<!--<strong>D-1</strong>-->
+								<p>12월 16일 19:00 방송종료</p>
+
+								<!--
+								<strong class="on"><em>LIVE</em></strong>              : 방송중인 라이브
+								<strong class="ing"><em>00:00:59</em><i></i></strong>    : 당일 방송 예정 라이브
+								<strong>D-1</strong>                                     : 당일 방송 예정 라이브가 없을 경우
+								-->
+							</div>
+							<!-- //liv_timeline_marker -->
+
+							<!-- liv_timeline_box -->
+							<div class="liv_timeline_box">
+								<div class="img">
+									<p class="img_a" style="background-image:url('../../images/temp/@img_curation03.jpg');"></p><!-- 이미지 경로 : background-image -->
+
+									<div class="liv_time_info">
+										<p>방송종료</p>
+									</div>
+									<!--
+										                                  : 정보 없을 시 노출 X
+									<div class="liv_time_info">
+										<p><strong>19:00</strong></p>    : 시간정보 
+										<p>방송종료</p>                 :  방송종료
+									</div>
+									-->
+								</div>
+								<ul class="txt">
+									<li class="s1">
+										<p>아르페지오 밍크담요 컬렉션 온라인 최저가 LIVE!</p>
+										<div class="alarm_chk02">
+											<input type="checkbox" id="chk_time01">
+											<label for="chk_time01"><span class="hidden">알림 받기</span></label>
+										</div>
+									</li>
+									<li class="s2">
+										<p class="img_s"><img src="../../images/temp/@img_wel_live_s1.jpg" alt=""></p>
+										<ul class="txt_s">
+											<li class="c1">로지텍 코리아 기계식 키보드</li>
+											<li class="c2">
+												<strong>50%</strong>
+												<span>134,000</span>
+												<em>129,000</em>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!-- //liv_timeline_box -->
+
+							<!-- liv_btn -->
+							<div class="liv_btn">
+								<a href="#n"><span>LIVE 다시보기</span></a>
+							</div>
+							<!-- //liv_btn -->
+						</li>
+						<!-- //.li 반복 -->
+					</ul>
+					<!-- //liv_timeline -->
+				</div>
+				<!-- //라이브 캘린더 -->
+			</div>
+			<!-- 라이브 컨텐츠 -->
+		</main>
+		<!-- //컨텐츠 -->
+	</div>
+	<!-- // wrapper -->
+</body>
+</html>

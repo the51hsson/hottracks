@@ -128,10 +128,10 @@ function welLive(){
         loop: true,
         loopsSlide: 1,
         spaceBetween: 0,
-        autoplay: {
+        /*autoplay: {
             delay:5000,
             disableOnInteraction: false,
-        },
+        },*/
         speed: 700,
 		pagination: {
 			el: $('.wel_live_cont').find('.swiper-pagination')[0],
@@ -625,8 +625,7 @@ $(function(){
 $(window).on('scroll', feScrollFn);
 $.fn.feScrollGet = function(){
     var offset = $(window).scrollTop() + $(window).height() * 0.9;
-	$animate = $('.mc_cont, .wel_cont, .li_box_ty .li, .li_ty .li, .tab_swiper,   .li_resp_ty.ty02 .li');
-    //$animate = $('.mc_cont, .wel_cont, .li_box_ty .li, .li_ty .li, .tab_swiper,   .li_resp_ty.ty02 .li');
+	$animate = $('.mc_cont, .wel_cont, .li_box_ty .li, .li_ty .li, .tab_swiper, .li_resp_ty.ty02 .li');
     $animate.each(function(i){
         var $ani = $(this),
             ani = $ani,
@@ -663,26 +662,59 @@ function feScrollFn(){
 
 
 
-// 띠배너 스와이프
-$(function(){
+// 라이브 다시보기
+function livReplaySwiper(){
+    var $target = $('.liv_replay_cont');
+    $target.each(function (index, element) {
+        var $parent = $(this);
+        var slideOption = {
+            spaceBetween: 20,
+            observer: true,
+            observeParents: true,
+            slidesPerView:3,
+            loop: true,
+            loopsSlide:1,
+            autoHeight: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            speed:400,
+        };
 
-    $('.liv_replay .swiper-container').each(function (index, element) {
-        var $parent = $(this).parent('.liv_replay');
-        $parent.addClass('idx_' + index);
-
-        if($parent.find('.swiper-slide').length > 1) {
-            var beltBannerSwiper = new CustomSwiper(this, {
-                observer: true,
-                observeParents: true,
-                slidesPerView:3,
-                loop: true,
-                loopsSlide:1,
-                autoHeight: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                }
-            }); 
+        if($parent.find('.swiper-slide').length > 3) {
+            livReplaySwiperCont = new Swiper(this, slideOption);
         }
 	});
+}
+
+$(function(){
+    if(!$('.liv_replay_cont').length) return;
+    livReplaySwiper();
 });
+
+
+
+
+// 라이브 달력
+function calendarTabSwiper(){
+    var $target = $('.calendar_tab');
+    var slideOption = {
+        slidesPerView: 'auto',
+        spaceBetween:0,
+        freeMode: true,
+        observer: true,
+        observeParents: true,
+        slidesPerView:7,
+        speed:300,
+    };
+    calendarTabSwiperCont = new Swiper($target.get(), slideOption);
+}
+
+$(function(){
+    if(!$('.calendar_tab').length) return;
+    calendarTabSwiper();
+});
+
+
+
 
