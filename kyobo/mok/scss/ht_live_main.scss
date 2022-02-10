@@ -448,8 +448,8 @@
 
 
 
-    // 라이브 상세 : liv_view
-    .liv_view {
+    // 라이브 상세 : liv_detail
+    .liv_detail {
         position:relative;
         .img {
             position:relative;margin:-40px -20px 30px -20px;
@@ -458,7 +458,7 @@
             }
         }
         .liv_timeline_marker {
-            margin:0;padding-right:40px;
+            margin:0;padding-right:40px;border-radius:0;overflow:inherit;
         }
         .btn_liv_share {
             display:block;position:absolute;right:-15px;top:-15px;width:50px;height:50px;background:url('../images/guide/ico_tod_share.svg') center/20px no-repeat;
