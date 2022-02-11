@@ -734,3 +734,35 @@ $(function(){
 
 
 
+
+
+
+// 
+function gifQuestion(){
+    var $target = $('.gif_question_cont .swiper-container');
+    var slideOption = {
+        observer: true,
+        observeParents: true,
+        slidesPerView: 'auto',
+        centeredSlides: false,
+        loop: true,
+        loopsSlide: 1,
+        spaceBetween: 0,
+        /*autoplay: {
+            delay:5000,
+            disableOnInteraction: false,
+        },*/
+        speed: 700,
+		pagination: {
+
+		},
+    };
+    gifQuestionSwiper = new Swiper($target.get(), slideOption);
+}
+
+$(function(){
+    if(!$('.gif_question_cont').length) return;
+    gifQuestion();
+});
+
+

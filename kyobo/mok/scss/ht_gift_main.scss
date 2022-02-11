@@ -1,0 +1,104 @@
+.ht_ {
+
+
+    .gif_main {
+        background:#8965ff;
+        .btn_more_view span {
+            color:#fff;
+        }
+        .prod_list {
+            .txt {
+                .s0 {
+                    color:#fff;
+                }
+                .s1 {
+                    color:#fff;
+                }
+                .s2 {
+                    color:#fff;
+                    strong {
+                        color:#d4ff1a;
+                    }
+                    em {
+                        color:#d5d5d5;
+                    }
+                }
+            }
+
+            &.len4 {
+                padding:1px;background:#000;
+                .li {
+                    width:calc(25% - 2px);margin:1px;
+                }
+                .img {
+                    margin:0;border-radius:0;
+                }
+                .prod_like_count {
+                    display:none;
+                }
+                .txt {
+                    display:none;
+                }
+            }
+            &.len3 {
+                padding:1px;background:#000;
+                .li {
+                    width:calc(33.3% - 2px);margin:1px;
+                }
+                .img {
+                    margin:0;border-radius:0;
+                }
+                .prod_like_count {
+                    display:none;
+                }
+                .txt {
+                    display:none;
+                }
+            }
+            &.len1 {
+                .li {
+                    width:calc(100% - 20px);
+                    margin:20px 10px 0 10px
+                }
+            }
+        }
+
+    }
+
+
+
+    
+    .gif_question_cont {
+        position:relative;margin:0 -20px;overflow:hidden;
+        .swiper-container {
+            overflow:initial;
+        }
+        .swiper-slide {
+            width:90%;margin:0 0 35px 12px;padding-left:8px;box-sizing: border-box;
+           
+        }
+        .swiper-pagination.swiper-pagination-fraction {
+            left:auto;bottom:-5px;min-width:100%;background:none;color:rgba(0,0,0,0.6);text-align:center;transform:translate(0);
+            .swiper-pagination-current {
+                color:#fff;
+            }
+            .swiper-pagination-total {
+                color:rgba(255,255,255,0.6);
+                &:before {
+                    color:rgba(255,255,255,0.6);
+                }
+            }
+        }
+       
+    }
+
+
+
+
+
+}
+
+
+
+
+

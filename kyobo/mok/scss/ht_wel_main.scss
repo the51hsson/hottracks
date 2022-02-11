@@ -1679,7 +1679,7 @@ body {
         }
     }
     .btn_wel_category {
-        position:relative;margin:0 20px -2px 20px;border-top:1px dashed #d5d5d5;font-size:13px;line-height:19px;text-align:right;
+        position:relative;margin:0 20px -2px 20px;border-top:1px dashed #d5d5d5;font-size:13px;line-height:19px;text-align:right;z-index:2;
         .btn_category_more {
             display:inline-block;position:relative;margin-top:11px;color:#595959;padding-right:10px;
             &:after {

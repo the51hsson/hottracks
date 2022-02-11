@@ -3887,6 +3887,7 @@ body.ht_view {
   font-size: 13px;
   line-height: 19px;
   text-align: right;
+  z-index: 2;
 }
 
 .ht_ .btn_wel_category .btn_category_more {

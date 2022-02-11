@@ -1,0 +1,119 @@
+.ht_ .gif_main {
+  background: #8965ff;
+}
+
+.ht_ .gif_main .btn_more_view span {
+  color: #fff;
+}
+
+.ht_ .gif_main .prod_list .txt .s0 {
+  color: #fff;
+}
+
+.ht_ .gif_main .prod_list .txt .s1 {
+  color: #fff;
+}
+
+.ht_ .gif_main .prod_list .txt .s2 {
+  color: #fff;
+}
+
+.ht_ .gif_main .prod_list .txt .s2 strong {
+  color: #d4ff1a;
+}
+
+.ht_ .gif_main .prod_list .txt .s2 em {
+  color: #d5d5d5;
+}
+
+.ht_ .gif_main .prod_list.len4 {
+  padding: 1px;
+  background: #000;
+}
+
+.ht_ .gif_main .prod_list.len4 .li {
+  width: calc(25% - 2px);
+  margin: 1px;
+}
+
+.ht_ .gif_main .prod_list.len4 .img {
+  margin: 0;
+  border-radius: 0;
+}
+
+.ht_ .gif_main .prod_list.len4 .prod_like_count {
+  display: none;
+}
+
+.ht_ .gif_main .prod_list.len4 .txt {
+  display: none;
+}
+
+.ht_ .gif_main .prod_list.len3 {
+  padding: 1px;
+  background: #000;
+}
+
+.ht_ .gif_main .prod_list.len3 .li {
+  width: calc(33.3% - 2px);
+  margin: 1px;
+}
+
+.ht_ .gif_main .prod_list.len3 .img {
+  margin: 0;
+  border-radius: 0;
+}
+
+.ht_ .gif_main .prod_list.len3 .prod_like_count {
+  display: none;
+}
+
+.ht_ .gif_main .prod_list.len3 .txt {
+  display: none;
+}
+
+.ht_ .gif_main .prod_list.len1 .li {
+  width: calc(100% - 20px);
+  margin: 20px 10px 0 10px;
+}
+
+.ht_ .gif_question_cont {
+  position: relative;
+  margin: 0 -20px;
+  overflow: hidden;
+}
+
+.ht_ .gif_question_cont .swiper-container {
+  overflow: initial;
+}
+
+.ht_ .gif_question_cont .swiper-slide {
+  width: 90%;
+  margin: 0 0 35px 12px;
+  padding-left: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ht_ .gif_question_cont .swiper-pagination.swiper-pagination-fraction {
+  left: auto;
+  bottom: -5px;
+  min-width: 100%;
+  background: none;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.ht_ .gif_question_cont .swiper-pagination.swiper-pagination-fraction .swiper-pagination-current {
+  color: #fff;
+}
+
+.ht_ .gif_question_cont .swiper-pagination.swiper-pagination-fraction .swiper-pagination-total {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ht_ .gif_question_cont .swiper-pagination.swiper-pagination-fraction .swiper-pagination-total:before {
+  color: rgba(255, 255, 255, 0.6);
+}
