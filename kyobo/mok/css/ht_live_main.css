@@ -953,7 +953,7 @@
   text-align: center;
 }
 
-.ht_ .liv_btn a {
+.ht_ .liv_btn a, .ht_ .liv_btn button {
   display: inline-block;
   height: 37px;
   padding: 0 20px;
@@ -966,16 +966,16 @@
   line-height: 37px;
 }
 
-.ht_ .liv_btn a span {
+.ht_ .liv_btn a span, .ht_ .liv_btn button span {
   position: relative;
 }
 
-.ht_ .liv_btn a span.on {
+.ht_ .liv_btn a span.on, .ht_ .liv_btn button span.on {
   padding-left: 12px;
   font-weight: 700;
 }
 
-.ht_ .liv_btn a span.on:before {
+.ht_ .liv_btn a span.on:before, .ht_ .liv_btn button span.on:before {
   position: absolute;
   left: 0;
   top: 50%;
@@ -1035,48 +1035,30 @@
   line-height: 19px;
 }
 
-.ht_ .liv_detail .liv_btn {
+.ht_ .liv_detail .liv_btn_area {
   margin-top: 25px;
 }
 
-.ht_ .liv_detail .liv_btn button {
+.ht_ .liv_btn_area {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ht_ .liv_btn_area a, .ht_ .liv_btn_area button {
   display: block;
   width: 100%;
-  height: 50px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #000;
+}
+
+.ht_ .liv_btn_area .text {
   font-size: 14px;
   font-weight: 500;
 }
 
-.ht_ .liv_detail .liv_btn button img {
+.ht_ .liv_btn_area .ico {
   display: inline-block;
   height: 20px;
-  margin: -3px 5px 0 0;
+  margin: -10px 2px 0 0;
   vertical-align: middle;
-}
-
-.ht_ .liv_btn button {
-  display: block;
-  width: 100%;
-  height: 50px;
-  border: 1px solid #ccc !important;
-  border: 0;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #000;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.ht_ .liv_btn button.ty02 {
-  background-color: #292929;
-  border-color: #292929 !important;
-  color: #fff;
 }
 
 .ht_ .view_cont_area {
@@ -1144,7 +1126,7 @@
   color: #767676;
 }
 
-.ht_ .comment_area .liv_btn {
+.ht_ .comment_area .liv_btn_area {
   margin-top: 12px;
 }
 
