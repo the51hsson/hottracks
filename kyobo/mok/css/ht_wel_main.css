@@ -132,6 +132,23 @@ body.ht_view {
   text-align: center;
 }
 
+.ht_ .mc_tit04 {
+  margin-bottom: 6px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+}
+
+.ht_ .mc_tit04 img {
+  vertical-align: top;
+}
+
+.ht_ .mc_tit04.center {
+  text-align: center;
+}
+
 .ht_ .mc_txt {
   margin-top: 5px;
   color: #767676;

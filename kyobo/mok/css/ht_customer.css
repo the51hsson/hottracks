@@ -1,0 +1,627 @@
+.ht_ .form_search_box .btn_ip_search {
+  background-image: url("../images/guide/btn_ip_search_mok.png");
+}
+
+.ht_ .form_label .required:before {
+  display: inline-block;
+  position: relative;
+  width: 6px;
+  height: 6px;
+  background-image: url("../images/ico/ico_required.svg");
+  background-size: 6px 6px;
+  color: transparent;
+  content: "*";
+}
+
+.ht_ .form_search_box.mb {
+  margin-bottom: 33px;
+}
+
+.ht_ .form_search_box.mb + .tab_swiper {
+  margin-top: -20px;
+}
+
+.ht_ .btn_txt_more {
+  position: relative;
+  overflow: hidden;
+}
+
+.ht_ .btn_txt_more a, .ht_ .btn_txt_more button {
+  display: block;
+  float: right;
+  color: #595959;
+  font-size: 13px;
+}
+
+.ht_ .btn_txt_more a span, .ht_ .btn_txt_more button span {
+  display: inline-block;
+  position: relative;
+  padding-right: 10px;
+}
+
+.ht_ .btn_txt_more a span:after, .ht_ .btn_txt_more button span:after {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin-top: -4px;
+  border: solid #595959;
+  border-width: 1px 1px 0 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: "";
+  overflow: hidden;
+}
+
+.ht_ .mc_tit03 + .btn_txt_more {
+  margin: -30px 0 10px 0;
+}
+
+.ht_ .mc_tit04 + .btn_txt_more {
+  margin: -26px 0 10px 0;
+}
+
+.ht_ .btn_area {
+  margin-top: 25px;
+}
+
+.ht_ .btn_area button, .ht_ .btn_area a {
+  width: 100%;
+}
+
+.ht_ .info_box {
+  position: relative;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 4px;
+}
+
+.ht_ .info_box .tit {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.ht_ .info_box .tit + ul {
+  margin-top: 8px;
+}
+
+.ht_ .info_box li {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 8px;
+  color: #595959;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.ht_ .info_box li:before {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 3px;
+  height: 3px;
+  background: #999;
+  border-radius: 50%;
+  content: "";
+}
+
+.ht_ .info_box li:first-child {
+  margin-top: 0;
+}
+
+.ht_ .info_box li .point {
+  color: #000;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.ht_ .faq_search_tag {
+  position: relative;
+  text-align: center;
+}
+
+.ht_ .faq_search_tag .tit {
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.ht_ .faq_search_tag_li {
+  position: relative;
+  width: 90%;
+  margin: 10px auto 0 auto;
+  font-size: 0;
+}
+
+.ht_ .faq_search_tag_li li {
+  display: inline-block;
+  margin: 8px 4px 0 4px;
+  vertical-align: top;
+}
+
+.ht_ .faq_search_tag_li input[type="checkbox"] {
+  position: relative;
+  position: absolute;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+.ht_ .faq_search_tag_li input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  height: 36px;
+  padding: 0 14px;
+  background: #f7f7f7;
+  border: 1px solid #eaeaea;
+  border-radius: 18px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 36px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.ht_ .faq_search_tag_li input[type="checkbox"]:checked + label {
+  background-color: #fff;
+  border-color: #da2128;
+  color: #da2128;
+}
+
+.ht_ .fold_ty {
+  position: relative;
+  border-top: 1px solid #000;
+}
+
+.ht_ .fold_ty .li {
+  position: relative;
+  padding: 16px 5px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.ht_ .fold_ty .li.on .fold_btn span:after {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.ht_ .fold_ty .li.on .fold_view {
+  display: block;
+}
+
+.ht_ .fold_ty .fold_tit {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.ht_ .fold_ty .fold_tit .txt {
+  position: relative;
+  width: 100%;
+}
+
+.ht_ .fold_ty .fold_tit .ico_marker {
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 0;
+}
+
+.ht_ .fold_ty .fold_tit .ico_marker li {
+  display: inline-block;
+  height: 20px;
+  margin-left: 10px;
+  padding: 0 9px;
+  background: #ecedf5;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #474C98;
+  font-size: 10px;
+  line-height: 21px;
+}
+
+.ht_ .fold_ty .fold_tit .ico_marker li:first-child {
+  margin-left: 0;
+}
+
+.ht_ .fold_ty .fold_tit .tit {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.ht_ .fold_ty .fold_tit .tit_s {
+  color: #767676;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.ht_ .fold_ty .fold_tit .tit_s span {
+  display: inline-block;
+  padding-top: 2px;
+}
+
+.ht_ .fold_ty .fold_tit .fold_info {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.ht_ .fold_ty .fold_tit .fold_info > ul {
+  padding-top: 4px;
+  overflow: hidden;
+}
+
+.ht_ .fold_ty .fold_tit .fold_info > ul li {
+  position: relative;
+  float: left;
+  padding-left: 17px;
+  color: #767676;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.ht_ .fold_ty .fold_tit .fold_info > ul li:before {
+  position: absolute;
+  left: 8px;
+  top: 1px;
+  width: 1px;
+  height: 11px;
+  background-color: #dcdcdc;
+  content: "";
+}
+
+.ht_ .fold_ty .fold_tit .fold_info > ul li:first-child {
+  padding-left: 0px;
+}
+
+.ht_ .fold_ty .fold_tit .fold_info > ul li:first-child:before {
+  display: none;
+}
+
+.ht_ .fold_ty .fold_tit .fold_info > ul li strong {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ht_ .fold_ty .fold_tit .fold_info > ul li strong.c1 {
+  color: #474c98;
+}
+
+.ht_ .fold_ty .fold_tit .fold_info > ul li strong.c2 {
+  color: #da2128;
+}
+
+.ht_ .fold_ty .fold_tit .fold_info .info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 20px;
+  padding: 0 9px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #292929;
+  font-size: 10px;
+  line-height: 21px;
+}
+
+.ht_ .fold_ty .fold_tit .img {
+  position: relative;
+  width: 24%;
+  height: 0;
+  margin-right: 12px;
+  padding-top: 24%;
+  background: #f7f7f7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ht_ .fold_ty .fold_tit .img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.ht_ .fold_ty .fold_tit .img + .txt {
+  width: calc(76% - 12px);
+}
+
+.ht_ .fold_ty .fold_tit .img + .txt .fold_info {
+  display: table-footer-group;
+  width: 100%;
+}
+
+.ht_ .fold_ty .fold_tit .img + .txt .fold_info > ul {
+  padding-top: 8px;
+}
+
+.ht_ .fold_ty .fold_tit .img + .txt .tit {
+  display: table-header-group;
+  width: 100%;
+}
+
+.ht_ .fold_ty .fold_tit .img + .txt .tit_s {
+  display: table-header-group;
+  width: 100%;
+  margin: 0;
+}
+
+.ht_ .fold_ty .fold_btn {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.ht_ .fold_ty .fold_btn button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ht_ .fold_ty .fold_btn span {
+  display: inline-block;
+  position: relative;
+  padding-right: 24px;
+  color: #767676;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.ht_ .fold_ty .fold_btn span:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: url("../images/main/ico_more_view.svg") center/100% no-repeat;
+  content: "";
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.ht_ .fold_ty .fold_view {
+  display: none;
+  position: relative;
+  margin-top: 15px;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  -webkit-animation: fade both 0.5s;
+          animation: fade both 0.5s;
+}
+
+.ht_ .fold_ty .fold_question {
+  position: relative;
+  padding-top: 31px;
+}
+
+.ht_ .fold_ty .fold_question:before {
+  position: absolute;
+  left: 1px;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #000;
+  border-radius: 50%;
+  content: "Q";
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+}
+
+.ht_ .fold_ty .fold_question:after {
+  position: absolute;
+  left: 8px;
+  top: 21px;
+  border-top: 4px solid #000;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  content: "";
+  z-index: 2;
+}
+
+.ht_ .fold_ty .fold_a {
+  margin-top: 15px;
+}
+
+.ht_ .fold_ty .fold_a:before {
+  background-color: #da2128;
+  content: "A";
+}
+
+.ht_ .fold_ty .fold_a:after {
+  border-top-color: #da2128;
+}
+
+.ht_ .fold_ty .fold_question_btn {
+  position: relative;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+.ht_ .fold_ty .fold_question_btn li {
+  position: relative;
+  float: left;
+  padding-left: 17px;
+  color: #767676;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.ht_ .fold_ty .fold_question_btn li:before {
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  width: 1px;
+  height: 11px;
+  background-color: #dcdcdc;
+  content: "";
+}
+
+.ht_ .fold_ty .fold_question_btn li:first-child {
+  padding-left: 0px;
+}
+
+.ht_ .fold_ty .fold_question_btn li:first-child:before {
+  display: none;
+}
+
+.ht_ .fold_ty .emp {
+  position: relative;
+  padding: 40px 5px;
+  border-bottom: 1px solid #eaeaea;
+  color: #767676;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.ht_ .fold_ty .emp p {
+  position: relative;
+  padding-top: 73px;
+}
+
+.ht_ .fold_ty .emp p:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  background: url("../images/ico/ico_not_list.svg") center/100% no-repeat;
+  content: "";
+}
+
+.ht_ .notice_ty {
+  position: relative;
+  border-top: 1px solid #000;
+}
+
+.ht_ .notice_ty .li {
+  position: relative;
+  padding: 16px 5px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.ht_ .notice_ty .li a {
+  display: block;
+}
+
+.ht_ .notice_ty .li .tit {
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.ht_ .notice_ty .li .date {
+  display: block;
+  margin-top: 2px;
+  color: #767676;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.ht_ .notice_ty .emp {
+  position: relative;
+  padding: 40px 5px;
+  border-bottom: 1px solid #eaeaea;
+  color: #767676;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.ht_ .notice_ty .emp p {
+  position: relative;
+  padding-top: 73px;
+}
+
+.ht_ .notice_ty .emp p:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  background: url("../images/ico/ico_not_list.svg") center/100% no-repeat;
+  content: "";
+}
+
+.ht_ .notice_view_ty {
+  position: relative;
+}
+
+.ht_ .notice_view_tit {
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.ht_ .notice_view_tit .tit {
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.ht_ .notice_view_tit .date {
+  display: block;
+  margin-top: 2px;
+  color: #767676;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.ht_ .notice_view_cont {
+  position: relative;
+  padding: 30px 5px;
+  border-bottom: 1px solid #eaeaea;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.ht_ .notice_view_cont img {
+  max-width: 100%;
+}

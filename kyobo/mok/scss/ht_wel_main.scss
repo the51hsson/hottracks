@@ -93,6 +93,15 @@ body {
             text-align:center;
         }
     }
+    .mc_tit04 {
+        margin-bottom:6px;color:#000;font-size:14px;font-weight:700;line-height:22px;letter-spacing:-0.3px;
+        img {
+            vertical-align:top;
+        }
+        &.center {
+            text-align:center;
+        }
+    }
     .mc_txt {
         margin-top:5px;color:#767676;font-size:14px;line-height:22px;
         &.center {
@@ -2615,7 +2624,6 @@ body {
         margin-top:8px;
     }
 }
-
 .pop_phone_info_msg {
     margin-bottom:21px;;
     p {
@@ -2631,6 +2639,10 @@ body {
         margin-bottom:5px;color:#000;font-size:14px;font-weight:500;line-height:22px;
     }
 }
+
+
+
+// 공통
 .pop_info {
     margin-top:13px;letter-spacing:-0.4px;
     li {
