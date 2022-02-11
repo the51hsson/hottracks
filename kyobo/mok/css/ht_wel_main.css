@@ -5671,3 +5671,126 @@ body.ht_view {
             transform: scale(1) rotate(-20deg);
   }
 }
+
+.dialog_wrapper .ui-dialog .dialog_wrap {
+  border-radius: 4px;
+}
+
+.evt_pop_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 70px;
+  color: #595959;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+}
+
+.pop_info_msg {
+  padding: 0 10px;
+}
+
+.pop_info_msg p {
+  position: relative;
+  text-align: center;
+}
+
+.pop_info_msg p.s1 {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.pop_info_msg p.s2 {
+  color: #595959;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.pop_info_msg .ico {
+  height: 56px;
+  margin-bottom: 10px;
+}
+
+.pop_info_msg .s1 + .s2 {
+  margin-top: 8px;
+}
+
+.pop_phone_info_msg {
+  margin-bottom: 21px;
+}
+
+.pop_phone_info_msg p {
+  position: relative;
+  padding-top: 58px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+}
+
+.pop_phone_info_msg p:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 56px;
+  height: 48px;
+  margin-left: -28px;
+  background: url("../images/ico/ico_pop_phone_info_msg.svg") center/100% no-repeat;
+  content: "";
+}
+
+.pop_box_info {
+  position: relative;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pop_box_info .tit {
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.pop_info {
+  margin-top: 13px;
+  letter-spacing: -0.4px;
+}
+
+.pop_info li {
+  position: relative;
+  margin-top: 4px;
+  padding-left: 8px;
+  color: #767676;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.pop_info li:before {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  font-size: 11px;
+  content: "*";
+}
+
+.pop_info li:first-child {
+  margin-top: 0;
+}

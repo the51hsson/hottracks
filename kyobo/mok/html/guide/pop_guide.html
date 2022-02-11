@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+<meta name="Author" content="SEO 기획 정의 내용 반영" />
+<meta name="keywords" content="SEO 기획 정의 내용 반영" />
+<meta name="description" content="SEO 기획 정의 내용 반영" />
+<meta name="subject" content="SEO 기획 정의 내용 반영" />
+<!-- DESC : 성인컨텐츠인 경우 추가하는 meta tag -->
+<!--<meta name="rating" content="adult" />-->
+
+<meta name="Robots" content="noindex, nofollow" />
+<meta name="msapplication-TileColor" content="#000000">
+<meta property="og:title" content="핫트랙스">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../../images/guide/sns.jpg">
+<link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
+<title>팝업 공통</title>
+
+<!-- Plug-In css -->
+<link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+<link rel="stylesheet" href="../../vendors/lib/swiper-7.2.0/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../../vendors/lib/star-rating/css/star-rating.min.css" />
+<!-- // Plug-In css -->
+
+<!-- font css -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
+<!-- // font css -->
+
+<!-- Custom styles for this template -->
+<!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
+<!-- // Custom styles for this template -->
+
+<!-- ht_ Hottracks custom css -->
+<link rel="stylesheet" href="../../css/ht_style_mok.css" />
+<!--// ht_ Hottracks custom css -->
+
+
+<!-- Plug-In javascript -->
+<script src="../../vendors/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="../../vendors/lib/jquery-ui-1.12.1/jquery.ui.spinner.js"></script>
+<script src="../../vendors/lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+<script src="../../vendors/lib/swiper-7.2.0/js/swiper-bundle.min.js"></script>
+<script src="../../vendors/lib/star-rating/js/star-rating.min.js"></script>
+<script src="../../vendors/lib/star-rating/themes/krajee-gly/theme.min.js"></script>
+<script src="../../vendors/lib/star-rating/js/locales/ko.js"></script>
+<script src="../../vendors/lib/scrollpos-styler/scrollPosStyler.min.js"></script>
+<script src="../../vendors/lib/css-element-queries/ResizeSensor.js"></script>
+<script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
+<!-- // Plug-In javascript -->
+
+<!-- UI JavaScript -->
+<script src="../../js/front_bak.js"></script>
+<!-- // UI JavaScript -->
+</head>
+
+<body>
+<!-- SkipNav -->
+<div class="skip_nav_wrap">
+    <a href="#headerWrapper">메뉴 바로가기</a>
+    <a href="#containerWrapper">본문 바로가기</a>
+</div>
+<!-- //SkipNav -->
+
+<!-- wrapper -->
+<!-- ht_ Hottracks ht_ 클래스 추가 -->
+<!-- DESC : footer 없는 경우 [ no-footer ] 클래스 추가 -->
+<!-- DESC : 상품상세와 같이 하단 구매 영역 있는 경우 클래스 .contents_detail_view 추가 -->
+<div class="ht_ wrapper contents_detail_view">
+    <!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
+    <header id="headerWrapper" class="ht_ header_wrapper">
+        <div class="header_left">
+            <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
+        </div>
+        <div class="header_center">
+            <div class="page_title prod_detail"></div>
+        </div>
+        <div class="header_right">
+            <!-- DESC : 상품정보 부터 검색버튼 비활성화 -->
+            <a href="#" class="btn_header_search"><span class="hidden">검색</span></a>
+            <a href="#" class="btn_header_cart">
+                <span class="hidden">장바구니</span>
+                <!-- DESC :: 0개인경우 count 영역 미노출 / 최대 99 -->
+                <span class="count">99</span>
+            </a>
+        </div>
+    </header>
+    <!-- // 헤더 -->
+
+<link rel="stylesheet" href="../../css/ht_wel_main.css" />
+
+<style>
+.mc_tit02 {margin-bottom:15px;color:#000;font-size:20px;font-weight:700;line-height:32px;letter-spacing:-1px;}
+.mc_tit03 {margin-bottom:10px;color:#000;font-size:16px;font-weight:700;line-height:26px;letter-spacing:-0.5px;}
+.contents_wrap button {width:100%;margin-bottom:20px;}
+.contents_wrap button:last-child {margin-bottom:0;}
+</style>
+
+    <!-- 컨텐츠 -->
+    <main id="containerWrapper" class="container_wrapper">
+        <!-- contents_wrap -->
+        <section class="contents_wrap">
+            <!-- 팝업 -->
+            <div style="padding:40px 20px 50px 20px;">
+                <h2 class="mc_tit02">알림 팝업</h2>
+                <button type="button" class="btn_sm btn_light_gray" data-role="btn-dialog" data-target="#popAlert01"><span class="text">알림(확인) / #popAlert01</span></button>
+
+                <button type="button" class="btn_sm btn_light_gray" data-role="btn-dialog" data-target="#popAlert02"><span class="text">알림(취소/확인) / #popAlert02</span></button> 
+
+                <button type="button" class="btn_sm btn_light_gray" data-role="btn-dialog" data-target="#popAlert03"><span class="text">알림(타이틀 없는 경우) / #popAlert03</span></button> 
+            </div>
+            <!-- //팝업 -->
+
+
+            <!-- 텍스트 정보 팝업 -->
+            <div style="padding:40px 20px 50px 20px;">
+                <h2 class="mc_tit02">텍스트 정보 팝업</h2>
+                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt01"><span class="text">베스트 랭킹 순위 / #popTxt01</span></button>
+                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt02"><span class="text">통합 포인트 안내 / #popTxt02</span></button>
+                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt03"><span class="text">신용카드 할인 안내 / #popTxt03</span></button>
+                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt04"><span class="text">배송비 안내 / #popTxt04</span></button>
+                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt05"><span class="text">상품 후기 적립금 안내 / #popTxt05</span></button>
+                <button type="button" class="btn_sm btn_light_gray" data-role="btn-dialog" data-target="#popTxt06"><span class="text">해외 직구 / #popTxt06</span></button>
+                <br><br>
+
+                <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popHpPop01"><span class="text">오늘만 특가 신청 / #popHpPop01</span></button>
+
+                <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popHpPop02"><span class="text">라이브 알림 신청 / #popHpPop02</span></button>
+            </div>
+            <!-- //텍스트 정보 팝업 -->
+
+
+            <!-- 이미지 정보 팝업 -->
+            <div style="padding:40px 20px 50px 20px;">
+                <h2 class="mc_tit02">이미지 정보 팝업</h2>
+                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popImg01"><span class="text">당첨축하 / #popImg01</span></button>
+                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popImg02"><span class="text">당첨축하(축하) / #popImg02</span></button>
+                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popImg03"><span class="text">당첨실패 / #popImg03</span></button>
+                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popImg04"><span class="text">결과내용 / #popImg04</span></button>
+            </div>
+            <!-- //이미지 정보 팝업 -->
+        </section>
+        <!-- //contents_wrap -->
+    </main>
+    <!-- // 컨텐츠 -->
+</div>
+<!-- //pop wrapper -->
+
+
+
+
+<!-- 팝업 : 알림(확인) : popAlert01 -->
+<div id="popAlert01" class="dialog_wrap has_btn">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+    <!-- dialog_header -->
+    <div class="dialog_header">
+        <div class="dialog_title">알림</div>
+    </div>
+    <!-- //dialog_header -->
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <div class="evt_pop_content">
+            !- 노출 메시지-!
+        </div>
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer">
+        <button type="button" class="btn_md btn_primary" data-dialog-close><span class="text">확인</span></button>
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //팝업 : 알림(확인) : popHpPop01 -->
+
+
+<!-- 팝업 : 알림(취소/확인) : popAlert02 -->
+<div id="popAlert02" class="dialog_wrap has_btn">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+    <!-- dialog_header -->
+    <div class="dialog_header">
+        <div class="dialog_title">알림</div>
+    </div>
+    <!-- //dialog_header -->
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <div class="evt_pop_content">
+            !- 노출 메시지-!
+        </div>
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer">
+        <button type="button" class="btn_md btn_black" data-dialog-close><span class="text">취소</span></button>
+        <button type="button" class="btn_md btn_primary" data-dialog-close><span class="text">확인</span></button>
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //팝업 : 알림(취소/확인) : popHpPop02 -->
+
+
+<!-- 팝업 : 알림(타이틀 없는 경우) : popAlert03 -->
+<div id="popAlert03" class="dialog_wrap no_title has_btn">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents evt_pop_cotent">
+        <div class="evt_pop_content">
+            !- 노출 메시지-!
+        </div>
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer">
+        <button type="button" class="btn_md btn_black" data-dialog-close><span class="text">취소</span></button>
+        <button type="button" class="btn_md btn_primary" data-dialog-close><span class="text">확인</span></button>
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //팝업 : 알림(취소/확인) : popHpPop02 -->
+
+
+
+
+
+<!-- 팝업 : 텍스트 정보 : 베스트 랭킹 순위 / #popTxt01 -->
+<div id="popTxt01" class="dialog_wrap">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+    <!-- dialog_header -->
+    <div class="dialog_header">
+        <div class="dialog_title">베스트 랭킹 순위</div>
+    </div>
+    <!-- //dialog_header -->
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <ul class="bul_list">
+            <li class="bul_item_dot">핫트랙스 베스트 상품은 최근 24시간 동안의 판매량, 누적 리뷰 수, 찜 수를 반영하여 
+                3시간 기준으로 업데이트하고 있습니다.
+            </li>
+        </ul>
+    </div>
+    <!-- //dialog_contents -->
+</div>
+<!-- //팝업 : 텍스트 정보 : 베스트 랭킹 순위 / #popTxt01 -->
+
+
+<!-- 팝업 : 텍스트 정보 : 통합 포인트 안내 / #popTxt02 -->
+<div id="popTxt02" class="dialog_wrap">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+    <!-- dialog_header -->
+    <div class="dialog_header">
+        <div class="dialog_title">통합 포인트 안내</div>
+    </div>
+    <!-- //dialog_header -->
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <ul class="bul_list">
+            <li class="bul_item_dot">핫트랙스 온라인/오프라인, 교보문고 온라인/오프라인, 모바일 교보문고에서 모두 적립·사용 가능!</li>
+            <li class="bul_item_dot">10원 이상의 포인트도 바로바로 사용! (영업점은 1,000원 단위 사용) 주문 시, 10원 단위부터 사용하실 수 있습니다.</li>
+            <li class="bul_item_dot">자동적립되는 편리한 포인트! <br>구매 후 어떤 절차나 과정없이 바로 자동으로 적립됩니다.</li>
+            <li class="bul_item_dot">
+                포인트 확인도 폭 넓~게! <br>
+                온라인 마이룸, 모바일, 무인가입기, 영업점 영수증 등에서 적립하거나 사용하신 포인트 내역을 확인하실 수 있습니다. <br>
+                상품 구매 시 해당 상품의 적립률에 따라 지급되며 고객님께서 주문하신 상품이 발송완료 된 후 자동 지급됩니다.<br>
+                단, 쿠폰 또는 마일리지, 통합포인트 사용 시 예상적립금이 변동될 수 있습니다.<br>
+                (주문취소나 반품시에는 적립된 통합포인트가 다시 차감됩니다.)
+            </li>
+        </ul>
+    </div>
+    <!-- //dialog_contents -->
+</div>
+<!-- //팝업 : 텍스트 정보 : 통합 포인트 안내 / #popTxt02 -->
+
+
+<!-- 팝업 : 텍스트 정보 : 신용카드 할인 안내 / #popTxt03 -->
+<div id="popTxt03" class="dialog_wrap">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+    <!-- dialog_header -->
+    <div class="dialog_header">
+        <div class="dialog_title">신용카드 할인 안내</div>
+    </div>
+    <!-- //dialog_header -->
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <ul class="bul_list">
+            <li class="bul_item_dot">
+                <strong>신한카드</strong><br>
+                2~6개월, 12개월(부분) 무이자
+            </li>
+            <li class="bul_item_dot">
+                <strong>하나카드</strong><br>
+                2~3개월 무이자
+            </li>
+            <li class="bul_item_dot">
+                <strong>국민카드</strong><br>
+                2~5개월 무이자
+            </li>
+            <li class="bul_item_dot">
+                <strong>비씨, NH농협, 현대, 삼성카드</strong><br>
+                2~6개월 무이자
+            </li>
+            <li class="bul_item_dot">
+                <b>유의사항</b><br>
+                -법인,체크,선불,기프트,하이브리드 제외<br>
+                -무이자 적용 최소결제 금액 등 상세 내용은 결제 팝업창에서 확인 요망
+            </li>
+        </ul>
+    </div>
+    <!-- //dialog_contents -->
+</div>
+<!-- //팝업 : 텍스트 정보 : 신용카드 할인 안내 / #popTxt03 -->
+
+
+<!-- 팝업 : 텍스트 정보 : 배송비 안내 / #popTxt04 -->
+<div id="popTxt04" class="dialog_wrap">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+    <!-- dialog_header -->
+    <div class="dialog_header">
+        <div class="dialog_title">배송비 안내</div>
+    </div>
+    <!-- //dialog_header -->
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <div class="title_wrap title_size_def">
+            <p class="title_heading">2,000원</p>
+        </div>
+        <ul class="bul_list">
+            <li class="bul_item_dot">20,000원 이상 구매 시 무료배송</li>
+        </ul>
+    </div>
+    <!-- //dialog_contents -->
+</div>
+<!-- //팝업 : 팝업 : 텍스트 정보 : 배송비 안내 / #popTxt04 -->
+
+
+<!-- 팝업 : 텍스트 정보 : 상품 후기 적립금 안내 / #popTxt05 -->
+<div id="popTxt05" class="dialog_wrap">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+    <!-- dialog_header -->
+    <div class="dialog_header">
+        <div class="dialog_title">상품 후기 적립금 안내</div>
+    </div>
+    <!-- //dialog_header -->
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <!-- bl_row_wrap -->
+        <div class="tbl_row_wrap type_th_gray">
+            <table class="tbl_row md">
+                <caption>상품 후기 적립금 안내 표입니다.</caption>
+                <colgroup>
+                    <col style="width: 75%;">
+                    <col style="width: 25%;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="txt_left">일반 후기</th>
+                        <td class="txt_center">+100P</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="txt_left">포토 후기</th>
+                        <td class="txt_center">+200P</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="txt_left">
+                            핫트랙스 첫 구매후기 작성 시
+                            <ul class="bul_list">
+                                <li class="bul_item_dot font_size_xs">한 ID당 한 번만 지급</li>
+                                <li class="bul_item_dot font_size_xs">일반 / 포토 후기와 중복 지급</li>
+                            </ul>
+                        </th>
+                        <td class="txt_center">+500P</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="txt_left">
+                            핫트랙스 첫 구매후기 작성 시
+                            <ul class="bul_list">
+                                <li class="bul_item_dot font_size_xs">매일 100명 추첨</li>
+                            </ul>
+                        </th>
+                        <td class="txt_center">25%쿠폰</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- //bl_row_wrap -->
+        <!-- bul_list -->
+        <ul class="bul_list" style="margin-top:12px;">
+            <li class="bul_item_asterisk font_size_xs">1,000원 미만 상품, CD/DVD 상품 적립금 지급 제외</li>
+        </ul>
+        <!-- //bul_list -->
+    </div>
+    <!-- //dialog_contents -->
+</div>
+<!-- //팝업 : 텍스트 정보 : 상품 후기 적립금 안내 / #popTxt05 -->
+
+<!-- 팝업 : 텍스트 정보 : 해외 직구 상품 / #popTxt06 -->
+<div id="popTxt06" class="dialog_wrap no_title has_btn">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <!-- pop_info_msg -->
+        <div class="pop_info_msg">
+            <p class="ico"><img src="../../images/ico/ico_cross border.svg" alt=""></p>
+            <p class="s1">해외 직구 상품 구매 전 꼭 확인해주세요</p>
+            <p class="s2">해당 상품은 해외 직구 상품으로 개인통관고유부호 입력이 필요합니다. 배송 기간은 주말, 공휴일 제외 약 7일~15일 정도 소요됩니다. 자세한 내용은유의사항을 꼭 확인해주세요.</p>
+        </div>
+        <!-- //pop_info_msg -->
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer">
+        <button type="button" class="btn_md btn_primary" data-dialog-close><span class="text">확인</span></button>
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //팝업 : 텍스트 정보 : 해외 직구 상품 / #popTxt06 -->
+
+
+
+
+
+<!-- 이미지 : 당첨축하 / #popTxt01 -->
+<div id="popImg01" class="dialog_wrap">
+    <!-- dialog_contents -->
+    <div class="dialog_contents evt_cotent">
+        <div class="evt_pop_img">
+            <img src="../../images/guide/evt_flower.svg" alt="">
+        </div>
+        <div class="sub_txt">당첨 되셨습니다.</div>
+        <div class="main_msg">김미미님, 축하드립니다.</div> 
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer evt_pop_footer">
+        <button type="button" class="btn_ip btn_primary" data-dialog-close><span class="text">확인</span></button>
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //이미지 정보 : 당첨축하 / #popTxt01 -->
+
+
+<!-- 이미지 정보 : 당첨축하(축하) / #popTxt02 -->
+<div id="popImg02" class="dialog_wrap">
+    <!-- dialog_contents -->
+    <div class="dialog_contents evt_cotent">
+        <div class="evt_pop_img">
+            <img src="../../images/guide/evt_gifticon.png" alt="">
+        </div>
+        <div class="sub_txt">스타벅스 아메리카노 기프티콘</div>
+        <div class="main_msg">김미미님, 축하드립니다.</div> 
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer evt_pop_footer">
+        <button type="button" class="btn_ip btn_primary" data-dialog-close><span class="text">확인</span></button>
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //이미지 정보 : 당첨축하(축하) / #popTxt02 -->
+
+
+<!-- 이미지 정보 : 당첨실패 / #popTxt03 -->
+<div id="popImg03" class="dialog_wrap">
+    <!-- dialog_contents -->
+    <div class="dialog_contents evt_cotent">
+        <div class="evt_pop_img">
+            <img src="../../images/guide/evt_drop.svg" alt="">
+        </div>
+        <div class="sub_txt">꽝 다음기회에</div>
+        <div class="main_msg">참여해 주셔서 감사합니다.</div> 
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer evt_pop_footer">
+        <button type="button" class="btn_ip btn_primary" data-dialog-close><span class="text">확인</span></button>
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //이미지 정보 : 당첨실패 / #popTxt03 -->
+
+
+<!-- 이미지 정보 : 결과내용 / #popTxt04 -->
+<div id="popImg04" class="dialog_wrap">
+    <!-- dialog_contents -->
+    <div class="dialog_contents evt_cotent">
+        <div class="evt_pop_img">
+            <img src="../../images/guide/evt_fortune.svg" alt="">
+        </div>
+        <div class="sub_txt">축하해요</div>
+        <div class="main_msg">통합포인트 <em>1,000</em>원</div> 
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer evt_pop_footer">
+        <button type="button" class="btn_ip btn_primary" data-dialog-close><span class="text">확인</span></button>
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //이미지 정보 : 결과내용 / #popTxt04 -->
+
+
+
+
+
+<!-- 팝업 : 오늘만 특가 신청 / popHpPop01 -->
+<div id="popHpPop01" class="dialog_wrap no_title has_btn">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <!-- pop_phone_info_msg -->
+        <div class="pop_phone_info_msg">
+            <p>매일 아침 9시 알림톡으로 알려드려요</p>
+        </div>
+        <!-- //pop_phone_info_msg -->
+
+        <!-- pop_box_info -->
+        <div class="pop_box_info">
+            <dl>
+                <dt class="tit">휴대전화번호</dt>
+                <dd>
+                    <input type="tel" class="form_ip" placeholder="-없이 숫자만 입력" title="휴대전화번호">
+                </dd>
+            </dl>
+        </div>
+        <!-- //pop_box_info -->
+        <!-- pop_info -->
+        <ul class="pop_info">
+            <li>신청 상품의 옵션 및 가격 등의 상품 정보가 변동될 수 있으니 재입고 시 상품 정보 확인 후 구매하시기 바랍니다.</li>
+            <li>카카오 알림톡으로 전송하지 못하는 경우 문자(SMS) 로 입고 알림 메시지가 발송됩니다. 
+            <li>신청 내역은 [마이룸 > 입고 알림] 에서 확인 가능합니다.</li>
+        </ul>
+        <!-- //pop_info -->
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer">
+        <button type="button" class="btn_md btn_black" data-dialog-close><span class="text">취소</span></button>
+        <button type="button" class="btn_md btn_primary" data-role="btn-dialog" data-target="#popAlertHp01" data-dialog-close><span class="text">신청</span></button><!-- data-dialog-close : 없을 시 : 레이어 위에 팝업 -->
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //팝업 : 오늘만 특가 신청팝업 / popHpPop01 -->
+<!-- 팝업 : 알림(확인) / popAlertHp01 -->
+<div id="popAlertHp01" class="dialog_wrap has_btn">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+    <!-- dialog_header -->
+    <div class="dialog_header">
+        <div class="dialog_title">오늘만 특가 알림 신청</div>
+    </div>
+    <!-- //dialog_header -->
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <div class="evt_pop_content">
+            !- 노출 메시지-!
+        </div>
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer">
+        <button type="button" class="btn_md btn_primary" data-dialog-close><span class="text">확인</span></button>
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //팝업 : 알림(확인) / popAlertHp01 -->
+
+
+<!-- 팝업 : 라이브 알림 신청 / popHpPop02 -->
+<div id="popHpPop02" class="dialog_wrap no_title has_btn">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <!-- pop_phone_info_msg -->
+        <div class="pop_phone_info_msg">
+            <p>라이브 알림을 신청하시면<br>라이브 방송 시작 전 알림톡으로 알려드려요</p>
+        </div>
+        <!-- //pop_phone_info_msg -->
+
+        <!-- pop_box_info -->
+        <div class="pop_box_info">
+            <dl>
+                <dt class="tit">휴대전화번호</dt>
+                <dd>
+                    <input type="tel" class="form_ip" placeholder="-없이 숫자만 입력" title="휴대전화번호">
+                </dd>
+            </dl>
+        </div>
+        <!-- //pop_box_info -->
+        <!-- pop_info -->
+        <ul class="pop_info">
+            <li>카카오 알림톡으로 전송하지 못하는 경우 문자(SMS)로 라이브 방송 알림 메시지가 발송됩니다.</li>
+        </ul>
+        <!-- //pop_info -->
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer">
+        <button type="button" class="btn_md btn_black" data-dialog-close><span class="text">취소</span></button>
+        <button type="button" class="btn_md btn_primary" data-role="btn-dialog" data-target="#popAlertHp02" data-dialog-close><span class="text">신청</span></button><!-- data-dialog-close : 없을 시 : 레이어 위에 팝업 -->
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //팝업 : 라이브 알림 신청 / popHpPop02 -->
+
+<!-- 팝업 : 알림(확인) / popAlertHp02 -->
+<div id="popAlertHp02" class="dialog_wrap has_btn">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+    <!-- dialog_header -->
+    <div class="dialog_header">
+        <div class="dialog_title">라이브 알림 신청</div>
+    </div>
+    <!-- //dialog_header -->
+
+    <!-- dialog_contents -->
+    <div class="dialog_contentst">
+        <div class="evt_pop_content">
+            !- 노출 메시지-!
+        </div>
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer">
+        <button type="button" class="btn_md btn_primary" data-dialog-close><span class="text">확인</span></button>
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //팝업 : 알림(확인) / popAlertHp02 -->
+</body>
+</html>
