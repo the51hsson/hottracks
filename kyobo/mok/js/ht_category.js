@@ -1,5 +1,6 @@
 $(function(){
   /*=================================== HTR-M-CTG-LIST-001.html ==============================*/
+  /* callback 대체로 삭제
   //카테고리 리스트 스왑배너
   $('.swiper-container.ctg_top_swiper').each(function(i, ele){
       var ctgSwiper = new Swiper(this,  {
@@ -27,7 +28,7 @@ $(function(){
         }
     });
   })
-
+  */
 
     //카테고리 리스트 하단 스왑배너
   var mdProductSwiper = new CustomSwiper('#mdProductSwiper', {
@@ -134,11 +135,14 @@ $(function(){
    });
    	//카테고리 상품 리스트 찜하기 토글
 	$(document).on('click', '.evt_good_count', function(){
-		if ($(this).hasClass('active')) {
+    /* 20220207(bdhan) : 개발에서 처리
+		
+    if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
 		} else {
 			$(this).addClass('active');
 		}
+    */
 	});
 });
 //광고 배너
