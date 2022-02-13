@@ -716,8 +716,8 @@
 
 .adult_prod .adult_block {
   position: absolute;
-  width: calc( 100% - 4px);
-  height: calc( 100% - 4px);
+  width: 100%;
+  height: calc( 100% - 1px);
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);

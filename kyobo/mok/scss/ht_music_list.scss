@@ -387,6 +387,7 @@
 	.prod_item:nth-of-type(2n+1) .replace_prod_swap{
 		margin-right:0;
 	}
+
 }
 .evt_products.row_dir{
 	display:block;
@@ -602,7 +603,7 @@
     }
 }
 //상품 리스트 영역
-ul.prod-wrapper.column_dir {
+.list_block .prod-wrapper.column_dir {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content:space-between;
@@ -628,9 +629,8 @@ ul.prod-wrapper.column_dir {
 	 width:100%;
 	 padding-top: 100%;
  }
-
 }
-ul.prod-wrapper.row_dir {
+.list_block .prod-wrapper.row_dir {
     margin-top:20px;
     padding:20px 20px 0 20px;
 	.prod_item{ 
@@ -801,8 +801,8 @@ ul.prod-wrapper.row_dir {
 			&:before {
 				content:",";
 				position:absolute;
-				left:-3px;
-				bottom:-3px;
+				left:-7px;
+				bottom:-1px;
 				z-index: 3;
 			}
 		}
@@ -871,7 +871,7 @@ ul.prod-wrapper.row_dir {
 		flex-flow: row nowrap;
 		.chart_date_swap {
 		   &:first-of-type {
-			   flex:4 1 auto;
+			   flex:3 1 auto;
 			   padding-right:10px;
 			   .swiper-slide {
 				text-align: right;
@@ -885,7 +885,7 @@ ul.prod-wrapper.row_dir {
 			   }
 		   }
 		   &:nth-of-type(2) {
-			flex:2 1 auto;
+			flex:3 1 auto;
 		}
 		   &:last-of-type {
 			   flex:4 1 auto;
