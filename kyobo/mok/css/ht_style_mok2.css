@@ -924,6 +924,12 @@ body.ht_view {
 }
 
 /* 이사 예정 임시 */
+.dialog_wrapper .ui-dialog.dialog_full {
+  width: 100% !important;
+  max-width: 750px;
+  min-width: inherit;
+}
+
 .dialog_wrapper .ui-dialog .dialog_wrap {
   border-radius: 4px;
 }
