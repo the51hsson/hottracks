@@ -8,111 +8,96 @@
 
 //상단 메뉴 1depth 
 .ctg_topMenu {
-  width:100%;
-  overflow: hidden;
-  position:relative;
-  padding-bottom:-2px;
-  .inner_wrap{
-    width:100%;
-    overflow-x: auto;
-    display:flex;
-    flex-flow:row nowrap;
-	border-bottom:1px solid #d5d5d5;
-  }
-  a{
-    flex-shrink: 0;
-    display: block;
-    position:relative;
-	padding:0 13px 16px 13px;
-    letter-spacing: -0.15px;
-    font-weight:500;
-    color:rgba(0,0,0,0.2);
-    white-space: nowrap;
+	width:100%;
+	overflow: hidden;
+	position:relative;
+	padding-bottom:-2px;
+	.inner_wrap {
+		width:100%;
+		overflow-x: auto;
+		display:flex;
+		flex-flow:row nowrap;
+		border-bottom:1px solid #d5d5d5;
+	}
+    a {
+		flex-shrink: 0;
+		display: block;
+		position:relative;
+		padding:0 13px 16px 13px;
+		letter-spacing: -0.15px;
+		font-weight:500;
+		color:rgba(0,0,0,0.2);
+		white-space: nowrap;
 
-    &:first-of-type{
-      margin-left:7px;
-    }
-    &:last-of-type{
-      padding-right:20px;
-    }
-    &.active{
-      color:#000;
-    }
-    // &:after{
-    //   content:"";
-    //   position:absolute;
-    //   width:3px;
-    //   height:3px;
-    //   border-radius: 50%;
-    //   background-color: #d5d5d5;
-	//   left:0;
-    //   top:10px;
-    //   z-index:1;
-    // }
-//     &:first-of-type:after{
-//       display: none;
-//     }
+		&:first-of-type {
+			margin-left:7px;
+		}
+		&:last-of-type {
+			padding-right:20px;
+		}
+		&.active {
+		color:#000;
+		}
    }
-  &.depth2{
-   a{
-	 line-height: 22px;
-	 letter-spacing: -0.13px;
-	 //padding-left:16px;
-	 padding: 12px 8px 13px 8px;
-	 &:first-of-type{
-       margin-left:12px;
-	 }
-	 &.active:before{
-		 width:calc(100% - 16px);
-		 left:8px;
-	 }
-	 &:after{
-		display:none;
-	  }
+  &.depth2 {
+   a {
+		line-height: 22px;
+		letter-spacing: -0.13px;
+	    padding: 12px 8px 13px 8px;
+		&:first-of-type{
+			margin-left:12px;
+		}
+		&.active:before{
+			width:calc(100% - 16px);
+			left:8px;
+		}
+		&:after{
+			display:none;
+		}
 	}
  }
 }
 
-.sub_menu_wrap{
-  padding:20px;
-  background-color: #f7f7f7;
-  display: none;
+.sub_menu_wrap {
+	padding:20px;
+	background-color: #f7f7f7;
+	display: none;
 }
-.ctg_subMenu{
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  height:91px;
-  overflow:hidden;
-  a{
-    display:block;
-    width:30%;
-    flex-shrink: 0;
-    overflow:hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    margin-top:16px;
-	font-size:12px;
-	font-weight: 900;;
-    line-height: 19px;
-    letter-spacing: -0.13px;
-	color:#595959;
-    cursor:pointer;
-    @for $mn from 1 through 3{
-      &:nth-of-type(#{$mn}){
-        margin-top:0;
-      }
-	  &.active{
-		font-weight: 700;
-	  }
-    }
+.ctg_subMenu {
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	height:91px;
+	overflow:hidden;
+	a {
+		display:block;
+		width:30%;
+		flex-shrink: 0;
+		overflow:hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		margin-top:16px;
+		font-size:12px;
+		font-weight: 900;;
+		line-height: 19px;
+		letter-spacing: -0.13px;
+		color:#595959;
+		cursor:pointer;
+		@for $mn from 1 through 3{
+			&:nth-of-type(#{$mn}){
+			margin-top:0;
+			}
+		&.active{
+			font-weight: 700;
+		}
+		}
   }
   &.menuDown{
 	height:auto;
   }
 
 }
-.subMenu_btn_area{
+.subMenu_btn_area {
   display:block;
   margin-top:16px;
   height:20px;
@@ -373,225 +358,6 @@
 		background: url(../images/guide/ico_ctg_list_type2.svg) no-repeat center center / 14px;
 	}
 }
-//품절 대체 슬라이더
-.replace_prod_swap{
-	position:relative;
-	display:none;
-	background-color: #F2E3CB;
-	width: 100vw;
-	padding:32px 0 32px 20px;
-	margin:36px -20px 0 -20px;
-	&:before{
-		content:"";
-		position:absolute;
-		border-top:12px solid #F2E3CB;
-		border-left:12px solid transparent;
-		border-right: 12px solid transparent;
-		border-bottom: 12px solid transparent;
-		transform: rotate(-180deg);
-		z-index: -1;
-		left:20px;
-		top:-23px;
-	}
-	.swiper {
-		padding-right: 20px;
-	}
-	.close_swap{
-		position: absolute;
-		display: block;
-		width: 24px;
-		height: 24px;
-		background-image: url(../images/guide/btn_dialog_close.svg);
-		background-size: 24px 24px;
-		top:35px;
-		right:20px;
-		}
-	.tit{
-		position:relative;
-		width:calc(100% - 45px);
-		color:#000;
-		.txt{
-			float:left;
-			font-size:20px;
-			line-height: 29px;
-			font-weight: 700;
-			letter-spacing: -0.02em;
-		}
-		.replace_icon{
-			float:left;
-			width:32px;
-			height:32px;
-			margin-left:5px;
-			background:url(../images/guide/replace_swipe_icon.svg) no-repeat center center/29px;
-		}
-	}
-	.sub_title{
-		line-height: 20px;
-		letter-spacing: -0.014em;
-		color:#767676;
-		clear:both;
-	}
-	.prod-wrapper .prod_item{
-		width:140px;
-		height: unset;
-		margin-top:0;
-	}
-	.product_pic:before{
-		display: none;
-	}
-}
-.show_bubble{
-	display: block;
-}
-
-.evt_products{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content:space-between;
-	align-items: flex-start;
-	align-content: flex-start;
-	.prod_item{
-		width: calc((100% - 20px)/2);
-		cursor:pointer;
-		margin-top:24px;
-		&:nth-of-type(2){
-			margin-top:0;
-		}
-	}
-	.product_pic{
-		width:100%;
-		padding-top: 100%;
-		position: relative;
-	}
-	.product_info{
-		width:100%;
-	}
-	.sold_out .product_pic:before{
-		content:"";
-		position:absolute;
-		width:100%;
-		height:100%;
-		background-color: rgba(0,0,0,0.6);
-		border-radius: 5%;
-		top:0;
-		left:0;
-		z-index: 1;
-		overflow: hidden;
-	}
-	.show_replace{
-		display: none;
-		width:100%;
-		position:absolute;
-	    text-align: center;
-		color:#fff;
-		font-size: 13px;
-		font-weight: 700;
-		z-index: 2;
-		top:50%;
-		left:0;
-		transform: translateY(-50%);
-		div{
-			line-height:19px;
-			letter-spacing: -0.013em;
-		}
-	}
-	.replace_prod_btn{
-		margin:0 auto;
-		margin-top: 11px;
-		height:24px;
-		padding:0 6px;
-		background-color: #fff;
-		border-radius: 4px;
-		line-height:24px;
-		color:#000;
-		font-size: 12px;
-		display:none;
-	}
-	.sold_out .show_replace{
-		display: block;
-	}
-	//두줄 정렬일때 품절 대체 상품 슬라이더
-	.prod_item:nth-of-type(2n) .replace_prod_swap{
-		margin-right:0;
-		margin-left: calc(-100vw + 100% + 20px);
-		&:before{
-			content:"";
-			position:absolute;
-			left:calc(100% - 40px);
-		}
-	}
-	.prod_item:nth-of-type(2n+1) .replace_prod_swap{
-		margin-right:0;
-	}
-}
-.evt_products.row_dir{
-	display:block;
-	padding-top:20px;
-	.prod_item{
-		width:100%;
-		margin-top:25px;
-        display: flex;
-		flex-flow: row wrap;
-		justify-content: flex-start;
-	    align-content: center;
-	    align-items:center;
-		cursor:pointer;
-		span{
-			display: block;
-		}
-		&:first-of-type{
-			margin-top:0;
-		}
-		.company{
-			display: block;
-		}
-	}
-	.product_pic{
-		position:relative;
-		width: calc((100% - 20px )/2);
-		height:0;
-		padding-top:calc((100% - 20px )/2);
-		overflow: hidden;
-		flex-shrink: 0;
-		img{
-			width:100%;
-			position:absolute;
-			top:0;
-			left:0;
-		}
-	} 			
-	.product_info{
-		width: calc((100% - 20px )/2);
-		padding-left:20px;
-		flex-shrink: 0;
-	}
-	.replace_prod_swap{
-		&:before{
-			content:"";
-			position:absolute;
-			left:40px !important;
-		}
-		.mySwiper .swiper-wrapper{
-			align-items: flex-start;
-		}
-		.prod_item{
-			width:140px;
-			margin-top:0;
-		}
-		.product_pic{
-			width:100%;
-			height:0;
-			padding-top:140px;
-		}
-		
-	}
-}
-//품절 대체 상품 스왑이 있는 항목
-.replace_prod{
-	.replace_prod_btn{
-		display:block;
-	}
-}
 //솔로 배너
 .solo_banner{
 	margin:30px 0;
@@ -646,16 +412,17 @@
 .evt_slider{
 	padding-top: 20px;
 	padding-right: 20px;
-	li{
-		width:244px;
+	.evt_item{
+		width:320px;
         cursor: pointer;
 		span{
 			display: block;
 		}
-		div.img{
+		.img_wrap{
 			position:relative;
 			height:0;
-			padding-top:56.96%;
+			padding-top:60%;
+			border-radius: 15px;
 		}
 		img{
 			position:absolute;

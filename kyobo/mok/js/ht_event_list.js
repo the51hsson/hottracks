@@ -3,7 +3,7 @@ $(function(){
   //퀵메뉴 스와이프
   var eventQuickSwiper = new CustomSwiper('.evt_quick_menu_slide .swiper-container', {
     slidesPerView: 'auto',
-    spaceBetween: 24,
+    spaceBetween: 0,
     freeMode: true,
     observer: true,
     observeParents: true,
@@ -22,7 +22,6 @@ $(function(){
     });
     }else{
       $(ele).find('.swiper-wrapper').removeClass('swiper-wrapper').addClass('nonswipe');
-  
     }
  });
 
