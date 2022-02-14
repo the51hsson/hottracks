@@ -9627,7 +9627,136 @@ input[type=number] {
   bottom: 7%;
 }
 
-/*======================     모듈 13 영역   =======================*/
+/*=====================  모듈 012 영역 (calender) ================*/
+.calender_wrap {
+  position: relative;
+  padding: 60px 20px 40px 20px;
+  text-align: center;
+}
+
+.calender_wrap > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.calender_wrap .table_wrap {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 0 10px 20px 10px;
+}
+
+.calender_wrap .table_wrap .handle {
+  position: absolute;
+  width: 18px;
+  z-index: 1;
+  top: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-left: -20%;
+}
+
+.calender_wrap .table_wrap .handle.right {
+  margin-left: 20%;
+}
+
+.calender_wrap .table_wrap .tb_month {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.calender_wrap .table_wrap .calender_tb {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.calender_wrap .table_wrap .calender_tb tr {
+  width: 100%;
+}
+
+.calender_wrap .table_wrap .calender_tb tr:first-of-type {
+  height: 80px;
+}
+
+.calender_wrap .table_wrap .calender_tb th {
+  font-weight: 700;
+  font-size: 11px;
+  vertical-align: bottom;
+  padding-bottom: 4px;
+}
+
+.calender_wrap .table_wrap .calender_tb td {
+  width: calc( 100% / 7);
+  height: 50px;
+  padding: 8px 3px 0 3px;
+  color: #767676;
+}
+
+.calender_wrap .table_wrap .calender_tb td .date {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  text-align: center;
+  line-height: 40px;
+  background: url(../images/guide/calender_day_bg.svg) no-repeat center center/contain;
+}
+
+.calender_wrap .table_wrap .calender_tb td .on {
+  width: 100%;
+  height: 100%;
+  background: url(../images/guide/calender_attend_active.svg) no-repeat center center/contain;
+}
+
+.calender_wrap .attendance_count {
+  margin-top: 15px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+.calender_wrap .attendance_count .attendance {
+  font-weight: 700;
+  position: relative;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.calender_wrap .attendance_count .attendance:before {
+  content: "일";
+  position: absolute;
+  width: 10px;
+  height: 25px;
+  left: 10px;
+  top: 0;
+}
+
+.calender_wrap .attendance_btn {
+  margin-top: 10px;
+  padding: 15px 25px;
+  border-radius: 4px;
+  line-height: 21px;
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
+}
+
+/*======================     모듈 013 영역   =======================*/
 .evt_step_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9646,7 +9775,7 @@ input[type=number] {
   width: 100%;
 }
 
-/*======================     모듈 14 영역   =======================*/
+/*======================     모듈 014 영역   =======================*/
 .cmt_wrap {
   padding: 40px 20px;
 }
