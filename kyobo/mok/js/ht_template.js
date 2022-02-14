@@ -1,4 +1,4 @@
-// wel_mc
+/* wel_mc */
 $(function(){
     if(!$('.wel_mc').length) return;
 	$(window).resize(welMcBox).resize();
@@ -22,8 +22,8 @@ $(function(){
 
 
 
-//// 웰컴메인
-// Hero Banner
+/*** 웰컴메인 ***/
+/* Hero Banner */
 $(function(){
     if(!$('.wel_hero_banner').length) return;
     if($('.wel_hero_banner .swiper-slide').length > 1) {
@@ -79,7 +79,7 @@ function btnHeroListCl(){
 
 
 
-// 오늘만 특가
+/* 오늘만 특가 */
 function welToday(){
     var $target = $('.wel_today_cont .swiper-container');
     var slideOption = {
@@ -117,7 +117,7 @@ $(function(){
 
 
 
-// 핫트랙스 라이브
+/* 핫트랙스 라이브 */
 function welLive(){
     var $target = $('.wel_live_cont .swiper-container');
     var slideOption = {
@@ -172,9 +172,7 @@ $(function(){
 
 
 
-
-
-// MD
+/* MD Pick */
 function welMdPick(){
     var $target = $('.wel_md_pick_cont .swiper-container');
     var slideOption = {
@@ -203,7 +201,7 @@ $(function(){
 
 
 
-// ONLY Hottracks
+/* ONLY Hottracks */
 function welOnly(){
     var $target = $('.wel_only_cont');
     var slideOption = {
@@ -227,8 +225,7 @@ $(function(){
 
 
 
-
-// 실시간 홈쇼핑
+/* 실시간 홈쇼핑 */
 function welSearch(){
     var $target = $('.wel_search_list .swiper-container');
     var slideOption = {
@@ -270,9 +267,7 @@ $(function(){
 
 
 
-
-
-// 큐레이션
+/* 큐레이션 */
 function welCuration(){
 	var curationThumb = new Swiper('.curation_thumb', {
         observer: true,
@@ -340,9 +335,7 @@ function curation_btn(val){
 
 
 
-
-
-// 띠배너 스와이프
+/* 띠배너 스와이프 */
 $(function(){
     if(!$('.wel_belt_banner').length) return;
     $('.wel_belt_banner .swiper-container').each(function (index, element) {
@@ -367,9 +360,7 @@ $(function(){
 
 
 
-
-
-// 카테고리
+/* 카테고리 */
 function welCategory(){
     var $target = $('.wel_category_cont  .swiper-container');
     $target.each(function (index, element) {
@@ -414,7 +405,9 @@ $(function(){
     welCategory();
 });
 
-// wel_category_tab
+
+
+/* wel_category_tab */
 $(function(){
     if(!$('.wel_category_tab').length) return;
 	$(window).resize (resizeBox).resize();
@@ -438,7 +431,9 @@ $(function(){
 	}
 });
 
-// Sticky Tab
+
+
+/* Sticky Tab */
 function tabStickySwiper(){
     var $target = $('.tab_sticky_swiper');
     var slideOption = {
@@ -473,9 +468,7 @@ $(function(){
 });
 
 
-
-
-// Tab
+/* Tab */
 function tabSwiper(){
     var $target = $('.tab_swiper');
     var slideOption = {
@@ -520,7 +513,7 @@ $(function(){
 
 
 
-//// 큐레이션 메인
+/*** 큐레이션 메인 ***/
 /*
 function curScrollEvent() {
     var images = document.querySelectorAll('.curation_list_cont .lis');
@@ -557,7 +550,7 @@ $(function(){
 
 
 
-// 이럴 땐? 이런상품
+/* 이럴 땐? 이런상품 */
 function curProdSwiper(){
     var $target = $('.cur_prod_img');
     $target.each(function (index, element) {
@@ -587,7 +580,7 @@ $(function(){
 
 
 
-//최근 본 상품 추천
+/* 최근 본 상품 추천 */
 function curProdViewSwiper(){
     var $target = $('.cur_prod_view_list');
     $target.each(function (index, element) {
@@ -621,7 +614,7 @@ $(function(){
 
 
 
-// Scroll Event
+/* Scroll Event */
 $(window).on('scroll', feScrollFn);
 $.fn.feScrollGet = function(){
     var offset = $(window).scrollTop() + $(window).height() * 0.9;
@@ -648,7 +641,6 @@ $.fn.feScrollGet = function(){
 	
 };
 
-// Scroll Event Function 
 function feScrollFn(){
     $.fn.feScrollGet();
 }
@@ -661,8 +653,8 @@ function feScrollFn(){
 
 
 
-
-// 라이브 다시보기
+/*** 라이브 메인 ***/
+/* 라이브 다시보기 */
 function livReplaySwiper(){
     var $target = $('.liv_replay_cont');
     $target.each(function (index, element) {
@@ -695,7 +687,7 @@ $(function(){
 
 
 
-// 라이브 달력
+/* 라이브 달력 */
 function calendarTabSwiper(){
     var $target = $('.calendar_tab');
     var slideOption = {
@@ -718,7 +710,7 @@ $(function(){
 
 
 
-// 미리 만나는 라이브
+/* 미리 만나는 라이브 */
 function livNewMsg(){
 	var offsetPosition = $('.liv_list .li:first-child .alarm_chk02').offset();
 	var y = offsetPosition.top - $('.liv_list').offset().top + 35;
@@ -737,7 +729,7 @@ $(function(){
 
 
 
-// 
+/* */
 function gifQuestion(){
     var $target = $('.gif_question_cont .swiper-container');
     var slideOption = {

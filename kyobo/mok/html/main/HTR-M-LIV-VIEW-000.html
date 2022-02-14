@@ -36,9 +36,11 @@
 <!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
 <!-- // Custom styles for this template -->
 
-<!--// ht_ Hottracks custom css -->
-<link rel="stylesheet" href="../../css/ht_style_mok.css" />
-<link rel="stylesheet" href="../../css/ht_wel_main.css" /><!-- 메인 css -->
+<!-- ht_ Hottracks custom css : 공통작업 --><!-- 22.02.17 -->
+<link rel="stylesheet" href="../../css/ht_style_mok.css">
+<link rel="stylesheet" href="../../css/ht_template_mok.css">
+<link rel="stylesheet" href="../../css/ht_style_mok2.css"><!-- 임시 -->
+<!--// ht_ Hottracks custom css : 공통작업 --><!-- 22.02.17 -->
 
 
 <!-- Plug-In javascript -->
@@ -55,13 +57,11 @@
 <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
 <!-- // Plug-In javascript -->
 
-<!-- UI JavaScript -->
-<!-- <script src="../../vendors/js/ui_mok.js"></script> -->
+<!-- UI JavaScript : 공통작업 --><!-- 22.02.17 -->
 <script src="../../js/front_bak.js"></script>
-
-<script src="../../js/ht_wel_main.js"></script><!-- 메인 script -->
-<!-- // UI JavaScript -->
-<link rel="stylesheet" href="../../css/ht_live_main.css" /><!-- 메인 css -->
+<script src="../../js/ht_lib.js"></script>
+<script src="../../js/ht_template.js"></script>
+<!-- // UI JavaScript : 공통작업 --><!-- 22.02.17 -->
 </head>
 
 <body>
@@ -393,21 +393,6 @@
 
 
 
-<script>
-$(function(){
-    //댓글 입력 글자수 카운팅 : 확인용
-    $('#userComment').keyup(countCommentEA);
-    function countCommentEA(e){
-        var length = $('#userComment').val().length;
-        if(length>300) {
-            e.preventDefault();
-            $('#userComment').val($('#userComment').val().substring(0, 300));
-            return;
-        }
-        $(commentEA).text(length);
-    }
-});
-</script>
         <!-- 댓글입력 -->
         <div class="mc_cont mc_dep liv_reply">
             <h2 class="mc_tit03">댓글입력</h2>
