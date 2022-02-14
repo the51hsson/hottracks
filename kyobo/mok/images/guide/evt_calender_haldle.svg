@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="52.5" viewBox="0 0 16 52.5">
+  <g id="그룹_109765" data-name="그룹 109765" transform="translate(-122 -289.5)">
+    <g id="circle" transform="translate(122 326)" fill="#fff" stroke="#000" stroke-width="2">
+      <circle cx="8" cy="8" r="8" stroke="none"/>
+      <circle cx="8" cy="8" r="7" fill="none"/>
+    </g>
+    <line id="line" y1="50" transform="translate(130 290.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>
