@@ -36,9 +36,11 @@
 <!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
 <!-- // Custom styles for this template -->
 
-<!--// ht_ Hottracks custom css -->
-<link rel="stylesheet" href="../../css/ht_style_mok.css" />
-<link rel="stylesheet" href="../../css/ht_wel_main.css" /><!-- 메인 css -->
+<!-- ht_ Hottracks custom css : 공통작업 --><!-- 22.02.17 -->
+<link rel="stylesheet" href="../../css/ht_style_mok.css">
+<link rel="stylesheet" href="../../css/ht_style_mok2.css"><!-- 임시 -->
+<link rel="stylesheet" href="../../css/ht_template_mok.css">
+<!--// ht_ Hottracks custom css : 공통작업 --><!-- 22.02.17 -->
 
 
 <!-- Plug-In javascript -->
@@ -55,13 +57,13 @@
 <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
 <!-- // Plug-In javascript -->
 
-<!-- UI JavaScript -->
-<!-- <script src="../../vendors/js/ui_mok.js"></script> -->
+<!-- UI JavaScript : 공통작업 --><!-- 22.02.17 -->
 <script src="../../js/front_bak.js"></script>
+<script src="../../js/ht_lib.js"></script>
+<script src="../../js/ht_template.js"></script>
+<!-- // UI JavaScript : 공통작업 --><!-- 22.02.17 -->
 
-<script src="../../js/ht_wel_main.js"></script><!-- 메인 script -->
-<!-- // UI JavaScript -->
-<link rel="stylesheet" href="../../css/ht_gift_main.css" /><!-- 메인 css -->
+<link rel="stylesheet" href="../../css/ht_gift_main.css" /><!-- 임시 -->
 </head>
 
 <body>
@@ -98,440 +100,198 @@
 
     <!-- 라이브 메인 컨텐츠 -->
     <div class="wel_main_wrap">
-        <!--  -->
+<script>
+$(function() {
+    $('.gif_main_slider').slider({
+        range:'max',
+        min: 1,
+        max: 4,
+        value: 4,
+        slide: function(event, ui) {
+            //$('#amount').val(ui.value);
+            $('.gif_slide_view').removeClass('len4').removeClass('len3').removeClass('len2').removeClass('len1');
+            setTimeout(function(){
+                $('.gif_slide_view').addClass('len' + ui.value);
+            }, 50);
+            
+        }
+    });
+    //$('#amount').val($('.gif_main_slider').slider('value'));
+    $('.gif_slide_view').addClass('len4');
+});
+</script>
+
+        <!-- 선물추천 목록 : gif_main -->
         <div class="mc_cont gif_main active">
-
-
-            <!-- prod_list -->
-            <ul class="prod_list len4">
-                <!-- .li 반복 -->
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod01.jpg" alt="">
-                            <p class="prod_like_count active"><span>999+</span></p><!-- 좋아요 활성화 class="active" -->
-                            <!-- prod_soldout_msg 
-                            <div class="prod_soldout_msg">
-                                <div class="prod_soldout_msg_txt">
-                                    <p>아쉽지만<br>품절이에요!</p>
-                                    <span>대체상품</span>
-                                </div>
-                            </div>
-                            //prod_soldout_msg -->
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <!-- //.li 반복 -->
-
-
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod02.jpg" alt="">
-                            <p class="prod_like_count active"><span>999+</span></p>
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod03.jpg" alt="">
-                            <p class="prod_like_count"><span>999+</span></p>>
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod04.jpg" alt="">
-                            <p class="prod_like_count"><span>999+</span></p>
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
+            <h2 class="mc_tit"><img src="../../images/main/tit_gif_main.svg" alt=""></h2>
+            <!-- gif_main_tab -->
+            <ul class="gif_main_tab">
+                <li>탭1</li>
+                <li>탭2</li>
+                <li>탭3</li>
             </ul>
-            <!-- //prod_list -->
-            <br><br><br>
+            <!-- //gif_main_tab -->
 
-            <!-- prod_list -->
-            <ul class="prod_list len3">
-                <!-- .li 반복 -->
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod01.jpg" alt="">
-                            <p class="prod_like_count active"><span>999+</span></p><!-- 좋아요 활성화 class="active" -->
-                            <!-- prod_soldout_msg 
-                            <div class="prod_soldout_msg">
-                                <div class="prod_soldout_msg_txt">
-                                    <p>아쉽지만<br>품절이에요!</p>
-                                    <span>대체상품</span>
+            <!-- gif_main_slider -->
+            <div class="gif_main_slider"></div>
+            <!-- //gif_main_slider -->
+
+            <!-- gif_slide_view -->  
+            <div class="gif_slide_view len4">
+                <!-- prod_list -->
+                <ul class="prod_list">
+                    <!-- .li 반복 -->
+                    <li class="li">
+                        <a href="#n">
+                            <div class="img">
+                                <img src="../../images/temp/@img_prod01.jpg" alt="">
+                                <p class="prod_like_count active"><span>999+</span></p><!-- 좋아요 활성화 class="active" -->
+                                <!-- prod_soldout_msg 
+                                <div class="prod_soldout_msg">
+                                    <div class="prod_soldout_msg_txt">
+                                        <p>아쉽지만<br>품절이에요!</p>
+                                        <span>대체상품</span>
+                                    </div>
                                 </div>
+                                //prod_soldout_msg -->
                             </div>
-                            //prod_soldout_msg -->
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <!-- //.li 반복 -->
+                            <ul class="txt">
+                                <li class="s0">dretec</li>
+                                <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+                                <li class="s2">
+                                    <strong>50%</strong>
+                                    <span>134,000</span>
+                                    <em>129,000</em>
+                                </li>
+                                <li class="ico_marker_area">
+                                    <span class="ico_marker on">쿠폰</span>
+                                    <span class="ico_marker">사은품</span>
+                                    <span class="ico_marker">무료배송</span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <!-- //.li 반복 -->
 
 
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod02.jpg" alt="">
-                            <p class="prod_like_count active"><span>999+</span></p>
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod03.jpg" alt="">
-                            <p class="prod_like_count"><span>999+</span></p>>
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod04.jpg" alt="">
-                            <p class="prod_like_count"><span>999+</span></p>
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-            </ul>
-            <!-- //prod_list -->
-            <br><br><br>
-
-            <!-- prod_list -->
-            <ul class="prod_list">
-                <!-- .li 반복 -->
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod01.jpg" alt="">
-                            <p class="prod_like_count active"><span>999+</span></p><!-- 좋아요 활성화 class="active" -->
-                            <!-- prod_soldout_msg 
-                            <div class="prod_soldout_msg">
-                                <div class="prod_soldout_msg_txt">
-                                    <p>아쉽지만<br>품절이에요!</p>
-                                    <span>대체상품</span>
-                                </div>
+                    <li class="li">
+                        <a href="#n">
+                            <div class="img">
+                                <img src="../../images/temp/@img_prod02.jpg" alt="">
+                                <p class="prod_like_count active"><span>999+</span></p>
                             </div>
-                            //prod_soldout_msg -->
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <!-- //.li 반복 -->
-
-
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod02.jpg" alt="">
-                            <p class="prod_like_count active"><span>999+</span></p>
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod03.jpg" alt="">
-                            <p class="prod_like_count"><span>999+</span></p>>
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod04.jpg" alt="">
-                            <p class="prod_like_count"><span>999+</span></p>
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-            </ul>
-            <!-- //prod_list -->
-            <br><br><br>
-
-            <!-- prod_list -->
-            <ul class="prod_list len1">
-                <!-- .li 반복 -->
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod01.jpg" alt="">
-                            <p class="prod_like_count active"><span>999+</span></p><!-- 좋아요 활성화 class="active" -->
-                            <!-- prod_soldout_msg 
-                            <div class="prod_soldout_msg">
-                                <div class="prod_soldout_msg_txt">
-                                    <p>아쉽지만<br>품절이에요!</p>
-                                    <span>대체상품</span>
-                                </div>
+                            <ul class="txt">
+                                <li class="s0">dretec</li>
+                                <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+                                <li class="s2">
+                                    <strong>50%</strong>
+                                    <span>134,000</span>
+                                    <em>129,000</em>
+                                </li>
+                                <li class="ico_marker_area">
+                                    <span class="ico_marker on">쿠폰</span>
+                                    <span class="ico_marker">사은품</span>
+                                    <span class="ico_marker">무료배송</span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="li">
+                        <a href="#n">
+                            <div class="img">
+                                <img src="../../images/temp/@img_prod03.jpg" alt="">
+                                <p class="prod_like_count"><span>999+</span></p>>
                             </div>
-                            //prod_soldout_msg -->
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <!-- //.li 반복 -->
-
-
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod02.jpg" alt="">
-                            <p class="prod_like_count active"><span>999+</span></p>
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod03.jpg" alt="">
-                            <p class="prod_like_count"><span>999+</span></p>>
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-                <li class="li">
-                    <a href="#n">
-                        <div class="img">
-                            <img src="../../images/temp/@img_prod04.jpg" alt="">
-                            <p class="prod_like_count"><span>999+</span></p>
-                        </div>
-                        <ul class="txt">
-                            <li class="s0">dretec</li>
-                            <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-                            <li class="s2">
-                                <strong>50%</strong>
-                                <span>134,000</span>
-                                <em>129,000</em>
-                            </li>
-                            <li class="ico_marker_area">
-                                <span class="ico_marker on">쿠폰</span>
-                                <span class="ico_marker">사은품</span>
-                                <span class="ico_marker">무료배송</span>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-            </ul>
-            <!-- //prod_list -->
-
-
-
+                            <ul class="txt">
+                                <li class="s0">dretec</li>
+                                <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+                                <li class="s2">
+                                    <strong>50%</strong>
+                                    <span>134,000</span>
+                                    <em>129,000</em>
+                                </li>
+                                <li class="ico_marker_area">
+                                    <span class="ico_marker on">쿠폰</span>
+                                    <span class="ico_marker">사은품</span>
+                                    <span class="ico_marker">무료배송</span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="li">
+                        <a href="#n">
+                            <div class="img">
+                                <img src="../../images/temp/@img_prod04.jpg" alt="">
+                                <p class="prod_like_count"><span>999+</span></p>
+                            </div>
+                            <ul class="txt">
+                                <li class="s0">dretec</li>
+                                <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+                                <li class="s2">
+                                    <strong>50%</strong>
+                                    <span>134,000</span>
+                                    <em>129,000</em>
+                                </li>
+                                <li class="ico_marker_area">
+                                    <span class="ico_marker on">쿠폰</span>
+                                    <span class="ico_marker">사은품</span>
+                                    <span class="ico_marker">무료배송</span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="li">
+                        <a href="#n">
+                            <div class="img">
+                                <img src="../../images/temp/@img_prod05.jpg" alt="">
+                                <p class="prod_like_count active"><span>999+</span></p>
+                            </div>
+                            <ul class="txt">
+                                <li class="s0">dretec</li>
+                                <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+                                <li class="s2">
+                                    <strong>50%</strong>
+                                    <span>134,000</span>
+                                    <em>129,000</em>
+                                </li>
+                                <li class="ico_marker_area">
+                                    <span class="ico_marker on">쿠폰</span>
+                                    <span class="ico_marker">사은품</span>
+                                    <span class="ico_marker">무료배송</span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="li">
+                        <a href="#n">
+                            <div class="img">
+                                <img src="../../images/temp/@img_prod06.jpg" alt="">
+                                <p class="prod_like_count"><span>999+</span></p>>
+                            </div>
+                            <ul class="txt">
+                                <li class="s0">dretec</li>
+                                <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+                                <li class="s2">
+                                    <strong>50%</strong>
+                                    <span>134,000</span>
+                                    <em>129,000</em>
+                                </li>
+                                <li class="ico_marker_area">
+                                    <span class="ico_marker on">쿠폰</span>
+                                    <span class="ico_marker">사은품</span>
+                                    <span class="ico_marker">무료배송</span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+                <!-- //prod_list -->
+            </div>
+            <!-- //gif_slide_view -->
 
             <button class="btn_more_view"><span>더보기</span></button>
-
         </div>
-        <!-- // -->
+        <!-- //선물추천 목록 : gif_main -->
 
 
         <!-- mc_cont : 선물이 필요한 순간 핫트 하세요 -->
@@ -579,15 +339,17 @@
 
 
             <div style="margin:0 -20px 40px -20px;padding:40px 0 50px 0;background:#fff url('../../images/main/bg_wel_md_pick.jpg') center top/950px auto repeat;">
-                <!-- wel_today_cont -->
-                <div class="wel_today_cont">
+                <!-- gif_need_cont -->
+                <div class="gif_need_cont">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <!-- swiper-slide 반복 -->
                             <div class="swiper-slide">
                                 <div class="today_box">
-                                    <p class="img"><img src="../../images/temp/@img_today01.jpg" alt=""></p><!-- image size : 최소 434px 정사각형 -->
-                                    <!--<p class="img"></p> 이미지 없을 경우 공백 -->
+                                    <div class="img">
+                                        <img src="../../images/temp/@img_today01.jpg" alt=""><!-- image size : 최소 434px 정사각형 --><!--이미지 없을 경우 공백 -->
+                                        <p class="prod_like_count"><span>999+</span></p>
+                                    </div>
                                     <ul class="txt">
                                         <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
                                         <li class="s2">
@@ -595,8 +357,8 @@
                                             <span>134,000</span>
                                             <em>129,000</em>
                                         </li>
-                                        <li class="s3">
-                                            <span class="ico_marker">무료배송</span>
+                                        <li class="s4">
+                                            2022년 다이어리 꾸미기는 우리에게 맡겨라! 핫트랙스와 지금 가장 핫한 인기 작가들의 콜라보! Only 핫트랙스에서 만날 수 있어요
                                         </li>
                                     </ul>
                                 </div>
@@ -606,7 +368,9 @@
 
                             <div class="swiper-slide">
                                 <div class="today_box">
-                                    <p class="img"><img src="../../images/temp/@img_today02.jpg" alt=""></p>
+                                    <div class="img"><img src="../../images/temp/@img_today02.jpg" alt="">
+                                        <p class="prod_like_count"><span>999+</span></p>
+                                    </div>
                                     <ul class="txt">
                                         <li class="s1">자수포켓 아이패드파우치 ANF 체크패턴</li>
                                         <li class="s2">
@@ -614,15 +378,17 @@
                                             <span>134,000</span>
                                             <em>129,000</em>
                                         </li>
-                                        <li class="s3">
-                                            <span class="ico_marker">무료배송</span>
+                                        <li class="s4">
+                                            2022년 다이어리 꾸미기는 우리에게 맡겨라! 핫트랙스와 지금 가장 핫한 인기 작가들의 콜라보! Only 핫트랙스에서 만날 수  2022년 다이어리 꾸미기는 우리에게 맡겨라! 핫트랙스와 지금 가장 핫한 인기 작가들의 콜라보! Only 핫트랙스에서 만날 수 있어요
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="today_box">
-                                    <p class="img"><img src="../../images/temp/@img_today03.jpg" alt=""></p>
+                                    <div class="img"><img src="../../images/temp/@img_today03.jpg" alt="">
+                                        <p class="prod_like_count"><span>999+</span></p>
+                                    </div>
                                     <ul class="txt">
                                         <li class="s1">자수포켓</li>
                                         <li class="s2">
@@ -630,17 +396,16 @@
                                             <span>134,000</span>
                                             <em>129,000</em>
                                         </li>
-                                        <li class="s3">
-                                            <span class="ico_marker">무료배송</span>
+                                        <li class="s4">
+                                            2022년 다이어리 꾸미기는 우리에게 맡겨라! 핫트랙스와 지금 가장 핫한 인기 작가들의 콜라보! Only 핫트랙스에서 만날 수 있어요
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <!-- //wel_today_cont -->
+                <!-- //gif_need_cont -->
             </div>
 
             <!-- prod_list -->
@@ -746,18 +511,30 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- swiper-slide 반복 -->
-                        <div class="swiper-slide on"><!-- 라이브 일때 class="on" -->
-                            <div style="height:500px;background-color:#000;"></div>
+                        <div class="swiper-slide">
+                            <!-- gif_question_box -->
+                            <div class="gif_question_box">
+
+                            </div>
+                            <!-- //gif_question_box -->
                         </div>
                         <!-- //swiper-slide 반복 -->
 
 
                         <div class="swiper-slide">
-                            <div style="height:500px;background-color:#eee;"></div>
+                            <!-- gif_question_box -->
+                            <div class="gif_question_box">
+
+                            </div>
+                            <!-- //gif_question_box -->
                         </div>
 
                         <div class="swiper-slide">
-                            <div style="height:500px;background-color:#ccc;"></div>
+                            <!-- gif_question_box -->
+                            <div class="gif_question_box">
+
+                            </div>
+                            <!-- //gif_question_box -->
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>

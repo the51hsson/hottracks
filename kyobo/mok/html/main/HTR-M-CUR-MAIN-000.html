@@ -35,10 +35,11 @@
 <!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
 <!-- // Custom styles for this template -->
 
-<!-- ht_ Hottracks custom css -->
-<link rel="stylesheet" href="../../css/ht_style_mok.css" />
-<link rel="stylesheet" href="../../css/ht_wel_main.css" /><!-- 메인 css -->
-<!--// ht_ Hottracks custom css -->
+<!-- ht_ Hottracks custom css : 공통작업 --><!-- 22.02.17 -->
+<link rel="stylesheet" href="../../css/ht_style_mok.css">
+<link rel="stylesheet" href="../../css/ht_style_mok2.css"><!-- 임시 -->
+<link rel="stylesheet" href="../../css/ht_template_mok.css">
+<!--// ht_ Hottracks custom css : 공통작업 --><!-- 22.02.17 -->
 
 
 <!-- Plug-In javascript -->
@@ -55,733 +56,883 @@
 <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
 <!-- // Plug-In javascript -->
 
-<!-- UI JavaScript -->
-<script src="../../js/circletype.min.js"></script>
+<!-- UI JavaScript : 공통작업 --><!-- 22.02.17 -->
 <script src="../../js/front_bak.js"></script>
-
-<script src="../../js/ht_wel_main.js"></script><!-- 메인 script -->
-<!-- // UI JavaScript -->
+<script src="../../js/ht_lib.js"></script>
+<script src="../../js/ht_template.js"></script>
+<!-- // UI JavaScript : 공통작업 --><!-- 22.02.17 -->
 </head>
+
 <body>
-	<div class="skip_nav_wrap">
-		<a href="#headerWrapper">메뉴 바로가기</a>
-		<a href="#containerWrapper">본문 바로가기</a>
-	</div>
-	<!-- wrapper -->
-	<!--DESC : 에러페이지인 경우 [error] 클래스 추가 -->
-	<!-- ht_ Hottracks ht_ 클래스 추가 -->
-	<div class="wrapper ht_">
-		<!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
-		<header id="headerWrapper" class="header_wrapper header_main">
-			<div class="header_top_wrap">
-				<div class="logo_box">
-					<a href="#" class="logo_link">
-						<img srcset="../../images/guide/img_logo_kyobo_mok.png 1x,
-								../../images/guide/img_logo_kyobo_mok@2x.png 2x,
-								../../images/guide/img_logo_kyobo_mok@3x.png 3x"
-							 src="../../images/guide/img_logo_kyobo_mok.png" alt="KYOBO 교보문고">
-					</a>
-				</div>
-				<div class="service_mall_wrap">
-					<div class="service_mall_inner">
-						<svg xmlns="http://www.w3.org/2000/svg" width="504" height="32" viewBox="0 0 504 32">
-							<g transform="translate(0 0)">
-								<a href="#" class="service_mall_link">
-									<use href="../../images/guide/img_service_mall_tab_mok.svg#pathTab" fill="#3E43A4" stroke="rgba(0,0,0,0)" />
-								</a>
-								<text x="64" y="15" text-anchor="middle" fill="#fff" font-size="12"
-									  pointer-events="none" dy=".5em"
-									  font-family="Noto Sans KR" font-weight="700">교보문고</text>
-								
-							</g>
-							<g transform="translate(78 0)">
-								<a href="#" class="service_mall_link">
-									<use href="../../images/guide/img_service_mall_tab_mok.svg#pathTab" fill="#2951cc" stroke="rgba(0,0,0,0)" />
-								</a>
-								<text x="64" y="15" text-anchor="middle" fill="#fff" font-size="13"
-									  pointer-events="none" dy=".5em"
-									  font-family="Roboto" font-weight="700">eBook</text>
-							</g>
-
-							<g transform="translate(156 0)">
-								<a href="#" class="service_mall_link">
-									<use href="../../images/guide/img_service_mall_tab_mok.svg#pathTab" fill="#06BBC0" stroke="rgba(0,0,0,0)" />
-								</a>
-								<text x="64" y="13" text-anchor="middle" fill="#fff" font-size="14"
-									  pointer-events="none" dy=".5em"
-									  font-family="Roboto" font-weight="700">sam</text>
-							</g>
-							
-							<g transform="translate(234 0)">
-								<a href="#" class="service_mall_link">
-									<use href="../../images/guide/img_service_mall_tab_mok.svg#pathTab" fill="#8F603D" stroke="rgba(0,0,0,0)" />
-								</a>
-								<text x="64" y="15" text-anchor="middle" fill="#fff" font-size="12"
-									  pointer-events="none" dy=".5em"
-									  font-family="Noto Sans KR" font-weight="700">매장안내</text>
-							</g>
-							<g transform="translate(312 0)">
-								<a href="#" class="service_mall_link">
-									<use href="../../images/guide/img_service_mall_tab_link_mok.svg#pathTabLink" />
-								</a>
-								<text x="64" y="15" text-anchor="middle" fill="#767676" font-size="12"
-									  pointer-events="none" dy=".5em"
-									  font-family="Noto Sans KR" font-weight="500">톡소다</text>
-							</g>
-							<g transform="translate(390 0)">
-								<a href="#" class="service_mall_link">
-									<use href="../../images/guide/img_service_mall_tab_link_mok.svg#pathTabLink" />
-								</a>
-								<text x="64" y="15" text-anchor="middle" fill="#767676" font-size="12"
-									  pointer-events="none" dy=".5em"
-									  font-family="Noto Sans KR" font-weight="500">스토리</text>
-							</g>
-						</svg>
-					</div>
-
-					<button type="button" class="btn_brand_more"><span class="hidden">브랜드 더보기</span></button>
-
-					<div class="brand_more_list_box">
-						<ul class="brand_more_list">
-							<li class="brand_more_item">
-								<a href="#" class="brand_more_link">
-									<span class="img_box"><img src="../../temporary/temp_brand_more_mok.png" alt="브랜드 임시 이미지"></span>
-									<span class="brand_name">교보문고</span>
-								</a>
-							</li>
-							<li class="brand_more_item">
-								<a href="#" class="brand_more_link">
-									<span class="img_box"><img src="../../temporary/temp_brand_more_mok.png" alt="브랜드 임시 이미지"></span>
-									<span class="brand_name">교보문고</span>
-								</a>
-							</li>
-							<li class="brand_more_item">
-								<a href="#" class="brand_more_link">
-									<span class="img_box"><img src="../../temporary/temp_brand_more_mok.png" alt="브랜드 임시 이미지"></span>
-									<span class="brand_name">교보문고</span>
-								</a>
-							</li>
-							<li class="brand_more_item">
-								<a href="#" class="brand_more_link">
-									<span class="img_box"><img src="../../temporary/temp_brand_more_mok.png" alt="브랜드 임시 이미지"></span>
-									<span class="brand_name">교보문고</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="gnb_search_wrap">
-				<div class="gnb_search_box">
-					<div class="search_input_wrap">
-						<input type="search" class="ip_gnb_search" title="통합검색어 입력" placeholder="이지성, 출간 즉시 종합 베스트!" />
-						<button type="button" class="btn_ip_clear"><span class="hidden">초기화</span></button>
-					</div>
-					<a href="#" class="btn_gnb_search"><span class="hidden">검색</span></a>
-				</div>
-
-				<a href="#" class="btn_header_cart">
-					<span class="hidden">장바구니</span>
-					<!-- DESC :: 0개인경우 count 영역 미노출 / 최대 99 -->
-					<span class="count">99</span>
+<div class="skip_nav_wrap">
+	<a href="#headerWrapper">메뉴 바로가기</a>
+	<a href="#containerWrapper">본문 바로가기</a>
+</div>
+<!-- wrapper -->
+<!--DESC : 에러페이지인 경우 [error] 클래스 추가 -->
+<!-- ht_ Hottracks ht_ 클래스 추가 -->
+<div class="wrapper ht_">
+	<!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
+	<header id="headerWrapper" class="header_wrapper header_main">
+		<div class="header_top_wrap">
+			<div class="logo_box">
+				<a href="#" class="logo_link">
+					<img srcset="../../images/guide/img_logo_kyobo_mok.png 1x,
+							../../images/guide/img_logo_kyobo_mok@2x.png 2x,
+							../../images/guide/img_logo_kyobo_mok@3x.png 3x"
+							src="../../images/guide/img_logo_kyobo_mok.png" alt="KYOBO 교보문고">
 				</a>
 			</div>
-		</header>
-		<!-- // 헤더 -->
+			<div class="service_mall_wrap">
+				<div class="service_mall_inner">
+					<svg xmlns="http://www.w3.org/2000/svg" width="504" height="32" viewBox="0 0 504 32">
+						<g transform="translate(0 0)">
+							<a href="#" class="service_mall_link">
+								<use href="../../images/guide/img_service_mall_tab_mok.svg#pathTab" fill="#3E43A4" stroke="rgba(0,0,0,0)" />
+							</a>
+							<text x="64" y="15" text-anchor="middle" fill="#fff" font-size="12"
+									pointer-events="none" dy=".5em"
+									font-family="Noto Sans KR" font-weight="700">교보문고</text>
+							
+						</g>
+						<g transform="translate(78 0)">
+							<a href="#" class="service_mall_link">
+								<use href="../../images/guide/img_service_mall_tab_mok.svg#pathTab" fill="#2951cc" stroke="rgba(0,0,0,0)" />
+							</a>
+							<text x="64" y="15" text-anchor="middle" fill="#fff" font-size="13"
+									pointer-events="none" dy=".5em"
+									font-family="Roboto" font-weight="700">eBook</text>
+						</g>
 
-		<!-- 컨텐츠 -->
-		<main id="containerWrapper" class="container_wrapper">
-			<section class="contents_wrap">
-
-
-
-				<!-- main_menu_wrap -->
-				<div class="main_menu_wrap">
-					<div class="main_menu_list_wrap sps sps_scroll_fixed wel_mc"><!-- 공통 확인 - class="wel_mc" : 임시 -->
-						<ul class="menu_list">
-							<li class="menu_list_item marker">
-								<a href="#" class="menu_link"><img src="../../images/main/ico_main_menu_music.svg" alt="">음반·영상</a><!-- 음반영상 탭에만 우선 -->
-							</li>
-							<li class="menu_list_item marker">
-								<a href="#" class="menu_link">다이어리</a>
-							</li>
-							<li class="menu_list_item">
-								<a href="#" class="menu_link">스티커샵</a>
-							</li>
-							<li class="menu_list_item">
-								<a href="#" class="menu_link">필기구</a>
-							</li>
-							<li class="menu_list_item">
-								<a href="#" class="menu_link">크리스마스</a>
-							</li>
-							<li class="menu_list_item">
-								<a href="#" class="menu_link">가변구좌</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!-- //main_menu_wrap -->
-				
-
-				<!-- 큐레이션 메인 컨텐츠 -->
-				<div class="wel_main_wrap">
-					<!-- hero_box -->
-					<div class="hero_box">
-						<p class="hero_txt"><strong>김미미님</strong>을 위한</p>
-						<ul class="hero_tab">
-							<li><a href="#" class="on"><span>취향발견</span></a></li><!-- 활성화 class="on" -->
-							<li><a href="#"><span>맞춤추천</span></a></li>
-						</ul>		
-					</div>
-					<!-- //hero_box -->
-
-
-
-					<!-- 라이프스타일 -->
-					<div class="mc_cont wel_curation">
-						<p class="cur_eyebrow"><span><em>라이프스타일</em></span></p>
-						<h2 class="mc_tit"><img src="../../images/main/tit_wel_curation.svg" alt="큐레이션"></h2>
-
-						<!-- wel_curation_cont -->
-						<div class="wel_curation_cont">
-							<!-- curation_img -->
-							<div class="swiper-conainer curation_img">
-								<div class="swiper-wrapper">
-									<!-- swiper-slide : 반복 -->
-									<div class="swiper-slide">
-										<!-- HTML 영역 : class="curation_box" -->
-										<div class="curation_box">
-											<!-- curation_cont -->
-											<div class="curation_cont c1"><!-- 컬러타입 : class="c1" 관리자 미정 -->
-												<p class="img"><img src="../../images/temp/@img_curation01.jpg" alt=""></p>
-												<a href="javascript:alert('큐레이션 상세페이지');" class="btn_cur_view"><span class="hidden">상세보기</span></a>
-
-												<!-- curation_marker -->
-												<ul class="curation_marker">
-													<li class="li" style="left:55%;top:27%;">
-														<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
-														<ul class="curation_tooltip ct_lt">
-															<!-- 기본 : 우측하단 툴팁
-																.ct_rt : 우측상단 툴팁 
-																.ct_lb : 좌측하단 툴팁
-																.ct_lt : 좌측상단 툴팁
-															-->
-															<li class="s1">옐로우 사각 코튼<br>쿠션 커버</li>
-															<li class="s2">
-																<strong>50%</strong>
-																<span>134,000</span>
-																<em>129,000</em>
-															</li>
-															<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
-														</ul>
-													</li>
-													<li class="li on" style="left:78%;top:65%;">
-														<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
-														<ul class="curation_tooltip ct_lb">
-															<li class="s1">옐로우 사각 코튼<br>쿠션 커버</li>
-															<li class="s2">
-																<strong>50%</strong>
-																<span>134,000</span>
-																<em>129,000</em>
-															</li>
-															<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
-														</ul>
-													</li>
-													<li class="li" style="left:6%;top:70%;">
-														<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
-														<ul class="curation_tooltip">
-															<li class="s1">옐로우 사각 코튼<br>쿠션 커버</li>
-															<li class="s2">
-																<strong>50%</strong>
-																<span>134,000</span>
-																<em>129,000</em>
-															</li>
-															<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
-														</ul>
-													</li>
-												</ul>
-												<!-- //curation_marker -->
-											</div>
-											<!-- //curation_cont -->
-										</div>
-										<!-- //HTML 영역 : class="curation_box" -->
-									</div>
-									<!-- //swiper-slide : 반복 -->
-
-
-									<div class="swiper-slide">
-										<div class="curation_box">
-											<!-- curation_cont -->
-											<div class="curation_cont c2">
-												<p class="img"><img src="../../images/temp/@img_curation02.jpg" alt=""></p>
-												<a href="javascript:alert('큐레이션 상세페이지');" class="btn_cur_view"><span class="hidden">상세보기</span></a>
-												
-												<!-- curation_marker -->
-												<ul class="curation_marker">
-													<li class="li" style="left:58%;top:48%;">
-														<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
-														<ul class="curation_tooltip ct_lb">
-															<li class="s1">2022 캘린더 레트로<br>감성 일력</li>
-															<li class="s2">
-																<strong>50%</strong>
-																<span>134,000</span>
-																<em>129,000</em>
-															</li>
-															<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
-														</ul>
-													</li>
-													<li class="li" style="left:21%;top:40%;">
-														<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
-														<ul class="curation_tooltip">
-															<li class="s1">2022 캘린더 레트로<br>감성 일력</li>
-															<li class="s2">
-																<strong>50%</strong>
-																<span>134,000</span>
-																<em>129,000</em>
-															</li>
-															<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
-														</ul>
-													</li>
-													<li class="li on" style="left:59%;top:76%;">
-														<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
-														<ul class="curation_tooltip ct_lt">
-															<li class="s1">2022 캘린더 레트로<br>감성 일력</li>
-															<li class="s2">
-																<strong>50%</strong>
-																<span>134,000</span>
-																<em>129,000</em>
-															</li>
-															<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
-														</ul>
-													</li>
-												</ul>
-												<!-- //curation_marker -->
-											</div>
-											<!-- //curation_cont -->
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="curation_box">
-											<!-- curation_cont -->
-											<div class="curation_cont c3">
-												<p class="img"><img src="../../images/temp/@img_curation03.jpg" alt=""></p>
-												<a href="javascript:alert('큐레이션 상세페이지');" class="btn_cur_view"><span class="hidden">상세보기</span></a>
-
-												<!-- curation_marker -->
-												<ul class="curation_marker">
-													<li class="li" style="left:45%;top:48%;">
-														<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
-														<ul class="curation_tooltip">
-															<li class="s1">스트로베리 버킹엄 체크<br>UV차단 우양산</li>
-															<li class="s2">
-																<strong>50%</strong>
-																<span>134,000</span>
-																<em>129,000</em>
-															</li>
-															<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
-														</ul>
-													</li>
-													<li class="li on" style="left:63%;top:71%;">
-														<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
-														<ul class="curation_tooltip ct_lb">
-															<li class="s1">스트로베리 버킹엄 체크<br>UV차단 우양산</li>
-															<li class="s2">
-																<strong>50%</strong>
-																<span>134,000</span>
-																<em>129,000</em>
-															</li>
-															<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
-														</ul>
-													</li>
-													<li class="li" style="left:10%;top:37%;">
-														<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
-														<ul class="curation_tooltip">
-															<li class="s1">스트로베리 버킹엄 체크<br>UV차단 우양산</li>
-															<li class="s2">
-																<strong>50%</strong>
-																<span>134,000</span>
-																<em>129,000</em>
-															</li>
-															<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
-														</ul>
-													</li>
-												</ul>
-												<!-- //curation_marker -->
-											</div>
-											<!-- //curation_cont -->
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="curation_box">
-											<!-- curation_cont -->
-											<div class="curation_cont c4">
-												<p class="img"><img src="../../images/temp/@img_curation04.jpg" alt=""></p>
-												<a href="javascript:alert('큐레이션 상세페이지');" class="btn_cur_view"><span class="hidden">상세보기</span></a>
-												
-												<!-- curation_marker -->
-												<ul class="curation_marker">
-													<li class="li" style="left:23%;top:59%;">
-														<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
-														<ul class="curation_tooltip">
-															<li class="s1">굿네이버스 손잡이 보틀 500ml</li>
-															<li class="s2">
-																<strong>50%</strong>
-																<span>134,000</span>
-																<em>129,000</em>
-															</li>
-															<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
-														</ul>
-													</li>
-													<li class="li" style="left:23%;top:29%;">
-														<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
-														<ul class="curation_tooltip">
-															<li class="s1">굿네이버스 손잡이 보틀 500ml</li>
-															<li class="s2">
-																<strong>50%</strong>
-																<span>134,000</span>
-																<em>129,000</em>
-															</li>
-															<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
-														</ul>
-													</li>
-													<li class="li on" style="left:77%;top:58%;">
-														<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
-														<ul class="curation_tooltip ct_lb">
-															<li class="s1">굿네이버스 손잡이 보틀 500ml</li>
-															<li class="s2">
-																<strong>50%</strong>
-																<span>134,000</span>
-																<em>129,000</em>
-															</li>
-															<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
-														</ul>
-													</li>
-												</ul>
-												<!-- //curation_marker -->
-											</div>
-											<!-- //curation_cont -->
-										</div>
-									</div>
-
-								</div> 
-							</div>
-							<!-- //curation_img -->
-							<!-- curation_thumb -->
-							<div class="swiper-conainer curation_thumb">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide c1"><!-- 컬러타입 : class="c1" 관리자 추후협의 -->
-										<span>#만원의행복</span>
-									</div>
-									<div class="swiper-slide c2">
-										<span>#나를 위한 계획 세우기</span>
-									</div>
-									<div class="swiper-slide c3">
-										<span>#소풍아이템</span>
-									</div>
-									<div class="swiper-slide c4">
-										<span>#바프준비</span>
-									</div>
-								</div> 
-							</div>
-							<!-- //curation_thumb -->
-						</div>
-						<!-- //wel_curation_cont -->
-
-						<!--<button class="btn_more_view"><span><em class="hidden">라이프스타일 큐레이션</em>더보기</span></button> 삭제 -->
-					</div>
-					<!-- //라이프스타일 -->
-
-
-
-					<!-- 이럴 땐? 이런상품 -->
-					<div class="mc_cont cur_prod">
-						<h2 class="mc_tit">이럴 땐? 이런상품 <img src="../../images/main/tit_cur_prod.svg" alt=""></h2>
-
-						<!-- tab_swiper -->
-						<div class="tab_swiper tab_ty ty03 tab_link"><!-- tab_link / tab_cont : 확인용 - Ajax 처리 필요없을 시 해당 class 삭제 -->
-							<ul class="swiper-wrapper">
-								<li class="swiper-slide">
-									<a href="#cur_prod01" class="on"><!-- 활성화  class="on" -->
-										<span>계절특유의 온도</span>
-									</a>
-								</li>
-								<li class="swiper-slide">
-									<a href="#cur_prod02">
-										<span>결혼하는 나의 베프에게</span>
-									</a>
-								</li>
-								<li class="swiper-slide">
-									<a href="#n">
-										<span>번아웃 직전</span>
-									</a>
-								</li>
-								<li class="swiper-slide">
-									<a href="#n">
-										<span>3분힐링템</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!-- //tab_swiper -->
-
-						<!-- cur_prod_list -->
-						<div class="cur_prod_list tab_cont on" id="cur_prod01"><!-- tab_link / tab_cont .on : 확인용 - Ajax 처리 필요없을 시 해당 class 삭제 -->
-							<!-- li_resp_ty -->
-							<ul class="li_resp_ty ty02">
-								<li class="li">
-									<a href="#n">
-										<p class="img"><img src="../../images/temp/@img_prod_boxB3.jpg" alt=""></p>
-										<ul class="txt">
-											<li class="s1">계절 특유의 온도</li>
-											<li class="s2">손이 닿는 곳곳마다 따듯함을 더해 줄 존재가 항상 있을 수 있기를</li>
-											<li class="s3">
-												<span class="ico_marker">#집콕생활</span>
-												<span class="ico_marker">#충전완료</span>
-												<span class="ico_marker">#힐링이필요해</span>
-											</li>
-										</ul>
-									</a>
-								</li>
-							</ul>
-							<!-- //li_resp_ty -->
-
-							<!-- cur_prod_img -->
-							<div class="cur_prod_img wel_cont">
-								<ul class="swiper-wrapper">
-									<!-- li.swiper-slide 반복 -->
-									<li class="swiper-slide">
-										<a href="#n">
-											<p class="img"><img src="../../images/temp/@img_prod01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
-										</a>
-									</li>
-									<!-- //li.swiper-slide 반복 -->
-
-
-									<li class="swiper-slide">
-										<a href="#n">
-											<p class="img"><img src="../../images/temp/@img_prod02.jpg" alt=""></p>
-										</a>
-									</li>
-									<li class="swiper-slide">
-										<a href="#n">
-											<p class="img"><img src="../../images/temp/@img_prod03.jpg" alt=""></p>
-										</a>
-									</li>
-									<li class="swiper-slide">
-										<a href="#n">
-											<p class="img"><img src="../../images/temp/@img_prod04.jpg" alt=""></p>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<!-- //cur_prod_img -->
-						</div>
-						<!-- //cur_prod_list -->
-
-						<!-- cur_prod_list : 확인용 -->
-						<div class="cur_prod_list tab_cont" id="cur_prod02">
-							<p style="height:300px;background-color:#eee;border-radius:8px;">
-						</div>
-						<!-- //cur_prod_list : 확인용 -->
-					</div>
-					<!-- //이럴 땐? 이런상품 -->
-
-
-					
-					<!-- What’s in your bag -->
-					<div class="mc_cont mc_dep cur_new">
-						<h2 class="mc_tit">What’s<br>in your bag</h2>
-						<div class="cur_new_msg">
-							<p>핫트랙스의<br>내돈내산 찐템!</p>
-						</div>
-
-						<div class="wel_cont">
-							<!-- cur_new_img : 동영상일 경우 -->
-							<div class="cur_new_img cur_mov">
-								<p class="movie_frame">
-									<iframe src="https://www.youtube.com/embed/nBY0rwBvaSY"></iframe>
-								</p>
-							</div>
-							<!-- //cur_new_img : 동영상일 경우 -->
-							<!-- box_txt -->
-							<ul class="box_txt">
-								<li class="s1">
-									<p class="img"><img src="../../images/temp/@img_now04.jpg" alt=""></p>
-									<p>이것저것 하고 싶은 게 많은 MD <strong>이봉봉</strong></p>
-								</li>
-								<li class="s2">
-									<p class="t1"><strong>어지러운 가방 속, 질서가 필요하다면</strong></p>
-									<p>충전기, 볼펜, 이런저런 영수증까지 가득한 자유분방한  가방속을 조금 더 신경 써서 정리하기로 했어요.<br>칸이 나뉘어져 있고 가벼운 수납 파우치를 찾던 끝에 내린  결정은 툴 파우치였어요. 평범하지만 체계적인 가방 정리를  원한다면,  ALTNA 툴파우치를 추천해요.</p>
-								</li>
-							</ul>
-							<!-- //box_txt -->
-						</div>
-
-						<br><br>
+						<g transform="translate(156 0)">
+							<a href="#" class="service_mall_link">
+								<use href="../../images/guide/img_service_mall_tab_mok.svg#pathTab" fill="#06BBC0" stroke="rgba(0,0,0,0)" />
+							</a>
+							<text x="64" y="13" text-anchor="middle" fill="#fff" font-size="14"
+									pointer-events="none" dy=".5em"
+									font-family="Roboto" font-weight="700">sam</text>
+						</g>
 						
-						<div class="wel_cont">
-							<!-- cur_new_img : 이미지 일 경우 -->
-							<div class="cur_new_img">
-								<p><img src="../../images/temp/@img_cur_new01.jpg" alt=""></p>
-							</div>
-							<!-- //cur_new_img : 이미지 일 경우 -->
-							<!-- box_txt -->
-							<ul class="box_txt">
-								<li class="s1">
-									<p class="img"><img src="../../images/temp/@img_now04.jpg" alt=""></p>
-									<p>이것저것 하고 싶은 게 많은 MD <strong>이봉봉</strong></p>
-								</li>
-								<li class="s2">
-									<p class="t1"><strong>어지러운 가방 속, 질서가 필요하다면</strong></p>
-									<p>충전기, 볼펜, 이런저런 영수증까지 가득한 자유분방한  가방속을 조금 더 신경 써서 정리하기로 했어요.<br>칸이 나뉘어져 있고 가벼운 수납 파우치를 찾던 끝에 내린  결정은 툴 파우치였어요. 평범하지만 체계적인 가방 정리를  원한다면,  ALTNA 툴파우치를 추천해요.</p>
-								</li>
-							</ul>
-							<!-- //box_txt -->
-						</div>
-
-						<!-- li_s_ty02 -->
-						<ul class="li_s_ty02">
-							<!-- .li 반복 -->
-							<li class="li">
-								<a href="#n">
-									<p class="img"><img src="../../images/temp/@img_prod01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
-									<ul class="txt">
-										<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
-										<li class="s2">
-											<strong>69%</strong>
-											<span>1,234,000</span>
-											<em>1,299,000</em>
-										</li>
-									</ul>
-								</a>
-							</li>
-							<!-- //.li 반복 -->
-
-
-							<li class="li">
-								<a href="#n">
-									<p class="img"><img src="../../images/temp/@img_prod02.jpg" alt=""></p>
-									<ul class="txt">
-										<li class="s1">퍼니디 조구만 스튜디오 에코백 카툰 풍선 총</li>
-										<li class="s2">
-											<strong>69%</strong>
-											<span>13,950</span>
-											<em>1,299,000</em>
-										</li>
-									</ul>
-								</a>
-							</li>
-						</ul>
-						<!-- //li_s_ty02 -->
-					</div>
-					<!-- //What’s in your bag -->
-
-
-
-					<!-- mc_cont : 광고배너 -->
-					<div class="mc_cont wel_belt02">
-						<h2 class="hidden">광고배너</h2>
-						<!-- wel_belt_banner -->
-						<div class="wel_belt_banner">
-							<div class="swiper-container">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<a href="#n"><img src="../../images/temp/@img_belt_banner02.jpg" alt="모바일 첫 구매 3,000원 쿠폰"></a>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-pagination out_bottom"></div>
-						</div>
-						<!-- //wel_belt_banner -->
-					</div>
-					<!-- //mc_cont : 광고배너 -->
-				</div>
-				<!-- //큐레이션 메인 컨텐츠 -->
-
-
-
-			</section>
-		</main>
-		<!-- // 컨텐츠 -->
-
-		<!-- 푸터 -->
-		<footer class="footer_wrapper">
-			<div class="notice_wrap">
-				<span class="notice_text">공지사항</span>
-				<a href="#" class="notice_link">교보문고 개인정보 처리방침 개정안내</a>
-			</div>
-
-			<div class="footer_body">
-				<div class="logo_box">
-					<a href="#" class="logo_link">
-						<img src="../../images/guide/ico_logo.svg" alt="핫트랙스">
-					</a>
+						<g transform="translate(234 0)">
+							<a href="#" class="service_mall_link">
+								<use href="../../images/guide/img_service_mall_tab_mok.svg#pathTab" fill="#8F603D" stroke="rgba(0,0,0,0)" />
+							</a>
+							<text x="64" y="15" text-anchor="middle" fill="#fff" font-size="12"
+									pointer-events="none" dy=".5em"
+									font-family="Noto Sans KR" font-weight="700">매장안내</text>
+						</g>
+						<g transform="translate(312 0)">
+							<a href="#" class="service_mall_link">
+								<use href="../../images/guide/img_service_mall_tab_link_mok.svg#pathTabLink" />
+							</a>
+							<text x="64" y="15" text-anchor="middle" fill="#767676" font-size="12"
+									pointer-events="none" dy=".5em"
+									font-family="Noto Sans KR" font-weight="500">톡소다</text>
+						</g>
+						<g transform="translate(390 0)">
+							<a href="#" class="service_mall_link">
+								<use href="../../images/guide/img_service_mall_tab_link_mok.svg#pathTabLink" />
+							</a>
+							<text x="64" y="15" text-anchor="middle" fill="#767676" font-size="12"
+									pointer-events="none" dy=".5em"
+									font-family="Noto Sans KR" font-weight="500">스토리</text>
+						</g>
+					</svg>
 				</div>
 
-				<div class="footer_info_box">
-					<div class="info_text_multi">
-						<span class="info_text">대표이사 : 김상훈</span>
-						<span class="gap">|</span>
-						<address class="info_text">경기도 파주시 회동길 78(출판단지내)</address>
-					</div>
-					<span class="info_text">사업자등록번호 : 102-81-29258</span>
-					<span class="info_text">개인정보보호책임자 : 김상훈</span>
-					<span class="info_text"><span class="text_inner">통신판매업신고번호 : 제 2012-경기파주-3911호</span><a href="#" class="btn_footer_link">사업자정보확인</a></span>
-				</div>
+				<button type="button" class="btn_brand_more"><span class="hidden">브랜드 더보기</span></button>
 
-				<div class="footer_menu_box">
-					<ul class="footer_menu_list">
-						<li class="footer_menu_item"><a href="#" class="footer_menu_link">핫트합니다</a></li>
-						<li class="footer_menu_item"><a href="#" class="footer_menu_link">공지사항</a></li>
-						<li class="footer_menu_item privacy"><a href="#" class="footer_menu_link">개인정보처리방침</a></li>
-						<li class="footer_menu_item"><a href="#" class="footer_menu_link">이용약관</a></li>
+				<div class="brand_more_list_box">
+					<ul class="brand_more_list">
+						<li class="brand_more_item">
+							<a href="#" class="brand_more_link">
+								<span class="img_box"><img src="../../temporary/temp_brand_more_mok.png" alt="브랜드 임시 이미지"></span>
+								<span class="brand_name">교보문고</span>
+							</a>
+						</li>
+						<li class="brand_more_item">
+							<a href="#" class="brand_more_link">
+								<span class="img_box"><img src="../../temporary/temp_brand_more_mok.png" alt="브랜드 임시 이미지"></span>
+								<span class="brand_name">교보문고</span>
+							</a>
+						</li>
+						<li class="brand_more_item">
+							<a href="#" class="brand_more_link">
+								<span class="img_box"><img src="../../temporary/temp_brand_more_mok.png" alt="브랜드 임시 이미지"></span>
+								<span class="brand_name">교보문고</span>
+							</a>
+						</li>
+						<li class="brand_more_item">
+							<a href="#" class="brand_more_link">
+								<span class="img_box"><img src="../../temporary/temp_brand_more_mok.png" alt="브랜드 임시 이미지"></span>
+								<span class="brand_name">교보문고</span>
+							</a>
+						</li>
 					</ul>
 				</div>
+			</div>
+		</div>
+		<div class="gnb_search_wrap">
+			<div class="gnb_search_box">
+				<div class="search_input_wrap">
+					<input type="search" class="ip_gnb_search" title="통합검색어 입력" placeholder="이지성, 출간 즉시 종합 베스트!" />
+					<button type="button" class="btn_ip_clear"><span class="hidden">초기화</span></button>
+				</div>
+				<a href="#" class="btn_gnb_search"><span class="hidden">검색</span></a>
+			</div>
 
-				<div class="footer_call_box"><span class="call_text">대표전화</span><span class="call_num"><a href="tel:16661112">1666-1112</a></span> <br><span class="call_text_sm">(평일 09:00~18:00 점심시간 12:00~13:00 )</span></div>
+			<a href="#" class="btn_header_cart">
+				<span class="hidden">장바구니</span>
+				<!-- DESC :: 0개인경우 count 영역 미노출 / 최대 99 -->
+				<span class="count">99</span>
+			</a>
+		</div>
+	</header>
+	<!-- // 헤더 -->
 
-				<div class="copyright_box">
-					<div class="copyright">@Hottracks Centre</div>
-					<div class="sns_share_box">
-						<a href="#" class="btn_sns_share insta"><span class="hidden">instagram 공유</span></a>
-						<a href="#" class="btn_sns_share fb"><span class="hidden">facebook 공유</span></a>
-						<a href="#" class="btn_sns_share youtube"><span class="hidden">youtube 공유</span></a>
-						<a href="#" class="btn_sns_share twt"><span class="hidden">twitter 공유</span></a>
-						<a href="#" class="btn_sns_share blog"><span class="hidden">blog 공유</span></a>
-						
-					</div>
+	<!-- 컨텐츠 -->
+	<main id="containerWrapper" class="container_wrapper">
+		<section class="contents_wrap">
+
+
+
+			<!-- main_menu_wrap -->
+			<div class="main_menu_wrap">
+				<div class="main_menu_list_wrap sps sps_scroll_fixed wel_mc"><!-- 공통 확인 - class="wel_mc" : 임시 -->
+					<ul class="menu_list">
+						<li class="menu_list_item marker">
+							<a href="#" class="menu_link"><img src="../../images/main/ico_main_menu_music.svg" alt="">음반·영상</a><!-- 음반영상 탭에만 우선 -->
+						</li>
+						<li class="menu_list_item marker">
+							<a href="#" class="menu_link">다이어리</a>
+						</li>
+						<li class="menu_list_item">
+							<a href="#" class="menu_link">스티커샵</a>
+						</li>
+						<li class="menu_list_item">
+							<a href="#" class="menu_link">필기구</a>
+						</li>
+						<li class="menu_list_item">
+							<a href="#" class="menu_link">크리스마스</a>
+						</li>
+						<li class="menu_list_item">
+							<a href="#" class="menu_link">가변구좌</a>
+						</li>
+					</ul>
 				</div>
 			</div>
+			<!-- //main_menu_wrap -->
+			
 
-		</footer>
-		<!-- // 푸터 -->
+			<!-- 큐레이션 메인 컨텐츠 -->
+			<div class="wel_main_wrap">
+				<!-- hero_box -->
+				<div class="hero_box">
+					<p class="hero_txt"><strong>김미미님</strong>을 위한</p>
+					<ul class="hero_tab">
+						<li><a href="#" class="on"><span>취향발견</span></a></li><!-- 활성화 class="on" -->
+						<li><a href="#"><span>맞춤추천</span></a></li>
+					</ul>		
+				</div>
+				<!-- //hero_box -->
 
-		<!-- 독바 -->
-		<section class="docker_wrapper">
-			<!-- 탑버튼 -->
-			<div class="floating_wrapper">
-				<a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
+
+
+				<!-- 라이프스타일 -->
+				<div class="mc_cont wel_curation">
+					<p class="cur_eyebrow"><span><em>라이프스타일</em></span></p>
+					<h2 class="mc_tit"><img src="../../images/main/tit_wel_curation.svg" alt="큐레이션"></h2>
+
+					<!-- wel_curation_cont -->
+					<div class="wel_curation_cont">
+						<!-- curation_img -->
+						<div class="swiper-conainer curation_img">
+							<div class="swiper-wrapper">
+								<!-- swiper-slide : 반복 -->
+								<div class="swiper-slide">
+									<!-- HTML 영역 : class="curation_box" -->
+									<div class="curation_box">
+										<!-- curation_cont -->
+										<div class="curation_cont c1"><!-- 컬러타입 : class="c1" 관리자 미정 -->
+											<p class="img"><img src="../../images/temp/@img_curation01.jpg" alt=""></p>
+											<a href="javascript:alert('큐레이션 상세페이지');" class="btn_cur_view"><span class="hidden">상세보기</span></a>
+
+											<!-- curation_marker -->
+											<ul class="curation_marker">
+												<li class="li" style="left:55%;top:27%;">
+													<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+													<ul class="curation_tooltip ct_lt">
+														<!-- 기본 : 우측하단 툴팁
+															.ct_rt : 우측상단 툴팁 
+															.ct_lb : 좌측하단 툴팁
+															.ct_lt : 좌측상단 툴팁
+														-->
+														<li class="s1">옐로우 사각 코튼<br>쿠션 커버</li>
+														<li class="s2">
+															<strong>50%</strong>
+															<span>134,000</span>
+															<em>129,000</em>
+														</li>
+														<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
+													</ul>
+												</li>
+												<li class="li on" style="left:78%;top:65%;">
+													<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+													<ul class="curation_tooltip ct_lb">
+														<li class="s1">옐로우 사각 코튼<br>쿠션 커버</li>
+														<li class="s2">
+															<strong>50%</strong>
+															<span>134,000</span>
+															<em>129,000</em>
+														</li>
+														<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
+													</ul>
+												</li>
+												<li class="li" style="left:6%;top:70%;">
+													<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+													<ul class="curation_tooltip">
+														<li class="s1">옐로우 사각 코튼<br>쿠션 커버</li>
+														<li class="s2">
+															<strong>50%</strong>
+															<span>134,000</span>
+															<em>129,000</em>
+														</li>
+														<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
+													</ul>
+												</li>
+											</ul>
+											<!-- //curation_marker -->
+										</div>
+										<!-- //curation_cont -->
+									</div>
+									<!-- //HTML 영역 : class="curation_box" -->
+								</div>
+								<!-- //swiper-slide : 반복 -->
+
+
+								<div class="swiper-slide">
+									<div class="curation_box">
+										<!-- curation_cont -->
+										<div class="curation_cont c2">
+											<p class="img"><img src="../../images/temp/@img_curation02.jpg" alt=""></p>
+											<a href="javascript:alert('큐레이션 상세페이지');" class="btn_cur_view"><span class="hidden">상세보기</span></a>
+											
+											<!-- curation_marker -->
+											<ul class="curation_marker">
+												<li class="li" style="left:58%;top:48%;">
+													<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+													<ul class="curation_tooltip ct_lb">
+														<li class="s1">2022 캘린더 레트로<br>감성 일력</li>
+														<li class="s2">
+															<strong>50%</strong>
+															<span>134,000</span>
+															<em>129,000</em>
+														</li>
+														<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
+													</ul>
+												</li>
+												<li class="li" style="left:21%;top:40%;">
+													<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+													<ul class="curation_tooltip">
+														<li class="s1">2022 캘린더 레트로<br>감성 일력</li>
+														<li class="s2">
+															<strong>50%</strong>
+															<span>134,000</span>
+															<em>129,000</em>
+														</li>
+														<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
+													</ul>
+												</li>
+												<li class="li on" style="left:59%;top:76%;">
+													<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+													<ul class="curation_tooltip ct_lt">
+														<li class="s1">2022 캘린더 레트로<br>감성 일력</li>
+														<li class="s2">
+															<strong>50%</strong>
+															<span>134,000</span>
+															<em>129,000</em>
+														</li>
+														<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
+													</ul>
+												</li>
+											</ul>
+											<!-- //curation_marker -->
+										</div>
+										<!-- //curation_cont -->
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="curation_box">
+										<!-- curation_cont -->
+										<div class="curation_cont c3">
+											<p class="img"><img src="../../images/temp/@img_curation03.jpg" alt=""></p>
+											<a href="javascript:alert('큐레이션 상세페이지');" class="btn_cur_view"><span class="hidden">상세보기</span></a>
+
+											<!-- curation_marker -->
+											<ul class="curation_marker">
+												<li class="li" style="left:45%;top:48%;">
+													<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+													<ul class="curation_tooltip">
+														<li class="s1">스트로베리 버킹엄 체크<br>UV차단 우양산</li>
+														<li class="s2">
+															<strong>50%</strong>
+															<span>134,000</span>
+															<em>129,000</em>
+														</li>
+														<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
+													</ul>
+												</li>
+												<li class="li on" style="left:63%;top:71%;">
+													<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+													<ul class="curation_tooltip ct_lb">
+														<li class="s1">스트로베리 버킹엄 체크<br>UV차단 우양산</li>
+														<li class="s2">
+															<strong>50%</strong>
+															<span>134,000</span>
+															<em>129,000</em>
+														</li>
+														<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
+													</ul>
+												</li>
+												<li class="li" style="left:10%;top:37%;">
+													<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+													<ul class="curation_tooltip">
+														<li class="s1">스트로베리 버킹엄 체크<br>UV차단 우양산</li>
+														<li class="s2">
+															<strong>50%</strong>
+															<span>134,000</span>
+															<em>129,000</em>
+														</li>
+														<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
+													</ul>
+												</li>
+											</ul>
+											<!-- //curation_marker -->
+										</div>
+										<!-- //curation_cont -->
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="curation_box">
+										<!-- curation_cont -->
+										<div class="curation_cont c4">
+											<p class="img"><img src="../../images/temp/@img_curation04.jpg" alt=""></p>
+											<a href="javascript:alert('큐레이션 상세페이지');" class="btn_cur_view"><span class="hidden">상세보기</span></a>
+											
+											<!-- curation_marker -->
+											<ul class="curation_marker">
+												<li class="li" style="left:23%;top:59%;">
+													<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+													<ul class="curation_tooltip">
+														<li class="s1">굿네이버스 손잡이 보틀 500ml</li>
+														<li class="s2">
+															<strong>50%</strong>
+															<span>134,000</span>
+															<em>129,000</em>
+														</li>
+														<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
+													</ul>
+												</li>
+												<li class="li" style="left:23%;top:29%;">
+													<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+													<ul class="curation_tooltip">
+														<li class="s1">굿네이버스 손잡이 보틀 500ml</li>
+														<li class="s2">
+															<strong>50%</strong>
+															<span>134,000</span>
+															<em>129,000</em>
+														</li>
+														<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
+													</ul>
+												</li>
+												<li class="li on" style="left:77%;top:58%;">
+													<button class="curation_btn" onclick="curation_btn(this);"><span class="hidden">버튼</span></button>
+													<ul class="curation_tooltip ct_lb">
+														<li class="s1">굿네이버스 손잡이 보틀 500ml</li>
+														<li class="s2">
+															<strong>50%</strong>
+															<span>134,000</span>
+															<em>129,000</em>
+														</li>
+														<li><a href="javascript:alert('상품링크');"><span class="hidden">자세히 보기</span></a></li>
+													</ul>
+												</li>
+											</ul>
+											<!-- //curation_marker -->
+										</div>
+										<!-- //curation_cont -->
+									</div>
+								</div>
+
+							</div> 
+						</div>
+						<!-- //curation_img -->
+						<!-- curation_thumb -->
+						<div class="swiper-conainer curation_thumb">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide c1"><!-- 컬러타입 : class="c1" 관리자 추후협의 -->
+									<span>#만원의행복</span>
+								</div>
+								<div class="swiper-slide c2">
+									<span>#나를 위한 계획 세우기</span>
+								</div>
+								<div class="swiper-slide c3">
+									<span>#소풍아이템</span>
+								</div>
+								<div class="swiper-slide c4">
+									<span>#바프준비</span>
+								</div>
+							</div> 
+						</div>
+						<!-- //curation_thumb -->
+					</div>
+					<!-- //wel_curation_cont -->
+
+					<!--<button class="btn_more_view"><span><em class="hidden">라이프스타일 큐레이션</em>더보기</span></button> 삭제 -->
+				</div>
+				<!-- //라이프스타일 -->
+
+
+
+				<!-- 이럴 땐? 이런상품 -->
+				<div class="mc_cont cur_prod">
+					<h2 class="mc_tit">이럴 땐? 이런상품 <img src="../../images/main/tit_cur_prod.svg" alt=""></h2>
+
+					<!-- tab_swiper -->
+					<div class="tab_swiper tab_ty ty03 tab_link"><!-- tab_link / tab_cont : 확인용 - Ajax 처리 필요없을 시 해당 class 삭제 -->
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#cur_prod01" class="on"><!-- 활성화  class="on" -->
+									<span>계절특유의 온도</span>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#cur_prod02">
+									<span>결혼하는 나의 베프에게</span>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#n">
+									<span>번아웃 직전</span>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#n">
+									<span>3분힐링템</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //tab_swiper -->
+
+					<!-- cur_prod_list -->
+					<div class="cur_prod_list tab_cont on" id="cur_prod01"><!-- tab_link / tab_cont .on : 확인용 - Ajax 처리 필요없을 시 해당 class 삭제 -->
+						<!-- li_resp_ty -->
+						<ul class="li_resp_ty ty02">
+							<li class="li">
+								<a href="#n">
+									<p class="img"><img src="../../images/temp/@img_prod_boxB3.jpg" alt=""></p>
+									<ul class="txt">
+										<li class="s1">계절 특유의 온도</li>
+										<li class="s2">손이 닿는 곳곳마다 따듯함을 더해 줄 존재가 항상 있을 수 있기를</li>
+										<li class="s3">
+											<span class="ico_marker">#집콕생활</span>
+											<span class="ico_marker">#충전완료</span>
+											<span class="ico_marker">#힐링이필요해</span>
+										</li>
+									</ul>
+								</a>
+							</li>
+						</ul>
+						<!-- //li_resp_ty -->
+
+						<!-- cur_prod_img -->
+						<div class="cur_prod_img wel_cont">
+							<ul class="swiper-wrapper">
+								<!-- li.swiper-slide 반복 -->
+								<li class="swiper-slide">
+									<a href="#n" data-role="btn-dialog" data-target="#popProd">
+										<p class="img"><img src="../../images/temp/@img_prod01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
+									</a>
+								</li>
+								<!-- //li.swiper-slide 반복 -->
+
+
+								<li class="swiper-slide">
+									<a href="#n" data-role="btn-dialog" data-target="#popProd">
+										<p class="img"><img src="../../images/temp/@img_prod02.jpg" alt=""></p>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="#n" data-role="btn-dialog" data-target="#popProd"></a>
+										<p class="img"><img src="../../images/temp/@img_prod03.jpg" alt=""></p>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="#n" data-role="btn-dialog" data-target="#popProd"></a>
+										<p class="img"><img src="../../images/temp/@img_prod04.jpg" alt=""></p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- //cur_prod_img -->
+					</div>
+					<!-- //cur_prod_list -->
+
+					<!-- cur_prod_list : 확인용 -->
+					<div class="cur_prod_list tab_cont" id="cur_prod02">
+						<p style="height:300px;background-color:#eee;border-radius:8px;">
+					</div>
+					<!-- //cur_prod_list : 확인용 -->
+				</div>
+				<!-- //이럴 땐? 이런상품 -->
+
+
+				
+				<!-- What’s in your bag -->
+				<div class="mc_cont mc_dep cur_new">
+					<h2 class="mc_tit">What’s<br>in your bag</h2>
+					<div class="cur_new_msg">
+						<p>핫트랙스의<br>내돈내산 찐템!</p>
+					</div>
+
+					<div class="wel_cont">
+						<!-- cur_new_img : 동영상일 경우 -->
+						<div class="cur_new_img cur_mov">
+							<p class="movie_frame">
+								<iframe src="https://www.youtube.com/embed/nBY0rwBvaSY"></iframe>
+							</p>
+						</div>
+						<!-- //cur_new_img : 동영상일 경우 -->
+						<!-- box_txt -->
+						<ul class="box_txt">
+							<li class="s1">
+								<p class="img"><img src="../../images/temp/@img_now04.jpg" alt=""></p>
+								<p>이것저것 하고 싶은 게 많은 MD <strong>이봉봉</strong></p>
+							</li>
+							<li class="s2">
+								<p class="t1"><strong>어지러운 가방 속, 질서가 필요하다면</strong></p>
+								<p>충전기, 볼펜, 이런저런 영수증까지 가득한 자유분방한  가방속을 조금 더 신경 써서 정리하기로 했어요.<br>칸이 나뉘어져 있고 가벼운 수납 파우치를 찾던 끝에 내린  결정은 툴 파우치였어요. 평범하지만 체계적인 가방 정리를  원한다면,  ALTNA 툴파우치를 추천해요.</p>
+							</li>
+						</ul>
+						<!-- //box_txt -->
+					</div>
+
+					<br><br>
+					
+					<div class="wel_cont">
+						<!-- cur_new_img : 이미지 일 경우 -->
+						<div class="cur_new_img">
+							<p><img src="../../images/temp/@img_cur_new01.jpg" alt=""></p>
+						</div>
+						<!-- //cur_new_img : 이미지 일 경우 -->
+						<!-- box_txt -->
+						<ul class="box_txt">
+							<li class="s1">
+								<p class="img"><img src="../../images/temp/@img_now04.jpg" alt=""></p>
+								<p>이것저것 하고 싶은 게 많은 MD <strong>이봉봉</strong></p>
+							</li>
+							<li class="s2">
+								<p class="t1"><strong>어지러운 가방 속, 질서가 필요하다면</strong></p>
+								<p>충전기, 볼펜, 이런저런 영수증까지 가득한 자유분방한  가방속을 조금 더 신경 써서 정리하기로 했어요.<br>칸이 나뉘어져 있고 가벼운 수납 파우치를 찾던 끝에 내린  결정은 툴 파우치였어요. 평범하지만 체계적인 가방 정리를  원한다면,  ALTNA 툴파우치를 추천해요.</p>
+							</li>
+						</ul>
+						<!-- //box_txt -->
+					</div>
+
+					<!-- li_s_ty02 -->
+					<ul class="li_s_ty02">
+						<!-- .li 반복 -->
+						<li class="li">
+							<a href="#n">
+								<p class="img"><img src="../../images/temp/@img_prod01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
+								<ul class="txt">
+									<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+									<li class="s2">
+										<strong>69%</strong>
+										<span>1,234,000</span>
+										<em>1,299,000</em>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<!-- //.li 반복 -->
+
+
+						<li class="li">
+							<a href="#n">
+								<p class="img"><img src="../../images/temp/@img_prod02.jpg" alt=""></p>
+								<ul class="txt">
+									<li class="s1">퍼니디 조구만 스튜디오 에코백 카툰 풍선 총</li>
+									<li class="s2">
+										<strong>69%</strong>
+										<span>13,950</span>
+										<em>1,299,000</em>
+									</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+					<!-- //li_s_ty02 -->
+				</div>
+				<!-- //What’s in your bag -->
+
+
+
+				<!-- mc_cont : 광고배너 -->
+				<div class="mc_cont wel_belt02">
+					<h2 class="hidden">광고배너</h2>
+					<!-- wel_belt_banner -->
+					<div class="wel_belt_banner">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#n"><img src="../../images/temp/@img_belt_banner02.jpg" alt="모바일 첫 구매 3,000원 쿠폰"></a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination out_bottom"></div>
+					</div>
+					<!-- //wel_belt_banner -->
+				</div>
+				<!-- //mc_cont : 광고배너 -->
 			</div>
-			<!-- // 탑버튼 -->
+			<!-- //큐레이션 메인 컨텐츠 -->
 
-			<ul class="docker_list">
-				<li class="docker_item"><a href="#" class="btn_docker_home"><span class="hidden">홈</span></a></li>
-				<li class="docker_item"><a href="#" class="btn_docker_search"><span class="hidden">검색</span></a></li>
-				<!-- DESC : 로그인 후 li.docker_item [ login ] class 추가 -->
-				<li class="docker_item my">
-					<a href="#" class="btn_docker_my">
-						<span class="img_box">
-							<img src="../../temporary/temp_docker_login_mok.png" alt="마이룸 임시이미지" />
-						</span>
-						<span class="hidden">마이룸</span>
-					</a>
-				</li>
-				<li class="docker_item"><a href="#" class="btn_docker_history"><span class="hidden">최근본상품</span></a></li>
-				<li class="docker_item"><a href="#" class="btn_docker_menu"><span class="hidden">전체메뉴</span></a></li>
-			</ul>
+
+
 		</section>
-		<!-- // 독바 -->
+	</main>
+	<!-- // 컨텐츠 -->
+
+	<!-- 푸터 -->
+	<footer class="footer_wrapper">
+		<div class="notice_wrap">
+			<span class="notice_text">공지사항</span>
+			<a href="#" class="notice_link">교보문고 개인정보 처리방침 개정안내</a>
+		</div>
+
+		<div class="footer_body">
+			<div class="logo_box">
+				<a href="#" class="logo_link">
+					<img src="../../images/guide/ico_logo.svg" alt="핫트랙스">
+				</a>
+			</div>
+
+			<div class="footer_info_box">
+				<div class="info_text_multi">
+					<span class="info_text">대표이사 : 김상훈</span>
+					<span class="gap">|</span>
+					<address class="info_text">경기도 파주시 회동길 78(출판단지내)</address>
+				</div>
+				<span class="info_text">사업자등록번호 : 102-81-29258</span>
+				<span class="info_text">개인정보보호책임자 : 김상훈</span>
+				<span class="info_text"><span class="text_inner">통신판매업신고번호 : 제 2012-경기파주-3911호</span><a href="#" class="btn_footer_link">사업자정보확인</a></span>
+			</div>
+
+			<div class="footer_menu_box">
+				<ul class="footer_menu_list">
+					<li class="footer_menu_item"><a href="#" class="footer_menu_link">핫트합니다</a></li>
+					<li class="footer_menu_item"><a href="#" class="footer_menu_link">공지사항</a></li>
+					<li class="footer_menu_item privacy"><a href="#" class="footer_menu_link">개인정보처리방침</a></li>
+					<li class="footer_menu_item"><a href="#" class="footer_menu_link">이용약관</a></li>
+				</ul>
+			</div>
+
+			<div class="footer_call_box"><span class="call_text">대표전화</span><span class="call_num"><a href="tel:16661112">1666-1112</a></span> <br><span class="call_text_sm">(평일 09:00~18:00 점심시간 12:00~13:00 )</span></div>
+
+			<div class="copyright_box">
+				<div class="copyright">@Hottracks Centre</div>
+				<div class="sns_share_box">
+					<a href="#" class="btn_sns_share insta"><span class="hidden">instagram 공유</span></a>
+					<a href="#" class="btn_sns_share fb"><span class="hidden">facebook 공유</span></a>
+					<a href="#" class="btn_sns_share youtube"><span class="hidden">youtube 공유</span></a>
+					<a href="#" class="btn_sns_share twt"><span class="hidden">twitter 공유</span></a>
+					<a href="#" class="btn_sns_share blog"><span class="hidden">blog 공유</span></a>
+					
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- // 푸터 -->
+
+	<!-- 독바 -->
+	<section class="docker_wrapper">
+		<!-- 탑버튼 -->
+		<div class="floating_wrapper">
+			<a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
+		</div>
+		<!-- // 탑버튼 -->
+
+		<ul class="docker_list">
+			<li class="docker_item"><a href="#" class="btn_docker_home"><span class="hidden">홈</span></a></li>
+			<li class="docker_item"><a href="#" class="btn_docker_search"><span class="hidden">검색</span></a></li>
+			<!-- DESC : 로그인 후 li.docker_item [ login ] class 추가 -->
+			<li class="docker_item my">
+				<a href="#" class="btn_docker_my">
+					<span class="img_box">
+						<img src="../../temporary/temp_docker_login_mok.png" alt="마이룸 임시이미지" />
+					</span>
+					<span class="hidden">마이룸</span>
+				</a>
+			</li>
+			<li class="docker_item"><a href="#" class="btn_docker_history"><span class="hidden">최근본상품</span></a></li>
+			<li class="docker_item"><a href="#" class="btn_docker_menu"><span class="hidden">전체메뉴</span></a></li>
+		</ul>
+	</section>
+	<!-- // 독바 -->
+</div>
+<!-- // wrapper -->
+
+
+
+<script>
+$(function(){
+	$('#popProd').dialog({
+		//autoOpen: true
+	});
+});
+</script>
+
+<!-- 이럴 땐? 이런상품 -->
+<div id="popProd" class="dialog_wrap no_title" data-class="dialog_full">
+	<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+	<!-- dialog_header -->
+	<!--<div class="dialog_header">
+		<div class="dialog_title">이 구매자의 첫 리뷰 보기</div>
+	</div>-->
+	<!-- //dialog_header -->
+	
+	<!-- dialog_contents -->
+	<div class="dialog_contents">
+		<h2 class="mc_tit02"># 힐링이필요해</h2>
+
+		<!-- prod_list -->
+		<ul class="prod_list">
+			<!-- .li 반복 -->
+			<li class="li">
+				<a href="#n">
+					<div class="img">
+						<img src="../../images/temp/@img_prod01.jpg" alt="">
+						<p class="prod_like_count active"><span>999+</span></p><!-- 좋아요 활성화 class="active" -->
+						<!-- prod_soldout_msg -->
+						<!--<div class="prod_soldout_msg">
+							<div class="prod_soldout_msg_txt">
+								<p>아쉽지만<br>품절이에요!</p>
+								<span>대체상품</span>
+							</div>
+						</div>-->
+						<!-- //prod_soldout_msg -->
+					</div>
+					<ul class="txt">
+						<!--<li class="s0">dretec</li>-->
+						<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+						<li class="s2">
+							<strong>50%</strong>
+							<span>134,000</span>
+							<em>129,000</em>
+						</li>
+						<!--<li class="ico_marker_area">
+							<span class="ico_marker on">쿠폰</span>
+							<span class="ico_marker">사은품</span>
+							<span class="ico_marker">무료배송</span>
+						</li>-->
+					</ul>
+				</a>
+			</li>
+			<!-- //.li 반복 -->
+
+
+			<li class="li">
+				<a href="#n">
+					<div class="img">
+						<img src="../../images/temp/@img_prod02.jpg" alt="">
+						<p class="prod_like_count"><span>999+</span></p>
+					</div>
+					<ul class="txt">
+						<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+						<li class="s2">
+							<strong>50%</strong>
+							<span>134,000</span>
+							<em>129,000</em>
+						</li>
+					</ul>
+				</a>
+			</li>
+			<li class="li">
+				<a href="#n">
+					<div class="img">
+						<img src="../../images/temp/@img_prod03.jpg" alt="">
+						<p class="prod_like_count"><span>999+</span></p>>
+
+					</div>
+					<ul class="txt">
+						<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+						<li class="s2">
+							<strong>50%</strong>
+							<span>134,000</span>
+							<em>129,000</em>
+						</li>
+					</ul>
+				</a>
+			</li>
+			<li class="li">
+				<a href="#n">
+					<div class="img">
+						<img src="../../images/temp/@img_prod04.jpg" alt="">
+						<p class="prod_like_count"><span>999+</span></p>
+					</div>
+					<ul class="txt">
+						<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+						<li class="s2">
+							<strong>50%</strong>
+							<span>134,000</span>
+							<em>129,000</em>
+						</li>
+					</ul>
+				</a>
+			</li>
+			<li class="li">
+				<a href="#n">
+					<div class="img">
+						<img src="../../images/temp/@img_prod05.jpg" alt="">
+						<p class="prod_like_count"><span>999+</span></p>
+					</div>
+					<ul class="txt">
+						<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+						<li class="s2">
+							<strong>50%</strong>
+							<span>134,000</span>
+							<em>129,000</em>
+						</li>
+					</ul>
+				</a>
+			</li>
+			<li class="li">
+				<a href="#n">
+					<div class="img">
+						<img src="../../images/temp/@img_prod06.jpg" alt="">
+						<p class="prod_like_count"><span>999+</span></p>
+					</div>
+					<ul class="txt">
+						<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+						<li class="s2">
+							<strong>50%</strong>
+							<span>134,000</span>
+							<em>129,000</em>
+						</li>
+					</ul>
+				</a>
+			</li>
+		</ul>
+		<!-- //prod_list  -->
+
+		<button class="btn_more_view"><span><em class="hidden">잊고 있는 그 상품</em>더보기</span></button>
 	</div>
-	<!-- // wrapper -->
+	<!-- //dialog_contents -->
+</div>
+<!-- //이럴 땐? 이런상품 -->					
 </body>
 </html>
