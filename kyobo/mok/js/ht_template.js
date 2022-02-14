@@ -729,6 +729,36 @@ $(function(){
 
 
 
+
+
+/* 오늘만 특가 */
+function gifNeed(){
+    var $target = $('.gif_need_cont  .swiper-container');
+    var slideOption = {
+        observer: true,
+        observeParents: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        loop: true,
+        loopsSlide: 1,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        speed: 700,
+		pagination: false,
+    };
+    gifNeedSwiper = new Swiper($target.get(), slideOption);
+}
+
+$(function(){
+    if(!$('.gif_need_cont').length) return;
+    gifNeed();
+});
+
+
+
 /* */
 function gifQuestion(){
     var $target = $('.gif_question_cont .swiper-container');
