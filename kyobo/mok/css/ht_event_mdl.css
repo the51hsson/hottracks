@@ -9717,13 +9717,7 @@ input[type=number] {
   background: url(../images/guide/calender_day_bg.svg) no-repeat center center/contain;
 }
 
-.calender_wrap .table_wrap .calender_tb td .attended_before {
-  width: 100%;
-  height: 100%;
-  background: url(../images/guide/calender_attend.svg) no-repeat center center/contain;
-}
-
-.calender_wrap .table_wrap .calender_tb td .attended {
+.calender_wrap .table_wrap .calender_tb td .on {
   width: 100%;
   height: 100%;
   background: url(../images/guide/calender_attend_active.svg) no-repeat center center/contain;
@@ -9758,6 +9752,7 @@ input[type=number] {
   border-radius: 4px;
   line-height: 21px;
   font-size: 15px;
+  font-weight: 900;
   color: #fff;
 }
 
