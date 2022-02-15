@@ -402,9 +402,9 @@ body {
         }
     }
     &.ty02 {
-        margin-top:-24px;
+        width:100%;margin-top:-24px;
         .li {
-            width:calc(100% - 20px);margin-top:24px;overflow:hidden;display:flex;justify-content:flex-start;align-items:center;flex-flow:row wrap;
+            width:calc(100% - 20px);margin-top:24px;display:flex;justify-content:flex-start;align-items:center;flex-flow:row wrap;
         }
         a {
             display:flex;width:100%;justify-content:flex-start;align-items:center;flex-flow:row wrap;
@@ -416,6 +416,40 @@ body {
             width:calc(50% - 10px);
         }
     }
+
+
+    .replace_prod_swap {
+        z-index:5;max-width:750px;
+        &:before {
+            z-index:1;
+        }
+    }
+    .li:nth-child(2n) {
+        .replace_prod_swap {
+            margin-right: 0;
+            margin-left:calc(-100% - 40px);
+            &:before {
+                content: "";
+                position: absolute;
+                left: calc(100% - 40px);
+            }
+        }
+    }
+    &.ty02 {
+        width:100%;
+        .replace_prod_swap {
+            margin:30px -20px 0 -20px;
+        }
+        .li:nth-child(2n) {
+            .replace_prod_swap {
+                margin:30px -20px 0 -20px;
+                &:before {
+                    left:20px;
+                }
+            }
+        }
+    }
+
 }
 .ico_marker_area {
     margin-top:10px;
