@@ -307,56 +307,7 @@ input[type=number] {
 			background-color: #fff;
 		}
 	}
-	// .option_box {
-	// 	    display:none; 
-	// 		position: absolute;
-	// 		right:20px;
-	// 		bottom:20px;
-	// 		z-index: 1;
-	// 		display: flex;
 
-	// }
-	// .swiper-pagination.swiper-pagination-fraction {
-	// 		position: static;
-	// 		height: 25px;
-	// 		transform: translateX(0);
-	// 		background-color: rgba(0, 0, 0, 0.3);
-	// 		.swiper-pagination-current,
-	// 		.swiper-pagination-total {
-	// 				line-height: 25px;
-	// 		}
-	// }
-	// .play_pause_box {
-	// 		margin-right: 4px;
-	// 		[class^=btn_] {
-	// 				display: block;
-	// 				width: 25px;
-	// 				height: 25px;
-	// 				border-radius: 50%;
-	// 		}
-	// 		.btn_play {
-	// 				background:rgba(0,0,0,.3) url(../images/guide/ico_play.svg) no-repeat 50% / 7px;
-	// 		}
-	// 		.btn_pause {
-	// 				background:rgba(0,0,0,.3) url(../images/guide/ico_pause.svg) no-repeat 50% / 5px;
-	// 		}
-	// 		&.play {
-	// 				.btn_play {
-	// 						display: none;
-	// 				}
-	// 				.btn_pause {
-	// 						display: block;
-	// 				}
-	// 		}
-	// 		&.pause {
-	// 				.btn_play {
-	// 						display: block;
-	// 				}
-	// 				.btn_pause {
-	// 						display: none;
-	// 				}
-	// 		}
-	// }
 }
 /*===============     모듈 002 영역(앵커 메뉴)   ==================*/
 /*=======================     모듈 006 영역   =====================*/
@@ -985,7 +936,7 @@ input[type=number] {
 		border-radius: 4px;
 		line-height: 21px;
 		font-size: 15px;
-		font-weight: 900;
+		font-weight: 900 ;
 		color:#fff;
 	}
 }

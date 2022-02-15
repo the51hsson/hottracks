@@ -6,25 +6,6 @@
 @import "_ht_header.scss"; // todo : layout으로 추가 할 것
 @import "_ht_products.scss";
 
-// Font : Gmarket Sans
-// @font-face {
-// 	font-family:'Gmarket Sans';font-style:normal;font-weight:700;
-// 	src:local('Gmarket Sans Bold'), local('GmarketSans-Bold'),
-// 	url('../font/GmarketSansBold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-// 	url('../font/GmarketSansBold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-// }
-// @font-face {
-// 	font-family:'Gmarket Sans';font-style:normal;font-weight:500;
-// 	src:local('Gmarket Sans Medium'), local('GmarketSans-Medium'),
-// 	url('../font/GmarketSansMedium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-// 	url('../font/GmarketSansMedium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-// }
-// @font-face {
-// 	font-family:'Gmarket Sans';font-style:normal;font-weight:300;
-// 	src:local('Gmarket Sans Light'), local('GmarketSans-Light'),
-// 	url('../font/GmarketSansLight.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-// 	url('../font/GmarketSansLight.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-// }
 .wrap{
     .tit{
         padding:0 20px;
@@ -225,76 +206,21 @@
     }
 }
 //상품 리스트 영역
-ul.prod-wrapper.column_dir {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content:space-between;
-	align-items: flex-start;
-	align-content: flex-start;
-    padding:0;
- .prod_item {
-	width: calc((100% - 20px)/2);
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: flex-start;
-	cursor:pointer;
-	margin-top:20px;
-	&:nth-of-type(1),
-	&:nth-of-type(2){
-		margin-top:0;
-	}
-	&:last-of-type{
-		margin-right:0;
-	}
- }
- .product_pic {
-	 width:100%;
-	 padding-top: 100%;
- }
-
-}
-ul.prod-wrapper.row_dir {
-    margin-top:20px;
-    padding:20px 20px 0 20px;
-	.prod_item{ 
-        position:relative;
-		margin:0;
-		margin-top:40px;
-        display: flex;
-		flex-flow: row nowrap;
-		justify-content: flex-start;
-		align-content: center;
-		align-items: center;
-		cursor:pointer;
-		span {
-			display: block;
-		}
-		&:first-of-type {
-			margin-top:0;
-		}
-	}
-    .product_pic {
-        position:relative;
-        width:158px;
-        height:0;
-        padding-top:158px;
-        overflow: hidden;
-        flex-shrink: 0;
-        margin-bottom:0;
-        img{
-            width:100%;
-            position:absolute;
-            top:0;
-            left:0;
+.list_block {
+    .evt_products.row_dir {
+        margin-top:20px;
+        padding:20px 20px 0 20px;
+        .prod_item {
+            position:relative;
         }
-    } 			
-    .product_info {
-        flex-grow:1;
-        padding-left:19px;
-    }
-    .title {
-        margin-bottom:8px;
-    }
+		.product_pic {
+            width:158px;
+            padding-top:158px;
+        }
+		.product_info {
+			width:calc(100% - 158px);
+		}
+    }    
 }
 //랭킹
 .list_section{
@@ -389,12 +315,11 @@ ul.prod-wrapper.row_dir {
 
 //말풍선(한줄 정렬)
 .list_block {
-    position:relative;
-    
+    position:relative;  
     .ranking_bubble_area {
         position:absolute;
         right:0;
-        bottom:145px;
+        bottom:40%;
         padding-right:40px;
         z-index:10;
         .rank_icon{

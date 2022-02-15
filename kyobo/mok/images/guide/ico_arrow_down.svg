@@ -1,3 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5">
-  <path id="arrow" d="M832.5,80.35a.5.5,0,0,1-.354-.146l-4-4a.5.5,0,0,1,.707-.707l3.646,3.646,3.646-3.646a.5.5,0,0,1,.707.707l-4,4A.5.5,0,0,1,832.5,80.35Z" transform="translate(837 80.35) rotate(180)" fill="#595959"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="more_B_btn_def" transform="translate(-52.819 -2.281)">
+    <g id="타원_18" data-name="타원 18" transform="translate(52.819 2.281)" fill="#fff" stroke="#ccc" stroke-width="1">
+      <circle cx="10" cy="10" r="10" stroke="none"/>
+      <circle cx="10" cy="10" r="9.5" fill="none"/>
+    </g>
+    <path id="패스_67" data-name="패스 67" d="M831.5,79.35a.5.5,0,0,1-.354-.146l-3-3a.5.5,0,0,1,.707-.707l2.646,2.646,2.646-2.646a.5.5,0,0,1,.707.707l-3,3A.5.5,0,0,1,831.5,79.35Z" transform="translate(-768.682 -64.568)" fill="#595959"/>
+  </g>
 </svg>

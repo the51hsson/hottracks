@@ -64,6 +64,26 @@
 </head>
 
 <body>
+    <!-- wrapper -->
+    <div class="ht_ wrapper contents_detail_view">
+        <header id="headerWrapper" class="ht_ header_wrapper">
+            <div class="header_left">
+                <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
+            </div>
+            <div class="header_center">
+                <div class="page_title prod_detail"></div>
+            </div>
+            <div class="header_right">
+                <!-- DESC : 상품정보 부터 검색버튼 비활성화 -->
+                <a href="#" class="btn_header_search"><span class="hidden">검색</span></a>
+                <a href="#" class="btn_header_cart">
+                    <span class="hidden">장바구니</span>
+                    <!-- DESC :: 0개인경우 count 영역 미노출 / 최대 99 -->
+                    <span class="count">99</span>
+                </a>
+            </div>
+        </header>
+            <!--메뉴-->
 	<!-- moudule 001 -->
     <article class="evt_mdl_title">
         <div class="tit_area">
@@ -153,6 +173,7 @@
         </div>
         <button class="attendance_btn" style="background-color: #DA2128;">오늘 출석 체크하기</button>
     </section>
+    </div>    
     <!-- 공유하기 팝업 -->
 	<div id="popBottomHasBtnEx1" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
 		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>

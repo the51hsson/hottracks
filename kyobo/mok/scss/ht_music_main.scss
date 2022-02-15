@@ -1315,47 +1315,6 @@
         margin-bottom:8px;
     }
 }
-.prod-wrapper.row_dir {
-	.prod_item { 
-		margin:0;
-		margin-top:20px;
-        display: flex;
-		flex-flow: row nowrap;
-		justify-content: flex-start;
-		align-content: center;
-		align-items: center;
-		cursor:pointer;
-		span{
-			display: block;
-		}
-		&:first-of-type{
-			margin-top:0;
-		}
-	}
-	.product_pic {
-		position:relative;
-		width:158px;
-		height:0;
-		padding-top:158px;
-		overflow: hidden;
-		flex-shrink: 0;
-		margin-bottom:0;
-		img{
-			width:100%;
-			position:absolute;
-			top:0;
-			left:0;
-		}
-	} 			
-	.product_info {
-		flex-grow:1;
-		padding-left:19px;
-	}
-	.title {
-		margin-bottom:8px;
-        height: auto;
-	}
-}
  //더보기 버튼 영역
  .btn_more_div {
 	margin-top:24px;
