@@ -424,7 +424,7 @@ body {
     } 
 }
 .prod_like_count {
-    position:absolute;right:10px;bottom:10px;height:24px;padding:0 12px;background:rgba(0,0,0,0.5);border-radius:12px;color:#fff;font-size:10px;line-height:25px;
+    position:absolute;right:10px;bottom:10px;height:24px;padding:0 12px;background:rgba(0,0,0,0.5);border-radius:12px;color:#fff;font-size:10px;line-height:25px;cursor:pointer;
     span {
         display:inline-block;position:relative;height:24px;padding-left:16px;
         &:before {

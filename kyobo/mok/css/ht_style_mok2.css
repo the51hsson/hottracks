@@ -847,6 +847,7 @@ body.ht_view {
   color: #fff;
   font-size: 10px;
   line-height: 25px;
+  cursor: pointer;
 }
 
 .prod_like_count span {
