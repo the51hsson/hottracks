@@ -1,13 +1,37 @@
-$(function(){
   /*================================= HTR-M-EVT-LIST-000.html ==============================*/
   //퀵메뉴 스와이프
-  var eventQuickSwiper = new CustomSwiper('.evt_quick_menu_slide .swiper-container', {
+function evtQuick(){
+    var $target = $('.evt_quick_menu_slide .swiper-container');
+    var slideOption = {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        freeMode: true,
+        observer: true,
+        observeParents: true,
+    };
+    evtQuickSwiperCont = new Swiper($target.get(), slideOption);
+}
+
+  
+$(function(){
+if(!$('.evt_quick_menu_slide').length) return;
+    evtQuick();
+});
+
+
+
+
+
+
+$(function(){
+  //퀵메뉴 스와이프
+  /*var eventQuickSwiper = new CustomSwiper('.evt_quick_menu_slide .swiper-container', {
     slidesPerView: 'auto',
     spaceBetween: 0,
     freeMode: true,
     observer: true,
     observeParents: true,
-  });
+  });*/
 
   // 마감임박, 반응최고 스와이프
   //상품 개수 2개이하일때 ul class="evt_slider nonswipe"로 설정
