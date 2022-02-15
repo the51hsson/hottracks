@@ -732,8 +732,8 @@ $(function(){
 
 
 /* 오늘만 특가 */
-function gifNeed(){
-    var $target = $('.gif_need_cont  .swiper-container');
+function gftNeed(){
+    var $target = $('.gft_need_cont  .swiper-container');
     var slideOption = {
         observer: true,
         observeParents: true,
@@ -749,19 +749,19 @@ function gifNeed(){
         speed: 700,
 		pagination: false,
     };
-    gifNeedSwiper = new Swiper($target.get(), slideOption);
+    gftNeedSwiper = new Swiper($target.get(), slideOption);
 }
 
 $(function(){
-    if(!$('.gif_need_cont').length) return;
-    gifNeed();
+    if(!$('.gft_need_cont').length) return;
+    gftNeed();
 });
 
 
 
 /* */
-function gifQuestion(){
-    var $target = $('.gif_question_cont .swiper-container');
+function gftQuestion(){
+    var $target = $('.gft_question_cont .swiper-container');
     var slideOption = {
         observer: true,
         observeParents: true,
@@ -779,12 +779,12 @@ function gifQuestion(){
 
 		},
     };
-    gifQuestionSwiper = new Swiper($target.get(), slideOption);
+    gftQuestionSwiper = new Swiper($target.get(), slideOption);
 }
 
 $(function(){
-    if(!$('.gif_question_cont').length) return;
-    gifQuestion();
+    if(!$('.gft_question_cont').length) return;
+    gftQuestion();
 });
 
 
