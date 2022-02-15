@@ -30,7 +30,7 @@ $(function(){
   })
   */
 
-    //카테고리 리스트 하단 스왑배너
+  //카테고리 리스트 하단 스왑배너
   var mdProductSwiper = new CustomSwiper('#mdProductSwiper', {
       slidesPerView: 'auto',
       spaceBetween: 16,

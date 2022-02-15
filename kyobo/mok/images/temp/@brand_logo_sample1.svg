@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="272" height="47" viewBox="0 0 272 47">
+  <defs>
+    <filter id="motemote" x="0" y="0" width="272" height="47" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#motemote)">
+    <text id="motemote-2" data-name="motemote" transform="translate(1 1)" fill="#ffeb01" stroke="#000" stroke-width="1" font-size="36" font-weight="900" font-family="GmarketSansBold, Gmarket Sans" letter-spacing="-0.025em"><tspan x="0" y="29">motemote</tspan></text>
+  </g>
+</svg>

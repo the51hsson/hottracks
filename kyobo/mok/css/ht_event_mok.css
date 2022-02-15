@@ -8089,7 +8089,7 @@ body.dialog_open {
 }
 
 .evt_slider .sub {
-  margin-top: 4px;
+  margin-top: 5px;
   font-size: 13px;
   line-height: 19px;
   letter-spacing: -0.13px;
@@ -8225,6 +8225,7 @@ body.dialog_open {
   font-weight: 500;
   margin-bottom: 8px;
   line-height: 25px;
+  height: 50px;
 }
 
 .prod-wrapper .price_line,
@@ -8356,6 +8357,7 @@ body.dialog_open {
   margin-bottom: 4px;
   line-height: 26px;
   font-size: 16px;
+  height: auto;
 }
 
 .type_lg .discount_rate,
@@ -8416,6 +8418,7 @@ body.dialog_open {
   font-size: 13px;
   line-height: 19px;
   letter-spacing: -0.13px;
+  height: auto;
 }
 
 .type_sm .discount_rate,
@@ -8455,6 +8458,7 @@ body.dialog_open {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 17px;
+  height: auto;
 }
 
 .type_xs .discount_rate,
@@ -8508,6 +8512,7 @@ body.dialog_open {
 .type_xxs .title {
   font-size: 12px;
   margin-bottom: 4px;
+  height: auto;
 }
 
 .type_xxs .badge_line {
@@ -8581,6 +8586,7 @@ body.dialog_open {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   word-break: keep-all;
+  height: auto;
 }
 
 .nonswipe .price_line {
@@ -9856,4 +9862,12 @@ body.dialog_open {
 .evt_anchor_target.sticky_target {
   height: 140px;
   margin-top: -140px;
+}
+
+.belt_banner {
+  margin-top: 20px;
+}
+
+.belt_banner > img {
+  width: 100%;
 }

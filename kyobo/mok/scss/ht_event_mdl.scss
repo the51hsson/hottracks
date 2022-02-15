@@ -846,10 +846,13 @@ input[type=number] {
 	.table_wrap{
 		position:relative;
 		width:100%;
+		max-width:450px;
+		margin:0 auto;
 		background-color: #fff;
 		border:2px solid #000;
 		border-radius: 4px;
 		padding: 0 10px 20px 10px;
+
 		.handle {
 			position:absolute;
 			width:18px;

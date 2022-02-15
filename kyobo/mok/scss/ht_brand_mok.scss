@@ -1,0 +1,329 @@
+@charset "UTF-8";
+@import "_variables.scss"; 
+@import "_mixins.scss";
+@import "_ht_reset.scss"; // eric meyer reset 2.0, _ht : 핫트랙스 접두어
+@import "_ht_components.scss"; // button, form, tab, swiper, fixed content, folding, list, table, box등 ...
+@import "_ht_header.scss"; // todo : layout으로 추가 할 것
+@import "_ht_products.scss";//상품 리스트
+.devide_hr{
+	display: block;
+    width:100%;
+	height:8px;
+	padding:0;
+	border:none;
+	background-color: #f7f7f7;
+	margin:0;
+	margin-top:40px;
+	&.type_top {
+		margin-top:0;
+	}
+}
+//브랜드 설명 카드
+.brand_card {
+    padding: 30px 20px;
+    background-color: #2B2E3D;
+    color:#fff;
+    .tit_card_head {
+        position: relative;
+        margin-bottom:20px;
+        .brand {
+            padding-right: 60px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .logo {
+            padding-right: 60px;
+            img {
+                width:100%;
+            }
+        }
+        .brand_thumbnail {
+            position: absolute;
+            width:60px;
+            height:60px;
+            bottom:0;
+            right:0;
+            z-index: 3;
+        }
+
+    }
+    .tit_card_body {
+        margin-bottom:20px;
+        .tit_desc {
+            margin-bottom: 8px;
+            line-height:23px;
+            font-weight: 700;
+        }
+        .desc {
+            word-break: keep-all;
+            line-height:20px;
+            font-size: 13px;
+            color:rgba(255, 255, 255, 0.6);
+        }
+    }
+    .tit_card_foot {
+        overflow: hidden;
+        button {
+            float: left;
+            margin-right:5px;
+
+        }
+        .evt_good_count{
+			display: block;
+			padding:5px 12px;
+			height:35px;
+			border-radius: 35px;
+			color:#fff;
+			font-size: 10px;
+			background-color: #000;
+			z-index:5;
+			.icon{
+				float:left;
+				width:12px;
+				height:14px;
+				margin-top:-1px;
+				background:url(../images/guide/ico_prod_like_icon.svg) no-repeat center center /12px;
+			}
+			.txt{
+				float:left;
+				margin-left:3px;
+				line-height:14px;
+			}
+		}
+        .evt_good_count.active{
+            .icon{
+                float:left;
+                width:12px;
+                height:14px;
+                background:url(../images/guide/ico_prod_like_icon_active.svg) no-repeat center center /12px;
+            }
+        }
+        .share_btn {
+            width:35px;
+            height:35px;
+            border-radius: 50%;
+            background:url(../images/ico/ico_share_white.svg) no-repeat center center /15px;
+            background-color: #000;
+        }
+    }
+}
+//비디오
+.vodeo_wrap { 
+    padding: 30px 20px 0 20px;
+    .tit {
+        font-size: 20px;
+		font-weight: 700;
+		letter-spacing: -0.2px;
+		line-height: 29px;
+		padding-right: 20px;
+    }
+    .sub_tit {
+        margin-top:5px;
+        line-height: 20px;
+        color:#595959;
+    }
+    .video_item {
+        position:relative;
+        margin-top:20px;
+        padding-top:56.25%;
+        overflow: hidden;
+        .video_play {
+            position:absolute;
+            width:52px;
+            height:52px;
+            left:50%;
+            top:50%;
+            transform: translate3d(-50%, -50%, 0);
+            z-index:10;
+            background:url(../images/guide/play_btn.svg) no-repeat center / 50px;
+        }
+        .evt_video {
+            position:absolute;
+            width:100%;
+            height:100%;
+            left:0;
+            top:0;
+            border-radius: 15px;
+        }
+    }
+}
+
+//슬라이더(관련 기획전)
+.evt_slider_wrap {
+    padding: 30px 0 0px 20px;
+    .tit {
+        font-size: 20px;
+		font-weight: 700;
+		letter-spacing: -0.2px;
+		line-height: 29px;
+		padding-right: 20px;
+    }
+    //브랜드 쿠폰 상세
+    &.coupon_swiper {
+        .evt_slider {
+            .evt_item {
+                width:320px;
+                padding : 17px 90px 19px 20px; 
+                height:auto;
+                min-height:100%;
+                background: url(../images/guide/brand_coupon_bg.svg) no-repeat left top / 99%;
+            } 
+            .cupon_info {
+                .discount {
+                   float:none;
+                   font-size: 20px;
+                   margin : 0 0 5px 0;
+                }
+                .gray {
+                    color:#595959;
+                }      
+                .cpon_notice {
+                    margin: top 8px;
+                    line-height: 18px;
+                    font-size: 12px;
+                    color:#767676;
+                    letter-spacing: -0.13px;
+                }
+            }
+
+        }    
+    }
+    .evt_slider{
+        padding-top: 20px;
+        padding-right: 20px;
+        .evt_item{
+            width:320px;
+            .img_wrap{
+                position:relative;
+                height:0;
+                padding-top:60%;
+                border-radius: 15px;
+            }
+        }  
+    }
+}
+//브랜드 상품 메뉴
+.ctg_floating_menues {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    padding: 1px 20px 1px 0;
+    button { 
+        flex-shrink: 0;
+        padding:8px 14px;
+        border:1px solid #d5d5d5;
+        border-radius: 20px;
+        margin-right: 4px;
+        font-size: 13px;
+        color:#767676;
+        letter-spacing: -0.013em;
+        background-color: #fff;
+        &:last-of-type{
+            margin-right:0;
+        }
+        &.arrow_li{
+            padding-right:35px;
+            background:url(../images/guide/arrow_down.svg) no-repeat right 14px top 50% / 9px;
+            background-color: #fff;
+        }
+        &.active{
+            color:#fff;
+            background-color: #000;
+            border-color:#000;
+        }
+    }
+}
+//상품 리스트 영역
+.ctg_prod_wrap {
+	padding:30px 20px 0 20px;
+	color:#292929;
+    .tit {
+        padding-right: 20px;
+        margin-bottom: 12px;
+        font-size: 20px;
+		font-weight: 700;
+		letter-spacing: -0.2px;
+		line-height: 29px;
+
+    }
+	.prod_list_info {
+	   margin-top: 20px;
+	   display: flex;
+	   flex-flow: row nowrap;
+	   justify-content: space-between;
+	}
+	span {
+		display: block;
+		line-height: 19px;
+	}
+	.prod_ea {
+		color:#767676;
+	}
+	.right_side {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	.sort_nm {
+		font-weight: 500;
+		padding-right:14px;
+		background:url(../images/guide/arrow_down.svg) no-repeat right 0px top 50% / 10px;
+	}
+	.ctg_list_icon{
+		margin-left:15px;
+		width:14px;
+		height:19px;
+		background: url(../images/guide/ico_ctg_list_type1.svg) no-repeat center center / 14px;
+	}
+	.ctg_list_icon.row_list{
+		background: url(../images/guide/ico_ctg_list_type2.svg) no-repeat center center / 14px;
+	}
+}			
+
+//품절 대체 상품 스왑이 있는 항목
+.replace_prod{
+	.replace_prod_btn{
+		display:block;
+	}
+}
+ //더보기 버튼 영역
+ .btn_more_div{
+	margin-top:26px;
+	.more_btn{
+		width:71px;
+		height:24px;
+		margin:0 auto;
+		display:flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
+		appearance: none;
+		cursor:pointer;
+	}
+	.more_btn.hidden{
+		display:none;
+	}
+	.txt{
+		line-height:24px;
+		font-size: 15px;
+		font-weight:500;
+		letter-spacing: -0.15px;
+		color:#767676;
+	}
+	.btn_more_icon{
+		width:24px;
+		height:24px;
+		background:url(../images/ico/ico_arrow_large.png) no-repeat 0 0;
+		background-size: 24px auto;
+	}
+ }
+  //띠배너
+.belt_banner {
+    margin-top:60px;
+    &.type_top {
+        margin:0;
+    }
+    & > img {
+        width:100%;
+    }
+}   
