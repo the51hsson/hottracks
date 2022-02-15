@@ -212,10 +212,10 @@
                 <!-- //.li 반복 -->
 
 
+                <!-- 22.02.15 대체상품 -->
                 <li class="li">
                     <div class="img">
-                        <a href="#n"><!-- 대체 상품 링크 -->
-                            <img src="../../images/temp/@img_prod02.jpg" alt="">
+                        <a href="#n" class="btn_prod_replace_chk"><img src="../../images/temp/@img_prod02.jpg" alt=""><!-- 대체상픔 시 : class="btn_prod_replace_chk" -->
                             <!-- prod_soldout_msg -->
                             <div class="prod_soldout_msg">
                                 <div class="prod_soldout_msg_txt">
@@ -225,10 +225,10 @@
                             </div>
                             <!-- //prod_soldout_msg -->
                         </a>
-                        <button class="prod_like_count active"><span>999+</span></button><!-- 좋아요 활성화 class="active" -->
+                        <!--<button class="prod_like_count"><span>999+</span></button>-->
                     </div>
                     <ul class="txt">
-                        <li class="s0">dretec</li>
+                        <!--<li class="s0">dretec</li>-->
                         <li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
                         <li class="s2">
                             <strong>50%</strong>
@@ -236,7 +236,94 @@
                             <em>129,000</em>
                         </li>
                     </ul>
+                    <!-- 대체상품 -->
+                    <article class="replace_prod_swap">
+                        <h4 class="tit">
+                            <em class="txt">하필 딱! 품절이지만 괜찮아요</em>
+                            <em class="replace_icon"></em>
+                        </h4>
+                        <div class="sub_title">찾으시는 상품과 비슷한 상품이 여기 있어요!</div>
+                        <div class="swiper mySwiper">
+                            <ul class="swiper-wrapper prod-wrapper type_sm">
+                                <li class="swiper-slide prod_item">
+                                    <div class="product_pic">
+                                        <button class="evt_good_count">
+                                            <div class="icon"></div>
+                                            <div class="txt">80</div>
+                                        </button>
+                                        <img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img">
+                                    </div>
+                                    <div class="company">dretec</div>
+                                    <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+                                    <div class="price_line">
+                                        <span class="discount_rate">15%</span>
+                                        <span class="final_price">9,234,000</span>
+                                        <span class="price_origin">9,200,000</span>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide prod_item">
+                                    <div class="product_pic">
+                                        <button class="evt_good_count">
+                                            <div class="icon"></div>
+                                            <!-- <div class="txt">80</div> -->
+                                        </button>
+                                        <img src="../../images/guide/@tod_prod_sample3.svg" class="bd_img">
+                                    </div>
+                                    <div class="company">dretec</div>
+                                    <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+                                    <div class="price_line">
+                                        <span class="discount_rate">15%</span>
+                                        <span class="final_price">9,234,000</span>
+                                        <span class="price_origin">9,200,000</span>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide prod_item">
+                                    <div class="product_pic">
+                                        <img src="../../images/guide/@tod_prod_sample1.svg" class="bd_img">
+                                    </div>
+                                    <div class="company">dretec</div>
+                                    <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+                                    <div class="price_line">
+                                        <span class="discount_rate">15%</span>
+                                        <span class="final_price">9,234,000</span>
+                                        <span class="price_origin">9,200,000</span>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide prod_item">
+                                    <div class="product_pic">
+                                        <img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img">
+                                    </div>
+                                    <div class="company">dretec</div>
+                                    <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+                                    <div class="price_line">
+                                        <span class="discount_rate">15%</span>
+                                        <span class="final_price">9,234,000</span>
+                                        <span class="price_origin">9,200,000</span>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide prod_item">
+                                    <div class="product_pic">
+                                        <img src="../../images/guide/@tod_prod_sample3.svg" class="bd_img">
+                                    </div>
+                                    <div class="company">dretec</div>
+                                    <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+                                    <div class="price_line">
+                                        <span class="discount_rate">15%</span>
+                                        <span class="final_price">9,234,000</span>
+                                        <span class="price_origin">9,200,000</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <button type="button" class="close_swap"></button>	
+                    </article>
+                    <!-- //대체상품 -->
                 </li>
+                <!-- //22.02.15 대체상품 -->
+
+
                 <li class="li">
                     <div class="img">
                         <a href="#n"><img src="../../images/temp/@img_prod03.jpg" alt=""></a>
@@ -300,7 +387,7 @@
             </ul>
             <!-- //prod_list  -->
 
-            <button class="btn_more_view"><span><em class="hidden">관련제품</em>더보기</span></button>
+            <!--<button class="btn_more_view"><span><em class="hidden">관련제품</em>더보기</span></button>-->
         </div>
         <!-- //관련제품 -->
 
