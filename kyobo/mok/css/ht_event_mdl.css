@@ -10116,6 +10116,7 @@ input[type=number] {
   position: relative;
   padding: 60px 20px 40px 20px;
   text-align: center;
+  background: center/cover no-repeat;
 }
 
 .calender_wrap > img {
