@@ -6342,7 +6342,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-color: #F2E3CB;
   width: 100vw;
   padding: 32px 0 32px 20px;
-  margin: 36px -20px 0 -20px;
+  margin: 30px -20px 0 -20px;
 }
 
 .replace_prod_swap:before {

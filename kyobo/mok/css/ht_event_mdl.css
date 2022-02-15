@@ -8990,7 +8990,7 @@ body.dialog_open {
   background-color: #F2E3CB;
   width: 100vw;
   padding: 32px 0 32px 20px;
-  margin: 36px -20px 0 -20px;
+  margin: 30px -20px 0 -20px;
 }
 
 .replace_prod_swap:before {
@@ -10492,116 +10492,6 @@ input[type=number] {
 
 .common_select option {
   height: 50px;
-}
-
-.prod-wrapper.column_dir {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-}
-
-.prod-wrapper.column_dir .prod_item {
-  width: calc((100% - 20px)/2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  cursor: pointer;
-  margin: 0;
-  margin-top: 20px;
-}
-
-.prod-wrapper.column_dir .prod_item:nth-of-type(1), .prod-wrapper.column_dir .prod_item:nth-of-type(2) {
-  margin-top: 0;
-}
-
-.prod-wrapper.column_dir .prod_item:last-of-type {
-  margin-right: 0;
-}
-
-.prod-wrapper.column_dir .product_pic {
-  width: 100%;
-  padding-top: 100%;
-}
-
-.prod-wrapper.column_dir .title {
-  margin-bottom: 8px;
-}
-
-.prod-wrapper.row_dir .prod_item {
-  margin: 0;
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
-
-.prod-wrapper.row_dir .prod_item span {
-  display: block;
-}
-
-.prod-wrapper.row_dir .prod_item:first-of-type {
-  margin-top: 0;
-}
-
-.prod-wrapper.row_dir .product_pic {
-  position: relative;
-  width: 158px;
-  height: 0;
-  padding-top: 158px;
-  overflow: hidden;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  margin-bottom: 0;
-}
-
-.prod-wrapper.row_dir .product_pic img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.prod-wrapper.row_dir .product_info {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding-left: 19px;
-}
-
-.prod-wrapper.row_dir .title {
-  margin-bottom: 8px;
 }
 
 /*=======================MDL-018영역=====================*/
