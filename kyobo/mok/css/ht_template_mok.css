@@ -5938,6 +5938,10 @@
   display: none;
 }
 
+.cmt_list_card_ul .user_info a {
+  color: #767676;
+}
+
 .cmt_list_card_ul .cmt_pd_title {
   margin-top: 16px;
   color: #595959;
