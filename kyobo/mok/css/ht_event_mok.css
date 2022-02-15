@@ -6449,6 +6449,27 @@ body.dialog_open {
   text-align: center;
 }
 
+.scroll_tab.type_black {
+  margin-bottom: 12px;
+}
+
+.scroll_tab.type_black a {
+  padding: 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.scroll_tab.type_black a.active {
+  color: #000;
+}
+
+.scroll_tab.type_black a:after,
+.scroll_tab.type_black a.active span:after {
+  content: '';
+  display: none;
+}
+
 .scroll_tab a {
   font-size: 15px;
   color: #595959;
@@ -9069,6 +9090,21 @@ body.dialog_open {
   display: block;
 }
 
+.divide_hr {
+  display: block;
+  width: 100%;
+  height: 8px;
+  padding: 0;
+  border: none;
+  background-color: #f7f7f7;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.divide_hr.type_top {
+  margin-top: 0;
+}
+
 .evt_list_header {
   position: relative;
   padding-top: 12px;
@@ -9150,7 +9186,7 @@ body.dialog_open {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   margin-right: 5px;
-  padding: 12px 20px;
+  padding: 11px 17px;
   border: 1px solid #D5D5D5;
   border-radius: 40px;
 }
@@ -9539,7 +9575,7 @@ body.dialog_open {
 
 /*========================= 이벤트 리스트 종료 ===========================*/
 .contents_evt_wrap {
-  padding: 24px 20px 0 20px;
+  padding: 30px 20px 0 20px;
 }
 
 .evt_section_title {
@@ -9555,7 +9591,7 @@ body.dialog_open {
           justify-content: space-between;
   -ms-flex-line-pack: start;
       align-content: start;
-  margin: 12px 0 20px;
+  margin: 12px 0 0 0;
 }
 
 .evt_section_title h2 {
@@ -9600,7 +9636,6 @@ body.dialog_open {
 }
 
 .evt_list_card_ul {
-  margin-top: 20px;
   border-top: 1px solid #000;
 }
 
@@ -9610,17 +9645,25 @@ body.dialog_open {
   cursor: pointer;
 }
 
+.evt_list_card_ul .evt_list_item.status_new .category_area span {
+  position: relative;
+}
+
+.evt_list_card_ul .evt_list_item.status_new .category_area span:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -3px;
+  left: calc(100% + 3px);
+  background: url(../images/guide/new_post.svg) no-repeat center center/18px;
+}
+
 .evt_list_card_ul .category_area {
   height: 17px;
   line-height: 17px;
   font-size: 12px;
   color: #767676;
-}
-
-.evt_list_card_ul .status_new {
-  color: #da2128;
-  font-weight: 500;
-  line-height: 17px;
 }
 
 .evt_list_card_ul .list_title_area {
