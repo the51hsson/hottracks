@@ -9169,6 +9169,7 @@ body.dialog_open {
 .brand_card .tit_card_foot button {
   float: left;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .brand_card .tit_card_foot .evt_good_count {

@@ -19,7 +19,7 @@
 <meta property="og:image" content="../../images/guide/sns.jpg">
 <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-<title>음반메인</title>
+<title>브랜드샵</title>
 
 <!-- Plug-In css -->
 <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -130,7 +130,7 @@ $(function(){
                         <div class="icon"></div>
                         <div class="txt">999</div>
                     </button>
-                    <button class="share_btn">
+                    <button class="share_btn" data-role="btn-dialog" data-target="#popBottomHasBtnEx1">
                         <span class="txt hidden">공유하기</span>
                     </button>
                 </div>
@@ -627,5 +627,69 @@ $(function(){
 		<!-- // 푸터 -->
 	</div>
 	<!-- // wrapper -->
+    <!--공유하기 팝업-->
+    <div id="popBottomHasBtnEx1" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">공유하기</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents share_sns_wrap">
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_kakao.svg" alt="카카오톡 공유하기">
+                </div>
+                <div class="txt">카카오톡</div>
+            </span>
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_instar.svg" alt="인스타그램 공유하기">
+                </div>
+                <div class="txt">인스타그램</div>
+            </span>
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_facebook.svg" alt="페이스북 공유하기">
+                </div>
+                <div class="txt">페이스북</div>
+            </span>
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_twitter.svg" alt="트위터 공유하기">
+                </div>
+                <div class="txt">트위터</div>
+            </span>
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_pinterest.svg" alt="핀터레스트 공유하기">
+                </div>
+                <div class="txt">핀터레스트</div>
+            </span>
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_line.svg" alt="라인 공유하기">
+                </div>
+                <div class="txt">라인</div>
+            </span>
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_message.svg" alt="메세지 공유하기">
+                </div>
+                <div class="txt">메세지</div>
+            </span>  
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_url_copy.svg" alt="URL 복사">
+                </div>
+                <div class="txt">URL 복사</div>
+            </span>  
+        <!-- //dialog_contents -->
+        <!-- dialog_footer -->
+        <!-- //dialog_footer -->
+        </div>
+    </div>
+    <!--//공유하기 팝업-->
 </body>
 </html>
