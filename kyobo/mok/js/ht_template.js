@@ -78,7 +78,6 @@ function btnHeroListCl(){
 
 
 
-
 /* 오늘만 특가 */
 function welToday(){
     var $target = $('.wel_today_cont .swiper-container');
@@ -767,9 +766,9 @@ function gftQuestion(){
         observeParents: true,
         slidesPerView: 'auto',
         centeredSlides: false,
-        loop: true,
+        //loop: true,
         loopsSlide: 1,
-        spaceBetween: 0,
+        spaceBetween:0,
         /*autoplay: {
             delay:5000,
             disableOnInteraction: false,
@@ -787,6 +786,22 @@ $(function(){
     gftQuestion();
 });
 
+
+
+// 상세
+function btnPopAddListOp(v){
+    $('body').css('overflow','hidden');
+    var s = $(v).attr('value');
+    console.log(s)
+    $('#' + s + '').addClass('on');
+}
+function btnPopAddListCl(){
+    $('body').css('overflow','');
+    $('.pop_view_add').addClass('off');
+    setTimeout(function(){
+        $('.pop_view_add').removeClass('off').removeClass('on');
+    }, 600);
+}
 
 
 
@@ -839,12 +854,3 @@ $(function(){
 
 
 
-/*
-$(document).on('click', '.ctg_prod_wrap .sold_out .replace_prod_btn', function(){
-    var replaceBubble = $(this).parents('li').children('article.replace_prod_swap');
-   
-    if(replaceBubble.length > 0 &&  replaceBubble.css('display') == 'none'){
-      replaceBubble.addClass('show_bubble');
-      $(window).scrollTop(replaceBubble.offset().top - 250);
-    };
-  });*/
