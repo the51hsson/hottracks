@@ -1065,8 +1065,9 @@ button.btn_sm {
 }
 
 .product_info_area .tit_wrap .tit .tit_bottom_dec {
+  font-weight: normal;
   font-size: 13px;
-  color: #da2128;
+  color: #474C98;
 }
 
 .product_info_area .price_wrap {
