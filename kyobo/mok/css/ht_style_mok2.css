@@ -5,8 +5,23 @@ body {
   background: #f7f7f7;
 }
 
-body.ht_view {
+body:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 750px;
+  height: 100%;
   background: #fff;
+  content: "";
+  z-index: -1;
+}
+
+@media only screen and (min-width: 750px) {
+  body:before {
+    left: 50%;
+    margin-left: -375px;
+  }
 }
 
 .ht_ {
@@ -551,6 +566,10 @@ body.ht_view {
   background: #ffff58;
 }
 
+.point_line.ty06:before {
+  background: #e7fe65;
+}
+
 @-webkit-keyframes pointLine {
   0% {
     width: 0;
@@ -817,6 +836,69 @@ body.ht_view {
   width: calc(50% - 10px);
 }
 
+.prod_list .chk_ty {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.prod_list .chk_ty input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+
+.prod_list .chk_ty input:checked + label:before {
+  opacity: 1;
+}
+
+.prod_list .chk_ty input:checked + label:after {
+  background-color: #000;
+}
+
+.prod_list .chk_ty label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.prod_list .chk_ty label:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #000;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0;
+  content: "";
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.prod_list .chk_ty label:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 33px;
+  height: 33px;
+  background: rgba(0, 0, 0, 0.3) url("../images/ico/ico_chk_ty.svg") center/14px no-repeat;
+  border-radius: 8px 0;
+  content: "";
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .prod_list .replace_prod_swap {
   z-index: 5;
   max-width: 750px;
@@ -888,6 +970,7 @@ body.ht_view {
   font-size: 10px;
   line-height: 25px;
   cursor: pointer;
+  z-index: 3;
 }
 
 .prod_like_count span {
@@ -1092,6 +1175,55 @@ body.ht_view {
 
 .pop_info li:first-child {
   margin-top: 0;
+}
+
+.info_box {
+  position: relative;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 4px;
+}
+
+.info_box .tit {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.info_box .tit + ul {
+  margin-top: 8px;
+}
+
+.info_box li {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 8px;
+  color: #595959;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.info_box li:before {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 3px;
+  height: 3px;
+  background: #999;
+  border-radius: 50%;
+  content: "";
+}
+
+.info_box li:first-child {
+  margin-top: 0;
+}
+
+.info_box li .point {
+  color: #000;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 .list_evt_area {

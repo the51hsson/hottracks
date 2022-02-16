@@ -5976,6 +5976,8 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  word-wrap: break-word;
+  word-break: keep-all;
 }
 
 .cmt_list_card_ul .cmt_img {
