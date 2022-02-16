@@ -26,17 +26,6 @@
     .tit_card_head {
         position: relative;
         margin-bottom:20px;
-        .brand {
-            padding-right: 60px;
-            font-size: 12px;
-            line-height: 20px;
-        }
-        .logo {
-            padding-right: 60px;
-            img {
-                width:100%;
-            }
-        }
         .brand_thumbnail {
             position: absolute;
             width:60px;
@@ -44,6 +33,22 @@
             bottom:0;
             right:0;
             z-index: 3;
+        }
+        .brand {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .logo {
+            line-height:36px;
+            font-family: 'Gmarket Sans';
+            text-shadow: 3px 2px 0px #000;
+            font-weight:900;
+            font-size:36px;
+            color:#FFEB01;
+        }
+        .brand_thumbnail ~ .brand, 
+        .brand_thumbnail ~ .logo {
+            padding-right: 60px;
         }
 
     }
@@ -127,16 +132,6 @@
         margin-top:20px;
         padding-top:56.25%;
         overflow: hidden;
-        .video_play {
-            position:absolute;
-            width:52px;
-            height:52px;
-            left:50%;
-            top:50%;
-            transform: translate3d(-50%, -50%, 0);
-            z-index:10;
-            background:url(../images/guide/play_btn.svg) no-repeat center / 50px;
-        }
         .evt_video {
             position:absolute;
             width:100%;

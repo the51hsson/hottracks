@@ -389,25 +389,19 @@
         color:#767676;
     }
 }
-//상품 리스트 영역
-.list_block {
-    .evt_products.row_dir {
+
+//랭킹
+.list_section{
+	position:relative;
+	.evt_products.row_dir {
         margin-top:20px;
         padding:20px 20px 0 20px;
         .prod_item {
             position:relative;
+			align-items: flex-start;
+			align-content: flex-start;
         }
-		.product_pic {
-            width:158px;
-            padding-top:158px;
-        }
-		.product_info {
-			width:calc(100% - 158px);
-		}
-    }    
-}
-//랭킹
-.list_section{
+    }  
     .rangking {
         position: absolute;
         display: flex;
@@ -465,7 +459,7 @@
         }
     }
     @for $lank from 1 through 5 {
-        .list_block:first-of-type .prod_item:nth-of-type(#{$lank}) .rangking{
+		.prod-wrapper:first-of-type .prod_item:nth-of-type(#{$lank}) .rangking{
             color:#fff;
             background:url(../images/guide/lank_hot.svg) no-repeat center center / 50px;
             border:none;

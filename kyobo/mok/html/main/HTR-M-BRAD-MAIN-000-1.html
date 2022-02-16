@@ -75,6 +75,50 @@ $(function(){
            })
         });
     }
+    //상품 리스트 정렬 방식 토글 버튼
+    $('.ctg_prod_wrap .ctg_list_icon').click(function(){
+       //품절 대체 스왑 display:none으로 초기화 
+        $('.show_bubble.show_bubble').removeClass('show_bubble');
+
+        if ($(this).hasClass('row_list')) {
+            $(this).removeClass('row_list');
+            $('.evt_products').removeClass('row_dir');
+            $('.list_sort_txt').text('두줄보기');
+
+        } else {
+            $(this).addClass('row_list');
+            $('.evt_products').addClass('row_dir');
+            $('.list_sort_txt').text('한줄보기');
+        }
+    });
+    //품절 대체 상품 버튼 클릭
+    $(document).on('click', '.ctg_prod_wrap .sold_out .replace_prod_btn', function(){
+        var replaceBubble = $(this).parents('li').children('article.replace_prod_swap');
+        
+        if(replaceBubble.length > 0 &&  replaceBubble.css('display') == 'none'){
+            replaceBubble.addClass('show_bubble');
+            $(window).scrollTop(replaceBubble.offset().top - 250);
+        };
+    });
+    //품절 대체 스왑 닫기
+    $(document).on('click', '.replace_prod_swap .close_swap', function(){
+        $(this).parents('.replace_prod_swap').removeClass('show_bubble');
+    });
+    //품절 대체 상품 스왑배너
+    $('.replace_prod_swap .mySwiper').each(function (index, element) {
+            var $parent = $(this).parent('.replace_prod_swap');
+            $parent.addClass('idx_' + index);
+    
+            if($parent.find('.swiper-slide').length > 1) {
+                var replaceSwiper = new CustomSwiper(this, {
+                slidesPerView: 'auto',
+                spaceBetween: 16,
+                freeMode: true,
+                observer: true,
+                observeParents: true,
+                }); 
+            }
+    });
 })
 </script>
 </head>
@@ -111,13 +155,12 @@ $(function(){
             <!--타이틀 배너 영역-->
             <section class="brand_card">
                 <div class="tit_card_head">
-                    <div class="brand">모트모트</div>
-                    <div class="logo">
-                        <img src="../../images/temp/@brand_logo_sample1.svg" alt="">
-                    </div>
-                    <div class="brand_thumbnail">
+                    <!--이미지가 없는 경우 brand_thumbnail 삭제-->
+                    <!-- <div class="brand_thumbnail">
                         <img src="../../images/temp/@brand_thumbnail_sample1.svg" alt="">
-                    </div>
+                    </div> -->
+                    <div class="brand">모트모트</div>
+                    <div class="logo">motemote</div>
                 </div>
                 <div class="tit_card_body">
                     <div class="tit_desc">디자인 문구 용품 보온병 스티커 외</div>
@@ -143,7 +186,6 @@ $(function(){
                 <p class="sub_tit">핫트랙스의 시선으로 브랜드를 바라보다</p>
                 <!--비디오 영역-->
                 <div class="video_item">
-                    <button class="video_play"></button>
                     <iframe class="evt_video" src="https://www.youtube.com/embed/2ecZikgQgCc" title="YouTube video player" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen muted></iframe>
                 </div>
@@ -257,7 +299,7 @@ $(function(){
 				<div class="prod_list_info">
 					<span class="prod_ea">10,264개의 상품</span>
 					<span class="right_side">
-						<div class="sort_nm" data-role="btn-dialog" data-target="#ClickCksClose1">신상품순</div>
+						<div class="sort_nm" data-role="btn-dialog" data-target="#ClickCksClose">신상품순</div>
 						<div class="ctg_list_icon">
 							<span class="hidden list_sort_txt">두줄보기</span>
 						</div>
@@ -505,29 +547,33 @@ $(function(){
 							</div>
 					    </div>
 					</li>
-					<li class="prod_item">
-						<div class="product_pic">
-						<button class="evt_good_count">
-							<div class="icon"></div>
-							<div class="txt">80</div>
-						</button>
-						<img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img">
-						</div>
-						<div class="product_info">
-							<div class="company">dretec</div>
-							<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-							<div class="price_line">
-								<span class="discount_rate">15%</span>
-								<span class="final_price">9,234,000</span>
-								<span class="price_origin">9,200,000</span>
-							</div>
-							<div class="badge_line">
-								<span class="badge rounded badge_primary_evt">포스터</span>
-								<span class="badge rounded badge_default_evt">사은품</span>
-								<span class="badge rounded badge_default_evt">무료배송</span>
-							</div>
-				    	</div>
-					</li>	
+                    <!--19세 이상 상품 adult_prod-->
+                    <li class="prod_item adult_prod">
+                        <div class="product_pic bd_img">
+                            <button class="evt_good_count">
+                                <div class="icon"></div>
+                                <div class="txt">80</div>
+                                </button> 
+                            <span class="adult_block">
+                                <div>19세 이상만<br/>구매 가능해요.</div>
+                            </span>
+                        </div> 
+                        <div class="product_info">
+                            <div class="company">dretec</div>
+                            <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+                            <div class="price_line">
+                                <span class="discount_rate">15%</span>
+                                <span class="final_price">9,234,000</span>
+                                <span class="price_origin">9,200,000</span>
+                            </div>
+                            <div class="badge_line">
+                                <span class="badge rounded badge_primary_evt">쿠폰</span>
+                                <span class="badge rounded badge_default_evt">사은품</span>
+                                <span class="badge rounded badge_default_evt">무료배송</span>
+                            </div>
+                        </div>
+                    </li>
+                    <!--//19세 이상 상품-->
 					<li class="prod_item sold_out">
 						<div class="product_pic">
 							<span class="show_replace">
@@ -692,5 +738,66 @@ $(function(){
 	    </div>
     </div>
     <!--//공유하기 팝업-->
+    <!-- 팝업 (신상품 순) -->
+	<div id="ClickCksClose" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
+		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+		<!-- dialog_header -->
+		<div class="dialog_header">
+			<div class="dialog_title">분류 기준</div>
+		</div>
+		<!-- //dialog_header -->
+		<!-- dialog_contents -->
+		<div class="dialog_contents checkbox_type">
+	       <ul class="cks_list"> 
+               <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">신상품순</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">판매 인기 순</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">낮은 가격순</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">높은 가격순</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">높은 할인율순</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">찜♥많은 순</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">리뷰 평점순</span>
+                    </label>
+                </li>
+           </ul>
+		</div>
+		<!-- //dialog_contents -->
+		<!-- dialog_footer -->
+		<div class="dialog_footer ctg_cks"></div>
+		<!-- //dialog_footer -->
+	</div>
+    <!-- //팝업(신상품 순) -->
 </body>
 </html>

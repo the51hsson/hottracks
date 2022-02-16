@@ -6127,7 +6127,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .evt_products.row_dir .product_info {
   width: calc((100% - 20px )/2);
-  padding-left: 20px;
+  margin-left: 20px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -6314,7 +6314,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .evt_products.row_dir .product_info {
   width: calc((100% - 20px )/2);
-  padding-left: 20px;
+  margin-left: 20px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }

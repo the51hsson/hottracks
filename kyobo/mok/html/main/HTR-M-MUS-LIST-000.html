@@ -378,7 +378,7 @@
                         <div class="prod_list_info">
                             <span>10,264개의 상품</span>
                             <span class="right_side">
-                                <div class="sort_nm" data-role="btn-dialog" data-target="#ClickCksClose1">신상품순</div>
+                                <div class="sort_nm" data-role="btn-dialog" data-target="#ClickCksClose">신상품순</div>
                                 <div class="ctg_list_icon">
                                     <span class="hidden list_sort_txt">두줄보기</span>
                                 </div>
@@ -821,5 +821,66 @@
 		<!-- // 독바 -->
 	</div>
 	<!-- // wrapper -->
+        <!-- 팝업 (신상품 순) -->
+	<div id="ClickCksClose" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
+		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+		<!-- dialog_header -->
+		<div class="dialog_header">
+			<div class="dialog_title">분류 기준</div>
+		</div>
+		<!-- //dialog_header -->
+		<!-- dialog_contents -->
+		<div class="dialog_contents checkbox_type">
+	       <ul class="cks_list"> 
+               <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">신상품순</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">판매 인기 순</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">낮은 가격순</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">높은 가격순</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">높은 할인율순</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">찜♥많은 순</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="ck_label_wrap">
+                        <input type="radio"  name="test"class="checkbox_cm">
+                        <span class="label_for_radio">리뷰 평점순</span>
+                    </label>
+                </li>
+           </ul>
+		</div>
+		<!-- //dialog_contents -->
+		<!-- dialog_footer -->
+		<div class="dialog_footer ctg_cks"></div>
+		<!-- //dialog_footer -->
+	</div>
+    <!-- //팝업(신상품 순) -->
 </body>
 </html>

@@ -505,22 +505,22 @@
   color: #767676;
 }
 
-.list_block .evt_products.row_dir {
+.list_section {
+  position: relative;
+}
+
+.list_section .evt_products.row_dir {
   margin-top: 20px;
   padding: 20px 20px 0 20px;
 }
 
-.list_block .evt_products.row_dir .prod_item {
+.list_section .evt_products.row_dir .prod_item {
   position: relative;
-}
-
-.list_block .evt_products.row_dir .product_pic {
-  width: 158px;
-  padding-top: 158px;
-}
-
-.list_block .evt_products.row_dir .product_info {
-  width: calc(100% - 158px);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .list_section .rangking {
@@ -594,38 +594,38 @@
   margin-top: -2px;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(1) .rangking {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(1) .rangking {
   color: #fff;
   background: url(../images/guide/lank_hot.svg) no-repeat center center/50px;
   border: none;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(1) .rangking.none_icon .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(1) .rangking.none_icon .rank_icon {
   display: none;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(1) .rangking .rank {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(1) .rangking .rank {
   display: block;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(1) .rangking .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(1) .rangking .rank_icon {
   display: block;
   width: 10px;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(1) .rangking.down .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(1) .rangking.down .rank_icon {
   background: url(../images/guide/lank_hot_up.svg) no-repeat center center/9px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(1) .rangking.up .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(1) .rangking.up .rank_icon {
   background: url(../images/guide/lank_hot_up.svg) no-repeat center center/9px;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(1) .rangking.same .rank_icon:before {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(1) .rangking.same .rank_icon:before {
   content: "";
   position: absolute;
   width: 7px;
@@ -638,38 +638,38 @@
   z-index: 20;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(2) .rangking {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(2) .rangking {
   color: #fff;
   background: url(../images/guide/lank_hot.svg) no-repeat center center/50px;
   border: none;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(2) .rangking.none_icon .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(2) .rangking.none_icon .rank_icon {
   display: none;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(2) .rangking .rank {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(2) .rangking .rank {
   display: block;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(2) .rangking .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(2) .rangking .rank_icon {
   display: block;
   width: 10px;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(2) .rangking.down .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(2) .rangking.down .rank_icon {
   background: url(../images/guide/lank_hot_up.svg) no-repeat center center/9px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(2) .rangking.up .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(2) .rangking.up .rank_icon {
   background: url(../images/guide/lank_hot_up.svg) no-repeat center center/9px;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(2) .rangking.same .rank_icon:before {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(2) .rangking.same .rank_icon:before {
   content: "";
   position: absolute;
   width: 7px;
@@ -682,38 +682,38 @@
   z-index: 20;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(3) .rangking {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(3) .rangking {
   color: #fff;
   background: url(../images/guide/lank_hot.svg) no-repeat center center/50px;
   border: none;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(3) .rangking.none_icon .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(3) .rangking.none_icon .rank_icon {
   display: none;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(3) .rangking .rank {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(3) .rangking .rank {
   display: block;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(3) .rangking .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(3) .rangking .rank_icon {
   display: block;
   width: 10px;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(3) .rangking.down .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(3) .rangking.down .rank_icon {
   background: url(../images/guide/lank_hot_up.svg) no-repeat center center/9px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(3) .rangking.up .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(3) .rangking.up .rank_icon {
   background: url(../images/guide/lank_hot_up.svg) no-repeat center center/9px;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(3) .rangking.same .rank_icon:before {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(3) .rangking.same .rank_icon:before {
   content: "";
   position: absolute;
   width: 7px;
@@ -726,38 +726,38 @@
   z-index: 20;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(4) .rangking {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(4) .rangking {
   color: #fff;
   background: url(../images/guide/lank_hot.svg) no-repeat center center/50px;
   border: none;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(4) .rangking.none_icon .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(4) .rangking.none_icon .rank_icon {
   display: none;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(4) .rangking .rank {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(4) .rangking .rank {
   display: block;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(4) .rangking .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(4) .rangking .rank_icon {
   display: block;
   width: 10px;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(4) .rangking.down .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(4) .rangking.down .rank_icon {
   background: url(../images/guide/lank_hot_up.svg) no-repeat center center/9px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(4) .rangking.up .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(4) .rangking.up .rank_icon {
   background: url(../images/guide/lank_hot_up.svg) no-repeat center center/9px;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(4) .rangking.same .rank_icon:before {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(4) .rangking.same .rank_icon:before {
   content: "";
   position: absolute;
   width: 7px;
@@ -770,38 +770,38 @@
   z-index: 20;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(5) .rangking {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(5) .rangking {
   color: #fff;
   background: url(../images/guide/lank_hot.svg) no-repeat center center/50px;
   border: none;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(5) .rangking.none_icon .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(5) .rangking.none_icon .rank_icon {
   display: none;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(5) .rangking .rank {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(5) .rangking .rank {
   display: block;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(5) .rangking .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(5) .rangking .rank_icon {
   display: block;
   width: 10px;
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(5) .rangking.down .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(5) .rangking.down .rank_icon {
   background: url(../images/guide/lank_hot_up.svg) no-repeat center center/9px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(5) .rangking.up .rank_icon {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(5) .rangking.up .rank_icon {
   background: url(../images/guide/lank_hot_up.svg) no-repeat center center/9px;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.list_section .list_block:first-of-type .prod_item:nth-of-type(5) .rangking.same .rank_icon:before {
+.list_section .prod-wrapper:first-of-type .prod_item:nth-of-type(5) .rangking.same .rank_icon:before {
   content: "";
   position: absolute;
   width: 7px;

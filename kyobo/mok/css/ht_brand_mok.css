@@ -8796,7 +8796,7 @@ body.dialog_open {
 
 .evt_products.row_dir .product_info {
   width: calc((100% - 20px )/2);
-  padding-left: 20px;
+  margin-left: 20px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -8983,7 +8983,7 @@ body.dialog_open {
 
 .evt_products.row_dir .product_info {
   width: calc((100% - 20px )/2);
-  padding-left: 20px;
+  margin-left: 20px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -9122,20 +9122,6 @@ body.dialog_open {
   margin-bottom: 20px;
 }
 
-.brand_card .tit_card_head .brand {
-  padding-right: 60px;
-  font-size: 12px;
-  line-height: 20px;
-}
-
-.brand_card .tit_card_head .logo {
-  padding-right: 60px;
-}
-
-.brand_card .tit_card_head .logo img {
-  width: 100%;
-}
-
 .brand_card .tit_card_head .brand_thumbnail {
   position: absolute;
   width: 60px;
@@ -9143,6 +9129,25 @@ body.dialog_open {
   bottom: 0;
   right: 0;
   z-index: 3;
+}
+
+.brand_card .tit_card_head .brand {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.brand_card .tit_card_head .logo {
+  line-height: 36px;
+  font-family: 'Gmarket Sans';
+  text-shadow: 3px 2px 0px #000;
+  font-weight: 900;
+  font-size: 36px;
+  color: #FFEB01;
+}
+
+.brand_card .tit_card_head .brand_thumbnail ~ .brand,
+.brand_card .tit_card_head .brand_thumbnail ~ .logo {
+  padding-right: 60px;
 }
 
 .brand_card .tit_card_body {
@@ -9235,18 +9240,6 @@ body.dialog_open {
   margin-top: 20px;
   padding-top: 56.25%;
   overflow: hidden;
-}
-
-.vodeo_wrap .video_item .video_play {
-  position: absolute;
-  width: 52px;
-  height: 52px;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-  z-index: 10;
-  background: url(../images/guide/play_btn.svg) no-repeat center/50px;
 }
 
 .vodeo_wrap .video_item .evt_video {

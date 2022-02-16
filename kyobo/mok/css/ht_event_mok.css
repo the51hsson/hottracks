@@ -8796,7 +8796,7 @@ body.dialog_open {
 
 .evt_products.row_dir .product_info {
   width: calc((100% - 20px )/2);
-  padding-left: 20px;
+  margin-left: 20px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -8983,7 +8983,7 @@ body.dialog_open {
 
 .evt_products.row_dir .product_info {
   width: calc((100% - 20px )/2);
-  padding-left: 20px;
+  margin-left: 20px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }

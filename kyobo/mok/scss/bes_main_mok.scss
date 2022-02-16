@@ -205,24 +205,17 @@
     }
 }
 //상품 리스트 영역
-.list_block {
-    .evt_products.row_dir {
+.list_section{
+	position:relative;
+	.evt_products.row_dir {
         margin-top:20px;
         padding:20px 20px 0 20px;
         .prod_item {
             position:relative;
+			align-items: flex-start;
+			align-content: flex-start;
         }
-		.product_pic {
-            width:158px;
-            padding-top:158px;
-        }
-		.product_info {
-			width:calc(100% - 158px);
-		}
-    }    
-}
-//랭킹
-.list_section{
+    }  
     .rangking {
         position: absolute;
         display: flex;
@@ -240,6 +233,11 @@
         color:#000;
         font-weight: 700;
         background:url(../images/guide/lank_noraml.svg) no-repeat center center / 50px;
+        &.none_icon {
+            .rank_icon{
+                display: none;
+            }
+        }
         .rank_icon{
             width:10px;
             height:15px;
@@ -257,6 +255,7 @@
             background:url(../images/guide/lank_noraml_up.svg) no-repeat center center / 9px;
             margin-top:-2px;
         }
+
         &.same .rank_icon{
             position:relative;
         }
@@ -274,11 +273,15 @@
         }
     }
     @for $lank from 1 through 5 {
-        .list_block:first-of-type .prod_item:nth-of-type(#{$lank}) .rangking{
+        .prod-wrapper:first-of-type .prod_item:nth-of-type(#{$lank}) .rangking{
             color:#fff;
             background:url(../images/guide/lank_hot.svg) no-repeat center center / 50px;
             border:none;
-    
+            &.none_icon {
+                .rank_icon{
+                    display: none;
+                }
+            }    
             .rank{
                 display: block;
             }
@@ -311,31 +314,27 @@
     }
 }
 
-
-//말풍선(한줄 정렬)
-.list_block {
-    position:relative;  
-    .ranking_bubble_area {
+//말풍선(베스트)
+.ranking_bubble_area {
+    position:absolute;
+    right:0;
+    bottom:45vw;
+    padding-right:40px;
+    z-index:10;
+    .rank_icon{
+        content:"";
+        width:0px;
+        height:0px;
         position:absolute;
-        right:0;
-        bottom:40%;
-        padding-right:40px;
-        z-index:10;
-        .rank_icon{
-            content:"";
-            width:0px;
-            height:0px;
-            position:absolute;
-            right:-15px;
-            top:-14px;
-            z-index: 13;
-            background: url(../images/guide/lanking_bubble_thumb.svg) no-repeat center center/ 55px;
-        }
-        .icon_show{
-            width:55px;
-            height:70px;   
-            transition: width 0.2s ease-in-out;
-        }
+        right:-15px;
+        top:-14px;
+        z-index: 13;
+        background: url(../images/guide/lanking_bubble_thumb.svg) no-repeat center center/ 55px;
+    }
+    .icon_show{
+        width:55px;
+        height:70px;   
+        transition: width 0.2s ease-in-out;
     }
     .ranking_bubble {
         position:relative;
@@ -354,18 +353,17 @@
             transform: rotate(180deg);
             bottom:8px;
             right:38px;
-        }
-    }    
-}
-//말풍선(두줄 정렬)
-.list_column_block{
-    position:relative;
-    .ranking_bubble_area {
-        position:absolute;
-        right:-20px;
-        bottom:45%;
-        z-index:10;
+        }   
     }
+}
+
+//말풍선(신상품)
+.ranking_bubble_area.new {
+    position:absolute;
+    padding-right:0;
+    right:0px;
+    bottom:100vw;
+    z-index:10;
     .rank_icon{
         content:"";
         width:0px;
@@ -399,10 +397,11 @@
             bottom:18px;
             right:68px;
         }
-    }  
-}
+    }    
+}  
 //신상품 리스트
 .prod_list_wrap{
+    position: relative;
      padding:0 20px;
      .tit{
         line-height:35px;
@@ -412,6 +411,9 @@
         margin-bottom:12px;
         padding:0;
      }
+    .prod-wrapper.evt_products {
+        padding-top:0;
+    }
 
 }
 //솔로 배너
