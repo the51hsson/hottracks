@@ -128,7 +128,7 @@
                                             <span class="hidden">공유하기</span>
                                         </button>
                                     </div>
-                                    <p class="tit_bottom">독서대 위너항균독서대 60SE</p>
+                                    <p class="tit_bottom">릴리 에폭시 다이어리 (만년형)</p>
                                     <p class="tit_bottom_dec">[핫트랙스] 2021 베스트 어워드 기프트</p>
                                 </h1>
                                 <div class="rating_score_wrap">
@@ -316,10 +316,31 @@
                                                 제주지,도서 산간 지역 추가 배송비가 발생하니 주문시 확인 부탁드립니다.
                                             </p>
                                         </div>
+                                        <!--[2022-02-16]해외 직구 유의사항 추가-->
+                                        <!-- <div class="info_area">
+                                            <div class="tit_subin_area">
+                                                <h3 class="tit"><span class="ico_reservation"></span><span class="txt">핫트픽업 예약주문</span></h3>
+                                            </div>
+                                            <p class="txt_dec">
+                                                앨범 출시 전 예약주문 기간 내 핫트랙스 온라인으로 예약주문을 하고, 공지 되어있는 
+                                                수령일에 핫트랙스 오프라인 매장으로 고객님께서 방문하여 수령하시는 주문 방식입니다. 
+                                                이 주문은 별도 배송이 되지 않으며, 선택하신 매장 외 다른 매장에서는 수령이 불가합니다.
+                                            </p>
+                                        </div> -->
+                                        <div class="info_area">
+                                            <div class="tit_subin_area">
+                                                <h3 class="tit"><span class="ico_overseas"></span><span class="txt">해외 직구 유의사항</span></h3>
+                                            </div>
+                                            <p class="txt_dec">
+                                                배송 시 (주말,공휴일 제외)약7~15일 정도 소요되며
+                                                해외 배송 상품은 개인통관고유부호가 필수입니다.
+                                            </p>
+                                        </div>
                                     </div>
                                     <div class="msg_zoomin_area">
                                         <p class="txt_dec">
-                                            이미지를 <span class="txt_primary">확대</span>하여 볼 수 있습니다.
+                                            <!--[2022-02-16] 폰트 스타일 변경 span class="txt_primary" => strong-->
+                                            이미지를 <strong>확대</strong>하여 볼 수 있습니다.
                                         </p>
                                     </div>
                                     <div class="auto_overflow_wrap overflow type_text">
@@ -710,11 +731,13 @@
                                                                 <span class="ico_quotation"><span class="txt_reaction">좋았어요</span></span>
                                                             </div>
                                                         </div>
-                                
+                                                        <!--[2022-02-16] ico_good active 클래스 추가 case,
+                                                            상품 종류 표기 태그  div.prod_kind 추가  없는 경우 해당 태그 전체 삭제-->
                                                         <div class="auto_overflow_wrap overflow">
                                                             <div class="auto_overflow_contents" style="max-height: 78px;">
                                                                 <div class="auto_overflow_inner">
                                                                     <div class="review_comment_area">
+                                                                        <div class="prod_kind">01 Lavender</div>
                                                                         <p class="txt_review">
                                                                             6개월용이라 부담없이 넉넉히 쓸 수 있어서 좋아요!! 메모할 수 있는 공간도 많구요! 앞으로 몇년간 이것만 계속 쓸 것 같아요
                                                                         </p>
@@ -751,7 +774,7 @@
                                                         <div class="review_more_area">
                                                             <a href="#none" class="link_more ico_more"  data-role="btn-dialog" data-target="#cmtReview_img">한달 후 리뷰 보기</a>
                                                             <div class="review_btn_common">
-                                                                <button class="btn_good">
+                                                                <button class="btn_good active">
                                                                     <span class="ico_good"></span>
                                                                     <span class="txt_count">234</span>
                                                                 </button>
@@ -1268,8 +1291,9 @@
                                         <h2 class="tit">Q&A<span> (19)</span></h2>
                                         <p class="sub">문의하기를 통해 궁금증을 해결하세요.</p>
                                     </div>
+                                    <!--[2022-02-16] 디자인 변경으로 <a> 클래스  btn_secondary -> btn_default 로 변경-->
                                     <div class="btn_wrap">
-                                        <a href="#none" class="btn btn_secondary btn_md btn_block"  data-role="btn-dialog" data-target="#prodQA">
+                                        <a href="#none" class="btn btn_default btn_md btn_block"  data-role="btn-dialog" data-target="#prodQA">
                                             <span class="txt ico_comment">상품 문의하기</span>
                                         </a>
                                     </div>
@@ -1816,8 +1840,10 @@
 
                     <!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
                     <!--fixed_back_hidden Class로 하단 뒤로가기 버튼 opacity 사라지게 -->
+                    <!--[2022-02-16 팝업 열릴때 푸터 고정 버튼 보이게 하려면 dataset : data-foot-btn 추가 ]-->
                     <div class="btn_wrap ">
-                        <button type="button" class="btn_ip btn_line_primary fixed_back_hidden" data-role="btn-dialog" data-target="#popCart">
+                        <button type="button" class="btn_ip btn_line_primary fixed_back_hidden" data-role="btn-dialog" 
+                        data-target="#popCart" data-foot-btn>
                             <span class="text">장바구니</span>
                         </button>
                         <button type="button" class="btn_ip btn_primary fixed_back_hidden" data-role="btn-dialog" data-target="#popCart">
@@ -1863,7 +1889,7 @@
                 </div>
                 <!-- // CASE 4. 판매 중지 -->
 
-                <!-- CASE 5. 바로드림 바로구매 -->
+                <!-- CASE 5. 바로드림 바로구매 --> 
                 <div class="btn_wrap" style="display:none;">
                     <button type="button" class="btn_ip btn_line_primary"><span class="text">바로드림</span></button>
                     <button type="button" class="btn_ip btn_primary"><span class="text">바로구매</span></button>

@@ -25,18 +25,6 @@
 	margin:0;
 	background-color:#f7f7f7 ;
 }
-/* input type="number" 숫자키 안나오게  */
-/* Chrome, Safari, Edge, Opera  */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
 /*===============     모듈 001 영역(기획전 타이틀)   ==================*/
 .evt_mdl_title{
 	position: relative;
@@ -739,10 +727,11 @@ input[type=number] {
 	.cmt_content{
 		line-height: 22px;
 		letter-spacing: -0.14px;
-    color:#292929;
 		flex-grow: 1;
+		word-break: keep-all;
+		color:#292929;
 	}
-  .cmt_img{
+    .cmt_img{
 		position:relative;
 		width:78px;
 		height:0;

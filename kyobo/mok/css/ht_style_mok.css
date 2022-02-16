@@ -1189,18 +1189,8 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   transition: background .2s ease-out;
 }
 
-.btn_tooltip .ico_info {
-  background-image: url(../images/btn_tooltip_mok.png);
-  background-size: 22px 22px;
-}
-
 .btn_tooltip .ico_arw {
   background-image: url(../images/arw_tooltip_mok.png);
-  background-size: 22px 22px;
-}
-
-.btn_tooltip.active .ico_info {
-  background-image: url(../images/btn_tooltip_active_mok.png);
   background-size: 22px 22px;
 }
 
@@ -1437,14 +1427,8 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   .btn_wish_text.active .ico_wish {
     background-image: url(../images/ico_heart_h18_active_mok@2x.png);
   }
-  .btn_tooltip .ico_info {
-    background-image: url(../images/btn_tooltip_mok@2x.png);
-  }
   .btn_tooltip .ico_arw {
     background-image: url(../images/arw_tooltip_mok@2x.png);
-  }
-  .btn_tooltip.active .ico_info {
-    background-image: url(../images/btn_tooltip_active_mok@2x.png);
   }
   .btn_tooltip.active .ico_arw {
     background-image: url(../images/arw_tooltip_active_mok@2x.png);
@@ -1704,7 +1688,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   display: inline-block;
   width: 30px;
   height: 20px;
-  background: url(../images/ico/ico_truck.svg) no-repeat 0 -5px;
+  background: url(../images/ico/ico_truck.svg) no-repeat 0;
   background-size: 30px auto;
 }
 
@@ -5015,6 +4999,19 @@ body.dialog_open {
 
 /* e: list common */
 /* s: form 공통 */
+/* input type="number" 숫자키 안나오게  */
+/* Chrome, Safari, Edge, Opera  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .form_label {
   display: inline-block;
   color: #000;

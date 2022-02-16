@@ -869,19 +869,19 @@ button.btn_text_link {
         vertical-align: top;
         transition: background .2s ease-out;
     }
-    .ico_info {
-        background-image: url(../images/btn_tooltip_mok.png);
-        background-size: 22px 22px;
-    }
+    // .ico_info {
+    //     background-image: url(../images/btn_tooltip_mok.png);
+    //     background-size: 22px 22px;
+    // }
     .ico_arw {
         background-image: url(../images/arw_tooltip_mok.png);
         background-size: 22px 22px;
     }
     &.active {
-        .ico_info {
-            background-image: url(../images/btn_tooltip_active_mok.png);
-            background-size: 22px 22px;
-        }
+        // .ico_info {
+        //     background-image: url(../images/btn_tooltip_active_mok.png);
+        //     background-size: 22px 22px;
+        // }
         .ico_arw {
             background-image: url(../images/arw_tooltip_active_mok.png);
             background-size: 22px 22px;
@@ -1076,19 +1076,20 @@ button.btn_text_link {
     }
     .btn_wish_text .ico_wish {
         background-image: url(../images/ico_heart_h18_mok@2x.png);
+
     }
     .btn_wish_text.active .ico_wish {
         background-image: url(../images/ico_heart_h18_active_mok@2x.png);
     }
-    .btn_tooltip .ico_info {
-        background-image: url(../images/btn_tooltip_mok@2x.png);
-    }
+    // .btn_tooltip .ico_info {
+    //     background-image: url(../images/btn_tooltip_mok@2x.png);
+    // }
     .btn_tooltip .ico_arw {
         background-image: url(../images/arw_tooltip_mok@2x.png);
     }
-    .btn_tooltip.active .ico_info {
-        background-image: url(../images/btn_tooltip_active_mok@2x.png);
-    }
+    // .btn_tooltip.active .ico_info {
+    //     background-image: url(../images/btn_tooltip_active_mok@2x.png);
+    // }
     .btn_tooltip.active .ico_arw {
         background-image: url(../images/arw_tooltip_active_mok@2x.png);
     }
@@ -1323,7 +1324,7 @@ button.btn_text_link {
         display: inline-block;
         width: 30px;
         height: 20px;
-        background: url(../images/ico/ico_truck.svg) no-repeat 0 -5px;
+        background: url(../images/ico/ico_truck.svg) no-repeat 0 ;
         background-size: 30px auto;
     }
     .ico_truck_txt {

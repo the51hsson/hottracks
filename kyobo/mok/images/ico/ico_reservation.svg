@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-  <g id="icon_reservation" transform="translate(-827 -413)">
-    <g id="그룹_1849" data-name="그룹 1849" transform="translate(9925 17978)">
-      <rect id="사각형_3472" data-name="사각형 3472" width="16" height="16" transform="translate(-9097 -17564)" fill="#fff" opacity="0"/>
-      <g id="그룹_1841" data-name="그룹 1841" transform="translate(-9097.612 -17564.611)">
-        <g id="그룹_1842" data-name="그룹 1842" transform="translate(0.613 0.612)">
-          <g id="패스_36304" data-name="패스 36304" transform="translate(-1 -0.999)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M17,9A8,8,0,1,1,9,1,8,8,0,0,1,17,9Z" stroke="none"/>
-            <path d="M 8.999670028686523 15.99966144561768 C 12.85966968536377 15.99966144561768 16 12.85933113098145 16 8.999331474304199 C 16 5.139331340789795 12.85966968536377 1.999001502990723 8.999670028686523 1.999001502990723 C 5.140039920806885 1.999001502990723 2 5.139331340789795 2 8.999331474304199 C 2 12.85933113098145 5.140039920806885 15.99966144561768 8.999670028686523 15.99966144561768 M 8.999670028686523 16.99966239929199 C 4.58158016204834 16.99966239929199 1 13.41743183135986 1 8.999331474304199 C 1 4.581241607666016 4.58158016204834 0.9990015029907227 8.999670028686523 0.9990015029907227 C 13.41843032836914 0.9990015029907227 17 4.581241607666016 17 8.999331474304199 C 17 13.41743183135986 13.41843032836914 16.99966239929199 8.999670028686523 16.99966239929199 Z" stroke="none" fill="#000"/>
-          </g>
-          <path id="패스_36306" data-name="패스 36306" d="M13.547,12.22a1.326,1.326,0,1,1-1.326-1.326A1.326,1.326,0,0,1,13.547,12.22Z" transform="translate(-4.221 -4.22)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <path id="패스_36308" data-name="패스 36308" d="M13.06,4.437a4.721,4.721,0,0,1,4.721,4.72" transform="translate(-4.512 -1.703)" fill="none" stroke="#da2128" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <path id="패스_36310" data-name="패스 36310" d="M9.158,17.779a4.721,4.721,0,0,1-4.721-4.72" transform="translate(-1.704 -4.51)" fill="none" stroke="#da2128" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <g id="icon_hearts" transform="translate(19493 17860)">
+    <g id="그룹_109484" data-name="그룹 109484" transform="translate(16.001 3.383)">
+      <g id="그룹_109481" data-name="그룹 109481" transform="translate(-19508 -17861.213)">
+        <g id="그룹_109482" data-name="그룹 109482" transform="translate(0 0)">
+          <path id="패스_36389" data-name="패스 36389" d="M16.073,4.47a3.948,3.948,0,0,1-1.16,2.812l-1,1.007L8.588,13.61a.427.427,0,0,1-.6,0L2.664,8.288l-1-1.007A3.976,3.976,0,0,1,7.284,1.658l.7.7a.427.427,0,0,0,.6,0l.7-.7A3.972,3.972,0,0,1,16.073,4.47Z" transform="translate(-0.286 -0.287)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="그룹_109483" data-name="그룹 109483" transform="translate(-19503.518 -17857.215)">
+        <g id="그룹_109478" data-name="그룹 109478" transform="translate(0 0)">
+          <path id="패스_36386" data-name="패스 36386" d="M1.186,3.073A1.38,1.38,0,0,1,2.573.687c.659.383,1.748,1.73,1.365,2.389S1.845,3.456,1.186,3.073Z" transform="translate(-0.5 -0.5)" fill="none" stroke="#474c98" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="패스_36387" data-name="패스 36387" d="M15.911,3.073A1.38,1.38,0,0,0,14.525.687c-.659.383-1.748,1.73-1.365,2.389S15.253,3.456,15.911,3.073Z" transform="translate(-9.562 -0.5)" fill="none" stroke="#474c98" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="패스_36388" data-name="패스 36388" d="M7.637,12.947c0-1.331.683-2.407,1.522-2.407s1.522,1.076,1.522,2.407" transform="translate(-5.641 -7.732)" fill="none" stroke="#474c98" stroke-miterlimit="10" stroke-width="1"/>
         </g>
       </g>
     </g>
-    <rect id="사각형_3534" data-name="사각형 3534" width="18" height="18" transform="translate(827 413)" fill="none"/>
+    <rect id="사각형_19639" data-name="사각형 19639" width="18" height="18" transform="translate(-19493 -17860)" fill="none"/>
   </g>
 </svg>

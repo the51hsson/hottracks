@@ -189,14 +189,13 @@ $(function(){
 	//장바구니, 구매하기 버튼 하단 팝업 시 노출
     footTabCustom();
 
-	$('button[data-target="#popCart"]').click(function(){
+	$('button[data-foot-btn]').click(function(){
 		footTabCustom( true);
 	});
 	$(document).on('click','.dialog_header .close', function(){
 		footTabCustom();
 	});
 	function footTabCustom( bool){
-
 		if(bool){
 			//Class:footer_wrap fixed_foot에 btm_pop_upper_foot 추가 시 팝업 위로 장바구니 버튼 노출
 			$('.footer_wrap.fixed_foot').addClass('btm_pop_upper_foot');
@@ -205,24 +204,39 @@ $(function(){
 		}else{
 			$('.footer_wrap.fixed_foot').removeClass('btm_pop_upper_foot');
 			$('.btn_go_back,.btn_go_top').css('opacity', '1');
-			//셀렉 박스 초기화(하드코딩)
-			$('#popCart .title_selec .selected_option .txt').text('선택하세요');
 		} 
 	}
 	//장바구니 팝업 상세 내용 닫기
 	$(document).on('click', '.buy_info .close', function(){
 		$(this).closest('.buy_info').css('display', 'none');
 	});
+    //textarea focus 효과
+	$(document).on('focus', '.mycomment_box textarea', function(){
+		$(this).parent().addClass('active');
+	});
+
+	$(document).on('blur', '.mycomment_box textarea', function(){
+		$(this).parent().removeClass('active');
+	});
+    //textarea 20자 제한 효과
+	$(document).on('keyup', '.mycomment_box textarea', function(){
+		if($(this).val().length > 20){
+			$(this).parent().addClass('notice');
+		} else {
+			$(this).parent().removeClass('notice');
+		}
+	});
 
 	//셀렉트 박스 커스텀
 	$(document).on('click', '.selected_option', function(){
 	var arrowIcon = $(this).children('.selec_icon');
 	var thisOptionBox =  $(this).next('.option_ul');
+
 	//셀렉트 박스 여러개인 경우 다른 옵션박스 닫기
 	$('.option_ul').not(thisOptionBox).css('display', 'none');
 	$('.title_selec').removeClass('active');
 
-		//옵션박스 나타나는 토글
+	//옵션박스 나타나는 토글
 	if($(this).next('.option_ul').css('display') == 'none'){
 		$(this).parent().addClass('active');
 		$(this).next('.option_ul').css('display', 'block');
@@ -233,6 +247,7 @@ $(function(){
 		$(arrowIcon).removeClass('open'); 
 	}
 	});
+
 	//옵션 선택
 	$(document).on('click', '.option_ul li', function(){
 		var select = $(this).parent().prev('.selected_option').find('em').eq(0);
@@ -248,6 +263,7 @@ $(function(){
 		$(this).parent().css('display', 'none');
 		$(arrowIcon).removeClass('open'); 
 	});
+	
 	//바디 영역 선택시 셀렉트 닫기
 	$(document).on('click', function(e){
 		if( !$(e.target).parent().hasClass('option_ul') &&

@@ -1,23 +1,28 @@
 @import "ht_product_mok.scss"; 
+@import "_ht_tempate.scss"; //TODO 임시, 이전 시 다시 확인
 .product_info_area{
     .tit_wrap .rating_score_wrap{
         margin-top:8px;
         margin-bottom:12px;
     }
 }
-.contents_wrap .product_info_area .price_wrap {
-    display: flex;
-    flex-flow: row wrap;
-    margin-bottom:3px;
-    .sale_price, 
-    .real_price{
-        line-height: 32px;
+.contents_wrap {
+    background-color: #fff;
+    .product_info_area .price_wrap {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom:3px;
+        .sale_price, 
+        .real_price{
+            line-height: 32px;
+        }
+        .real_price{
+            margin-left:8px;
+        }
+    
     }
-    .real_price{
-        margin-left:8px;
-    }
-
 }
+
 .cpon_bubble {
     position:relative;
     display: inline-block;
@@ -27,7 +32,7 @@
     line-height: 17px;
     padding:8px 16px 8px 10px;
     border-radius: 50px;
-    &:before{
+    &:before {
         content:"";
         position:absolute;
         border-top:7px solid #000;
@@ -35,7 +40,7 @@
         border-right: 7px solid transparent;
         border-bottom: 7px solid transparent;
         transform: rotate(-180deg);
-        z-index: -1;
+        z-index: 10;
         left:16px;
         top:-12px;
     }
@@ -139,9 +144,13 @@
     }
 }
 .product_area{
-    .info_all_area{
-        .txt_dec{
+    .info_all_area {
+        .txt_dec {
             word-break: keep-all;
+        }
+        .txt_primary {
+            color:#474C98 !important;
+            margin-left:4px;
         }
     }
     .product_detailinfo_area{
@@ -166,11 +175,6 @@
     }
 }
 
-.btn .txt.ico_review{
-    background: url(../images/ico/ico_review.svg) no-repeat 0 5px;
-    background-size: 18px auto;
-    padding-left: 22px;      
-}
 .hotpick_area{
     margin-bottom: 22px;
     .tit_sub_area {
@@ -320,6 +324,7 @@
             margin-bottom:12px;
         }
         .title_selec{
+            overflow: hidden;
             border:1px solid #D5D5D5;
             border-radius: 6px;
             margin-bottom:16px;
@@ -355,10 +360,103 @@
                 li{
                    height:50px;
                    padding:15px 14px;
+                   display: flex;
+                   flex-flow: row nowrap;
+                   justify-content: space-between;
+                   align-items: center;
+                   align-content: center;
                    &:active,
                    &:hover{
                        background-color: #F5F5F5;
+                       font-weight: 500;
+                       color:#000;
                    }
+                }
+                .price {
+                    position:relative;
+                    margin-right:10px;
+                    font-weight: 500;
+                    &:before {
+                        content : "원";
+                        position:absolute;
+                        top:0;
+                        right:-13px;
+
+                    }
+                }
+            }
+        }
+        .cmt_box {
+            .notice_txt { display: none;}
+            & ~  .buy_result {
+                margin-top: 12px;
+            }    
+        }
+        .mycomment_box{
+            padding:12px 16px;
+            border:1px solid #d5d5d5;
+            margin-bottom:4px;
+            &.active {
+                border:1px solid #000;
+                transition: border .1s;
+            }
+            &.notice {
+                border: 1px solid #DA2128;
+                transition: border .1s;
+            }
+            &.notice + .notice_txt {
+                display: block;
+                position:relative;
+                padding-left: 16px;
+                font-size: 13px;
+                color:#EC1F2D;
+                &:before {
+                    content:"";
+                    position:absolute;
+                    left:0;
+                    top:2px;
+                    width:12px;
+                    height:14px;
+                    background:url(../images/guide/ico_warning.svg);
+                    background-size: 12px 14px;
+                }
+            }
+            textarea{
+                width:100%;
+                height:62px;
+                border:none;
+                outline:none;
+                resize: none;
+                overflow-y: auto;
+                font-family: Roboto,"Noto Sans KR","PingFang SC","Apple SD Gothic Neo","Microsoft YaHei UI","Malgun Gothic",sans-serif;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: -0.14px;
+                word-break: keep-all;
+            }
+            .mycomment_box_bottom{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+                align-content: center;
+                align-items: center;
+                margin-top:8px;
+                .count_length_line{
+                    margin-right:8px;
+                }
+            }
+            .count_defalut{
+                color:#767676;
+            }
+            .btn_cmt{
+                font-size: 13px;
+                letter-spacing: -0.13px;
+                width:52px;
+                height:36px;
+                text-align: center;
+                border-radius: 4px;
+                &:last-of-type{
+                    margin-left:5px;
                 }
             }
         }

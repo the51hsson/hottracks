@@ -188,7 +188,7 @@
   width: 50px;
   height: 50px;
   border-radius: 6px;
-  color: #000;
+  color: #fff;
   background-color: #ffffff;
   -webkit-transition: background-color .2s ease-out,border-color .2s ease-out;
   transition: background-color .2s ease-out,border-color .2s ease-out;
@@ -267,15 +267,15 @@ button.btn_sm {
 }
 
 .btn .txt.ico_review {
-  background: url(../images/ico/ico_review.png) no-repeat 0 3px;
-  background-size: 20px auto;
-  padding-left: 22px;
+  background: url(../images/ico/ico_review.svg) no-repeat 0 3px;
+  background-size: 15px auto;
+  padding-left: 20px;
 }
 
 .btn .txt.ico_comment {
-  background: url(../images/ico/ico_comment.png) no-repeat 0 1px;
-  background-size: 20px auto;
-  padding-left: 25px;
+  background: url(../images/ico/ico_comment.svg) no-repeat -3px -1px;
+  background-size: 40px auto;
+  padding-left: 30px;
 }
 
 .btn_coupon_download {
@@ -601,6 +601,7 @@ button.btn_sm {
 .rating_reaction_wrap .txt_value .ico_quotation .txt_reaction {
   font-size: 13px;
   margin-left: 5px;
+  color: #474C98;
 }
 
 /* notice */
@@ -660,6 +661,11 @@ button.btn_sm {
 
 .btn_good.active .ico_good {
   background: url(../images/ico/ico_good_active.svg) no-repeat 0 0;
+}
+
+.btn_good.active .txt_count {
+  color: #474C98 !important;
+  font-weight: 700;
 }
 
 .btn_reply {
@@ -894,9 +900,13 @@ button.btn_sm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -910,6 +920,7 @@ button.btn_sm {
 
 .quick_area .link_home.ico_gohome {
   position: relative;
+  margin-right: 10px;
 }
 
 .quick_area .link_home.ico_gohome:after {
@@ -926,6 +937,7 @@ button.btn_sm {
 
 .quick_area .link_home.ico_gomusic {
   position: relative;
+  margin-right: 10px;
 }
 
 .quick_area .link_home.ico_gomusic:after {
@@ -942,6 +954,7 @@ button.btn_sm {
 
 .quick_area .link_home.ico_gobluelay {
   position: relative;
+  margin-right: 10px;
 }
 
 .quick_area .link_home.ico_gobluelay:after {
@@ -971,7 +984,7 @@ button.btn_sm {
 .hotpick_area .hotpickslide_wrap .swiper-container {
   width: 100%;
   height: 100%;
-  padding: 0 20px;
+  padding: 1px 20px;
 }
 
 .hotpick_area .hotpickslide_wrap .swiper-container .swiper_control_box {
@@ -1287,8 +1300,8 @@ button.btn_sm {
 }
 
 .product_deliinfo_area .freebie_wrap {
-  background: #fff4f1;
-  border: solid 1px #d53020;
+  background-color: #F4F4F4;
+  border: solid 1px #000;
   border-radius: 4px;
   padding: 20px;
   position: relative;
@@ -1591,6 +1604,7 @@ button.btn_sm {
   position: relative;
   padding-left: 20px;
   display: inline-block;
+  color: #474C98;
 }
 
 .review_best_area .rating_area .msg_box p .ico_quotation:before {
@@ -1601,7 +1615,7 @@ button.btn_sm {
   position: absolute;
   left: 0;
   top: 6px;
-  background: url(../images/ico/ico_quotation.png);
+  background: url(../images/ico/ico_quotation.svg);
   background-size: 16px auto;
 }
 
@@ -1686,8 +1700,9 @@ button.btn_sm {
 
 /* review */
 .slide_review_wrap {
-  background: #FFF4F1;
+  background: #F4F4F4;
   padding: 0 20px 20px;
+  border: 1px solid #000;
   border-radius: 4px;
 }
 
@@ -1774,6 +1789,8 @@ button.btn_sm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 78px;
   height: 78px;
   overflow: hidden;
@@ -1997,6 +2014,9 @@ button.btn_sm {
 
 .all_qa_area .all_qa_wrap .review_inner .review_info_area .right_area .txt_reply {
   font-size: 14px;
+}
+
+.all_qa_area .all_qa_wrap .review_inner .review_info_area .right_area .txt_reply .txt_primary {
   font-weight: 500;
 }
 
@@ -2406,8 +2426,26 @@ button.btn_sm {
   margin-bottom: 12px;
 }
 
+.all_review_wrap .review_inner .auto_overflow_contents .auto_overflow_inner .review_comment_area {
+  position: relative;
+}
+
+.all_review_wrap .review_inner .auto_overflow_contents .auto_overflow_inner .review_comment_area .prod_kind {
+  position: absolute;
+  line-height: 20px;
+  font-size: 13px;
+  color: #767676;
+  left: 0;
+  top: 0;
+}
+
 .all_review_wrap .review_inner .auto_overflow_contents .auto_overflow_inner .review_comment_area .txt_review {
   margin-bottom: 12px;
+}
+
+.all_review_wrap .review_inner .auto_overflow_contents .auto_overflow_inner .review_comment_area .prod_kind + .txt_review {
+  padding-top: 32px;
+  height: 72px;
 }
 
 .all_review_wrap .review_inner .auto_overflow_footer {
@@ -3042,7 +3080,7 @@ button.btn_sm {
   width: 18px;
   height: 18px;
   background: url(../images/ico/ico_reservation.svg) no-repeat 0 0;
-  background-size: 18px auto;
+  background-size: 16px auto;
   position: relative;
   top: 3px;
 }
@@ -3091,6 +3129,17 @@ button.btn_sm {
   top: 3px;
 }
 
+.info_all_area .tit_subin_area .tit .ico_overseas:after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../images/ico/ico_overseas.svg) no-repeat 0 0;
+  background-size: 16px auto;
+  position: relative;
+  top: 3px;
+}
+
 .info_all_area .txt_dec {
   font-size: 13px;
   color: #595959;
@@ -3134,6 +3183,7 @@ button.btn_sm {
 .msg_zoomin_area .txt_dec {
   position: relative;
   padding-left: 27px;
+  font-size: 13px;
 }
 
 .msg_zoomin_area .txt_dec:after {
@@ -3144,7 +3194,7 @@ button.btn_sm {
   width: 26px;
   height: 26px;
   display: inline-block;
-  background: url(../images/ico/ico_zoomin.svg) no-repeat 0 0;
+  background: url(../images/ico/ico_zoomin.svg) no-repeat 0 -3px;
   background-size: 26px 26px;
 }
 
@@ -4611,18 +4661,8 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   transition: background .2s ease-out;
 }
 
-.btn_tooltip .ico_info {
-  background-image: url(../images/btn_tooltip_mok.png);
-  background-size: 22px 22px;
-}
-
 .btn_tooltip .ico_arw {
   background-image: url(../images/arw_tooltip_mok.png);
-  background-size: 22px 22px;
-}
-
-.btn_tooltip.active .ico_info {
-  background-image: url(../images/btn_tooltip_active_mok.png);
   background-size: 22px 22px;
 }
 
@@ -4859,14 +4899,8 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   .btn_wish_text.active .ico_wish {
     background-image: url(../images/ico_heart_h18_active_mok@2x.png);
   }
-  .btn_tooltip .ico_info {
-    background-image: url(../images/btn_tooltip_mok@2x.png);
-  }
   .btn_tooltip .ico_arw {
     background-image: url(../images/arw_tooltip_mok@2x.png);
-  }
-  .btn_tooltip.active .ico_info {
-    background-image: url(../images/btn_tooltip_active_mok@2x.png);
   }
   .btn_tooltip.active .ico_arw {
     background-image: url(../images/arw_tooltip_active_mok@2x.png);
@@ -5126,7 +5160,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   display: inline-block;
   width: 30px;
   height: 20px;
-  background: url(../images/ico/ico_truck.svg) no-repeat 0 -5px;
+  background: url(../images/ico/ico_truck.svg) no-repeat 0;
   background-size: 30px auto;
 }
 

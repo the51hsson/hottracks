@@ -59,7 +59,8 @@
 /* 바로가기 메뉴 */
 .quick_area {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     align-items: center;
     .link_home {
         display: inline-block;
@@ -67,6 +68,7 @@
         height: 40px;
         &.ico_gohome {
             position: relative;
+            margin-right:10px;
             &:after {
                 content: "";
                 display: inline-block;
@@ -81,6 +83,7 @@
         }
         &.ico_gomusic {
             position: relative;
+            margin-right:10px;
             &:after {
                 content: "";
                 display: inline-block;
@@ -95,6 +98,7 @@
         }
         &.ico_gobluelay {
             position: relative;
+            margin-right:10px;
             &:after {
                 content: "";
                 display: inline-block;
@@ -121,7 +125,7 @@
         .swiper-container {
             width: 100%;
             height: 100%;
-            padding: 0 20px;
+            padding: 1px 20px;
 
             .swiper_control_box {
                 margin-top: 10px;
@@ -379,8 +383,8 @@
         }
     } 
     .freebie_wrap {
-        background: #fff4f1;
-        border: solid 1px #d53020;
+        background-color: #F4F4F4;
+        border: solid 1px #000;
         border-radius: 4px;
         padding: 20px;
         position: relative;
@@ -637,6 +641,7 @@
                     position: relative;
                     padding-left: 20px;
                     display: inline-block;
+                    color:#474C98;
                     &:before {
                         content: "";
                         display: block;
@@ -645,7 +650,7 @@
                         position: absolute;
                         left: 0;
                         top: 6px;
-                        background: url(../images/ico/ico_quotation.png);
+                        background: url(../images/ico/ico_quotation.svg);
                         background-size: 16px auto;
                     }
                 }
@@ -727,8 +732,9 @@
 
 /* review */
 .slide_review_wrap {
-    background:#FFF4F1;
+    background:#F4F4F4;
     padding: 0 20px 20px;
+    border:1px solid #000;
     border-radius: 4px;
     .review_inner {
         border-bottom: 0;
@@ -784,6 +790,7 @@
             }
             .thumnail_review {
                 display: flex;
+                flex-shrink: 0;
                 width: 78px;
                 height: 78px;
                 overflow: hidden;
@@ -953,7 +960,9 @@
                 .right_area {
                     .txt_reply {
                         font-size: 14px;
-                        font-weight: 500;
+                        .txt_primary {
+                            font-weight: 500;
+                        }                    
                     }                
                 }            
             }
@@ -1302,8 +1311,21 @@
             margin-bottom: 12px;
             .auto_overflow_inner {
                 .review_comment_area {
+                    position:relative;
+                    .prod_kind {
+                        position:absolute;
+                        line-height: 20px;
+                        font-size: 13px;
+                        color:#767676;
+                        left:0;
+                        top:0;
+                    }
                     .txt_review {
                         margin-bottom: 12px;
+                    }
+                    .prod_kind + .txt_review {
+                        padding-top:32px;
+                        height: 72px;
                     }
                 }
             }
@@ -1812,7 +1834,7 @@
                     width: 18px;
                     height: 18px;
                     background: url(../images/ico/ico_reservation.svg) no-repeat 0 0;
-                    background-size: 18px auto;    
+                    background-size: 16px auto;    
                     position: relative;
                     top: 3px;                                
                 }
@@ -1870,6 +1892,19 @@
                 }
 
             }
+            .ico_overseas {
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;                
+                    background: url(../images/ico/ico_overseas.svg) no-repeat 0 0;
+                    background-size: 16px auto; 
+                    position: relative;
+                    top: 3px;           
+                }
+
+            }
         }
     }            
     .txt_dec {
@@ -1908,6 +1943,7 @@
     .txt_dec {
         position: relative;
         padding-left: 27px;
+        font-size: 13px;
         &:after {
             position: absolute;
             left: 0;
@@ -1916,7 +1952,7 @@
             width: 26px;
             height: 26px;
             display: inline-block;
-            background: url(../images/ico/ico_zoomin.svg) no-repeat 0 0;
+            background: url(../images/ico/ico_zoomin.svg) no-repeat 0 -3px;
             background-size: 26px 26px;
         }
     }
