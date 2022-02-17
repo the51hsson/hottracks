@@ -828,6 +828,10 @@ function gftQuestion(){
 $(function(){
     if(!$('.gft_question_cont').length) return;
     gftQuestion();
+
+    $('.gft_question_chk input').click(function(){ 
+        $(this).closest('.gft_question_chk').addClass('on');
+    }); 
 });
 
 
@@ -861,14 +865,14 @@ $(function(){
 		$(this).addClass('active').siblings('.tod_menu').removeClass('active');
 	});
 	//상품 리스트 찜하기 토글
-/*$(document).on('click', '.evt_good_count', function(){
+    /*$(document).on('click', '.evt_good_count', function(){
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
 		} else {
 			$(this).addClass('active');
 		}
 	});
- 22.02.17 삭제 */ 	
+    22.02.17 삭제 */ 	
 	//MD 추천 상단스왑
 	$('.swiper-container.ctg_top_swiper').each(function(i, ele){
 	    var ctgSwiper = new Swiper(this,  {

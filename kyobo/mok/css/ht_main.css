@@ -7094,6 +7094,10 @@
   padding-top: 15px;
   border-top: 1px dashed #d5d5d5;
   text-align: center;
+  /*
+        input:checked + label + .num {
+            display:block;animation:fade both 0.4s;
+        }*/
 }
 
 .ht_ .gft_question_chk > ul {
@@ -7209,7 +7213,7 @@
   background: url("../images/guide/ico_checkborder_check02.svg") center/21px no-repeat;
 }
 
-.ht_ .gft_question_chk input:checked + label + .num {
+.ht_ .gft_question_chk.on .num {
   display: block;
   -webkit-animation: fade both 0.4s;
           animation: fade both 0.4s;

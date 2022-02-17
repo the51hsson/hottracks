@@ -3171,8 +3171,14 @@
                 background:url('../images/guide/ico_checkborder_check02.svg') center/21px no-repeat;
             }
         }
+        /*
         input:checked + label + .num {
             display:block;animation:fade both 0.4s;
+        }*/
+        &.on {
+            .num {
+                display:block;animation:fade both 0.4s;
+            }
         }
 
     }

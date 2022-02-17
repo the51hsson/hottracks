@@ -11877,6 +11877,7 @@ body:before {
 .ctg_topMenu.not_sticky {
   position: relative;
   top: 0;
+  z-index: 0;
 }
 
 .menu_sort {
