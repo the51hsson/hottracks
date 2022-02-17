@@ -6960,6 +6960,10 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   transition: border-color 0.4s ease-out;
 }
 
+.btn_ip_clear {
+  background-image: url("../images/guide/btn_ip_reset@2x.png") !important;
+}
+
 /* Btn */
 .wel_main_wrap .btn_more_view {
   display: block;
@@ -7914,6 +7918,11 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.ctg_topMenu.not_sticky {
+  position: relative;
+  top: 0;
 }
 
 .menu_sort {

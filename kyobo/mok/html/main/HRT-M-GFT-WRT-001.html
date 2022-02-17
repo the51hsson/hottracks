@@ -53,6 +53,7 @@
 
 <!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
 <script src="../../js/front_bak.js"></script>
+<script src="../../js/mok.ui.js"></script>
 <script src="../../js/ht_lib.js"></script>
 <script src="../../js/ht_template.js"></script>
 <!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
@@ -85,7 +86,7 @@
     <div class="wel_main_wrap">
         <h1 class="mc_tit02 pad">선물추천</h1>
         <!-- ctg_topMenu -->
-        <div class="ctg_topMenu">
+        <div class="ctg_topMenu not_sticky">
             <div class="inner_wrap round_ty">
                 <span>모두에게</span>
                 <span>10대</span>
@@ -232,7 +233,7 @@ function chkOutImg(){
 </script>
 
         <!-- fixed_btn_select -->
-        <div class="fixed_btn_select">
+        <div class="fixed_btn_select"><!-- 0개일때 자동 닫힘 -->
             <!-- form_box -->
             <div class="form_box review_step02">
                 <div class="form_cont">
@@ -250,7 +251,7 @@ function chkOutImg(){
                                         <span class="attach_img_box">
                                             <!-- DESC : background-images 속성만 사용하여 url import 필요 -->
                                             <span class="attach_img_view" style="background-image: url(../../images/guide/@thumb_01.png);"></span>
-                                            <button type="button" class="btn_remove_img" onclick="chkOutImg();"><span class="hidden">첨부파일 삭제</span></button>
+                                            <button type="button" class="btn_remove_img" onclick="chkOutImg();"><span class="hidden">첨부파일 삭제</span></button><!-- 닫기 : chkOutImg() -->
                                         </span>
                                     </span>
                                 </span>
@@ -295,7 +296,7 @@ function chkOutImg(){
             </div>
             <!-- //form_box -->
             <div class="dialog_footer">
-                <button type="button" class="btn_md btn_primary" disabled><span class="text">선택하기</span></button>
+                <button type="button" class="btn_md btn_primary" disabled><span class="text">선택하기</span></button><!-- 2개 이상 일 경우 활성화 -->
             </div>
         </div>
         <!-- //fixed_btn_select -->

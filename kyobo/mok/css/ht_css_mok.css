@@ -10914,6 +10914,10 @@ body:before {
   transition: border-color 0.4s ease-out;
 }
 
+.btn_ip_clear {
+  background-image: url("../images/guide/btn_ip_reset@2x.png") !important;
+}
+
 /* Btn */
 .wel_main_wrap .btn_more_view {
   display: block;
@@ -11868,6 +11872,11 @@ body:before {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.ctg_topMenu.not_sticky {
+  position: relative;
+  top: 0;
 }
 
 .menu_sort {
