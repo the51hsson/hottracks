@@ -6360,8 +6360,9 @@ input[type=number] {
 }
 
 .tbl_row_wrap.type_th_gray .tbl_row tr td {
-  padding: 16px 10px;
+  padding: 16px 7px;
   border-top: 1px solid #eaeaea;
+  white-space: nowrap;
 }
 
 .tbl_row_wrap.type_th_gray .tbl_row tr ~ tr th {
@@ -9307,53 +9308,6 @@ input[type=number] {
   .tooltip_wrap.type_sm.active .btn_tooltip .ico_info {
     background-image: url("../images/btn_tooltip_sm_active_mok@3x.png");
   }
-}
-
-.toast_wrap {
-  display: none;
-  position: fixed;
-  left: 50%;
-  bottom: 36px;
-  width: calc(100% - 40px);
-  max-width: 335px;
-  z-index: 1005;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: bottom 0.23s;
-  transition: bottom 0.23s;
-  font-size: 0;
-}
-
-.toast_wrap .toast_message {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  min-height: 50px;
-  padding: 15px 30px 11px;
-  border-radius: 10px;
-  background: rgba(80, 85, 177, 0.9);
-  border: 1px solid #5055b1;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
-  color: #fff;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: -0.01em;
-  font-weight: 500;
-  text-align: center;
 }
 
 /* sps */

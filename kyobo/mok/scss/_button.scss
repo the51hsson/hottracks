@@ -9,16 +9,16 @@
 
 @mixin icoMore($top){
     &.ico_more {
-        &:after {
-            position: relative;
+        padding-right:10px;
+        &:before {
+            position: absolute;
             content: "";
-            top: $top;
+            top: 2px;
             width: 10px;
             height: 18px;
-            display: inline-block;
             background: url(../images/ico/ico_more.png) no-repeat 0 3px;
             background-size: 5px auto;    
-            margin-left: 5px;                 
+            right:-5px;               
         }   
     }    
 }
@@ -346,6 +346,9 @@ button.btn_sm {
     display: inline-block;
     font-size: 14px;
     font-weight: $font-weight-bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     @include icoMore(5px);
   
 }
