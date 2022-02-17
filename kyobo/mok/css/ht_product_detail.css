@@ -1188,6 +1188,14 @@
   vertical-align: top;
 }
 
+.multi_review_area {
+  margin-top: 20px;
+}
+
+.multi_review_area .right_area .form_sel select {
+  font-size: 13px;
+}
+
 .review_user_info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1315,23 +1323,6 @@
 
 .auto_overflow_wrap.type_text.overflow.active .auto_overflow_contents:after {
   content: none;
-}
-
-.hotpick_area {
-  margin-bottom: 22px;
-}
-
-.hotpick_area .tit_sub_area {
-  padding: 12px 0 16px 0;
-}
-
-.hotpick_area .tit_sub_area .tit {
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.hotpick_area + .multi_review_area {
-  padding-top: 2px;
 }
 
 /* 상품/리뷰 컨텐츠 공통 사용 */
@@ -1796,7 +1787,6 @@
   text-align: center;
 }
 
-<<<<<<< HEAD
 /* Q & A */
 .all_qa_wrap .review_inner .review_comment_area {
   padding-bottom: 50px;
@@ -1846,8 +1836,6 @@
   background: url(../images/ico/ico_lock.png) no-repeat center 1px/14px;
 }
 
-=======
->>>>>>> c4ec743caea34a801e9f7fae00992dc5164e4845
 /* 텍스트 gray 박스 */
 .info_text_box {
   display: block;
@@ -1872,7 +1860,6 @@
   margin-top: 4px;
 }
 
-<<<<<<< HEAD
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_header {
   padding: 0;
   border: none;
@@ -2231,37 +2218,6 @@
   margin-right: 3px;
 }
 
-/* Hottracks : Tempate */
-body {
-  background: #f7f7f7;
-}
-
-body:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  max-width: 750px;
-  height: 100%;
-  background: #fff;
-  content: "";
-  z-index: -1;
-}
-
-@media only screen and (min-width: 750px) {
-  body:before {
-    left: 50%;
-    margin-left: -375px;
-  }
-}
-
-.ht_ {
-  max-width: 750px;
-  margin: 0 auto;
-}
-
-=======
->>>>>>> c4ec743caea34a801e9f7fae00992dc5164e4845
 /* title_header */
 .title_header {
   position: -webkit-sticky;
