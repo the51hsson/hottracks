@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="Group_110106" data-name="Group 110106" transform="translate(14649 19383)">
+    <g id="Group_110106-2" data-name="Group 110106" transform="translate(3399.41 -2585.697)">
+      <g id="Group_110103" data-name="Group 110103" transform="translate(-18044.828 -16793.828)">
+        <g id="Group_110104" data-name="Group 110104" transform="translate(0 0)">
+          <path id="Path_37302" data-name="Path 37302" d="M33.021,8.808l-18.534-.29-8.91-.135L1.552,12.408l7.182,1.873L24.565,18.4h.01" transform="translate(-1.019 -1.256)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Path_37303" data-name="Path 37303" d="M43.536,18.553l.425,27.434-4.035,4.035L33.932,27.009" transform="translate(-2.142 -1.609)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Path_37304" data-name="Path 37304" d="M15.916,41.135l25.1-21.921A28.938,28.938,0,0,0,49.729,5.848l.049-.158a3.62,3.62,0,0,0-4.524-4.524l-.159.049A28.92,28.92,0,0,0,31.73,9.931L9.808,35.027l-6.173-.515L1,37.149l8.819,3.975,3.975,8.819,2.635-2.636Z" transform="translate(-1 -1)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <rect id="Rectangle_19765" data-name="Rectangle 19765" width="56" height="56" transform="translate(-18048.41 -16797.303)" fill="none"/>
+    </g>
+    <g id="Group_110107" data-name="Group 110107" transform="translate(-17 10)">
+      <rect id="Rectangle_19767" data-name="Rectangle 19767" width="20" height="20" rx="10" transform="translate(-14596 -19357)" fill="#da2128"/>
+      <line id="Line_144" data-name="Line 144" y2="6" transform="translate(-14586 -19352)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <g id="Ellipse_670" data-name="Ellipse 670" transform="translate(-14587 -19343.25)" fill="#fff" stroke="#fff" stroke-width="1">
+        <circle cx="1" cy="1" r="1" stroke="none"/>
+        <circle cx="1" cy="1" r="0.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

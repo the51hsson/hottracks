@@ -1,0 +1,18 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+    <defs>
+        <style>
+            .cls-2,.cls-3{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round}.cls-3{stroke:#da2128}
+        </style>
+    </defs>
+    <path id="사각형_19609" data-name="사각형 19609" style="fill:none" d="M0 0h26v26H0z"/>
+    <g id="그룹_109450" data-name="그룹 109450" transform="translate(4 2)">
+        <g id="그룹_109452" data-name="그룹 109452">
+            <path id="패스_36363" data-name="패스 36363" class="cls-2" d="M23.79 11.655c-.275.073-.893.452-.83.76l.309 1.111-.369-1.348a1.084 1.084 0 0 0-1.269-.84 1.138 1.138 0 0 0-.842 1.54l.316 1.2-.271-1.031c-.351-1.335-1.11-1.333-1.448-1.245a1.263 1.263 0 0 0-.894 1.481l.342 1.3-1.5-5.712c-.118-.448-.8-.657-1.244-.539a.838.838 0 0 0-.6 1.024l2.126 8.085.329 1.254c-.08-.3-3.034-2.708-3.679-2.023-1.164 1.237 1.268 2.864 3.841 5.112.9.787 1.512 1.012 1.595 1.532l6.338-1.665a4.486 4.486 0 0 1-.148-1.732 8.316 8.316 0 0 0 .237-3.5c-.293-1.115-1.039-3.882-1.039-3.882s-.29-1.148-1.3-.882z" transform="translate(-8.994 -5.588)"/>
+            <path id="사각형_19608" data-name="사각형 19608" class="cls-2" transform="rotate(-14.76 74.556 -31.64)" d="M0 0h7.269v4.246H0z"/>
+            <path id="선_139" data-name="선 139" class="cls-3" transform="translate(.916 6.295)" d="M1.261 0 0 3.147"/>
+            <path id="패스_36364" data-name="패스 36364" class="cls-3" d="m3.777 23.587-1.834 1.36-.443-2.112" transform="translate(-1.5 -14.325)"/>
+            <path id="선_140" data-name="선 140" class="cls-3" transform="translate(2.965 1.18)" d="M0 3.148 1.26 0"/>
+            <path id="패스_36365" data-name="패스 36365" class="cls-3" d="M10.988 3.75 10.6 1.5 8.822 2.721" transform="translate(-5.901 -1.5)"/>
+        </g>
+    </g>
+</svg>

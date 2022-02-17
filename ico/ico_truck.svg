@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44.004" height="31.998" viewBox="0 0 44.004 31.998">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.335" x2="0.054" y2="0.842" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8fbfe"/>
+      <stop offset="1" stop-color="#d9eeff"/>
+    </linearGradient>
+    <filter id="합치기_152" x="0" y="0" width="44.004" height="31.998" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="1" y1="0.335" x2="0.054" y2="0.842" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8fbfe"/>
+      <stop offset="1" stop-color="#80c6ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.008" y1="0.696" x2="0.993" y2="0.298" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#81c5ff"/>
+      <stop offset="1" stop-color="#3aa5ff"/>
+    </linearGradient>
+    <filter id="사각형_19729" x="5.002" y="1.996" width="22" height="16" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-4" x1="1" y1="0.335" x2="0.054" y2="0.842" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#51afff"/>
+      <stop offset="1" stop-color="#1494ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.135" y1="0.138" x2="0.77" y2="0.91" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#555353"/>
+      <stop offset="1" stop-color="#1e1e1e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="0.135" y1="0.138" x2="0.77" y2="0.91" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#dbeeff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-9" x1="1" y1="0.335" x2="0.054" y2="0.842" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#535151"/>
+      <stop offset="1" stop-color="#212121"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-10" x1="0.95" y1="0.048" x2="0.018" y2="1.068" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#dbeeff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="그룹_110096" data-name="그룹 110096" transform="translate(-886.996 -905.002)">
+    <g transform="matrix(1, 0, 0, 1, 887, 905)" filter="url(#합치기_152)">
+      <path id="합치기_152-2" data-name="합치기 152" d="M23051,24129h-8a4,4,0,1,1-7.994,0h-2a1,1,0,0,1,0-2v-12a2,2,0,0,1,2-2h18a2,2,0,0,1,2,2v2h6a2,2,0,0,1,2,2v8a1,1,0,0,1,0,2h-4a4,4,0,1,1-8,0Z" transform="translate(-23028 -24111)" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="사각형_19731" data-name="사각형 19731" d="M0,0H8A0,0,0,0,1,8,0V12a0,0,0,0,1,0,0H2a2,2,0,0,1-2-2V0A0,0,0,0,1,0,0Z" transform="translate(922 923) rotate(180)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient-2)"/>
+    <g data-type="innerShadowGroup">
+      <path id="사각형_19729-2" data-name="사각형 19729" d="M0,0H22a0,0,0,0,1,0,0V14a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V0A0,0,0,0,1,0,0Z" transform="translate(913.998 922.998) rotate(180)" fill="url(#linear-gradient-3)"/>
+      <g transform="matrix(1, 0, 0, 1, 887, 905)" filter="url(#사각형_19729)">
+        <path id="사각형_19729-3" data-name="사각형 19729" d="M0,0H22a0,0,0,0,1,0,0V14a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V0A0,0,0,0,1,0,0Z" transform="translate(27 18) rotate(180)" fill="#fff"/>
+      </g>
+    </g>
+    <rect id="사각형_19732" data-name="사각형 19732" width="32" height="2" rx="1" transform="translate(923 923) rotate(180)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient-4)"/>
+    <circle id="타원_648" data-name="타원 648" cx="4" cy="4" r="4" transform="translate(910 919)" fill="url(#linear-gradient-5)"/>
+    <circle id="타원_649" data-name="타원 649" cx="4" cy="4" r="4" transform="translate(894 919)" fill="url(#linear-gradient-5)"/>
+    <circle id="타원_650" data-name="타원 650" cx="2" cy="2" r="2" transform="translate(912 921)" fill="url(#linear-gradient-7)"/>
+    <circle id="타원_651" data-name="타원 651" cx="2" cy="2" r="2" transform="translate(896 921)" fill="url(#linear-gradient-7)"/>
+    <path id="사각형_19733" data-name="사각형 19733" d="M1,0H6A0,0,0,0,1,6,0V3A0,0,0,0,1,6,3H1A1,1,0,0,1,0,2V1A1,1,0,0,1,1,0Z" transform="translate(916 913)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient-9)"/>
+    <path id="합치기_163" data-name="합치기 163" d="M5191.356,23582.48a2.771,2.771,0,0,1,2.888-2.48,1.994,1.994,0,0,1,2.172,2.48,2.806,2.806,0,0,1-2.888,2.521A2.022,2.022,0,0,1,5191.356,23582.48Zm1.154,0c-.148,1.029.3,1.686,1.136,1.686s1.468-.656,1.616-1.686-.3-1.652-1.136-1.652A1.68,1.68,0,0,0,5192.51,23582.48Zm5.558,2.426.58-4.014h-1.592l.119-.811h4.327l-.118.811h-1.6l-.574,4.014Zm-9.287,0,.3-2.084h-2.149l-.3,2.084h-1.13l.692-4.818h1.137l-.278,1.9h2.148l.272-1.9h1.13l-.692,4.818Z" transform="translate(-4290.504 -22668.002)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient-10)"/>
+  </g>
+</svg>

@@ -356,10 +356,10 @@
     box-sizing: border-box;
     &.active {
         .btn_tooltip {
-            .ico_info {
-                background-image: url('../images/btn_tooltip_active_mok.png');
-                background-size: 22px 22px;
-            }
+            // .ico_info {
+            //     background-image: url('../images/guide/btn_tooltip_active@2x.png');
+            //     background-size: 22px 22px;
+            // }
             .ico_arw {
                 background-image: url('../images/arw_tooltip_active_mok.png');
                 background-size: 22px 22px;
@@ -509,16 +509,16 @@
         transition: opacity 0.3s ease-out, transform 0s 0.3s;
     }
 }
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .tooltip_wrap.active .btn_tooltip .ico_info {
-        background-image: url('../images/btn_tooltip_active_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .tooltip_wrap.active .btn_tooltip .ico_info {
-        background-image: url('../images/btn_tooltip_active_mok@3x.png');
-    }
-}
+// @media(-webkit-min-device-pixel-ratio: 2) {
+//     .tooltip_wrap.active .btn_tooltip .ico_info {
+//         background-image: url('../images/btn_tooltip_active_mok@2x.png');
+//     }
+// }
+// @media(-webkit-min-device-pixel-ratio: 3) {
+//     .tooltip_wrap.active .btn_tooltip .ico_info {
+//         background-image: url('../images/btn_tooltip_active_mok@3x.png');
+//     }
+// }
 @media(-webkit-min-device-pixel-ratio: 2) {
     .tooltip_wrap.active .btn_tooltip .ico_arw {
         background-image: url('../images/arw_tooltip_active_mok@2x.png');
@@ -539,16 +539,16 @@
         background-image: url('../images/btn_tooltip_close_mok@3x.png');
     }
 }
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .tooltip_wrap.type_sm .btn_tooltip .ico_info {
-        background-image: url('../images/btn_tooltip_sm_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .tooltip_wrap.type_sm .btn_tooltip .ico_info {
-        background-image: url('../images/btn_tooltip_sm_mok@3x.png');
-    }
-}
+// @media(-webkit-min-device-pixel-ratio: 2) {
+//     .tooltip_wrap.type_sm .btn_tooltip .ico_info {
+//         background-image: url('../images/btn_tooltip_sm_mok@2x.png');
+//     }
+// }
+// @media(-webkit-min-device-pixel-ratio: 3) {
+//     .tooltip_wrap.type_sm .btn_tooltip .ico_info {
+//         background-image: url('../images/btn_tooltip_sm_mok@3x.png');
+//     }
+// }
 @media(-webkit-min-device-pixel-ratio: 2) {
     .tooltip_wrap.type_sm .btn_tooltip .ico_question {
         background-image: url('../images/btn_tooltop_question_sm_mok@2x.png');
@@ -559,16 +559,16 @@
         background-image: url('../images/btn_tooltop_question_sm_mok@3x.png');
     }
 }
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .tooltip_wrap.type_sm.active .btn_tooltip .ico_info {
-        background-image: url('../images/btn_tooltip_sm_active_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .tooltip_wrap.type_sm.active .btn_tooltip .ico_info {
-        background-image: url('../images/btn_tooltip_sm_active_mok@3x.png');
-    }
-}
+// @media(-webkit-min-device-pixel-ratio: 2) {
+//     .tooltip_wrap.type_sm.active .btn_tooltip .ico_info {
+//         background-image: url('../images/btn_tooltip_sm_active_mok@2x.png');
+//     }
+// }
+// @media(-webkit-min-device-pixel-ratio: 3) {
+//     .tooltip_wrap.type_sm.active .btn_tooltip .ico_info {
+//         background-image: url('../images/btn_tooltip_sm_active_mok@3x.png');
+//     }
+// }
 
 /* sps */
 // .wrapper .header_wrapper {

@@ -117,7 +117,14 @@
 /* hotpick 간격 */
 .hotpick_area {
     padding-top: 12px;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
+    .tit_sub_area {
+        padding:12px 0 16px 0;
+        .tit{
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
     .hotpickslide_wrap {
         margin-top: -4px;
         position: relative;
@@ -136,6 +143,9 @@
                 }
             }
         }        
+    }
+    & + .multi_review_area {
+        margin-top:0;
     }
 }
 
@@ -1835,9 +1845,22 @@
                     width: 18px;
                     height: 18px;
                     background: url(../images/ico/ico_reservation.svg) no-repeat 0 0;
-                    background-size: 16px auto;    
+                    background-size: 18px auto;    
                     position: relative;
                     top: 3px;                                
+                }
+
+            }
+            .ico_reservation_heart {
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    background: url(../images/ico/ico_reservation_heart.svg) no-repeat 0 0;
+                    background-size: 16px auto;    
+                    position: relative;
+                    top: 5px;                                
                 }
 
             }

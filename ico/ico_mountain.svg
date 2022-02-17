@@ -1,0 +1,9 @@
+<svg id="icon_mountain" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <rect id="사각형_3530" data-name="사각형 3530" width="18" height="18" fill="none"/>
+  <g id="그룹_109433" data-name="그룹 109433" transform="translate(1 4.109)">
+    <g id="그룹_109435" data-name="그룹 109435" transform="translate(0)">
+      <path id="패스_36353" data-name="패스 36353" d="M9.373,12.643H.91a.41.41,0,0,1-.355-.613L4.786,4.7a.407.407,0,0,1,.707,0l2.063,3.57" transform="translate(-0.5 -2.865)" fill="none" stroke="#474c98" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="패스_36352" data-name="패스 36352" d="M17.562.7,12.387,9.667a.409.409,0,0,0,.354.613H23.09a.409.409,0,0,0,.354-.613L18.269.7A.408.408,0,0,0,17.562.7Z" transform="translate(-7.499 -0.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

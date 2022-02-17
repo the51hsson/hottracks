@@ -166,7 +166,7 @@ $(function(){
 	})
 
 	//카테고리 상품 리스트 찜하기 토글
-	$(document).on('click', '.module_wrap .evt_good_count', function(){
+	$(document).on('click', '.evt_good_count', function(){
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
 		} else {
