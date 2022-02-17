@@ -828,9 +828,20 @@ function gftQuestion(){
 $(function(){
     if(!$('.gft_question_cont').length) return;
     gftQuestion();
+});
 
+$(function(){
     $('.gft_question_chk input').click(function(){ 
-        $(this).closest('.gft_question_chk').addClass('on');
+        var chk = $(this).is(':checked');
+        if(chk){
+            $(this).closest('.gft_question_chk').addClass('on');
+            $(this).closest('.gft_question_chk').find('input').prop('disabled', true);
+            $(this).prop('disabled', false);
+
+        }else{
+            $(this).closest('.gft_question_chk').removeClass('on');
+            $(this).closest('.gft_question_chk').find('input').prop('disabled', false);
+        }
     }); 
 });
 
