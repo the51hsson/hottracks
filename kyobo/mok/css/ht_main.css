@@ -6086,6 +6086,12 @@
 
 /***** 선물추천 *****/
 /** 선물추천 메인 : .gft_main **/
+.ht_ .btn_t_right.btn_line_box_s {
+  position: absolute;
+  right: 20px;
+  top: 3px;
+}
+
 .ht_ .gft_main {
   background: #8965ff;
 }
@@ -7677,4 +7683,9 @@
 .ht_ .li_resp_ty.ty02 .li.active {
   -webkit-animation: fade both 0.6s 0.1s;
           animation: fade both 0.6s 0.1s;
+}
+
+/** 이사 예정 **/
+#containerWrapper .wel_belt02 {
+  margin: 50px 0 -80px 0;
 }
