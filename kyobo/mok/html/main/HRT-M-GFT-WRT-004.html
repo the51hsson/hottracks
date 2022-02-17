@@ -28,21 +28,13 @@
 <!-- // Plug-In css -->
 
 <!-- font css -->
-<link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
 <!-- // font css -->
 
-<!-- Custom styles for this template -->
-<!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
-<!-- // Custom styles for this template -->
-
-<!-- ht_ Hottracks custom css : 공통작업 --><!-- 22.02.17 -->
+<!-- ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
 <link rel="stylesheet" href="../../css/ht_style_mok.css">
-<link rel="stylesheet" href="../../css/ht_style_mok2.css"><!-- 임시 -->
 <link rel="stylesheet" href="../../css/ht_template_mok.css">
-
-<link rel="stylesheet" href="../../css/bes_main_mok.css">
-<!--// ht_ Hottracks custom css : 공통작업 --><!-- 22.02.17 -->
+<!--// ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
 
 
 <!-- Plug-In javascript -->
@@ -59,13 +51,11 @@
 <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
 <!-- // Plug-In javascript -->
 
-<!-- UI JavaScript : 공통작업 --><!-- 22.02.17 -->
+<!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
 <script src="../../js/front_bak.js"></script>
 <script src="../../js/ht_lib.js"></script>
 <script src="../../js/ht_template.js"></script>
-<!-- // UI JavaScript : 공통작업 --><!-- 22.02.17 -->
-
-<link rel="stylesheet" href="../../css/ht_gift_main.css" /><!-- 임시 -->
+<!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
 </head>
 
 <body>
@@ -93,7 +83,6 @@
 
     <!-- 선물추천 컨텐츠 -->
     <div class="wel_main_wrap">
-        <h1 class="mc_tit02 pad">선물추천</h1>
         <!-- ctg_topMenu -->
         <div class="ctg_topMenu">
             <div class="inner_wrap round_ty">
@@ -107,51 +96,112 @@
 
         <!-- mc_cont -->
         <div class="mc_cont">
-
-            <div class="info_text_box">
-                <ul class="bul_list">
-                    <li class="bul_item_dot font_size_xs">
-                        주문 후 주문/배송/취소/환불 등에 관한 문의는 <br>
-                        <a href="#a">마이룸 &gt; 1:1 문의</a>를 이용해주시기 바랍니다.
+            <!-- gft_select_view -->
+            <div class="gft_select_view">
+                <ul>
+                    <li>
+                        <p class="ico">A</p>
+                        <p class="img"><img src="../../images/temp/@img_prod01.jpg" alt=""></p>
                     </li>
-                    <li class="bul_item_dot font_size_xs">
-                        상품 문의 외 주문/배송/취소/환불 등의 문의를 <br>남겨 주시면 빠른 안내가 어렵습니다.
+                    <li>
+                        <p class="ico">B</p>
+                        <p class="img"><img src="../../images/temp/@img_prod02.jpg" alt=""></p>
+                    </li>
+                    <li>
+                        <p class="ico">C</p>
+                        <p class="img"><img src="../../images/temp/@img_prod03.jpg" alt=""></p>
                     </li>
                 </ul>
             </div>
-            <div class="form_cont">
-                <!-- byte_check_wrap -->
-                <div class="byte_check_wrap">
-                    <textarea class="form_textarea" placeholder="문의하실 내용을 직접 작성해 주세요"  title="내용 입력" style="height: 70px;"></textarea>
-                    <div class="byte_chack_footer">
-                        <div class="byte_check">
-                            <span class="count">12</span>
-                            <span class="total">300자</span>
+            <!-- //gft_select_view -->
+
+
+            <!-- 이런 상황이에요 -->
+            <div class="mc_cont_s">
+                <h2 class="mc_tit03">이런 상황이에요</h2>
+                <!-- form_cont -->
+                <div class="form_cont">
+                    <!-- byte_check_wrap -->
+                    <div class="byte_check_wrap">
+                        <textarea class="form_textarea" placeholder="문의하실 내용을 직접 작성해 주세요"  title="내용 입력" style="height: 70px;"></textarea>
+                        <div class="byte_chack_footer">
+                            <div class="byte_check">
+                                <span class="count">12</span>
+                                <span class="total">300자</span>
+                            </div>
                         </div>
                     </div>
+                    <!-- //byte_check_wrap -->
                 </div>
-                <!-- //byte_check_wrap -->
+                <!-- //form_cont -->
             </div>
+            <!-- //이런 상황이에요 -->
 
-            <!-- info_box -->
-            <div class="info_box">
-                <ul>
-                    <li>등록된 1:1 문의는 ‘답변요청’ 중일 때만 수정, 삭제가 가능합니다.</li>
-                    <li>음반 공동구매 문의는 1:1문의 답변이 불가하오니 <strong class="point">전화문의(1661-1112)</strong> 주시기 바랍니다.</li>
-                </ul>
+
+            <!-- 고민하는 기간 -->
+            <div class="mc_cont_s">
+                <h2 class="mc_tit03">고민하는 기간</h2>
+
+                <!-- gft_view_slider_cont -->
+                <div class="gft_view_slider_cont">
+<script src="../../js/jquery.ui.touch-punch.min.js"></script><!-- 모바일 슬라이드 : 해당페이지에만 사용 -->
+<script>
+/* 슬라이드 선택 */
+$(function() {
+    $('.gft_view_slider').slider({
+        range:'max',
+        min: 1,
+        max: 7,
+        value: 7,
+        slide: function(event, ui) {
+            console.log(ui.value);
+        }
+    });
+    console.log($('.gft_view_slider').slider('value'));
+});
+</script>
+
+                    <!-- gft_main_slider -->
+                    <div class="gft_view_slider"></div>
+                    <!-- //gft_main_slider -->
+
+                    <!-- gft_view_slider_txt -->
+                    <div class="gft_view_slider_txt">
+                        <ul>
+                            <li>1일</li>
+                            <li>2일</li>
+                            <li>3일</li>
+                            <li>4일</li>
+                            <li>5일</li>
+                            <li>6일</li>
+                            <li>7일</li>
+                        </ul>
+                    </div>
+                    <!-- //gft_view_slider_txt -->
+                </div>
+                <!-- //gft_view_slider_cont -->
+
+                <!-- info_text_box -->
+                <div class="info_text_box">
+                    <ul class="bul_list">
+                        <li class="bul_item_dot font_size_xs">글 삭제는 ‘취소’ 버튼을 이용해주세요.</li>
+                        <li class="bul_item_dot font_size_xs">관련 없는 글은 관리자에 의해 삭제 될 수 있습니다.</li>
+                        <li class="bul_item_dot font_size_xs">등록한 선물 고민은 [내가 쓴 고민]에서 확인하실 수 있습니다.</li>
+                    </ul>
+                </div>
+                <!-- //info_text_box --> 
             </div>
-            <!-- //info_box -->
-<!-- btn_wrap -->
-<div class="btn_wrap">
-	<button type="button" class="btn_md btn_light_gray"><span class="text">취소</span></button>
-	<button type="button" class="btn_md btn_primary"><span class="text">확인</span></button>
-</div>
-<!-- //btn_wrap -->
+            <!-- //고민하는 기간 -->
+
+
+            <!-- btn_wrap -->
+            <div class="btn_wrap btn_area">
+                <button type="button" class="btn_md btn_light_gray"><span class="text">취소</span></button>
+                <button type="button" class="btn_md btn_primary"><span class="text">확인</span></button>
+            </div>
+            <!-- //btn_wrap -->
         </div>
         <!-- //mc_cont -->
-
-
-
     </div>
     <!-- //선물추천 컨텐츠 -->
 </div>   
