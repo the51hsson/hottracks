@@ -183,7 +183,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .bd_img {
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 /* e : common */
@@ -12711,7 +12711,7 @@ body:before {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 5%;
+  border-radius: 8px;
   top: 0;
   left: 0;
   z-index: 1;
@@ -12903,7 +12903,7 @@ body:before {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 5%;
+  border-radius: 8px;
   top: 0;
   left: 0;
   z-index: 1;
