@@ -7684,3 +7684,8 @@
   -webkit-animation: fade both 0.6s 0.1s;
           animation: fade both 0.6s 0.1s;
 }
+
+/** 이사 예정 **/
+#containerWrapper .wel_belt02 {
+  margin: 50px 0 -80px 0;
+}
