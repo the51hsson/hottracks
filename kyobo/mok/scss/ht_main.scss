@@ -2661,6 +2661,13 @@
 /***** 선물추천 *****/
 /** 선물추천 메인 : .gft_main **/
 .ht_ {
+    .btn_t_right {
+        &.btn_line_box_s {
+            position:absolute;right:20px;top:3px;
+        }
+    }
+    
+
     .gft_main {
         background:#8965ff;
         .mc_tit {
