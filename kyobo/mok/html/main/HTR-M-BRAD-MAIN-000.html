@@ -31,9 +31,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
 <!-- // font css -->
 
-<!-- ht_ Hottracks custom css -->
-<link rel="stylesheet" href="../../css/ht_brand_mok.css" />
-<!--// ht_ Hottracks custom css -->
+<!-- ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
+<link rel="stylesheet" href="../../css/ht_style_mok.css">
+<link rel="stylesheet" href="../../css/ht_template_mok.css">
+<!--// ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
 
 
 <!-- Plug-In javascript -->
@@ -50,77 +51,11 @@
 <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
 <!-- // Plug-In javascript -->
 
-<!-- UI JavaScript -->
+<!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
 <script src="../../js/front_bak.js"></script>
-<!-- // UI JavaScript -->
-<script>
-    $(function(){
-        //카테고리 상품 리스트 찜하기 토글
-        $(document).on('click', '.evt_good_count', function(){
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-            } else {
-                $(this).addClass('active');
-            }
-        });
-        //관련 기획전, 브랜드 쿠폰 스왑배너
-       if($('.swiper.brandSwiper').length >0) {
-           $('.swiper.brandSwiper').each(function(i, ele){
-            var brandSwiper = new Swiper(this,  {
-                slidesPerView: 'auto',
-                spaceBetween: 15,
-                freeMode: true,
-                observer: true,
-                observeParents: true,
-               })
-            });
-        }
-        //상품 리스트 정렬 방식 토글 버튼
-        $('.ctg_prod_wrap .ctg_list_icon').click(function(){
-           //품절 대체 스왑 display:none으로 초기화 
-            $('.show_bubble.show_bubble').removeClass('show_bubble');
-    
-            if ($(this).hasClass('row_list')) {
-                $(this).removeClass('row_list');
-                $('.evt_products').removeClass('row_dir');
-                $('.list_sort_txt').text('두줄보기');
-    
-            } else {
-                $(this).addClass('row_list');
-                $('.evt_products').addClass('row_dir');
-                $('.list_sort_txt').text('한줄보기');
-            }
-        });
-        //품절 대체 상품 버튼 클릭
-        $(document).on('click', '.ctg_prod_wrap .sold_out .replace_prod_btn', function(){
-            var replaceBubble = $(this).parents('li').children('article.replace_prod_swap');
-            
-            if(replaceBubble.length > 0 &&  replaceBubble.css('display') == 'none'){
-                replaceBubble.addClass('show_bubble');
-                $(window).scrollTop(replaceBubble.offset().top - 250);
-            };
-        });
-        //품절 대체 스왑 닫기
-        $(document).on('click', '.replace_prod_swap .close_swap', function(){
-            $(this).parents('.replace_prod_swap').removeClass('show_bubble');
-        });
-        //품절 대체 상품 스왑배너
-        $('.replace_prod_swap .mySwiper').each(function (index, element) {
-                var $parent = $(this).parent('.replace_prod_swap');
-                $parent.addClass('idx_' + index);
-        
-                if($parent.find('.swiper-slide').length > 1) {
-                    var replaceSwiper = new CustomSwiper(this, {
-                    slidesPerView: 'auto',
-                    spaceBetween: 16,
-                    freeMode: true,
-                    observer: true,
-                    observeParents: true,
-                    }); 
-                }
-        });
-    })
-    </script>
+<script src="../../js/ht_lib.js"></script>
+<script src="../../js/ht_template.js"></script>
+<!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
 </head>
 <body>
 	<div class="skip_nav_wrap">

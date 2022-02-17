@@ -2076,3 +2076,17 @@ body.dialog_open {
     font-weight: 500;
     text-align: center;
   }
+
+
+
+
+.dialog_wrapper .ui-dialog.dialog_full {
+    width:100% !important;max-width:750px;min-width:inherit;
+}
+.dialog_wrapper .ui-dialog .dialog_wrap {
+    border-radius:4px;
+}
+.evt_pop_content {
+    display:flex;justify-content:center;align-items:center;width:100%;min-height:70px;color:#595959;font-size:14px;font-weight:500;line-height:22px;text-align:center;
+}
+
