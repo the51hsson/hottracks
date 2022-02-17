@@ -332,16 +332,19 @@ button.btn_sm {
   font-size: 14px;
 }
 
-.link_delivery.ico_more:after {
-  position: relative;
+.link_delivery.ico_more {
+  padding-right: 10px;
+}
+
+.link_delivery.ico_more:before {
+  position: absolute;
   content: "";
-  top: 5px;
+  top: 2px;
   width: 10px;
   height: 18px;
-  display: inline-block;
   background: url(../images/ico/ico_more.png) no-repeat 0 3px;
   background-size: 5px auto;
-  margin-left: 5px;
+  right: -5px;
 }
 
 .link_quick {
@@ -349,18 +352,24 @@ button.btn_sm {
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.link_quick.ico_more:after {
-  position: relative;
+.link_quick.ico_more {
+  padding-right: 10px;
+}
+
+.link_quick.ico_more:before {
+  position: absolute;
   content: "";
-  top: 5px;
+  top: 2px;
   width: 10px;
   height: 18px;
-  display: inline-block;
   background: url(../images/ico/ico_more.png) no-repeat 0 3px;
   background-size: 5px auto;
-  margin-left: 5px;
+  right: -5px;
 }
 
 .link_live {
@@ -370,16 +379,19 @@ button.btn_sm {
   letter-spacing: -0.5px;
 }
 
-.link_live.ico_more:after {
-  position: relative;
+.link_live.ico_more {
+  padding-right: 10px;
+}
+
+.link_live.ico_more:before {
+  position: absolute;
   content: "";
-  top: 5px;
+  top: 2px;
   width: 10px;
   height: 18px;
-  display: inline-block;
   background: url(../images/ico/ico_more.png) no-repeat 0 3px;
   background-size: 5px auto;
-  margin-left: 5px;
+  right: -5px;
 }
 
 /* grid */
@@ -1855,16 +1867,19 @@ button.btn_sm {
   color: #595959;
 }
 
-.slide_review_wrap .review_inner .review_more_area .link_more.ico_more:after {
-  position: relative;
+.slide_review_wrap .review_inner .review_more_area .link_more.ico_more {
+  padding-right: 10px;
+}
+
+.slide_review_wrap .review_inner .review_more_area .link_more.ico_more:before {
+  position: absolute;
   content: "";
-  top: 6px;
+  top: 2px;
   width: 10px;
   height: 18px;
-  display: inline-block;
   background: url(../images/ico/ico_more.png) no-repeat 0 3px;
   background-size: 5px auto;
-  margin-left: 5px;
+  right: -5px;
 }
 
 .slide_review_wrap .review_inner .review_more_area .review_btn_common {
@@ -2343,16 +2358,19 @@ button.btn_sm {
   color: #595959;
 }
 
-.all_review_wrap .review_inner .review_more_area .link_more.ico_more:after {
-  position: relative;
+.all_review_wrap .review_inner .review_more_area .link_more.ico_more {
+  padding-right: 10px;
+}
+
+.all_review_wrap .review_inner .review_more_area .link_more.ico_more:before {
+  position: absolute;
   content: "";
-  top: 6px;
+  top: 2px;
   width: 10px;
   height: 18px;
-  display: inline-block;
   background: url(../images/ico/ico_more.png) no-repeat 0 3px;
   background-size: 5px auto;
-  margin-left: 5px;
+  right: -5px;
 }
 
 .all_review_wrap .review_inner .review_more_area .review_btn_common {

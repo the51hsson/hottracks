@@ -6380,8 +6380,9 @@ input[type=number] {
 }
 
 .tbl_row_wrap.type_th_gray .tbl_row tr td {
-  padding: 16px 10px;
+  padding: 16px 7px;
   border-top: 1px solid #eaeaea;
+  white-space: nowrap;
 }
 
 .tbl_row_wrap.type_th_gray .tbl_row tr ~ tr th {

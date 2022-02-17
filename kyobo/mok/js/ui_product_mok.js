@@ -158,6 +158,13 @@ $(function(){
 		$(this).addClass('btn_up').children('.txt').text('접기');
 
 	});
+	//별점 영역 선택 시 하단 리뷰 영역으로 이동
+	$(document).on('click', '.rating_score_wrap .rating_container', function(){
+		var reviewTop = $('.review_best_area').offset().top;
+		var fixedHeight = $('.tab_list_wrap').height(); 
+		$('html, body').scrollTop( reviewTop - fixedHeight );
+	})
+
 	//카테고리 상품 리스트 찜하기 토글
 	$(document).on('click', '.module_wrap .evt_good_count', function(){
 		if ($(this).hasClass('active')) {
@@ -210,6 +217,12 @@ $(function(){
 	$(document).on('click', '.buy_info .close', function(){
 		$(this).closest('.buy_info').css('display', 'none');
 	});
+    //쿠폰 다운 받기 토스트 메시지
+	$(document).on('click', '.dialog_wrap .dialog_contents .buy_info .cpon',  toastBtn);
+	function toastBtn(){
+        KyoboHottracks.mok.setToastMessage('상품 쿠폰을 다운로드 받았습니다.', 3000);
+    }
+
     //textarea focus 효과
 	$(document).on('focus', '.mycomment_box textarea', function(){
 		$(this).parent().addClass('active');

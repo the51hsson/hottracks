@@ -1527,65 +1527,6 @@
   text-align: center;
 }
 
-.module_wrap {
-  padding-top: 20px;
-}
-
-.module_wrap .tit {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 28px;
-}
-
-ul.prod-wrapper.column_dir {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-}
-
-ul.prod-wrapper.column_dir li {
-  width: calc((100% - 20px)/2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  cursor: pointer;
-  margin: 0;
-  margin-top: 20px;
-}
-
-ul.prod-wrapper.column_dir li:nth-of-type(1), ul.prod-wrapper.column_dir li:nth-of-type(2) {
-  margin-top: 0;
-}
-
-ul.prod-wrapper.column_dir .product_pic {
-  width: 100%;
-  padding-top: 100%;
-}
-
-ul.prod-wrapper.column_dir .title {
-  font-size: 13px;
-  margin-bottom: 8px;
-}
-
 /* 텍스트 gray 박스 */
 .info_text_box {
   display: block;
@@ -3709,6 +3650,7 @@ ul.prod-wrapper.column_dir .title {
   margin-left: 8px;
   font-size: 12px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .cpon.disabled {
@@ -3728,6 +3670,7 @@ ul.prod-wrapper.column_dir .title {
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .cpon .highlight {
   color: #DA2128;
+  margin-right: 3px;
 }
 
 .dialog_wrapper .ui-dialog.dialog_bottom .dialog_wrap.option_pop_wrap .dialog_contents .buy_info .prod_count .cpon:before {
