@@ -1800,9 +1800,9 @@
     
 }
 
-.recomend_area {
+.recomened_area{
     .tit_con_area {
-        margin-bottom: 20px;
+        padding-bottom:0;
     }
 }
 
@@ -1811,6 +1811,10 @@
     border-radius: 4px;
     background-color: #f7f7f7;
     padding:20px;
+    margin-top:8px;
+    &:first-of-type {
+        margin-top:0;
+    }
     .info_area {
         & + .info_area {
             margin-top: 12px;

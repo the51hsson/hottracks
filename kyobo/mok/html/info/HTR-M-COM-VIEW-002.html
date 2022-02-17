@@ -36,11 +36,11 @@
     <!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
     <!-- // Custom styles for this template -->
 
+    <!--[2022-02-16] css파일 순서 변경]-->
     <!-- ht_ Hottracks custom css -->
     <link rel="stylesheet" href="../../css/ht_style_mok.css" />
-    <link rel="stylesheet" href="../../css/ht_product_mok.css" />
     <link rel="stylesheet" href="../../css/common.css" type="text/css">
-    <!--// ht_ Hottracks custom css -->
+    <link rel="stylesheet" href="../../css/ht_product_mok.css" />
 
 
     <!-- Plug-In javascript -->
@@ -117,67 +117,68 @@
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
-
+                        <!--[2022-02-17] div.product_info_area : 디자인 및 순서 변경으로 전체 수정-->
                         <div class="product_info_area">
                             <div class="tit_wrap">
                                 <h1 class="tit">
                                     <div class="tit_top">
-                                        <a href="#" class="txt_brand">마블스튜디오</a>
+                                        <a href="#" class="txt_brand">SM ENTERTAINMENT</a>
                                         <button class="btn_share"><span class="hidden">공유하기</span></button>
                                     </div>
-                                    <p class="tit_bottom">샹치와 텐 링즈의 전설 [스틸북 한정판]</p>
-                                    <p class="tit_bottom_dec">샹치와 텐링즈의 전설 출시! 디즈니 정품</p>
-                                    <p class="tit_bottom_dec">샹치 피규어 세트 (텐 링즈의 전설 캐릭터)추첨 증정!</p>
+                                    <p class="tit_bottom">레드벨벳 - 혼돈의 장 : FIGHT OR ESCAPE</p>
+                                    <p class="tit_bottom_dec">2021.11.29 발매 예정입니다</p>
                                 </h1>
+                                <div class="rating_score_wrap">
+                                    <div class="rating_container">
+                                        <div class="rating_stars">
+                                            <div class="empty_stars">
+                                                <span class="star xsmall"></span>
+                                                <span class="star xsmall"></span>
+                                                <span class="star xsmall"></span>
+                                                <span class="star xsmall"></span>
+                                            </div>
+                                            <div class="filled_stars" style="width:75%">
+                                                <span class="star xsmall"></span>
+                                                <span class="star xsmall"></span>
+                                                <span class="star xsmall"></span>
+                                                <span class="star xsmall"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="txt_value">
+                                        <span class="font_num txt_score">4.5</span>
+                                        <span class="font_num txt_totalview">(999)</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="price_wrap">
-                                <span class="real_price">
-                                    <span class="txt_value">17,200</span>
-                                    <span class="txt_unit">원</span>
-                                </span>
                                 <span class="sale_price">
                                     <em class="txt_per">20%</em>
                                     <em class="txt_value">13,760</em>
                                     <span class="txt_unit">원</span>
                                 </span>
+                                <span class="real_price">
+                                    <span class="txt_value">17,200</span>
+                                    <span class="txt_unit">원</span>
+                                </span>
                             </div>
                             <div class="badge_wrap">
                                 <div class="badge_list">
-                                    <span class="badge badge_sm badge_primary">포스터</span>
-                                    <span class="badge badge_sm badge_primary">쿠폰</span>
-                                    <span class="badge badge_sm badge_default">사은품</span>      
-                                    <span class="badge badge_sm badge_default">수입</span>      
-                                    <span class="badge badge_sm badge_default">예약</span>      
-                                    <!--
-                                    <span class="badge badge_ico">
+                                    <span class="badge rounded badge_primary_evt">포스터</span>
+                                    <span class="badge rounded badge_primary_evt">쿠폰</span>
+                                    <span class="badge rounded badge_default_evt">사은품</span>
+                                    <span class="badge rounded badge_default_evt">수입</span>
+                                    <span class="badge rounded badge_disabled">일시품절</span>
+                                    <!-- <span class="badge badge_ico">
                                         <span class="ico_truck"></span>
                                         <span class="ico_truck_txt"></span>
-                                    </span>
-                                    -->
+                                    </span> -->
                                 </div>
                             </div>
-                            <div class="rating_score_wrap">
-                                <div class="rating_container">
-                                    <div class="rating_stars">
-                                        <div class="empty_stars">
-                                            <span class="star xsmall"></span>
-                                            <span class="star xsmall"></span>
-                                            <span class="star xsmall"></span>
-                                            <span class="star xsmall"></span>
-                                        </div>
-                                        <div class="filled_stars" style="width:75%">
-                                            <span class="star xsmall"></span>
-                                            <span class="star xsmall"></span>
-                                            <span class="star xsmall"></span>
-                                            <span class="star xsmall"></span>
-                                        </div>
-                                    </div> 
-                                </div>            
-                                <div class="txt_value">
-                                    <span class="font_num txt_score">7.5</span>
-                                    <span class="font_num txt_totalview">(999)</span>
-                                </div>
-                            </div>
+                            <!--[2022-02-17 ]옵션 선택 팝업 기능으로 변경-->
+                            <div class="cpon_bubble">옵션을 선택하면, 쿠폰을 받을 수 있어요.</div>
+                            <!-- <div class="cpon_bubble">옵션을 선택하면, 쿠폰을 받을 수 있어요.</div>
+                            <hr class="devide_hr " />
                             <div class="coupon_wrap">
                                 <p class="txt_dec text-truncate">20% BLACK FRIDAY 할인 쿠폰</p>
                                 <a href="#" class="btn_coupon_download">
@@ -185,7 +186,7 @@
                                     <span class="txt">쿠폰받기</span>
                                 </a>
                             </div>
-                            <!-- 쿠폰받기 완료 -->
+             
                             <div class="coupon_wrap_complete">
                                 <p class="txt_dec text-truncate">
                                     <i class="ico_check"></i>
@@ -194,9 +195,9 @@
                                 <a href="#" class="btn_coupon_view">
                                     <span class="txt">쿠폰보기</span>
                                 </a>
-                            </div>                            
+                            </div>                             -->
                         </div>
-                        <hr class="devide_hr " />
+                        <hr class="devide_hr " /> 
                         <div class="product_deliinfo_area">
                             <div class="info_wrap">
                                 <dl class="list_info">
@@ -235,7 +236,8 @@
                             <div class="freebie_wrap">
                                 <img class="figure" src="../../images/ico/ico_shoppingbag.png" width="40px" height="40px" alt="사은품" />
                                 <p class="txt_desc">
-                                    <span class="d_block">사은품</span>
+                                    <!--[2022-02-16 디자인 변경으로 클래스 title추가]-->
+                                    <span class="d_block title">사은품</span>
                                     <span class="d_block">핫트랙스 특전</span>
                                     <span class="d_block">홀로그램 포토카드 8종 중 랜덤 1종 증정</span>
                                 </p>
@@ -442,43 +444,14 @@ Music sales data from both ON&OFF LINE STORES, Would be 100% counted for HANTEO 
                                     <div class="tit_con_area">
                                         <h2 class="tit">
                                             Klover 리뷰<span class="font_num">(1,024)</span>
-                                
+                                            <!--[2022-02-17] 구조 변경 tooltip_wrap 1개로 수정-->
                                             <!-- tooltip_wrap -->
                                             <div class="tooltip_wrap">
-                                                <button type="button" class="btn_tooltip" data-btn-toggle>
+                                                <button type="button" class="btn_tooltip" data-role="btn-dialog" data-target="#kloverReview" data-btn-toggle>
                                                     <span class="ico_info"></span>
-                                                    <span class="hidden">툴팁열기</span></button>
-                                                <!--
-                                                                                <div class="tooltip_inner">
-                                                                                    <div class="tooltip_header">
-                                                                                        <div class="tooltip_head_title">툴팁 타이틀</div>
-                                                                                    </div>
-                                                                                    <div class="tooltip_contents">
-                                                                                        <div class="tooltip_sub_title">리워드 안내</div>
-                                                                                        <div class="tooltip_desc"><a href="#" class="btn_text_link"><span class="text">링크 텍스트</span></a>, 문장수집은 고객님들이 직접 선정한 책의 좋은 문장을 보여주는 교보문고의 새로운 서비스입니다.</div>
-                                                                                    </div>
-                                                                                    <button type="button" class="btn_tooltip_close"><span class="hidden">툴팁닫기</span></button>
-                                                                                </div>
-                                                                                -->
+                                                    <span class="hidden">툴팁열기</span>
+                                                </button>
                                             </div>
-                                            <!-- //tooltip_wrap -->
-                                            <!-- tooltip_wrap -->
-                                            <div class="tooltip_wrap">
-                                                <button type="button" class="btn_tooltip" data-btn-toggle><span class="ico_arw"></span><span
-                                                        class="hidden">툴팁열기</span></button>
-                                                <!--
-                                                                                <div class="tooltip_inner">
-                                                                                    <div class="tooltip_header">
-                                                                                        <div class="tooltip_head_title">툴팁 타이틀</div>
-                                                                                    </div>
-                                                                                    <div class="tooltip_contents">
-                                                                                        <div class="tooltip_sub_title">리워드 안내</div>
-                                                                                        <div class="tooltip_desc"><a href="#" class="btn_text_link"><span class="text">링크 텍스트</span></a>, 문장수집은 고객님들이 직접 선정한 책의 좋은 문장을 보여주는 교보문고의 새로운 서비스입니다.</div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                -->
-                                            </div>
-                                            <!-- //tooltip_wrap -->
                                         </h2>
                                         <p class="sub">CD, DVD 관련 상품은 상품평을 작성하셔도
                                             포인트 적립대상에서 제외입니다.</p>
@@ -1097,12 +1070,13 @@ Music sales data from both ON&OFF LINE STORES, Would be 100% counted for HANTEO 
                                             <span class="txt ico_comment">상품 문의하기</span>
                                         </a>
                                     </div>
+                                    <!--[2022-02-17] all_qa_wrap  구조 변경 - 펼치기 토글 버튼 추가-->
                                     <div class="all_qa_wrap">
                                         <!-- 작성된 상품문의가 없을경우 -->
                                         <div class="no_review">
                                             <p class="txt_msg">작성된 상품 문의가 없습니다.</p>
                                         </div>                             
-                                        <!--// 작성된 상품문의가 없을경우 -->                                          
+                                        <!--// 작성된 상품문의가 없을경우 -->                                         
                                         <div class="review_inner">
                                             <div class="review_info_area">
                                                 <div class="left_area">
@@ -1116,16 +1090,30 @@ Music sales data from both ON&OFF LINE STORES, Would be 100% counted for HANTEO 
                                                     </div>
                                                 </div>
                                             </div>
-                                
+
                                             <div class="review_comment_area">
                                                 <p class="txt_review">
                                                     배송이 잘못 왔습니다.
                                                 </p>
+                                                <button type="button" class="btn_expand">
+                                                    <span class="txt">펼치기</span>
+                                                    <span class="ico_circle_more"></span>
+                                                </button>
+                                            </div>
+                                            <div class="box_qa">
+                                                <div class="question_area">
+                                                    <div class="txt_tit">
+                                                        <img src="../../images/ico/ico_q.png" alt="question" width="30px" height="30px" />
+                                                    </div>
+                                                    <p class="txt_dec">
+                                                        제가 구매한 상품은 “Lavender” 인데 다른 컬러가 왔었어요.
+                                                        확인 부탁드립니다.
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="review_inner">
-                                            <div class="review_info_area">
-                                
+                                            <div class="review_info_area">         
                                                 <div class="left_area">
                                                     <span class="txt_user">ab*****</span>
                                                     <span class="gap"> | </span>
@@ -1137,14 +1125,16 @@ Music sales data from both ON&OFF LINE STORES, Would be 100% counted for HANTEO 
                                                     </div>
                                                 </div>
                                             </div>
-                                
+
                                             <div class="review_comment_area">
                                                 <p class="txt_review txt_bold">
                                                     배송이 잘못 왔습니다.
                                                 </p>
-                                
+                                                <button type="button" class="btn_expand">
+                                                    <span class="txt">펼치기</span>
+                                                    <span class="ico_circle_more"></span>
+                                                </button>
                                             </div>
-                                
                                             <div class="box_qa">
                                                 <div class="question_area">
                                                     <div class="txt_tit">
@@ -1194,6 +1184,10 @@ Music sales data from both ON&OFF LINE STORES, Would be 100% counted for HANTEO 
                                                 <p class="txt_review">
                                                     배송이 잘못 왔습니다.
                                                 </p>
+                                                <button type="button" class="btn_expand">
+                                                    <span class="txt">펼치기</span>
+                                                    <span class="ico_circle_more"></span>
+                                                </button>
                                             </div>
                                         </div>
                                         <div class="review_inner">
@@ -1217,6 +1211,10 @@ Music sales data from both ON&OFF LINE STORES, Would be 100% counted for HANTEO 
                                                 <p class="txt_review">
                                                     배송이 잘못 왔습니다.
                                                 </p>
+                                                <button type="button" class="btn_expand">
+                                                    <span class="txt">펼치기</span>
+                                                    <span class="ico_circle_more"></span>
+                                                </button>
                                             </div>
                                         </div>
                                         <div class="review_inner">
@@ -1240,7 +1238,6 @@ Music sales data from both ON&OFF LINE STORES, Would be 100% counted for HANTEO 
                                                 <span class="txt_secret">비밀글</span>
                                             </div>
                                         </div>                                          
-                                        <!-- ajax 연동? -->
                                         <div class="btn_more_area">
                                             <button class="btn_expand">
                                                 <span class="txt">더보기
@@ -1249,7 +1246,7 @@ Music sales data from both ON&OFF LINE STORES, Would be 100% counted for HANTEO 
                                                 <span class="ico_circle_more"></span>
                                             </button>
                                         </div>
-                                    </div>  
+                                    </div>
                                 </div>
                                 <hr class="devide_hr" />
                                 <!--// qa -->
@@ -1376,176 +1373,101 @@ Music sales data from both ON&OFF LINE STORES, Would be 100% counted for HANTEO 
                                     <div class="tit_con_area">
                                         <h2 class="tit">카테고리 Best</h2>
                                     </div>
-                                    <ul class="list_item clearfix">
-                                        <li class="item">
-                                            <a href="">
-                                                <div class="figure">
-                                                    <img src="../../images/thumnail_recommend_01.png" width="100%">
-                                                </div>
-                                                <p class="txt_account">
-                                                    <span class="txt_brand">Stanley</span>
-                                                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기</span>
-                                                </p>
-                                                <div class="price_wrap">
-                                                    <span class="real_price">
-                                                        <span class="txt_value">17,200</span>
-                                                        <span class="txt_unit">원</span>
-                                                    </span>
-                                                    <span class="sale_price">
-                                                        <em class="txt_per">20%</em>
-                                                        <em class="txt_value">13,760</em>
-                                                        <span class="txt_unit">원</span>
-                                                    </span>
-                                                </div>
-                                                <div class="badge_wrap">
-                                                    <div class="badge_list">
-                                                        <span class="badge badge_sm badge_primary">쿠폰</span>
-                                                        <span class="badge badge_sm badge_default">사은품</span>
-                                                        <span class="badge badge_sm badge_default">무료배송</span>
-                                                    </div>
-                                                </div>
-                                                <div class="review_good_wrap">
-                                                    <button type="button" class="total_review">
-                                                        <span class="ico_toal_review"></span>
-                                                        <span class="txt_total">999+</span>
-                                                    </button>
-                                
-                                                    <button type="button" class="total_good">
-                                                        <span class="ico_total_good"></span>
-                                                        <span class="txt_total">999+</span>
-                                                    </button>
-                                                </div>
-                                            </a>
+                                     <!--[2022-02-16] 상품 리스트 공통 디자인 변경으로 전체 변경-->
+                                     <ul class="prod-wrapper evt_products">
+                                        <li class="prod_item">
+                                            <div class="product_pic">
+                                                <button class="evt_good_count">
+                                                    <div class="icon"></div>
+                                                    <!-- <div class="txt"></div> -->
+                                                </button>
+                                                <img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
+                                            </div>
+                                            <div class="company">dretec</div>
+                                            <div class="title">엑토 블루투스 멀티 페어링 말줄임 테스트</div>
+                                            <div class="price_line">
+                                                <span class="discount_rate">15%</span>
+                                                <span class="final_price">9,234,000</span>
+                                                <span class="price_origin">9,200,000</span>
+                                            </div>
+                                            <div class="badge_line">
+                                                <span class="badge rounded badge_primary_evt">쿠폰</span>
+                                                <span class="badge rounded badge_default_evt">사은품</span>
+                                                <span class="badge rounded badge_default_evt">무료배송</span>
+                                            </div>
                                         </li>
-                                        <li class="item">
-                                            <a href="">
-                                                <div class="figure">
-                                                    <img src="../../images/thumnail_recommend_01.png" width="100%">
-                                                </div>
-                                                <p class="txt_account">
-                                                    <span class="txt_brand">Stanley</span>
-                                                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기</span>
-                                                </p>
-                                                <div class="price_wrap">
-                                                    <span class="real_price">
-                                                        <span class="txt_value">17,200</span>
-                                                        <span class="txt_unit">원</span>
-                                                    </span>
-                                                    <span class="sale_price">
-                                                        <em class="txt_per">20%</em>
-                                                        <em class="txt_value">13,760</em>
-                                                        <span class="txt_unit">원</span>
-                                                    </span>
-                                                </div>
-                                                <div class="badge_wrap">
-                                                    <div class="badge_list">
-                                                        <span class="badge badge_sm badge_primary">쿠폰</span>
-                                                        <span class="badge badge_sm badge_default">사은품</span>
-                                                        <span class="badge badge_sm badge_default">무료배송</span>
-                                                    </div>
-                                                </div>
-                                                <div class="review_good_wrap">
-                                                    <button type="button" class="total_review">
-                                                        <span class="ico_toal_review"></span>
-                                                        <span class="txt_total">999+</span>
-                                                    </button>
-                                
-                                                    <button type="button" class="total_good">
-                                                        <span class="ico_total_good"></span>
-                                                        <span class="txt_total">999+</span>
-                                                    </button>
-                                                </div>
-                                            </a>
+                                        <li class="prod_item">
+											<div class="product_pic">
+												<button class="evt_good_count">
+                                                    <div class="icon"></div>
+                                                    <div class="txt">80</div>
+												</button>
+												<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
+											</div>
+											<div class="company">dretec</div>
+											<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+											<div class="price_line">
+												<span class="discount_rate">15%</span>
+												<!--할인 적용 없을때 no_discount 클래스 추가-->
+												<!-- <span class="final_price">9,234,000</span> -->
+												<span class="price_origin no_discount">9,200,000</span>
+											</div>
+											<div class="badge_line">
+												<span class="badge rounded badge_primary_evt">쿠폰</span>
+												<span class="badge rounded badge_default_evt">사은품</span>
+												<span class="badge rounded badge_default_evt">무료배송</span>
+											</div>
                                         </li>
-                                        <li class="item">
-                                            <a href="">
-                                                <div class="figure">
-                                                    <img src="../../images/thumnail_recommend_01.png" width="100%">
-                                                </div>
-                                                <p class="txt_account">
-                                                    <span class="txt_brand">Stanley</span>
-                                                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기</span>
-                                                </p>
-                                                <div class="price_wrap">
-                                                    <span class="real_price">
-                                                        <span class="txt_value">17,200</span>
-                                                        <span class="txt_unit">원</span>
-                                                    </span>
-                                                    <span class="sale_price">
-                                                        <em class="txt_per">20%</em>
-                                                        <em class="txt_value">13,760</em>
-                                                        <span class="txt_unit">원</span>
-                                                    </span>
-                                                </div>
-                                                <div class="badge_wrap">
-                                                    <div class="badge_list">
-                                                        <span class="badge badge_sm badge_primary">쿠폰</span>
-                                                        <span class="badge badge_sm badge_default">사은품</span>
-                                                        <span class="badge badge_sm badge_default">무료배송</span>
-                                                    </div>
-                                                </div>
-                                                <div class="review_good_wrap">
-                                                    <button type="button" class="total_review">
-                                                        <span class="ico_toal_review"></span>
-                                                        <span class="txt_total">999+</span>
-                                                    </button>
-                                
-                                                    <button type="button" class="total_good">
-                                                        <span class="ico_total_good"></span>
-                                                        <span class="txt_total">999+</span>
-                                                    </button>
-                                                </div>
-                                            </a>
+                                        <li class="prod_item">
+											<div class="product_pic">
+												<button class="evt_good_count">
+                                                    <div class="icon"></div>
+                                                    <div class="txt">80</div>
+												</button>
+												<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
+											</div>
+											<div class="company">dretec</div>
+											<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+											<div class="price_line">
+												<span class="discount_rate">15%</span>
+												<span class="final_price">9,234,000</span>
+												<span class="price_origin">9,200,000</span>
+											</div>
+											<div class="badge_line">
+												<span class="badge rounded badge_primary_evt">쿠폰</span>
+												<span class="badge rounded badge_default_evt">사은품</span>
+												<span class="badge rounded badge_default_evt">무료배송</span>
+											</div>
                                         </li>
-                                        <li class="item">
-                                            <a href="">
-                                                <div class="figure">
-                                                    <img src="../../images/thumnail_recommend_01.png" width="100%">
-                                                </div>
-                                                <p class="txt_account">
-                                                    <span class="txt_brand">Stanley</span>
-                                                    <span class="txt_desc">[HBAF] 바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기바프 시즈닝 아몬드 10종 1+1+1 3봉 골라담기</span>
-                                                </p>
-                                                <div class="price_wrap">
-                                                    <span class="real_price">
-                                                        <span class="txt_value">17,200</span>
-                                                        <span class="txt_unit">원</span>
-                                                    </span>
-                                                    <span class="sale_price">
-                                                        <em class="txt_per">20%</em>
-                                                        <em class="txt_value">13,760</em>
-                                                        <span class="txt_unit">원</span>
-                                                    </span>
-                                                </div>
-                                                <div class="badge_wrap">
-                                                    <div class="badge_list">
-                                                        <span class="badge badge_sm badge_primary">쿠폰</span>
-                                                        <span class="badge badge_sm badge_default">사은품</span>
-                                                        <span class="badge badge_sm badge_default">무료배송</span>
-                                                    </div>
-                                                </div>
-                                                <div class="review_good_wrap">
-                                                    <button type="button" class="total_review">
-                                                        <span class="ico_toal_review"></span>
-                                                        <span class="txt_total">999+</span>
-                                                    </button>
-                                
-                                                    <button type="button" class="total_good">
-                                                        <span class="ico_total_good"></span>
-                                                        <span class="txt_total">999+</span>
-                                                    </button>
-                                                </div>
-                                            </a>
+                                        <li class="prod_item">
+											<div class="product_pic">
+												<button class="evt_good_count">
+                                                    <div class="icon"></div>
+                                                    <div class="txt">80</div>
+												</button>
+												<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
+											</div>
+											<div class="company">dretec</div>
+											<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+											<div class="price_line">
+												<span class="discount_rate">15%</span>
+												<span class="final_price">9,234,000원</span>
+												<span class="price_origin">9,200,000원</span>
+											</div>
+											<div class="badge_line">
+												<span class="badge rounded badge_primary_evt">쿠폰</span>
+												<span class="badge rounded badge_default_evt">사은품</span>
+												<span class="badge rounded badge_default_evt">무료배송</span>
+											</div>
                                         </li>
-                                                                     
                                     </ul>
-                                    <!-- ajax 연동? -->
-                                    <div class="btn_more_area">
+                                    <!--[2022-02-16] 기획서 변경으로 더보기 삭제 20개 노출-->
+                                    <!-- <div class="btn_more_area">
                                         <button class="btn_expand">
                                             <span class="txt">더보기</span>
                                             <span class="ico_circle_more"></span>
                                         </button>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <!--// 연관상품-->
                             </section>

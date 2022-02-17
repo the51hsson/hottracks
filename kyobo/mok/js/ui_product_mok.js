@@ -166,7 +166,7 @@ $(function(){
 	})
 
 	//카테고리 상품 리스트 찜하기 토글
-	$(document).on('click', '.evt_good_count', function(){
+	$(document).on('click', '.module_wrap .evt_good_count', function(){
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
 		} else {
@@ -224,11 +224,11 @@ $(function(){
     }
 
     //textarea focus 효과
-	$(document).on('focus', '.mycomment_box textarea', function(){
+	$(document).on('focus', '.mycomment_box textarea, .byte_check_wrap textarea', function(){
 		$(this).parent().addClass('active');
 	});
 
-	$(document).on('blur', '.mycomment_box textarea', function(){
+	$(document).on('blur', '.mycomment_box textarea .byte_check_wrap textarea', function(){
 		$(this).parent().removeClass('active');
 	});
     //textarea 20자 제한 효과

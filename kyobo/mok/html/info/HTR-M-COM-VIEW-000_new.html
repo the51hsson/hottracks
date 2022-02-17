@@ -314,7 +314,6 @@
                                                 제주지,도서 산간 지역 추가 배송비가 발생하니 주문시 확인 부탁드립니다.
                                             </p>
                                         </div>
-                                        <!--[2022-02-16]해외 직구 유의사항 추가-->
                                         <div class="info_area">
                                             <div class="tit_subin_area">
                                                 <h3 class="tit"><span class="ico_reservation_heart"></span><span class="txt">핫트픽업 예약주문</span></h3>
@@ -325,6 +324,7 @@
                                                 이 주문은 별도 배송이 되지 않으며, 선택하신 매장 외 다른 매장에서는 수령이 불가합니다.
                                             </p>
                                         </div>
+                                        <!--[2022-02-16]해외 직구 유의사항 추가-->
                                         <div class="info_area">
                                             <div class="tit_subin_area">
                                                 <h3 class="tit"><span class="ico_overseas"></span><span class="txt">해외 직구 유의사항</span></h3>
@@ -944,7 +944,7 @@
                                                                 <!-- byte_check_wrap -->
                                                                 <!-- DESC : active 클래스로 display 제어 -->
                                                                 <div class="byte_check_wrap active">
-                                                                    <textarea class="form_textarea" title="타이틀 입력" placeholder="답글을 입력해주세요" style="height: 78px;"></textarea>
+                                                                    <textarea class="form_textarea" title="타이틀 입력" placeholder="답글을 입력해주세요" ></textarea>
                                                                     <div class="byte_chack_footer">
                                                                         <div class="byte_check">
                                                                             <span class="count">0</span>
@@ -1328,7 +1328,6 @@
                                                     <div class="txt_tit">
                                                         <img src="../../images/ico/ico_q.png" alt="question" width="30px" height="30px" />
                                                     </div>
-
                                                     <p class="txt_dec">
                                                         제가 구매한 상품은 “Lavender” 인데 다른 컬러가 왔었어요.
                                                         확인 부탁드립니다.
@@ -2236,9 +2235,10 @@
 						<label for="textKillingPart02" class="form_label">리뷰 작성</label>
 					</div>
 					<div class="form_cont">
+                        <!--[2022-02-16] textarea 태그 전체 인라인 스타일 height 설정값 삭제-->
 						<!-- byte_check_wrap -->
 						<div class="byte_check_wrap">
-							<textarea id="textKillingPart02" class="form_textarea" title="타이틀 입력" placeholder="10자 이상 입력해주세요. 주제와 무관한 댓글, 악플, 배송문의 등의 글은 임의 삭제될 수 있습니다." style="height: 70px;"></textarea>
+							<textarea id="textKillingPart02" class="form_textarea" title="타이틀 입력" placeholder="10자 이상 입력해주세요. 주제와 무관한 댓글, 악플, 배송문의 등의 글은 임의 삭제될 수 있습니다."></textarea>
 							<div class="byte_chack_footer">
 								<div class="byte_check">
 									<span class="count">12</span>
@@ -2375,7 +2375,7 @@
 							<!-- byte_check_wrap -->
 							<!-- DESC : active 클래스로 display 제어 -->
 							<div class="byte_check_wrap">
-								<textarea class="form_textarea" title="타이틀 입력" placeholder="답글을 입력해주세요" style="height: 78px;"></textarea>
+								<textarea class="form_textarea" title="타이틀 입력" placeholder="답글을 입력해주세요." ></textarea>
 								<div class="byte_chack_footer">
 									<div class="byte_check">
 										<span class="count">0</span>
@@ -2507,7 +2507,7 @@
                             <!-- byte_check_wrap -->
                             <!-- DESC : active 클래스로 display 제어 -->
                             <div class="byte_check_wrap">
-                                <textarea class="form_textarea" title="타이틀 입력" placeholder="답글을 입력해주세요" style="height: 78px;"></textarea>
+                                <textarea class="form_textarea" title="타이틀 입력" placeholder="답글을 입력해주세요" ></textarea>
                                 <div class="byte_chack_footer">
                                     <div class="byte_check">
                                         <span class="count">0</span>
@@ -2623,8 +2623,7 @@
                             <!-- byte_check_wrap -->
                             <!-- DESC : active 클래스로 display 제어 -->
                             <div class="byte_check_wrap active">
-                                <textarea class="form_textarea" title="타이틀 입력" placeholder="답글을 입력해주세요"
-                                    style="height: 78px;"></textarea>
+                                <textarea class="form_textarea" title="타이틀 입력" placeholder="답글을 입력해주세요" ></textarea>
                                 <div class="byte_chack_footer">
                                     <div class="byte_check">
                                         <span class="count">0</span>
@@ -2741,8 +2740,7 @@
                             <!-- byte_check_wrap -->
                             <!-- DESC : 신고하기 항목 - '기타'의 textarea는 기본 disabled 상태 (다른 항목 선택 시 활성화처리는 스크립트 적용되어 있음) -->
                             <div class="byte_check_wrap">
-                                <textarea class="form_textarea" title="신고 내용을 입력해주세요" placeholder="신고 내용을 입력해주세요." disabled=""
-                                    style="height: 68px;"></textarea>
+                                <textarea class="form_textarea" title="신고 내용을 입력해주세요" placeholder="신고 내용을 입력해주세요." disabled=""></textarea>
                                 <div class="byte_chack_footer">
                                     <div class="byte_check">
                                         <span class="count">12</span>
@@ -2821,7 +2819,7 @@
                     <div class="form_cont">
 						<!-- byte_check_wrap -->
 						<div class="byte_check_wrap">
-							<textarea id="textKillingPart02" class="form_textarea" title="타이틀 입력" placeholder="최대 100자까지 등록 가능합니다." style="height: 70px;"></textarea>
+							<textarea id="textKillingPart02" class="form_textarea" title="타이틀 입력" placeholder="최대 100자까지 등록 가능합니다." ></textarea>
 							<div class="byte_chack_footer">
 								<div class="byte_check">
 									<span class="count">12</span>
