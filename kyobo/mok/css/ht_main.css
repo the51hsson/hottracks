@@ -7357,7 +7357,7 @@
 .ht_ .chk_list_ty li label {
   display: block;
   height: 36px;
-  padding: 0 15px;
+  padding: 0 13px;
   background: #f7f7f7;
   border: 1px solid #eaeaea;
   border-radius: 18px;
@@ -7372,7 +7372,7 @@
 
 .ht_ .chk_list_ty.ty02 label {
   height: 32px;
-  padding: 0 15px;
+  padding: 0 13px;
   background: #fff;
   border: 1px solid #eaeaea;
   border-radius: 18px;
