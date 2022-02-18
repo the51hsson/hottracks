@@ -54,7 +54,7 @@
         .tit_desc {
             margin-bottom: 8px;
             line-height:23px;
-            font-weight: 700;
+            font-weight:400;
         }
         .desc {
             word-break: keep-all;
@@ -135,7 +135,7 @@
             height:100%;
             left:0;
             top:0;
-            border-radius: 15px;
+            border-radius:8px;
         }
     }
 }
@@ -192,12 +192,12 @@
                 position:relative;
                 height:0;
                 padding-top:60%;
-                border-radius: 15px;
+                border-radius:8px;
             }
         }  
     }
 }
-//브랜드 상품 메뉴
+//브랜드 상품 메뉴 - 공통예정
 .ctg_floating_menues {
     display: flex;
     flex-flow: row nowrap;
@@ -247,7 +247,7 @@
 	   flex-flow: row nowrap;
 	   justify-content: space-between;
 	}
-	span {
+	&> span {
 		display: block;
 		line-height: 19px;
 	}

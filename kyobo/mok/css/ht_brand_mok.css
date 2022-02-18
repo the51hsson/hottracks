@@ -60,7 +60,7 @@
 .brand_card .tit_card_body .tit_desc {
   margin-bottom: 8px;
   line-height: 23px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .brand_card .tit_card_body .desc {
@@ -151,7 +151,7 @@
   height: 100%;
   left: 0;
   top: 0;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 .evt_slider_wrap {
@@ -209,7 +209,7 @@
   position: relative;
   height: 0;
   padding-top: 60%;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 .ctg_floating_menues {
@@ -281,7 +281,7 @@
           justify-content: space-between;
 }
 
-.ctg_prod_wrap span {
+.ctg_prod_wrap > span {
   display: block;
   line-height: 19px;
 }
