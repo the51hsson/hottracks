@@ -830,6 +830,21 @@ $(function(){
     gftQuestion();
 });
 
+$(function(){
+    $('.gft_question_chk input').click(function(){ 
+        var chk = $(this).is(':checked');
+        if(chk){
+            $(this).closest('.gft_question_chk').addClass('on');
+            $(this).closest('.gft_question_chk').find('input').prop('disabled', true);
+            $(this).prop('disabled', false);
+
+        }else{
+            $(this).closest('.gft_question_chk').removeClass('on');
+            $(this).closest('.gft_question_chk').find('input').prop('disabled', false);
+        }
+    }); 
+});
+
 
 
 /* 선물추천 - 팝업 */
@@ -861,14 +876,14 @@ $(function(){
 		$(this).addClass('active').siblings('.tod_menu').removeClass('active');
 	});
 	//상품 리스트 찜하기 토글
-/*$(document).on('click', '.evt_good_count', function(){
+    /*$(document).on('click', '.evt_good_count', function(){
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
 		} else {
 			$(this).addClass('active');
 		}
 	});
- 22.02.17 삭제 */ 	
+    22.02.17 삭제 */ 	
 	//MD 추천 상단스왑
 	$('.swiper-container.ctg_top_swiper').each(function(i, ele){
 	    var ctgSwiper = new Swiper(this,  {
