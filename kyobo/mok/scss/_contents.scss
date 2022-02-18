@@ -193,6 +193,10 @@
                     font-family: 'Roboto';
                     font-weight: 400;
                 }
+                .txt_primary {
+                    font-family: "Noto Sans KR",sans-serif;
+                    color:#474C98 !important;
+                }
                 .btn_share {
                     cursor: pointer;
                     width: 18px;
@@ -1554,7 +1558,7 @@
 [class^=bul_item_].font_size_xxs+.font_size_xxs {margin-top: 4px;}
 [class^=bul_item_].font_size_xxs .bul_list {margin-top: 4px;}
 [class^=bul_item_].colBlack {color:#000;}
-.bul_item_dot {padding-left: 9px;}
+.bul_item_dot {padding-left: 9px; .txt_primary {  color: #474c98 !important; }}
 .bul_item_dot:before {content: ""; display: block; position: absolute; left: 0; top: 7px; width: 3px; height: 3px; border-radius: 50%; background-color: #767676;}
 .bul_item_asterisk {color: #767676; padding-left: 8px;}
 .bul_item_asterisk:before {content: "*"; color: #474c98; position: absolute; left: 0;}

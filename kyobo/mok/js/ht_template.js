@@ -945,10 +945,11 @@ $(function(){
 		         (offsetTop - headerHeight - stickMenuHeight - 200 < scrolltop);
 		return isShow; 
 	}
+    //[2022-02-17] 삭제, 진행
 	//베스트, 신상품, 무료배송 서브 메뉴 활성화 기능
-	$(document).on('click', '.menu_sort .btn_sort', function(){
-		$(this).addClass('active').siblings().removeClass('active');
-	})
+	// $(document).on('click', '.menu_sort .btn_sort', function(){
+	// 	$(this).addClass('active').siblings().removeClass('active');
+	// })
 
 	//상품 리스트 정렬 방식 토글 버튼
 	$('.ctg_prod_wrap .ctg_list_icon').click(function(){
@@ -969,6 +970,8 @@ $(function(){
 	//품절 대체 상품 버튼 클릭
 	$(document).on('click', '.sold_out .replace_prod_btn', function(){
 		var replaceBubble = $(this).parents('li').children('article.replace_prod_swap');
+        //[2022-02-17] 다른 대체 상품 스왑 닫기 기능 추가 
+        $('.replace_prod_swap').removeClass('show_bubble');
 		
 		if(replaceBubble.length > 0 &&  replaceBubble.css('display') == 'none'){
 			replaceBubble.addClass('show_bubble');

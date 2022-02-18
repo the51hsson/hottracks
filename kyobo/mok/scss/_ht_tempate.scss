@@ -509,7 +509,7 @@
 
     // 대체상품
     .replace_prod_swap {
-        z-index:5;max-width:750px;
+        z-index:5; max-width:750px;
         &:before {
             z-index:1;
         }
