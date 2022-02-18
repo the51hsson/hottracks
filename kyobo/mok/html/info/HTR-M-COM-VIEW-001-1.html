@@ -120,7 +120,7 @@
                                 <h1 class="tit">
                                     <div class="tit_top">
                                         <a href="#" class="txt_brand">SM ENTERTAINMENT</a>
-                                        <button class="btn_share"><span class="hidden">공유하기</span></button>
+                                        <button class="btn_share" data-role="btn-dialog" data-target="#popBottomShare"><span class="hidden">공유하기</span></button>
                                     </div>
                                     <p class="tit_bottom">레드벨벳 - 혼돈의 장 : FIGHT OR ESCAPE</p>
                                     <p class="tit_bottom_dec">2021.11.29 발매 예정입니다</p>
@@ -201,20 +201,20 @@
                                     <dt class="txt_dt col_4">통합포인트</dt>
                                     <dd class="txt_dd col_8">
                                         <span class="txt_info">70원(1%적립)
-                                            <button class="ico_info"><span class="hidden">정보보기</span></button>
+                                            <button class="ico_info" data-role="btn-dialog" data-target="#popPointTotal"><span class="hidden">정보보기</span></button>
                                         </span>
                                     </dd>
                                     <dt class="txt_dt col_4">카드 혜택</dt>
                                     <dd class="txt_dd col_8">
                                         <span class="txt_info">신용카드 할인안내
-                                            <button class="ico_info"><span class="hidden">정보보기</span></button>
+                                            <button class="ico_info" data-role="btn-dialog" data-target="#popCreditDiscount"><span class="hidden">정보보기</span></button>
                                         </span>
                                         
                                     </dd>
                                     <dt class="txt_dt col_4">배송비</dt>
                                     <dd class="txt_dd col_8">
                                         <span class="txt_info">3,000원 (30,000원 이상 무료배송)
-                                            <button class="ico_info"><span class="hidden">정보보기</span></button>
+                                            <button class="ico_info" data-role="btn-dialog" data-target="#popDeliveryFee"><span class="hidden">정보보기</span></button>
                                         </span>
                                     </dd>
                                     <dt class="txt_dt col_4">예약 상품</dt>
@@ -233,7 +233,7 @@
                             <div class="freebie_wrap">
                                 <img class="figure" src="../../images/ico/ico_shoppingbag.png" width="40px" height="40px" alt="사은품" />
                                 <p class="txt_desc">
-                                    <!--[2022-02-16 디자인 변경으로 클래스 title추가]-->
+                                    <!--[2022-02-17 디자인 변경으로 클래스 title추가]-->
                                     <span class="d_block title">사은품</span>
                                     <span class="d_block">핫트랙스 특전</span>
                                     <span class="d_block">홀로그램 포토카드 8종 중 랜덤 1종 증정</span>
@@ -1661,6 +1661,7 @@
     </div>
     <!-- // wrapper -->
     <!--[2022-02-17] 팝업 추가-->
+    <!--팝업-->
     <!--한달 후 리뷰 팝업-->
     <div id="kloverReview" class="dialog_wrap">
         <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
@@ -1976,6 +1977,155 @@
         <!-- //dialog_contents -->
     </div>
     <!-- //매장 재고 수량 -->
+    <!--공유하기 팝업-->
+    <div id="popBottomShare" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">공유하기</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents share_sns_wrap">
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_kakao.svg" alt="카카오톡 공유하기">
+                </div>
+                <div class="txt">카카오톡</div>
+            </span>
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_instar.svg" alt="인스타그램 공유하기">
+                </div>
+                <div class="txt">인스타그램</div>
+            </span>
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_facebook.svg" alt="페이스북 공유하기">
+                </div>
+                <div class="txt">페이스북</div>
+            </span>
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_twitter.svg" alt="트위터 공유하기">
+                </div>
+                <div class="txt">트위터</div>
+            </span>
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_pinterest.svg" alt="핀터레스트 공유하기">
+                </div>
+                <div class="txt">핀터레스트</div>
+            </span>
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_line.svg" alt="라인 공유하기">
+                </div>
+                <div class="txt">라인</div>
+            </span>
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_message.svg" alt="메세지 공유하기">
+                </div>
+                <div class="txt">메세지</div>
+            </span>  
+            <span>
+                <div class="icon">
+                    <img src="../../images/guide/sns_url_copy.svg" alt="URL 복사">
+                </div>
+                <div class="txt">URL 복사</div>
+                </span>  
+        </div>
+    </div>   
+    <!--//공유하기 팝업-->
+    <!--통합 포인트 팝업-->
+    <div id="popPointTotal" class="dialog_wrap">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
+                class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">통합 포인트 안내</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents">
+            <ul class="bul_list">
+                <li class="bul_item_dot">핫트랙스 온라인/오프라인, 교보문고 온라인/오프라인, 모바일 교보문고에서 모두 적립·사용 가능!</li>
+                <li class="bul_item_dot">10원 이상의 포인트도 바로바로 사용! (영업점은 1,000원 단위 사용) 주문 시, 10원 단위부터 사용하실 수 있습니다.</li>
+                <li class="bul_item_dot">자동적립되는 편리한 포인트! <br>구매 후 어떤 절차나 과정없이 바로 자동으로 적립됩니다.</li>
+                <li class="bul_item_dot">
+                    포인트 확인도 폭 넓~게! <br>
+                    온라인 마이룸, 모바일, 무인가입기, 영업점 영수증 등에서 적립하거나 사용하신 포인트 내역을 확인하실 수 있습니다. <br>
+                    상품 구매 시 해당 상품의 적립률에 따라 지급되며 고객님께서 주문하신 상품이 발송완료 된 후 자동 지급됩니다.<br>
+                    단, 쿠폰 또는 마일리지, 통합포인트 사용 시 예상적립금이 변동될 수 있습니다.<br>
+                    (주문취소나 반품시에는 적립된 통합포인트가 다시 차감됩니다.)
+                </li>
+            </ul>
+        </div>
+        <!-- //dialog_contents -->
+    </div>
+    <!--//통합 포인트 팝업-->
+    <!--신용카드 할인 팝업-->
+    <div id="popCreditDiscount" class="dialog_wrap">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
+                class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">신용카드 할인 안내</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents">
+            <ul class="bul_list">
+                <li class="bul_item_dot">
+                    <strong>신한카드</strong><br>
+                    2~6개월, 12개월(부분) 무이자
+                </li>
+                <li class="bul_item_dot">
+                    <strong>하나카드</strong><br>
+                    2~3개월 무이자
+                </li>
+                <li class="bul_item_dot">
+                    <strong>국민카드</strong><br>
+                    2~5개월 무이자
+                </li>
+                <li class="bul_item_dot">
+                    <strong>비씨, NH농협, 현대, 삼성카드</strong><br>
+                    2~6개월 무이자
+                </li>
+                <li class="bul_item_dot">
+                    <b>유의사항</b><br>
+                    -법인,체크,선불,기프트,하이브리드 제외<br>
+                    -무이자 적용 최소결제 금액 등 상세 내용은 결제 팝업창에서 확인 요망
+                </li>
+            </ul>
+        </div>
+        <!-- //dialog_contents -->
+    </div>
+    <!--//신용카드 할인 팝업-->
+    <!--배송비 안내 팝업-->
+    <div id="popDeliveryFee" class="dialog_wrap">
+        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
+                class="hidden">닫기</span></button>
+        <!-- dialog_header -->
+        <div class="dialog_header">
+            <div class="dialog_title">배송비 안내</div>
+        </div>
+        <!-- //dialog_header -->
+        <!-- dialog_contents -->
+        <div class="dialog_contents">
+            <div class="title_wrap title_size_def">
+                <p class="title_heading">2,000원</p>
+            </div>
+            <ul class="bul_list">
+                <li class="bul_item_dot">20,000원 이상 구매 시 무료배송</li>
+                <li class="bul_item_dot">도서 산간 지역 추가 요금 있음</li>
+            </ul>
+        </div>
+        <!-- //dialog_contents -->
+    </div>
+    <!--//배송비 안내 팝업-->
+    <!--//팝업-->
 </body>
 
 </html>
