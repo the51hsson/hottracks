@@ -1360,6 +1360,7 @@ button.btn_text_link {
         vertical-align: top;
         .text {
             position: relative;
+            white-space: nowrap;
         }
     }
     button.tag_item {

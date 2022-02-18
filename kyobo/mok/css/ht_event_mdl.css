@@ -1739,6 +1739,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .tag_wrap .tag_item .text {
   position: relative;
+  white-space: nowrap;
 }
 
 .tag_wrap button.tag_item:hover {
