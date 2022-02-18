@@ -2760,6 +2760,10 @@ button.btn_sm {
   margin-top: 4px;
 }
 
+[class^=bul_item_].colBlack {
+  color: #000;
+}
+
 .bul_item_dot {
   padding-left: 9px;
 }
@@ -7928,7 +7932,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 .ctg_topMenu.not_sticky {
   position: relative;
   top: 0;
-  z-index: 0;
 }
 
 .menu_sort {

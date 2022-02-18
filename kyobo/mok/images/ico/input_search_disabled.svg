@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="btn_input_search" transform="translate(3 3)">
+    <g id="Ellipse_2" data-name="Ellipse 2" fill="none" stroke="#d5d5d5" stroke-width="2">
+      <circle cx="8" cy="8" r="8" stroke="none"/>
+      <circle cx="8" cy="8" r="7" fill="none"/>
+    </g>
+    <line id="Shape_4" data-name="Shape 4" x2="5" y2="5" transform="translate(13 13)" fill="none" stroke="#d5d5d5" stroke-width="2"/>
+    <rect id="사각형_987" data-name="사각형 987" width="24" height="24" transform="translate(-3 -3)" fill="red" opacity="0"/>
+  </g>
+</svg>

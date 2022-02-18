@@ -228,9 +228,10 @@ $(function(){
 		$(this).parent().addClass('active');
 	});
 
-	$(document).on('blur', '.mycomment_box textarea .byte_check_wrap textarea', function(){
+	$(document).on('blur', '.mycomment_box textarea, .byte_check_wrap textarea', function(){
 		$(this).parent().removeClass('active');
 	});
+
     //textarea 20자 제한 효과
 	$(document).on('keyup', '.mycomment_box textarea', function(){
 		if($(this).val().length > 20){

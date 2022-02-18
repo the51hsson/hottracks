@@ -32,7 +32,7 @@ input[type=number] {
             position: relative;
             width: 6px;
             height: 6px;
-            background-image: url('../images/ico_required_mok.png');
+            background-image: url('../images/ico/ico_required.svg');
             background-size: 6px 6px;
             color: transparent;
         }
@@ -42,16 +42,16 @@ input[type=number] {
         font-weight: 400;
     }
 }
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .form_label .required:before {
-        background-image: url('../images/ico_required_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .form_label .required:before {
-        background-image: url('../images/ico_required_mok@3x.png');
-    }
-}
+// @media(-webkit-min-device-pixel-ratio: 2) {
+//     .form_label .required:before {
+//         background-image: url('../images/ico_required_mok@2x.png');
+//     }
+// }
+// @media(-webkit-min-device-pixel-ratio: 3) {
+//     .form_label .required:before {
+//         background-image: url('../images/ico_required_mok@3x.png');
+//     }
+// }
 /* form 공통 - 하단 메시지 */
 .form_desc {
     display: inline-block;
@@ -270,6 +270,13 @@ input[type=number] {
         .btn_ip_clear {
             right: 47px;
         }
+        &.disabled + .btn_ip_search{
+            background-image: url('../images/ico/input_search_disabled.svg'); 
+        }
+         input[type=search]:disabled{
+             background-color: #F7F7F7;
+         }
+
     }
     .btn_ip_search {
         display: block;
@@ -280,20 +287,22 @@ input[type=number] {
         width: 24px;
         height: 24px;
         transform: translateY(-50%);
-        background-image: url('../images/btn_ip_search_mok.png');
-        background-size: 24px 24px;
+        background-image: url('../images/ico/input_search.svg');
+        background-size: 24px 24px
     }
+
 }
-@media(-webkit-min-device-pixel-ratio: 2) {
-    .form_search_box .btn_ip_search {
-        background-image: url('../images/btn_ip_search_mok@2x.png');
-    }
-}
-@media(-webkit-min-device-pixel-ratio: 3) {
-    .form_search_box .btn_ip_search {
-        background-image: url('../images/btn_ip_search_mok@3x.png');
-    }
-}
+// @media(-webkit-min-device-pixel-ratio: 2) {
+//     .form_search_box .btn_ip_search {
+//         background-image: url('../images/guide/btn_header_search@2x.png');
+
+//     }
+// }
+// @media(-webkit-min-device-pixel-ratio: 3) {
+//     .form_search_box .btn_ip_search {
+//         background-image: url('../images/guide/btn_header_search@3x.png');
+//     }
+// }
 .form_prefix_box {
     position: relative;
     .prefix_page_unit {
@@ -481,11 +490,11 @@ input[type=number] {
         border-color: #E27F75;
     }
 }
-.form_chk input:focus + label,
-.form_rdo input:focus + label {
-    outline: 2px solid Highlight;
-    outline: 2px solid -webkit-focus-ring-color;
-}
+// .form_chk input:focus + label,
+// .form_rdo input:focus + label {
+//     outline: 2px solid Highlight;
+//     outline: 2px solid -webkit-focus-ring-color;
+// }
 .form_chk.no_label,
 .form_rdo.no_label {
     width: 22px;
@@ -782,6 +791,10 @@ input[type=number] {
     font-size: 0;
     background: #fff;
     padding:12px 16px 0;
+    &.active {
+        border: 1px solid #000;
+        transition: border-color 0.2s ease-out;
+    }
     .form_textarea {
         overflow-y: auto;
         line-height: 21px;
@@ -833,6 +846,74 @@ input[type=number] {
         }
         .byte_check + .btn_wrap {
             margin-left: 10px;
+        }
+    }
+}
+.mycomment_box {
+    padding:12px 16px;
+    border:1px solid #d5d5d5;
+    margin-bottom:4px;
+    &.active {
+        border:1px solid #000;
+        transition: border-color 0.2s ease-out;
+    }
+    &.notice {
+        border: 1px solid #DA2128;
+        transition: border-color 0.2s ease-out;
+    }
+    &.notice + .notice_txt {
+        display: block !important;
+        position:relative;
+        padding-left: 16px;
+        font-size: 13px;
+        color:#EC1F2D;
+        &:before {
+            content:"";
+            position:absolute;
+            left:0;
+            top:2px;
+            width:12px;
+            height:14px;
+            background:url(../images/guide/ico_warning.svg);
+            background-size: 12px 14px;
+        }
+    }
+    textarea{
+        width:100%;
+        height:63px;
+        border:none;
+        outline:none;
+        resize: none;
+        overflow-y: auto;
+        font-family: Roboto,"Noto Sans KR","PingFang SC","Apple SD Gothic Neo","Microsoft YaHei UI","Malgun Gothic",sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -0.14px;
+        word-break: keep-all;
+    }
+    .mycomment_box_bottom{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-content: center;
+        align-items: center;
+        margin-top:8px;
+        .count_length_line{
+            margin-right:8px;
+        }
+    }
+    .count_defalut{
+        color:#767676;
+    }
+    .btn_cmt{
+        font-size: 13px;
+        letter-spacing: -0.13px;
+        width:52px;
+        height:36px;
+        text-align: center;
+        border-radius: 4px;
+        &:last-of-type{
+            margin-left:5px;
         }
     }
 }
