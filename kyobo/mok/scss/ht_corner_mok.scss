@@ -384,6 +384,7 @@
         width:100%;
     }
 }
+/*=========================== //TOD 메뉴 메인 (오늘만 특가)============================*/
 /*====================  코너메뉴 베스트, 신상품, 무료 배송 ============================*/
 .wrap{
     &>.tit{
@@ -523,8 +524,8 @@
         }
     }    
 }  
-
-/*==========================  카테고리 메인 =============================*/
+/*====================  //코너메뉴 베스트, 신상품, 무료 배송 =========================*/
+/*================================  카테고리 메인 ===================================*/
 //상단 메뉴
 .ctg_topMenu {
     &.depth1 {
@@ -798,7 +799,8 @@
     overflow-x: auto;
     padding: 1px 20px 1px 0;
 
-    li{ 
+    &> li,
+    &>button{ 
         flex-shrink: 0;
         padding:8px 14px;
         border:1px solid #d5d5d5;
@@ -847,6 +849,18 @@
 .ctg_prod_wrap{
 	padding:0 20px;
 	color:#292929;
+    .tit {
+        font-size: 20px;
+		font-weight: 700;
+		letter-spacing: -0.2px;
+		line-height: 29px;
+        margin-bottom:12px;
+        padding-top:30px;
+    }
+    .ctg_floating_menues {
+        padding-right:0; 
+        margin-bottom:24px;
+    }
 	.prod_list_info{
 	   margin-top: 10px;
 	   display: flex;
@@ -953,3 +967,163 @@
 
 	}
 }
+/*================================  //카테고리 메인 ===================================*/
+/*==================================  브랜드 메인 =====================================*/
+//브랜드 설명 카드
+.brand_card {
+    padding: 30px 20px;
+    background-color: #2B2E3D;
+    color:#fff;
+    .tit_card_head {
+        position: relative;
+        margin-bottom:20px;
+        .brand_thumbnail {
+            position: absolute;
+            width:60px;
+            height:60px;
+            bottom:0;
+            right:0;
+            z-index: 3;
+        }
+        .brand {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .logo {
+            line-height:36px;
+            font-family: 'Gmarket Sans';
+            text-shadow: 3px 2px 0px #000;
+            font-weight:900;
+            font-size:36px;
+            color:#FFEB01;
+        }
+        .brand_thumbnail ~ .brand, 
+        .brand_thumbnail ~ .logo {
+            padding-right: 60px;
+        }
+
+    }
+    .tit_card_body {
+        margin-bottom:20px;
+        .tit_desc {
+            margin-bottom: 8px;
+            line-height:23px;
+            font-weight:400;
+        }
+        .desc {
+            word-break: keep-all;
+            line-height:20px;
+            font-size: 13px;
+            color:rgba(255, 255, 255, 0.6);
+        }
+    }
+    .tit_card_foot {
+        overflow: hidden;
+        button {
+            float: left;
+            margin-right:5px;
+            cursor: pointer;
+        }
+        .evt_good_count{
+			display: block;
+			padding:5px 12px;
+			height:35px;
+			border-radius: 35px;
+			color:#fff;
+			font-size: 10px;
+			background-color: #000;
+			z-index:5;
+			.icon{
+				float:left;
+				width:12px;
+				height:14px;
+				margin-top:-1px;
+				background:url(../images/guide/ico_prod_like_icon.svg) no-repeat center center /12px;
+			}
+			.txt{
+				float:left;
+				margin-left:3px;
+				line-height:14px;
+			}
+		}
+        .evt_good_count.active{
+            .icon{
+                float:left;
+                width:12px;
+                height:14px;
+                background:url(../images/guide/ico_prod_like_icon_active.svg) no-repeat center center /12px;
+            }
+        }
+        .share_btn {
+            width:35px;
+            height:35px;
+            border-radius: 50%;
+            background:url(../images/ico/ico_share_white.svg) no-repeat center center /15px;
+            background-color: #000;
+        }
+    }
+}
+//비디오
+.vodeo_wrap { 
+    padding: 30px 20px 0 20px;
+    .tit {
+        font-size: 20px;
+		font-weight: 700;
+		letter-spacing: -0.2px;
+		line-height: 29px;
+		padding-right: 20px;
+    }
+    .sub_tit {
+        margin-top:5px;
+        line-height: 20px;
+        color:#595959;
+    }
+    .video_item {
+        position:relative;
+        margin-top:20px;
+        padding-top:56.25%;
+        overflow: hidden;
+        .evt_video {
+            position:absolute;
+            width:100%;
+            height:100%;
+            left:0;
+            top:0;
+            border-radius:8px;
+        }
+    }
+}
+.coupon_swiper {
+    .evt_slider {
+        .evt_item {
+            width:320px;
+            padding : 17px 90px 19px 20px; 
+            height:auto;
+            min-height:100%;
+            background: url(../images/guide/brand_coupon_bg.svg) no-repeat left top / 99% 99%;
+        } 
+        .cupon_info {
+            .discount {
+               float:none;
+               font-size: 20px;
+               margin : 0 0 5px 0;
+            }
+            .title {
+                margin-top:0
+            }
+            .gray {
+                color:#595959;
+            }      
+            .cpon_notice {
+                margin: top 8px;
+                line-height: 18px;
+                font-size: 12px;
+                color:#767676;
+                letter-spacing: -0.13px;
+            }
+        }
+
+    }    
+}
+
+/*================================== //브랜드 메인 ===================================*/
