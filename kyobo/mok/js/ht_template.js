@@ -863,18 +863,13 @@ function btnPopAddListCl(){
 }
 
 
-
-
-
-
-
-
 /* tod_main_mok.js */
 $(function(){
+    /* 22.02.17 삭제 */ 
 	//오늘만 특가, 핫딜 특가 메뉴 활성화
-	$(document).on('click', '.tod_menu_wrap .tod_menu', function(){
-		$(this).addClass('active').siblings('.tod_menu').removeClass('active');
-	});
+	// $(document).on('click', '.tod_menu_wrap .tod_menu', function(){
+	// 	$(this).addClass('active').siblings('.tod_menu').removeClass('active');
+	// });
 	//상품 리스트 찜하기 토글
     /*$(document).on('click', '.evt_good_count', function(){
 		if ($(this).hasClass('active')) {
@@ -884,7 +879,9 @@ $(function(){
 		}
 	});
     22.02.17 삭제 */ 	
+
 	//MD 추천 상단스왑
+    if($('.swiper-container.ctg_top_swiper').length == 0 ) return;
 	$('.swiper-container.ctg_top_swiper').each(function(i, ele){
 	    var ctgSwiper = new Swiper(this,  {
 			observer: true,
@@ -911,9 +908,9 @@ $(function(){
 			}
 	    });
 	});
-
-	
-
+})
+$(function(){
+   
    //말풍선 효과
 	if($('.ranking_bubble_area').length > 0){
 		window.addEventListener('scroll', promotionEffect);

@@ -1600,7 +1600,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .badge {
   display: inline-block;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   line-height: 18px;
   height: 20px;
@@ -6727,6 +6727,7 @@ body:before {
 
 .ht_ .wrap {
   background-color: #fff;
+  padding-bottom: 80px;
 }
 
 .ht_ .contents_wrap {
@@ -8205,7 +8206,7 @@ body:before {
 }
 
 .ht_ .footer_wrapper {
-  margin-top: 80px;
+  margin-top: 0px;
 }
 
 .ht_ .footer_wrapper .notice_wrap {
