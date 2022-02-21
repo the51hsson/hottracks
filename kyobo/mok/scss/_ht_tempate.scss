@@ -697,7 +697,7 @@
         overflow-x: auto;
         display:flex;
         flex-flow:row nowrap;
-        padding:22px 20px 18px 20px;
+        padding:22px 20px 20px 20px;
     }
     a{
         flex-shrink: 0;
@@ -735,8 +735,7 @@
     overflow-x: auto;
     white-space: nowrap;
     &.list_inner_sort{
-        padding:0;
-        margin-bottom:16px;
+       padding-bottom:16px;
     }
     .btn_sort{
         line-height:21px;

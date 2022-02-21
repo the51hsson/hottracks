@@ -1,34 +1,34 @@
 $(function(){
   /*=================================== HTR-M-CTG-LIST-001.html ==============================*/
-  /* callback 대체로 삭제
+  /* callback 대체로 삭제 */
   //카테고리 리스트 스왑배너
-  $('.swiper-container.ctg_top_swiper').each(function(i, ele){
-      var ctgSwiper = new Swiper(this,  {
-        observer: true,
-        observeParents: true,
-        slidesPerView: 'auto',
-        centeredSlides: true,
-        loop: true,
-        loopsSlide: 1,
-        spaceBetween: 20,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        speed: 700,
-        pagination: {
-          el: $(ele).find('.swiper-pagination')[0],
-          type: 'fraction',
-          formatFractionCurrent: function (number) {
-            return KyoboHottracks.mok.setPrependZero(number, 2);
-          },
-          formatFractionTotal: function (number) {
-            return KyoboHottracks.mok.setPrependZero(number, 2);
-          }
-        }
-    });
-  })
-  */
+  // $('.swiper-container.ctg_top_swiper').each(function(i, ele){
+  //     var ctgSwiper = new Swiper(this,  {
+  //       observer: true,
+  //       observeParents: true,
+  //       slidesPerView: 'auto',
+  //       centeredSlides: true,
+  //       loop: true,
+  //       loopsSlide: 1,
+  //       spaceBetween: 20,
+  //       autoplay: {
+  //           delay: 5000,
+  //           disableOnInteraction: false,
+  //       },
+  //       speed: 700,
+  //       pagination: {
+  //         el: $(ele).find('.swiper-pagination')[0],
+  //         type: 'fraction',
+  //         formatFractionCurrent: function (number) {
+  //           return KyoboHottracks.mok.setPrependZero(number, 2);
+  //         },
+  //         formatFractionTotal: function (number) {
+  //           return KyoboHottracks.mok.setPrependZero(number, 2);
+  //         }
+  //       }
+  //   });
+  // })
+
 
   //카테고리 리스트 하단 스왑배너
   var mdProductSwiper = new CustomSwiper('#mdProductSwiper', {

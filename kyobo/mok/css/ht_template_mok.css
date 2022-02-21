@@ -2,21 +2,21 @@
 /*
 
 */
-@import "ht_product_mok.css"; 
-@import "ht_product_detail.css"; 
+@import "ht_product_mok.css"; /*상품 공통*/
 
-@import "bes_main_mok.css"; 
-@import "ht_brand_mok.css";
-@import "tod_main_mok.css"; 
+@import "ht_corner_mok.css"; /*코너 전체, 브랜드, 카테고리 통합*/
+
+/* @import "ht_brand_mok.css"; */
+
+/* @import "tod_main_mok.css";  */
+
+
 /*
- 
-
-
 @import "ht_category_mok.css"; 
 /*
 @import "ht_music_list.css"; 
 
-
+ 
 @import "ht_music_main.css"; 
 */
 /*

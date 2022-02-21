@@ -205,28 +205,25 @@
 }
 
 // 띠배너
-.mc_cont.resp {
-	height:auto;
-	margin:0;
-}
+
 .wel_belt_banner {
 	position:relative;
-&.round_ty .swiper-container {
-	border-radius:10px;
-	overflow:hidden;
-}
-.swiper-pagination.swiper-pagination-bullets {
-	position:static;
-	margin-top:12px;
-	&.out_bottom {
-		bottom:0;
+	&.round_ty .swiper-container {
+		border-radius:10px;
+		overflow:hidden;
 	}
-}    
-.swiper-slide {
-	img {
-		width:100%;
+	.swiper-pagination.swiper-pagination-bullets {
+		position:static;
+		margin-top:12px;
+		&.out_bottom {
+			bottom:0;
+		}
+	}    
+	.swiper-slide {
+		img {
+			width:100%;
+		}
 	}
-}
 }
 //구분선
 .divide_hr{
