@@ -12138,7 +12138,7 @@ body:before {
   word-wrap: break-word;
   word-break: keep-all;
   white-space: normal;
-  margin-bottom: -80px;
+  margin-bottom: 0;
 }
 
 .mc_cont {

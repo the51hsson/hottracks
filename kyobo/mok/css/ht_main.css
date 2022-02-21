@@ -7690,6 +7690,10 @@
 }
 
 /** 이사 예정 **/
-#containerWrapper .wel_belt02 {
-  margin: 50px 0 -80px 0;
+/*
+#containerWrapper {
+    .wel_belt02 {
+        margin:50px 0 -80px 0;
+    }
 }
+*/
