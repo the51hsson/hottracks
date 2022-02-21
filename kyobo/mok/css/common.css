@@ -4149,6 +4149,49 @@ button.btn_primary.disabled, button.btn_primary[aria-disabled], button.btn_prima
   color: #fff;
 }
 
+a.btn_primary2, button.btn_primary2 {
+  color: #fff;
+  background: #474c98;
+  border: 1px solid #474c98;
+  -webkit-transition: background-color .2s ease-out,border-color .2s ease-out;
+  transition: background-color .2s ease-out,border-color .2s ease-out;
+}
+
+a.btn_primary2:active, a.btn_primary2:focus {
+  background: #2c307c;
+  border-color: #2c307c;
+}
+
+button.btn_primary2:active, button.btn_primary2:focus {
+  background: #2c307c;
+  border-color: #2c307c;
+}
+
+a.btn_primary2.disabled, a.btn_primary2[aria-disabled], a.btn_primary2[disabled] {
+  background: #a6a9d7;
+  border-color: #a6a9d7;
+}
+
+button.btn_primary2.disabled, button.btn_primary2[aria-disabled], button.btn_primary2[disabled] {
+  background: #a6a9d7;
+  border-color: #a6a9d7;
+}
+
+.btn_outline_primary2 {
+  color: #dc3545;
+  border: solid 1px #dc3545;
+}
+
+.btn_outline_primary2:hover {
+  background: #FFF4F1;
+  color: #474c98;
+}
+
+.btn_outline_primary2.disabled {
+  background: #fff;
+  color: #fff;
+}
+
 a.btn_light_gray, button.btn_light_gray {
   color: #fff;
   background: #767676;
@@ -6349,7 +6392,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   left: 0;
   top: 0;
   background-color: #fff;
-  z-index: 120;
+  z-index: 20;
 }
 
 .title_header .pop_like_header {
@@ -6797,7 +6840,38 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-image: url("../images/guide/btn_ip_reset@2x.png") !important;
 }
 
+.btn_ip_search {
+  background-image: url("../images/guide/btn_ip_search_mok.png");
+}
+
+.form_label .required:before {
+  display: inline-block;
+  position: relative;
+  width: 6px;
+  height: 6px;
+  background-image: url("../images/ico/ico_required.svg");
+  background-size: 6px 6px;
+  color: transparent;
+  content: "*";
+}
+
 /* Btn */
+.btn_area {
+  margin-top: 30px;
+}
+
+.btn_area button, .btn_area a {
+  width: 100%;
+}
+
+.btn_area02 {
+  margin-top: 12px;
+}
+
+.btn_area02 button, .btn_area02 a {
+  width: 100%;
+}
+
 .wel_main_wrap .btn_more_view {
   display: block;
   width: 100%;

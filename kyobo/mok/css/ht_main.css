@@ -7326,19 +7326,19 @@
   margin-top: -31px;
 }
 
-.ht_ .chk_list_ty {
+.chk_list_ty {
   position: relative;
   margin: -8px 0 0 -8px;
   font-size: 0;
 }
 
-.ht_ .chk_list_ty li {
+.chk_list_ty li {
   display: inline-block;
   position: relative;
   margin: 8px 0 0 8px;
 }
 
-.ht_ .chk_list_ty li input {
+.chk_list_ty li input {
   position: absolute;
   left: 0;
   top: 0;
@@ -7348,13 +7348,13 @@
   cursor: pointer;
 }
 
-.ht_ .chk_list_ty li input:checked + label {
+.chk_list_ty li input:checked + label {
   background: #fff;
   border-color: #da2128;
   color: #da2128;
 }
 
-.ht_ .chk_list_ty li label {
+.chk_list_ty li label {
   display: block;
   height: 36px;
   padding: 0 13px;
@@ -7370,7 +7370,7 @@
   transition: all 0.4s;
 }
 
-.ht_ .chk_list_ty.ty02 label {
+.chk_list_ty.ty02 label {
   height: 32px;
   padding: 0 13px;
   background: #fff;
@@ -7382,7 +7382,7 @@
   line-height: 31px;
 }
 
-.ht_ .chk_list_ty.ty02 input:checked + label {
+.chk_list_ty.ty02 input:checked + label {
   background: #000;
   border-color: #000;
   color: #fff;

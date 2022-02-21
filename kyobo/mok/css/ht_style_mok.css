@@ -617,6 +617,49 @@ button.btn_primary.disabled, button.btn_primary[aria-disabled], button.btn_prima
   color: #fff;
 }
 
+a.btn_primary2, button.btn_primary2 {
+  color: #fff;
+  background: #474c98;
+  border: 1px solid #474c98;
+  -webkit-transition: background-color .2s ease-out,border-color .2s ease-out;
+  transition: background-color .2s ease-out,border-color .2s ease-out;
+}
+
+a.btn_primary2:active, a.btn_primary2:focus {
+  background: #2c307c;
+  border-color: #2c307c;
+}
+
+button.btn_primary2:active, button.btn_primary2:focus {
+  background: #2c307c;
+  border-color: #2c307c;
+}
+
+a.btn_primary2.disabled, a.btn_primary2[aria-disabled], a.btn_primary2[disabled] {
+  background: #a6a9d7;
+  border-color: #a6a9d7;
+}
+
+button.btn_primary2.disabled, button.btn_primary2[aria-disabled], button.btn_primary2[disabled] {
+  background: #a6a9d7;
+  border-color: #a6a9d7;
+}
+
+.btn_outline_primary2 {
+  color: #dc3545;
+  border: solid 1px #dc3545;
+}
+
+.btn_outline_primary2:hover {
+  background: #FFF4F1;
+  color: #474c98;
+}
+
+.btn_outline_primary2.disabled {
+  background: #fff;
+  color: #fff;
+}
+
 a.btn_light_gray, button.btn_light_gray {
   color: #fff;
   background: #767676;
