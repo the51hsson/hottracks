@@ -1094,19 +1094,20 @@
     }
 }
 .coupon_swiper {
+    padding: 30px 0 0 20px;
     .evt_slider {
         .evt_item {
             width:320px;
-            padding : 17px 90px 19px 20px; 
+            padding : 17px 90px 19px 18px; 
             height:auto;
             min-height:100%;
-            background: url(../images/guide/brand_coupon_bg.svg) no-repeat left top / 99% 99%;
+            background: url(../images/guide/brand_coupon_bg.svg) no-repeat left top / contain;
         } 
         .cupon_info {
             .discount {
                float:none;
                font-size: 20px;
-               margin : 0 0 5px 0;
+               margin : 0;
             }
             .title {
                 margin-top:0
