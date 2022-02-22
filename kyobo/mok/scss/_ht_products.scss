@@ -730,6 +730,9 @@
 	.prod_item:nth-of-type(2n) .replace_prod_swap {
 	  margin-left:-20px;
 	}
+	.prod_item:nth-of-type(2n+1) .replace_prod_swap{
+		margin-right:-20px;
+	}
 	.product_pic {
 		position:relative;
 		width: calc((100% - 20px )/2);

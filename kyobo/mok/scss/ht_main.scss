@@ -2679,7 +2679,7 @@
         }
     }
     .cmt_pd_title {
-        margin-top:16px;color:#595959;font-size:13px;line-height:19px;
+        margin-top:16px;color:#595959;font-size:13px;font-weight:500;line-height:19px;
         
     }
     .cmt_pd_title + .user_cmt {
@@ -3533,11 +3533,18 @@
 
 
 /** 이사 예정 **/
-/*
-#containerWrapper {
+.cont_wrap {
+    position:relative;background:#fff;
+    .mdl_selec_list_wrap {
+        &:last-child {
+            padding-bottom:0;
+        }
+    }
+    .devide_underline_thin:last-child {
+        position:relative;height:0;margin-top:-32px;
+    }
     .wel_belt02 {
-        margin:50px 0 -80px 0;
+        margin-top:40px;
     }
 }
-*/
 

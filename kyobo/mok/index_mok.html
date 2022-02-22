@@ -20,12 +20,17 @@
 	<script src="wsg/ia_resources/jquery-3.6.0.min.js"></script>
 	<script src="wsg/ia_resources/glim.js"></script>
 	<style>
-		.point td {background-color:#f7ffc9 !important}
-		.point .col_date {color:#cb0000;font-weight:700;}
+		.point td {background-color:#f9feda !important}
+		.point_1 td {background-color:#f2fdb1 !important}
+		.point_1 .col_date {color:#cb0000;font-weight:700;}
 
-		.point02 td {background-color:#fcf5fb !important}
-		.point02_1 td {background-color:#ffebfc !important}
+		.point02 td {background-color:#feeefc !important}
+		.point02_1 td {background-color:#feddf9 !important}
 		.point02_1 .col_date {color:#cb0000;font-weight:700;}
+
+		.point03 td {background-color:#ffecec !important}
+		.point03_1 td {background-color:#ffc5c5 !important}
+		.point03_1 .col_date {color:#cb0000;font-weight:700;}
 
 		.point06 td {background-color:#f5eeff !important}
 		.point06 .col_date {color:#cb0000;font-weight:700;}
@@ -559,7 +564,7 @@
 												<div class="col_memo_con"></div>
 											</td>
 										</tr>
-										<tr style="background-color:#ffecec;">
+										<tr>
 											<td class="col_num" data-label="번호"></td>
 											<td class="col_1depth" data-label="1Depth">팝업 공통</td>
 											<td class="col_2depth" data-label="2Depth" style="color:#cb0000;font-weight:700;">알림톡 팝업</td>
@@ -568,7 +573,7 @@
 												<a href="html/guide/pop_guide.html" target="_blank">html/guide/pop_guide.html</a>
 											</td>
 											<td class="col_date" data-label="날짜"></td>
-											<td class="col_complete" data-label="상태">작업중</td>
+											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
 												<div class="col_memo_con"></div>
@@ -640,7 +645,7 @@
 												<div class="col_memo_con"></div>
 											</td>
 										</tr>
-										<tr>
+										<tr class="point02">
 											<td class="col_num" data-label="번호"></td>
 											<td class="col_1depth" data-label="1Depth">웰컴메인</td>
 											<td class="col_2depth" data-label="2Depth"></td>
@@ -1102,7 +1107,7 @@
 									
 
 									<!-- 오늘만 특가 -->
-									<tbody>
+									<tbody class="point03">
 										<tr>
 											<td class="col_num" data-label="번호"></td>
 											<td class="col_1depth" data-label="1Depth">오늘만 특가</td>
@@ -1111,11 +1116,25 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-TOD-MAIN-000.html" target="_blank">html/main/HTR-M-TOD-MAIN-000.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-03</td>
+											<td class="col_date" data-label="날짜">22-02-03</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
 												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_2depth" data-label="2Depth">라이브 알림 팝업</td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/guide/pop_guide.html" target="_blank">html/guide/pop_guide.html</a>
+											</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
+											<td class="col_complete" data-label="상태">완료</td>
+											<td class="col_memo" data-label="비고">
+												팝업 가이드 참조
 											</td>
 										</tr>
 										<tr>
@@ -1124,70 +1143,21 @@
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
-												<a href="html/main/HTR-M-TOD-MAIN-000-1.html" target="_blank">html/main/HTR-M-TOD-MAIN-000-1.html</a>
+												<a href="html/main/HTR-M-TOD-MAIN-001.html" target="_blank">html/main/HTR-M-TOD-MAIN-001.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-03</td>
+											<td class="col_date" data-label="날짜">22-02-03</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button> 
 												<div class="col_memo_con"></div>
 											</td>
 										</tr>
-										<tr>
-											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
-											<td class="col_2depth" data-label="2Depth"></td>
-											<td class="col_3depth" data-label="3Depth"></td>
-											<td class="col_url" data-label="URL">
-												<a href="html/main/HTR-M-TOD-MAIN-000-2.html" target="_blank">html/main/HTR-M-TOD-MAIN-000-2.html</a>
-											</td>
-											<td class="col_date" data-label="날짜">2022-02-03</td>
-											<td class="col_complete" data-label="상태">완료</td>
-											<td class="col_memo" data-label="비고">
-												<button type="button" class="btn_memo">Comment</button>
-												<div class="col_memo_con"></div>
-											</td>
-										</tr>
-										<tr>
-											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
-											<td class="col_2depth" data-label="2Depth"></td>
-											<td class="col_3depth" data-label="3Depth">셀렉트 박스 앵커 기능</td>
-											<td class="col_url" data-label="URL">
-												<a href="html/main/HTR-M-TOD-MAIN-000-3.html" target="_blank">html/main/HTR-M-TOD-MAIN-000-3.html</a>
-											</td>
-											<td class="col_date" data-label="날짜">2022-02-03</td>
-											<td class="col_complete" data-label="상태">완료</td>
-											<td class="col_memo" data-label="비고">
-												<button type="button" class="btn_memo">Comment</button>
-												<div class="col_memo_con"></div>
-											</td>
-										</tr>
 									</tbody>
 									<!-- //오늘만 특가 -->
 
-									<!-- 브랜드샵 -->
-									<tbody class="point">
-										<tr>
-											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">브랜드샵</td>
-											<td class="col_2depth" data-label="2Depth"></td>
-											<td class="col_3depth" data-label="3Depth"></td>
-											<td class="col_url" data-label="URL">
-												<a href="html/main/HTR-M-BRAD-MAIN-000.html" target="_blank">html/main/HTR-M-BRAD-MAIN-000.html</a>
-											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
-											<td class="col_complete" data-label="상태">완료</td>
-											<td class="col_memo" data-label="비고">
-												<button type="button" class="btn_memo">Comment</button>
-												<div class="col_memo_con"></div>
-											</td>
-										</tr>
-									</tbody>
-									<!-- //브랜드샵 -->
 
 									<!-- 베스트/신상품/무료배송 -->
-									<tbody>
+									<tbody class="point03">
 										<tr>
 											<td class="col_num" data-label="번호"></td>
 											<td class="col_1depth" data-label="1Depth">베스트</td>
@@ -1196,7 +1166,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-BES-MAIN-000.html" target="_blank">html/main/HTR-M-BES-MAIN-000.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-08</td>
+											<td class="col_date" data-label="날짜">22-02-08</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -1241,7 +1211,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-NEW-MAIN-000.html" target="_blank">html/main/HTR-M-NEW-MAIN-000.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-08</td>
+											<td class="col_date" data-label="날짜">22-02-08</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -1256,7 +1226,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-DEL-MAIN-000.html" target="_blank">html/main/HTR-M-DEL-MAIN-000.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-08</td>
+											<td class="col_date" data-label="날짜">22-02-08</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -1296,6 +1266,28 @@
 									</tbody>
 									<!-- //베스트/신상품/무료배송 -->
 
+
+									<!-- 브랜드샵 -->
+									<tbody class="point02">
+										<tr>
+											<td class="col_num" data-label="번호"></td>
+											<td class="col_1depth" data-label="1Depth">브랜드샵</td>
+											<td class="col_2depth" data-label="2Depth"></td>
+											<td class="col_3depth" data-label="3Depth"></td>
+											<td class="col_url" data-label="URL">
+												<a href="html/main/HTR-M-BRAD-MAIN-000.html" target="_blank">html/main/HTR-M-BRAD-MAIN-000.html</a>
+											</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
+											<td class="col_complete" data-label="상태">완료</td>
+											<td class="col_memo" data-label="비고">
+												<button type="button" class="btn_memo">Comment</button>
+												<div class="col_memo_con"></div>
+											</td>
+										</tr>
+									</tbody>
+									<!-- //브랜드샵 -->
+
+
 									<!-- 선물추천 -->
 									<tbody class="point">
 										<tr>
@@ -1306,7 +1298,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-GFT-MAIN-000.html" target="_blank">html/main/HTR-M-GFT-MAIN-000.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -1322,7 +1314,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-GFT-MAIN-001.html" target="_blank">html/main/HTR-M-GFT-MAIN-001.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -1337,7 +1329,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-GFT-WRT-000.html" target="_blank">html/main/HTR-M-GFT-WRT-000.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -1352,7 +1344,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-GFT-WRT-001.html" target="_blank">html/main/HTR-M-GFT-WRT-001.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -1366,7 +1358,7 @@
 											<td class="col_3depth" data-label="3Depth">찜 한 상품 찾기</td>
 											<td class="col_url" data-label="URL">
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												HTR-M-GFT-WRT-001.html 동일
@@ -1380,7 +1372,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-GFT-WRT-003.html" target="_blank">html/main/HTR-M-GFT-WRT-003.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -1395,7 +1387,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-GFT-WRT-004.html" target="_blank">html/main/HTR-M-GFT-WRT-004.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -1416,7 +1408,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-LIV-MAIN-000.html" target="_blank">html/main/HTR-M-LIV-MAIN-000.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -1431,7 +1423,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-LIV-MAIN-000-POP-100.html" target="_blank">html/main/HTR-M-LIV-MAIN-000-POP-100.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -1446,7 +1438,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-LIV-MAIN-000-POP-101.html" target="_blank">html/main/HTR-M-LIV-MAIN-000-POP-101.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -1461,14 +1453,14 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-LIV-MAIN-000-POP-102.html" target="_blank">html/main/HTR-M-LIV-MAIN-000-POP-102.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-15</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
 												<div class="col_memo_con"></div>
 											</td>
 										</tr>
-										<tr>
+										<tr class="point_1">
 											<td class="col_num" data-label="번호"></td>
 											<td class="col_1depth" data-label="1Depth"></td>
 											<td class="col_2depth" data-label="2Depth">상세</td>
@@ -1476,7 +1468,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/main/HTR-M-LIV-VIEW-000.html" target="_blank">html/main/HTR-M-LIV-VIEW-000.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												22.02.22 상세 댓글 버튼 Anchor 추가
@@ -1494,7 +1486,7 @@
 											<td class="col_url" data-label="URL">
 												<a href="html/guide/pop_guide.html" target="_blank">html/guide/pop_guide.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												팝업 가이드 참조
@@ -2657,7 +2649,7 @@
 												<a href="html/info/HTR-M-COM-VIEW-000-POP-101-1.html"
 													target="_blank">html/info/HTR-M-COM-VIEW-000-POP-101-1.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료 </td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -2673,7 +2665,7 @@
 												<a href="html/info/HTR-M-COM-VIEW-000-POP-101-2.html"
 													target="_blank">html/info/HTR-M-COM-VIEW-000-POP-101-2.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">2022-02-18</td>
+											<td class="col_date" data-label="날짜">22-02-18</td>
 											<td class="col_complete" data-label="상태">완료</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
@@ -3348,14 +3340,14 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">서비스안내</td>
-											<td class="col_2depth" data-label="2Depth">각인서비스</td>
+											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_2depth" data-label="2Depth">포장 서비스</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
 												<a href="html/customer/HTR-M-CUS-INF-001.html" target="_blank">html/customer/HTR-M-CUS-INF-001.html</a>
 											</td>
-											<td class="col_date" data-label="날짜">작업중</td>
-											<td class="col_complete" data-label="상태"></td>
+											<td class="col_date" data-label="날짜"></td>
+											<td class="col_complete" data-label="상태">작업중</td>
 											<td class="col_memo" data-label="비고">
 												<button type="button" class="btn_memo">Comment</button>
 												<div class="col_memo_con"></div>
@@ -3363,8 +3355,8 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">서비스안내</td>
-											<td class="col_2depth" data-label="2Depth">각인서비스</td>
+											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_2depth" data-label="2Depth">제휴/할인 카드</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
 												<a href="html/customer/HTR-M-CUS-INF-002.html" target="_blank">html/customer/HTR-M-CUS-INF-002.html</a>
