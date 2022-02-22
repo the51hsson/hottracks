@@ -503,7 +503,20 @@ $(function(){
 });
 
 
+/* anchor 이동 */
+$(function(){
+    $.fn.anchorChk = function(){
+        $.each(this, function(i,v){
+            var s = $(v).attr('href');
+            $('html, body').stop().animate({scrollTop:$(s).offset().top - 60 }, 500 );
+        });
+    };
 
+    $('.btn_anchor_chk').click(function(){    
+        $(this).anchorChk();
+        return false;
+    });
+});
 
 
 
@@ -851,7 +864,6 @@ $(function(){
 function btnPopAddListOp(v){
     $('body').css('overflow','hidden');
     var s = $(v).attr('value');
-    console.log(s)
     $('#' + s + '').addClass('on');
 }
 function btnPopAddListCl(){

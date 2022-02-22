@@ -68,7 +68,7 @@
 <!-- //SkipNav -->
 
 <!-- wrapper -->
-<div class="ht_ wrapper contents_detail_view">
+<div class="ht_ wrapper">
     <!-- header -->
     <header id="headerWrapper" class="ht_ header_wrapper">
         <div class="header_left">
@@ -159,19 +159,19 @@
                     <ul class="cks_list">
                         <li>
                             <label class="ck_label_wrap">
-                                <input type="radio" name="popSelectCate" class="checkbox_cm">
+                                <input type="radio" name="popSelectCate" class="checkbox_cm" value="전체">
                                 <span class="label_for_sp">전체</span>
                             </label>
                         </li>
                         <li>
                             <label class="ck_label_wrap">
-                                <input type="radio" name="popSelectCate" class="checkbox_cm">
+                                <input type="radio" name="popSelectCate" class="checkbox_cm" value="선택1">
                                 <span class="label_for_sp">선택1</span>
                             </label>
                         </li>
                         <li>
                             <label class="ck_label_wrap">
-                                <input type="radio" name="popSelectCate" class="checkbox_cm">
+                                <input type="radio" name="popSelectCate" class="checkbox_cm" value="선택2">
                                 <span class="label_for_sp">선택2</span>
                             </label>
                         </li>
@@ -185,6 +185,15 @@
                 <!-- //dialog_footer -->
             </div>
             <!-- //팝업 : popSelectCate -->
+<script>
+/* 확인용 */
+$(function(){
+    $('#popSelectCate .btn_dialog_close').click(function(){ 
+        var listVar = $('input[name=popSelectCate]:checked').val();
+        $('.btn_select_ty').data('target', '#popSelectCate').find('span').text(listVar);
+    }); 
+});
+</script>
 
             <!-- menu_sort -->
             <div class="menu_sort ty02">
