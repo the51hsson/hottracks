@@ -503,7 +503,20 @@ $(function(){
 });
 
 
+/* anchor 이동 */
+$(function(){
+    $.fn.anchorChk = function(){
+        $.each(this, function(i,v){
+            var s = $(v).attr('href');
+            $('html, body').stop().animate({scrollTop:$(s).offset().top - 60 }, 500 );
+        });
+    };
 
+    $('.btn_anchor_chk').click(function(){    
+        $(this).anchorChk();
+        return false;
+    });
+});
 
 
 
@@ -603,6 +616,17 @@ function curProdViewSwiper(){
 $(function(){
     if(!$('.cur_prod_view_list').length) return;
     curProdViewSwiper();
+});
+
+
+
+/* What’s in your bag : 팝업 */
+$(function(){
+    $('.cur_new02_li.on .fold_btn span').text('접기');
+    $('.cur_new02_li .fold_btn').click(function(e){
+        e.preventDefault();
+        $(this).fold_ty();
+    });
 });
 
 
@@ -851,7 +875,6 @@ $(function(){
 function btnPopAddListOp(v){
     $('body').css('overflow','hidden');
     var s = $(v).attr('value');
-    console.log(s)
     $('#' + s + '').addClass('on');
 }
 function btnPopAddListCl(){
@@ -904,7 +927,8 @@ $(function(){
 
 
 
-$(function(){
+
+//$(function(){
     /* 22.02.17 삭제 */ 
 	//오늘만 특가, 핫딜 특가 메뉴 활성화
 	// $(document).on('click', '.tod_menu_wrap .tod_menu', function(){
@@ -922,34 +946,34 @@ $(function(){
 
 	//MD 추천 상단스왑
      /* callback 대체로 삭제 */
-    if($('.swiper-container.ctg_top_swiper').length == 0 ) return;
-	$('.swiper-container.ctg_top_swiper').each(function(i, ele){
-	    var ctgSwiper = new Swiper(this,  {
-			observer: true,
-			observeParents: true,
-			slidesPerView: 'auto',
-			centeredSlides: true,
-			loop: true,
-			loopsSlide: 1,
-			spaceBetween: 20,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			},
-			speed: 700,
-			pagination: {
-			el: $(ele).find('.swiper-pagination')[0],
-			type: 'fraction',
-			formatFractionCurrent: function (number) {
-				return KyoboHottracks.mok.setPrependZero(number, 2);
-			},
-			formatFractionTotal: function (number) {
-				return KyoboHottracks.mok.setPrependZero(number, 2);
-			}
-			}
-	    });
-	});
-});
+//     if($('.swiper-container.ctg_top_swiper').length == 0 ) return;
+// 	$('.swiper-container.ctg_top_swiper').each(function(i, ele){
+// 	    var ctgSwiper = new Swiper(this,  {
+// 			observer: true,
+// 			observeParents: true,
+// 			slidesPerView: 'auto',
+// 			centeredSlides: true,
+// 			loop: true,
+// 			loopsSlide: 1,
+// 			spaceBetween: 20,
+// 			autoplay: {
+// 				delay: 5000,
+// 				disableOnInteraction: false,
+// 			},
+// 			speed: 700,
+// 			pagination: {
+// 			el: $(ele).find('.swiper-pagination')[0],
+// 			type: 'fraction',
+// 			formatFractionCurrent: function (number) {
+// 				return KyoboHottracks.mok.setPrependZero(number, 2);
+// 			},
+// 			formatFractionTotal: function (number) {
+// 				return KyoboHottracks.mok.setPrependZero(number, 2);
+// 			}
+// 			}
+// 	    });
+// 	});
+// });
  
 //관련 기획전, 브랜드 쿠폰 스왑배너
 $(function(){

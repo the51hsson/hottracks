@@ -19,7 +19,7 @@
 <meta property="og:image" content="../../images/guide/sns.jpg">
 <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-<title>FAQ : 고객센터</title>
+<title>고객센터</title>
 
 <!-- Plug-In css -->
 <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -86,129 +86,60 @@
 
     <!-- 고객센터 컨텐츠 -->
     <div class="wel_main_wrap">
-        <!-- FAQ -->
+        <!-- 고객센터 : 상단 -->
         <div class="mc_cont cus_cont">
-            <h2 class="mc_tit02">FAQ</h2>
-
-            <!-- form_search_box -->
-            <div class="form_search_box mb">
-                <!-- form_ip_search -->
-                <div class="form_ip_search">
-                    <input type="search" class="form_ip" placeholder="검색어를 입력해주세요" value="wnans">
-                    <button type="button" class="btn_ip_clear"><span class="hidden">초기화</span></button>
-                </div>
-                <!-- //form_ip_search -->
-                <button type="button" class="btn_ip_search"><span class="hidden">검색</span></button>
-            </div>
-            <!-- //form_search_box -->
-
-
-            <!-- cus_chk_list -->
-            <div class="cus_chk_list" style="display:none;">
-                <!-- chk_list_ty -->
-                <ul class="chk_list_ty ty02">
-                    <li>
-                        <input type="checkbox" name="faq_serch" checked>
-                        <label>Best FAQ</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="faq_serch">
-                        <label>주문결제</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="faq_serch">
-                        <label>배송</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="faq_serch">
-                        <label>영업점</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="faq_serch">
-                        <label>이벤트</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="faq_serch">
-                        <label>반품/환불/교환</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="faq_serch">
-                        <label>세금계산서/증빙</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="faq_serch">
-                        <label>통합포인트/예치금/쿠폰</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="faq_serch">
-                        <label>사이트이용/장애/기타</label>
-                    </li>
+            <!-- info_text_box -->
+            <div class="info_text_box">
+                <ul class="bul_list">
+                    <li class="bul_item_dot font_size_xs">2022년 8월 통합이전에 예치된 금액은 전액 환불처리 됩니다.</li>
+                    <li class="bul_item_dot font_size_xs">통합이후 예치된 금액은 <a href="#n">[마이룸 > 예치금]</a>에서 조회 및 환불 신청하실 수 있습니다.</li>
                 </ul>
-                <!-- //chk_list_ty -->
             </div>
-            <!-- //cus_chk_list -->
-
-
-            <!-- cus_faq_search_view -->
-            <div class="cus_faq_search_view" style="display:none;">
-                <!-- faq_search_tag -->
-                <div class="faq_search_tag">
-                    <p class="tit">자주 찾는 검색어를 선택하시면<br>빠르게 찾으실 수 있어요.</p>
-                    <div class="faq_search_tag_btn">
-                        <button><span>환불</span></button>
-                        <button><span>마일리지</span></button>
-                        <button><span>주문결제</span></button>
-                        <button><span>회원정보</span></button>
-                        <button><span>배송</span></button>
-                        <button><span>반품</span></button>
-                        <button><span>교환</span></button>
-                        <button><span>예치금</span></button>
-                        <button><span>쿠폰</span></button>
-                        <button><span>영업점</span></button>
-                    </div>
-                </div>
-                <!-- //faq_search_tag -->
-            </div>
-            <!-- //cus_faq_search_view -->
-
-
-            <!-- cus_faq_view -->
-            <div class="cus_faq_view">
-                <h3 class="mc_tit04">FAQ 검색결과 (0)</h3>
-                
-                <!-- fold_ty -->
-                <ul class="fold_ty">
-                    <!-- 등록된 항목이 없을 경우 -->
-                    <li class="emp ed">
-                        <p>일치하는 검색결과를 찾을 수 없습니다.</p>
-
-                        <!-- faq_search_tag -->
-                        <div class="faq_search_tag">
-                            <p class="tit">자주 찾는 검색어를 선택하시면<br>빠르게 찾으실 수 있어요.</p>
-                            <div class="faq_search_tag_btn">
-                                <button><span>환불</span></button>
-                                <button><span>마일리지</span></button>
-                                <button><span>주문결제</span></button>
-                                <button><span>회원정보</span></button>
-                                <button><span>배송</span></button>
-                                <button><span>반품</span></button>
-                                <button><span>교환</span></button>
-                                <button><span>예치금</span></button>
-                                <button><span>쿠폰</span></button>
-                                <button><span>영업점</span></button>
-                            </div>
-                        </div>
-                        <!-- //faq_search_tag -->      
-                    </li>
-                    <!-- //등록된 항목이 없을 경우 -->       
-                </ul>
-                <!-- //fold_ty-->
-
-                <!--<button class="btn_more_view"><span><em class="hidden">FAQ</em>더보기</span></button>-->
-            </div>
-            <!-- //cus_faq_view -->
+            <!-- //info_text_box -->
         </div>
-        <!-- //FAQ -->
+        <!-- //고객센터 : 상단 -->
+
+        <!-- tab_nav -->
+        <div class="tab_nav_area mt">
+            <a href="#n">이전 주문 정보</a>
+            <a href="#n" style="width:60%;" class="active">핫트랙스 예치금 환불 신청</a><!-- 활성화 class="active" -->
+        </div>
+        <!-- //tab_nav-->
+
+        <!-- 핫트랙스 예치금 환불 신청 -->
+        <div class="mc_cont cus_cont">
+            <!-- cus_box_area -->
+            <div class="cus_box_area">
+                <p class="s1">환불 가능 핫트랙스 예치금</p>
+                <p class="s2"><strong>150,000</strong>원</p>
+                <!--<p class="ico">환불 신청 완료</p>-->
+            </div>
+            <!-- //cus_box_area -->
+
+            <p style="margin:30px 0 5px 0;font-size:12px;">↓ 예치금 없는 경우</p>
+            <!-- cus_box_area -->
+            <div class="cus_box_area">
+                <p class="s1">환불 가능 핫트랙스 예치금</p>
+                <p class="s2"><strong>0</strong>원</p>
+            </div>
+            <!-- //cus_box_area -->
+
+            <p style="margin:30px 0 5px 0;font-size:12px;">↓ 예치금 환불 신청 완료한 경우</p>
+            <!-- cus_box_area -->
+            <div class="cus_box_area">
+                <p class="s1">환불 가능 핫트랙스 예치금</p>
+                <p class="s2"><strong>0</strong>원</p>
+                <p class="ico">환불 신청 완료</p>
+            </div>
+            <!-- //cus_box_area -->
+
+            <!-- btn_area02 -->
+            <div class="btn_area02">
+                <button type="button" class="btn_md btn_black"><span class="text">전액 환불 신청</span></button>
+            </div>
+            <!-- //btn_area02 -->
+        </div>
+        <!-- //핫트랙스 예치금 환불 신청 -->
     </div>
     <!-- //고객센터 컨텐츠 -->
 

@@ -65,9 +65,8 @@
 	<a href="#containerWrapper">본문 바로가기</a>
 </div>
 <!-- wrapper -->
-<!--DESC : 에러페이지인 경우 [error] 클래스 추가 -->
-<!-- ht_ Hottracks ht_ 클래스 추가 -->
-<div class="wrapper ht_">
+
+<div class="ht_ wrapper">
 	<!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
 	<header id="headerWrapper" class="header_wrapper header_main">
 		<div class="header_top_wrap">
@@ -523,31 +522,31 @@
 
 					<!-- cur_prod_list -->
 					<div class="cur_prod_list tab_cont on" id="cur_prod01"><!-- tab_link / tab_cont .on : 확인용 - Ajax 처리 필요없을 시 해당 class 삭제 -->
-						<!-- li_resp_ty -->
+						<!-- li_resp_ty --><!-- 22.02.25 수정 : a 링크 영역 수정 및 마커 영역 팝업 추가 -->
 						<ul class="li_resp_ty ty02">
 							<li class="li">
 								<a href="#n">
 									<p class="img"><img src="../../images/temp/@img_prod_boxB3.jpg" alt=""></p>
-									<ul class="txt">
-										<li class="s1">계절 특유의 온도</li>
-										<li class="s2">손이 닿는 곳곳마다 따듯함을 더해 줄 존재가 항상 있을 수 있기를</li>
-										<li class="s3">
-											<span class="ico_marker">#집콕생활</span>
-											<span class="ico_marker">#충전완료</span>
-											<span class="ico_marker">#힐링이필요해</span>
-										</li>
-									</ul>
 								</a>
+								<ul class="txt">
+									<li class="s1">계절 특유의 온도</li>
+									<li class="s2">손이 닿는 곳곳마다 따듯함을 더해 줄 존재가 항상 있을 수 있기를</li>
+									<li class="s3">
+										<span class="ico_marker"><a href="#" data-role="btn-dialog" data-target="#popProd">#집콕생활</a></span>
+										<span class="ico_marker"><a href="#" data-role="btn-dialog" data-target="#popProd">#충전완료</a></span>
+										<span class="ico_marker"><a href="#" data-role="btn-dialog" data-target="#popProd">#힐링이필요해</a></span>
+									</li>
+								</ul>
 							</li>
 						</ul>
-						<!-- //li_resp_ty -->
+						<!-- //li_resp_ty --><!-- 22.02.25 수정 : a 링크 영역 수정 및 마커 영역 팝업 추가 -->
 
 						<!-- cur_prod_img -->
 						<div class="cur_prod_img wel_cont">
 							<ul class="swiper-wrapper">
 								<!-- li.swiper-slide 반복 -->
 								<li class="swiper-slide">
-									<a href="#n" data-role="btn-dialog" data-target="#popProd">
+									<a href="#n">
 										<p class="img"><img src="../../images/temp/@img_prod01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
 									</a>
 								</li>
@@ -604,7 +603,7 @@
 						<ul class="box_txt">
 							<li class="s1">
 								<p class="img"><img src="../../images/temp/@img_now04.jpg" alt=""></p>
-								<p>이것저것 하고 싶은 게 많은 MD <strong>이봉봉</strong></p>
+								<p>이것저것 하고 싶은 게 많은 MD 이것저것 하고 싶은 게 많은 MD</p>
 							</li>
 							<li class="s2">
 								<p class="t1"><strong>어지러운 가방 속, 질서가 필요하다면</strong></p>
@@ -626,7 +625,7 @@
 						<ul class="box_txt">
 							<li class="s1">
 								<p class="img"><img src="../../images/temp/@img_now04.jpg" alt=""></p>
-								<p>이것저것 하고 싶은 게 많은 MD <strong>이봉봉</strong></p>
+								<p>이것저것 하고 싶은 게 많은 MD</p>
 							</li>
 							<li class="s2">
 								<p class="t1"><strong>어지러운 가방 속, 질서가 필요하다면</strong></p>
@@ -670,6 +669,8 @@
 						</li>
 					</ul>
 					<!-- //li_s_ty02 -->
+
+					<button class="btn_more_view_box ty02" data-role="btn-dialog" data-target="#popProd02"><strong>전체보기<em></em></strong></button><!-- 22.02.25 수정 -->
 				</div>
 				<!-- //What’s in your bag -->
 
@@ -791,20 +792,18 @@ $(function(){
 });
 </script>
 
-<!-- 이럴 땐? 이런상품 -->
+<!-- 이럴 땐? 이런상품 --><!-- 22.02.25 수정 : 추가 -->
 <div id="popProd" class="dialog_wrap no_title" data-class="dialog_full">
 	<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
 
 	<!-- dialog_header -->
-	<!--<div class="dialog_header">
-		<div class="dialog_title">이 구매자의 첫 리뷰 보기</div>
-	</div>-->
+	<div class="dialog_header">
+		<div class="dialog_title"># 힐링이필요해</div>
+	</div>
 	<!-- //dialog_header -->
 	
 	<!-- dialog_contents -->
 	<div class="dialog_contents">
-		<h2 class="mc_tit02"># 힐링이필요해</h2>
-
 		<!-- prod_list -->
 		<ul class="prod_list">
 			<!-- .li 반복 -->
@@ -929,6 +928,217 @@ $(function(){
 	</div>
 	<!-- //dialog_contents -->
 </div>
-<!-- //이럴 땐? 이런상품 -->					
+<!-- //이럴 땐? 이런상품 -->	
+
+
+<!-- What’s in your bag --><!-- 22.02.25 수정 : 추가 -->
+<div id="popProd02" class="dialog_wrap no_title" data-class="dialog_full">
+	<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+	<!-- dialog_header -->
+	<div class="dialog_header">
+		<div class="dialog_title">전체보기</div>
+	</div>
+	<!-- //dialog_header -->
+	
+	<!-- dialog_contents -->
+	<div class="dialog_contents pop_pd"><!-- 여백조절 : class="pop_pd" -->
+		<!-- What’s in your bag -->
+		<div class="mc_cont cur_new02">
+			<h2 class="mc_tit">What’s<br><strong class="point_line"><em>in your bag</em></strong><img src="../../images/main/tit_cur_new02_pop.svg" alt=""></h2>
+
+			<!-- cur_new02_li : 반복 -->
+			<div class="cur_new02_li li on"><!-- 활성화 class="on" -->
+				<div class="wel_cont">
+					<!-- cur_new_img : 이미지 일 경우 -->
+					<div class="cur_new_img">
+						<p><img src="../../images/temp/@img_cur_new01.jpg" alt=""></p>
+					</div>
+					<!-- //cur_new_img : 이미지 일 경우 -->
+					<!-- box_txt -->
+					<ul class="box_txt">
+						<li class="s1">
+							<p class="img"><img src="../../images/temp/@img_now04.jpg" alt=""></p>
+							<p>이것저것 하고 싶은 게 많은 MD 이것저것 하고 싶은 게 많은</p>
+						</li>
+						<li class="s2">
+							<p class="t1"><strong>어지러운 가방 속, 질서가 필요하다면</strong></p>
+							<p>충전기, 볼펜, 이런저런 영수증까지 가득한 자유분방한  가방속을 조금 더 신경 써서 정리하기로 했어요.<br>칸이 나뉘어져 있고 가벼운 수납 파우치를 찾던 끝에 내린  결정은 툴 파우치였어요. 평범하지만 체계적인 가방 정리를  원한다면,  ALTNA 툴파우치를 추천해요.</p>
+						</li>
+						<li class="fold_btn">
+							<button><span>접기</span></button>
+						</li>	
+					</ul>
+					<!-- //box_txt -->
+				</div>
+	
+				<!-- li_s_ty02 -->
+				<ul class="li_s_ty02">
+					<!-- .li 반복 -->
+					<li class="li">
+						<a href="#n">
+							<p class="img"><img src="../../images/temp/@img_prod01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
+							<ul class="txt">
+								<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+								<li class="s2">
+									<strong>69%</strong>
+									<span>1,234,000</span>
+									<em>1,299,000</em>
+								</li>
+							</ul>
+						</a>
+					</li>
+					<!-- //.li 반복 -->
+	
+	
+					<li class="li">
+						<a href="#n">
+							<p class="img"><img src="../../images/temp/@img_prod02.jpg" alt=""></p>
+							<ul class="txt">
+								<li class="s1">퍼니디 조구만 스튜디오 에코백 카툰 풍선 총</li>
+								<li class="s2">
+									<strong>69%</strong>
+									<span>13,950</span>
+									<em>1,299,000</em>
+								</li>
+							</ul>
+						</a>
+					</li>
+				</ul>
+				<!-- //li_s_ty02 -->
+			</div>
+			<!-- //cur_new02_li : 반복 -->
+
+			<!-- cur_new02_li -->
+			<div class="cur_new02_li li">
+				<div class="wel_cont">
+					<!-- cur_new_img : 이미지 일 경우 -->
+					<div class="cur_new_img">
+						<p><img src="../../images/temp/@img_cur_new01.jpg" alt=""></p>
+					</div>
+					<!-- //cur_new_img : 이미지 일 경우 -->
+					<!-- box_txt -->
+					<ul class="box_txt">
+						<li class="s1">
+							<p class="img"><img src="../../images/temp/@img_now04.jpg" alt=""></p>
+							<p>이것저것 하고 싶은 게 많은 MD</p>
+						</li>
+						<li class="s2">
+							<p class="t1"><strong>어지러운 가방 속, 질서가 필요하다면</strong></p>
+							<p>충전기, 볼펜, 이런저런 영수증까지 가득한 자유분방한  가방속을 조금 더 신경 써서 정리하기로 했어요.<br>칸이 나뉘어져 있고 가벼운 수납 파우치를 찾던 끝에 내린  결정은 툴 파우치였어요. 평범하지만 체계적인 가방 정리를  원한다면,  ALTNA 툴파우치를 추천해요.</p>
+						</li>
+						<li class="fold_btn">
+							<button><span>접기</span></button>
+						</li>	
+					</ul>
+					<!-- //box_txt -->
+				</div>
+	
+				<!-- li_s_ty02 -->
+				<ul class="li_s_ty02">
+					<!-- .li 반복 -->
+					<li class="li">
+						<a href="#n">
+							<p class="img"><img src="../../images/temp/@img_prod01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
+							<ul class="txt">
+								<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+								<li class="s2">
+									<strong>69%</strong>
+									<span>1,234,000</span>
+									<em>1,299,000</em>
+								</li>
+							</ul>
+						</a>
+					</li>
+					<!-- //.li 반복 -->
+	
+	
+					<li class="li">
+						<a href="#n">
+							<p class="img"><img src="../../images/temp/@img_prod02.jpg" alt=""></p>
+							<ul class="txt">
+								<li class="s1">퍼니디 조구만 스튜디오 에코백 카툰 풍선 총</li>
+								<li class="s2">
+									<strong>69%</strong>
+									<span>13,950</span>
+									<em>1,299,000</em>
+								</li>
+							</ul>
+						</a>
+					</li>
+				</ul>
+				<!-- //li_s_ty02 -->
+			</div>
+			<!-- //cur_new02_li -->			
+
+			<!-- cur_new02_li -->
+			<div class="cur_new02_li li">
+				<div class="wel_cont">
+					<!-- cur_new_img : 동영상일 경우 -->
+					<div class="cur_new_img cur_mov">
+						<p class="movie_frame">
+							<iframe src="https://www.youtube.com/embed/nBY0rwBvaSY"></iframe>
+						</p>
+					</div>
+					<!-- //cur_new_img : 동영상일 경우 -->
+					<!-- box_txt -->
+					<ul class="box_txt">
+						<li class="s1">
+							<p class="img"><img src="../../images/temp/@img_now04.jpg" alt=""></p>
+							<p>이것저것 하고 싶은 게 많은 MD</p>
+						</li>
+						<li class="s2">
+							<p class="t1"><strong>어지러운 가방 속, 질서가 필요하다면</strong></p>
+							<p>충전기, 볼펜, 이런저런 영수증까지 가득한 자유분방한  가방속을 조금 더 신경 써서 정리하기로 했어요.<br>칸이 나뉘어져 있고 가벼운 수납 파우치를 찾던 끝에 내린  결정은 툴 파우치였어요. 평범하지만 체계적인 가방 정리를  원한다면,  ALTNA 툴파우치를 추천해요.</p>
+						</li>
+						<li class="fold_btn">
+							<button><span>접기</span></button>
+						</li>	
+					</ul>
+					<!-- //box_txt -->
+				</div>
+	
+				<!-- li_s_ty02 -->
+				<ul class="li_s_ty02">
+					<!-- .li 반복 -->
+					<li class="li">
+						<a href="#n">
+							<p class="img"><img src="../../images/temp/@img_prod01.jpg" alt=""></p><!-- image size : 정사각형 - 공통가이드 참조 -->
+							<ul class="txt">
+								<li class="s1">엑토 레트로 블루투스 멀티페어링 풀배열 키보드 B503</li>
+								<li class="s2">
+									<strong>69%</strong>
+									<span>1,234,000</span>
+									<em>1,299,000</em>
+								</li>
+							</ul>
+						</a>
+					</li>
+					<!-- //.li 반복 -->
+	
+	
+					<li class="li">
+						<a href="#n">
+							<p class="img"><img src="../../images/temp/@img_prod02.jpg" alt=""></p>
+							<ul class="txt">
+								<li class="s1">퍼니디 조구만 스튜디오 에코백 카툰 풍선 총</li>
+								<li class="s2">
+									<strong>69%</strong>
+									<span>13,950</span>
+									<em>1,299,000</em>
+								</li>
+							</ul>
+						</a>
+					</li>
+				</ul>
+				<!-- //li_s_ty02 -->
+			</div>
+			<!-- //cur_new02_li -->		
+		</div>
+		<!-- //What’s in your bag -->
+	</div>
+	<!-- //dialog_contents -->
+</div>
+<!-- //What’s in your bag -->		
 </body>
 </html>

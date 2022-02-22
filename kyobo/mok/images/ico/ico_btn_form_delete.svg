@@ -1,0 +1,9 @@
+<svg id="btn_삭제버튼" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <g id="list_delete">
+    <rect id="area" width="15" height="15" fill="#767675" opacity="0"/>
+    <g id="Group_56" data-name="Group 56" transform="translate(-3 -2)">
+      <path id="Path_13625" data-name="Path 13625" d="M0,0H11.818V.91H0Z" transform="translate(6.643 5) rotate(45)" fill="#767675"/>
+      <path id="Path_13626" data-name="Path 13626" d="M.07.566H11.888v.909H.07Z" transform="translate(15.45 5.994) rotate(135)" fill="#767675"/>
+    </g>
+  </g>
+</svg>

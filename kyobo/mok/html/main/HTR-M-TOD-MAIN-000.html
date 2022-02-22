@@ -19,7 +19,7 @@
 <meta property="og:image" content="../../images/guide/sns.jpg">
 <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-<title>교보핫트랙스-MD-이벤트리스트</title>
+<title>오늘만 특가</title>
 
 <!-- Plug-In css -->
 <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" >
@@ -28,8 +28,7 @@
 <!-- // Plug-In css -->
 
 <!-- font css -->
-<link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" >
 <!-- // font css -->
 
 <!-- ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
@@ -61,15 +60,16 @@
 </head>
 
 <body>
- <!-- SkipNav -->
- <div class="skip_nav_wrap">
+<!-- SkipNav -->
+    <div class="skip_nav_wrap">
     <a href="#headerWrapper">메뉴 바로가기</a>
     <a href="#containerWrapper">본문 바로가기</a>
 </div>
 <!-- //SkipNav -->
 
 <!-- wrapper -->
-<div class="ht_ wrapper contents_detail_view">
+<div class="ht_ wrapper">
+    <!-- header -->
     <header id="headerWrapper" class="ht_ header_wrapper">
         <div class="header_left">
             <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
@@ -87,15 +87,20 @@
             </a>
         </div>
     </header>
-    <!--메뉴-->
-    <div class="tod_menu_wrap">
-        <a href="#none" class="tod_menu active">오늘만특가</a>
-        <a href="#none" class="tod_menu">핫딜 특가 </a>
-    </div>
-    <!--//메뉴-->
-    <!--탭1 컨텐츠-->
-    <div class="content_wrap" >
-        <!--오늘만 특가 풀배너-->
+    <!-- //header -->
+
+
+    <!-- cont_wrap -->
+    <section class="cont_wrap"><!-- 22.02 : 코너메뉴 : class="cont_wrap" 통일 -->
+        <!-- 메뉴 -->
+        <div class="tod_menu_wrap">
+            <a href="#none" class="tod_menu active">오늘만특가</a>
+            <a href="#none" class="tod_menu">핫딜 특가</a>
+        </div>
+        <!-- //메뉴 -->
+
+
+        <!-- 오늘만 특가 풀배너 -->
         <section class="tod_full_banner">
             <div class="btn_share" data-role="btn-dialog" data-target="#popBottomHasBtnEx1"></div>     
             <div class="timer">10:32:24</div>
@@ -106,7 +111,9 @@
                 <span class="arrow"></span>
             </div>
         </section>
-        <!--//오늘만 특가 풀배너-->
+        <!-- //오늘만 특가 풀배너 -->
+
+
         <!-- 모듈 6 컨텐츠 -->
         <section class="module_wrap">
             <!--module6_item 반복-->
@@ -131,7 +138,7 @@
                     <span class="badge rounded badge_default_evt">무료배송</span>
                 </div>
             </div>
-             <!--//module6_item 반복-->
+            <!-- //module6_item 반복-->
 
             <div class="module6_item">
                 <div class="product_pic">
@@ -156,80 +163,155 @@
                 </div>
             </div>  
         </section>
-        <!-- // 모듈 6 컨텐츠 -->
-        <!--타이머 버블-->
-        <article class="timer_bubble_area">
-            <div class="timer_bubble">
-                <span class="timer">05:23:15</span>
-                <span class="txt">남았습니다.</span>
-            </div>
-        </article>
-        <!--//타이머 버블-->
-    </div>
-       <!-- 팝업 - bottom -->
-	<div id="popBottomHasBtnEx1" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
-		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
-		<!-- dialog_header -->
-		<div class="dialog_header">
-			<div class="dialog_title">공유하기</div>
-		</div>
-		<!-- //dialog_header -->
-		<!-- dialog_contents -->
-		<div class="dialog_contents share_sns_wrap">
-            <span>
-                <div class="icon">
-                    <img src="../../images/guide/sns_kakao.svg" alt="">
-                </div>
-                <div class="txt">카카오톡</div>
-            </span>
-            <span>
-                <div class="icon">
-                    <img src="../../images/guide/sns_instar.svg" alt="">
-                </div>
-                <div class="txt">인스타그램</div>
-            </span>
-            <span>
-                <div class="icon">
-                    <img src="../../images/guide/sns_facebook.svg" alt="">
-                </div>
-                <div class="txt">페이스북</div>
-            </span>
-            <span>
-                <div class="icon">
-                    <img src="../../images/guide/sns_twitter.svg" alt="">
-                </div>
-                <div class="txt">트위터</div>
-            </span>
-            <span>
-                <div class="icon">
-                    <img src="../../images/guide/sns_pinterest.svg" alt="">
-                </div>
-                <div class="txt">핀터레스트</div>
-            </span>
-            <span>
-                <div class="icon">
-                    <img src="../../images/guide/sns_line.svg" alt="">
-                </div>
-                <div class="txt">라인</div>
-            </span>
-            <span>
-                <div class="icon">
-                    <img src="../../images/guide/sns_message.svg" alt="">
-                </div>
-                <div class="txt">메세지</div>
-            </span>  
-            <span>
-                <div class="icon">
-                    <img src="../../images/guide/sns_url_copy.svg" alt="">
-                </div>
-                <div class="txt">URL 복사</div>
-             </span>  
-		<!-- //dialog_contents -->
-		<!-- dialog_footer -->
-		<!-- //dialog_footer -->
-	</div>
-	<!-- //팝업 - bottom-->
- </div>   
-</body>
+        <!-- //모듈 6 컨텐츠 -->
 
+        <!-- 더보기 버튼 more_btn에 hidden Class  추가하면 버튼 안보임 -->
+        <div class="btn_more_div hidden">
+            <button class="more_btn">
+                <span class="txt">더보기</span>
+                <span class="btn_more_icon"></span>
+            </button>
+        </div>
+        <!-- //더보기 -->
+
+
+        <!-- mc_cont : 광고배너 --><!-- 22.02 : 코너메뉴 배너 통일 -->
+        <div class="mc_cont wel_belt02">
+            <h2 class="hidden">광고배너</h2>
+            <!-- wel_belt_banner -->
+            <div class="wel_belt_banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#n"><img src="../../images/temp/@img_belt_banner02.jpg" alt="모바일 첫 구매 3,000원 쿠폰"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination out_bottom"></div>
+            </div>
+            <!-- //wel_belt_banner -->
+        </div>
+        <!-- //mc_cont : 광고배너 -->
+    </section>
+    <!-- //cont_wrap -->
+
+
+    <!-- footer -->
+    <footer class="footer_wrapper">
+        <div class="notice_wrap">
+            <span class="notice_text">공지사항</span>
+            <a href="#" class="notice_link">교보문고 개인정보 처리방침 개정안내</a>
+        </div>
+
+        <div class="footer_body">
+            <div class="logo_box">
+                <a href="#" class="logo_link">
+                    <img src="../../images/guide/ico_logo.svg" alt="핫트랙스">
+                </a>
+            </div>
+
+            <div class="footer_info_box">
+                <div class="info_text_multi">
+                    <span class="info_text">대표이사 : 김상훈</span>
+                    <span class="gap">|</span>
+                    <address class="info_text">경기도 파주시 회동길 78(출판단지내)</address>
+                </div>
+                <span class="info_text">사업자등록번호 : 102-81-29258</span>
+                <span class="info_text">개인정보보호책임자 : 김상훈</span>
+                <span class="info_text"><span class="text_inner">통신판매업신고번호 : 제 2012-경기파주-3911호</span><a href="#" class="btn_footer_link">사업자정보확인</a></span>
+            </div>
+
+            <div class="footer_menu_box">
+                <ul class="footer_menu_list">
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">핫트합니다</a></li>
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">공지사항</a></li>
+                    <li class="footer_menu_item privacy"><a href="#" class="footer_menu_link">개인정보처리방침</a></li>
+                    <li class="footer_menu_item"><a href="#" class="footer_menu_link">이용약관</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_call_box"><span class="call_text">대표전화</span><span class="call_num"><a href="tel:16661112">1666-1112</a></span> <br><span class="call_text_sm">(평일 09:00~18:00 점심시간 12:00~13:00 )</span></div>
+
+            <div class="copyright_box">
+                <div class="copyright">@Hottracks Centre</div>
+                <div class="sns_share_box">
+                    <a href="#" class="btn_sns_share insta"><span class="hidden">instagram 공유</span></a>
+                    <a href="#" class="btn_sns_share fb"><span class="hidden">facebook 공유</span></a>
+                    <a href="#" class="btn_sns_share youtube"><span class="hidden">youtube 공유</span></a>
+                    <a href="#" class="btn_sns_share twt"><span class="hidden">twitter 공유</span></a>
+                    <a href="#" class="btn_sns_share blog"><span class="hidden">blog 공유</span></a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+<!-- //wrapper -->
+
+
+<!-- 공유하기 : id="popBottomHasBtnEx1" -->
+<div id="popBottomHasBtnEx1" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+    <!-- dialog_header -->
+    <div class="dialog_header">
+        <div class="dialog_title">공유하기</div>
+    </div>
+    <!-- //dialog_header -->
+    <!-- dialog_contents -->
+    <div class="dialog_contents share_sns_wrap">
+        <span>
+            <div class="icon">
+                <img src="../../images/guide/sns_kakao.svg" alt="">
+            </div>
+            <div class="txt">카카오톡</div>
+        </span>
+        <span>
+            <div class="icon">
+                <img src="../../images/guide/sns_instar.svg" alt="">
+            </div>
+            <div class="txt">인스타그램</div>
+        </span>
+        <span>
+            <div class="icon">
+                <img src="../../images/guide/sns_facebook.svg" alt="">
+            </div>
+            <div class="txt">페이스북</div>
+        </span>
+        <span>
+            <div class="icon">
+                <img src="../../images/guide/sns_twitter.svg" alt="">
+            </div>
+            <div class="txt">트위터</div>
+        </span>
+        <span>
+            <div class="icon">
+                <img src="../../images/guide/sns_pinterest.svg" alt="">
+            </div>
+            <div class="txt">핀터레스트</div>
+        </span>
+        <span>
+            <div class="icon">
+                <img src="../../images/guide/sns_line.svg" alt="">
+            </div>
+            <div class="txt">라인</div>
+        </span>
+        <span>
+            <div class="icon">
+                <img src="../../images/guide/sns_message.svg" alt="">
+            </div>
+            <div class="txt">메세지</div>
+        </span>  
+        <span>
+            <div class="icon">
+                <img src="../../images/guide/sns_url_copy.svg" alt="">
+            </div>
+            <div class="txt">URL 복사</div>
+        </span>
+    </div>
+    <!-- //dialog_contents -->
+</div>   
+<!-- //공유하기 : 팝업 -->
+</body>
 </html>

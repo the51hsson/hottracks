@@ -19,7 +19,7 @@
 <meta property="og:image" content="../../images/guide/sns.jpg">
 <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-<title>선물추천</title>
+<title>대량구매상담 : 고객센터</title>
 
 <!-- Plug-In css -->
 <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -69,38 +69,22 @@
 
 <!-- wrapper -->
 <div class="ht_ wrapper">
-    <!-- header -->
-    <header id="headerWrapper" class="ht_ header_wrapper">
-        <div class="header_left">
-            <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
-            <!--<a href="#" class="btn_header_home"><span class="hidden">홈으로</span></a>-->
+    <!-- title_header -->
+    <div class="title_header" >
+        <button type="button" class="btn_tit_close"><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+        <div class="pop_like_header">
+            <div class="title">대량구매 상품검색</div>
         </div>
-        <div class="header_center">
-            <div class="page_title prod_detail"></div>
-        </div>
-    </header>
-    <!-- //header -->
+    </div>
+    <!-- //title_header -->
 
 
-    <!-- 선물추천 컨텐츠 -->
+    <!-- 고객센터 컨텐츠 -->
     <div class="wel_main_wrap">
-        <!-- ctg_topMenu -->
-        <div class="ctg_topMenu not_sticky">
-            <div class="inner_wrap round_ty">
-                <span>모두에게</span>
-                <span>10대</span>
-                <span>친구</span>
-            </div>
-            <a href="#" class="btn_line_refresh"><span>다시선택</span></a>
-        </div>
-        <!-- //ctg_topMenu -->
-
         <!-- mc_cont -->
-        <div class="mc_cont gft_prod">
+        <div class="mc_cont gft_prod cus_cont">
             <!-- tit_top_list -->
-            <div class="tit_top_list">
-                <h2 class="mc_tit02"><strong class="point_line ty06"><em>고민하고 있는 선물이 뭐예요?</em></strong><img src="../../images/main/tit_gft_prod.svg" alt=""></h2>
-
+            <div class="tit_top_list ty02">
                 <!-- tab_swiper -->
                 <div class="tab_swiper tab_ty ty03 tab_link"><!-- tab_link :확인용 - Ajax 처리 필요없을 시 해당 class 삭제 -->
                     <ul class="swiper-wrapper">
@@ -125,7 +109,7 @@
             </div>
             <!-- //tit_top_list -->
 
-            <p class="mc_txt02">최소 2개 부터 최대 3개의 상품을 선택할 수 있어요!</p>
+            <p class="mc_txt02">1개의 상품만 선택할 수 있어요!</p>
 
             <!-- prod_list -->
             <ul class="prod_list fixed_select_cont">
@@ -134,7 +118,7 @@
                     <div class="img">
                         <a href="#n"><img src="../../images/temp/@img_prod01.jpg" alt=""></a>
                         <div class="chk_ty">
-                            <input type="checkbox" name="chk_ty" onClick="chkAll(this);">
+                            <input type="radio" name="chk_ty">
                             <label><span class="hidden">선택</span></label>
                         </div>
                         <button class="prod_like_count active"><span>999+</span></button><!-- 좋아요 활성화 class="active" -->
@@ -155,7 +139,7 @@
                     <div class="img">
                         <a href="#n"><img src="../../images/temp/@img_prod02.jpg" alt=""></a>
                         <div class="chk_ty">
-                            <input type="checkbox" name="chk_ty" onClick="chkAll(this);">
+                            <input type="radio" name="chk_ty">
                             <label><span class="hidden">선택</span></label>
                         </div>
                         <button class="prod_like_count"><span>999+</span></button>
@@ -174,7 +158,7 @@
                     <div class="img">
                         <a href="#n"><img src="../../images/temp/@img_prod03.jpg" alt=""></a>
                         <div class="chk_ty">
-                            <input type="checkbox" name="chk_ty" onClick="chkAll(this);">
+                            <input type="radio" name="chk_ty">
                             <label><span class="hidden">선택</span></label>
                         </div>
                         <button class="prod_like_count"><span>999+</span></button>
@@ -193,7 +177,7 @@
                     <div class="img">
                         <a href="#n"><img src="../../images/temp/@img_prod04.jpg" alt=""></a>
                         <div class="chk_ty">
-                            <input type="checkbox" name="chk_ty" onClick="chkAll(this);">
+                            <input type="radio" name="chk_ty">
                             <label><span class="hidden">선택</span></label>
                         </div>
                         <button class="prod_like_count"><span>999+</span></button>
@@ -211,96 +195,17 @@
             </ul>
             <!-- //prod_list  -->
 
-            <button class="btn_more_view"><span>더보기</span></button>
+            <!-- btn_area -->
+            <div class="btn_area">
+                <button type="button" class="btn_md btn_primary">
+                    <span class="text">등록</span>
+                </button>
+            </div>
+            <!-- //btn_area -->
         </div>
         <!-- //mc_cont -->
-
-
-<script>
-/* 확인용 */
-function chkAll(obj){
-    $('.fixed_btn_select').addClass('on');
-    $('.fixed_select_cont').css('padding-bottom', $('.fixed_btn_select').innerHeight() - 70);
-}
-function chkOutImg(){
-    $('.fixed_btn_select').addClass('off');
-    $('.fixed_select_cont').css('padding-bottom', '0');
-    setTimeout(function(){
-        $('.fixed_btn_select').removeClass('off').removeClass('on');
-    }, 600);
-}
-</script>
-
-        <!-- fixed_btn_select -->
-        <div class="fixed_btn_select"><!-- 0개일때 자동 닫힘 -->
-            <!-- form_box -->
-            <div class="form_box review_step02">
-                <div class="form_cont">
-                    <div class="file_list_box">
-                        <!-- s : file_list -->
-                        <ul class="file_list">
-                            <!-- s : 파일 등록 상태(이미지) 등록이미지 뒤로 -->
-                            <li class="list_item">
-                                <!-- DESC : 첨부시 attached class 추가 -->
-                                <span class="file_item attached">
-                                    <span class="btn_box">
-                                        <input type="file" id="inputFileImage0" />
-                                        <label for="inputFileImage0"><span class="hidden">첨부파일 추가</span></label>
-
-                                        <span class="attach_img_box">
-                                            <!-- DESC : background-images 속성만 사용하여 url import 필요 -->
-                                            <span class="attach_img_view" style="background-image: url(../../images/guide/@thumb_01.png);"></span>
-                                            <button type="button" class="btn_remove_img" onclick="chkOutImg();"><span class="hidden">첨부파일 삭제</span></button><!-- 닫기 : chkOutImg() -->
-                                        </span>
-                                    </span>
-                                </span>
-                            </li>
-                            <!-- e : 파일 등록 상태(이미지) -->
-                            <li class="list_item">
-                                <!-- DESC : 첨부시 attached class 추가 -->
-                                <span class="file_item attached">
-                                    <span class="btn_box">
-                                        <input type="file" id="inputFileImage0" />
-                                        <label for="inputFileImage0"><span class="hidden">첨부파일 추가</span></label>
-
-                                        <span class="attach_img_box">
-                                            <!-- DESC : background-images 속성만 사용하여 url import 필요 -->
-                                            <span class="attach_img_view" style="background-image: url(../../images/guide/@thumb_01.png);"></span>
-                                            <button type="button" class="btn_remove_img" onclick="chkOutImg();"><span class="hidden">첨부파일 삭제</span></button>
-                                        </span>
-                                    </span>
-                                </span>
-                            </li>
-                            <!-- s : 파일 미등록 상태 -->
-                            <li class="list_item">
-                                <!-- DESC : 첨부시 attached class 추가 -->
-                                <span class="file_item">
-                                    <span class="btn_box">
-                                        <input type="file" id="inputFileImage1" />
-                                        <label for="inputFileImage1"><span class="hidden">첨부파일 추가</span></label>
-
-                                        <span class="attach_img_box">
-                                            <span class="attach_img_view"></span>
-                                            <button type="button" class="btn_remove_img" onclick="chkOutImg();"><span class="hidden">첨부파일 삭제</span></button>
-                                        </span>
-                                    </span>
-                                </span>
-                            </li>
-                            <!-- e : 파일 미등록 상태 -->
-                        </ul>
-                        <!-- e : file_list -->
-                    </div>
-                    <!--<p class="bul_item_asterisk font_size_xxs">총 5MB 이하로 jpg,jpeg,gif 파일만 업로드 가능합니다.</p>-->
-                </div>
-            </div>
-            <!-- //form_box -->
-            <div class="dialog_footer">
-                <button type="button" class="btn_md btn_primary" disabled><span class="text">선택하기</span></button><!-- 2개 이상 일 경우 활성화 -->
-            </div>
-        </div>
-        <!-- //fixed_btn_select -->
     </div>
-    <!-- //선물추천 컨텐츠 -->
+    <!-- //고객센터 컨텐츠 -->
 </div>   
 <!-- //wrapper -->
 </body>

@@ -19,7 +19,7 @@
 <meta property="og:image" content="../../images/guide/sns.jpg">
 <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-<title>교보핫트랙스-MD-이벤트리스트</title>
+<title>무료배송</title>
 
 <!-- Plug-In css -->
 <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -60,15 +60,16 @@
 </head>
 
 <body>
- <!-- SkipNav -->
- <div class="skip_nav_wrap">
+<!-- SkipNav -->
+<div class="skip_nav_wrap">
     <a href="#headerWrapper">메뉴 바로가기</a>
     <a href="#containerWrapper">본문 바로가기</a>
 </div>
 <!-- //SkipNav -->
 
 <!-- wrapper -->
-<div class="ht_ wrapper contents_detail_view">
+<div class="ht_ wrapper">
+    <!-- header -->
     <header id="headerWrapper" class="ht_ header_wrapper">
         <div class="header_left">
             <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
@@ -86,10 +87,14 @@
             </a>
         </div>
     </header>
+    <!-- //header -->
 
-    <section class="wrap">
-        <h3 class="tit">무료배송 </h3>
-        <!--탑메뉴-->
+
+    <!-- cont_wrap -->
+    <section class="cont_wrap"><!-- 22.02 : 코너메뉴 : class="cont_wrap" 통일 -->
+        <h3 class="tit">무료배송</h3>
+
+        <!-- 탑메뉴 -->
         <div class="ctg_topMenu">
             <div class="inner_wrap">
                 <a href="#" class="active">전체</a>
@@ -102,15 +107,19 @@
                 <a href="#">오피스</a>
             </div>
         </div>
-        <!--//탑메뉴-->
-        <!--2022-02-17 구조 변경-->
-        <!--소팅 메뉴-->
+        <!-- //탑메뉴 -->
+
+        
+        <!-- 소팅 메뉴 --><!-- 22.02.17 구조 변경-->
         <div class="menu_sort list_inner_sort">
             <button type="button" class="btn_sort active">~1만원</button>
             <button type="button" class="btn_sort">~2만원</button>
             <button type="button" class="btn_sort">~3만원</button>
         </div>
-        <!--//소팅 메뉴-->
+        <!-- //소팅 메뉴 -->
+
+
+
         <!-- 상품 리스트-->
         <section class="prod_list_wrap">
             <!--[2021-02-15 class prod-wrapper column_dir => prod-wrapper evt_products로 변경]-->
@@ -236,7 +245,8 @@
                         <button type="button" class="close_swap"></button>	
                     </article>
                 </li>
-                <!--//품절 - sold_out, 대체 상품 - replace_prod -->
+                <!-- //품절 - sold_out, 대체 상품 - replace_prod -->
+
                 <li class="prod_item sold_out">
                     <div class="product_pic">
                         <span class="show_replace">
@@ -289,16 +299,41 @@
                 </li>
             </ul>
         </section>
-        <!-- //상품 리스트-->
-        <!--더보기 버튼 more_btn에 hidden Class  추가하면 버튼 안보임-->
-        <div class="btn_more_div hidden">
+        <!-- //상품 리스트 -->
+
+        <!-- 더보기 버튼 more_btn에 hidden Class  추가하면 버튼 안보임 -->
+        <div class="btn_more_div">
             <button class="more_btn">
                 <span class="txt">더보기</span>
                 <span class="btn_more_icon"></span>
             </button>
         </div>
-    </section>    
-    <!-- 푸터 -->
+        <!-- //더보기 -->
+
+
+
+        <!-- mc_cont : 광고배너 --><!-- 22.02 : 코너메뉴 배너 통일 -->
+        <div class="mc_cont wel_belt02">
+            <h2 class="hidden">광고배너</h2>
+            <!-- wel_belt_banner -->
+            <div class="wel_belt_banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#n"><img src="../../images/temp/@img_belt_banner02.jpg" alt="모바일 첫 구매 3,000원 쿠폰"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination out_bottom"></div>
+            </div>
+            <!-- //wel_belt_banner -->
+        </div>
+        <!-- //mc_cont : 광고배너 -->
+    </section>
+    <!-- //cont_wrap -->
+
+
+    <!-- footer -->
     <footer class="footer_wrapper">
         <div class="notice_wrap">
             <span class="notice_text">공지사항</span>
@@ -347,7 +382,8 @@
             </div>
         </div>
     </footer>
-    <!-- //푸터 -->
+    <!-- //footer -->
+</div>
+<!-- //wrapper -->
 </body>
-
 </html>

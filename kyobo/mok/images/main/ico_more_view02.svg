@@ -1,0 +1,6 @@
+<svg id="tooltip_C_def" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="tooltip_C_def-2" data-name="tooltip_C_def" transform="translate(1599 460) rotate(180)">
+    <circle id="Ellipse_150" data-name="Ellipse 150" cx="11" cy="11" r="11" transform="translate(1577 438)"/>
+    <path id="arrow" d="M832.5,80.35a.5.5,0,0,1-.354-.146l-4-4a.5.5,0,0,1,.707-.707l3.646,3.646,3.646-3.646a.5.5,0,0,1,.707.707l-4,4A.5.5,0,0,1,832.5,80.35Z" transform="translate(2420.5 526.349) rotate(180)" fill="#fff"/>
+  </g>
+</svg>

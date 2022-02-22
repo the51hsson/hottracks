@@ -6271,6 +6271,10 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   margin-left: -20px;
 }
 
+.evt_products.row_dir .prod_item:nth-of-type(2n+1) .replace_prod_swap {
+  margin-right: -20px;
+}
+
 .evt_products.row_dir .product_pic {
   position: relative;
   width: calc((100% - 20px )/2);
@@ -6928,6 +6932,11 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   text-align: center;
 }
 
+.mc_tit03.ty02 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
 .mc_tit04 {
   margin-bottom: 6px;
   color: #000;
@@ -7200,6 +7209,14 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   content: "*";
 }
 
+.form_title {
+  position: relative;
+}
+
+.form_cont {
+  position: relative;
+}
+
 /* Btn */
 .btn_area {
   margin-top: 30px;
@@ -7217,14 +7234,14 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   width: 100%;
 }
 
-.wel_main_wrap .btn_more_view {
+.btn_more_view {
   display: block;
   width: 100%;
   margin-top: 20px;
   text-align: center;
 }
 
-.wel_main_wrap .btn_more_view span {
+.btn_more_view span {
   display: inline-block;
   position: relative;
   padding-right: 30px;
@@ -7233,7 +7250,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   line-height: 24px;
 }
 
-.wel_main_wrap .btn_more_view span:after {
+.btn_more_view span:after {
   position: absolute;
   right: 0;
   top: 0;
@@ -7441,6 +7458,53 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .round_ty span:first-child {
   margin-left: 0;
+}
+
+.btn_hp_add {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #595959;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.btn_hp_add span {
+  position: relative;
+  padding-left: 10px;
+}
+
+.btn_hp_add span:before {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 7px;
+  height: 1px;
+  background: #595959;
+  content: "";
+}
+
+.btn_hp_add span:after {
+  position: absolute;
+  left: 3px;
+  top: 4px;
+  width: 1px;
+  height: 7px;
+  background: #595959;
+  content: "";
+}
+
+.btn_form_delete {
+  position: absolute;
+  right: 6px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background: url("../images/ico/ico_btn_form_delete.svg") center/15px no-repeat;
+  z-index: 1;
+  cursor: pointer;
 }
 
 /* Point Line : 형광팬 */

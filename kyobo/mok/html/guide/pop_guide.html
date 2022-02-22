@@ -129,8 +129,8 @@
                 <br><br>
 
                 <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popHpPop01"><span class="text">오늘만 특가 신청 / #popHpPop01</span></button>
-
                 <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popHpPop02"><span class="text">라이브 알림 신청 / #popHpPop02</span></button>
+                <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popHpPop03"><span class="text">재입고 알림 신청 / #popHpPop03</span></button>
             </div>
             <!-- //텍스트 정보 팝업 -->
 
@@ -535,7 +535,7 @@
     <div class="dialog_contents">
         <!-- pop_phone_info_msg -->
         <div class="pop_phone_info_msg">
-            <p>매일 아침 9시 알림톡으로 알려드려요</p>
+            <p>오늘만 특가 알림을 신청하시면<br>매일 아침 9시 알림톡으로 알려드려요!</p>
         </div>
         <!-- //pop_phone_info_msg -->
 
@@ -550,10 +550,7 @@
         </div>
         <!-- //pop_box_info -->
         <!-- pop_info -->
-        <ul class="pop_info">
-            <li>신청 상품의 옵션 및 가격 등의 상품 정보가 변동될 수 있으니 재입고 시 상품 정보 확인 후 구매하시기 바랍니다.</li>
             <li>카카오 알림톡으로 전송하지 못하는 경우 문자(SMS) 로 입고 알림 메시지가 발송됩니다. 
-            <li>신청 내역은 [마이룸 > 입고 알림] 에서 확인 가능합니다.</li>
         </ul>
         <!-- //pop_info -->
     </div>
@@ -567,6 +564,7 @@
     <!-- //dialog_footer -->
 </div>
 <!-- //팝업 : 오늘만 특가 신청팝업 / popHpPop01 -->
+
 <!-- 팝업 : 알림(확인) / popAlertHp01 -->
 <div id="popAlertHp01" class="dialog_wrap has_btn">
     <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
@@ -656,5 +654,74 @@
     <!-- //dialog_footer -->
 </div>
 <!-- //팝업 : 알림(확인) / popAlertHp02 -->
+
+
+
+
+<!-- 팝업 : 재입고 알림 신청 / popHpPop03 -->
+<div id="popHpPop03" class="dialog_wrap no_title has_btn">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <!-- pop_phone_info_msg -->
+        <div class="pop_phone_info_msg">
+            <p>상품 재입고 알림을 신청하시면<br>제입고 시 알림톡으로 알려드려요!</p>
+        </div>
+        <!-- //pop_phone_info_msg -->
+
+        <!-- pop_box_info -->
+        <div class="pop_box_info">
+            <dl>
+                <dt class="tit">휴대전화번호</dt>
+                <dd>
+                    <input type="tel" class="form_ip" placeholder="-없이 숫자만 입력" title="휴대전화번호">
+                </dd>
+            </dl>
+        </div>
+        <!-- //pop_box_info -->
+        <!-- pop_info -->
+        <ul class="pop_info">
+            <li>신청 상품의 옵션 및 가격 등의 상품 정보가 변동될 수 있으니 재입고 시 상품 정보 확인 후 구매하시기 바랍니다.</li>
+            <li>카카오 알림톡으로 전송하지 못하는 경우 문자(SMS) 로 입고 알림 메시지가 발송됩니다. 
+            <li>신청 내역은 [마이룸 > 입고 알림] 에서 확인 가능합니다.</li>
+        </ul>
+        <!-- //pop_info -->
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer">
+        <button type="button" class="btn_md btn_black" data-dialog-close><span class="text">취소</span></button>
+        <button type="button" class="btn_md btn_primary" data-role="btn-dialog" data-target="#popAlertHp03" data-dialog-close><span class="text">신청</span></button><!-- data-dialog-close : 없을 시 : 레이어 위에 팝업 -->
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //팝업 : 재입고 알림 신청 / popHpPop01 -->
+
+<!-- 팝업 : 알림(확인) / popAlertHp03 -->
+<div id="popAlertHp03" class="dialog_wrap has_btn">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+    <!-- dialog_header -->
+    <div class="dialog_header">
+        <div class="dialog_title">재입고 알림 신청</div>
+    </div>
+    <!-- //dialog_header -->
+
+    <!-- dialog_contents -->
+    <div class="dialog_contents">
+        <div class="evt_pop_content">
+            !- 노출 메시지-!
+        </div>
+    </div>
+    <!-- //dialog_contents -->
+
+    <!-- dialog_footer -->
+    <div class="dialog_footer">
+        <button type="button" class="btn_md btn_primary" data-dialog-close><span class="text">확인</span></button>
+    </div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //팝업 : 알림(확인) / popAlertHp03 -->
 </body>
 </html>

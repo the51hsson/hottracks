@@ -19,7 +19,7 @@
 <meta property="og:image" content="../../images/guide/sns.jpg">
 <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-<title>교보핫트랙스-MD-이벤트리스트</title>
+<title>베스트</title>
 
 <!-- Plug-In css -->
 <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -57,11 +57,10 @@
 <script src="../../js/ht_lib.js"></script>
 <script src="../../js/ht_template.js"></script>
 <!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
-
 </head>
 
 <body>
- <!-- SkipNav -->
+<!-- SkipNav -->
  <div class="skip_nav_wrap">
     <a href="#headerWrapper">메뉴 바로가기</a>
     <a href="#containerWrapper">본문 바로가기</a>
@@ -69,7 +68,8 @@
 <!-- //SkipNav -->
 
 <!-- wrapper -->
-<div class="ht_ wrapper contents_detail_view">
+<div class="ht_ wrapper">
+    <!-- header -->
     <header id="headerWrapper" class="ht_ header_wrapper">
         <div class="header_left">
             <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
@@ -87,10 +87,14 @@
             </a>
         </div>
     </header>
+    <!-- //header -->
 
-    <section class="wrap">
+
+    <!-- cont_wrap -->
+    <section class="cont_wrap"><!-- 22.02 : 코너메뉴 : class="cont_wrap" 통일 -->
         <h3 class="tit">베스트</h3>
-         <!--탑메뉴-->
+
+        <!-- 탑메뉴 -->
         <div class="ctg_topMenu">
             <div class="inner_wrap">
                 <a href="#" class="active">전체</a>
@@ -103,27 +107,30 @@
                 <a href="#">오피스</a>
             </div>
         </div>
-         <!--//탑메뉴-->
+        <!-- //탑메뉴 -->
 
-         <!--소팅 메뉴-->
+
+        <!-- 소팅 메뉴 --><!-- 22.02.17 구조 변경-->
         <div class="menu_sort">
             <button type="button" class="btn_sort active">많이 구매한 상품</button>
             <button type="button" class="btn_sort">리뷰가 많은 상품</button>
             <button type="button" class="btn_sort">많이 찜한 상품</button>
         </div> 
-         <!--//소팅 메뉴-->
+        <!-- //소팅 메뉴 -->
 
-         <!--업데이트 타이머-->
+
+        <!-- 업데이트 타이머 -->
         <div class="update_txt">
             <em>다음 업데이트까지</em>
             <em class="timer">02:52:39</em>
             <button type="button" class="btn_info" data-role="btn-dialog" data-target="#popEx1"></button>
         </div>
-        <!--//업데이트 타이머-->
+        <!-- //업데이트 타이머 -->
+
         
         <!-- 상품 리스트 (랭킹) -->
         <section class="list_section">
-             <!--[2022-02-15] class :prod-wrapper row_dir =>  prod-wrapper evt_products row_dir로 변경-->
+            <!--[2022-02-15] class :prod-wrapper row_dir =>  prod-wrapper evt_products row_dir로 변경-->
             <ul class="prod-wrapper evt_products row_dir">
                 <!-- li.prod_item 반복-->
                 <li class="prod_item">
@@ -155,7 +162,7 @@
                 </li>
                 <!-- //li.prod_item 반복-->
 
-                <!--품절 - sold_out, 대체 상품 - replace_prod -->
+                <!-- 품절 - sold_out, 대체 상품 - replace_prod -->
                 <li class="prod_item sold_out replace_prod">
                     <div class="rangking down">
                         <em class="rank">02</em>
@@ -256,7 +263,8 @@
                         <button type="button" class="close_swap"></button>	
                     </article>
                 </li>
-                <!--//품절 - sold_out, 대체 상품 - replace_prod -->
+                <!-- //품절 - sold_out, 대체 상품 - replace_prod -->
+
                 <li class="prod_item sold_out replace_prod">
                     <div class="rangking down">
                         <em class="rank">100</em>
@@ -265,7 +273,6 @@
                     <div class="product_pic">
                         <span class="show_replace">
                             <div>아쉽지만!<br/>품절이예요</div>
-                            <button type="button" class="replace_prod_btn">대체상품</button>
                         </span>
                     <!-- 
                     <button class="evt_good_count">
@@ -289,75 +296,6 @@
                             <span class="badge rounded badge_default_evt">무료배송</span>
                         </div>
                     </div>
-                    <article class="replace_prod_swap">
-                        <h4 class="tit">
-                            <em class="txt">하필 딱! 품절이지만 괜찮아요</em>
-                            <em class="replace_icon"></em>
-                        </h4>
-                        <div class="sub_title">찾으시는 상품과 비슷한 상품이 여기 있어요!</div>
-                        <div class="swiper mySwiper">
-                            <ul class="swiper-wrapper prod-wrapper type_sm">
-                                <li class="swiper-slide prod_item">
-                                    <div class="product_pic">
-                                        <button class="evt_good_count">
-                                            <div class="icon"></div>
-                                            <div class="txt">80</div>
-                                        </button>
-                                        <img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img">
-                                    </div>
-                                    <div class="company">dretec</div>
-                                    <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-                                    <div class="price_line">
-                                        <span class="discount_rate">15%</span>
-                                        <span class="final_price">9,234,000</span>
-                                        <span class="price_origin">9,200,000</span>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide prod_item">
-                                    <div class="product_pic">
-                                        <button class="evt_good_count">
-                                            <div class="icon"></div>
-                                            <!-- <div class="txt">80</div> -->
-                                        </button>
-                                        <img src="../../images/guide/@tod_prod_sample3.svg" class="bd_img">
-                                    </div>
-                                    <div class="company">dretec</div>
-                                    <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-                                    <div class="price_line">
-                                        <span class="discount_rate">15%</span>
-                                        <span class="final_price">9,234,000</span>
-                                        <span class="price_origin">9,200,000</span>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide prod_item">
-                                    <div class="product_pic">
-                                        <img src="../../images/guide/@tod_prod_sample1.svg" class="bd_img">
-                                    </div>
-                                    <div class="company">dretec</div>
-                                    <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-                                    <div class="price_line">
-                                        <span class="discount_rate">15%</span>
-                                        <span class="final_price">9,234,000</span>
-                                        <span class="price_origin">9,200,000</span>
-                                    </div>
-                                </li>
-                                <li class="swiper-slide prod_item">
-                                    <div class="product_pic">
-                                        <img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img">
-                                    </div>
-                                    <div class="company">dretec</div>
-                                    <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-                                    <div class="price_line">
-                                        <span class="discount_rate">15%</span>
-                                        <span class="final_price">9,234,000</span>
-                                        <span class="price_origin">9,200,000</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--닫기 버튼-->	
-                        <button type="button" class="close_swap"></button>	
-                    </article>
                 </li>
                 <li class="prod_item">
                     <div class="rangking down">
@@ -441,22 +379,48 @@
                     </div>
                 </li>
             </ul>
+
+            <!-- ranking_bubble_area --><!-- 20.02 : 위치 추후 조정 -->
             <article class="ranking_bubble_area">
                 <div class="rank_icon"></div>
-                <div class="ranking_bubble">요즘 불티나게 <br/>팔리는 중</div>
+                <div class="ranking_bubble">요즘 불티나게<br>팔리는 중</div>
             </article>
+            <!-- //ranking_bubble_area -->
         </section>
         <!-- //상품 리스트 (랭킹) -->
 
-        <!--더보기 버튼 more_btn에 hidden Class  추가하면 버튼 안보임-->
-        <div class="btn_more_div hidden">
+        <!-- 더보기 버튼 more_btn에 hidden Class  추가하면 버튼 안보임 -->
+        <div class="btn_more_div">
             <button class="more_btn">
                 <span class="txt">더보기</span>
                 <span class="btn_more_icon"></span>
             </button>
         </div>
-    </section >
-    <!-- 푸터 -->
+        <!-- //더보기 -->
+
+
+        <!-- mc_cont : 광고배너 --><!-- 22.02 : 코너메뉴 배너 통일 -->
+        <div class="mc_cont wel_belt02">
+            <h2 class="hidden">광고배너</h2>
+            <!-- wel_belt_banner -->
+            <div class="wel_belt_banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#n"><img src="../../images/temp/@img_belt_banner02.jpg" alt="모바일 첫 구매 3,000원 쿠폰"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination out_bottom"></div>
+            </div>
+            <!-- //wel_belt_banner -->
+        </div>
+        <!-- //mc_cont : 광고배너 -->
+    </section>
+    <!-- //cont_wrap -->
+
+
+    <!-- footer -->
     <footer class="footer_wrapper">
         <div class="notice_wrap">
             <span class="notice_text">공지사항</span>
@@ -505,26 +469,8 @@
             </div>
         </div>
     </footer>
-    <!--업데이트 타이머 팝업-->
-    <div id="popEx1" class="dialog_wrap">
-        <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
-                class="hidden">닫기</span></button>
-        <!-- dialog_header -->
-        <div class="dialog_header">
-            <div class="dialog_title">베스트 랭킹 순위</div>
-        </div>
-        <!-- //dialog_header -->
-        <!-- dialog_contents -->
-        <div class="dialog_contents">
-            <ul class="bul_list">
-                <li class="bul_item_dot">핫트랙스 베스트 상품은 최근 24시간 동안의 판매량, 누적 리뷰 수, 찜 수를 반영하여 
-                    3시간 기준으로 업데이트하고 있습니다.
-               </li>
-            </ul>
-        </div>
-        <!-- //dialog_contents -->
-    </div>
-    <!--//업데이트 타이머 팝업-->
+    <!-- //footer -->
+</div>
+<!-- //wrapper -->
 </body>
-
 </html>
