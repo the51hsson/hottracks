@@ -12529,14 +12529,14 @@ body:before {
   width: 100%;
 }
 
-.wel_main_wrap .btn_more_view {
+.btn_more_view {
   display: block;
   width: 100%;
   margin-top: 20px;
   text-align: center;
 }
 
-.wel_main_wrap .btn_more_view span {
+.btn_more_view span {
   display: inline-block;
   position: relative;
   padding-right: 30px;
@@ -12545,7 +12545,7 @@ body:before {
   line-height: 24px;
 }
 
-.wel_main_wrap .btn_more_view span:after {
+.btn_more_view span:after {
   position: absolute;
   right: 0;
   top: 0;

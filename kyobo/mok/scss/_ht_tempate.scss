@@ -315,17 +315,16 @@
     }
 }
 
-.wel_main_wrap {
-    .btn_more_view {
-        display:block;width:100%;margin-top:20px;text-align:center;
-        span {
-            display:inline-block;position:relative;padding-right:30px;color:#767676;font-size:15px;line-height:24px;
-            &:after {
-                position:absolute;right:0;top:0;width:24px;height:24px;background:url('../images/main/ico_more_view.svg') center/100% no-repeat;content:"";
-            }
+.btn_more_view {
+    display:block;width:100%;margin-top:20px;text-align:center;
+    span {
+        display:inline-block;position:relative;padding-right:30px;color:#767676;font-size:15px;line-height:24px;
+        &:after {
+            position:absolute;right:0;top:0;width:24px;height:24px;background:url('../images/main/ico_more_view.svg') center/100% no-repeat;content:"";
         }
     }
 }
+
 .btn_more_view_box {
     display:block;width:100%;margin-top:20px;text-align:center;
     strong {

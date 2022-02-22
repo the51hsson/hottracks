@@ -620,6 +620,17 @@ $(function(){
 
 
 
+/* What’s in your bag : 팝업 */
+$(function(){
+    $('.cur_new02_li.on .fold_btn span').text('접기');
+    $('.cur_new02_li .fold_btn').click(function(e){
+        e.preventDefault();
+        $(this).fold_ty();
+    });
+});
+
+
+
 
 
 
@@ -913,6 +924,7 @@ $(function(){
         $(this).fold_ty();
     });
 });
+
 
 
 

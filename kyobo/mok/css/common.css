@@ -7213,14 +7213,14 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   width: 100%;
 }
 
-.wel_main_wrap .btn_more_view {
+.btn_more_view {
   display: block;
   width: 100%;
   margin-top: 20px;
   text-align: center;
 }
 
-.wel_main_wrap .btn_more_view span {
+.btn_more_view span {
   display: inline-block;
   position: relative;
   padding-right: 30px;
@@ -7229,7 +7229,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   line-height: 24px;
 }
 
-.wel_main_wrap .btn_more_view span:after {
+.btn_more_view span:after {
   position: absolute;
   right: 0;
   top: 0;
