@@ -2489,7 +2489,7 @@
 .liv_detail {
     position:relative;
     .img {
-        position:relative;height:0;padding-top:100%;margin:-40px -20px 30px -20px;overflow:hidden;
+        position:relative;height:0;padding-top:calc(100% + 40px);margin:-40px -20px 30px -20px;overflow:hidden;
         img {
             position:absolute;left:50%;top:50%;width:100%;height:auto;transform:translate(-50%,-50%);
         }
@@ -3285,6 +3285,12 @@
         .tab_ty {
             a {
                 height:36px;padding:0 15px;line-height:36px;
+            }
+        }
+        &.ty02 {
+            padding-bottom:0;
+            &:after {
+                display:none;
             }
         }
     }

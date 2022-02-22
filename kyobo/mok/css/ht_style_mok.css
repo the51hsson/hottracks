@@ -8308,6 +8308,7 @@ body:before {
 }
 
 .ht_ .footer_wrapper .footer_body {
+  background-color: #fff;
   border-top: 1px solid #d5d5d5;
   padding: 34px 20px 30px;
 }

@@ -5709,7 +5709,7 @@
 .liv_detail .img {
   position: relative;
   height: 0;
-  padding-top: 100%;
+  padding-top: calc(100% + 40px);
   margin: -40px -20px 30px -20px;
   overflow: hidden;
 }
@@ -7426,6 +7426,14 @@
   height: 36px;
   padding: 0 15px;
   line-height: 36px;
+}
+
+.ht_ .tit_top_list.ty02 {
+  padding-bottom: 0;
+}
+
+.ht_ .tit_top_list.ty02:after {
+  display: none;
 }
 
 .ht_ .fixed_btn_select {
