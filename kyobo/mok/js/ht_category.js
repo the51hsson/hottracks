@@ -86,7 +86,6 @@ $(function(){
   //스티키 메뉴
   $(document).on('click' , '.ctg_floating_menues li, .ctg_floating_menues button', function(){
     if($(this).hasClass('arrow_li')) { // 애로우 있는 화면 
-
       return; 
     }
     // 2022-01-28 개발 요청 사항 : 개발에서 진행
@@ -104,35 +103,6 @@ $(function(){
     }, 200);
  });
 
-  //상품 리스트 정렬 방식 토글 버튼
-  $('.ctg_prod_wrap .ctg_list_icon').click(function(){
-    //품절 대체 스왑 display:none으로 초기화 
-    $('.show_bubble.show_bubble').removeClass('show_bubble');
-
-     if ($(this).hasClass('row_list')) {
-         $(this).removeClass('row_list');
-         $('.evt_products').removeClass('row_dir');
-         $('.list_sort_txt').text('두줄보기');
-
-     } else {
-      $(this).addClass('row_list');
-      $('.evt_products').addClass('row_dir');
-      $('.list_sort_txt').text('한줄보기');
-     }
-  });
-   //품절 대체 상품 버튼 클릭
-   $(document).on('click', '.ctg_prod_wrap .sold_out .replace_prod_btn', function(){
-     var replaceBubble = $(this).parents('li').children('article.replace_prod_swap');
-    
-     if(replaceBubble.length > 0 &&  replaceBubble.css('display') == 'none'){
-       replaceBubble.addClass('show_bubble');
-       $(window).scrollTop(replaceBubble.offset().top - 250);
-     };
-   });
-   //품절 대체 스왑 닫기
-   $(document).on('click', '.replace_prod_swap .close_swap', function(){
-     $(this).parents('.replace_prod_swap').removeClass('show_bubble');
-   });
    	//카테고리 상품 리스트 찜하기 토글
 	$(document).on('click', '.evt_good_count', function(){
     /* 20220207(bdhan) : 개발에서 처리
@@ -144,26 +114,4 @@ $(function(){
 		}
     */
 	});
-});
-//광고 배너
-$(function(){
-  if (!$('.wel_belt_banner').length) return;
-  $('.wel_belt_banner .swiper-container').each(function (index, element) {
-      var $parent = $(this).parent('.wel_belt_banner');
-      $parent.addClass('idx_' + index);
-
-      if($parent.find('.swiper-slide').length > 1) {
-          var beltBannerSwiper = new CustomSwiper(this, {
-              observer: true,
-              observeParents: true,
-              slidesPerView: 1,
-              loop: true,
-              loopsSlide:1,
-              autoHeight: true,
-              pagination: {
-                  el: ('.idx_' + index + ' .swiper-pagination'),
-              }
-          }); 
-      }
-  });
 });

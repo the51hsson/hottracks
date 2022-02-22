@@ -904,15 +904,7 @@ $(function(){
 
 
 
-
-
-
-
-
-
-
-/* tod_main_mok.js */
-$(function(){
+//$(function(){
     /* 22.02.17 삭제 */ 
 	//오늘만 특가, 핫딜 특가 메뉴 활성화
 	// $(document).on('click', '.tod_menu_wrap .tod_menu', function(){
@@ -929,36 +921,67 @@ $(function(){
     22.02.17 삭제 */ 	
 
 	//MD 추천 상단스왑
-    if($('.swiper-container.ctg_top_swiper').length == 0 ) return;
-	$('.swiper-container.ctg_top_swiper').each(function(i, ele){
-	    var ctgSwiper = new Swiper(this,  {
-			observer: true,
-			observeParents: true,
-			slidesPerView: 'auto',
-			centeredSlides: true,
-			loop: true,
-			loopsSlide: 1,
-			spaceBetween: 20,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			},
-			speed: 700,
-			pagination: {
-			el: $(ele).find('.swiper-pagination')[0],
-			type: 'fraction',
-			formatFractionCurrent: function (number) {
-				return KyoboHottracks.mok.setPrependZero(number, 2);
-			},
-			formatFractionTotal: function (number) {
-				return KyoboHottracks.mok.setPrependZero(number, 2);
-			}
-			}
-	    });
-	});
-})
+     /* callback 대체로 삭제 */
+    // if($('.swiper-container.ctg_top_swiper').length == 0 ) return;
+	// $('.swiper-container.ctg_top_swiper').each(function(i, ele){
+	//     var ctgSwiper = new Swiper(this,  {
+	// 		observer: true,
+	// 		observeParents: true,
+	// 		slidesPerView: 'auto',
+	// 		centeredSlides: true,
+	// 		loop: true,
+	// 		loopsSlide: 1,
+	// 		spaceBetween: 20,
+	// 		autoplay: {
+	// 			delay: 5000,
+	// 			disableOnInteraction: false,
+	// 		},
+	// 		speed: 700,
+	// 		pagination: {
+	// 		el: $(ele).find('.swiper-pagination')[0],
+	// 		type: 'fraction',
+	// 		formatFractionCurrent: function (number) {
+	// 			return KyoboHottracks.mok.setPrependZero(number, 2);
+	// 		},
+	// 		formatFractionTotal: function (number) {
+	// 			return KyoboHottracks.mok.setPrependZero(number, 2);
+	// 		}
+	// 		}
+	//     });
+	// });
+//});
+ 
+//관련 기획전, 브랜드 쿠폰 스왑배너
 $(function(){
-   
+    if($('.swiper.brandSwiper').length > 0) {
+        $('.swiper.brandSwiper').each(function(i, ele){
+            var brandSwiper = new Swiper(this,  {
+                slidesPerView: 'auto',
+                spaceBetween: 16,
+                freeMode: true,
+                observer: true,
+                observeParents: true,
+            });
+        });
+    }
+});
+
+ //카테고리 리스트 하단 스왑배너
+$(function(){
+    if($('.evt_slider_wrap .swiper.mySwiper').length > 0) {
+        $('.evt_slider_wrap .swiper.mySwiper').each(function(i, ele){
+            var brandSwiper = new Swiper(this,  {
+                slidesPerView: 'auto',
+                spaceBetween: 16,
+                freeMode: true,
+                observer: true,
+                observeParents: true,
+            });
+        });
+    }
+});
+
+$(function(){
    //말풍선 효과
 	if($('.ranking_bubble_area').length > 0){
 		window.addEventListener('scroll', promotionEffect);
@@ -995,7 +1018,7 @@ $(function(){
 	// $(document).on('click', '.menu_sort .btn_sort', function(){
 	// 	$(this).addClass('active').siblings().removeClass('active');
 	// })
-
+    
 	//상품 리스트 정렬 방식 토글 버튼
 	$('.ctg_prod_wrap .ctg_list_icon').click(function(){
 	//품절 대체 스왑 display:none으로 초기화 
@@ -1042,6 +1065,56 @@ $(function(){
 			}); 
 		}
 	});
+    /*========================================  CTG-LIST(menu)  ==================================*/
+     //상단 메뉴(1depth, 2depth, 3depth)
+    $(document).on('click' , '.ctg_topMenu a, .sub_menu_wrap .ctg_subMenu a', function(){
+        $(this).addClass('active').siblings('a').removeClass('active');
+    });
+
+    //2depth 선택 => 3depth 열림 
+    $(document).on('click', '.ctg_topMenu.depth2 a', function(){
+
+    if($(this).hasClass('depth3_none')) {
+        $('.sub_menu_wrap').css('display', 'none');
+    } else { 
+        $('.sub_menu_wrap').css('display', 'block');
+    }
+    });
+
+    //3depth 토글 버튼
+    $(document).on('click', '.sub_menu_wrap .subMenu_btn', function(){
+        $('.sub_menu_wrap .ctg_subMenu').addClass('menuDown');
+        $(this).addClass('menuDown');
+    });
+    $(document).on('click', '.sub_menu_wrap .subMenu_btn.menuDown', function(){
+        $('.sub_menu_wrap .ctg_subMenu').removeClass('menuDown');
+        $(this).removeClass('menuDown');
+    });
+
+    $(document).on('click', '.md_tab .md_anchor', function(){
+        $(this).addClass('active').siblings('.md_anchor').removeClass('active');
+    });
+
+    //스티키 메뉴
+    $(document).on('click' , '.ctg_floating_menues li, .ctg_floating_menues button', function(){
+        if($(this).hasClass('arrow_li')) return;  // 애로우 아이콘 있는 메뉴
+
+        // 2022-01-28 개발 요청 사항 : 개발에서 진행
+        // if($(this).hasClass('active')){
+        //   $(this).removeClass('active');
+        // }else{
+        //   $(this).addClass('active');
+        // }
+    });
+
+     //체크박스, 라디오 선택 시 팝업 닫히게
+    $(document).on('click', '.dialog_wrap[id^="ClickCksClose"] .dialog_contents .checkbox_cm', function(){
+        var closeBtn = $(this).parents('.dialog_wrap').find('button[data-dialog-close]');
+        
+        setTimeout(function(){
+             $(closeBtn ).trigger('click');
+        }, 200);
+    });
     /*================================= HTR-M-EVT-VIEW-015, 016.html ==============================*/  
     //스티키 샐렉트 메뉴 선택 시 해당 위치로 이동
     $(document).on('change', '.sticky_selec .common_select', function(){
@@ -1053,20 +1126,6 @@ $(function(){
                   scrollTop: Top
               }, 200);
     }); 
-
-
-    //관련 기획전, 브랜드 쿠폰 스왑배너
-    if($('.swiper.brandSwiper').length >0) {
-        $('.swiper.brandSwiper').each(function(i, ele){
-            var brandSwiper = new Swiper(this,  {
-                slidesPerView: 'auto',
-                spaceBetween: 15,
-                freeMode: true,
-                observer: true,
-                observeParents: true,
-            })
-            });
-        }
 
 })
 
