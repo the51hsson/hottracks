@@ -904,7 +904,7 @@ $(function(){
 
 
 
-//$(function(){
+$(function(){
     /* 22.02.17 삭제 */ 
 	//오늘만 특가, 핫딜 특가 메뉴 활성화
 	// $(document).on('click', '.tod_menu_wrap .tod_menu', function(){
@@ -922,34 +922,34 @@ $(function(){
 
 	//MD 추천 상단스왑
      /* callback 대체로 삭제 */
-    // if($('.swiper-container.ctg_top_swiper').length == 0 ) return;
-	// $('.swiper-container.ctg_top_swiper').each(function(i, ele){
-	//     var ctgSwiper = new Swiper(this,  {
-	// 		observer: true,
-	// 		observeParents: true,
-	// 		slidesPerView: 'auto',
-	// 		centeredSlides: true,
-	// 		loop: true,
-	// 		loopsSlide: 1,
-	// 		spaceBetween: 20,
-	// 		autoplay: {
-	// 			delay: 5000,
-	// 			disableOnInteraction: false,
-	// 		},
-	// 		speed: 700,
-	// 		pagination: {
-	// 		el: $(ele).find('.swiper-pagination')[0],
-	// 		type: 'fraction',
-	// 		formatFractionCurrent: function (number) {
-	// 			return KyoboHottracks.mok.setPrependZero(number, 2);
-	// 		},
-	// 		formatFractionTotal: function (number) {
-	// 			return KyoboHottracks.mok.setPrependZero(number, 2);
-	// 		}
-	// 		}
-	//     });
-	// });
-//});
+    if($('.swiper-container.ctg_top_swiper').length == 0 ) return;
+	$('.swiper-container.ctg_top_swiper').each(function(i, ele){
+	    var ctgSwiper = new Swiper(this,  {
+			observer: true,
+			observeParents: true,
+			slidesPerView: 'auto',
+			centeredSlides: true,
+			loop: true,
+			loopsSlide: 1,
+			spaceBetween: 20,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			speed: 700,
+			pagination: {
+			el: $(ele).find('.swiper-pagination')[0],
+			type: 'fraction',
+			formatFractionCurrent: function (number) {
+				return KyoboHottracks.mok.setPrependZero(number, 2);
+			},
+			formatFractionTotal: function (number) {
+				return KyoboHottracks.mok.setPrependZero(number, 2);
+			}
+			}
+	    });
+	});
+});
  
 //관련 기획전, 브랜드 쿠폰 스왑배너
 $(function(){
@@ -1110,7 +1110,7 @@ $(function(){
      //체크박스, 라디오 선택 시 팝업 닫히게
     $(document).on('click', '.dialog_wrap[id^="ClickCksClose"] .dialog_contents .checkbox_cm', function(){
         var closeBtn = $(this).parents('.dialog_wrap').find('button[data-dialog-close]');
-        
+
         setTimeout(function(){
              $(closeBtn ).trigger('click');
         }, 200);

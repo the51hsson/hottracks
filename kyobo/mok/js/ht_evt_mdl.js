@@ -66,7 +66,7 @@ $(function(){
 
 			var  mdlEventSwiper_sm = new CustomSwiper(this, {
 			  slidesPerView: 'auto',
-			  spaceBetween: 16,
+			  spaceBetween: 20,
 			  freeMode: true,
 			  observer: true,
 			  observeParents: true,

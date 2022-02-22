@@ -1,0 +1,878 @@
+@charset "UTF-8";
+
+.module_section_bg {
+    background-color: #f7f7f7;
+  }
+
+  /*===============     모듈 001 영역(기획전 타이틀)   ==================*/
+.evt_mdl_title {
+	position: relative;
+    padding:24px 20px;
+    .tit_area {
+        padding-right:30px;
+    }
+    .txt_heading {
+        font-size: 20px;
+        line-height: 29px;
+        font-weight: 900;
+        letter-spacing: -0.2px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        word-break: keep-all;
+    }
+    .btn_share {
+        position:absolute;
+        width:25px;
+        height:25px;
+        right:20px;
+        top:30px;
+        background: url(../images/ico/ico_share.png) no-repeat center center;
+        background-size: cover;
+        cursor: pointer;
+    }
+    .card_body {
+        margin-top:8px;
+        padding-right:47px;
+    }
+    //좌측 텍스트 영역
+    .txt_account {
+        .txt_sub {
+            width: calc(100%);
+            font-size: 16px;
+            line-height:26px;
+            letter-spacing: -0.16px;
+            color:#767676;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+            word-break: keep-all;
+        }
+        .txt_period {
+            margin-top: 16px;
+            line-height: 19px;
+            letter-spacing: -0.14px;
+            color:#595959;
+        }
+    }
+
+    //우측 할인율 표시 영역
+    .box_circle {
+        width:44px;
+        height:44px;
+        line-height: 44px;
+        border-radius: 50%;
+        background-color: #da2128;
+        padding:0 3px;
+        position:absolute;
+        bottom:25px;
+        right:22px;
+
+    }
+    .txt_per {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.15px;
+        text-align: center;
+        color:white;
+    }
+}
+/*===============     모듈 002 영역(앵커 메뉴)   ==================*/
+.evt_mdl2_wrap {
+	transition: transform 1000ms ease-out;
+	padding-bottom:30px;
+	&.anchor{
+		padding:0;
+		position: sticky;
+		top:60px;
+		left:0;
+		z-index: 100;
+	}
+}
+.evt_mdl2_menu {
+	left:0;
+	right:0;
+	top:0;
+	margin-top:8px;
+	background-color: #fff;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	&:nth-of-type(1){
+		margin-top:0;
+	}
+	& > li {
+		flex:1 1 0px;
+		border-bottom:1px solid #d5d5d5;
+		position:relative;
+		a {
+			width:100%;
+			height:100%;
+			padding: 18px 3px;
+			display: -webkit-box;
+			font-size: 15px;
+			color:#595959;
+			line-height: 22px;
+            letter-spacing: -0.03em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			text-align: center;
+            word-break: keep-all;
+		}
+		&.active {
+			&:before {
+                content:"";
+				position: absolute;
+				width:100%;
+				height:2px;
+				background-color: #000;
+				bottom: -1px;
+				left:0;
+				right:0;
+				z-index: 5;
+				transition:background-color 0.2s ease-out, color 0.2s ease-out, font-weight 0.2s ease-out;
+			}
+			a {
+             color:#000;
+			 font-weight: 500;
+			}
+		}
+	}
+
+}
+/*=======================     모듈 003 영역 (동영상)  =====================*/
+.module_wrap {
+	padding:40px 20px;
+	background-color: #fff;
+    &.type1 {
+        padding:0;
+        overflow: visible;
+    }
+	&.list{
+		padding-bottom:0;
+	}
+    & > h3,
+    & > .tit{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height:28px;
+        margin-bottom:20px;
+    }
+    &>.left_tit {
+        text-align: left;
+        font-size: 18px;
+        font-weight: 700;
+        line-height:28px;
+        margin-bottom:0px;
+    }
+	&.type3 {
+		padding: 40px 0 55px 0;
+        margin-bottom:10px;
+	}
+    &.type_pic{
+        padding-bottom: 32px;
+    }
+}
+.video_item {
+	position:relative;
+	margin-top:20px;
+	padding-top:56.25%;
+	overflow: hidden;
+	.evt_video {
+		position:absolute;
+		width:100%;
+		height:100%;
+		left:0;
+		top:0;
+	}
+}
+/*=================     모듈 004 영역(스왑 배너)   ==================*/
+.evt_banner_wrap {
+	padding-bottom:30px;
+     &.list{
+		 padding:0;
+	 }
+	.swiper-container{
+		position:relative;
+	}
+	.swiper-slide{
+		.banner_img {
+			width:100%;
+			height:0;
+			padding-top:100%;
+			overflow:hidden;
+			position: relative;
+		}
+		img {
+			width:100%;
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			z-index: 1;
+		}
+	}
+	.txt_box {
+		width:100%;
+		height:100%;
+		position:absolute;
+		z-index:3;
+		top:0;
+		left:0;
+		color:#fff;
+		background: linear-gradient( to bottom, rgba(84, 84, 84, 0) 50%, rgba(0,0,0,0.6) 100% );
+		.text_box_in{
+			display:block;
+			position:absolute;
+			left:20px;
+			bottom:40px;
+		}
+		span{
+			display:block;
+		}
+		.txt_upper {
+			font-size: 20px;
+			line-height:30px;
+			font-weight: 500;
+			letter-spacing: -0.2px;
+		}
+		.txt_sub {
+			font-size: 13px;
+			letter-spacing: -0.13px;
+			line-height:19px;
+			color:rgba(255,255,255,0.8)
+		}
+	}
+	.swiper-button-next.evt:after,
+	.swiper-button-prev.evt:after {
+		display:none;
+	}
+	.swiper-button-next.evt,
+	.swiper-button-prev.evt {
+			right:10px;
+		    width:24px;
+			height:24px;
+			border-radius: 50%;
+	}
+	.swiper-button-next.evt {
+		background: url(../images/guide/evt_mdl004_prev.svg) no-repeat center center/ 30px;
+		transform: rotate(180deg);
+	}
+	.swiper-button-prev.evt {
+		background: url(../images/guide/evt_mdl004_prev.svg) no-repeat center center/ 30px;
+	}
+	.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+		opacity: 1;
+	}
+	.swiper-pagination.bottom_up {
+		bottom:20px;
+		.swiper-pagination-bullet {
+			background-color: rgb(234, 234, 234);
+		}
+		.swiper-pagination-bullet-active {
+			background-color: #fff;
+		}
+	}
+
+}
+/*=======================     모듈 006 영역   =====================*/
+.module6_item {
+	width:100%;
+	margin-top:20px;
+    cursor:pointer;
+
+	.product_pic{
+		position:relative;
+		height:0;
+		padding-top:100%;
+		overflow:hidden;
+		margin-bottom: 12px;
+		img{
+			width:100%;
+			position: absolute;
+			left:0;
+			top:0;
+		}
+	}
+	.company{
+		font-size: 12px;
+		color:#767676;
+		margin-top:8px;
+	}
+	.title{
+		width:100%;
+		margin-bottom: 5px;
+		font-size: 16px;                  
+		font-weight: 500;
+		line-height: 23px;
+		letter-spacing: -0.13px;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: normal;
+		word-break: keep-all;
+	}
+	.price_area{
+		margin-top:px;
+		display:flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;
+		font-size: 15px;
+	}
+	.discount_rate,
+	.fianl_price{
+		margin-left:4px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 23px;
+	}
+	.discount_rate{
+		color:#da2128;
+		margin:0;
+	}
+	.price_origin{
+		margin-left:4px;
+		font-size: 14px;
+		line-height: 23px;
+		text-decoration: line-through;
+		color:#767676;
+		&.no_discount {
+			text-decoration: none;
+			font-size:18px;
+			font-weight: 700;
+			color:#000;
+		}
+	}  
+    .badge_line {
+        margin-top:8px;
+        .badge {
+            font-weight: 500;
+            margin-top:4px;
+            font-size:12px;
+        }
+    }
+}
+/*=======================     모듈 007 영역   =====================*/
+.module_wrap.type2{
+	padding:40px 0 40px 20px;
+	.swiper{
+		padding-right:20px;
+	}
+	& > h3{
+		padding-right: 20px;
+		font-size: 18px;
+		line-height: 32px;
+		letter-spacing: -0.18px;
+	}
+}
+/*=======================     모듈 008 영역   =====================*/
+.evt_module8_card {
+    padding:40px 20px;
+    background-color: #fff;
+    .title {
+		font-size: 16px;
+		line-height: 26px;
+		letter-spacing: -0.16px;
+        font-weight: 500;
+    }
+    .sub_title {
+		margin-top:4px;
+		font-size: 13px;
+		line-height: 19px;
+		letter-spacing: -0.13px;
+		color:#767676;
+    }
+    .content {
+		margin-top:14px;
+		line-height: 22px;
+		letter-spacing: -0.14px;
+    }
+}
+
+
+/*===============  모듈 010 -1 , 009-1 (응모하기, 참여하기 버튼  ) ==============*/
+.btn_mdl_wrap{
+	padding:24px 20px 40px 20px;
+	&.type_pink{
+		background-color: #FAD9CC;
+	}
+	.btn_mdl{
+      display: block;
+	  width:100%
+	}
+}
+/*===============     모듈 009-2 영역 (내가 쓴 댓글 보기)  ==================*/
+.top_gray_section{
+	padding-top:8px;
+	background-color: #f7f7f7;
+}
+.evt_mdl9_2 > .comment_list_area{
+	padding:0 20px 40px 20px;
+	background-color: #fff;
+}
+.cmt_section_title{
+	padding-bottom:20px;
+	border-bottom:1px solid;
+	.title{
+		font-size:16px;
+		line-height: 26px;
+		font-weight:700;
+		letter-spacing: -0.16px;
+	}
+	.highlight{
+		color:#da2128;
+	}
+	.evt_ck_area{
+		display: block;
+		letter-spacing: -0.14px;
+		margin-top:5px;
+		padding-left:28px;
+	}
+}
+
+ /*=======================  모듈 011 영역 (rullet) ==================*/
+ .rullet_wrap {
+    position:relative;
+    &>img {
+        width:100%;
+    }
+    .rullet_circle {
+        position:absolute;
+        width:88%;
+        left:50%;
+        top:50%;
+        transform: translate3d(-50%, -50%, 0);;
+        z-index: 10;
+        &>img{
+            width:100%;
+        }
+    }
+    .rullet_pin {
+        position: absolute;
+        width:7.2%;
+        left:50%;
+        transform: translateX(-50%);
+        top:-3%;
+        z-index: 20;
+        &>img{
+            width:100%;
+        }
+    }
+    .fotune_evt_btn {
+        position:absolute;
+        width:45%;
+        height:50px;
+        left:50%;
+        transform: translateX(-50%);
+        bottom:7%;
+    }
+}
+/*=====================  모듈 012 영역 (calender) ================*/
+.calender_wrap {
+   position:relative;
+   padding: 60px 20px 40px 20px;
+   text-align: center;
+   background:center/cover no-repeat;
+   &>img {
+       width:100%;
+       height:100%;
+       position:absolute;
+       left:0;
+       top:0;
+       z-index: -1;;
+   }
+   .table_wrap{
+       position:relative;
+       width:100%;
+       max-width:450px;
+       margin:0 auto;
+       background-color: #fff;
+       border:2px solid #000;
+       border-radius: 4px;
+       padding: 0 10px 20px 10px;
+
+       .handle {
+           position:absolute;
+           width:18px;
+           z-index:1;
+           top:-25px;
+           left:50%;
+           transform: translateX(-50%);
+           margin-left: -20%;
+           &.right{
+               margin-left: 20%;
+           }
+        }
+        .tb_month {
+           position:absolute;
+           left:50%;
+           top:20px;
+           font-weight: 900 ;
+           font-size: 16px;
+           line-height:21px;
+           color:#000;
+           transform: translateX(-50%);
+       }
+       .calender_tb {
+           width:100%;
+           height:100%;
+           margin:0 auto;
+           background-color: #fff;
+           tr {
+               width:100%;
+               &:first-of-type {
+                   height:80px;
+               }
+           }
+           th {
+               font-weight:700;
+               font-size: 11px;
+               vertical-align: bottom;
+               padding-bottom:4px;
+            }
+           td {
+               width:calc( 100% / 7 );
+               height:50px;
+               padding:8px 3px 0 3px;
+               color:#767676;
+               .date{
+                   width:100%;
+                   height:100%;
+                   font-size: 10px;
+                   text-align: center;
+                   line-height: 40px;
+                   background:url(../images/guide/calender_day_bg.svg) no-repeat center center / contain;
+               }
+               .on{
+                   width:100%;
+                   height:100%;
+                   background:url(../images/guide/calender_attend_active.svg) no-repeat center center / contain;
+               }
+                
+           }
+       }
+   }
+   .attendance_count {
+       margin-top:15px;
+       text-align: center;
+       line-height:25px;
+       font-size: 16px;
+       .attendance {
+           font-weight: 700;
+           position:relative;
+           margin-left:5px;
+           display: inline-block;
+           &:before {
+               content:"일";
+               position:absolute;
+               width:10px;
+               height:25px;
+               left:10px;
+               top:0;
+           }
+       }
+   }
+   .attendance_btn {
+       margin-top:10px;
+       padding:15px 25px;
+       border-radius: 4px;
+       line-height: 21px;
+       font-size: 15px;
+       font-weight: 900 ;
+       color:#fff;
+   }
+}
+/*======================     모듈 013 영역   =======================*/
+.evt_step_wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-top:20px;
+    .step_item img {
+       width:100%;
+    }
+}
+/*======================     모듈 014 영역   =======================*/
+.cmt_wrap {
+   padding:40px 20px;
+   &>.tit {
+    margin-bottom:16px;
+    line-height: 25px;
+    font-size: 16px;
+   }
+   .cmt_btn_area {
+        margin-top:24px;
+        button {
+            width:100%;
+            padding:15px 0;
+            border-radius: 4px;
+            background-color: #292929;
+            color:#fff;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+    .cmt_btn_icon {
+        display: block;
+        width:16px;
+        height:20px;
+        background:url('../images/guide/cmt_btn_ico.svg') no-repeat center center;
+        background-size: 95%;
+        margin-right:5px;
+    
+    } 
+    .cmt_btn_txt {
+        letter-spacing: -0.14px;
+        line-height: 20px;
+    }
+}
+
+
+//댓글 입력
+.comment_area{
+	padding-top: 40px;
+	.cmt_tit{
+		line-height:25px;
+		font-size: 16px;
+        margin-bottom:16px;
+	}
+
+}
+.cmt_wrap ~ .comment_list_area{
+	padding:0 20px 40px 20px;
+	background-color: #fff;
+}
+
+//등록 댓글 없음
+.no_cmt_box{
+	height:140px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+    border-bottom: 1px solid #ccc;
+	span{
+		display: block;
+	}
+	.no_cmt_icon{
+		width:30px;
+		height:30px;
+		margin: 0 auto;
+		background:url(../images/guide/no_search_data_icon.svg) no-repeat center center  / cover;
+	}
+	.no_cmt_txt{
+		text-align: center;
+		margin-top:8px;
+		color:#767676;
+		line-height: 19px;
+		letter-spacing: -0.013em;
+	}
+}
+/*============================= 모듈 016 =============================*/
+.mdl_selec_list_wrap{
+    padding:20px ;
+    background-color: #fff;
+    &.type2{
+        padding-top:0;
+    }
+    .tit{
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.18px;
+        text-align: left;
+        margin-bottom:12px;
+    }
+} 
+
+.sticky_selec{
+	padding:20px;
+	position: sticky;
+	top:60px;
+	left:0;
+	z-index: 7;
+	background-color: #fff;
+	&.anchor{
+		top:60px;
+	}
+}
+.common_select{
+	width:100%;
+	height:50px;
+	padding:14px 25px 14px 15px;
+	border:1px solid #d5d5d5;
+	position:relative;
+	line-height: 22px;
+	letter-spacing: -0.14px;
+	border-radius: 6px;
+	outline: 0;
+	color:#767676;
+	appearance: none;
+	background:url(../images/guide/ico_selec_arrow.svg) no-repeat right 14px top 50% /9px;
+    option{
+        height:50px;
+    }
+}
+/*===============================  모듈 017 영역  ===========================*/
+.card_module{
+	padding:40px 0;
+	.evt_cards{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		.evt_card_item{
+			width:50%;
+			min-height:100% !important;
+			padding:40px 20px;
+			div{
+				word-break: keep-all;
+			}
+		}
+		.discount{
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 22px;
+			margin-bottom: 8px;
+			color:#da2128;
+		}
+		.title{
+            font-size: 16px;
+			line-height: 22px;
+			letter-spacing: -0.16px;
+			margin-bottom: 4px;
+			font-weight: 500;
+		}
+		.desc{
+			font-size: 13px;
+			line-height: 19px;
+			letter-spacing: -0.13px;
+		}
+	}
+	.btn_area{
+		margin-top:24px;
+		text-align: center;
+		button{
+			position:relative;
+			padding:12px 24px;
+			width:165px;
+			margin:0 auto;
+			border:1px solid #f2f2f2;
+			border-radius: 4px;
+			cursor: pointer;
+			text-align: center;
+	        display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+		}
+		.txt{
+			line-height:20px;
+			font-weight: 500px;
+			letter-spacing: -0.14px;
+			line-height: 20px;
+		}
+		.icon{
+			display: block;
+			width:12px;
+			height:20px;
+			margin-left:3px;
+			background: url(../images/guide/ico_arrow_right_btn.svg) no-repeat center top 40%/ 12px;
+		}
+	}
+}
+/*=======================MDL-018영역=====================*/
+
+//오늘만 특가 제목 + 카운트 다운
+.hot_deal_area{
+	padding: 40px 0 40px 20px;
+	background-color: #fff;
+	.swiper{
+		padding-right:20px;
+	}
+	.title_area{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		padding-right: 20px;
+	}
+	h2{
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 32px;
+	}
+	.countdown{
+		.time{
+			position:relative;
+			font-size: 18px;
+			line-height: 32px;
+			font-weight: 500;
+			color:#da2128;
+			&:before{
+				content:"";
+				position: absolute;
+				width:18px;
+				height:18px;
+				left:-26px;
+				top:50%;
+				margin-top:-9px;
+				background:url(../images/guide/ico_clock.svg) no-repeat 0 0;
+				background-size: cover;;
+			}
+		}
+	}
+}
+
+
+/*============================= 모듈 019 =============================*/
+.cmt_imgs_wrap{
+	overflow:hidden;
+	&.cmt_inner_top{
+		margin-top:20px;
+	}
+}
+.cmt_imgs_list{
+	overflow-x: auto;
+	white-space: nowrap;
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row nowrap;
+    margin-bottom:16px;
+	.cmt_img_item{
+		width:40px;
+		height:40px;
+		margin-right: 6px;
+		flex-shrink: 0;
+		border-radius: 4px;
+		overflow:hidden;
+		&:last-of-type{
+			margin-right: 0px;
+		}
+		img{
+			width:100%;
+		}
+		&.active{
+			border:4px solid #000;
+		}
+		&.active_non img{
+			opacity: 0.6;
+		}
+	}
+}
+

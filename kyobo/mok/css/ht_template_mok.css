@@ -4,7 +4,11 @@
 */
 @import "ht_product_mok.css"; /*상품 공통*/
 
+@import "ht_evt_mok.css"; /*이벤트 모듈, 이벤트 기획전*/
+
 @import "ht_corner_mok.css"; /*코너 전체, 브랜드, 카테고리 통합*/
+
+
 
 /* @import "ht_brand_mok.css"; */
 
@@ -18,9 +22,6 @@
 
  
 @import "ht_music_main.css"; 
-*/
-/*
-
 */
 
 @import "ht_main.css"; 

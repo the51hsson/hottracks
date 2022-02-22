@@ -78,30 +78,7 @@
     </div>
     <!-- //SkipNav -->
 
-    <!-- wrapper -->
-    <!-- ht_ Hottracks ht_ 클래스 추가 -->
-    <!-- DESC : footer 없는 경우 [ no-footer ] 클래스 추가 -->
-    <!-- DESC : 상품상세와 같이 하단 구매 영역 있는 경우 클래스 .contents_detail_view 추가 -->
     <div class="ht_ wrapper contents_detail_view">
-        <!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
-        <header id="headerWrapper" class="ht_ header_wrapper">
-            <div class="header_left">
-                <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
-            </div>
-            <div class="header_center">
-                <div class="page_title prod_detail"></div>
-            </div>
-            <div class="header_right">
-                <!-- DESC : 상품정보 부터 검색버튼 비활성화 -->
-                <a href="#" class="btn_header_search"><span class="hidden">검색</span></a>
-                <a href="#" class="btn_header_cart">
-                    <span class="hidden">장바구니</span>
-                    <!-- DESC :: 0개인경우 count 영역 미노출 / 최대 99 -->
-                    <span class="count">99</span>
-                </a>
-            </div>
-        </header>
-        <!-- // 헤더 -->
         <!-- 컨텐츠 -->
         <main id="containerWrapper" class="container_wrapper">
             <!-- data-target 과 id 매치 -->
@@ -117,11 +94,14 @@
                 <!-- CASE 1. 기본 -->
                 <!-- DESC : 버튼 풀배열인경우 넓이조절을 위해 div.btn_wrap 영역 [multi] class 추가 -->
                 <div class="btn_wrap multi">
-                    <button type="button" class="btn_wish size_lg"><span class="ico_wish"></span><span
-                            class="hidden">찜하기</span></button>
-                    <button type="button" class="btn_gift size_lg"><span class="ico_gift"></span><span
-                            class="text">선물하기</span></button>
-
+                    <button type="button" class="btn_wish size_lg">
+						<span class="ico_wish"></span>
+						<span class="hidden">찜하기</span>
+					</button>
+                    <button type="button" class="btn_gift size_lg">
+						<span class="ico_gift"></span>
+						<span class="text">선물하기</span>
+					</button>
                     <!-- DESC : 버튼 1개만 있는 경우 [ single ] class 추가 -->
                     <div class="btn_wrap overlap">
                         <button type="button" class="btn_ip btn_light_gray"><span class="text">장바구니</span></button>
@@ -134,10 +114,14 @@
             <!-- // 상품상세 하단 고정영역 -->
             <div class="floating_wrapper">
                 <!-- 탑버튼 -->
-                <a href="#top" class="btn_go_top"><span class="hidden">최상위 화면으로</span></a>
+                <a href="#top" class="btn_go_top">
+					<span class="hidden">최상위 화면으로</span>
+				</a>
                 <!-- // 탑버튼 -->
                 <!-- 백버튼 -->
-                <a href="#" class="btn_go_back"><span class="hidden">이전 화면으로</span></a>
+                <a href="#" class="btn_go_back">
+					<span class="hidden">이전 화면으로</span>
+				</a>
                 <!--// 백버튼-->
             </div>
         </section>
@@ -146,8 +130,10 @@
     <!-- // wrapper -->
     <!-- 팝업 - full + 하단 버튼 -->
     <div id="popFullHasBtnEx1" class="dialog_wrap has_btn" data-class="dialog_full">
-        <button type="button" id="votePopClose" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span
-                class="hidden">닫기</span></button>
+        <button type="button" id="votePopClose" class="btn_dialog_close" data-dialog-close>
+			<span class="ico_dialog_close"></span>
+			<span class="hidden">닫기</span>
+		</button>
         <!-- dialog_header -->
         <div class="dialog_header">
             <div class="dialog_title">투표 참여하기</div>
@@ -155,75 +141,78 @@
         <!-- //dialog_header -->
         <!-- dialog_contents -->
         <div class="dialog_contents evt_mdl9_pop_wrap">
-          <h2>디자인 선택</h2>
-          <h3>마음에 드는 다이어리를 선택해 주세요.</h3>
-          <ul class="evt_vote_list">
-            <li>
-              <div class="vote_img">
-                 <span class="vote_ckbox_area">
-                   <input type="radio" class="common_check"  id="voteEvtCk0" name="test">
-                   <label for="voteEvtCk0" class="common_ck_label"></label>
-                 </span>  
-                <img class="bd_img" src="../../images/guide/@hotdeal_thumnail_01.png" alt="핫트랙스 이벤트 투표 상품 이미지" title="핫트랙스 이벤트 투표 상품 이미지">
-              </div>
-              <div class="vot_txt">2022오프닝 시퀸스 다이어리(날짜형)</div>
-            </li>
-            <li>
-              <div class="vote_img">
-                 <span class="vote_ckbox_area">
-                   <input type="radio" class="common_check"  id="voteEvtCk1" name="test">
-                   <label for="voteEvtCk1" class="common_ck_label"></label>
-                 </span>  
-                <img src="../../images/guide/@vote_thumnail2.png" alt="핫트랙스 이벤트 투표 상품 이미지" title="핫트랙스 이벤트 투표 상품 이미지">
-              </div>
-              <div class="vot_txt">2022별별 일상 다이어리(날짜형)</div>
-            </li>
-            <li>
-              <div class="vote_img">
-                 <span class="vote_ckbox_area">
-                   <input type="radio" class="common_check"  id="voteEvtCk2" name="test">
-                   <label for="voteEvtCk2" class="common_ck_label"></label>
-                 </span>  
-                <img src="../../images/guide/@vote_thumnail2.png" alt="핫트랙스 이벤트 투표 상품 이미지" title="핫트랙스 이벤트 투표 상품 이미지">
-              </div>
-              <div class="vot_txt">2022별별 일상 다이어리(날짜형)</div>
-            </li>
-            <li>
-              <div class="vote_img">
-                 <span class="vote_ckbox_area"> 
-                   <input type="radio" class="common_check"  id="voteEvtCk3" name="test">
-                   <label for="voteEvtCk3" class="common_ck_label"></label>
-                 </span>  
-                <img src="../../images/guide/@vote_thumnail4.png" alt="핫트랙스 이벤트 투표 상품 이미지" title="핫트랙스 이벤트 투표 상품 이미지">
-              </div>
-              <div class="vot_txt">2022별별 일상 다이어리(날짜형)</div>
-            </li>
-            <li>
-              <div class="vote_img">
-                 <span class="vote_ckbox_area">
-                   <input type="radio" class="common_check"  id="voteEvtCk4" name="test">
-                   <label for="voteEvtCk4" class="common_ck_label"></label>
-                 </span>  
-                <img src="../../images/guide/@vote_thumnail4.png" alt="핫트랙스 이벤트 투표 상품 이미지" title="핫트랙스 이벤트 투표 상품 이미지">
-              </div>
-              <div class="vot_txt">2022별별 일상 다이어리(날짜형)</div>
-            </li>
-          </ul>
-          <section class="comment_area">
-            <h2>댓글 입력</h2>
-            <div class="comment_txt_box bd_img">
-              <textarea name="" id="userComment" placeholder="댓글을 입력해 주세요."></textarea>
-              <span class="count_length_line">
-                <em class="count" id="commentEA">0</em>
-                <em class="count_defalut">/ 300자</em>
-              </span>
-            </div>
-          </section>
+			<h2>디자인 선택</h2>
+			<h3>마음에 드는 다이어리를 선택해 주세요.</h3>
+			<ul class="evt_vote_list">
+				<!--li 반복-->
+				<li>
+					<div class="vote_img">
+						<span class="vote_ckbox_area">
+							<input type="radio" class="common_check"  id="voteEvtCk0" name="test">
+							<label for="voteEvtCk0" class="common_ck_label"></label>
+						</span>  
+						<img class="bd_img" src="../../images/guide/@hotdeal_thumnail_01.png" alt="" >
+					</div>
+					<div class="vot_txt">2022오프닝 시퀸스 다이어리(날짜형)</div>
+				</li>
+				<!--//li 반복-->
+
+				<li>
+					<div class="vote_img">
+						<span class="vote_ckbox_area">
+							<input type="radio" class="common_check"  id="voteEvtCk1" name="test">
+							<label for="voteEvtCk1" class="common_ck_label"></label>
+						</span>  
+						<img src="../../images/guide/@vote_thumnail2.png" alt="" >
+					</div>
+					<div class="vot_txt">2022별별 일상 다이어리(날짜형)</div>
+				</li>
+				<li>
+					<div class="vote_img">
+						<span class="vote_ckbox_area">
+							<input type="radio" class="common_check"  id="voteEvtCk2" name="test">
+							<label for="voteEvtCk2" class="common_ck_label"></label>
+						</span>  
+						<img src="../../images/guide/@vote_thumnail2.png" alt="" >
+					</div>
+					<div class="vot_txt">2022별별 일상 다이어리(날짜형)</div>
+				</li>
+				<li>
+					<div class="vote_img">
+						<span class="vote_ckbox_area"> 
+							<input type="radio" class="common_check"  id="voteEvtCk3" name="test">
+							<label for="voteEvtCk3" class="common_ck_label"></label>
+						</span>  
+						<img src="../../images/guide/@vote_thumnail4.png" alt="">
+					</div>
+					<div class="vot_txt">2022별별 일상 다이어리(날짜형)</div>
+				</li>
+				<li>
+					<div class="vote_img">
+						<span class="vote_ckbox_area">
+							<input type="radio" class="common_check"  id="voteEvtCk4" name="test">
+							<label for="voteEvtCk4" class="common_ck_label"></label>
+						</span>  
+						<img src="../../images/guide/@vote_thumnail4.png" alt="" >
+					</div>
+					<div class="vot_txt">2022별별 일상 다이어리(날짜형)</div>
+				</li>
+			</ul>
+			<section class="comment_area">
+				<h2>댓글 입력</h2>
+				<div class="comment_txt_box bd_img">
+					<textarea name="" id="userComment" placeholder="댓글을 입력해 주세요."></textarea>
+					<span class="count_length_line">
+						<em class="count" id="commentEA">0</em>
+						<em class="count_defalut">/ 300자</em>
+					</span>
+				</div>
+			</section>
         </div>
         <!-- //dialog_contents -->
         <!-- dialog_footer -->
         <div class="dialog_footer">
-          <!--버튼 활성화 Class : btn_primary-->
+          <!--버튼 활성화 Class : disabled 삭제-->
             <button type="button" id="evtVoteBtn" class="btn_md btn_primary disabled" ><span class="text">참여하기</span></button>
         </div>
         <!-- //dialog_footer -->

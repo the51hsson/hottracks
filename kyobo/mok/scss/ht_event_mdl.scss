@@ -207,8 +207,6 @@
 }
 
 /*===============     모듈 004 영역(스왑 배너)   ==================*/
-
-
 .evt_banner_wrap {
 	padding-bottom:30px;
      &.list{
@@ -297,12 +295,11 @@
 	}
 
 }
-/*===============     모듈 002 영역(앵커 메뉴)   ==================*/
 /*=======================     모듈 006 영역   =====================*/
-.module6_item{
+.module6_item {
 	width:100%;
 	margin-top:20px;
-  cursor:pointer;
+    cursor:pointer;
 
 	.product_pic{
 		position:relative;
@@ -326,7 +323,8 @@
 		width:100%;
 		margin-bottom: 4px;
 		font-size: 16px;
-		line-height: px;
+		font-weight: 500;
+		line-height: 23px;
 		letter-spacing: -0.13px;
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
@@ -349,7 +347,7 @@
 	.fianl_price{
 		margin-left:4px;
 		font-weight: 700;
-		font-size: 15px;
+		font-size: 18px;
 		line-height: 23px;
 	}
 	.discount_rate{
@@ -358,11 +356,20 @@
 	}
 	.price_origin{
 		margin-left:4px;
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 23px;
 		text-decoration: line-through;
 		color:#767676;
+		&.no_discount {
+			text-decoration: none;
+			font-size:18px;
+			font-weight: 700;
+			color:#000;
+		}
 	}  
+	.badge {
+		font-weight: 500;
+	}
 }
 
 /*=======================     모듈 007 영역   =====================*/
@@ -372,7 +379,7 @@
 	.swiper{
 		padding-right:20px;
 	}
-	h3{
+	& > h3{
 		padding-right: 20px;
 		font-size: 18px;
 		line-height: 32px;

@@ -8,7 +8,8 @@
   background-color: #f7f7f7;
 }
 
-.divide_hr {
+.divide_hr,
+.devide_underline_thin {
   display: block;
   width: 100%;
   height: 8px;
@@ -17,6 +18,19 @@
   background-color: #f7f7f7;
   margin: 0;
   margin-top: 40px;
+}
+
+.devide_underline_thin {
+  margin-top: 0px;
+}
+
+.divide_underline {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
 /*=========================== TOD 메뉴 메인 (오늘만 특가)============================*/
@@ -171,198 +185,11 @@
   width: 100%;
 }
 
-/*=======   모듈 006 영역   ============*/
-.module_wrap {
-  padding: 40px 20px;
-}
-
-.module_wrap.type_pic {
-  padding-bottom: 32px;
-}
-
-.module6_item {
-  margin-top: 20px;
-}
-
-.module6_item:first-of-type {
-  margin-top: 0;
-}
-
-.module6_item .product_pic {
-  position: relative;
-  height: 0;
-  padding-top: 100%;
-  overflow: hidden;
-  margin-bottom: 12px;
-}
-
-.module6_item .product_pic img {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.module6_item .product_pic .evt_good_count {
-  display: block;
-  padding: 5px 7px;
-  height: 24px;
-  position: absolute;
-  border-radius: 30px;
-  color: #fff;
-  font-size: 10px;
-  right: 8px;
-  bottom: 8px;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 5;
-}
-
-.module6_item .product_pic .evt_good_count .icon {
-  float: left;
-  width: 12px;
-  height: 14px;
-  background: url(../images/guide/ico_prod_like_icon.svg) no-repeat center center/12px;
-}
-
-.module6_item .product_pic .evt_good_count .txt {
-  float: left;
-  margin-left: 3px;
-  line-height: 14px;
-}
-
-.module6_item .evt_good_count.active .icon {
-  float: left;
-  width: 12px;
-  height: 14px;
-  background: url(../images/guide/ico_prod_like_icon_active.svg) no-repeat center center/12px;
-}
-
-.module6_item .company {
-  font-size: 14px;
-  color: #767676;
-  margin-top: 8px;
-}
-
-.module6_item .title {
-  width: 100%;
-  margin-bottom: 4px;
-  font-size: 16px;
-  line-height: 23px;
-  letter-spacing: -0.13px;
-  font-weight: 500;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
-  word-break: keep-all;
-}
-
-.module6_item .price_area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  font-size: 15px;
-  margin-bottom: 12px;
-}
-
-.module6_item .discount_rate,
-.module6_item .fianl_price {
-  margin-left: 3px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23px;
-}
-
-.module6_item .discount_rate {
-  color: #da2128;
-  margin: 0;
-}
-
-.module6_item .price_origin {
-  margin-left: 3px;
-  font-size: 14px;
-  line-height: 23px;
-  text-decoration: line-through;
-  color: #767676;
-}
-
-.module6_item .badge_line .badge {
-  font-size: 12px !important;
-}
-
-/*=========  모듈 016 영역 ========*/
-.mdl_selec_list_wrap {
-  padding: 32px 20px 32px 20px;
-  background-color: #fff;
-}
-
-.mdl_selec_list_wrap.type2 {
-  padding-top: 0;
-}
-
-.mdl_selec_list_wrap .tit {
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: -0.18px;
-  text-align: left;
-  margin-bottom: 12px;
-}
-
-.sticky_selec {
-  padding: 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 60px;
-  left: 0;
-  z-index: 7;
-  background-color: #fff;
-}
-
-.sticky_selec.anchor {
-  top: 60px;
-}
-
-.common_select {
-  width: 100%;
-  height: 50px;
-  padding: 14px 25px 14px 15px;
-  border: 1px solid #d5d5d5;
-  position: relative;
-  line-height: 22px;
-  letter-spacing: -0.14px;
-  border-radius: 6px;
-  outline: 0;
-  color: #767676;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: url(../images/guide/ico_selec_arrow.svg) no-repeat right 14px top 50%/9px;
-}
-
-.common_select option {
-  height: 50px;
-}
-
 .btn_more_div {
   margin-top: 26px;
 }
 
 .btn_more_div .more_btn {
-  width: 71px;
   height: 24px;
   margin: 0 auto;
   display: -webkit-box;
@@ -396,6 +223,7 @@
   font-weight: 500;
   letter-spacing: -0.15px;
   color: #767676;
+  margin-right: 3px;
 }
 
 .btn_more_div .btn_more_icon {
@@ -789,14 +617,8 @@
 }
 
 .module_wrap {
-  margin-top: 11px;
-  padding-top: 40px;
   background-color: #fff;
   overflow: hidden;
-}
-
-.module_wrap:first-of-type {
-  margin: 0;
 }
 
 .module_wrap .swiper {
@@ -892,6 +714,12 @@
 
 .module_wrap .ctg_top_swiper .swiper-pagination.out_bottom .swiper-pagination-total {
   line-height: 16px;
+}
+
+.ctg_topMenu + .module_wrap,
+.sub_menu_wrap + .module_wrap {
+  padding: 0;
+  padding-top: 32px;
 }
 
 .module7_wrap.minimum_prod .module_slider_sm li {

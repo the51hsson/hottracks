@@ -11000,7 +11000,7 @@ body:before {
 
 .prod-wrapper .title,
 .evt_products .title {
-  letter-spacing: -0.13px;
+  letter-spacing: -0.03em;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -11011,7 +11011,6 @@ body:before {
   font-weight: 500;
   margin-bottom: 6px;
   line-height: 19px;
-  min-height: 38px;
 }
 
 .prod-wrapper .price_line,
@@ -11030,10 +11029,11 @@ body:before {
 
 .prod-wrapper .final_price,
 .evt_products .final_price {
-  margin: 0 3px;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+  letter-spacing: -0.03em;
+  margin-right: 3px;
 }
 
 .prod-wrapper .discount_rate,
@@ -11042,6 +11042,8 @@ body:before {
   color: #DA2128;
   font-size: 16px;
   line-height: 22px;
+  letter-spacing: -0.03em;
+  margin-right: 3px;
 }
 
 .prod-wrapper .price_origin,
@@ -11059,7 +11061,6 @@ body:before {
   text-decoration: none;
   color: #000;
   font-weight: 500;
-  margin-left: 3px;
   margin-top: 0;
   font-size: 16px;
 }
@@ -11205,18 +11206,23 @@ body:before {
   margin-bottom: 8px;
   font-size: 13px;
   line-height: 19px;
-  letter-spacing: -0.13px;
+  letter-spacing: -0.03em;
   height: auto;
 }
 
 .type_sm .discount_rate,
 .type_sm .final_price,
 .type_sm .price_origin {
+  font-size: 14px;
   line-height: 18px;
+  letter-spacing: -0.03em;
+  margin: 0;
+  margin-right: 3px;
 }
 
 .type_sm .price_origin {
   font-size: 10px;
+  margin: 0;
 }
 
 .type_sm .price_origin.no_discount {
@@ -11231,6 +11237,7 @@ body:before {
 
 .type_xs .product_pic {
   padding-top: 99px;
+  margin-bottom: 8px;
 }
 
 .type_xs .product_pic .evt_good_count {
@@ -11246,6 +11253,7 @@ body:before {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 17px;
+  font-weight: normal;
   height: auto;
 }
 
@@ -11280,6 +11288,7 @@ body:before {
 
 .type_xs .price_origin.no_discount {
   font-size: 12px;
+  font-weight: 700;
 }
 
 /* 1:1 비율 74*74*/
@@ -11387,20 +11396,28 @@ body:before {
           flex-flow: row wrap;
 }
 
-.nonswipe .price_line .final_price {
-  margin: 0 5px;
-  font-weight: 500;
-}
-
 .nonswipe .price_line .discount_rate {
   font-weight: 500;
   color: #DA2128;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.nonswipe .price_line .final_price {
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .nonswipe .price_line .price_origin {
   font-size: 12px;
   text-decoration: line-through;
   color: #767676;
+}
+
+.nonswipe .price_line .price_origin.no_discount {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
 }
 
 .adult_prod .product_pic {

@@ -8,7 +8,8 @@
 	background-color:#f7f7f7 ;
 }
 //구분선
-.divide_hr{
+.divide_hr,
+.devide_underline_thin {
 	display: block;
     width:100%;
 	height:8px;
@@ -18,6 +19,17 @@
 	margin:0;
 	margin-top:40px;
 }
+.devide_underline_thin {
+    margin-top:0px;
+}
+.divide_underline{
+	display: block;
+	border:none;
+	width:100%;
+	height:40px;
+	margin:0;
+	background-color:#f0f0f0 ;
+} 
 /*=========================== TOD 메뉴 메인 (오늘만 특가)============================*/
 //상품 공통 상단 패딩
 .tit + .prod-wrapper.evt_products {
@@ -75,7 +87,6 @@
             z-index:5;
         }
     }
-
     .timer {
         position: absolute;
         font-weight: 900;
@@ -128,177 +139,24 @@
         }
     }
 }
-.hotdeal_product_pic{
+.hotdeal_product_pic {
     position:relative;
     height:0;
     padding-top: 114.5%;
     overflow:hidden;
-    img{
+    img {
         position:absolute;
         top:0;
         left:0;
         width:100%;
     }
 }
-/*=======   모듈 006 영역   ============*/
-.module_wrap {
-	padding:40px 20px;
-    &.type_pic{
-        padding-bottom: 32px;
-    }
-}
-.module6_item {
-	margin-top:20px;
-	&:first-of-type {
-		margin-top:0;
-	}
-	.product_pic {
-		position:relative;
-		height:0;
-		padding-top:100%;
-		overflow:hidden;
-		margin-bottom: 12px;
-		img {
-			width:100%;
-			position: absolute;
-			left:0;
-			top:0;
-		}
-        .evt_good_count {
-			display: block;
-			padding:5px 7px;
-			height:24px;
-			position:absolute;
-			border-radius: 30px;
-			color:#fff;
-			font-size: 10px;
-			right:8px;
-			bottom:8px;
-			background-color: rgba(0,0,0,0.5);
-			z-index:5;
-			.icon {
-				float:left;
-				width:12px;
-				height:14px;
-				background:url(../images/guide/ico_prod_like_icon.svg) no-repeat center center /12px;
-			}
-			.txt {
-				float:left;
-				margin-left:3px;
-				line-height:14px;
-			}
-		}
-	}
-	.evt_good_count.active {
-		.icon {
-			float:left;
-			width:12px;
-			height:14px;
-			background:url(../images/guide/ico_prod_like_icon_active.svg) no-repeat center center /12px;
-		}
-	}
-	.company {
-		font-size: 14px;
-		color:#767676;
-		margin-top:8px;
-	}
-	.title {
-		width:100%;
-		margin-bottom: 4px;
-		font-size: 16px;
-		line-height: 23px;
-		letter-spacing: -0.13px;
-        font-weight: 500;
-		display: -webkit-box;
-		-webkit-line-clamp: 2;
-		-webkit-box-orient: vertical;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: normal;
-		word-break: keep-all;
-	}
-	.price_area {
-		display:flex;
-		flex-flow: row wrap;
-		justify-content: flex-start;
-		align-items: center;
-		align-content: center;
-		font-size: 15px;
-        margin-bottom:12px;
-	}
-	.discount_rate,
-	.fianl_price {
-		margin-left:3px;
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 23px;
-	}
-	.discount_rate {
-		color:#da2128;
-		margin:0;
-	}
-	.price_origin {
-		margin-left:3px;
-		font-size: 14px;
-		line-height: 23px;
-		text-decoration: line-through;
-		color:#767676;
-	} 
-    .badge_line .badge {
-        font-size: 12px !important;
-    } 
-}
-/*=========  모듈 016 영역 ========*/
-//이벤트 공통으로 삭제 예정
-.mdl_selec_list_wrap{
-    padding:32px 20px 32px 20px;
-    background-color: #fff;
-    &.type2{
-        padding-top:0;
-    }
-    .tit{
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: -0.18px;
-        text-align: left;
-        margin-bottom:12px;
-    }
-} 
 
-.sticky_selec{
-	padding:20px;
-	position: sticky;
-	top:60px;
-	left:0;
-	z-index: 7;
-	background-color: #fff;
-	&.anchor{
-		top:60px;
-	}
-}
-.common_select{
-	width:100%;
-	height:50px;
-	padding:14px 25px 14px 15px;
-	border:1px solid #d5d5d5;
-	position:relative;
-	line-height: 22px;
-	letter-spacing: -0.14px;
-	border-radius: 6px;
-	outline: 0;
-	color:#767676;
-	appearance: none;
-	background:url(../images/guide/ico_selec_arrow.svg) no-repeat right 14px top 50% /9px;
-    option{
-        height:50px;
-    }
-}
 
 //더보기 버튼 영역
 .btn_more_div{
 	margin-top:26px;
 	.more_btn{
-		width:71px;
 		height:24px;
 		margin:0 auto;
 		display:flex;
@@ -318,6 +176,7 @@
 		font-weight:500;
 		letter-spacing: -0.15px;
 		color:#767676;
+        margin-right:3px;
 	}
 	.btn_more_icon{
 		width:24px;
@@ -649,13 +508,8 @@
 }
 //슬라이더 영역
 .module_wrap {
-	margin-top:11px;
-	padding-top:40px;
 	background-color: #fff;
 	overflow:hidden;
-	&:first-of-type{
-		margin:0;
-	}
 	.swiper{
 		padding-right:20px;
 	}
@@ -730,7 +584,11 @@
 		}
 	}
 }
-
+.ctg_topMenu + .module_wrap, 
+.sub_menu_wrap + .module_wrap {
+    padding:0; 
+    padding-top: 32px;
+}
 //슬라이더 영역 등록 상품 2개인 경우
 .module7_wrap.minimum_prod{
 	.module_slider_sm li{

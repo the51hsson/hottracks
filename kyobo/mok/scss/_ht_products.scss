@@ -277,7 +277,7 @@
 		color:#767676;
 	} 			
 	.title{
-		letter-spacing: -0.13px;
+		letter-spacing: -0.03em;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		display: -webkit-box;
@@ -288,7 +288,7 @@
 		font-weight: 500;
 		margin-bottom:6px;
 		line-height:19px;
-		min-height:38px;
+		//min-height:38px;
 	}
 	.price_line{
       display:flex;
@@ -296,16 +296,19 @@
 	  justify-content: flex-start;
 	}
 	.final_price{
-		margin:0 3px;
 		font-weight:700;
 		font-size: 16px;
 		line-height:22px;
+		letter-spacing: -0.03em;
+		margin-right:3px;
 	}
 	.discount_rate{
 		font-weight:700;
 		color:#DA2128;
 		font-size: 16px;
 		line-height:22px;
+		letter-spacing: -0.03em;
+		margin-right:3px;
 	}
 	.price_origin{
 		text-decoration: line-through;
@@ -319,7 +322,6 @@
 		text-decoration: none;
 		color:#000;
 		font-weight:500;
-		margin-left:3px;
 		margin-top:0;
 		font-size:16px;
 	}
@@ -439,17 +441,22 @@
 		margin-bottom:8px;
 		font-size: 13px;
 		line-height: 19px;
-		letter-spacing: -0.13px;
+		letter-spacing: -0.03em;
 		height:auto;
 	}
 	  .discount_rate,
 	  .final_price,
 	  .price_origin{
+		  font-size: 14px;
 		  line-height:18px;
+		  letter-spacing: -0.03em;
+		  margin:0;
+		  margin-right: 3px;
 	  }
 
 	.price_origin{
 		font-size: 10px;
+		margin:0;
 	} 
 	.price_origin.no_discount{
 		font-size: 14px;
@@ -463,6 +470,7 @@
 	}
 	.product_pic{
 		padding-top:99px;
+		margin-bottom:8px;
 		.evt_good_count{
 		 right:4px;
 		 bottom:4px;
@@ -475,6 +483,7 @@
 		margin-bottom:4px;
 		font-size: 12px;
 		line-height: 17px;
+		font-weight: normal;
 		height: auto;
 	}
 	.discount_rate,
@@ -504,6 +513,7 @@
 	
 	.price_origin.no_discount{
 		font-size: 12px;
+		font-weight: 700;;
 	} 
 }
 /* 1:1 비율 74*74*/
@@ -586,18 +596,26 @@
 	.price_line{
       display:flex;
 	  flex-flow: row wrap;
-		.final_price{
-			margin:0 5px;
-			font-weight: 500;
-		}
 		.discount_rate{
 			font-weight: 500;
 			color:#DA2128;
+			font-size: 16px;
+			margin-right:5px;
+		}
+		.final_price{
+			font-weight: 500;
+			font-size: 16px;
+
 		}
 		.price_origin{
 			font-size: 12px;
 			text-decoration: line-through;
 			color:#767676;
+			&.no_discount {
+				text-decoration: none;
+				font-size: 16px;
+				color:#000;
+			}
 		}  
 	}
 }

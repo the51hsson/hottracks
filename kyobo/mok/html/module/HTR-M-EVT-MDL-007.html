@@ -32,9 +32,10 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
     <!-- // font css -->
 
-    <!-- ht_ Hottracks custom css -->
-    <link rel="stylesheet" href="../../css/ht_event_mdl.css">
-    <!--// ht_ Hottracks custom css -->
+    <!-- ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
+    <link rel="stylesheet" href="../../css/ht_css_mok.css">
+    <link rel="stylesheet" href="../../css/ht_template_mok.css">
+    <!--// ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
 
 
     <!-- Plug-In javascript -->
@@ -60,130 +61,103 @@
 <body>
     <!-- wrapper -->
     <section>
-		<!--module7 (등록 상품 2개 이하) ul class="swiper-wrapper module7_slider"에 "swiper-wrapper" 제거 후 "nonswipe" Calss 추가-->
+		<!--등록 상품 2개 이하: ul class="swiper-wrapper module7_slider"에 "swiper-wrapper" 제거, "nonswipe" 추가-->
 		<div class="module_wrap type2">
 			<h3 class="left_tit">시즌 BEST 상품</h3>
 			<!--슬라이드 영역 (등록 상품 2개)-->
 			<div class="swiper mySwiper_sm">
 				<ul class="swiper-wrapper prod-wrapper">
+					<!--swiper-slide prod_item  반복-->
 					<li class="swiper-slide prod_item">
-					<div class="product_pic">
-						<img src="../../images/guide/module7_prod_sample2.png" class="bd_img" alt="핫트랙스 베스트 상품" title="핫트랙스 베스트 상품">
-					</div>
-					<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-					<div class="price_line">
-						<span class="discount_rate">15%</span>
-						<!-- <span class="final_price">9,234,000</span> -->
-						<span class="price_origin no_discount">9,200,000</span>
-					</div>
+						<div class="product_pic">
+							<img src="../../images/guide/module7_prod_sample2.png" class="bd_img" alt="">
+						</div>
+						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+						<div class="price_line">
+							<span class="discount_rate">15%</span>
+							<!-- <span class="final_price">9,234,000</span> -->
+							<span class="price_origin no_discount">9,200,000</span>
+						</div>
 					</li>
+					<!--//swiper-slide prod_item  반복-->
+
 					<li class="swiper-slide prod_item">
-					<div class="product_pic">
-						<img src="../../images/guide/module7_prod_sample2.png" class="bd_img" alt="핫트랙스 베스트 상품" title="핫트랙스 베스트 상품">
-					</div>
-					<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-					<div class="price_line">
-						<span class="discount_rate">15%</span>
-						<span class="final_price">9,234,000</span>
-						<span class="price_origin">9,200,000</span>
-					</div>
+						<div class="product_pic">
+							<img src="../../images/guide/module7_prod_sample2.png" class="bd_img" alt="">
+						</div>
+						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+						<div class="price_line">
+							<span class="discount_rate">15%</span>
+							<span class="final_price">9,234,000</span>
+							<span class="price_origin">9,200,000</span>
+						</div>
 					</li>
 				</ul>
 		    </div>
 		</div>   
 		<hr class="divide_underline"/>
+
 		<!-- 모듈 7 컨텐츠 -->
 		<div class="module_wrap type2">
 			<h3 class="left_tit">시즌 BEST 상품</h3>
 			<!--슬라이드 영역(등록 상품 3개 이상)-->
 			<div class="swiper mySwiper_sm">
 				<ul class="swiper-wrapper prod-wrapper type_sm">
-				<li class="swiper-slide prod_item">
-					<div class="product_pic">
-						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-					</div>
-					<div class="company">dretec</div>
-					<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-					<div class="price_line">
-						<span class="discount_rate">15%</span>
-						<span class="final_price">9,234,000</span>
-						<span class="price_origin">9,200,000</span>
-					</div>
-				</li>
-				<li class="swiper-slide prod_item">
-					<div class="product_pic">
-						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-					</div>
-					<div class="company">dretec</div>
-					<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-					<div class="price_line">
-						<span class="discount_rate">15%</span>
-						<span class="final_price">9,234,000</span>
-						<span class="price_origin">9,200,000</span>
-					</div>
-				</li>
-				<li class="swiper-slide prod_item">
-					<div class="product_pic">
-						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-					</div>
-					<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-					<div class="company">dretec</div>
-					<div class="price_line">
-						<span class="discount_rate">15%</span>
-						<span class="final_price">9,234,000</span>
-						<span class="price_origin">9,200,000</span>
-					</div>
-				</li>
-				<li class="swiper-slide prod_item">
-					<div class="product_pic">
-					<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-					</div>
-					<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-					<div class="company">dretec</div>
-					<div class="price_line">
-					<span class="discount_rate">15%</span>
-					<span class="final_price">9,234,000</span>
-					<span class="price_origin">9,200,000</span>
-					</div>
-				</li>
-				<li class="swiper-slide prod_item">
-					<div class="product_pic">
-						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-					</div>
-					<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-					<div class="company">dretec</div>
-					<div class="price_line">
-						<span class="discount_rate">15%</span>
-						<span class="final_price">9,234,000</span>
-						<span class="price_origin">9,200,000</span>
-					</div>
-				</li>
-				<li class="swiper-slide prod_item">
-					<div class="product_pic">
-						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-					</div>
-					<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-					<div class="price_line">
-						<span class="discount_rate">15%</span>
-						<span class="final_price">9,234,000</span>
-						<span class="price_origin">9,200,000</span>
-					</div>
-				</li>
-				<li class="swiper-slide prod_item">
-					<div class="product_pic">
-						<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
-					</div>
-					<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-					<div class="company">dretec</div>
-					<div class="price_line">
-						<span class="discount_rate">15%</span>
-						<span class="final_price">9,234,000</span>
-						<span class="price_origin">9,200,000</span>
-					</div>
-				</li>
+					<!--swiper-slide prod_item 반복-->
+					<li class="swiper-slide prod_item">
+						<div class="product_pic">
+							<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="" >
+						</div>
+						<div class="company">dretec</div>
+						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+						<div class="price_line">
+							<span class="discount_rate">20%</span>
+							<span class="final_price">1,234,000</span>
+							<span class="price_origin">1,299,000</span>
+						</div>
+					</li>
+					<!--//swiper-slide prod_item 반복-->
+
+					<li class="swiper-slide prod_item">
+						<div class="product_pic">
+							<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="핫트랙스 모듈 7 상품" title="핫트랙스 모듈 7 상품">
+						</div>
+						<div class="company">dretec</div>
+						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+						<div class="price_line">
+							<span class="discount_rate">15%</span>
+							<span class="final_price">9,234,000</span>
+							<span class="price_origin">9,200,000</span>
+						</div>
+					</li>
+					<li class="swiper-slide prod_item">
+						<div class="product_pic">
+							<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="">
+						</div>
+						<div class="company">dretec</div>
+						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+						<div class="price_line">
+							<span class="discount_rate">15%</span>
+							<span class="final_price">9,234,000</span>
+							<span class="price_origin">9,200,000</span>
+						</div>
+					</li>
+					<li class="swiper-slide prod_item">
+						<div class="product_pic">
+							<img src="../../images/guide/module7_prod_sample1.png" class="bd_img" alt="" >
+						</div>
+						<div class="company">dretec</div>
+						<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+						<div class="price_line">
+							<span class="discount_rate">15%</span>
+							<span class="final_price">9,234,000</span>
+							<span class="price_origin">9,200,000</span>
+						</div>
+					</li>
 				</ul>
 			</div> 
 		</div>
+		<!-- //모듈 7 컨텐츠 -->
 		<hr class="divide_underline"/>
   </section>
   <!-- // wrapper -->

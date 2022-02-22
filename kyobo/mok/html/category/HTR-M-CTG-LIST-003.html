@@ -32,10 +32,6 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" >
     <!-- // font css -->
 
-    <!-- Custom styles for this template -->
-    <!-- <link rel="stylesheet" href="../../css/style_mok.css" > -->
-    <!-- // Custom styles for this template -->
-
 	<!-- ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
 	<link rel="stylesheet" href="../../css/ht_css_mok.css">
 	<link rel="stylesheet" href="../../css/ht_template_mok.css">
@@ -55,12 +51,12 @@
     <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
     <!-- // Plug-In javascript -->
 
-    <!-- UI JavaScript -->
-    <!-- <script src="../../vendors/js/ui_mok.js"></script> -->
-    <script src="../../js/front_bak.js"></script>
-    
-    <!-- // UI JavaScript -->
-    <script src="../../js/ht_category.js"></script>
+	<!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
+	<script src="../../js/front_bak.js"></script>
+	<script src="../../js/mok.ui.js"></script>
+	<script src="../../js/ht_lib.js"></script>
+	<script src="../../js/ht_template.js"></script>
+	<!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
 </head>
 
 <body>
@@ -101,46 +97,52 @@
 			<!--1depth  메뉴-->
 			<div class="ctg_topMenu depth1">
 				<div class="inner_wrap">
-				<a href="#" class="active">디자인 문구</a>
-				<a href="#" >필기구</a>
-				<a href="#">오피스</a>
-				<a href="#">디지털/자동차</a>
-				<a href="#">가전</a>
-				<a href="#">유아동 용품</a>
-				<a href="#" class="active">오피스</a>
+					<a href="#" class="active">디자인 문구</a>
+					<a href="#" >필기구</a>
+					<a href="#">오피스</a>
+					<a href="#">디지털/자동차</a>
+					<a href="#">가전</a>
+					<a href="#">유아동 용품</a>
+					<a href="#">오피스</a>
 				</div>
 			</div> 
+			<!--//1depth  메뉴-->
+			<!--2depth  메뉴-->
 			<div class="ctg_topMenu depth2">
 				<div class="inner_wrap">
-				<a href="#" class="active depth3_none">전체</a>
-				<a href="#">다이어리/스케줄러</a>
-				<a href="#">캘린더/만년</a>
-				<a href="#">디지털/자동차</a>
-				<a href="#">노트/메모</a>
-				<a href="#">포토앨범</a>
-				<a href="#">달력/포스터</a>
+					<a href="#" class="active depth3_none">전체</a>
+					<a href="#">다이어리/스케줄러</a>
+					<a href="#">캘린더/만년</a>
+					<a href="#">디지털/자동차</a>
+					<a href="#">노트/메모</a>
+					<a href="#">포토앨범</a>
+					<a href="#">달력/포스터</a>
 				</div>
 			</div> 
+			<!--//2depth  메뉴-->
+			<!--3depth  메뉴-->
 			<div class="sub_menu_wrap">
 				<div class="ctg_subMenu">
-				<a href="#" class="active">전체</a>
-				<a href="#">비즈니스 플래너</a>
-				<a href="#">만년 다이어리</a>
-				<a href="#">디지털/자동차</a>
-				<a href="#">노트/메모</a>
-				<a href="#">포토앨범</a>
-				<a href="#">달력/포스터</a>
-				<a href="#">노트/메모</a>
-				<a href="#">포토앨범</a>
-				<a href="#">달력/포스터</a>
-				<a href="#">노트/메모</a>
-				<a href="#">포토앨범</a>
-				<a href="#">달력/포스터</a>
+					<a href="#" class="active">전체</a>
+					<a href="#">비즈니스 플래너</a>
+					<a href="#">만년 다이어리</a>
+					<a href="#">디지털/자동차</a>
+					<a href="#">노트/메모</a>
+					<a href="#">포토앨범</a>
+					<a href="#">달력/포스터</a>
+					<a href="#">노트/메모</a>
+					<a href="#">포토앨범</a>
+					<a href="#">달력/포스터</a>
+					<a href="#">노트/메모</a>
+					<a href="#">포토앨범</a>
+					<a href="#">달력/포스터</a>
 				</div>
 				<div class="subMenu_btn_area">
 				<button type="button" class="subMenu_btn"></button>
 				</div>   
 			</div>
+			<!--//3depth  메뉴-->	   
+
 			<!-- 컨텐츠 -->
 			<div class="module_wrap type2">
 					<span class="md_tab">
@@ -173,7 +175,7 @@
 										<span class="badge rounded badge_default_evt">사은품</span>
 										<span class="badge rounded badge_default_evt">무료배송</span>
 									</div>
-							</div>
+								</div>
 							</li>	
 							<li class="swiper-slide prod_item">
 								<div class="product_pic">
@@ -255,19 +257,21 @@
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<a href="#n"><img src="../../images/guide/ctg_wel_banner.png" ></a>
+						<a href="#n"><img src="../../images/guide/ctg_wel_banner.png"  alt=""></a>
 					</div>
 					<div class="swiper-slide">
-						<a href="#n"><img src="../../images/guide/@belt_banner.png" ></a>
+						<a href="#n"><img src="../../images/guide/@belt_banner.png"  alt=""></a>
 					</div>
 					<div class="swiper-slide">
-						<a href="#n"><img src="../../images/wel_main/@img_belt_banner.jpg"></a>
+						<a href="#n"><img src="../../images/wel_main/@img_belt_banner.jpg"  alt=""></a>
 					</div>
 					</div>
 				</div>
 				<div class="swiper-pagination out_bottom"></div>
 			</div>
+			<!-- //wel_belt_banner -->
 			<hr class="divide_hr">
+
 			<!--스티키 메뉴-->
 			<article class="ctg_floating_line">
 				<div class="menu_nm" data-role="btn-dialog" data-target="#ClickCksClose">
@@ -283,6 +287,8 @@
 					<li>품절포함</li>
 				</ul>
 			</article>
+			<!--//스티키 메뉴-->
+
 			<!--스터디 플래너-->
 			<section class="ctg_prod_wrap">
 				<div class="prod_list_info">
@@ -554,7 +560,7 @@
 				</div>
 			</section>
 			<!--//320 * 190 배너-->
-			
+
 			<!--띠배너-->
 			<section class="belt_banner">
 				<img src="../../images/guide/@tod_belt_banner_sample.svg" alt="코너메뉴 띠배너" title="코너메뉴 띠배너">
