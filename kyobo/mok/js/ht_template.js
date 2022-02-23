@@ -926,6 +926,30 @@ $(function(){
 });
 
 
+/* 핫트랙스 서비스 안내 */
+$(function(){
+    if(!$('.cus_cont_view').length) return;
+    $(window).on('scroll', function() {
+        $('.cus_cont_view').each(function (index, element) {
+            if($(window).scrollTop() >= $(this).offset().top - 125) {
+                $('.cus_sv_tab a').removeClass('active');
+                $('.cus_sv_tab a').eq(index).addClass('active');
+            } 
+        });
+    });
+    $.fn.anchorCusChk = function(){
+        $.each(this, function(i,v){
+            var s = $(v).attr('href');
+            $('html, body').stop().animate({scrollTop:$(s).offset().top - 124 }, 500);
+        });
+    };
+    $('.cus_sv_tab a').on('click', function(e) {
+        $(this).anchorCusChk();
+        e.preventDefault();
+    });
+});
+
+
 
 
 //$(function(){
