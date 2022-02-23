@@ -771,6 +771,7 @@
           justify-content: flex-start;
   padding-right: 20px;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 
 .ctg_floating_line h3 {
@@ -803,7 +804,8 @@
 .ctg_floating_menues > button {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 8px 14px;
+  height: 36px;
+  padding: 0 14px;
   border: 1px solid #d5d5d5;
   border-radius: 20px;
   margin-right: 4px;
@@ -812,6 +814,8 @@
   letter-spacing: -0.013em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  line-height: 36px;
+  cursor: pointer;
 }
 
 .ctg_floating_menues > li:last-of-type,
@@ -915,6 +919,7 @@
   font-weight: 500;
   padding-right: 14px;
   background: url(../images/guide/arrow_down.svg) no-repeat right 0px top 50%/10px;
+  cursor: pointer;
 }
 
 .ctg_prod_wrap .ctg_list_icon {
@@ -922,6 +927,7 @@
   width: 14px;
   height: 19px;
   background: url(../images/guide/ico_ctg_list_type1.svg) no-repeat center center/14px;
+  cursor: pointer;
 }
 
 .ctg_prod_wrap .ctg_list_icon.row_list {

@@ -62,10 +62,7 @@
 <body>
 <div class="ht_ wrapper">
 	<p style="margin:50px 0;">
-		<button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popBottomHasBtnEx" style="width:100%;"><span class="text">스터디 플래너 / #popBottomHasBtnEx</span></button>
-        <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#ClickCksClose" style="width:100%;margin-top:12px"><span class="text">신상품순 / #ClickCksClose</span></button>
-        <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popBottomBrand2" style="width:100%;margin-top:12px;"><span class="text">브랜드 골라보기 : 없는 경우 / #popBottomBrand2</span></button>
-        <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popBottomBrand" style="width:100%;margin-top:12px;"><span class="text">브랜드 골라보기 / #popBottomBrand</span></button>
+		<button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#ClickCksClose" style="width:100%;"><span class="text">스터디 플래너 / #ClickCksClose</span></button>
 	</p>
 </div>
 <script>
@@ -77,64 +74,69 @@ $(function(){
 </script>
 
 
-<!-- 스터디 플래너 하단 레이어 팝업 : id="popBottomHasBtnEx" -->
-<div id="popBottomHasBtnEx" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
+<!-- 스터디 플래너 하단 레이어 팝업 : id="ClickCksClose" -->
+<div id="ClickCksClose" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
 	<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
 
 	<!-- dialog_header -->
 	<div class="dialog_header">
-		<div class="dialog_title">스터디플래너 전체</div>
+		<div class="dialog_title">정렬하기</div>
 	</div>
 	<!-- //dialog_header -->
 
 	<!-- dialog_contents -->
 	<div class="dialog_contents checkbox_type">
-	   <ul class="cks_list">
-		   <li>
-			   <label class="ck_label_wrap">
-				   <input type="checkbox" class="checkbox_cm">
-				   <span class="label_for_sp">스터디 플래너 전체</span>
-			   </label>
-		   </li>
-		   <li>
+		<ul class="cks_list">
+			<li>
 				<label class="ck_label_wrap">
-					<input type="checkbox" class="checkbox_cm">
-					<span class="label_for_sp">스터디 플래너 전체2</span>
+					<input type="radio"  name="test" class="checkbox_cm">
+					<span class="label_for_radio">신상품순</span>
 				</label>
 			</li>
 			<li>
 				<label class="ck_label_wrap">
-					<input type="checkbox" class="checkbox_cm">
-					<span class="label_for_sp">스터디 플래너 전체3</span>
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">판매 인기순</span>
 				</label>
 			</li>
 			<li>
 				<label class="ck_label_wrap">
-					<input type="checkbox" class="checkbox_cm">
-					<span class="label_for_sp">스터디 플래너 전체4</span>
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">낮은 가격순</span>
 				</label>
 			</li>
 			<li>
 				<label class="ck_label_wrap">
-					<input type="checkbox" class="checkbox_cm">
-					<span class="label_for_sp">스터디 플래너 전체5</span>
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">높은 가격순</span>
 				</label>
 			</li>
 			<li>
 				<label class="ck_label_wrap">
-					<input type="checkbox" class="checkbox_cm">
-					<span class="label_for_sp">스터디 플래너 전체6</span>
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">높은 할인율순</span>
+				</label>
+			</li>
+			<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">찜 ♥ 많은순</span>
 				</label>
 			</li>  
-	   </ul>
+			<li>
+				<label class="ck_label_wrap">
+					<input type="radio"  name="test"class="checkbox_cm">
+					<span class="label_for_radio">리뷰 평점순</span>
+				</label>
+			</li>
+		</ul>
 	</div>
 	<!-- //dialog_contents -->
 
 	<!-- dialog_footer -->
 	<div class="dialog_footer ctg_cks"></div>
-	<!-- //dialog_footer -->
 </div>
-<!-- //스터디 플래너 하단 레이어 팝업 : id="popBottomHasBtnEx" -->
+<!-- //스터디 플래너 하단 레이어 팝업 : id="ClickCksClose" -->
 
 
 <!-- 브랜드 골라보기 하단 레이어 팝업 : id="popBottomBrand" -->
@@ -210,82 +212,8 @@ $(function(){
 <!-- //브랜드 골라보기 하단 레이어 팝업 : id="popBottomBrand" -->
 
 
-<!-- 브랜드 골라보기 하단 레이어 팝업 : id="popBottomBrand2" - 확인용 -->
-<div id="popBottomBrand2" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
-	<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
-
-	<!-- dialog_header -->
-	<div class="dialog_header">
-		<div class="dialog_title">브랜드 골라보기</div>
-	</div>
-	<!-- //dialog_header -->
-
-	<!-- dialog_contents -->
-	<div class="dialog_contents checkbox_type">
-		<div class="search_area">
-			<input type="text" placeholder="브랜드명 검색" value="아이코나">
-		</div>
-		<!--
-		<ul class="cks_list">
-			<li>
-				<label class="ck_label_wrap">
-					<input type="checkbox" class="checkbox_cm">
-					<span class="label_for_sp">스터디 플래너 전체</span>
-				</label>
-			</li>
-			<li>
-				<label class="ck_label_wrap">
-					<input type="checkbox" class="checkbox_cm">
-					<span class="label_for_sp">스터디 플래너 전체2</span>
-				</label>
-			</li>
-			<li>
-				<label class="ck_label_wrap">
-					<input type="checkbox" class="checkbox_cm">
-					<span class="label_for_sp">스터디 플래너 전체3</span>
-				</label>
-			</li>
-			<li>
-				<label class="ck_label_wrap">
-					<input type="checkbox" class="checkbox_cm">
-					<span class="label_for_sp">스터디 플래너 전체4</span>
-				</label>
-			</li>
-			<li>
-				<label class="ck_label_wrap">
-					<input type="checkbox" class="checkbox_cm">
-					<span class="label_for_sp">스터디 플래너 전체5</span>
-				</label>
-			</li>
-			<li>
-				<label class="ck_label_wrap">
-					<input type="checkbox" class="checkbox_cm">
-					<span class="label_for_sp">스터디 플래너 전체6</span>
-				</label>
-			</li>  
-		</ul>
-		-->
-		<!-- 검색결과 없는 경우 -->
-		<div class="no_search_data">
-			<span class="no_search_data_icon"></span>
-			<span class="no_search_data_txt">검색 결과가 없습니다.</span>
-		</div>
-		<!-- //검색결과 없는 경우 -->
-	</div>
-	<!-- //dialog_contents -->
-
-	<!-- dialog_footer -->
-	<div class="dialog_footer ctg_cks search">
-		<button type="button" class="btn_md btn_outline_primary" ><span class="text">초기화</span></button>
-		<button type="button" class="btn_md btn_primary" data-dialog-close><span class="text">상품보기</span></button>
-	</div>
-	<!-- //dialog_footer -->
-</div>
-<!-- //브랜드 골라보기 하단 레이어 팝업 : id="popBottomBrand2" - 확인용 -->
-
-
-<!-- 신상품순 보기 레이어 : id="ClickCksClose"-->
-<div id="ClickCksClose" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
+<!-- 신상품순 보기 레이어 : id="ClickCksClose1"-->
+<div id="ClickCksClose1" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
 	<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
 	
 	<!-- dialog_header -->
@@ -347,6 +275,6 @@ $(function(){
 	<div class="dialog_footer ctg_cks"></div>
 	<!-- //dialog_footer -->
 </div>
-<!-- //신상품순 보기 레이어 : id="ClickCksClose"-->
+<!-- //신상품순 보기 레이어 : id="ClickCksClose1"-->
 </body>
 </html>
