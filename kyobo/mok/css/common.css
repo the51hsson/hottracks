@@ -5745,7 +5745,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 .evt_products .price_origin.no_discount {
   text-decoration: none;
   color: #000;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 0;
   font-size: 16px;
 }

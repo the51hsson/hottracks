@@ -3,7 +3,9 @@
 .module_section_bg {
     background-color: #f7f7f7;
   }
-
+ .list_uniq_btm  {
+     padding-bottom:60px;
+ }
   /*===============     모듈 001 영역(기획전 타이틀)   ==================*/
 .evt_mdl_title {
 	position: relative;
@@ -444,7 +446,38 @@
 		padding-left:28px;
 	}
 }
-
+/*===============     모듈 010-2 영역(전체 레이어 팝업/응모하기)   ==================*/
+.evt_apply_wrap{
+	label{
+		display: block;
+		margin-top:20px;
+		line-height: 20px; 
+		letter-spacing: -0.14px;
+		font-weight: 500;
+		&:first-of-type{
+			margin:0;
+		}
+	}
+	.evt_apply_input{
+		display: block;
+		width:100%;
+		margin-top:8px;
+		padding:14px;
+		line-height: 20px;
+		border: 1px solid #d5d5d5;
+		outline: none;
+        transition: border-color 0.2s ease-out;
+		&:disabled{
+			color: #767676;
+			background-color: #f7f7f7;
+			pointer-events: none;
+			cursor: default;
+		}
+		&:focus {
+			border-color: #000;
+		}
+	}
+}
  /*=======================  모듈 011 영역 (rullet) ==================*/
  .rullet_wrap {
     position:relative;
