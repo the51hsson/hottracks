@@ -956,39 +956,53 @@
   padding-right: 20px;
 }
 
-.evt_slider {
+.evt_slider_wrap.evt.swiper,
+.evt_slider_wrap.evt .swiper,
+.brandSwiper.swiper,
+.brandSwiper .swiper {
+  padding-right: 0;
+}
+
+.evt_slider_wrap.evt .evt_slider,
+.brandSwiper .evt_slider {
   padding-top: 20px;
   padding-right: 20px;
 }
 
-.evt_slider .evt_item {
+.evt_slider_wrap.evt .evt_slider .evt_item,
+.brandSwiper .evt_slider .evt_item {
   width: 320px;
   cursor: pointer;
 }
 
-.evt_slider .evt_item span {
+.evt_slider_wrap.evt .evt_slider .evt_item span,
+.brandSwiper .evt_slider .evt_item span {
   display: block;
 }
 
-.evt_slider .evt_item .img_wrap {
+.evt_slider_wrap.evt .evt_slider .evt_item .img_wrap,
+.brandSwiper .evt_slider .evt_item .img_wrap {
   position: relative;
   height: 0;
   padding-top: 60%;
   border-radius: 15px;
 }
 
-.evt_slider .evt_item img {
+.evt_slider_wrap.evt .evt_slider .evt_item img,
+.brandSwiper .evt_slider .evt_item img {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
 }
 
-.evt_slider .evt_item:last-of-type {
+.evt_slider_wrap.evt .evt_slider .evt_item:last-of-type,
+.brandSwiper .evt_slider .evt_item:last-of-type {
   margin-right: 20px;
 }
 
-.evt_slider .title {
+.evt_slider_wrap.evt .evt_slider .title,
+.brandSwiper .evt_slider .title {
   margin-top: 12px;
   font-weight: 500;
   font-size: 16px;
@@ -997,26 +1011,30 @@
   overflow: hidden;
 }
 
-.evt_slider .mpt_discount {
+.evt_slider_wrap.evt .evt_slider .mpt_discount,
+.brandSwiper .evt_slider .mpt_discount {
   color: #da2128;
   margin-right: 3px;
 }
 
-.evt_slider .sub {
+.evt_slider_wrap.evt .evt_slider .sub,
+.brandSwiper .evt_slider .sub {
   margin-top: 4px;
   font-size: 13px;
   line-height: 19px;
   letter-spacing: -0.13px;
 }
 
-.evt_slider .show_all_list {
+.evt_slider_wrap.evt .evt_slider .show_all_list,
+.brandSwiper .evt_slider .show_all_list {
   position: relative;
   background-color: #eee;
   color: #767676;
   border-radius: 4px;
 }
 
-.evt_slider .show_all_list span {
+.evt_slider_wrap.evt .evt_slider .show_all_list span,
+.brandSwiper .evt_slider .show_all_list span {
   display: block;
   width: 100%;
   top: 50%;
@@ -1174,7 +1192,7 @@
 
 .coupon_swiper .evt_slider .evt_item {
   width: 320px;
-  padding: 20px 90px 21px 18px;
+  padding: 20px 90px 23px 18px;
   height: auto;
   min-height: 100%;
   background: url(../images/guide/brand_coupon_bg.svg) no-repeat left top/contain;
