@@ -1778,10 +1778,6 @@
   position: relative;
 }
 
-.evt_end_dim .evt_banner_wrap {
-  padding-bottom: 0;
-}
-
 .evt_end_dim:before {
   content: "기획전 종료";
   position: absolute;

@@ -1442,9 +1442,6 @@
 //이벤트 종료 블랙스크린
 .evt_end_dim {
 	position:relative;
-    .evt_banner_wrap {
-        padding-bottom:0
-    }
 }
 .evt_end_dim:before{
 	content:"기획전 종료";

@@ -116,10 +116,10 @@ $(function(){
   }); 
    /*================================= HTR-M-EVT-VIEW-000.html ==============================*/  
    //이벤트 종료 블랙스크린 높이 구하기
-   if(location.href.match('HTR-M-EVT-VIEW-000-1-01.html')) {
-	var headerH = $('.ht_.header_wrapper').height();
-	var evtMdltitleH = $('.evt_mdl_title').height();
-	 $('.evt_end_dim').css('height', 'calc(100vh - '+( headerH - evtMdltitleH)+'px)');
+   if(location.href.match('HTR-M-EVT-VIEW-000-1')) {
+      var headerH = $('.ht_.header_wrapper').height();
+      var evtMdltitleH = $('.evt_mdl_title').height();
+      $('.evt_end_dim').css('height', 'calc(100vh - '+( headerH - evtMdltitleH)+'px)');
    };   
 
    //앵커 메뉴 버튼 활성화 기능

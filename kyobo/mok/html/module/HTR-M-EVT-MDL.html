@@ -53,10 +53,13 @@
 <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
 <!-- // Plug-In javascript -->
 
-<!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
-<script src="../../js/front_bak.js"></script>
-<script src="../../js/ht_evt_mdl.js"></script>
-<!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
+    <!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
+    <script src="../../js/front_bak.js"></script>
+    <script src="../../js/mok.ui.js"></script>
+    <script src="../../js/ht_lib.js"></script>
+    <script src="../../js/ht_template.js"></script>
+    <script src="../../js/ht_evt_mok.js"></script>
+    <!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
 </head>
 
 <body>
@@ -318,7 +321,8 @@
 			<!--슬라이드 영역 (등록 상품 2개)-->
 			<div class="swiper mySwiper_sm">
                 <!--등록 상품 2개 이하: ul class="swiper-wrapper module7_slider"에 "swiper-wrapper" 제거, "nonswipe" 추가-->
-				<ul class="swiper-wrapper prod-wrapper">
+                <!--[2022-02-22] ul.swiper-wrapper 에 type_sm 추가 -->
+				<ul class="swiper-wrapper prod-wrapper type_sm">
 					<!--swiper-slide prod_item  반복-->
 					<li class="swiper-slide prod_item">
 						<div class="product_pic">
@@ -851,8 +855,8 @@
                 <div class="cmt_section_title">
                 <div class="title">총 <em class="highlight">0건</em>의 댓글이 있습니다.</div>
                 <span class="evt_ck_area">
-                    <input type="checkbox" id="myEventCk" class="common_check">
-                    <label for="myEventCk" class="common_ck_label">내가 쓴 댓글 보기</label>
+                    <input type="checkbox" id="myEventCk2" class="common_check">
+                    <label for="myEventCk2" class="common_ck_label">내가 쓴 댓글 보기</label>
                 </span>
                 </div>
                 <!--검색 결과 없을 때-->
@@ -924,8 +928,8 @@
                 <div class="cmt_section_title">
                     <div class="title">총 <em class="highlight">744건</em>의 댓글이 있습니다.</div>
                     <span class="evt_ck_area">
-                        <input type="checkbox" id="myEventCk" class="common_check">
-                        <label for="myEventCk" class="common_ck_label">내가 쓴 댓글 보기</label>
+                        <input type="checkbox" id="myEventCk3" class="common_check">
+                        <label for="myEventCk3" class="common_ck_label">내가 쓴 댓글 보기</label>
                     </span>
                 </div>
                 <!--댓글 리스트 영역-->

@@ -5930,6 +5930,12 @@
           box-sizing: border-box;
   border-radius: 4px;
   overflow: hidden;
+  -webkit-transition: border-color 0.2s ease-out;
+  transition: border-color 0.2s ease-out;
+}
+
+.comment_area .comment_txt_box.active {
+  border-color: #000;
 }
 
 .comment_area textarea {

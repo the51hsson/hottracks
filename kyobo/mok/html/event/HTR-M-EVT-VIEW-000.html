@@ -52,13 +52,13 @@
     <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
     <!-- // Plug-In javascript -->
 
-    <!-- UI JavaScript -->
-    <!-- <script src="../../vendors/js/ui_mok.js"></script> -->
+    <!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
     <script src="../../js/front_bak.js"></script>
-    
-    <!-- // UI JavaScript -->
-    <script src="../../js/ht_event_list.js"></script>
-    <script src="../../js/ht_evt_mdl.js"></script>
+    <script src="../../js/mok.ui.js"></script>
+    <script src="../../js/ht_lib.js"></script>
+    <script src="../../js/ht_template.js"></script>
+    <script src="../../js/ht_evt_mok.js"></script>
+    <!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
 </head>
 
 <body>
@@ -243,29 +243,43 @@
                 <h3 class="left_tit">시즌 BEST 상품</h3>
                 <!--슬라이드 영역 (등록 상품 2개)-->
                 <div class="swiper mySwiper_sm">
-                    <ul class="swiper-wrapper prod-wrapper">
+                    <!--[2022-02-21] ul.swiper-wrapper 에 type_sm 추가(추가해야 nonswipe 클래스로 컨트롤 가능)-->
+                    <ul class="swiper-wrapper prod-wrapper type_sm">
                         <li class="swiper-slide prod_item">
-                        <div class="product_pic">
-                            <img src="../../images/guide/module7_prod_sample2.png" class="bd_img" alt="" >
-                        </div>
-                        <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-                        <div class="price_line">
-                            <span class="discount_rate">15%</span>
-                            <!-- <span class="final_price">9,234,000</span> -->
-                            <span class="price_origin no_discount">134,000</span>
-                        </div>
+                            <div class="product_pic">
+                                <img src="../../images/guide/module7_prod_sample2.png" class="bd_img" alt="" >
+                            </div>
+                            <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+                            <div class="price_line">
+                                <span class="discount_rate">15%</span>
+                                <!-- <span class="final_price">9,234,000</span> -->
+                                <span class="price_origin no_discount">134,000</span>
+                            </div>
                         </li>
                         <li class="swiper-slide prod_item">
-                        <div class="product_pic">
-                            <img src="../../images/guide/module7_prod_sample2.png" class="bd_img" alt="" >
-                        </div>
-                        <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
-                        <div class="price_line">
-                            <span class="discount_rate">15%</span>
-                            <span class="final_price">134,000</span>
-                            <span class="price_origin">9,200,000</span>
-                        </div>
+                            <div class="product_pic">
+                                <img src="../../images/guide/module7_prod_sample2.png" class="bd_img" alt="" >
+                            </div>
+                            <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+                            <div class="price_line">
+                                <span class="discount_rate">15%</span>
+                                <span class="final_price">134,000</span>
+                                <span class="price_origin">9,200,000</span>
+                            </div>
                         </li>
+                        <!-- 
+                            <li class="swiper-slide prod_item">
+                                <div class="product_pic">
+                                    <img src="../../images/guide/module7_prod_sample2.png" class="bd_img" alt="" >
+                                </div>
+                                <div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+                                <div class="price_line">
+                                    <span class="discount_rate">15%</span>
+                                    <span class="final_price">134,000</span>
+                                    <span class="price_origin">9,200,000</span>
+                                </div>
+                            </li> 
+                        -->
                     </ul>
                 </div>
             </div>   

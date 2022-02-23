@@ -8394,6 +8394,7 @@ input[type=number] {
   font-weight: 500;
   margin-bottom: 6px;
   line-height: 19px;
+  min-height: 38px;
 }
 
 .prod-wrapper .price_line,
@@ -8590,7 +8591,6 @@ input[type=number] {
   font-size: 13px;
   line-height: 19px;
   letter-spacing: -0.03em;
-  height: auto;
 }
 
 .type_sm .discount_rate,
@@ -8637,7 +8637,7 @@ input[type=number] {
   font-size: 12px;
   line-height: 17px;
   font-weight: normal;
-  height: auto;
+  min-height: 34px;
 }
 
 .type_xs .discount_rate,
@@ -8692,7 +8692,7 @@ input[type=number] {
 .type_xxs .title {
   font-size: 12px;
   margin-bottom: 4px;
-  height: auto;
+  min-height: auto;
 }
 
 .type_xxs .badge_line {
@@ -8766,7 +8766,6 @@ input[type=number] {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   word-break: keep-all;
-  height: auto;
 }
 
 .nonswipe .price_line {
@@ -8963,6 +8962,10 @@ input[type=number] {
 
 .evt_products.row_dir .prod_item .company {
   display: block;
+}
+
+.evt_products.row_dir .prod_item .title {
+  min-height: auto;
 }
 
 .evt_products.row_dir .prod_item:nth-of-type(2n) .replace_prod_swap {
