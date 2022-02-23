@@ -92,62 +92,58 @@
     </header>
     <!-- // 헤더 -->
 
-<link rel="stylesheet" href="../../css/ht_wel_main.css" />
-
 <style>
 .mc_tit02 {margin-bottom:15px;color:#000;font-size:20px;font-weight:700;line-height:32px;letter-spacing:-1px;}
 .mc_tit03 {margin-bottom:10px;color:#000;font-size:16px;font-weight:700;line-height:26px;letter-spacing:-0.5px;}
-.contents_wrap button {width:100%;margin-bottom:20px;}
-.contents_wrap button:last-child {margin-bottom:0;}
+.cont_wrap button {width:100%;margin-bottom:20px;}
+.cont_wrap button:last-child {margin-bottom:0;}
 </style>
 
-    <!-- 컨텐츠 -->
-    <main id="containerWrapper" class="container_wrapper">
-        <!-- contents_wrap -->
-        <section class="contents_wrap">
-            <!-- 팝업 -->
-            <div style="padding:40px 20px 50px 20px;">
-                <h2 class="mc_tit02">알림 팝업</h2>
-                <button type="button" class="btn_sm btn_light_gray" data-role="btn-dialog" data-target="#popAlert01"><span class="text">알림(확인) / #popAlert01</span></button>
 
-                <button type="button" class="btn_sm btn_light_gray" data-role="btn-dialog" data-target="#popAlert02"><span class="text">알림(취소/확인) / #popAlert02</span></button> 
+    <!-- cont_wrap -->
+    <section class="cont_wrap"><!-- 22.02 : 코너메뉴 : class="cont_wrap" 통일 -->
+        <!-- 팝업 -->
+        <div style="padding:40px 20px 50px 20px;">
+            <h2 class="mc_tit02">알림 팝업</h2>
+            <button type="button" class="btn_sm btn_light_gray" data-role="btn-dialog" data-target="#popAlert01"><span class="text">알림(확인) / #popAlert01</span></button>
 
-                <button type="button" class="btn_sm btn_light_gray" data-role="btn-dialog" data-target="#popAlert03"><span class="text">알림(타이틀 없는 경우) / #popAlert03</span></button> 
-            </div>
-            <!-- //팝업 -->
+            <button type="button" class="btn_sm btn_light_gray" data-role="btn-dialog" data-target="#popAlert02"><span class="text">알림(취소/확인) / #popAlert02</span></button> 
 
-
-            <!-- 텍스트 정보 팝업 -->
-            <div style="padding:40px 20px 50px 20px;">
-                <h2 class="mc_tit02">텍스트 정보 팝업</h2>
-                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt01"><span class="text">베스트 랭킹 순위 / #popTxt01</span></button>
-                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt02"><span class="text">통합 포인트 안내 / #popTxt02</span></button>
-                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt03"><span class="text">신용카드 할인 안내 / #popTxt03</span></button>
-                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt04"><span class="text">배송비 안내 / #popTxt04</span></button>
-                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt05"><span class="text">상품 후기 적립금 안내 / #popTxt05</span></button>
-                <button type="button" class="btn_sm btn_light_gray" data-role="btn-dialog" data-target="#popTxt06"><span class="text">해외 직구 / #popTxt06</span></button>
-                <br><br>
-
-                <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popHpPop01"><span class="text">오늘만 특가 신청 / #popHpPop01</span></button>
-                <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popHpPop02"><span class="text">라이브 알림 신청 / #popHpPop02</span></button>
-                <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popHpPop03"><span class="text">재입고 알림 신청 / #popHpPop03</span></button>
-            </div>
-            <!-- //텍스트 정보 팝업 -->
+            <button type="button" class="btn_sm btn_light_gray" data-role="btn-dialog" data-target="#popAlert03"><span class="text">알림(타이틀 없는 경우) / #popAlert03</span></button> 
+        </div>
+        <!-- //팝업 -->
 
 
-            <!-- 이미지 정보 팝업 -->
-            <div style="padding:40px 20px 50px 20px;">
-                <h2 class="mc_tit02">이미지 정보 팝업</h2>
-                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popImg01"><span class="text">당첨축하 / #popImg01</span></button>
-                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popImg02"><span class="text">당첨축하(축하) / #popImg02</span></button>
-                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popImg03"><span class="text">당첨실패 / #popImg03</span></button>
-                <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popImg04"><span class="text">결과내용 / #popImg04</span></button>
-            </div>
-            <!-- //이미지 정보 팝업 -->
-        </section>
-        <!-- //contents_wrap -->
-    </main>
-    <!-- // 컨텐츠 -->
+        <!-- 텍스트 정보 팝업 -->
+        <div style="padding:40px 20px 50px 20px;">
+            <h2 class="mc_tit02">텍스트 정보 팝업</h2>
+            <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt01"><span class="text">베스트 랭킹 순위 / #popTxt01</span></button>
+            <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt02"><span class="text">통합 포인트 안내 / #popTxt02</span></button>
+            <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt03"><span class="text">신용카드 할인 안내 / #popTxt03</span></button>
+            <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt04"><span class="text">배송비 안내 / #popTxt04</span></button>
+            <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popTxt05"><span class="text">상품 후기 적립금 안내 / #popTxt05</span></button>
+            <button type="button" class="btn_sm btn_light_gray" data-role="btn-dialog" data-target="#popTxt06"><span class="text">해외 직구 / #popTxt06</span></button>
+            <br><br>
+
+            <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popHpPop01"><span class="text">오늘만 특가 신청 / #popHpPop01</span></button>
+            <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popHpPop02"><span class="text">라이브 알림 신청 / #popHpPop02</span></button>
+            <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popHpPop03"><span class="text">재입고 알림 신청 / #popHpPop03</span></button>
+        </div>
+        <!-- //텍스트 정보 팝업 -->
+
+
+        <!-- 이미지 정보 팝업 -->
+        <div style="padding:40px 20px 50px 20px;">
+            <h2 class="mc_tit02">이미지 정보 팝업</h2>
+            <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popImg01"><span class="text">당첨축하 / #popImg01</span></button>
+            <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popImg02"><span class="text">당첨축하(축하) / #popImg02</span></button>
+            <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popImg03"><span class="text">당첨실패 / #popImg03</span></button>
+            <button type="button" class="btn_sm btn_black" data-role="btn-dialog" data-target="#popImg04"><span class="text">결과내용 / #popImg04</span></button>
+        </div>
+        <!-- //이미지 정보 팝업 -->
+    </section>
+    <!-- //cont_wrap -->
+
 </div>
 <!-- //pop wrapper -->
 

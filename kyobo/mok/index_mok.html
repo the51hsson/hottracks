@@ -1,40 +1,35 @@
 <!doctype html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8" />
-	<title>교보문고 4과제 - Mobile 퍼블리싱 현황판</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="Robots" content="noindex, nofollow" />
-	<meta name="msapplication-TileColor" content="#000000">
-	<meta property="og:title" content="핫트랙스">
-	<meta property="og:description" content="">
-	<meta property="og:type" content="website">
-	<meta property="og:image" content="assets/common/images/sns.jpg">
-	<link rel="shortcut icon" href="assets/common/images/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="assets/common/images/apple-touch-icon.png">
-	<!-- front ui
-    ================================================== -->
-	<link rel="stylesheet" type="text/css" href="wsg/ia_resources/fonts/nanumsquare.css">
-	<link rel="stylesheet" type="text/css" href="wsg/ia_resources/glim.css">
-	<script src="wsg/ia_resources/jquery-3.6.0.min.js"></script>
-	<script src="wsg/ia_resources/glim.js"></script>
-	<style>
-		.point td {background-color:#f9feda !important}
-		.point_1 td {background-color:#f2fdb1 !important}
-		.point_1 .col_date {color:#cb0000;font-weight:700;}
+<meta charset="UTF-8" />
+<title>교보문고 4과제 - Mobile 퍼블리싱 현황판</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="Robots" content="noindex, nofollow" />
+<meta name="msapplication-TileColor" content="#000000">
+<meta property="og:title" content="핫트랙스">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/common/images/sns.jpg">
+<link rel="shortcut icon" href="assets/common/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="assets/common/images/apple-touch-icon.png">
+<!-- front ui
+================================================== -->
+<link rel="stylesheet" type="text/css" href="wsg/ia_resources/fonts/nanumsquare.css">
+<link rel="stylesheet" type="text/css" href="wsg/ia_resources/glim.css">
+<script src="wsg/ia_resources/jquery-3.6.0.min.js"></script>
+<script src="wsg/ia_resources/glim.js"></script>
+<style>
+.point td {background-color:#f9feda !important}
+.point .col_date {color:#cb0000;font-weight:700;}
 
-		.point02 td {background-color:#feeefc !important}
-		.point02_1 td {background-color:#feddf9 !important}
-		.point02_1 .col_date {color:#cb0000;font-weight:700;}
-
-		.point03 td {background-color:#ffecec !important}
-		.point03_1 td {background-color:#ffc5c5 !important}
-		.point03_1 .col_date {color:#cb0000;font-weight:700;}
-
-		.point06 td {background-color:#f5eeff !important}
-		.point06 .col_date {color:#cb0000;font-weight:700;}
-	</style>
+.ico {display:inline-block;height:16px;margin-right:5px;padding:0 5px;border-radius:4px;color:#fff;font-size:11px;font-weight:500;line-height:18px;}
+.ico.m1 {background-color:#cd2f2f;}
+.ico.m2 {background-color:#eb873e;}
+.ico.m3 {background-color:#30a701;}
+.ico.m4 {background-color:#2f5fcd;}
+.ico.m5 {background-color:#632fcd;}
+</style>
 </head>
 <body data-theme-color="#DA2128">
 	<div class="ia_wrapper">
@@ -564,7 +559,7 @@
 												<div class="col_memo_con"></div>
 											</td>
 										</tr>
-										<tr>
+										<tr class="point">
 											<td class="col_num" data-label="번호"></td>
 											<td class="col_1depth" data-label="1Depth">팝업 공통</td>
 											<td class="col_2depth" data-label="2Depth" style="color:#cb0000;font-weight:700;">알림톡 팝업</td>
@@ -645,9 +640,9 @@
 												<div class="col_memo_con"></div>
 											</td>
 										</tr>
-										<tr class="point02">
+										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">웰컴메인</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m4">SJ</p>웰컴메인</td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1107,10 +1102,10 @@
 									
 
 									<!-- 오늘만 특가 -->
-									<tbody class="point03">
+									<tbody>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">오늘만 특가</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p>오늘만 특가</td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1125,7 +1120,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p></td>
 											<td class="col_2depth" data-label="2Depth">라이브 알림 팝업</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1139,7 +1134,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">핫딜 특가</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p>핫딜 특가</td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1157,10 +1152,10 @@
 
 
 									<!-- 베스트/신상품/무료배송 -->
-									<tbody class="point03">
+									<tbody>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">베스트</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p>베스트</td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1205,7 +1200,7 @@
 										</tr>-->
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">신상품</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p>신상품</td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1220,7 +1215,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">무료배송</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p>무료배송</td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1268,10 +1263,10 @@
 
 
 									<!-- 브랜드샵 -->
-									<tbody class="point02">
+									<tbody>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">브랜드샵</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m4">SJ</p>브랜드샵</td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1289,10 +1284,10 @@
 
 
 									<!-- 선물추천 -->
-									<tbody class="point">
+									<tbody>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">선물추천</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p>선물추천</td>
 											<td class="col_2depth" data-label="2Depth">선물추천메인</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1308,7 +1303,7 @@
 										
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p></td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth">내가 쓴 고민</td>
 											<td class="col_url" data-label="URL">
@@ -1323,7 +1318,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p></td>
 											<td class="col_2depth" data-label="2Depth">선물고민쓰기</td>
 											<td class="col_3depth" data-label="3Depth">선물선택</td>
 											<td class="col_url" data-label="URL">
@@ -1338,7 +1333,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p></td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth">최근본 상품 찾기</td>
 											<td class="col_url" data-label="URL">
@@ -1353,7 +1348,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p></td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth">찜 한 상품 찾기</td>
 											<td class="col_url" data-label="URL">
@@ -1366,7 +1361,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p></td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth">직접 검색</td>
 											<td class="col_url" data-label="URL">
@@ -1381,7 +1376,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p></td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth">선택완료</td>
 											<td class="col_url" data-label="URL">
@@ -1399,10 +1394,10 @@
 
 									
 									<!-- 라이브 -->
-									<tbody class="point">
+									<tbody>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">라이브</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p>라이브</td>
 											<td class="col_2depth" data-label="2Depth">메인</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1417,7 +1412,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p></td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth">달력 : 방송중 / 방송예정</td>
 											<td class="col_url" data-label="URL">
@@ -1432,7 +1427,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p></td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth">달력 : 오늘방송 없음</td>
 											<td class="col_url" data-label="URL">
@@ -1447,7 +1442,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p></td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth">달력 : 방송종료</td>
 											<td class="col_url" data-label="URL">
@@ -1460,9 +1455,9 @@
 												<div class="col_memo_con"></div>
 											</td>
 										</tr>
-										<tr class="point_1">
+										<tr class="point">
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p></td>
 											<td class="col_2depth" data-label="2Depth">상세</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1480,7 +1475,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m2">BG</p></td>
 											<td class="col_2depth" data-label="2Depth">라이브 알림 팝업</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1496,10 +1491,10 @@
 									<!-- //라이브 -->
 
 									<!-- 큐레이션 -->
-									<tbody class="point02">
-										<tr class="point02_1">
+									<tbody>
+										<tr class="point">
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">큐레이션</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m4">SJ</p>큐레이션</td>
 											<td class="col_2depth" data-label="2Depth">큐레이션 메인</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1512,9 +1507,9 @@
 												<div class="col_memo_con"></div>
 											</td>
 										</tr>
-										<tr class="point02_1">
+										<tr class="point">
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m4">SJ</p></td>
 											<td class="col_2depth" data-label="2Depth">상품테그 팝업</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1527,9 +1522,9 @@
 												<div class="col_memo_con"></div>
 											</td>
 										</tr>
-										<tr class="point02_1">
+										<tr class="point">
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m4">SJ</p></td>
 											<td class="col_2depth" data-label="2Depth">상품전체보기 팝업</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
@@ -1544,7 +1539,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m4">SJ</p></td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth">큐레이션 상세 </td>
 											<td class="col_url" data-label="URL">
@@ -1559,7 +1554,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m4">SJ</p></td>
 											<td class="col_2depth" data-label="2Depth">추천 메인</td>
 											<td class="col_3depth" data-label="3Depth">비로그인시</td>
 											<td class="col_url" data-label="URL">
@@ -1574,7 +1569,7 @@
 										</tr>
 										<tr>
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m4">SJ</p></td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth">로그인시</td>
 											<td class="col_url" data-label="URL">
@@ -2964,7 +2959,7 @@
 											</th>
 										</tr>
 									</thead>
-									<tbody class="point06">
+									<tbody class="point">
 										<tr>
 											<td class="col_num" data-label="번호"></td>
 											<td class="col_1depth" data-label="1Depth">메인</td>
@@ -3405,12 +3400,11 @@
 									<tbody>
 										<tr >
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">카테고리 목록</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p>카테고리 목록</td>
 											<td class="col_2depth" data-label="2Depth">디자인문구</td>
 											<td class="col_3depth" data-label="3Depth">전체보기</td>
 											<td class="col_url" data-label="URL">
-												<a href="html/category/HTR-M-CTG-LIST-001.html"
-												   target="_blank">html/category/HTR-M-CTG-LIST-001.html</a>
+												<a href="html/category/HTR-M-CTG-LIST-001.html" target="_blank">html/category/HTR-M-CTG-LIST-001.html</a>
 											</td>
 											<td class="col_date" data-label="날짜">2022-01-20</td>
 											<td class="col_complete" data-label="상태">완료</td>
@@ -3423,9 +3417,9 @@
 										</tr>
 										<tr >
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">카테고리 목록</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p></td>
 											<td class="col_2depth" data-label="2Depth"></td>
-											<td class="col_3depth" data-label="3Depth">브랜드 선택 / 19금</td>
+											<td class="col_3depth" data-label="3Depth">브랜드 선택 / 1단 제품</td>
 											<td class="col_url" data-label="URL">
 												<a href="html/category/HTR-M-CTG-LIST-002.html"
 												   target="_blank">html/category/HTR-M-CTG-LIST-002.html</a>
@@ -3441,7 +3435,7 @@
 										</tr>
 										<tr >
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">카테고리 목록(음반)</td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p>카테고리 목록(음반)</td>
 											<td class="col_2depth" data-label="2Depth"></td>
 											<td class="col_3depth" data-label="3Depth">브랜드 검색 결과 없음</td>
 											<td class="col_url" data-label="URL">
@@ -3457,8 +3451,8 @@
 										</tr>
 										<tr >
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth">레이어팝업</td>
-											<td class="col_2depth" data-label="2Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p>레이어팝업</td>
+											<td class="col_2depth" data-label="2Depth">스터디플래너</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
 												<a href="html/category/HTR-M-CTG-LIST-001-POP-300-1.html"
@@ -3473,8 +3467,8 @@
 										</tr>
 										<tr >
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
-											<td class="col_2depth" data-label="2Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p></td>
+											<td class="col_2depth" data-label="2Depth">정렬하기</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
 												<a href="html/category/HTR-M-CTG-LIST-001-POP-300-2.html"
@@ -3489,12 +3483,11 @@
 										</tr>
 										<tr >
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
-											<td class="col_2depth" data-label="2Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p></td>
+											<td class="col_2depth" data-label="2Depth">브랜드 없을 경우</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
-												<a href="html/category/HTR-M-CTG-LIST-001-POP-300-3.html"
-												   target="_blank">html/category/HTR-M-CTG-LIST-001-POP-300-3.html</a>
+												<a href="html/category/HTR-M-CTG-LIST-001-POP-300-3.html" target="_blank">html/category/HTR-M-CTG-LIST-001-POP-300-3.html</a>
 											</td>
 											<td class="col_date" data-label="날짜">2022-01-20</td>
 											<td class="col_complete" data-label="상태">완료</td>
@@ -3505,12 +3498,11 @@
 										</tr>
 										<tr >
 											<td class="col_num" data-label="번호"></td>
-											<td class="col_1depth" data-label="1Depth"></td>
-											<td class="col_2depth" data-label="2Depth"></td>
+											<td class="col_1depth" data-label="1Depth"><p class="ico m1">BD</p></td>
+											<td class="col_2depth" data-label="2Depth">브랜드 있을 경우</td>
 											<td class="col_3depth" data-label="3Depth"></td>
 											<td class="col_url" data-label="URL">
-												<a href="html/category/HTR-M-CTG-LIST-001-POP-300-4.html"
-												   target="_blank">html/category/HTR-M-CTG-LIST-001-POP-300-4.html</a>
+												<a href="html/category/HTR-M-CTG-LIST-001-POP-300-4.html" target="_blank">html/category/HTR-M-CTG-LIST-001-POP-300-4.html</a>
 											</td>
 											<td class="col_date" data-label="날짜">2022-01-20</td>
 											<td class="col_complete" data-label="상태">완료</td>
