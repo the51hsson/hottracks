@@ -925,6 +925,34 @@ $(function(){
     });
 });
 
+/* BEST FAQ */
+function cusBestFaq(){
+    var $target = $('.cus_mc_best_cont .swiper-container');
+    var slideOption = {
+        observer: true,
+        observeParents: true,
+        slidesPerView: 'auto',
+        centeredSlides: false,
+        //loop: true,
+        loopsSlide: 1,
+        spaceBetween:0,
+        /*autoplay: {
+            delay:5000,
+            disableOnInteraction: false,
+        },*/
+        speed: 700,
+		pagination: {
+
+		},
+    };
+    cusBestFaqSwiper = new Swiper($target.get(), slideOption);
+}
+
+$(function(){
+    if(!$('.cus_mc_best_cont').length) return;
+    cusBestFaq();
+});
+
 
 /* 핫트랙스 서비스 안내 */
 $(function(){

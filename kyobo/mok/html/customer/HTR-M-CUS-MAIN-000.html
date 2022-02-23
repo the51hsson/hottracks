@@ -19,7 +19,7 @@
 <meta property="og:image" content="../../images/guide/sns.jpg">
 <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-<title>1:1 문의 : 고객센터</title>
+<title>고객센터</title>
 
 <!-- Plug-In css -->
 <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -86,15 +86,20 @@
 
     <!-- 고객센터 컨텐츠 -->
     <div class="wel_main_wrap">
-        <!-- 고객센터  -->
-        <div class="mc_cont cus_cont">
+        <!-- 고객센터 : cus_mc_top -->
+        <div class="mc_cont cus_mc_top">
             <h2 class="mc_tit02">고객센터</h2>
-
+            <a href="#n">
+                <ul>
+                    <li class="s1"><span>이전 주문조회 & 예치금 환불 신청</span></li>
+                    <li class="s2">22.08월 이전 주문 조회 및 환불 신청이 가능합니다.</li>
+                </ul>
+            </a>
         </div>
-        <!-- //고객센터 -->
+        <!-- //고객센터 : cus_mc_top -->
 
-        <!-- FAQ -->
-        <div class="mc_cont cus_cont">
+        <!-- FAQ : cus_mc_faq -->
+        <div class="mc_cont cus_mc_faq">
             <h2 class="mc_tit03 ty02">FAQ</h2>
             <p class="btn_txt_more">
                 <a href="#"><em class="hidden">공지사항</em><span>전체보기</span></a>
@@ -110,32 +115,114 @@
                 <button type="button" class="btn_ip_search"><span class="hidden">검색</span></button>
             </div>
             <!-- //form_search_box -->
+
+            <!-- faq_search_tag -->
+            <div class="faq_search_tag">
+                <p class="tit">자주 찾는 검색어</p>
+                <div class="faq_search_tag_btn">
+                    <button><span>주문결제</span></button>
+                    <button><span>배송</span></button>
+                    <button><span>반품</span></button>
+                    <button><span>쿠폰</span></button>
+                </div>
+            </div>
+            <!-- //faq_search_tag -->
         </div>
-        <!-- //FAQ -->
+        <!-- //FAQ : cus_mc_faq -->
 
 
-        <!-- BEST FAQ -->
-        <div class="mc_cont" style="background-color:#6286ff;">
+        <!-- BEST FAQ : cus_mc_best -->
+        <div class="mc_cont cus_mc_best">
             <h2 class="mc_tit03 ty02">BEST FAQ</h2>
+
+            <!-- cus_mc_best_cont -->
+            <div class="cus_mc_best_cont">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- swiper-slide 반복 -->
+                        <div class="swiper-slide">
+                            <!-- cus_mc_best_box -->
+                            <div class="cus_mc_best_box">
+                                <a href="#"><!-- 클릭시 해당 영역 펼쳐짐  -->
+                                    <p class="info">주문결제</p>
+                                    <p class="s1">문화상품권, 도서상품권으로 결제할 수 있나요?</p>
+                                </a>
+                            </div>
+                            <!-- //gft_question_box -->
+                        </div>
+                        <!-- //swiper-slide 반복 -->
+
+                        <div class="swiper-slide">
+                            <!-- cus_mc_best_box -->
+                            <div class="cus_mc_best_box">
+                                <a href="#">
+                                    <p class="info">주문결제</p>
+                                    <p class="s1">문화상품권, 도서상</p>
+                                </a>
+                            </div>
+                            <!-- //gft_question_box -->
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- cus_mc_best_box -->
+                            <div class="cus_mc_best_box">
+                                <a href="#">
+                                    <p class="info">주문결제</p>
+                                    <p class="s1">문화상품권, 도서상품권으로 결제할 수 있나요? 문화상품권, 도서상품권으로 결제할 수 있나요?</p>
+                                </a>
+                            </div>
+                            <!-- //gft_question_box -->
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- //cus_mc_best_cont -->
             
         </div>
-        <!-- //BEST FAQ -->
+        <!-- //BEST FAQ : cus_mc_best -->
 
 
-        <!-- 문의하기 -->
-        <div class="mc_cont" style="background-color:#f4f4f4;">
+        <!-- 문의하기 : cus_mc_contact -->
+        <div class="mc_cont cus_mc_contact">
             <h2 class="mc_tit03 ty02">문의하기</h2>
-            
-        </div>
-        <!-- //문의하기 -->
+
+            <!-- btn_wrap -->
+            <div class="btn_wrap">
+                <button type="button" class="btn_xs btn_black"><span class="text">문의 및 내역</span></button>
+                <button type="button" class="btn_xs btn_line_gray"><span class="text">대량구매 상담</span></button>
+            </div>
+            <!-- //btn_wrap -->
+
+            <!-- cus_mc_contact_cont -->
+            <ul class="cus_mc_contact_cont">
+                <li class="s1">
+                    <p>고객센터 운영시간 안내</p>
+                    <ul class="bul_list">
+                        <li class="bul_item_dot font_size_xs">월~금요일 09:00 ~ 18:00 (주말/공휴일 제외)</li>
+                        <li class="bul_item_dot font_size_xs">점심시간 12:00 ~ 13:00</li>
+                    </ul> 
+                </li>
+                <li class="s2">
+                    <ul class="bul_list">
+                        <li class="bul_item_dot font_size_xs">고객센터 전화문의 <a href="tel:1661-1112">1661-1112</a></li>
+                    </ul> 
+                </li>
+            </ul>
+            <!-- //cus_mc_contact_cont -->
+        </div>               
+        <!-- //문의하기 : cus_mc_contact -->
 
 
-        <!-- 배너 -->
-        <div class="mc_cont" style="padding:0;">
-            <p style="height:50px;color:#000;background:#eee;">배너</p>
-            
+        <!-- 배너 : cus_mc_banner -->
+        <div class="mc_cont cus_mc_banner">
+            <a href="#n">
+                <ul>
+                    <li class="s1"><span>상품입점문의</span></li>
+                    <li class="s2">핫트랙스와 함께 할 파트너를 모십니다!</li>
+                </ul>
+            </a>
         </div>
-        <!-- //배너 -->
+        <!-- //배너 : cus_mc_banner -->
 
 
         <!-- 공지사항  -->
@@ -179,7 +266,29 @@
         <!-- 핫트랙스 서비스 안내 -->
         <div class="mc_cont mc_dep">
             <h2 class="mc_tit03 ty02">핫트랙스 서비스 안내</h2>
-            
+
+            <!-- cus_mc_sv -->
+            <ul class="cus_mc_sv">
+                <li>
+                    <a href="#n">
+                        <span class="ico"><img src="../../images/guide/ico_cus_mc_sv01.svg" alt=""></span>
+                        <span class="txt">각인 서비스</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#n">
+                        <span class="ico"><img src="../../images/guide/ico_cus_mc_sv02.svg" alt=""></span>
+                        <span class="txt">포장 서비스</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#n">
+                        <span class="ico"><img src="../../images/guide/ico_cus_mc_sv03.svg" alt=""></span>
+                        <span class="txt">제휴/할인카드</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- //cus_mc_sv -->
         </div>
         <!-- //핫트랙스 서비스 안내 -->
     </div>

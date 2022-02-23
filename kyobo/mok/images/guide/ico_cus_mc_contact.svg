@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Group_502" data-name="Group 502" transform="translate(-0.336 0.294)">
+    <path id="패스_13604" data-name="패스 13604" d="M528.415,277.388H525.64a.64.64,0,0,1-.64-.64v-2.774a.64.64,0,1,1,1.281,0v2.134h2.134a.64.64,0,1,1,0,1.281Z" transform="translate(-517.164 -269.127)"/>
+    <g id="Ellipse_267" data-name="Ellipse 267" transform="translate(0.336 -0.294)" fill="none" stroke="#000" stroke-width="1.2">
+      <circle cx="8" cy="8" r="8" stroke="none"/>
+      <circle cx="8" cy="8" r="7.4" fill="none"/>
+    </g>
+  </g>
+</svg>
