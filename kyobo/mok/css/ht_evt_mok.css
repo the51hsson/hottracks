@@ -1462,6 +1462,7 @@
 }
 
 .evt_slider_wrap .swiper {
+  overflow: visible;
   padding-right: 20px;
 }
 
