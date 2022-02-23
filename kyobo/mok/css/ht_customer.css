@@ -1,8 +1,11 @@
 @charset "UTF-8";
+/***** 고객센터 *****/
 .title_header + .wel_main_wrap {
   padding-top: 20px;
 }
 
+/*** 고객센터 Common ***/
+/* tab_nav_area */
 .tab_nav_area {
   display: table;
   table-layout: fixed;
@@ -41,7 +44,7 @@
   margin-top: -36px;
 }
 
-/*** 고객센터 ***/
+/* cus_cont */
 .cus_cont {
   padding-top: 0;
 }
@@ -58,6 +61,7 @@
   margin-bottom: 0;
 }
 
+/* form_box */
 .form_box .form_search_box {
   margin-bottom: 0 !important;
 }
@@ -142,7 +146,8 @@
   margin-top: 8px;
 }
 
-/* fold_ty */
+/*** 고객센터 Template ***/
+/** FAQ/QNA : fold_ty **/
 .fold_ty {
   position: relative;
   border-top: 1px solid #000;
@@ -723,7 +728,7 @@
   margin: -26px 0 10px 0;
 }
 
-/* faq_search_tag */
+/** faq_search_tag **/
 .faq_search_tag {
   position: relative;
   text-align: center;
@@ -950,7 +955,7 @@
   top: 0;
 }
 
-/* 공지시항 */
+/** 공지시항 : notice_ty **/
 .notice_ty {
   position: relative;
   border-top: 1px solid #000;
@@ -1051,6 +1056,7 @@
   max-width: 100%;
 }
 
+/*** 고객센터 컨텐츠 ***/
 /* cus_box_area */
 .cus_box_area {
   position: relative;
@@ -1171,4 +1177,247 @@
   padding-left: 8px;
   color: #767676;
   font-weight: 400;
+}
+
+/*** 핫트랙스 서비스 안내 ***/
+.cus_cont_view {
+  padding: 0;
+}
+
+.img_tit_area {
+  position: relative;
+}
+
+.img_tit_area .img {
+  position: relative;
+}
+
+.img_tit_area .img img {
+  width: 100%;
+}
+
+.img_tit_area .img:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  content: "";
+}
+
+.img_tit_area .mc_tit03 {
+  position: absolute;
+  left: 20px;
+  top: calc(100% - 122px);
+  color: #fff;
+}
+
+.img_tit_area .info_text_box {
+  position: relative;
+  width: calc(100% - 20px);
+  margin-top: -50px;
+  background: #fff;
+  border-radius: 0;
+  color: #000;
+}
+
+.img_tit_area .info_text_box .bul_item_dot:before {
+  background-color: #222;
+}
+
+.img_tit_area .t_point {
+  color: #da2128;
+  font-weight: 500;
+}
+
+.img_tit_area .t_txt {
+  color: #767676;
+  font-weight: 400;
+}
+
+.cus_view_list {
+  position: relative;
+  padding: 30px 20px 50px 20px;
+  background: #f4f4f4;
+}
+
+.cus_view_list .li {
+  position: relative;
+  margin-top: 26px;
+}
+
+.cus_view_list .li:first-child {
+  margin-top: 0;
+}
+
+.cus_view_box {
+  position: relative;
+  padding: 19px;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
+
+.cus_view_box .tbl_row th {
+  color: #767676 !important;
+  font-weight: 500 !important;
+}
+
+.cus_view_box .tbl_row th strong {
+  color: #000 !important;
+  font-weight: 500 !important;
+}
+
+.cus_view_box .tbl_row td {
+  padding: 16px 12px !important;
+  color: #000 !important;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.cus_view_box em {
+  font-size: 12px;
+}
+
+.cus_view_box.ty02 {
+  padding: 29px 19px;
+}
+
+.cus_initials li {
+  position: relative;
+  min-height: 26px;
+  padding: 7px 1px 4px 1px;
+  border-top: 1px dashed #eaeaea;
+  overflow: hidden;
+}
+
+.cus_initials li strong {
+  float: left;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.cus_initials li span {
+  float: right;
+  text-align: right;
+}
+
+.cus_initials li img {
+  height: 26px;
+}
+
+.cus_initials li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.cus_initials li:last-child {
+  padding-bottom: 0;
+}
+
+.cus_packing {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cus_packing:after {
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  z-index: 1;
+}
+
+.cus_packing li {
+  position: relative;
+  width: 50%;
+  padding: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px dashed #eaeaea;
+  border-width: 1px 1px 0 0;
+}
+
+.cus_packing li img {
+  width: 100%;
+}
+
+.cus_packing li:after {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  content: "";
+  z-index: 1;
+}
+
+.cus_packing li:nth-child(even) {
+  border-right: 0;
+}
+
+.cus_bul_list {
+  margin-top: 14px;
+}
+
+.cus_bul_list li {
+  position: relative;
+  margin-top: 4px;
+  color: #767676;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.cus_bul_list li:first-child {
+  margin-top: 0;
+}
+
+.cus_bul_list li.bt {
+  padding-left: 10px;
+}
+
+.cus_bul_list li.bt:before {
+  position: absolute;
+  left: 1px;
+  top: 9px;
+  width: 4px;
+  height: 1px;
+  background: #767676;
+  content: "";
+}
+
+.cus_card_area {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.cus_card_area dt {
+  width: 61%;
+  margin: 0 auto 24px auto;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+.cus_card_area dt img {
+  width: 100%;
+}
+
+.cus_card_area dd {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
 }
