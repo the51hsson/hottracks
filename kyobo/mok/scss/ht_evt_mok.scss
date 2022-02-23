@@ -424,6 +424,7 @@
 	padding:0 20px 40px 20px;
 	background-color: #fff;
 }
+
 .cmt_section_title{
 	padding-bottom:20px;
 	border-bottom:1px solid;
@@ -647,7 +648,7 @@
 
 
 //댓글 입력
-.comment_area{
+.comment_area {
 	padding-top: 40px;
 	.cmt_tit{
 		line-height:25px;
@@ -656,13 +657,13 @@
 	}
 
 }
-.cmt_wrap ~ .comment_list_area{
+.cmt_wrap ~ .comment_list_area {
 	padding:0 20px 40px 20px;
 	background-color: #fff;
 }
 
 //등록 댓글 없음
-.no_cmt_box{
+.no_cmt_box {
 	height:140px;
 	display: flex;
 	flex-flow: column wrap;
@@ -673,13 +674,13 @@
 	span{
 		display: block;
 	}
-	.no_cmt_icon{
+	.no_cmt_icon {
 		width:30px;
 		height:30px;
 		margin: 0 auto;
 		background:url(../images/guide/no_search_data_icon.svg) no-repeat center center  / cover;
 	}
-	.no_cmt_txt{
+	.no_cmt_txt {
 		text-align: center;
 		margin-top:8px;
 		color:#767676;
@@ -688,13 +689,13 @@
 	}
 }
 /*============================= 모듈 016 =============================*/
-.mdl_selec_list_wrap{
-    padding:20px ;
+.mdl_selec_list_wrap {
+    padding:20px; 
     background-color: #fff;
-    &.type2{
+    &.type2 {
         padding-top:0;
     }
-    .tit{
+    .tit {
         font-size: 18px;
         line-height: 28px;
         letter-spacing: -0.18px;
@@ -703,7 +704,7 @@
     }
 } 
 
-.sticky_selec{
+.sticky_selec {
 	padding:20px;
 	position: sticky;
 	top:60px;
@@ -714,7 +715,7 @@
 		top:60px;
 	}
 }
-.common_select{
+.common_select {
 	width:100%;
 	height:50px;
 	padding:14px 25px 14px 15px;
@@ -732,44 +733,44 @@
     }
 }
 /*===============================  모듈 017 영역  ===========================*/
-.card_module{
+.card_module {
 	padding:40px 0;
-	.evt_cards{
+	.evt_cards {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: flex-start;
-		.evt_card_item{
+		.evt_card_item {
 			width:50%;
 			min-height:100% !important;
 			padding:40px 20px;
-			div{
+			div {
 				word-break: keep-all;
 			}
 		}
-		.discount{
+		.discount {
 			font-size: 16px;
 			font-weight: 700;
 			line-height: 22px;
 			margin-bottom: 8px;
 			color:#da2128;
 		}
-		.title{
+		.title {
             font-size: 16px;
 			line-height: 22px;
 			letter-spacing: -0.16px;
 			margin-bottom: 4px;
 			font-weight: 500;
 		}
-		.desc{
+		.desc {
 			font-size: 13px;
 			line-height: 19px;
 			letter-spacing: -0.13px;
 		}
 	}
-	.btn_area{
+	.btn_area {
 		margin-top:24px;
 		text-align: center;
-		button{
+		button {
 			position:relative;
 			padding:12px 24px;
 			width:165px;
@@ -782,13 +783,13 @@
 			flex-flow: row nowrap;
 			justify-content: center;
 		}
-		.txt{
+		.txt {
 			line-height:20px;
 			font-weight: 500px;
 			letter-spacing: -0.14px;
 			line-height: 20px;
 		}
-		.icon{
+		.icon {
 			display: block;
 			width:12px;
 			height:20px;
@@ -800,25 +801,25 @@
 /*=======================MDL-018영역=====================*/
 
 //오늘만 특가 제목 + 카운트 다운
-.hot_deal_area{
-	padding: 40px 0 40px 20px;
+.hot_deal_area {
+	padding: 40px 0 55px 20px;
 	background-color: #fff;
-	.swiper{
+	.swiper {
 		padding-right:20px;
 	}
-	.title_area{
+	.title_area {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		padding-right: 20px;
 	}
-	h2{
+	h2 {
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 32px;
 	}
-	.countdown{
-		.time{
+	.countdown {
+		.time {
 			position:relative;
 			font-size: 18px;
 			line-height: 32px;
@@ -841,36 +842,36 @@
 
 
 /*============================= 모듈 019 =============================*/
-.cmt_imgs_wrap{
+.cmt_imgs_wrap {
 	overflow:hidden;
 	&.cmt_inner_top{
 		margin-top:20px;
 	}
 }
-.cmt_imgs_list{
+.cmt_imgs_list {
 	overflow-x: auto;
 	white-space: nowrap;
 	display: flex;
 	justify-content: flex-start;
 	flex-flow: row nowrap;
     margin-bottom:16px;
-	.cmt_img_item{
+	.cmt_img_item {
 		width:40px;
 		height:40px;
 		margin-right: 6px;
 		flex-shrink: 0;
 		border-radius: 4px;
 		overflow:hidden;
-		&:last-of-type{
+		&:last-of-type {
 			margin-right: 0px;
 		}
-		img{
+		img {
 			width:100%;
 		}
-		&.active{
+		&.active {
 			border:4px solid #000;
 		}
-		&.active_non img{
+		&.active_non img {
 			opacity: 0.6;
 		}
 	}
@@ -946,21 +947,22 @@
 	}
 
 }
-.evt_lst_selec_title{
+.evt_lst_selec_title {
 	display: flex;
 	flex-flow: row nowrap;
 	position:relative;
 	padding: 0 20px;
-	span{
+    margin-top:24px;
+	span {
 		display:block;
 	}
-	.sort_title:first-of-type{
+	.sort_title:first-of-type {
 	  position:relative;
 	  padding-right:23px;
 	  margin-right:12px;
 	  color:#595959;
 	}
-	.selec_icon{
+	.selec_icon {
 		position: absolute;
 		width:20px;
 		height:20px;
@@ -969,11 +971,11 @@
 		background:url(../images/guide/ico_arrow_down.svg) no-repeat center center / 99%;
 		transform: rotate(180deg);
 	}
-	.selec_icon.open{
+	.selec_icon.open {
 		background:url(../images/guide/ico_arrow_down.svg) no-repeat center center / cover;
 		transform: rotate(0deg);
 	}
-	.sort_title{
+	.sort_title {
 		flex-grow:0;
 		font-size:20px;
 		font-weight: 700;
@@ -990,7 +992,7 @@
 		left:19px;
 		overflow-y:auto;
 		display:none;
-		li{
+		li {
           line-height:20px;
 		  padding:15px;
 		  cursor:pointer;
@@ -999,7 +1001,7 @@
 		  }
 		}
 	    li:hover,
-		li:active{
+		li:active {
 			background-color: #f5f5f5;
 		}
 		
@@ -1007,18 +1009,19 @@
 	}
 }
       
-.evt_list_area_mn{
+.evt_list_area_mn {
+    overflow: hidden;
 	.evt_menu{
 		display: flex;
 		justify-content: space-between;
 		padding:24px 20px 0;
-		.left_txt_sum{
+		.left_txt_sum {
 			flex-shrink: 0;
 			line-height: 20px;
 			letter-spacing: -0.14px;
 			color:#292929;
 		}
-		a:last-of-type:after{
+		a:last-of-type:after {
 			display: none;
 		}
 	}
@@ -1040,15 +1043,15 @@
 }
 
 //스페셜 이벤트 리스트
-.list_evt_area.spe_evt_area{
-	.small_pics_area{
+.list_evt_area.spe_evt_area {
+	.small_pics_area {
 		margin-bottom:16px;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: flex-start;
 		align-items: flex-start;
 	 }
-	.small_pics_item{
+	.small_pics_item {
 		width:23%;
 		margin-right:12px;
 
@@ -1059,7 +1062,7 @@
 			position:relative;
 			height:0;
 			padding-top:100%;
-			img{
+			img {
 				position:absolute;
 				width:100%;
 				top:0;
@@ -1068,17 +1071,17 @@
 		}
 	} 
 	
-	.to_event_list_btn{
+	.to_event_list_btn {
 		border-radius: 4px;
 		background:url(../images/guide/evt_list_showMore.svg) no-repeat center center / 99%;	
 	}
 
-	.txt_title{
+	.txt_title {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: flex-start;
 	}
-	.rate{
+	.rate {
 		display:block;
 		margin-right: 3px;
 		font-size:16px;
@@ -1087,13 +1090,13 @@
 		line-height: 26px;
 		color:#da2128;
 	}
-	.deadline_section  .deadline_bubble{
+	.deadline_section  .deadline_bubble {
 		padding:12px 27px;
 	}
 	.promotion_end_txt{
 		display:none;
 	}
-	.promotion_upper_wrap{
+	.promotion_upper_wrap {
 		display: block;
 		position:relative;
 		&:before{
@@ -1107,7 +1110,7 @@
 			left:0;
 			background-color:rgba(0,0,0,0.6);
 		}
-		.promotion_end_txt{
+		.promotion_end_txt {
 			position:absolute;
 			width:100%;
 			top:50%;
@@ -1121,10 +1124,10 @@
 
 }
 //슬라이더(반응최고)
-.evt_slider_wrap{
+.evt_slider_wrap {
 	padding: 40px 0 40px 20px;
 	overflow:hidden;
-	h2{
+	h2 {
 		font-size: 20px;
 		font-weight: 700;
 		letter-spacing: -0.2px;
@@ -1137,12 +1140,12 @@
 }
 
 //슬라이더(마감임박)
-.evt_slider_wrap.deadline_section{
+.evt_slider_wrap.deadline_sectio n{
 	overflow: visible;
 	position:relative;
 	background-color: #fff4f1;
 	margin-top:60px;
-	.deadline_bubble{
+	.deadline_bubble {
 		width:auto;
 		max-width:85%;
 		position: absolute;
@@ -1157,7 +1160,7 @@
 		top:0;
 		right:95px;
 		transform: translateY(-50%);
-		&:before{
+		&:before {
 			content:"";
 			position: absolute;
 			border-top: 9px solid transparent;
@@ -1182,7 +1185,7 @@
 			z-index: 0;
 			transform: rotate(2deg);
 		  }
-		.txt{
+		.txt {
 			width:100%;
 			font-weight: 500;
 			font-size: 12px;
@@ -1193,7 +1196,7 @@
 	}
 
 }
-.deadline_character_area{
+.deadline_character_area {
 	display: block;
 	position: absolute;	
 	width:100%; 
@@ -1201,7 +1204,7 @@
 	left:0;
 	right:0;
     display: none;
-	.deadline_character{
+	.deadline_character {
 		position: absolute;
 		width:70px;
 		height:80px;
@@ -1214,7 +1217,7 @@
 }
 
 //이벤트 목록 없음
-.empty_evt_list{
+.empty_evt_list {
 	padding-bottom:20%; 
 	text-align: center;
 	line-height:19px;
@@ -1222,4 +1225,221 @@
 	font-size: 13px;
 	padding-top:calc(20% + 95px);
 	background:url(../images/guide/ico_empty_evt_list.svg) no-repeat center center/ 60px;
+}
+
+/*=========================EVT-LST-004  ===========================*/
+.contents_evt_wrap {
+    padding:30px 20px 60px 20px;
+}
+//이벤트 당첨자 발표 타이틀
+.evt_section_title {
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: space-between;
+  margin:12px 0 0 0;
+    h2 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height:32px;
+        letter-spacing: -0.2px;
+    }
+    &.title_line {
+        padding-bottom:20px;
+        border-bottom:1px solid #000;
+    }
+}
+.evt_ck_area {
+   line-height:26px;
+   padding:6px 0;
+}
+
+//이벤트 목록 영역
+.evt_list_card_ul {
+      border-top:1px solid #000;
+    .evt_list_item {                  
+        padding:12px 4px;
+        border-bottom:1px solid #eaeaea;
+        cursor:pointer;
+
+        &.status_new .category_area span{
+            position:relative;
+            &:before {
+                content:'';
+                position:absolute;
+                width:20px;
+                height:20px;
+                top:-3px;
+                left:calc(100% + 3px);
+                background:url(../images/guide/new_post.svg) no-repeat center center /18px;
+            }
+        }
+    }
+    .category_area {
+        height:17px;
+        line-height:17px;
+        font-size:12px;
+        color:#767676;
+    }
+
+    .list_title_area {
+        margin-top:8px;
+        line-height:22px;
+        letter-spacing: -0.14px;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+    }
+    .list_date_area {
+        margin-top:4px;
+        font-size: 13px;
+        color:#767676;
+    }
+}
+/*================================= HTR-M-EVT-VIEW-000 ===========================================*/
+ //당첨 결과 보기 타이틀
+ .evt_description_title {
+	padding:20px 4px;
+	border-bottom:1px solid #eaeaea;
+	.category_area {
+		height:17px;
+		line-height:17px;
+		font-size:13px;
+		color:#767676;
+	}
+	.list_title_area {
+		margin-top:8px;
+		font-weight:700;
+		line-height:22px;
+		letter-spacing: -0.14px;
+	}
+	.list_date_area {
+		margin-top:4px;
+		font-size: 13px;
+		color:#767676;
+	}
+}
+.evt_description_content {
+	  padding:20px 4px;
+    .category_area{
+	  line-height:18px;
+    }
+    .list_title_area {
+	  white-space: normal;
+	  font-weight: 700;;
+     }
+    .list_date_area {
+		line-height:19px;
+     }
+	hr {
+		display: block;
+		width:100%;
+		height:1px;
+		border:none;
+		border-top:1px dashed #000;
+	}
+}
+
+.evt_content{
+  .evt_list_item {
+	  padding:20px 4px;
+    } 
+  .category_area {
+	  line-height:18px;
+    }
+  .list_title_area {
+	  white-space: normal;
+	  font-weight: 700;;
+    }
+  .list_date_area {
+		line-height:19px;
+	}
+}
+.btn_area, 
+.tolist_btn_area {
+	padding:24px 0 40px 0;
+	text-align: center;
+	border-top:1px solid #eaeaea;
+	button {
+		cursor:pointer;
+		border-radius: 6px;  
+		appearance: none;
+	}
+	.evt_confirm_btn {
+		width:165px;
+		height:44px;
+		letter-spacing: -0.14px;
+		color:#fff;
+	}
+	.evt_list_btn {
+		width:100%;
+		line-height:48px;
+		font-size:15px;
+		font-weight:700;
+		color:#000;
+		letter-spacing: -0.15px;
+		border:1px solid #ccc;
+		
+	}
+}
+.btn_area {
+	border:none;
+}
+.evt_view_full_tit {
+	text-align: center;
+	background-color: #FAD9CC;
+	padding:40px 20px 0 20px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 29px;
+}
+.evt_view_full {
+	width:100%;
+}
+.evt_anchor_target {
+	width:100%;
+	height:60px;
+	margin-top:-60px;
+	visibility: hidden;
+	&.sticky_target{
+		height:140px;
+		margin-top:-140px;
+	}
+}
+
+//이벤트 종료 블랙스크린
+.evt_end_dim {
+	position:relative;
+    .evt_banner_wrap {
+        padding-bottom:0
+    }
+}
+.evt_end_dim:before{
+	content:"기획전 종료";
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index: 30;
+	background-color: rgba(0,0,0,0.6);
+	color:#fff;
+	font-weight: 500;
+	text-align: center;
+	font-size: 20px;
+    padding-top: calc(50% - 10px);
+}
+//이벤트 응모하기 풀이미지
+.evt_full_img_wrap{
+	img{
+		width: 100%;;
+	}
+}
+//이벤트 응모하기 버튼
+.evt_join_btn_wrap{
+	background-color: #fff;
+	padding:24px 20px 60px 20px;
+	text-align: center;
+	button{
+		width:100%;
+	}
 }
