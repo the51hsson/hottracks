@@ -177,7 +177,6 @@
     }
 	&.type3 {
 		padding: 40px 0 55px 0;
-        margin-bottom:10px;
 	}
     &.type_pic{
         padding-bottom: 32px;
@@ -877,3 +876,350 @@
 	}
 }
 
+/*============================= 이벤트 리스트 =============================*/
+.evt_list_header {
+	position: relative;
+	padding-top: 12px;
+	h2{
+		font-size: 20px;
+		line-height:32px;
+		font-weight: 700;
+		padding:0 20px;
+	}
+}
+.evt_quick_menu_slide {
+	position: sticky;
+	top:60px;
+	margin-top:12px;
+	padding-bottom: 15px;
+	width: 100%;
+	overflow-x: auto;
+	background-color: #fff;
+	z-index: 20;
+	border-bottom:1px solid #D5D5D5;    
+	.swiper-container {
+		margin-left: 20px;
+		padding-right:20px;
+	}
+
+	.swiper-slide {
+		width:auto;
+		&.active {
+			a {
+				border-color:#000;
+				background-color: #000;
+			}
+			.txt {
+				font-weight: 700;
+				color:#fff;
+			}
+		}
+		@for $qmn from 1 through 6 {
+			&:nth-of-type(#{$qmn}) .ico{
+				background:url(../images/guide/evt_quick_mn#{$qmn}.svg) no-repeat center center/ 18px;
+			}
+		}
+		&:last-of-type a{
+			margin-right:0;
+		}
+	}
+	a {
+		display: flex;
+		flex-flow: row nowrap;
+		margin-right: 5px;
+		padding:11px 17px;
+		border:1px solid #D5D5D5;
+		border-radius: 40px;
+		.ico {
+			display: block;
+			width: 20px;
+			height: 20px;
+			margin-right:5px;
+		}
+		.txt {
+			display:block;
+			white-space: nowrap;
+			line-height:20px;
+			color:#767676;
+			font-size: 13px;
+		}
+	}
+
+}
+.evt_lst_selec_title{
+	display: flex;
+	flex-flow: row nowrap;
+	position:relative;
+	padding: 0 20px;
+	span{
+		display:block;
+	}
+	.sort_title:first-of-type{
+	  position:relative;
+	  padding-right:23px;
+	  margin-right:12px;
+	  color:#595959;
+	}
+	.selec_icon{
+		position: absolute;
+		width:20px;
+		height:20px;
+		right:0;
+		top:4px;
+		background:url(../images/guide/ico_arrow_down.svg) no-repeat center center / 99%;
+		transform: rotate(180deg);
+	}
+	.selec_icon.open{
+		background:url(../images/guide/ico_arrow_down.svg) no-repeat center center / cover;
+		transform: rotate(0deg);
+	}
+	.sort_title{
+		flex-grow:0;
+		font-size:20px;
+		font-weight: 700;
+	}
+	.option_ul{
+		width:calc(100% - 38px);
+		max-height:calc(100vh - 400px);
+		position:absolute;
+		background-color: #fff;
+		border:1px solid #000;
+		border-radius: 6px;
+		z-index:4;
+		top:calc( 100% + 10px);
+		left:19px;
+		overflow-y:auto;
+		display:none;
+		li{
+          line-height:20px;
+		  padding:15px;
+		  cursor:pointer;
+		  &:first-of-type{
+			  border-top-left-radius: 6px;
+		  }
+		}
+	    li:hover,
+		li:active{
+			background-color: #f5f5f5;
+		}
+		
+
+	}
+}
+      
+.evt_list_area_mn{
+	.evt_menu{
+		display: flex;
+		justify-content: space-between;
+		padding:24px 20px 0;
+		.left_txt_sum{
+			flex-shrink: 0;
+			line-height: 20px;
+			letter-spacing: -0.14px;
+			color:#292929;
+		}
+		a:last-of-type:after{
+			display: none;
+		}
+	}
+	.evt_products.row_dir {
+		padding:0 20px;
+		padding-top:20px;
+		   .cpon{
+			display: inline-block;
+			line-height: 19px;
+			letter-spacing: -0.13px;
+			font-size: 11px;
+			border:1px solid #D5D5D5;
+			margin-bottom:8px;
+			padding:0 8px 0 20px;
+			border-radius: 10px;
+			background:url(../images/guide/ico_coupon_evt.svg) no-repeat left 6px top 45% /12px;
+		}
+	}
+}
+
+//스페셜 이벤트 리스트
+.list_evt_area.spe_evt_area{
+	.small_pics_area{
+		margin-bottom:16px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	 }
+	.small_pics_item{
+		width:23%;
+		margin-right:12px;
+
+		&:last-of-type{
+		margin-right:0;
+		}
+		.pic_wrap {
+			position:relative;
+			height:0;
+			padding-top:100%;
+			img{
+				position:absolute;
+				width:100%;
+				top:0;
+				left:0;
+			}	
+		}
+	} 
+	
+	.to_event_list_btn{
+		border-radius: 4px;
+		background:url(../images/guide/evt_list_showMore.svg) no-repeat center center / 99%;	
+	}
+
+	.txt_title{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+	}
+	.rate{
+		display:block;
+		margin-right: 3px;
+		font-size:16px;
+		font-weight: bolder;
+		letter-spacing: -0.16px;
+		line-height: 26px;
+		color:#da2128;
+	}
+	.deadline_section  .deadline_bubble{
+		padding:12px 27px;
+	}
+	.promotion_end_txt{
+		display:none;
+	}
+	.promotion_upper_wrap{
+		display: block;
+		position:relative;
+		&:before{
+			content:"";
+			position:absolute;
+			width:100%;
+			height:100%;
+			border-radius: 4px;
+			z-index: 3;
+			top:0;
+			left:0;
+			background-color:rgba(0,0,0,0.6);
+		}
+		.promotion_end_txt{
+			position:absolute;
+			width:100%;
+			top:50%;
+			transform: translateY(-50%);
+			display:block;
+			color:#fff;
+			text-align: center;
+			z-index: 5;
+		}
+	}
+
+}
+//슬라이더(반응최고)
+.evt_slider_wrap{
+	padding: 40px 0 40px 20px;
+	overflow:hidden;
+	h2{
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: -0.2px;
+		line-height: 29px;
+	}
+	.swiper {
+		overflow: visible;
+        padding-right:20px;
+	}
+}
+
+//슬라이더(마감임박)
+.evt_slider_wrap.deadline_section{
+	overflow: visible;
+	position:relative;
+	background-color: #fff4f1;
+	margin-top:60px;
+	.deadline_bubble{
+		width:auto;
+		max-width:85%;
+		position: absolute;
+		z-index: 10;
+		border-radius:30px;
+		background-color: #D4FF1A;
+		padding:8px 16px;
+		border-top: 2px solid #000;
+		border-left: 3px solid #000;
+		border-right: 2px solid #000;
+		border-bottom: 3px solid #000;
+		top:0;
+		right:95px;
+		transform: translateY(-50%);
+		&:before{
+			content:"";
+			position: absolute;
+			border-top: 9px solid transparent;
+			border-left: 0 solid transparent;
+			border-right: 10px solid #D4FF1A;
+			border-bottom: 9px solid transparent;
+			transform: rotate(97deg);
+			z-index: 2;
+			bottom: 3px;
+			right: 2px;
+		}
+		&:after {
+			border-color: #000 transparent;
+			border-style: solid;
+			border-width: 0 10px 10px 6px;
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 4px;
+		 	right: -5px;
+			width: 0;
+			z-index: 0;
+			transform: rotate(2deg);
+		  }
+		.txt{
+			width:100%;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 18px;
+			letter-spacing: -0.12px;
+		}
+
+	}
+
+}
+.deadline_character_area{
+	display: block;
+	position: absolute;	
+	width:100%; 
+	top:0;
+	left:0;
+	right:0;
+    display: none;
+	.deadline_character{
+		position: absolute;
+		width:70px;
+		height:80px;
+		right:24px;
+		top:10px;
+		img{
+			width:100%;
+		}
+	}
+}
+
+//이벤트 목록 없음
+.empty_evt_list{
+	padding-bottom:20%; 
+	text-align: center;
+	line-height:19px;
+	color:#767676;
+	font-size: 13px;
+	padding-top:calc(20% + 95px);
+	background:url(../images/guide/ico_empty_evt_list.svg) no-repeat center center/ 60px;
+}

@@ -10834,7 +10834,7 @@ body:before {
 }
 
 .evt_slider .evt_item.more_items {
-  width: 100px;
+  width: 100px !important;
   height: 192px;
 }
 

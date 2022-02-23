@@ -5518,7 +5518,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 }
 
 .evt_slider .evt_item.more_items {
-  width: 100px;
+  width: 100px !important;
   height: 192px;
 }
 
