@@ -7285,6 +7285,7 @@ body:before {
 
 .ht_ .container_wrapper {
   position: relative;
+  background-color: #fff;
 }
 
 .ht_ .product_wrap_li {

@@ -3,6 +3,10 @@
   background-color: #f7f7f7;
 }
 
+.list_uniq_btm {
+  padding-bottom: 60px;
+}
+
 /*===============     모듈 001 영역(기획전 타이틀)   ==================*/
 .evt_mdl_title {
   position: relative;
@@ -532,6 +536,42 @@
   padding-left: 28px;
 }
 
+/*===============     모듈 010-2 영역(전체 레이어 팝업/응모하기)   ==================*/
+.evt_apply_wrap label {
+  display: block;
+  margin-top: 20px;
+  line-height: 20px;
+  letter-spacing: -0.14px;
+  font-weight: 500;
+}
+
+.evt_apply_wrap label:first-of-type {
+  margin: 0;
+}
+
+.evt_apply_wrap .evt_apply_input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px;
+  line-height: 20px;
+  border: 1px solid #d5d5d5;
+  outline: none;
+  -webkit-transition: border-color 0.2s ease-out;
+  transition: border-color 0.2s ease-out;
+}
+
+.evt_apply_wrap .evt_apply_input:disabled {
+  color: #767676;
+  background-color: #f7f7f7;
+  pointer-events: none;
+  cursor: default;
+}
+
+.evt_apply_wrap .evt_apply_input:focus {
+  border-color: #000;
+}
+
 /*=======================  모듈 011 영역 (rullet) ==================*/
 .rullet_wrap {
   position: relative;
@@ -983,7 +1023,7 @@
 
 /*=======================MDL-018영역=====================*/
 .hot_deal_area {
-  padding: 40px 0 40px 20px;
+  padding: 40px 0 55px 20px;
   background-color: #fff;
 }
 
@@ -1194,6 +1234,7 @@
           flex-flow: row nowrap;
   position: relative;
   padding: 0 20px;
+  margin-top: 24px;
 }
 
 .evt_lst_selec_title span {
@@ -1259,6 +1300,10 @@
 .evt_lst_selec_title .option_ul li:hover,
 .evt_lst_selec_title .option_ul li:active {
   background-color: #f5f5f5;
+}
+
+.evt_list_area_mn {
+  overflow: hidden;
 }
 
 .evt_list_area_mn .evt_menu {
@@ -1421,14 +1466,14 @@
   padding-right: 20px;
 }
 
-.evt_slider_wrap.deadline_section {
+.evt_slider_wrap.deadline_sectio n {
   overflow: visible;
   position: relative;
   background-color: #fff4f1;
   margin-top: 60px;
 }
 
-.evt_slider_wrap.deadline_section .deadline_bubble {
+.evt_slider_wrap.deadline_sectio n .deadline_bubble {
   width: auto;
   max-width: 85%;
   position: absolute;
@@ -1446,7 +1491,7 @@
           transform: translateY(-50%);
 }
 
-.evt_slider_wrap.deadline_section .deadline_bubble:before {
+.evt_slider_wrap.deadline_sectio n .deadline_bubble:before {
   content: "";
   position: absolute;
   border-top: 9px solid transparent;
@@ -1460,7 +1505,7 @@
   right: 2px;
 }
 
-.evt_slider_wrap.deadline_section .deadline_bubble:after {
+.evt_slider_wrap.deadline_sectio n .deadline_bubble:after {
   border-color: #000 transparent;
   border-style: solid;
   border-width: 0 10px 10px 6px;
@@ -1475,7 +1520,7 @@
           transform: rotate(2deg);
 }
 
-.evt_slider_wrap.deadline_section .deadline_bubble .txt {
+.evt_slider_wrap.deadline_sectio n .deadline_bubble .txt {
   width: 100%;
   font-weight: 500;
   font-size: 12px;
@@ -1513,4 +1558,256 @@
   font-size: 13px;
   padding-top: calc(20% + 95px);
   background: url(../images/guide/ico_empty_evt_list.svg) no-repeat center center/60px;
+}
+
+/*=========================EVT-LST-004  ===========================*/
+.contents_evt_wrap {
+  padding: 30px 20px 60px 20px;
+}
+
+.evt_section_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 12px 0 0 0;
+}
+
+.evt_section_title h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+.evt_section_title.title_line {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.evt_ck_area {
+  line-height: 26px;
+  padding: 6px 0;
+}
+
+.evt_list_card_ul {
+  border-top: 1px solid #000;
+}
+
+.evt_list_card_ul .evt_list_item {
+  padding: 12px 4px;
+  border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
+}
+
+.evt_list_card_ul .evt_list_item.status_new .category_area span {
+  position: relative;
+}
+
+.evt_list_card_ul .evt_list_item.status_new .category_area span:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -3px;
+  left: calc(100% + 3px);
+  background: url(../images/guide/new_post.svg) no-repeat center center/18px;
+}
+
+.evt_list_card_ul .category_area {
+  height: 17px;
+  line-height: 17px;
+  font-size: 12px;
+  color: #767676;
+}
+
+.evt_list_card_ul .list_title_area {
+  margin-top: 8px;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.evt_list_card_ul .list_date_area {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #767676;
+}
+
+/*================================= HTR-M-EVT-VIEW-000 ===========================================*/
+.evt_description_title {
+  padding: 20px 4px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.evt_description_title .category_area {
+  height: 17px;
+  line-height: 17px;
+  font-size: 13px;
+  color: #767676;
+}
+
+.evt_description_title .list_title_area {
+  margin-top: 8px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+}
+
+.evt_description_title .list_date_area {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #767676;
+}
+
+.evt_description_content {
+  padding: 20px 4px;
+}
+
+.evt_description_content .category_area {
+  line-height: 18px;
+}
+
+.evt_description_content .list_title_area {
+  white-space: normal;
+  font-weight: 700;
+}
+
+.evt_description_content .list_date_area {
+  line-height: 19px;
+}
+
+.evt_description_content hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: none;
+  border-top: 1px dashed #000;
+}
+
+.evt_content .evt_list_item {
+  padding: 20px 4px;
+}
+
+.evt_content .category_area {
+  line-height: 18px;
+}
+
+.evt_content .list_title_area {
+  white-space: normal;
+  font-weight: 700;
+}
+
+.evt_content .list_date_area {
+  line-height: 19px;
+}
+
+.btn_area,
+.tolist_btn_area {
+  padding: 24px 0 40px 0;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+}
+
+.btn_area button,
+.tolist_btn_area button {
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.btn_area .evt_confirm_btn,
+.tolist_btn_area .evt_confirm_btn {
+  width: 165px;
+  height: 44px;
+  letter-spacing: -0.14px;
+  color: #fff;
+}
+
+.btn_area .evt_list_btn,
+.tolist_btn_area .evt_list_btn {
+  width: 100%;
+  line-height: 48px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -0.15px;
+  border: 1px solid #ccc;
+}
+
+.btn_area {
+  border: none;
+}
+
+.evt_view_full_tit {
+  text-align: center;
+  background-color: #FAD9CC;
+  padding: 40px 20px 0 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.evt_view_full {
+  width: 100%;
+}
+
+.evt_anchor_target {
+  width: 100%;
+  height: 60px;
+  margin-top: -60px;
+  visibility: hidden;
+}
+
+.evt_anchor_target.sticky_target {
+  height: 140px;
+  margin-top: -140px;
+}
+
+.evt_end_dim {
+  position: relative;
+}
+
+.evt_end_dim .evt_banner_wrap {
+  padding-bottom: 0;
+}
+
+.evt_end_dim:before {
+  content: "기획전 종료";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+  padding-top: calc(50% - 10px);
+}
+
+.evt_full_img_wrap img {
+  width: 100%;
+}
+
+.evt_join_btn_wrap {
+  background-color: #fff;
+  padding: 24px 20px 60px 20px;
+  text-align: center;
+}
+
+.evt_join_btn_wrap button {
+  width: 100%;
 }

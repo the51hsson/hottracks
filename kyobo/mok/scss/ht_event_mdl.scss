@@ -435,6 +435,9 @@
 			pointer-events: none;
 			cursor: default;
 		}
+		&:focus {
+			border:1px solid #000;
+		}
 	}
 }
 /*===============     모듈 009-1 영역(전체 레이어 팝업/투표하기)   ==================*/

@@ -7285,6 +7285,7 @@ body:before {
 
 .ht_ .container_wrapper {
   position: relative;
+  background-color: #fff;
 }
 
 .ht_ .product_wrap_li {
@@ -11061,7 +11062,7 @@ body:before {
 .evt_products .price_origin.no_discount {
   text-decoration: none;
   color: #000;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 0;
   font-size: 16px;
 }

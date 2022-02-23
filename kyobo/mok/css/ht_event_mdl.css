@@ -8443,7 +8443,7 @@ input[type=number] {
 .evt_products .price_origin.no_discount {
   text-decoration: none;
   color: #000;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 0;
   font-size: 16px;
 }
@@ -9944,6 +9944,10 @@ input[type=number] {
   background-color: #f7f7f7;
   pointer-events: none;
   cursor: default;
+}
+
+.evt_apply_wrap .evt_apply_input:focus {
+  border: 1px solid #000;
 }
 
 /*===============     모듈 009-1 영역(전체 레이어 팝업/투표하기)   ==================*/
