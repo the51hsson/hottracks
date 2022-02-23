@@ -5476,7 +5476,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 .evt_slider {
   padding-top: 20px;
   padding-right: 20px;
-  overflow: visible !important;
 }
 
 .evt_slider .evt_item {

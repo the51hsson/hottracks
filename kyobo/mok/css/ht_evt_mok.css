@@ -1462,18 +1462,17 @@
 }
 
 .evt_slider_wrap .swiper {
-  overflow: visible;
   padding-right: 20px;
 }
 
-.evt_slider_wrap.deadline_sectio n {
+.evt_slider_wrap.deadline_section {
   overflow: visible;
   position: relative;
   background-color: #fff4f1;
   margin-top: 60px;
 }
 
-.evt_slider_wrap.deadline_sectio n .deadline_bubble {
+.evt_slider_wrap.deadline_section .deadline_bubble {
   width: auto;
   max-width: 85%;
   position: absolute;
@@ -1491,7 +1490,7 @@
           transform: translateY(-50%);
 }
 
-.evt_slider_wrap.deadline_sectio n .deadline_bubble:before {
+.evt_slider_wrap.deadline_section .deadline_bubble:before {
   content: "";
   position: absolute;
   border-top: 9px solid transparent;
@@ -1505,7 +1504,7 @@
   right: 2px;
 }
 
-.evt_slider_wrap.deadline_sectio n .deadline_bubble:after {
+.evt_slider_wrap.deadline_section .deadline_bubble:after {
   border-color: #000 transparent;
   border-style: solid;
   border-width: 0 10px 10px 6px;
@@ -1520,7 +1519,7 @@
           transform: rotate(2deg);
 }
 
-.evt_slider_wrap.deadline_sectio n .deadline_bubble .txt {
+.evt_slider_wrap.deadline_section .deadline_bubble .txt {
   width: 100%;
   font-weight: 500;
   font-size: 12px;

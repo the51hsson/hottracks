@@ -1167,13 +1167,13 @@
 		line-height: 29px;
 	}
 	.swiper {
-		overflow: visible;
+		//overflow: visible;
         padding-right:20px;
 	}
 }
 
 //슬라이더(마감임박)
-.evt_slider_wrap.deadline_sectio n{
+.evt_slider_wrap.deadline_section{
 	overflow: visible;
 	position:relative;
 	background-color: #fff4f1;
