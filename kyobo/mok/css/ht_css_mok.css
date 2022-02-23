@@ -12510,12 +12510,21 @@ body:before {
   transition: border-color 0.4s ease-out;
 }
 
+.btn_select_ty[disabled] {
+  background: #f7f7f7 url("../images/guide/ico_arw_select.svg") calc(100% - 14px) center/9px 5px no-repeat;
+  color: #767676;
+}
+
 .btn_ip_clear {
   background-image: url("../images/guide/btn_ip_reset@2x.png") !important;
 }
 
 .btn_ip_search {
   background-image: url("../images/guide/btn_ip_search_mok.png");
+}
+
+.btn_ip_search[disabled] {
+  opacity: 0.4 !important;
 }
 
 .form_label .required:before {

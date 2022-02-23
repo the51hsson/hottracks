@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="icon_card" transform="translate(-783 -1069)">
+    <g id="Group_109468" data-name="Group 109468" transform="translate(148 -38)">
+      <g id="Rectangle_19804" data-name="Rectangle 19804" transform="translate(637 1114)" fill="#ffed10" stroke="#000" stroke-width="1.2">
+        <rect width="28" height="19.331" rx="3" stroke="none"/>
+        <rect x="0.6" y="0.6" width="26.8" height="18.131" rx="2.4" fill="none"/>
+      </g>
+      <g id="Rectangle_19805" data-name="Rectangle 19805" transform="translate(637 1117.907)" fill="#fff" stroke="#000" stroke-width="1.2">
+        <rect width="28" height="4.813" stroke="none"/>
+        <rect x="0.6" y="0.6" width="26.8" height="3.612" fill="none"/>
+      </g>
+      <line id="Line_135" data-name="Line 135" x2="14.977" transform="translate(643.837 1128.448)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.2"/>
+    </g>
+    <rect id="Rectangle_19806" data-name="Rectangle 19806" width="32" height="32" transform="translate(783 1069)" fill="none"/>
+  </g>
+</svg>

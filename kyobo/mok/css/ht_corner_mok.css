@@ -676,6 +676,10 @@
   padding-top: 213px;
 }
 
+.ctg_top_wrap .ctg_top_swiper .swiper-slide .product_pic a {
+  display: block;
+}
+
 .ctg_top_wrap .ctg_top_swiper .swiper-slide img {
   width: 100%;
   height: auto;

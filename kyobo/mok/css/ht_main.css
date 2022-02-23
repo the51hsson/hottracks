@@ -7839,6 +7839,12 @@
   margin-top: -32px;
 }
 
+.cont_wrap .wel_belt_banner {
+  opacity: 1 !important;
+  -webkit-animation: none !important;
+          animation: none !important;
+}
+
 .cont_wrap .wel_belt02 {
   margin-top: 40px;
 }

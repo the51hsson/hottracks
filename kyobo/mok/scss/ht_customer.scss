@@ -692,7 +692,161 @@
 
 
 
+/*** 고객센터 메인 ***/
+/* 메인 : .cus_mc_top */
+.cus_mc_top {
+    padding:0 20px;
+    a {
+        display:block;position:relative;padding:22px 15px 22px 68px;background:#f7f7f7;border-radius:8px;
+        &:before {
+            position:absolute;left:20px;top:50%;width:40px;height:40px;margin-top:-20px;background:url('../images/guide/ico_cus_mc_top.svg') center/100% no-repeat;content:"";
+        }
+    }
+    .s1 {
+        color:#000;font-size:14px;font-weight:500;line-height:26px;
+        span {
+            display:inline-block;position:relative;padding-right:9px;
+            &:after {
+                position:absolute;right:0;top:50%;width:7px;height:7px;margin-top:-5px;border:solid #555;border-width:1px 1px 0 0;transform:rotate(45deg);content:"";overflow:hidden;
+            } 
+        }
+    }
+    .s2 {
+        color:#797979;font-size:12px;font-weight:400;line-height:18px;letter-spacing:-0.3px;
+    }
+}
 
+/* FAQ : .cus_mc_faq */
+.cus_mc_faq {
+    .form_ip {
+        border:2px solid #000;
+    }
+    .faq_search_tag {
+        margin-top:14px;text-align:left;
+        .tit {
+            color:#595959;font-weight:400;
+        }
+        .faq_search_tag_btn {
+            margin: 0;
+        }
+    }
+}
+
+/* FAQ BEST : cus_mc_best */
+.cus_mc_best {
+    background:#6286ff;overflow:hidden;
+    .mc_tit03 {
+        color:#fff
+    }
+}
+.cus_mc_best_cont {
+    position:relative;margin:0 -20px -30px -20px;
+    &:before {
+        position:absolute;left:100px;top:-40px;width:35px;height:63px;background:url('../images/guide/ico_cus_mc_best.svg') center top/100% no-repeat;content:"";transform:rotate(25deg);
+    }
+    .swiper-container {
+        overflow:initial;
+    }
+    .swiper-slide {
+        width:60%;margin:0 0 35px 20px;background:#fff;border-radius:8px;box-shadow:10px 10px 20px rgba(0,0,0,0.16);
+        &:last-child {
+            margin-right:20px;
+        }
+    }
+}
+.cus_mc_best_box {
+    position:relative;padding:17px;box-sizing:border-box;border-radius:8px;overflow:hidden;
+    &:before {
+        position:absolute;left:0;top:0;width:100%;height:100%;border:2px solid #000;border-radius:8px;box-sizing:border-box;content:"";transition:border-color 0.4s 0.2s;
+    }
+    a {
+        display:block;position:relative;
+    }
+    .info {
+        position:absolute;left:0;top:0;height:20px;padding:0 9px;background:#f7f7f7;border-radius:10px;box-sizing:border-box;color:#292929;font-size:10px;line-height:21px;
+    }
+    .s1 {
+        position:relative;padding:27px 0 0 18px;color:#000;font-size:13px;font-weight:400;line-height:19px;display:-webkit-box;min-height:65px;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+        &::before {
+            position:absolute;left:0;top:27px;color:#000;font-size:12px;font-weight:700;content:"Q.";
+        }
+    }
+}
+
+
+/* 문의하기 : .cus_mc_contac */
+.cus_mc_contact {
+    background:#f4f4f4;
+    .btn_line_gray {
+        border-color:#000;
+    }
+}
+.cus_mc_contact_cont {
+    position:relative;margin-top:12px;padding:20px;background:#fff;border-radius:8px;
+    .s1 {
+        p {
+            position:relative;margin:2px 0 6px 0;padding-left:22px;color:#000;font-size:14px;font-weight:700;line-height:20px;
+            &:before {
+                position:absolute;left:0;top:-1px;width:18px;height:18px;background:url('../images/guide/ico_cus_mc_contact.svg') center/100% no-repeat;content:"";
+            }
+        }
+    }
+    .s1 + .s2 {
+        margin-top:12px;padding-top:12px;border-top:1px dashed #d5d5d5;
+    }
+    .bul_item_dot {
+        a {
+            color:#000;font-weight:500;text-decoration:none;
+        }
+    }
+}
+
+/* 배너 : .cus_mc_banner */
+.cus_mc_banner {
+    padding:0;background:#ffe688;
+    &:before {
+        position:absolute;right:20px;top:50%;width:44px;height:44px;margin-top:-22px;background:url('../images/guide/ico_cus_mc_banner.svg') center/100% no-repeat;content:"";
+    }
+    a {
+        display:block;position:relative;min-height:44px;padding:25px;box-sizing:border-box;
+    }
+    .s1 {
+        color:#000;font-size:14px;font-weight:500;line-height:26px;
+        span {
+            display:inline-block;position:relative;padding-right:9px;
+            &:after {
+                position:absolute;right:0;top:50%;width:7px;height:7px;margin-top:-5px;border:solid #000;border-width:1px 1px 0 0;transform:rotate(45deg);content:"";overflow:hidden;
+            } 
+        }
+    }
+    .s2 {
+        color:#000;font-size:12px;font-weight:400;line-height:18px;
+    }
+}
+
+/* 핫트랙스 서비스 안내 : .cus_mc_sv */
+.cus_mc_sv {
+    display:flex;justify-content:space-between;flex-wrap:wrap;
+    li {
+        display:flex;flex-direction:column;justify-content:top;align-items:center;width:33.3%;
+        border-left:1px dashed #dcdcdc;
+        &:first-child {
+            border-left:0;
+        }
+        a {
+            display:block;text-align:center;
+        }
+        .ico {
+            display:block;position:relative;width:56px;height:56px;margin:0 auto;background:#f7f7f7;border-radius:50%;
+            img {
+                position:absolute;left:50%;top:50%;width:32px;height:32px;transform:translate(-50%,-50%);
+            }
+        }
+        .txt {
+            display:inline-block;position:relative;margin-top:6px;color:#000;font-size:13px;letter-spacing:-0.1px;
+        }
+    }
+}
 
 
 
