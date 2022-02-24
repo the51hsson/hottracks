@@ -350,6 +350,10 @@
   cursor: pointer;
 }
 
+.module6_item:first-child {
+  margin-top: 0;
+}
+
 .module6_item .product_pic {
   position: relative;
   height: 0;
