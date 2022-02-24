@@ -296,11 +296,13 @@
 .fold_tit .fold_info {
   position: relative;
   margin-bottom: 8px;
+  overflow: hidden;
 }
 
 .fold_tit .fold_info > ul {
   padding-top: 4px;
   overflow: hidden;
+  float: left;
 }
 
 .fold_tit .fold_info > ul li {
@@ -344,9 +346,7 @@
 }
 
 .fold_tit .fold_info .info {
-  position: absolute;
-  right: 0;
-  top: 0;
+  /*position:absolute;right:0;top:0;*/
   height: 20px;
   padding: 0 9px;
   background: #f7f7f7;
@@ -356,6 +356,8 @@
   color: #292929;
   font-size: 10px;
   line-height: 21px;
+  float: left;
+  margin-right: 10px;
 }
 
 .fold_tit .img {
@@ -1128,6 +1130,18 @@
   color: #fff;
   font-size: 10px;
   line-height: 21px;
+}
+
+.cus_box_area .bul_list {
+  margin-top: 12px;
+}
+
+.info_text_box.mb {
+  margin-bottom: 12px;
+}
+
+.info_text_box + .cus_box_area {
+  margin-top: 12px;
 }
 
 /* cus_list_area */

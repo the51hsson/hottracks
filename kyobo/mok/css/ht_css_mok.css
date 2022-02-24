@@ -12616,11 +12616,12 @@ body:before {
 }
 
 /* Btn */
-.btn_area {
+.mc_cont .btn_area {
   margin-top: 30px;
+  padding: 0;
 }
 
-.btn_area button, .btn_area a {
+.mc_cont .btn_area button, .mc_cont .btn_area a {
   width: 100%;
 }
 
