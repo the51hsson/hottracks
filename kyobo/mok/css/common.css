@@ -6239,7 +6239,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .evt_products.row_dir .prod_item {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6417,7 +6417,6 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 }
 
 .list_section .evt_products.row_dir {
-  margin-top: 20px;
   padding: 20px 20px 0 20px;
 }
 

@@ -774,6 +774,9 @@
                     .btn_footer_link {
                         margin-top: -3px;
                     }
+                    &:last-of-type {
+                        margin-bottom: 3px;
+                    }
                 }
     
                 .gap {

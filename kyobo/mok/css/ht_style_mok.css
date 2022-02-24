@@ -8357,6 +8357,10 @@ body:before {
   margin-top: -3px;
 }
 
+.ht_ .footer_wrapper .footer_body .footer_info_box .info_text:last-of-type {
+  margin-bottom: 3px;
+}
+
 .ht_ .footer_wrapper .footer_body .footer_info_box .gap {
   font-size: 0;
 }

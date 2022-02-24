@@ -894,6 +894,10 @@
           justify-content: space-between;
 }
 
+.ctg_prod_wrap .prod_list_info.type2 {
+  margin-top: 20px;
+}
+
 .ctg_prod_wrap .prod_list_info + .evt_products {
   padding-top: 16px;
 }
@@ -1657,4 +1661,143 @@
 #ClickCksClose_week .vertical_swap_contents .dialog_footer.ctg_cks .btn_black,
 #ClickCksClose_day .vertical_swap_contents .dialog_footer.ctg_cks .btn_black {
   background-color: #000;
+}
+
+/*==================================== HTR-M-MUS-ETC-000.html(팬사인회)====================================*/
+#content {
+  padding-bottom: 60px;
+}
+
+.banner_basic02 ul.mgt30 {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+}
+
+.banner_basic02 ul.mgt30 li {
+  height: 80px;
+  margin-top: 20px;
+  width: 100%;
+  border-bottom: 1px solid #E6E6E6;
+  overflow: hidden;
+}
+
+.banner_basic02 ul.mgt30 a {
+  width: 100%;
+  float: left;
+}
+
+.banner_basic02 ul.mgt30 a span {
+  display: block;
+  margin-left: 160px;
+  text-align: left;
+  width: auto;
+  font-size: 12px;
+}
+
+.banner_basic02 div.bannerIcon img {
+  vertical-align: middle;
+  position: absolute;
+  left: 125px;
+  z-index: 30;
+  width: 35px;
+}
+
+.banner_basic02 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 0 25px;
+}
+
+.banner_basic02 li {
+  background-color: #fff;
+  text-align: center;
+}
+
+.banner_basic02 li + li {
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.banner_basic02 a {
+  background-color: #fff;
+  max-width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.banner_basic02 a.full {
+  width: 100%;
+}
+
+.banner_basic02 a img {
+  max-width: 100%;
+}
+
+.banner_basic02 a .pic_full img {
+  width: 100%;
+}
+
+.banner_basic02 a .tit {
+  padding-top: 12px;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  font-size: 14px;
+  color: #010101;
+}
+
+.banner_basic02 a .txt {
+  padding-top: 5px;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  font-size: 12px;
+  color: #6a6a6a;
+  height: 14px;
+  line-height: 14px;
+}
+
+.banner_basic02 a .prdt-name {
+  padding-top: 12px;
+  white-space: nowrap;
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  font-size: 14px;
+  color: #010101;
+  text-align: center;
+}
+
+.banner_basic02 a .price {
+  padding-top: 12px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  color: #f51d1d;
+  font-weight: bold;
+  height: 14px;
+}
+
+.banner_basic02 a .price span {
+  font-size: 12px;
+  color: #a2a2a2;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.banner_basic.col2 + .banner_basic.col2 {
+  margin: 0;
+}
+
+.paging.mb30 {
+  height: 30px;
+  background-color: #fff !important;
 }

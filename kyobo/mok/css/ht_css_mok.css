@@ -8357,6 +8357,10 @@ body:before {
   margin-top: -3px;
 }
 
+.ht_ .footer_wrapper .footer_body .footer_info_box .info_text:last-of-type {
+  margin-bottom: 3px;
+}
+
 .ht_ .footer_wrapper .footer_body .footer_info_box .gap {
   font-size: 0;
 }
@@ -11556,7 +11560,7 @@ body:before {
 
 .evt_products.row_dir .prod_item {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11734,7 +11738,6 @@ body:before {
 }
 
 .list_section .evt_products.row_dir {
-  margin-top: 20px;
   padding: 20px 20px 0 20px;
 }
 
