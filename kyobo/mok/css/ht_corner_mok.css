@@ -1292,8 +1292,6 @@
   background: url(../images/guide/muse_menu_active_icon.svg) no-repeat left center/20px;
   width: 0;
   height: 0;
-  -webkit-transition: width .2s, height .2s;
-  transition: width .2s, height .2s;
 }
 
 .main_cont_wrap.music .main_tab_menu .txt {
