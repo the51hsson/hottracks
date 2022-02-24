@@ -19,7 +19,7 @@
 <meta property="og:image" content="../../images/guide/sns.jpg">
 <link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
-<title>음반메인</title>
+<title>음반베스트</title>
 
 <!-- Plug-In css -->
 <link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -31,15 +31,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
 <!-- // font css -->
 
-<!-- Custom styles for this template -->
-<!-- <link rel="stylesheet" href="../../css/style_mok.css" /> -->
-<!-- // Custom styles for this template -->
-
-<!-- ht_ Hottracks custom css -->
-<link rel="stylesheet" href="../../css/ht_style_mok.css" />
-<link rel="stylesheet" href="../../css/ht_music_main.css" />
-<link rel="stylesheet" href="../../css/ht_music_list.css" />
-<!--// ht_ Hottracks custom css -->
+<!-- ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
+<link rel="stylesheet" href="../../css/ht_css_mok.css">
+<link rel="stylesheet" href="../../css/ht_template_mok.css">
+<!--// ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
 
 
 <!-- Plug-In javascript -->
@@ -56,11 +51,111 @@
 <script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
 <!-- // Plug-In javascript -->
 
-<!-- UI JavaScript -->
-<script src="../../js/circletype.min.js"></script>
+<!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
 <script src="../../js/front_bak.js"></script>
-<script src="../../js/ht_music_list.js"></script>
-<!-- // UI JavaScript -->
+<script src="../../js/mok.ui.js"></script>
+<script src="../../js/ht_lib.js"></script>
+<script src="../../js/ht_template.js"></script>
+<!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
+
+<script>
+$(function(){
+    //[2022-02-24] chartPerio 매개변수 2022년, 10월, 3주, 13일 (텍스트값)=> 2022, 10, 3, 13 data-val 값으로 변경
+    //차트 선택 팝업 스왑
+    chartPeriod('2022', '10', '3', '13');
+
+    function chartPeriod(yy ,mm ,wk ,dd){
+        if(! $('.vertical_swap_content').length) return;
+
+        //초기 설정 날짜 인덱스 값
+        var initNum = null;
+        var initYear = yy;
+        var initMonth = mm;
+        var initWeek = wk;
+        var initDay = dd; 
+
+        $('.swiper.chart_date_swap').each(function(i, ele) {
+            var year =  $(ele).parents('.dialog_contents').find('.swiper.chart_date_swap.year');
+            var month = $(ele).parents('.dialog_contents').find('.swiper.chart_date_swap.month');
+            var week =  $(ele).parents('.dialog_contents').find('.swiper.chart_date_swap.week');
+            var day =  $(ele).parents('.dialog_contents').find('.swiper.chart_date_swap.day');
+
+            if(year.length){
+                $(year).find('.swiper-slide').each(function(index, item){
+                   if($(item).data('val') == initYear){
+                       initNum  =  index; 
+                   };
+                });
+            }
+            if(month.length){
+                $(ele).find('.swiper-slide').each(function(index, item){
+                   if($(item).data('val') == initMonth){
+                       initNum  =  index;
+               
+                   };
+                });
+            }
+            if(week.length){
+                $(ele).find('.swiper-slide').each(function(index, item){
+                   if($(item).data('val') == initWeek){
+                       initNum  =  index;
+
+                   };
+                });
+            }
+            if(day.length){
+                $(ele).find('.swiper-slide').each(function(index, item){
+                   if($(item).data('val') == initDay){
+                       initNum  =  index;
+                   };
+                });
+            }
+    
+            var chartSwiper = new Swiper(this, {
+                direction: "vertical",
+                loop:true,
+                slidesPerView: 5,
+                initialSlide: initNum,
+                centeredSlides: true,
+                centeredSlidesBounds: true,
+                observer: true,
+                observeParents: true,
+                on:{
+                    observerUpdate:setTitle,
+                    slideChangeTransitionEnd:setTitle,
+                    }
+            });
+            function setTitle() {        
+                //해당 팝업 안의 날짜 선택 스왑 개수      
+                var yearTxt, yearTarget, monthTxt, monthTarget, weekTarget, weekTxt, dayTarget, dayTxt;  
+                if(year.length) {
+                    yearTxt = year.find('.swiper-slide.swiper-slide-active').text();
+                    yearTarget  = $(ele).parents('.dialog_wrap').find('.dialog_header .year');
+                    yearTarget.text(yearTxt);
+                }
+                if(month.length) {
+                    monthTxt = month.find('.swiper-slide.swiper-slide-active').text();
+                    monthTarget  = $(ele).parents('.dialog_wrap').find('.dialog_header .month');
+                    monthTarget.text(monthTxt);
+                    }
+                if(day.length) {
+                    dayTxt = day.find('.swiper-slide.swiper-slide-active').text();
+                    dayTarget  = $(ele).closest('.dialog_wrap').find('.dialog_header .day');
+                    dayTarget.text(dayTxt);
+                }
+                if(week.length) {
+                    weekTxt = week.find('.swiper-slide.swiper-slide-active').text();
+                    weekTarget  = $(ele).closest('.dialog_wrap').find('.dialog_header .week');
+                    weekTarget.text(weekTxt);
+                }
+            
+                            
+            }
+        });
+    }
+
+});
+</script>
 </head>
 <body>
 	<div class="skip_nav_wrap">
@@ -91,7 +186,8 @@
         </header>
 		<!-- // 헤더 -->
 		<!-- 컨텐츠 -->
-        <section class="wrap">
+        <!--[2022-02-22] section.wrap -> section.cont_wrap으로 변경-->
+        <section class="cont_wrap">
             <div class="tit_area">
                 <h3 class="tit">베스트</h3>
                 <div class="sub_tit">
@@ -100,7 +196,8 @@
                     <a href="#" class="sub">BLU-RAY</a>
                 </div>
             </div>
-            <div class="ctg_topMenu">
+            <!--[2022-02-24] div.ctg_topMenu - not_sticky 추가-->
+            <div class="ctg_topMenu not_sticky">
                 <div class="inner_wrap">
                     <a href="#" class="active">전체</a>
                     <a href="#">가요</a>
@@ -130,7 +227,7 @@
                 </div>
                 <div class="time_info_sub">50위까지 순위입니다.</div>
             </div>
-            <section class="list_section">
+            <section class="list_section" style="padding-bottom:30px;"> <!--TODO 하단 여백 공통 정리 예정-->
                 <ul class="prod-wrapper evt_products row_dir">
                     <li class="prod_item">
                         <div class="rangking up">
@@ -142,7 +239,7 @@
                                 <div class="icon"></div>
                                 <!-- <div class="txt"></div> -->
                             </button>
-                            <img src="../../images/guide/@tod_prod_sample4.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
+                            <img src="../../images/guide/@tod_prod_sample4.svg" class="bd_img" alt="" >
                         </div>
                         <div class="product_info">
                             <div class="company">dretec</div>
@@ -169,7 +266,7 @@
                                 <div class="icon"></div>
                                 <div class="txt">80</div>
                             </button>
-                            <img src="../../images/guide/@tod_prod_sample5.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
+                            <img src="../../images/guide/@tod_prod_sample5.svg" class="bd_img" alt="" >
                         </div>
                         <div class="product_info">
                             <div class="company">dretec</div>
@@ -196,7 +293,7 @@
                                 <div class="icon"></div>
                                 <!-- <div class="txt"></div> -->
                             </button>
-                            <img src="../../images/guide/@tod_prod_sample4.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
+                            <img src="../../images/guide/@tod_prod_sample4.svg" class="bd_img" alt="" >
                         </div>
                         <div class="product_info">
                             <div class="company">dretec</div>
@@ -223,7 +320,7 @@
                                 <div class="icon"></div>
                                 <div class="txt">80</div>
                             </button>
-                            <img src="../../images/guide/@tod_prod_sample3.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
+                            <img src="../../images/guide/@tod_prod_sample3.svg" class="bd_img" alt="" >
                         </div>
                         <div class="product_info">
                             <div class="company">dretec</div>
@@ -250,7 +347,7 @@
                                 <div class="icon"></div>
                                 <!-- <div class="txt"></div> -->
                             </button>
-                            <img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
+                            <img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img" alt="" >
                         </div>
                         <div class="product_info">
                             <div class="company">dretec</div>
@@ -277,7 +374,7 @@
                                 <div class="icon"></div>
                                 <div class="txt">80</div>
                             </button>
-                            <img src="../../images/guide/@tod_prod_sample1.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
+                            <img src="../../images/guide/@tod_prod_sample1.svg" class="bd_img" alt="">
                         </div>
                         <div class="product_info">
                             <div class="company">dretec</div>
@@ -304,7 +401,7 @@
                                 <div class="icon"></div>
                                 <div class="txt">80</div>
                             </button>
-                            <img src="../../images/guide/@tod_prod_sample1.svg" class="bd_img" alt="핫트랙스 상품" title="핫트랙스 상품">
+                            <img src="../../images/guide/@tod_prod_sample1.svg" class="bd_img" alt="" >
                         </div>
                         <div class="product_info">
                             <div class="company">dretec</div>
@@ -334,15 +431,10 @@
 		<!-- // 컨텐츠 -->
 		<!-- 푸터 -->
 		<footer class="footer_wrapper">
-			<div class="notice_wrap">
-				<span class="notice_text">공지사항</span>
-				<a href="#" class="notice_link">교보문고 개인정보 처리방침 개정안내</a>
-			</div>
-
 			<div class="footer_body">
 				<div class="logo_box">
 					<a href="#" class="logo_link">
-						<img src="../../images/guide/ico_logo.svg" alt="핫트랙스">
+						<img src="../../images/guide/ico_logo.svg" alt="">
 					</a>
 				</div>
 
@@ -384,6 +476,9 @@
 		<!-- // 푸터 -->
 	</div>
 	<!-- // wrapper -->
+
+
+
     <!-- 팝업 (ctg_floating_menues 온라인) -->
 	<div id="ClickCksClose" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
 		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
@@ -421,6 +516,9 @@
 		<!-- //dialog_footer -->
 	</div>
     <!-- //팝업 (ctg_floating_menues 온라인) -->
+
+
+
     <!-- 팝업 (ctg_floating_menues 연간) -->
 	<div id="ClickCksClose_year" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
 		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
@@ -439,13 +537,13 @@
             <div class="vertical_swap_area">
                 <div class="swiper chart_date_swap year">
                     <ul class="swiper-wrapper ck_list">
-                        <li class="swiper-slide">2017년</li>
-                        <li class="swiper-slide">2018년</li>
-                        <li class="swiper-slide">2019년</li>
-                        <li class="swiper-slide">2020년</li>
-                        <li class="swiper-slide">2021년</li>
-                        <li class="swiper-slide">2022년</li>
-                        <li class="swiper-slide">2023년</li>
+                        <li class="swiper-slide" data-val="2017">2017년</li>
+                        <li class="swiper-slide" data-val="2018">2018년</li>
+                        <li class="swiper-slide" data-val="2019">2019년</li>
+                        <li class="swiper-slide" data-val="2020">2020년</li>
+                        <li class="swiper-slide" data-val="2021">2021년</li>
+                        <li class="swiper-slide" data-val="2022">2022년</li>
+                        <li class="swiper-slide" data-val="2023">2023년</li>
                     </ul>
                 </div>    
             </div>
@@ -458,6 +556,9 @@
 	    </div>
     </div>  
     <!-- //팝업 (ctg_floating_menues 연간) -->
+
+
+
     <!-- 팝업 (ctg_floating_menues 월간) -->
     <div id="ClickCksClose_month" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
 		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
@@ -477,29 +578,29 @@
             <div class="vertical_swap_area type_month">
                 <div class="swiper chart_date_swap year">
                     <ul class="swiper-wrapper ck_list">
-                        <li class="swiper-slide">2017년</li>
-                        <li class="swiper-slide">2018년</li>
-                        <li class="swiper-slide">2019년</li>
-                        <li class="swiper-slide">2020년</li>
-                        <li class="swiper-slide">2021년</li>
-                        <li class="swiper-slide">2022년</li>
-                        <li class="swiper-slide">2023년</li>
+                        <li class="swiper-slide" data-val="2017">2017년</li>
+                        <li class="swiper-slide" data-val="2018">2018년</li>
+                        <li class="swiper-slide" data-val="2019">2019년</li>
+                        <li class="swiper-slide" data-val="2020">2020년</li>
+                        <li class="swiper-slide" data-val="2021">2021년</li>
+                        <li class="swiper-slide" data-val="2022">2022년</li>
+                        <li class="swiper-slide" data-val="2023">2023년</li>
                     </ul>
                 </div>  
                 <div class="swiper chart_date_swap month">
                     <ul class="swiper-wrapper ck_list">
-                        <li class="swiper-slide">01월</li>
-                        <li class="swiper-slide">02월</li>
-                        <li class="swiper-slide">03월</li>
-                        <li class="swiper-slide">04월</li>
-                        <li class="swiper-slide">05월</li>
-                        <li class="swiper-slide">06월</li>
-                        <li class="swiper-slide">07월</li>
-                        <li class="swiper-slide">08월</li>
-                        <li class="swiper-slide">09월</li>
-                        <li class="swiper-slide">10월</li>
-                        <li class="swiper-slide">11월</li>
-                        <li class="swiper-slide">12월</li>
+                        <li class="swiper-slide" data-val="01">01월</li>
+                        <li class="swiper-slide" data-val="02">02월</li>
+                        <li class="swiper-slide" data-val="03">03월</li>
+                        <li class="swiper-slide" data-val="04">04월</li>
+                        <li class="swiper-slide" data-val="05">05월</li>
+                        <li class="swiper-slide" data-val="06">06월</li>
+                        <li class="swiper-slide" data-val="07">07월</li>
+                        <li class="swiper-slide" data-val="08">08월</li>
+                        <li class="swiper-slide" data-val="09">09월</li>
+                        <li class="swiper-slide" data-val="10">10월</li>
+                        <li class="swiper-slide" data-val="11">11월</li>
+                        <li class="swiper-slide" data-val="12">12월</li>
                     </ul>
                 </div>   
             </div>
@@ -512,6 +613,9 @@
 	    </div>
     </div>  
     <!-- 팝업 (ctg_floating_menues 월간) -->
+
+
+
     <!-- 팝업 (ctg_floating_menues 주간) -->
     <div id="ClickCksClose_week" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
         <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
@@ -532,38 +636,38 @@
             <div class="vertical_swap_area type_week">
                 <div class="swiper chart_date_swap year">
                     <ul class="swiper-wrapper ck_list">
-                        <li class="swiper-slide">2017년</li>
-                        <li class="swiper-slide">2018년</li>
-                        <li class="swiper-slide">2019년</li>
-                        <li class="swiper-slide">2020년</li>
-                        <li class="swiper-slide">2021년</li>
-                        <li class="swiper-slide">2022년</li>
-                        <li class="swiper-slide">2023년</li>
+                        <li class="swiper-slide" data-val="2017">2017년</li>
+                        <li class="swiper-slide" data-val="2018">2018년</li>
+                        <li class="swiper-slide" data-val="2019">2019년</li>
+                        <li class="swiper-slide" data-val="2020">2020년</li>
+                        <li class="swiper-slide" data-val="2021">2021년</li>
+                        <li class="swiper-slide" data-val="2022">2022년</li>
+                        <li class="swiper-slide" data-val="2023">2023년</li>
                     </ul>
                 </div>  
                 <div class="swiper chart_date_swap month">
                     <ul class="swiper-wrapper ck_list">
-                        <li class="swiper-slide">01월</li>
-                        <li class="swiper-slide">02월</li>
-                        <li class="swiper-slide">03월</li>
-                        <li class="swiper-slide">04월</li>
-                        <li class="swiper-slide">05월</li>
-                        <li class="swiper-slide">06월</li>
-                        <li class="swiper-slide">07월</li>
-                        <li class="swiper-slide">08월</li>
-                        <li class="swiper-slide">09월</li>
-                        <li class="swiper-slide">10월</li>
-                        <li class="swiper-slide">11월</li>
-                        <li class="swiper-slide">12월</li>
+                        <li class="swiper-slide" data-val="01">01월</li>
+                        <li class="swiper-slide" data-val="02">02월</li>
+                        <li class="swiper-slide" data-val="03">03월</li>
+                        <li class="swiper-slide" data-val="04">04월</li>
+                        <li class="swiper-slide" data-val="05">05월</li>
+                        <li class="swiper-slide" data-val="06">06월</li>
+                        <li class="swiper-slide" data-val="07">07월</li>
+                        <li class="swiper-slide" data-val="08">08월</li>
+                        <li class="swiper-slide" data-val="09">09월</li>
+                        <li class="swiper-slide" data-val="10">10월</li>
+                        <li class="swiper-slide" data-val="11">11월</li>
+                        <li class="swiper-slide" data-val="12">12월</li>
                     </ul>
                 </div> 
                 <div class="swiper chart_date_swap week">
                     <ul class="swiper-wrapper ck_list">
-                        <li class="swiper-slide">1주</li>
-                        <li class="swiper-slide">2주</li>
-                        <li class="swiper-slide">3주</li>
-                        <li class="swiper-slide">4주</li>
-                        <li class="swiper-slide">5주</li>
+                        <li class="swiper-slide" data-val="1">1주</li>
+                        <li class="swiper-slide" data-val="2">2주</li>
+                        <li class="swiper-slide" data-val="3">3주</li>
+                        <li class="swiper-slide" data-val="4">4주</li>
+                        <li class="swiper-slide" data-val="5">5주</li>
                     </ul>
                 </div>   
             </div>
@@ -576,6 +680,9 @@
         </div>
     </div>  
     <!-- 팝업 (ctg_floating_menues 주간) -->
+
+
+
     <!-- 팝업 (ctg_floating_menues  일간) -->
     <div id="ClickCksClose_day" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
         <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
@@ -596,43 +703,43 @@
             <div class="vertical_swap_area type_week">
                 <div class="swiper chart_date_swap year">
                     <ul class="swiper-wrapper ck_list">
-                        <li class="swiper-slide">2017년</li>
-                        <li class="swiper-slide">2018년</li>
-                        <li class="swiper-slide">2019년</li>
-                        <li class="swiper-slide">2020년</li>
-                        <li class="swiper-slide">2021년</li>
-                        <li class="swiper-slide">2022년</li>
-                        <li class="swiper-slide">2023년</li>
+                        <li class="swiper-slide" data-val="2017">2017년</li>
+                        <li class="swiper-slide" data-val="2018">2018년</li>
+                        <li class="swiper-slide" data-val="2019">2019년</li>
+                        <li class="swiper-slide" data-val="2020">2020년</li>
+                        <li class="swiper-slide" data-val="2021">2021년</li>
+                        <li class="swiper-slide" data-val="2022">2022년</li>
+                        <li class="swiper-slide" data-val="2023">2023년</li>
                     </ul>
                 </div>  
                 <div class="swiper chart_date_swap month">
                     <ul class="swiper-wrapper ck_list">
-                        <li class="swiper-slide">01월</li>
-                        <li class="swiper-slide">02월</li>
-                        <li class="swiper-slide">03월</li>
-                        <li class="swiper-slide">04월</li>
-                        <li class="swiper-slide">05월</li>
-                        <li class="swiper-slide">06월</li>
-                        <li class="swiper-slide">07월</li>
-                        <li class="swiper-slide">08월</li>
-                        <li class="swiper-slide">09월</li>
-                        <li class="swiper-slide">10월</li>
-                        <li class="swiper-slide">11월</li>
-                        <li class="swiper-slide">12월</li>
+                        <li class="swiper-slide" data-val="01">01월</li>
+                        <li class="swiper-slide" data-val="02">02월</li>
+                        <li class="swiper-slide" data-val="03">03월</li>
+                        <li class="swiper-slide" data-val="04">04월</li>
+                        <li class="swiper-slide" data-val="05">05월</li>
+                        <li class="swiper-slide" data-val="06">06월</li>
+                        <li class="swiper-slide" data-val="07">07월</li>
+                        <li class="swiper-slide" data-val="08">08월</li>
+                        <li class="swiper-slide" data-val="09">09월</li>
+                        <li class="swiper-slide" data-val="10">10월</li>
+                        <li class="swiper-slide" data-val="11">11월</li>
+                        <li class="swiper-slide" data-val="12">12월</li>
                     </ul>
                 </div> 
                 <div class="swiper chart_date_swap day">
                     <ul class="swiper-wrapper ck_list">
-                        <li class="swiper-slide">01일</li>
-                        <li class="swiper-slide">02일</li>
-                        <li class="swiper-slide">03일</li>
-                        <li class="swiper-slide">04일</li>
-                        <li class="swiper-slide">05일</li>
-                        <li class="swiper-slide">11일</li>
-                        <li class="swiper-slide">12일</li>
-                        <li class="swiper-slide">13일</li>
-                        <li class="swiper-slide">14일</li>
-                        <li class="swiper-slide">15일</li>
+                        <li class="swiper-slide" data-val="01">01일</li>
+                        <li class="swiper-slide" data-val="02">02일</li>
+                        <li class="swiper-slide" data-val="03">03일</li>
+                        <li class="swiper-slide" data-val="04">04일</li>
+                        <li class="swiper-slide" data-val="05">05일</li>
+                        <li class="swiper-slide" data-val="11">11일</li>
+                        <li class="swiper-slide" data-val="12">12일</li>
+                        <li class="swiper-slide" data-val="13">13일</li>
+                        <li class="swiper-slide" data-val="14">14일</li>
+                        <li class="swiper-slide" data-val="15">15일</li>
                     </ul>
                 </div>   
             </div>

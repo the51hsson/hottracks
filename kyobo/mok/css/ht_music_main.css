@@ -876,6 +876,10 @@
   padding-top: 20px;
 }
 
+.evt_products.row_dir .product_pic {
+  margin-bottom: 0;
+}
+
 .evt_products.row_dir .prod_item {
   width: 100%;
   margin-top: 25px;
@@ -1106,6 +1110,7 @@
 
 .list_section .rangking .rank {
   display: block;
+  letter-spacing: -0.03em;
 }
 
 .list_section .rangking.down .rank_icon {

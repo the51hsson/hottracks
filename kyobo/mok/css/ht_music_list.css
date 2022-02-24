@@ -370,7 +370,7 @@
 }
 
 /*=============================== HTR-M-MUS-LIST-001-1.html =================================*/
-.wrap .tit_area {
+.cont_wrap .tit_area {
   padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,7 +390,7 @@
   margin-bottom: 12px;
 }
 
-.wrap .tit_area .tit {
+.cont_wrap .tit_area .tit {
   font-size: 20px;
   line-height: 32px;
   letter-spacing: -0.18px;
@@ -398,14 +398,14 @@
   white-space: nowrap;
 }
 
-.wrap .tit_area .sub_tit {
+.cont_wrap .tit_area .sub_tit {
   margin-left: auto;
   overflow: hidden;
   white-space: nowrap;
   font-weight: 500;
 }
 
-.wrap .tit_area .sub_tit .sub {
+.cont_wrap .tit_area .sub_tit .sub {
   float: left;
   display: block;
   margin-right: 10px;
@@ -415,11 +415,11 @@
   font-size: 18px;
 }
 
-.wrap .tit_area .sub_tit .sub:last-of-type {
+.cont_wrap .tit_area .sub_tit .sub:last-of-type {
   margin-right: 0;
 }
 
-.wrap .tit_area .sub_tit .sub.active {
+.cont_wrap .tit_area .sub_tit .sub.active {
   color: #000;
 }
 

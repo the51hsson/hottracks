@@ -1,20 +1,20 @@
 //상품 카드 공통 영역 추출(244:140 비율 100%)
-.list_evt_area{
+.list_evt_area {
 	padding-top: 20px;
-	.evt_item{
+	.evt_item {
 		margin-top:24px;
 		padding:0 20px;
-		&:first-of-type{
+		&:first-of-type {
 			margin:0;
 		}
 	}
-	.thumnail_evt{
+	.thumnail_evt {
 		 position:relative;
 		 padding-top:57.2%;
 		 height:0;
 		 margin-bottom: 12px;
 		cursor: pointer;
-		img{
+		img {
 			position:absolute;
 			width:100%;
 			top:0;
@@ -22,14 +22,14 @@
 		}
 
 	}
-	.promotion_status_txt{
+	.promotion_status_txt {
 		display:none;
 	}
-	.promotion_end{
+	.promotion_end {
 		position:relative;
 		height:auto;
 		overflow: hidden;
-		&:before{
+		&:before {
 			content:"";
 			position:absolute;
 			width:100%;
@@ -43,7 +43,7 @@
 			border-radius: 4px;
 			cursor:default;
 		}
-		.txt{
+		.txt {
 			width:100%;
 			height:19px;
 			position:absolute;
@@ -51,7 +51,7 @@
 			margin-top: -10px;;
 			
 		}
-		.promotion_status_txt{
+		.promotion_status_txt {
 			position:absolute;
 			width:100%;
 			text-align: center;
@@ -64,21 +64,21 @@
             z-index:11;
 		}
 	}
-	img{
+	img {
 		position:absolute;
 		width:100%;
 		left:0;
 		top:0;
 		right:0;
 	}
-	.txt_account{
+	.txt_account {
 		.txt_heading,
-		.txt_sub{
+		.txt_sub {
 			overflow: hidden;
 			white-space: nowrap;
 			text-overflow: ellipsis;
 		}
-		.txt_heading{
+		.txt_heading {
 			line-height: 26px;
 			font-size: 16px;
 			letter-spacing: -0.16px;
@@ -88,13 +88,13 @@
 				margin-right:5px;
 			}
 		}
-		.txt_sub{
+		.txt_sub {
 			margin-bottom: 6px;
 			line-height: 19px;
 			font-size: 13px;
 			letter-spacing: -0.13px;
 		}
-		.txt_period{
+		.txt_period {
 			line-height: 19px;
 			font-size: 13px;
 			letter-spacing: -0.13px;
@@ -102,17 +102,17 @@
 		}
 	}
 }
-.evt_slider{
+.evt_slider {
 	padding-top: 20px;
 	padding-right: 20px;
 	overflow: visible !important;
-	.evt_item{
+	.evt_item {
 		width: 244px;
 		position:relative;
-		span{
+		span {
 			display: block;
 		}
-		.discount_icon{
+		.discount_icon {
 			position:absolute;
 			width:50px;
 			height:50px;
@@ -126,7 +126,7 @@
 			background:url(../images/guide/lank_hot.svg) no-repeat center bottom/48px;
 
 		}
-		.img_wrap{
+		.img_wrap {
 			position:relative;
 			height:0;
 			padding-top:57.3%;
@@ -140,10 +140,10 @@
 			}
 		}
 	}
-	.evt_item.more_items{
+	.evt_item.more_items {
 		width:100px !important;
 		height:192px;
-		a{
+		a {
 			height:192px;
 			display: flex;
 			align-items: center;
@@ -166,13 +166,13 @@
 		margin-right: 5px;
 	
 	}
-	.title{
+	.title {
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 25px;
 		letter-spacing: -0.16px;
 	}
-	.sub{
+	.sub {
 		margin-top: 5px;
 		font-size: 13px;
 		line-height: 19px;
@@ -186,24 +186,24 @@
 		color:#595959;
 	}
 	//스왑 기능 없을때
-	&.nonswipe{
+	&.nonswipe {
 	 display: block;
 	 padding-right: 0px !important;
 		.evt_item{
 			width:100%;
 			margin: 25px 0 0 0;
-			.img_wrap{
+			.img_wrap {
 				position:relative;
 				padding-top:57.2%;
 				height:0;
-				img{
+				img {
 					width:100%;
 					position:absolute;
 					left:0;
 					top:0;
 				}
 			}
-			.item_info .title{
+			.item_info .title {
 				font-size: 16px;
 			}
 		}
@@ -213,30 +213,30 @@
 
 //2022-01-24 상품 카드 공통 영역 추출(1:1)
 .prod-wrapper,
-.evt_products{
+.evt_products {
 	padding-top:20px;
-	.prod_item{
+	.prod_item {
 		cursor:pointer;
-		&:first-of-type{
+		&:first-of-type {
 			margin:0;
 		}
-		span{
+		span {
 			display: block;
 		}
 	}
-	.product_pic{
+	.product_pic {
 		position:relative;
 		height:0;
 		margin-bottom:10px;
 		overflow: hidden;
-		img{
+		img {
 			width:100%;
 			position:absolute;
 			top:0;
 			left:0;
 
 		}
-		.evt_good_count{
+		.evt_good_count {
 			display: block;
 			padding:5px 12px;
 			height:24px;
@@ -248,22 +248,22 @@
 			bottom:8px;
 			background-color: rgba(0,0,0,0.5);
 			z-index:5;
-			.icon{
+			.icon {
 				float:left;
 				width:12px;
 				height:14px;
 				margin-top:-1px;
 				background:url(../images/guide/ico_prod_like_icon.svg) no-repeat center center /12px;
 			}
-			.txt{
+			.txt {
 				float:left;
 				margin-left:3px;
 				line-height:14px;
 			}
 		}
 	}
-	.evt_good_count.active{
-		.icon{
+	.evt_good_count.active {
+		.icon {
 			float:left;
 			width:12px;
 			height:14px;
@@ -276,7 +276,7 @@
 		font-size: 12px;
 		color:#767676;
 	} 			
-	.title{
+	.title {
 		letter-spacing: -0.03em;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -290,19 +290,19 @@
 		line-height:19px;
 		min-height:38px;
 	}
-	.price_line{
+	.price_line {
       display:flex;
 	  flex-flow: row wrap;
 	  justify-content: flex-start;
 	}
-	.final_price{
+	.final_price {
 		font-weight:700;
 		font-size: 16px;
 		line-height:22px;
 		letter-spacing: -0.03em;
 		margin-right:3px;
 	}
-	.discount_rate{
+	.discount_rate {
 		font-weight:700;
 		color:#DA2128;
 		font-size: 16px;
@@ -310,7 +310,7 @@
 		letter-spacing: -0.03em;
 		margin-right:3px;
 	}
-	.price_origin{
+	.price_origin {
 		text-decoration: line-through;
 		color:#767676;
 		font-size: 12px;
@@ -318,7 +318,7 @@
 		line-height:22px;
 		margin-top:1px;
 	}  
-	.price_origin.no_discount{
+	.price_origin.no_discount {
 		text-decoration: none;
 		color:#000;
 		font-weight:700;
@@ -326,32 +326,32 @@
 		font-size:16px;
 	}
 
-	.badge_line{
+	.badge_line {
 		margin-top:8px;
 		display: flex;
 		flex-flow:row wrap;
 	    justify-content: flex-start;
-		.badge{
+		.badge {
 			margin-top:4px;
 			margin-right:4px;
 		}
 	}
 }
 //스왑 기능 없을때(1:1)
-.nonswipe{
+.nonswipe {
 	padding-right: 0px !important;
-	.evt_item{
+	.evt_item {
 		width:100%;
 		margin-top:22px;
 		&:first-of-type{
 			margin:0;
 		}
-		div.img_wrap{
+		div.img_wrap {
 		   position:relative;
 		   padding-top:57.2%;
 		   height:0;
 		}
-		img{
+		img {
 		   width:100%;
 		   position:absolute;
 		   left:0;
@@ -364,11 +364,11 @@
 		font-size: 16px;
 		line-height:22px;
 	}
-	.price_origin{
+	.price_origin {
 		font-size: 12px;
 		line-height:22px;
 	}
-	.price_line .price_origin.no_discount{
+	.price_line .price_origin.no_discount {
 		text-decoration: none;
 		color:#000;
 		font-size: 16px;
@@ -376,16 +376,16 @@
    }
 /* 1:1 비율 335*335*/   
 .type_lg{
-	.prod_item{
+	.prod_item {
 		width:335px;
 	}
-	.product_pic{
+	.product_pic {
 		padding-top:335px;
 	}
-	.company{
+	.company {
 		font-size: 14px;
 	}
-	.title{
+	.title {
 		margin-bottom:4px;
 		line-height:26px;
 		font-size: 16px;
@@ -393,51 +393,51 @@
 	}  
 	.discount_rate,
 	.final_price,
-	.price_origin{
+	.price_origin {
 		line-height:24px;
 	}	
 	.discount_rate,
-	.final_price{
+	.final_price {
 		font-size: 18px;
 	}
-	.price_origin.no_discount{
+	.price_origin.no_discount {
 		font-size: 18px;
 	}
 }
 /* 1:1 비율 158*158*/   
-.type_md{
-	.prod_item{
+.type_md {
+	.prod_item {
 		width:158px;
 	}
-	.product_pic{
+	.product_pic {
 		padding-top:158px;
 	}
-	.title{
+	.title {
 		margin-bottom:8px;
 		font-size: 13px;
 	}
 	.discount_rate,
-	.final_price{
+	.final_price {
 		font-size: 16px;
 		line-height:22px;
 	  }	
-	.price_origin{
+	.price_origin {
 		font-size: 12px;
 		line-height:22px;
 	}
-	.price_origin.no_discount{
+	.price_origin.no_discount {
 		font-size: 16px;
 	}
 }
 /* 1:1 비율 140*140*/
- .type_sm{
-	.prod_item{
+ .type_sm {
+	.prod_item {
 		width:140px;
 	}
-	.product_pic{
+	.product_pic {
 		padding-top:140px;
 	}			
-	.title{
+	.title {
 		margin-bottom:8px;
 		font-size: 13px;
 		line-height: 19px;
@@ -445,7 +445,7 @@
 	}
 	  .discount_rate,
 	  .final_price,
-	  .price_origin{
+	  .price_origin {
 		  font-size: 14px;
 		  line-height:18px;
 		  letter-spacing: -0.03em;
@@ -453,21 +453,21 @@
 		  margin-right: 3px;
 	  }
 
-	.price_origin{
+	.price_origin {
 		font-size: 10px;
 		margin:0;
 	} 
-	.price_origin.no_discount{
+	.price_origin.no_discount {
 		font-size: 14px;
 	}
 }
 /* 1:1 비율 100*100*/
-.type_xs{
-	.prod_item{
+.type_xs {
+	.prod_item {
 		width:99px;
 		margin-right:0;
 	}
-	.product_pic{
+	.product_pic {
 		padding-top:99px;
 		margin-bottom:8px;
 		.evt_good_count{
@@ -475,10 +475,10 @@
 		 bottom:4px;
 		}
 	}
-	.company{
+	.company {
 		margin-bottom:0px;
 	} 			
-	.title{
+	.title {
 		margin-bottom:4px;
 		font-size: 12px;
 		line-height: 17px;
@@ -487,19 +487,19 @@
 	}
 	.discount_rate,
 	.final_price,
-	.price_origin{
+	.price_origin {
 		line-height:15px;
 	}
 	.discount_rate,
-	.final_price{
+	.final_price {
 		font-size: 12px;
 	}
-	.price_origin{
+	.price_origin {
 		font-size: 10px;
 	}  
-	.badge_line{
+	.badge_line {
 		margin-top:6px;
-		.badge{
+		.badge {
 			margin-top:2px;
 		    margin-right:1px;
 			height:17px;
@@ -510,32 +510,32 @@
 		}
 	}
 	
-	.price_origin.no_discount{
+	.price_origin.no_discount {
 		font-size: 12px;
 		font-weight: 700;;
 	} 
 }
 /* 1:1 비율 74*74*/
-.type_xxs{	
-	.prod_item{
+.type_xxs {	
+	.prod_item {
 		width:74px;
 	}
-	.product_pic{
+	.product_pic {
 		padding-top:74px;
 		margin-bottom:2px;
-		.evt_good_count{
+		.evt_good_count {
 			right:4px;
 			bottom:4px;
 		   }
 	}
-	.title{
+	.title {
 		font-size: 12px;
 		margin-bottom:4px;
 		min-height:auto;
 	}
-	.badge_line{
+	.badge_line {
 		margin-top:6px;
-		.badge{
+		.badge {
 			margin-top:2px;
 			height:17px;
 			line-height: 17px;
@@ -544,17 +544,17 @@
 			padding:0 4px;
 		}
 	}
-	.price_line{
+	.price_line {
 		font-size: 10px;;
 	}
 }
 //상품 개수 2개 이하로 스왑 기능 없을때
-.nonswipe{
+.nonswipe {
 	padding-right:0 !important;
 	display:flex;
 	justify-content: space-between;
 	flex-flow:row nowrap;
-	.prod_item{
+	.prod_item {
 		width:calc((100% - 20px)/2);
 		margin:0;
 		&:last-of-type{
@@ -562,23 +562,23 @@
 		}
 	}
 
-	.product_pic{
+	.product_pic {
 		padding-top:100%;
 		position:relative;
 		margin-bottom:12px;
-		img{
+		img {
 			width:100%;
 			position:absolute;
 			top:0;
 			left:0;
 		}
 	}
-	.company{
+	.company {
 		margin-bottom:2px;
 		font-size: 12px;
 		color:#767676;
 	} 			
-	.title{
+	.title {
 		margin-bottom:8px;
 		font-size: 13px;
 		line-height: 19px;
@@ -591,21 +591,21 @@
 		-webkit-box-orient: vertical;
 		word-break: keep-all;
 	}
-	.price_line{
+	.price_line {
       display:flex;
 	  flex-flow: row wrap;
-		.discount_rate{
+		.discount_rate {
 			font-weight: 500;
 			color:#DA2128;
 			font-size: 16px;
 			margin-right:5px;
 		}
-		.final_price{
+		.final_price {
 			font-weight: 500;
 			font-size: 16px;
 
 		}
-		.price_origin{
+		.price_origin {
 			font-size: 12px;
 			text-decoration: line-through;
 			color:#767676;
@@ -618,12 +618,12 @@
 	}
 }
 //19세 이상 상품
-.adult_prod{
-	.product_pic{
+.adult_prod {
+	.product_pic {
 		position: relative;
 		background-color: #fff;
 	}
-	.adult_block{
+	.adult_block {
 		position:absolute;
 		width:100%;
 		height:calc( 100% - 1px);
@@ -640,13 +640,13 @@
 	}
 }
 
-.evt_products{
+.evt_products {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content:space-between;
 	align-items: flex-start;
 	align-content: flex-start;
-	.prod_item{
+	.prod_item {
 		width: calc((100% - 20px)/2);
 		cursor:pointer;
 		margin-top:24px;
@@ -654,15 +654,15 @@
 			margin-top:0;
 		}
 	}
-	.product_pic{
+	.product_pic {
 		width:100%;
 		padding-top: 100%;
 		position: relative;
 	}
-	.product_info{
+	.product_info {
 		width:100%;
 	}
-	.sold_out .product_pic:before{
+	.sold_out .product_pic:before {
 		content:"";
 		position:absolute;
 		width:100%;
@@ -674,7 +674,7 @@
 		z-index: 1;
 		overflow: hidden;
 	}
-	.show_replace{
+	.show_replace {
 		display: none;
 		width:100%;
 		position:absolute;
@@ -686,12 +686,12 @@
 		top:50%;
 		left:0;
 		transform: translateY(-50%);
-		div{
+		div {
 			line-height:19px;
 			letter-spacing: -0.013em;
 		}
 	}
-	.replace_prod_btn{
+	.replace_prod_btn {
 		margin:0 auto;
 		margin-top: 11px;
 		height:24px;
@@ -703,11 +703,11 @@
 		font-size: 12px;
 		display:none;
 	}
-	.sold_out .show_replace{
+	.sold_out .show_replace {
 		display: block;
 	}
 	//두줄 정렬일때 품절 대체 상품 슬라이더
-	.prod_item:nth-of-type(2n) .replace_prod_swap{
+	.prod_item:nth-of-type(2n) .replace_prod_swap {
 		margin-right: 0;
 		margin-left: calc(-100% - 40px);
 		&:before{
@@ -716,7 +716,7 @@
 			left:calc(100% - 40px);
 		}
 	}
-	.prod_item:nth-of-type(2n+1) .replace_prod_swap{
+	.prod_item:nth-of-type(2n+1) .replace_prod_swap {
 		margin-right:0;
 	}
 }
@@ -724,7 +724,11 @@
 .evt_products.row_dir {
 	display:block;
 	padding-top:20px;
-	.prod_item{
+	.product_pic {
+		margin-bottom:0;
+	}
+	.prod_item
+	{
 		width:100%;
 		margin-top:25px;
         display: flex;
@@ -733,7 +737,7 @@
 	    align-content: center;
 	    align-items:center;
 		cursor:pointer;
-		span{
+		span {
 			display: block;
 		}
 		&:first-of-type {
@@ -749,7 +753,7 @@
 	.prod_item:nth-of-type(2n) .replace_prod_swap {
 	  margin-left:-20px;
 	}
-	.prod_item:nth-of-type(2n+1) .replace_prod_swap{
+	.prod_item:nth-of-type(2n+1) .replace_prod_swap {
 		margin-right:-20px;
 	}
 	.product_pic {
@@ -759,32 +763,32 @@
 		padding-top:calc((100% - 20px )/2);
 		overflow: hidden;
 		flex-shrink: 0;
-		img{
+		img {
 			width:100%;
 			position:absolute;
 			top:0;
 			left:0;
 		}
 	} 			
-	.product_info{
+	.product_info {
 		width: calc((100% - 20px )/2);
 		margin-left:20px;
 		flex-shrink: 0;
 	}
-	.replace_prod_swap{
-		&:before{
+	.replace_prod_swap {
+		&:before {
 			content:"";
 			position:absolute;
 			left:40px !important;
 		}
-		.mySwiper .swiper-wrapper{
+		.mySwiper .swiper-wrapper {
 			align-items: flex-start;
 		}
-		.prod_item{
+		.prod_item {
 			width:140px;
 			margin-top:0;
 		}
-		.product_pic{
+		.product_pic {
 			width:100%;
 			height:0;
 			padding-top:140px;
@@ -793,7 +797,7 @@
 	}
 }
 //품절 대체 슬라이더
-.replace_prod_swap{
+.replace_prod_swap {
 	position:relative;
 	display:none;
 	background-color: #F2E3CB;
@@ -801,7 +805,7 @@
 	max-width:750px;
 	padding:32px 0 32px 20px;
 	margin:30px -20px 0 -20px;
-	&:before{
+	&:before {
 		content:"";
 		position:absolute;
 		border-top:12px solid #F2E3CB;
@@ -816,7 +820,7 @@
 	.swiper {
 		padding-right: 20px;
 	}
-	.close_swap{
+	.close_swap {
 		position: absolute;
 		display: block;
 		width: 24px;
@@ -825,19 +829,19 @@
 		background-size: 24px 24px;
 		top:35px;
 		right:20px;
-		}
-	.tit{
+	}
+	.tit {
 		position:relative;
 		width:calc(100% - 45px);
 		color:#000;
-		.txt{
+		.txt {
 			float:left;
 			font-size:20px;
 			line-height: 29px;
 			font-weight: 700;
 			letter-spacing: -0.02em;
 		}
-		.replace_icon{
+		.replace_icon {
 			float:left;
 			width:32px;
 			height:32px;
@@ -845,27 +849,27 @@
 			background:url(../images/guide/replace_swipe_icon.svg) no-repeat center center/29px;
 		}
 	}
-	.sub_title{
+	.sub_title {
 		line-height: 20px;
 		letter-spacing: -0.014em;
 		color:#767676;
 		clear:both;
 	}
-	.prod-wrapper .prod_item{
+	.prod-wrapper .prod_item {
 		width:140px;
 		height: unset;
 		margin-top:0;
 	}
-	.product_pic:before{
+	.product_pic:before {
 		display: none;
 	}
 }
-.show_bubble{
+.show_bubble {
 	display: block;
 }
 
 /** =============랭킹 뱃지 상품 리스트  ============ */
-.list_section{
+.list_section {
 	position:relative;
 	.evt_products.row_dir {
         margin-top:20px;
@@ -896,28 +900,29 @@
                 display: none;
             }
         }
-        .rank_icon{
+        .rank_icon {
             width:10px;
             height:15px;
             margin-left:2px;
             margin-top:-1px;
         }
-        .rank{
+        .rank {
             display: block;
+			letter-spacing: -0.03em;
         }
-        &.down .rank_icon{
+        &.down .rank_icon {
             background:url(../images/guide/lank_noraml_up.svg) no-repeat center center / 9px;
             transform: rotate(180deg);
         }
-        &.up .rank_icon{
+        &.up .rank_icon {
             background:url(../images/guide/lank_noraml_up.svg) no-repeat center center / 9px;
             margin-top:-2px;
         }
 
-        &.same .rank_icon{
+        &.same .rank_icon {
             position:relative;
         }
-        &.same .rank_icon:before{
+        &.same .rank_icon:before {
             content:"";
             position:absolute;
             width:7px;
@@ -931,7 +936,7 @@
         }
     }
     @for $lank from 1 through 5 {
-        .prod-wrapper:first-of-type .prod_item:nth-of-type(#{$lank}) .rangking{
+        .prod-wrapper:first-of-type .prod_item:nth-of-type(#{$lank}) .rangking {
             color:#fff;
             background:url(../images/guide/lank_hot.svg) no-repeat center center / 50px;
             border:none;
@@ -940,14 +945,14 @@
                     display: none;
                 }
             }    
-            .rank{
+            .rank {
                 display: block;
             }
-            .rank_icon{
+            .rank_icon {
                 display: block;
                 width:10px;
             }
-            &.down .rank_icon{
+            &.down .rank_icon {
                 background:url(../images/guide/lank_hot_up.svg) no-repeat center center / 9px;
                 transform: rotate(180deg);
             }
@@ -956,7 +961,7 @@
                 transform: rotate(360deg);
             }
     
-            &.same .rank_icon:before{
+            &.same .rank_icon:before {
                 content:"";
                 position:absolute;
                 width:7px;
@@ -991,8 +996,8 @@
 }
 /** =========== //2줄 정렬 상품 리스트 wrapper ======*/
 //품절 대체 상품 스왑이 있는 항목
-.replace_prod{
-	.replace_prod_btn{
+.replace_prod {
+	.replace_prod_btn {
 		display:block;
 	}
 }

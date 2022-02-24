@@ -641,6 +641,10 @@
 		margin-left:8px;
 		background:url(../images/guide/arrow_down.svg) no-repeat center center / 80%;
 	}
+    &.sub_mn { // 음반 리스트 확장 
+        margin:0;
+        background-color: #F7F7F7;
+    }
 }
 .ctg_floating_menues{
     display: flex;
@@ -657,6 +661,7 @@
         border-radius: 20px;
         margin-right: 4px;
         font-size: 13px;
+        background-color: #fff;
         color:#767676;
         letter-spacing: -0.013em;
         box-sizing: border-box;
@@ -668,6 +673,7 @@
         &.arrow_li{
             padding-right:35px;
             background:url(../images/guide/arrow_down.svg) no-repeat right 14px top 50% / 9px;
+            background-color: #fff;
         }
         &.active{
             color:#fff;
@@ -712,6 +718,7 @@
     .ctg_floating_menues {
         padding-right:0; 
         margin-bottom:24px;
+
     }
 	.prod_list_info{
 	   margin-top: 10px;
@@ -990,3 +997,296 @@
 }
 
 /*================================== //브랜드 메인 ===================================*/
+/*=================================== 음반 리스트  ====================================*/
+//TODO 이동 여부 확인 예정!
+.main_cont_wrap {
+    &.music {
+        .main_tab_menu {
+            position:relative;
+            width:75%;
+            max-width:480px;
+            margin:12px auto 30px auto;
+            text-align: center;
+            white-space: nowrap;
+            background:rgba(0,0,0,0);
+            border:1px solid #D5D5D5;
+            border-radius: 50px;
+            border:1px solid #D5D5D5;
+            &:before {
+                content:"";
+                position:absolute;
+                left:0;
+                top:-1px;
+                width : 30%;
+                height:calc(100% + 1px);
+                border-radius: 50px;
+                background-color: #000;
+                border:1px solid #000;
+                box-sizing: content-box;
+                transition: left .1s ease-in-out;  
+        
+            }
+            &.active0:before {
+                left:0;
+                width: calc(100% / 3); 
+            }
+            &.active1:before {
+                left:calc(100% / 3); 
+
+            }
+            &.active2:before {
+                left:calc((100% / 3 ) * 2);
+                width: calc(100% / 3); 
+             }
+            a {
+                position:relative;
+                display:inline-block;
+                width:calc(100% / 3);
+                margin-left:-4px;
+                font-size: 13px;
+                color:#595959;
+                letter-spacing: -0.03em;    
+ 
+                &:first-of-type {
+                    margin:0;
+                }
+                &.active {
+                    color:#fff;
+                    font-weight: 700;
+                    .icon {
+                        width:25px;
+                        height:44px;
+                    }
+                }
+            }
+            .icon {
+                display:inline-block;
+                vertical-align: middle;
+                background:url(../images/guide/muse_menu_active_icon.svg) no-repeat left center  / 20px;
+                width:0;
+                height:0;
+                transition: width .2s, height .2s;
+            }
+            .txt {
+                display:inline-block;
+                vertical-align: middle;
+                line-height: 44px;
+            }
+        }
+    }
+}   
+
+ /*=============================== HTR-M-MUS-LIST-001-1.html =================================*/
+ .cont_wrap .tit_area {
+    padding:0 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin-bottom:12px;
+    .tit {
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: -0.18px;
+        text-align: left;
+        white-space: nowrap;
+    }
+    .sub_tit {
+        margin-left: auto;
+        overflow: hidden;
+        white-space: nowrap;
+        font-weight: 500;
+        .sub {
+            float:left;
+			display:block;
+            margin-right:10px;
+            line-height: 32px;
+            white-space: nowrap;
+			color:rgba(0,0,0,0.2);
+			font-size: 18px;
+            &:last-of-type {
+                margin-right:0;
+            }
+            &.active {
+                color:#000;
+            }
+        }
+    }
+}
+//리스트 날짜 정보
+.list_time_info {
+    padding:0 20px;
+    margin-top: 20px;
+   .time_info_tit {
+       margin-bottom:5px;
+       font-size: 16px;
+        .date {
+            position: relative;
+            line-height:25px;
+            margin-right: 5px;
+            &:before {
+                content:",";
+                position:absolute;
+                bottom:-3px;
+                right:-3px;
+                z-index: 3;
+            }
+        }
+        .sub {
+            line-height:25px;
+        }
+        .btn_info {
+            width:25px;
+            height:25px;
+            background:url(../images/guide/arw_tooltip.png) no-repeat center center/ 20px;
+        }
+   }
+    .time_info_sub {
+        line-height: 20px;
+        word-break: keep-all;
+        font-size: 13px;
+        color:#767676;
+    }
+}
+/*===================================== 음반 리스트 팝업 =================================*/
+.dialog_header {
+	border-bottom:1px solid #fff !important;
+	.dialog_title_sub {
+		margin-top:8px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		.icon_mus{
+			display: block;
+			width:20px;
+			height:20px;
+			margin-right:3px;
+			background:url(../images/guide/mus_pop_sub_tit_icon.svg) no-repeat left center /13px;
+		}
+		.year,
+		.month,
+		.week,
+		.day {
+			margin-right:3px;
+		}
+		.rate {
+			position:relative;
+			margin-left: 5px;
+			&:before {
+				content:",";
+				position:absolute;
+				left:-5px;
+				bottom:-1px;
+				z-index: 3;
+			}
+		}
+	}
+}
+
+#ClickCksClose_year .vertical_swap_contents,
+#ClickCksClose_month .vertical_swap_contents,
+#ClickCksClose_week .vertical_swap_contents,
+#ClickCksClose_day .vertical_swap_contents{
+     background-color: #F7F7F7;
+     height:300px;
+	 margin:0;
+	 padding:0 20px;
+	 position:relative;
+	 &:before {
+		content:"";
+		position: absolute;
+		left:20px;
+		top:100px;
+		width:calc(100% - 40px);
+		height:50px;
+		background-color: #fff;
+		
+	}
+	.swiper-wrapper.ck_list{
+		height:250px;
+	}
+	.swiper-slide{
+		height:50px;
+		line-height: 50px;
+		font-size: 16px;
+		text-align: center;
+		&.swiper-slide-active {
+			font-weight: 700;
+			font-size: 20px;
+		}
+		&.swiper-slide-prev,
+		&.swiper-slide-next{
+			font-size: 18px;
+		}
+	}
+	 .type_month {
+		 display: flex;
+		 flex-flow: row nowrap;
+		 .chart_date_swap {
+			&:first-of-type {
+				flex:1 1 auto;
+				padding-right:10px;
+				.swiper-slide {
+					text-align: right;
+				}
+			}
+			&:last-of-type {
+				flex:1 1 auto;
+				padding-left:10px;
+				.swiper-slide {
+					text-align: left;
+				}
+			}
+			
+		 }
+	 }
+	 .type_week {
+		display: flex;
+		flex-flow: row nowrap;
+		.chart_date_swap {
+		   &:first-of-type {
+			   flex:3 1 auto;
+			   padding-right:10px;
+			   .swiper-slide {
+				text-align: right;
+			   }
+			   .swiper-slide-active{
+				   padding-right:5px
+			   }
+			   .swiper-slide-prev,
+			   .swiper-slide-next{
+			    	padding-right:2px
+			   }
+		   }
+		   &:nth-of-type(2) {
+			flex:3 1 auto;
+		}
+		   &:last-of-type {
+			   flex:4 1 auto;
+			   padding-left:10px;
+			   .swiper-slide {
+				text-align: left;
+		    	}
+				.swiper-slide-active{
+					padding-left:5px;
+				}
+				.swiper-slide-prev,
+				.swiper-slide-next{
+					padding-left:2px;
+				}
+		   }
+		   
+		}
+	}
+	 .dialog_footer.ctg_cks {
+		 margin-top:0;
+		 padding:0;
+		 background-color: #F7F7F7;
+		 .btn_black {
+			 background-color: #000;
+		 }
+	 }
+}

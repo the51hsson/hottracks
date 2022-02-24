@@ -10659,7 +10659,7 @@ body:before {
 }
 
 .solo_banner {
-  margin: 30px 0;
+  padding: 30px 0;
 }
 
 .solo_banner img {
@@ -11550,6 +11550,10 @@ body:before {
   padding-top: 20px;
 }
 
+.evt_products.row_dir .product_pic {
+  margin-bottom: 0;
+}
+
 .evt_products.row_dir .prod_item {
   width: 100%;
   margin-top: 25px;
@@ -11780,6 +11784,7 @@ body:before {
 
 .list_section .rangking .rank {
   display: block;
+  letter-spacing: -0.03em;
 }
 
 .list_section .rangking.down .rank_icon {
