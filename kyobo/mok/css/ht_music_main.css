@@ -1089,7 +1089,7 @@
   height: 50px;
   text-align: center;
   line-height: 50px;
-  top: -20px;
+  top: -4px;
   left: -10px;
   z-index: 30;
   color: #000;
@@ -1358,6 +1358,10 @@
   margin-top: -2px;
   left: 0;
   z-index: 20;
+}
+
+.list_section .rangking + .product_pic {
+  margin-top: 16px;
 }
 
 /** =============//랭킹 뱃지 상품 리스트  ============ */

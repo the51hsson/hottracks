@@ -6446,7 +6446,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   height: 50px;
   text-align: center;
   line-height: 50px;
-  top: -20px;
+  top: -4px;
   left: -10px;
   z-index: 30;
   color: #000;
@@ -6715,6 +6715,10 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   margin-top: -2px;
   left: 0;
   z-index: 20;
+}
+
+.list_section .rangking + .product_pic {
+  margin-top: 16px;
 }
 
 /** =============//랭킹 뱃지 상품 리스트  ============ */
@@ -7015,7 +7019,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   display: -ms-flexbox;
   display: flex;
   width: calc(100% + 40px);
-  margin: 0 -20px 20px -20px;
+  margin: 0 -20px 24px -20px;
   padding: 0 20px;
   overflow-x: auto;
 }
@@ -7072,7 +7076,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 }
 
 .tab_ty.ty a {
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .tab_ty.ty02 a:before {
@@ -7090,7 +7094,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 }
 
 .tab_ty.ty03 a {
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .tab_ty.ty03 a:before {
@@ -7099,6 +7103,66 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .tab_ty.ty03 a.on:before {
   border-color: #000;
+}
+
+.tab_ty.ty04 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 9px 15px 8px 15px;
+  border-radius: 30px;
+  line-height: 19px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab_ty.ty04 a:before {
+  border-color: #ddd;
+  border-radius: 30px;
+}
+
+.tab_ty.ty04 a.on:before {
+  border-color: #000;
+  border-radius: 30px;
+}
+
+.tab_ty.ty05 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 55px;
+  padding: 9px 15px 8px 15px;
+  border-radius: 30px;
+  line-height: 19px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab_ty.ty05 a:before {
+  border-color: #ddd;
+  border-radius: 30px;
+}
+
+.tab_ty.ty05 a.on:before {
+  border-color: #000;
+  border-radius: 30px;
 }
 
 .tab_ty02 {
@@ -7564,6 +7628,18 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .point_line.ty06:before {
   background: #e7fe65;
+}
+
+.point_line.ty07:before {
+  background: #ffd3ec;
+}
+
+.point_line.ty08:before {
+  background: #ffde86;
+}
+
+.point_line.ty09:before {
+  background: #9cfac4;
 }
 
 @-webkit-keyframes pointLine {

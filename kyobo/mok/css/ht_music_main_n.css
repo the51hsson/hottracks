@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/***** 음반메인 *****/
+.mc_cont .evt_products {
+  padding-top: 0;
+}
+
+/*****/
+.mus_mc_fan img {
+  height: 27px;
+  margin-left: 10px;
+}
+
+/** .mus_mc_classic **/
+.mus_mc_classic .mc_tit02 img {
+  height: 28px;
+}
+
+/** 특별한 할인상품 놓치지 마세요 : .mus_mc_special **/
+.mus_mc_special {
+  background: #464dff;
+}
+
+.mus_mc_special .mc_tit02 {
+  color: #fff;
+}

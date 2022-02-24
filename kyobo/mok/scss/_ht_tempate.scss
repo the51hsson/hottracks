@@ -185,7 +185,7 @@
     }
 }
 .tab_ty {
-    display:flex;width:calc(100% + 40px);margin:0 -20px 20px -20px;padding:0 20px;overflow-x:auto;
+    display:flex;width:calc(100% + 40px);margin:0 -20px 24px -20px;padding:0 20px;overflow-x:auto;
     a {
         display:block;position:relative;height:45px;padding:0 20px;box-sizing:border-box;background:#fff;border-radius:22px;color:#000;font-size:12px;font-weight:700;line-height:45px;white-space:nowrap;
         &:before {
@@ -206,7 +206,7 @@
     }
     &.ty {
         a {
-            padding:0 20px;
+            padding:0 15px;
         }
     }
     &.ty02 {
@@ -226,13 +226,39 @@
     }
     &.ty03 {
         a {
-            padding:0 20px;
+            padding:0 15px;
             &:before {
                 border-color:#ddd;
             }
             &.on {
                 &:before {
                     border-color:#000;
+                }
+            }
+        }
+    }
+    &.ty04 {
+        a {
+            display:flex;justify-content:center;flex-wrap:wrap;width:100%;height:auto;padding:9px 15px 8px 15px;border-radius:30px;line-height:19px;text-align:center;align-items:center;
+            &:before {
+                border-color:#ddd;border-radius:30px;
+            }
+            &.on {
+                &:before {
+                    border-color:#000;border-radius:30px;
+                }
+            }
+        }
+    }
+    &.ty05 {
+        a {
+            display:flex;justify-content:center;flex-wrap:wrap;width:100%;height:55px;padding:9px 15px 8px 15px;border-radius:30px;line-height:19px;text-align:center;align-items:center;
+            &:before {
+                border-color:#ddd;border-radius:30px;
+            }
+            &.on {
+                &:before {
+                    border-color:#000;border-radius:30px;
                 }
             }
         }
@@ -445,6 +471,15 @@
     }
     &.ty06:before {
         background:#e7fe65;
+    }
+    &.ty07:before {
+        background:#ffd3ec;
+    }
+    &.ty08:before {
+        background:#ffde86;
+    }
+    &.ty09:before {
+        background:#9cfac4;
     }
 }
 @keyframes pointLine {

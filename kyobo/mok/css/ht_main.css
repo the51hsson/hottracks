@@ -7757,68 +7757,68 @@
 }
 
 /** 모션 재정의 **/
-.ht_ .mc_tit {
+.mc_tit {
   opacity: 0;
 }
 
-.ht_ .mc_txt {
+.mc_txt {
   opacity: 0;
 }
 
-.ht_ .mc_cont.active .mc_tit {
+.mc_cont.active .mc_tit {
   -webkit-animation: fade both 0.6s 0.1s;
           animation: fade both 0.6s 0.1s;
 }
 
-.ht_ .mc_cont.active .mc_txt {
+.mc_cont.active .mc_txt {
   -webkit-animation: fade both 0.6s 0.4s;
           animation: fade both 0.6s 0.4s;
 }
 
-.ht_ .wel_cont {
+.wel_cont {
   position: relative;
   opacity: 0;
 }
 
-.ht_ .wel_cont.active {
+.wel_cont.active {
   -webkit-animation: fade both 0.6s 0.1s;
           animation: fade both 0.6s 0.1s;
 }
 
-.ht_ .li_ty .li {
+.li_ty .li {
   position: relative;
   opacity: 0;
 }
 
-.ht_ .li_ty .li.active {
+.li_ty .li.active {
   -webkit-animation: fade both 0.6s 0.1s;
           animation: fade both 0.6s 0.1s;
 }
 
-.ht_ .li_box_ty .li {
+.li_box_ty .li {
   position: relative;
   opacity: 0;
 }
 
-.ht_ .li_box_ty .li.active {
+.li_box_ty .li.active {
   -webkit-animation: fade both 0.6s 0.1s;
           animation: fade both 0.6s 0.1s;
 }
 
-.ht_ .tab_swiper {
+.tab_swiper {
   opacity: 0;
 }
 
-.ht_ .tab_swiper.active {
+.tab_swiper.active {
   -webkit-animation: fade both 0.6s 0.1s;
           animation: fade both 0.6s 0.1s;
 }
 
-.ht_ .li_resp_ty.ty02 .li {
+.li_resp_ty.ty02 .li {
   opacity: 0;
 }
 
-.ht_ .li_resp_ty.ty02 .li.active {
+.li_resp_ty.ty02 .li.active {
   -webkit-animation: fade both 0.6s 0.1s;
           animation: fade both 0.6s 0.1s;
 }
