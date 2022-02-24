@@ -8307,7 +8307,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   display: block;
   position: relative;
   letter-spacing: -0.15px;
-  font-weight: 500;
+  font-weight: 700;
   color: rgba(0, 0, 0, 0.2);
   white-space: nowrap;
   margin-left: 16px;
