@@ -376,6 +376,9 @@
                     }
                 }
             }
+            &:last-child {
+                margin-right:calc(20% - 20px);
+            }
         }
         .swiper-pagination.swiper-pagination-fraction {
             left:auto;bottom:-5px;min-width:100%;background:none;color:rgba(0,0,0,0.6);text-align:center;transform:translate(0);
@@ -457,9 +460,9 @@
     .alarm_chk {
         position:relative;display:inline-block;width:40px;height:40px;border-radius:50%;margin-left:6px;
         input[type="checkbox"] {
-            position:absolute;left:-9999px;width:0;height:0;border:0;overflow:hidden;
+            position:absolute;left:0;top:0;width:100%;height:100%;border:0;overflow:hidden;z-index:2;opacity:0;;
             + label {
-                display:block;position:relative;width:40px;height:40px;background:#000 url('../images/main/ico_wel_live_alarm.svg') center/100% no-repeat;overflow:hidden;cursor:pointer;transition:background 0.4s;z-index:2;
+                display:block;position:relative;width:40px;height:40px;background:#000 url('../images/main/ico_wel_live_alarm.svg') center/100% no-repeat;overflow:hidden;cursor:pointer;transition:background 0.4s;z-index:1;
             }
             &:checked + label {
                 background-image:url('../images/main/ico_wel_live_alarm_on.svg');
@@ -540,7 +543,7 @@
             }
         }
     }
-    .eye_wel_live + .tit_wel_live + .txt_wel_live +  .live_btn + .wel_live_good_ani {
+    .tit_wel_live + .txt_wel_live +  .live_btn + .wel_live_good_ani {
         top:240px;opacity:1;
     }
 
@@ -2607,6 +2610,11 @@
 }
 
 // 댓글 입력
+.mc_cont {
+    .comment_area {
+        padding-top:0;
+    }
+}
 .comment_area{
     .comment_txt_box {
         position:relative;display:block;padding:12px 15px 8px 15px;border:1px solid #d5d5d5;box-sizing:border-box;
