@@ -8297,6 +8297,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  line-height: 21px;
   padding: 22px 20px 20px 20px;
 }
 
@@ -8341,6 +8342,16 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   position: relative;
   top: 0;
   z-index: 0;
+}
+
+.ctg_topMenu.include_sub {
+  position: relative;
+  top: 0;
+  z-index: 0;
+}
+
+.ctg_topMenu.include_sub .inner_wrap {
+  padding-bottom: 12px;
 }
 
 .menu_sort {

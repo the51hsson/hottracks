@@ -10610,7 +10610,6 @@ body:before {
 }
 
 .ctg_top_swiper {
-  padding: 30px 0 60px 0;
   margin-bottom: 24px;
 }
 
@@ -13618,6 +13617,7 @@ body:before {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  line-height: 21px;
   padding: 22px 20px 20px 20px;
 }
 
@@ -13662,6 +13662,16 @@ body:before {
   position: relative;
   top: 0;
   z-index: 0;
+}
+
+.ctg_topMenu.include_sub {
+  position: relative;
+  top: 0;
+  z-index: 0;
+}
+
+.ctg_topMenu.include_sub .inner_wrap {
+  padding-bottom: 12px;
 }
 
 .menu_sort {

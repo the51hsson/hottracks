@@ -303,10 +303,11 @@
 .ctg_top_swiper {
   background: url(../images/guide/md_top_banner_bg.svg) no-repeat;
   background-size: cover;
+  padding: 30px 0 60px 0;
 }
 
 .ctg_top_swiper .banner_title {
-  padding: 20px 20px 4px 20px;
+  padding: 30px 20px 4px 20px;
   background: url(../images/guide/banr_title_bg.svg) no-repeat center top;
   background-size: auto 83px;
 }
@@ -611,7 +612,7 @@
 .ctg_top_wrap {
   background-color: #fff;
   overflow: hidden;
-  padding: 40px 0;
+  padding: 32px 0;
 }
 
 .ctg_top_wrap .swiper {
@@ -629,6 +630,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.ctg_top_wrap .md_tab + .ctg_top_swiper {
+  padding-top: 0;
+  margin-bottom: 0;
 }
 
 .ctg_top_wrap .md_tab .md_anchor {
@@ -786,6 +792,7 @@
 .ctg_floating_line.sub_mn {
   margin: 0;
   background-color: #F7F7F7;
+  padding-bottom: 20px;
 }
 
 .ctg_floating_menues {

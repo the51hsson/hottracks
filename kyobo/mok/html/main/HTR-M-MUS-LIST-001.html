@@ -60,7 +60,6 @@
 
 <script>
 $(function(){
-    //[2022-02-24] chartPerio 매개변수 2022년, 10월, 3주, 13일 (텍스트값)=> 2022, 10, 3, 13 data-val 값으로 변경
     //차트 선택 팝업 스왑
     chartPeriod('2022', '10', '3', '13');
 
@@ -186,7 +185,6 @@ $(function(){
         </header>
 		<!-- // 헤더 -->
 		<!-- 컨텐츠 -->
-        <!--[2022-02-22] section.wrap -> section.cont_wrap으로 변경-->
         <section class="cont_wrap">
             <div class="tit_area">
                 <h3 class="tit">베스트</h3>
@@ -196,8 +194,7 @@ $(function(){
                     <a href="#" class="sub">BLU-RAY</a>
                 </div>
             </div>
-            <!--[2022-02-24] div.ctg_topMenu - not_sticky 추가-->
-            <div class="ctg_topMenu not_sticky">
+            <div class="ctg_topMenu include_sub">
                 <div class="inner_wrap">
                     <a href="#" class="active">전체</a>
                     <a href="#">가요</a>
@@ -490,7 +487,6 @@ $(function(){
 	<div id="ClickCksClose" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
 		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
 		<!-- dialog_header -->
-        <!--[2022-02-24] div.dialog_header - bd_none 추가 -->
 		<div class="dialog_header bd_none">
 			<div class="dialog_title">분류 기준</div>
 		</div>
@@ -531,7 +527,6 @@ $(function(){
 	<div id="ClickCksClose_year" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
 		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
 		<!-- dialog_header -->
-        <!--[2022-02-24] div.dialog_header - bd_none 추가 -->
 		<div class="dialog_header bd_none">
 			<div class="dialog_title">차트 선택</div>
             <div class="dialog_title_sub">
@@ -572,7 +567,6 @@ $(function(){
     <div id="ClickCksClose_month" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
 		<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
 		<!-- dialog_header -->
-        <!--[2022-02-24] div.dialog_header - bd_none 추가 -->
 		<div class="dialog_header bd_none">
 			<div class="dialog_title">차트 선택</div>
             <div class="dialog_title_sub">
@@ -630,7 +624,6 @@ $(function(){
     <div id="ClickCksClose_week" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
         <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
         <!-- dialog_header -->
-        <!--[2022-02-24] div.dialog_header - bd_none 추가 -->
 		<div class="dialog_header bd_none">
             <div class="dialog_title">차트 선택</div>
             <div class="dialog_title_sub">
