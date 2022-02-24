@@ -7625,6 +7625,10 @@ input[type=number] {
   margin-top: -3px;
 }
 
+.ht_ .footer_wrapper .footer_body .footer_info_box .info_text:last-of-type {
+  margin-bottom: 3px;
+}
+
 .ht_ .footer_wrapper .footer_body .footer_info_box .gap {
   font-size: 0;
 }
@@ -8815,12 +8819,13 @@ input[type=number] {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   text-align: center;
-  padding-top: 50%;
+  padding-top: 53%;
   font-weight: 700;
   font-size: 13px;
-  background: url(../images/guide/@adult_block.svg) no-repeat center top 30%/30%;
+  background: url(../images/guide/@adult_block.svg) no-repeat center top 34%/28%;
   border-radius: 8px;
   border: 2px solid #000;
+  z-index: 2;
 }
 
 .evt_products {
@@ -8937,7 +8942,7 @@ input[type=number] {
 
 .evt_products.row_dir .prod_item {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9115,7 +9120,6 @@ input[type=number] {
 }
 
 .list_section .evt_products.row_dir {
-  margin-top: 20px;
   padding: 20px 20px 0 20px;
 }
 
