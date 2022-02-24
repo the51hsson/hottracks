@@ -698,6 +698,27 @@
   z-index: 3;
 }
 
+.ht_ .eye_wel_live {
+  position: relative;
+  margin: -12px 30px 10px 30px;
+  padding-left: 12px;
+  color: #d4ff1a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.ht_ .eye_wel_live:before {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  background: #d4ff1a;
+  border-radius: 50%;
+  content: "";
+}
+
 .ht_ .wel_live_cont {
   position: relative;
 }
@@ -791,34 +812,6 @@
 
 .ht_ .wel_live_cont .swiper-pagination.swiper-pagination-fraction .swiper-pagination-total:before {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.ht_ .wel_live_cont .eye_wel_live {
-  position: relative;
-  margin-top: -12px;
-  padding-left: 12px;
-  color: #d4ff1a;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 22px;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-
-.ht_ .wel_live_cont .eye_wel_live:before {
-  position: absolute;
-  left: 0;
-  top: 7px;
-  width: 6px;
-  height: 6px;
-  background: #d4ff1a;
-  border-radius: 50%;
-  content: "";
-}
-
-.ht_ .wel_live_cont .eye_wel_live + .tit_wel_live {
-  margin-top: 10px;
 }
 
 .ht_ .wel_live_cont .tit_wel_live {
