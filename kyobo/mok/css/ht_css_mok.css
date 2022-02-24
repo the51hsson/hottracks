@@ -12058,6 +12058,13 @@ body:before {
   padding: 0;
 }
 
+.prod_list_wrap .sub_tit {
+  line-height: 21px;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 24px 0;
+}
+
 .prod_list_wrap .prod-wrapper.evt_products {
   padding-top: 0;
 }

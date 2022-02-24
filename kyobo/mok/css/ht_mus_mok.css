@@ -1,0 +1,586 @@
+@charset "UTF-8";
+/*=================================== 음반 리스트  ====================================*/
+.main_cont_wrap.music .main_tab_menu {
+  position: relative;
+  width: 75%;
+  max-width: 480px;
+  margin: 12px auto 30px auto;
+  text-align: center;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #D5D5D5;
+  border-radius: 50px;
+  border: 1px solid #D5D5D5;
+}
+
+.main_cont_wrap.music .main_tab_menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 30%;
+  height: calc(100% + 1px);
+  border-radius: 50px;
+  background-color: #000;
+  border: 1px solid #000;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-transition: left .1s ease-in-out;
+  transition: left .1s ease-in-out;
+}
+
+.main_cont_wrap.music .main_tab_menu.active0:before {
+  left: 0;
+  width: calc(100% / 3);
+}
+
+.main_cont_wrap.music .main_tab_menu.active1:before {
+  left: calc(100% / 3);
+}
+
+.main_cont_wrap.music .main_tab_menu.active2:before {
+  left: calc((100% / 3 ) * 2);
+  width: calc(100% / 3);
+}
+
+.main_cont_wrap.music .main_tab_menu a {
+  position: relative;
+  display: inline-block;
+  width: calc(100% / 3);
+  margin-left: -4px;
+  font-size: 13px;
+  color: #595959;
+  letter-spacing: -0.03em;
+}
+
+.main_cont_wrap.music .main_tab_menu a:first-of-type {
+  margin: 0;
+}
+
+.main_cont_wrap.music .main_tab_menu a.active {
+  color: #fff;
+  font-weight: 700;
+}
+
+.main_cont_wrap.music .main_tab_menu a.active .icon {
+  width: 25px;
+  height: 44px;
+}
+
+.main_cont_wrap.music .main_tab_menu .icon {
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/guide/muse_menu_active_icon.svg) no-repeat left center/20px;
+  width: 0;
+  height: 0;
+}
+
+.main_cont_wrap.music .main_tab_menu .txt {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 44px;
+}
+
+/*=============================== HTR-M-MUS-LIST-001-1.html =================================*/
+.cont_wrap .tit_area {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 12px;
+}
+
+.cont_wrap .tit_area .tit {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.cont_wrap .tit_area .sub_tit {
+  margin-left: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.cont_wrap .tit_area .sub_tit .sub {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  line-height: 32px;
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+}
+
+.cont_wrap .tit_area .sub_tit .sub:last-of-type {
+  margin-right: 0;
+}
+
+.cont_wrap .tit_area .sub_tit .sub.active {
+  color: #000;
+}
+
+.list_time_info {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.list_time_info .time_info_tit {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.list_time_info .time_info_tit .date {
+  position: relative;
+  line-height: 25px;
+  margin-right: 5px;
+}
+
+.list_time_info .time_info_tit .date:before {
+  content: ",";
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  z-index: 3;
+}
+
+.list_time_info .time_info_tit .sub {
+  line-height: 25px;
+}
+
+.list_time_info .time_info_tit .btn_info {
+  width: 25px;
+  height: 25px;
+  background: url(../images/guide/arw_tooltip.png) no-repeat center center/20px;
+}
+
+.list_time_info .time_info_sub {
+  line-height: 20px;
+  word-break: keep-all;
+  font-size: 13px;
+  color: #767676;
+}
+
+/*===================================== 음반 리스트 팝업 =================================*/
+.dialog_header.bd_none {
+  border-bottom: 1px solid #fff !important;
+}
+
+.dialog_header.bd_none .dialog_title_sub {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.dialog_header.bd_none .dialog_title_sub .icon_mus {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: url(../images/guide/mus_pop_sub_tit_icon.svg) no-repeat left center/13px;
+}
+
+.dialog_header.bd_none .dialog_title_sub .year,
+.dialog_header.bd_none .dialog_title_sub .month,
+.dialog_header.bd_none .dialog_title_sub .week,
+.dialog_header.bd_none .dialog_title_sub .day {
+  margin-right: 3px;
+}
+
+.dialog_header.bd_none .dialog_title_sub .rate {
+  position: relative;
+  margin-left: 5px;
+}
+
+.dialog_header.bd_none .dialog_title_sub .rate:before {
+  content: ",";
+  position: absolute;
+  left: -5px;
+  bottom: -1px;
+  z-index: 3;
+}
+
+#ClickCksClose_year .vertical_swap_contents,
+#ClickCksClose_month .vertical_swap_contents,
+#ClickCksClose_week .vertical_swap_contents,
+#ClickCksClose_day .vertical_swap_contents {
+  background-color: #F7F7F7;
+  height: 300px;
+  margin: 0;
+  padding: 0 20px;
+  position: relative;
+}
+
+#ClickCksClose_year .vertical_swap_contents:before,
+#ClickCksClose_month .vertical_swap_contents:before,
+#ClickCksClose_week .vertical_swap_contents:before,
+#ClickCksClose_day .vertical_swap_contents:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 100px;
+  width: calc(100% - 40px);
+  height: 50px;
+  background-color: #fff;
+}
+
+#ClickCksClose_year .vertical_swap_contents .swiper-wrapper.ck_list,
+#ClickCksClose_month .vertical_swap_contents .swiper-wrapper.ck_list,
+#ClickCksClose_week .vertical_swap_contents .swiper-wrapper.ck_list,
+#ClickCksClose_day .vertical_swap_contents .swiper-wrapper.ck_list {
+  height: 250px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .swiper-slide,
+#ClickCksClose_month .vertical_swap_contents .swiper-slide,
+#ClickCksClose_week .vertical_swap_contents .swiper-slide,
+#ClickCksClose_day .vertical_swap_contents .swiper-slide {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#ClickCksClose_year .vertical_swap_contents .swiper-slide.swiper-slide-active,
+#ClickCksClose_month .vertical_swap_contents .swiper-slide.swiper-slide-active,
+#ClickCksClose_week .vertical_swap_contents .swiper-slide.swiper-slide-active,
+#ClickCksClose_day .vertical_swap_contents .swiper-slide.swiper-slide-active {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .swiper-slide.swiper-slide-prev, #ClickCksClose_year .vertical_swap_contents .swiper-slide.swiper-slide-next,
+#ClickCksClose_month .vertical_swap_contents .swiper-slide.swiper-slide-prev,
+#ClickCksClose_month .vertical_swap_contents .swiper-slide.swiper-slide-next,
+#ClickCksClose_week .vertical_swap_contents .swiper-slide.swiper-slide-prev,
+#ClickCksClose_week .vertical_swap_contents .swiper-slide.swiper-slide-next,
+#ClickCksClose_day .vertical_swap_contents .swiper-slide.swiper-slide-prev,
+#ClickCksClose_day .vertical_swap_contents .swiper-slide.swiper-slide-next {
+  font-size: 18px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_month,
+#ClickCksClose_month .vertical_swap_contents .type_month,
+#ClickCksClose_week .vertical_swap_contents .type_month,
+#ClickCksClose_day .vertical_swap_contents .type_month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_month .chart_date_swap:first-of-type,
+#ClickCksClose_month .vertical_swap_contents .type_month .chart_date_swap:first-of-type,
+#ClickCksClose_week .vertical_swap_contents .type_month .chart_date_swap:first-of-type,
+#ClickCksClose_day .vertical_swap_contents .type_month .chart_date_swap:first-of-type {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding-right: 10px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_month .chart_date_swap:first-of-type .swiper-slide,
+#ClickCksClose_month .vertical_swap_contents .type_month .chart_date_swap:first-of-type .swiper-slide,
+#ClickCksClose_week .vertical_swap_contents .type_month .chart_date_swap:first-of-type .swiper-slide,
+#ClickCksClose_day .vertical_swap_contents .type_month .chart_date_swap:first-of-type .swiper-slide {
+  text-align: right;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_month .chart_date_swap:last-of-type,
+#ClickCksClose_month .vertical_swap_contents .type_month .chart_date_swap:last-of-type,
+#ClickCksClose_week .vertical_swap_contents .type_month .chart_date_swap:last-of-type,
+#ClickCksClose_day .vertical_swap_contents .type_month .chart_date_swap:last-of-type {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding-left: 10px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_month .chart_date_swap:last-of-type .swiper-slide,
+#ClickCksClose_month .vertical_swap_contents .type_month .chart_date_swap:last-of-type .swiper-slide,
+#ClickCksClose_week .vertical_swap_contents .type_month .chart_date_swap:last-of-type .swiper-slide,
+#ClickCksClose_day .vertical_swap_contents .type_month .chart_date_swap:last-of-type .swiper-slide {
+  text-align: left;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_week,
+#ClickCksClose_month .vertical_swap_contents .type_week,
+#ClickCksClose_week .vertical_swap_contents .type_week,
+#ClickCksClose_day .vertical_swap_contents .type_week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_week .chart_date_swap:first-of-type,
+#ClickCksClose_month .vertical_swap_contents .type_week .chart_date_swap:first-of-type,
+#ClickCksClose_week .vertical_swap_contents .type_week .chart_date_swap:first-of-type,
+#ClickCksClose_day .vertical_swap_contents .type_week .chart_date_swap:first-of-type {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 auto;
+          flex: 3 1 auto;
+  padding-right: 10px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide,
+#ClickCksClose_month .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide,
+#ClickCksClose_week .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide,
+#ClickCksClose_day .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide {
+  text-align: right;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide-active,
+#ClickCksClose_month .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide-active,
+#ClickCksClose_week .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide-active,
+#ClickCksClose_day .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide-active {
+  padding-right: 5px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide-prev,
+#ClickCksClose_year .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide-next,
+#ClickCksClose_month .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide-prev,
+#ClickCksClose_month .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide-next,
+#ClickCksClose_week .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide-prev,
+#ClickCksClose_week .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide-next,
+#ClickCksClose_day .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide-prev,
+#ClickCksClose_day .vertical_swap_contents .type_week .chart_date_swap:first-of-type .swiper-slide-next {
+  padding-right: 2px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_week .chart_date_swap:nth-of-type(2),
+#ClickCksClose_month .vertical_swap_contents .type_week .chart_date_swap:nth-of-type(2),
+#ClickCksClose_week .vertical_swap_contents .type_week .chart_date_swap:nth-of-type(2),
+#ClickCksClose_day .vertical_swap_contents .type_week .chart_date_swap:nth-of-type(2) {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 auto;
+          flex: 3 1 auto;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_week .chart_date_swap:last-of-type,
+#ClickCksClose_month .vertical_swap_contents .type_week .chart_date_swap:last-of-type,
+#ClickCksClose_week .vertical_swap_contents .type_week .chart_date_swap:last-of-type,
+#ClickCksClose_day .vertical_swap_contents .type_week .chart_date_swap:last-of-type {
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 auto;
+          flex: 4 1 auto;
+  padding-left: 10px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide,
+#ClickCksClose_month .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide,
+#ClickCksClose_week .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide,
+#ClickCksClose_day .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide {
+  text-align: left;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide-active,
+#ClickCksClose_month .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide-active,
+#ClickCksClose_week .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide-active,
+#ClickCksClose_day .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide-active {
+  padding-left: 5px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide-prev,
+#ClickCksClose_year .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide-next,
+#ClickCksClose_month .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide-prev,
+#ClickCksClose_month .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide-next,
+#ClickCksClose_week .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide-prev,
+#ClickCksClose_week .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide-next,
+#ClickCksClose_day .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide-prev,
+#ClickCksClose_day .vertical_swap_contents .type_week .chart_date_swap:last-of-type .swiper-slide-next {
+  padding-left: 2px;
+}
+
+#ClickCksClose_year .vertical_swap_contents .dialog_footer.ctg_cks,
+#ClickCksClose_month .vertical_swap_contents .dialog_footer.ctg_cks,
+#ClickCksClose_week .vertical_swap_contents .dialog_footer.ctg_cks,
+#ClickCksClose_day .vertical_swap_contents .dialog_footer.ctg_cks {
+  margin-top: 0;
+  padding: 0;
+  background-color: #F7F7F7;
+}
+
+#ClickCksClose_year .vertical_swap_contents .dialog_footer.ctg_cks .btn_black,
+#ClickCksClose_month .vertical_swap_contents .dialog_footer.ctg_cks .btn_black,
+#ClickCksClose_week .vertical_swap_contents .dialog_footer.ctg_cks .btn_black,
+#ClickCksClose_day .vertical_swap_contents .dialog_footer.ctg_cks .btn_black {
+  background-color: #000;
+}
+
+/*==================================== HTR-M-MUS-ETC-000.html(팬사인회)====================================*/
+#content {
+  padding-bottom: 60px;
+}
+
+.pdb30 {
+  padding-bottom: 30px;
+}
+
+.banner_basic02 ul.mgt30 {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+}
+
+.banner_basic02 ul.mgt30 li {
+  height: 80px;
+  margin-top: 20px;
+  width: 100%;
+  border-bottom: 1px solid #E6E6E6;
+  overflow: hidden;
+}
+
+.banner_basic02 ul.mgt30 a {
+  width: 100%;
+  float: left;
+}
+
+.banner_basic02 ul.mgt30 a span {
+  display: block;
+  margin-left: 160px;
+  text-align: left;
+  width: auto;
+  font-size: 12px;
+}
+
+.banner_basic02 div.bannerIcon img {
+  vertical-align: middle;
+  position: absolute;
+  left: 125px;
+  z-index: 30;
+  width: 35px;
+}
+
+.banner_basic02 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 0 25px;
+}
+
+.banner_basic02 li {
+  background-color: #fff;
+  text-align: center;
+}
+
+.banner_basic02 li + li {
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.banner_basic02 a {
+  background-color: #fff;
+  max-width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.banner_basic02 a.full {
+  width: 100%;
+}
+
+.banner_basic02 a img {
+  max-width: 100%;
+}
+
+.banner_basic02 a .pic_full img {
+  width: 100%;
+}
+
+.banner_basic02 a .tit {
+  padding-top: 12px;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  font-size: 14px;
+  color: #010101;
+}
+
+.banner_basic02 a .txt {
+  padding-top: 5px;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  font-size: 12px;
+  color: #6a6a6a;
+  height: 14px;
+  line-height: 14px;
+}
+
+.banner_basic02 a .prdt-name {
+  padding-top: 12px;
+  white-space: nowrap;
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  font-size: 14px;
+  color: #010101;
+  text-align: center;
+}
+
+.banner_basic02 a .price {
+  padding-top: 12px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  color: #f51d1d;
+  font-weight: bold;
+  height: 14px;
+}
+
+.banner_basic02 a .price span {
+  font-size: 12px;
+  color: #a2a2a2;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.banner_basic.col2 + .banner_basic.col2 {
+  margin: 0;
+}
+
+.paging.mb30 {
+  height: 30px;
+  background-color: #fff !important;
+}
