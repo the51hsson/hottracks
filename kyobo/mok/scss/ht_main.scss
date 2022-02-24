@@ -329,6 +329,12 @@
             position:absolute;left:16px;top:16px;margin:0;z-index:3;
         }
     }
+    .eye_wel_live {
+        position:relative;margin:-12px 30px 10px 30px;padding-left:12px;color:#d4ff1a;font-size:14px;font-weight:700;line-height:22px;
+        &:before {
+            position:absolute;left:0;top:7px;width:6px;height:6px;background:#d4ff1a;border-radius:50%;content:"";
+        }
+    }
     .wel_live_cont {
         position:relative;
         .swiper-container {
@@ -358,7 +364,7 @@
                 }
                 .eye_wel_live + .tit_wel_live {
                     opacity:1;transition-delay:0.6s;
-                } 
+                }
                 .txt_wel_live {
                     opacity:1;transition-delay:0.8s;
                 }
@@ -369,6 +375,9 @@
                         display:block;
                     }
                 }
+            }
+            &:last-child {
+                margin-right:calc(20% - 20px);
             }
         }
         .swiper-pagination.swiper-pagination-fraction {
@@ -382,15 +391,6 @@
                     color:rgba(255,255,255,0.6);
                 }
             }
-        }
-        .eye_wel_live {
-            position:relative;margin-top:-12px;padding-left:12px;color:#d4ff1a;font-size:14px;font-weight:700;line-height:22px;opacity:0;transition:opacity 0.4s;
-            &:before {
-                position:absolute;left:0;top:7px;width:6px;height:6px;background:#d4ff1a;border-radius:50%;content:"";
-            }
-        }
-        .eye_wel_live + .tit_wel_live {
-            margin-top:10px;
         }
         .tit_wel_live {
             display:-webkit-box;min-height:56px;padding-right:50px;font-size:20px;font-weight:700;line-height:28px;opacity:0;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;transition:opacity 0.4s;
@@ -460,9 +460,9 @@
     .alarm_chk {
         position:relative;display:inline-block;width:40px;height:40px;border-radius:50%;margin-left:6px;
         input[type="checkbox"] {
-            position:absolute;left:-9999px;width:0;height:0;border:0;overflow:hidden;
+            position:absolute;left:0;top:0;width:100%;height:100%;border:0;overflow:hidden;z-index:2;opacity:0;;
             + label {
-                display:block;position:relative;width:40px;height:40px;background:#000 url('../images/main/ico_wel_live_alarm.svg') center/100% no-repeat;overflow:hidden;cursor:pointer;transition:background 0.4s;z-index:2;
+                display:block;position:relative;width:40px;height:40px;background:#000 url('../images/main/ico_wel_live_alarm.svg') center/100% no-repeat;overflow:hidden;cursor:pointer;transition:background 0.4s;z-index:1;
             }
             &:checked + label {
                 background-image:url('../images/main/ico_wel_live_alarm_on.svg');
@@ -543,7 +543,7 @@
             }
         }
     }
-    .eye_wel_live + .tit_wel_live + .txt_wel_live +  .live_btn + .wel_live_good_ani {
+    .tit_wel_live + .txt_wel_live +  .live_btn + .wel_live_good_ani {
         top:240px;opacity:1;
     }
 
@@ -2610,6 +2610,11 @@
 }
 
 // 댓글 입력
+.mc_cont {
+    .comment_area {
+        padding-top:0;
+    }
+}
 .comment_area{
     .comment_txt_box {
         position:relative;display:block;padding:12px 15px 8px 15px;border:1px solid #d5d5d5;box-sizing:border-box;

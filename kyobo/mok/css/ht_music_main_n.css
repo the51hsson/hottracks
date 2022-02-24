@@ -23,3 +23,57 @@
 .mus_mc_special .mc_tit02 {
   color: #fff;
 }
+
+.mus_mc_special .mus_mc_special_cont {
+  position: relative;
+}
+
+.mus_mc_special .mus_mc_special_cont .prod-wrapper {
+  padding-top: 0;
+}
+
+.mus_mc_special .mus_mc_special_cont .product_pic {
+  padding-top: 100%;
+  margin-bottom: 8px !important;
+}
+
+.mus_mc_special .mus_mc_special_cont .company, .mus_mc_special .mus_mc_special_cont .title, .mus_mc_special .mus_mc_special_cont .final_price {
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.mus_mc_special .mus_mc_special_cont .final_price {
+  line-height: 14px;
+}
+
+.mus_mc_special .mus_mc_special_cont .discount_rate {
+  color: #00fe00;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.mus_mc_special .mus_mc_special_cont .price_origin {
+  color: #d5d5d5;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.mus_mc_special .mus_mc_special_cont .badge_line {
+  position: relative;
+  width: 200%;
+  margin-bottom: -17px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.mus_mc_special .mus_mc_special_cont .badge {
+  height: 34px;
+  margin-right: 6px !important;
+  padding: 0 7px !important;
+  font-size: 16px;
+  line-height: 35px;
+  border-radius: 17px !important;
+}

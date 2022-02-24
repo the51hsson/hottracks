@@ -1,5 +1,43 @@
 $(function(){
 
+
+    // 특별한 할인상품 스와이프
+    var swiperOptions;
+    //if ( $('.sale_list_wrap .swiper-slide').length >= 3 ) {
+        saleListWrapInit = true;
+        swiperOptions = {
+            observer: true,
+            observeParents: true,
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            loopsSlide:1,
+            pagination: {
+                el: ('.sale_list_wrap .swiper-pagination'),
+            },
+            navigation: {
+                nextEl: '.sale_list_wrap .swiper-button-next',
+                prevEl: '.sale_list_wrap .swiper-button-prev',
+            },
+        }
+        var saleListWrap = new Swiper('.sale_list_wrap .swiper-container', swiperOptions);
+   /* } else {
+        $('.sale_list_wrap').css('padding-bottom',0);
+        $('.sale_list_wrap').addClass('no_swiper');
+        $('.sale_list_wrap .swiper-wrapper').css('display','block');
+        $('.sale_list_wrap .swiper-slide li').removeClass('product_list__group').addClass('product_list__div');
+    }*/
+
+    
+ });
+
+$(function(){
+
+
+
+
     //fit text 
     $.fn.fitText = function( kompressor, options ) {
 
@@ -259,34 +297,7 @@ $(function(){
         },
     });
 
-    // 특별한 할인상품 스와이프
-    var swiperOptions;
-    if ( $('.sale_list_wrap .swiper-slide').length >= 3 ) {
-        saleListWrapInit = true;
-        swiperOptions = {
-            observer: true,
-            observeParents: true,
-            slidesPerView: 3,
-            spaceBetween: 20,
-            slidesPerGroup: 3,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            loopsSlide:1,
-            pagination: {
-                el: ('.sale_list_wrap .swiper-pagination'),
-            },
-            navigation: {
-                nextEl: '.sale_list_wrap .swiper-button-next',
-                prevEl: '.sale_list_wrap .swiper-button-prev',
-            },
-        }
-        var saleListWrap = new Swiper('.sale_list_wrap .swiper-container', swiperOptions);
-    } else {
-        $('.sale_list_wrap').css('padding-bottom',0);
-        $('.sale_list_wrap').addClass('no_swiper');
-        $('.sale_list_wrap .swiper-wrapper').css('display','block');
-        $('.sale_list_wrap .swiper-slide li').removeClass('product_list__group').addClass('product_list__div');
-    }
+
 
     // 찜하기 : todo 공통으로 정리 할 것
     $('.img_box .btn_like').on('click',function(){
