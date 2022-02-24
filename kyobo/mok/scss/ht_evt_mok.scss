@@ -292,6 +292,10 @@
 	margin-top:20px;
     cursor:pointer;
 
+	&:first-child {
+		margin-top:0;
+	}
+
 	.product_pic{
 		position:relative;
 		height:0;
