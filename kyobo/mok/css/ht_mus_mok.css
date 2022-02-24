@@ -43,6 +43,14 @@
   width: calc(100% / 3);
 }
 
+.main_cont_wrap.music .main_tab_menu + .ctg_top_wrap {
+  padding: 0;
+}
+
+.main_cont_wrap.music .main_tab_menu + .ctg_top_wrap .ctg_top_swiper {
+  padding-top: 0;
+}
+
 .main_cont_wrap.music .main_tab_menu a {
   position: relative;
   display: inline-block;

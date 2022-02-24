@@ -40,6 +40,13 @@
                 left:calc((100% / 3 ) * 2);
                 width: calc(100% / 3); 
              }
+            & + .ctg_top_wrap {
+                padding:0;
+
+                .ctg_top_swiper {
+                    padding-top:0;
+                }
+            }
             a {
                 position:relative;
                 display:inline-block;
