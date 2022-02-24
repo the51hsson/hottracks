@@ -6117,12 +6117,13 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   text-align: center;
-  padding-top: 50%;
+  padding-top: 53%;
   font-weight: 700;
   font-size: 13px;
-  background: url(../images/guide/@adult_block.svg) no-repeat center top 30%/30%;
+  background: url(../images/guide/@adult_block.svg) no-repeat center top 34%/28%;
   border-radius: 8px;
   border: 2px solid #000;
+  z-index: 2;
 }
 
 .evt_products {
