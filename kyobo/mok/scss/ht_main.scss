@@ -2263,9 +2263,9 @@
 .alarm_chk02 {
     position:relative;display:inline-block;width:40px;height:40px;border-radius:50%;margin-left:6px;
     input[type="checkbox"] {
-        position:absolute;left:-9999px;width:0;height:0;border:0;overflow:hidden;
+        position:absolute;left:0;left:0;width:100%;height:100%;border:0;overflow:hidden;opacity:0;z-index:3;cursor:pointer;
         + label {
-            display:block;position:relative;width:40px;height:40px;background:url('../images/main/ico_wel_live_alarm02.svg') center/100% no-repeat;overflow:hidden;cursor:pointer;transition:background 0.4s;z-index:2;
+            display:block;position:relative;width:40px;height:40px;background:url('../images/main/ico_wel_live_alarm02.svg') center/100% no-repeat;overflow:hidden;cursor:pointer;transition:background 0.4s;z-index:1;
         }
         &:checked + label {
             background-image:url('../images/main/ico_wel_live_alarm_on.svg');

@@ -4,18 +4,300 @@
   padding-top: 0;
 }
 
-/*****/
+/*** 회원 추천 : .mus_mc_memb ***/
+.mus_mc_memb .mc_tit02 {
+  margin-bottom: 70px;
+}
+
+/* mus_mc_memb_msg */
+.mus_mc_memb_msg {
+  position: absolute;
+  left: 30px;
+  top: 86px;
+  z-index: 2;
+}
+
+.mus_mc_memb_msg p {
+  position: relative;
+  right: 11px;
+  top: 0;
+  padding: 11px 10px 9px 10px;
+  background: #d4ff1a;
+  border: solid #000;
+  border-width: 2px 3px 3px 2px;
+  border-radius: 30px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  -webkit-animation: livNewMsg both infinite 5s;
+          animation: livNewMsg both infinite 5s;
+}
+
+.mus_mc_memb_msg p:before {
+  position: absolute;
+  left: 17px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #000;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  content: "";
+  z-index: 2;
+}
+
+.mus_mc_memb_msg p:after {
+  position: absolute;
+  left: 17px;
+  top: -5px;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #d4ff1a;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  content: "";
+  z-index: 2;
+}
+
+.mus_mc_memb_msg p em {
+  display: inline-block;
+  width: 16px;
+  height: 17px;
+  margin-left: 4px;
+  background: url("../images/main/ico_mus_mc_memb_msg.svg") center/100% no-repeat;
+  vertical-align: top;
+}
+
+@-webkit-keyframes livNewMsg {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%) scale(0.6);
+            transform: translateY(50%) scale(0.6);
+  }
+  10% {
+    opacity: 0;
+    -webkit-transform: translateY(50%) scale(0.6);
+            transform: translateY(50%) scale(0.6);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(50%) scale(0.6);
+            transform: translateY(50%) scale(0.6);
+  }
+}
+
+@keyframes livNewMsg {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%) scale(0.6);
+            transform: translateY(50%) scale(0.6);
+  }
+  10% {
+    opacity: 0;
+    -webkit-transform: translateY(50%) scale(0.6);
+            transform: translateY(50%) scale(0.6);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(50%) scale(0.6);
+            transform: translateY(50%) scale(0.6);
+  }
+}
+
+/*** 팬사인회 소식 : .mus_mc_fan ***/
 .mus_mc_fan img {
-  height: 27px;
+  height: 25px;
   margin-left: 10px;
 }
 
-/** .mus_mc_classic **/
+/*** 영통팬사 준비 : .mus_mc_fansign ***/
+/* .mus_mc_fansign */
+.mus_mc_fansign {
+  background: #f2f2f2;
+}
+
+.mus_mc_fansign .mc_tit02 img {
+  height: 28px;
+  margin: 0 5px;
+}
+
+.mus_mc_fansign .cur_prod_img {
+  margin: 20px 0 0 0;
+}
+
+.mus_mc_fansign .cur_prod_img .swiper-slide {
+  width: calc((100% - 40px) / 3);
+}
+
+.mus_mc_fansign .cur_prod_img .swiper-slide:first-child {
+  margin-left: 0;
+}
+
+.mus_mc_fansign .cur_prod_img .swiper-slide:last-child {
+  margin-right: 0;
+}
+
+.mus_mc_fansign .cur_prod_img .img:after {
+  display: none;
+}
+
+.mus_mc_fansign .btn_more_view_box strong {
+  background-color: #fff !important;
+}
+
+/*** 한국인이 사랑하는 클래식 : .mus_mc_classic ***/
 .mus_mc_classic .mc_tit02 img {
   height: 28px;
 }
 
-/** 특별한 할인상품 놓치지 마세요 : .mus_mc_special **/
+/* mus_mc_classic_msg */
+.mus_mc_classic_msg {
+  position: relative;
+  margin: 44px -20px -50px -20px;
+  padding: 44px 24px 34px 24px;
+  background: url("../images/main/img_mus_mc_classic_msg.png") center top/27px repeat;
+}
+
+.mus_mc_classic_msg:before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 130px;
+  height: 145px;
+  background: url("../images/main/img_mus_mc_classic_msg01.svg") center top/130px 175px no-repeat;
+  content: "";
+}
+
+.mus_mc_classic_msg:after {
+  position: absolute;
+  left: 50%;
+  top: -12px;
+  margin-left: -12px;
+  width: 0;
+  height: 0;
+  border-bottom: 13px solid #9cfac4;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  content: "";
+  z-index: 1;
+}
+
+.mus_mc_classic_msg .s1 {
+  position: relative;
+  font-family: 'Gmarket Sans';
+  color: #292929;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.mus_mc_classic_msg .s1 img {
+  height: 32px;
+  margin: -10px 0 0 5px;
+}
+
+.mus_mc_classic_msg .s1 p {
+  position: relative;
+}
+
+.mus_mc_classic_msg .s1:before {
+  position: absolute;
+  left: -13px;
+  top: -10px;
+  width: 240px;
+  height: 108px;
+  background: url("../images/main/img_mus_mc_classic_msg02.svg") center top/100% no-repeat;
+  content: "";
+}
+
+.mus_mc_classic_msg .s2 {
+  margin-top: 8px;
+  color: #292929;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+/*** LP SHOP : .mus_mc_lpshop ***/
+.mus_mc_lpshop .mc_tit02 img {
+  display: inline-block;
+  height: 20px;
+  margin: 5px 0 0 5px;
+}
+
+/* mus_mc_lpshop_cont */
+.mus_mc_lpshop_cont {
+  position: relative;
+  margin: 25px -20px 0 -20px;
+}
+
+.mus_mc_lpshop_cont .swiper-slide {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.mus_mc_lpshop_cont .swiper-slide a {
+  display: block;
+  position: relative;
+  padding-right: 22%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mus_mc_lpshop_cont .swiper-slide a:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22%;
+  height: 100%;
+  background: url("../images/main/img_mus_mc_lpshop_bg.png") center/100% no-repeat;
+  content: "";
+}
+
+.mus_mc_lpshop_cont .swiper-slide .img {
+  position: relative;
+  height: 0;
+  padding-top: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+
+.mus_mc_lpshop_cont .swiper-slide .img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mus_mc_lpshop_cont .swiper-slide:first-child {
+  margin-left: 20px;
+}
+
+/*** 특별한 할인상품 놓치지 마세요 : .mus_mc_special ***/
 .mus_mc_special {
   background: #464dff;
 }
@@ -24,42 +306,159 @@
   color: #fff;
 }
 
-.mus_mc_special .mus_mc_special_cont {
+/* mus_tab_box */
+.mus_tab_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% + 40px);
+  margin: -4px -20px 24px -20px;
+  padding: 0 20px;
+  overflow-x: auto;
+  opacity: 1;
+  -webkit-animation: none !important;
+          animation: none !important;
+}
+
+.mus_tab_box a {
+  display: block;
+  position: relative;
+  height: 42px;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 42px;
+  white-space: nowrap;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.mus_tab_box a:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.mus_tab_box a:first-child {
+  margin-left: 0;
+}
+
+.mus_tab_box a.on {
+  background: #ebfe00;
+  color: #000;
+}
+
+.mus_tab_box a.on:before {
+  opacity: 1;
+}
+
+.mus_tab_box a img {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: -0 5px 0 -14px;
+  overflow: hidden;
+}
+
+/* mus_mc_special_cont */
+.mus_mc_special_cont {
   position: relative;
 }
 
-.mus_mc_special .mus_mc_special_cont .prod-wrapper {
+.mus_mc_special_cont .swiper-wrapper {
+  width: calc(100% + 20px);
+}
+
+.mus_mc_special_cont .swiper-slide {
+  width: calc(33.3% - 20px);
+  margin-left: 20px;
+}
+
+.mus_mc_special_cont .swiper-slide:first-child:nth-last-child(1),
+.mus_mc_special_cont .swiper-slide:first-child:nth-last-child(1) ~ .swiper-slide {
+  width: calc(100% - 20px);
+}
+
+.mus_mc_special_cont .swiper-slide:first-child:nth-last-child(2),
+.mus_mc_special_cont .swiper-slide:first-child:nth-last-child(2) ~ .swiper-slide {
+  width: calc(50% - 20px);
+}
+
+.mus_mc_special_cont .swiper-initialized.swiper-wrapper {
+  width: 100%;
+}
+
+.mus_mc_special_cont .swiper-initialized .prod-wrapper {
+  padding-bottom: 28px;
+}
+
+.mus_mc_special_cont .swiper-initialized .swiper-slide {
+  width: 100%;
+  margin: 0;
+}
+
+.mus_mc_special_cont .swiper-pagination-bullet {
+  background: #eaeaea;
+  opacity: 1;
+}
+
+.mus_mc_special_cont .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+.mus_mc_special_cont .swiper_ctrl_box {
+  display: none;
+}
+
+.mus_mc_special_cont .prod-wrapper {
   padding-top: 0;
 }
 
-.mus_mc_special .mus_mc_special_cont .product_pic {
+.mus_mc_special_cont .product_pic {
   padding-top: 100%;
   margin-bottom: 8px !important;
 }
 
-.mus_mc_special .mus_mc_special_cont .company, .mus_mc_special .mus_mc_special_cont .title, .mus_mc_special .mus_mc_special_cont .final_price {
+.mus_mc_special_cont .product_pic .evt_good_count {
+  right: 4px !important;
+  bottom: 4px !important;
+}
+
+.mus_mc_special_cont .company, .mus_mc_special_cont .title, .mus_mc_special_cont .final_price {
   color: #fff;
   font-size: 12px;
   line-height: 18px;
 }
 
-.mus_mc_special .mus_mc_special_cont .final_price {
+.mus_mc_special_cont .final_price {
   line-height: 14px;
 }
 
-.mus_mc_special .mus_mc_special_cont .discount_rate {
+.mus_mc_special_cont .discount_rate {
   color: #00fe00;
   font-size: 12px;
   line-height: 14px;
 }
 
-.mus_mc_special .mus_mc_special_cont .price_origin {
+.mus_mc_special_cont .price_origin {
   color: #d5d5d5;
   font-size: 10px;
   line-height: 14px;
 }
 
-.mus_mc_special .mus_mc_special_cont .badge_line {
+.mus_mc_special_cont .badge_line {
   position: relative;
   width: 200%;
   margin-bottom: -17px;
@@ -69,7 +468,7 @@
           transform-origin: left top;
 }
 
-.mus_mc_special .mus_mc_special_cont .badge {
+.mus_mc_special_cont .badge {
   height: 34px;
   margin-right: 6px !important;
   padding: 0 7px !important;
