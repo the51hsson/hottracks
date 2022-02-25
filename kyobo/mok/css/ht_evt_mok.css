@@ -625,7 +625,7 @@
 }
 
 .cmt_section_title {
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   border-bottom: 1px solid;
 }
 
@@ -643,7 +643,6 @@
 .cmt_section_title .evt_ck_area {
   display: block;
   letter-spacing: -0.14px;
-  margin-top: 5px;
   padding-left: 28px;
 }
 
@@ -1101,7 +1100,7 @@
   padding: 12px 24px;
   width: 165px;
   margin: 0 auto;
-  border: 1px solid #f2f2f2;
+  border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
   text-align: center;

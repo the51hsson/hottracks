@@ -1098,6 +1098,21 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   background-size: 14px 14px;
 }
 
+.btn_wish .ico_heart {
+  display: inline-block;
+  background: url(../images/ico/ico_heart.png) no-repeat 0 0;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.btn_wish.active .ico_heart {
+  background: url(../images/ico/ico_heart_active.png) no-repeat 0 0;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+
 .btn_gift {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -5949,7 +5964,7 @@ input[type=number] {
   padding: 12px 16px 0;
 }
 
-.byte_check_wrap.active {
+.byte_check_wrap.focus {
   border: 1px solid #000;
   -webkit-transition: border-color 0.2s ease-out;
   transition: border-color 0.2s ease-out;

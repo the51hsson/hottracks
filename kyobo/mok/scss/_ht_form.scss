@@ -791,7 +791,7 @@ input[type=number] {
     font-size: 0;
     background: #fff;
     padding:12px 16px 0;
-    &.active {
+    &.focus {
         border: 1px solid #000;
         transition: border-color 0.2s ease-out;
     }

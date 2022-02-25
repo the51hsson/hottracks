@@ -1,4 +1,5 @@
 @charset "UTF-8";
+.devide_hr,
 .divide_hr,
 .devide_underline_thin {
   display: block;
@@ -181,7 +182,7 @@
 }
 
 .btn_more_div {
-  margin-top: 26px;
+  margin-top: 20px;
 }
 
 .btn_more_div .more_btn {

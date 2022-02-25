@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 //구분선
+.devide_hr,
 .divide_hr,
 .devide_underline_thin {
 	display: block;
@@ -151,7 +152,7 @@
 
 //더보기 버튼 영역
 .btn_more_div{
-	margin-top:26px;
+	margin-top:20px;
 	.more_btn{
 		height:24px;
 		margin:0 auto;

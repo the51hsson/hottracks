@@ -225,11 +225,11 @@ $(function(){
 
     //textarea focus 효과
 	$(document).on('focus', '.mycomment_box textarea, .byte_check_wrap textarea', function(){
-		$(this).parent().addClass('active');
+		$(this).parent().addClass('focus');
 	});
 
 	$(document).on('blur', '.mycomment_box textarea, .byte_check_wrap textarea', function(){
-		$(this).parent().removeClass('active');
+		$(this).parent().removeClass('focus');
 	});
 
     //textarea 20자 제한 효과

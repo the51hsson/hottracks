@@ -5985,13 +5985,13 @@
 }
 
 .comment_list_area {
-  margin-top: 30px;
+  margin-top: 40px;
   padding: 0;
   background: #fff;
 }
 
 .cmt_section_title {
-  padding-bottom: 22px;
+  padding-bottom: 14px;
   border-bottom: 1px solid #000;
 }
 
@@ -6007,7 +6007,6 @@
 
 .cmt_section_title .evt_ck_area {
   display: block;
-  margin-top: 5px;
   padding-left: 28px;
 }
 
