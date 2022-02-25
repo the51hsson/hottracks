@@ -2,85 +2,83 @@
 
 /*=================================== 음반 리스트  ====================================*/
 .main_cont_wrap {
-    &.music {
-        .main_tab_menu {
-            position:relative;
-            width:75%;
-            max-width:480px;
-            margin:12px auto 30px auto;
-            text-align: center;
-            white-space: nowrap;
-            background:rgba(0,0,0,0);
-            border:1px solid #D5D5D5;
+    .main_tab_menu {
+        position:relative;
+        width:75%;
+        max-width:480px;
+        margin:12px auto 30px auto;
+        text-align: center;
+        white-space: nowrap;
+        background:rgba(0,0,0,0);
+        border:1px solid #D5D5D5;
+        border-radius: 50px;
+        border:1px solid #D5D5D5;
+        &:before {
+            content:"";
+            position:absolute;
+            left:0;
+            top:-1px;
+            width : 30%;
+            height:calc(100% + 1px);
             border-radius: 50px;
-            border:1px solid #D5D5D5;
-            &:before {
-                content:"";
-                position:absolute;
-                left:0;
-                top:-1px;
-                width : 30%;
-                height:calc(100% + 1px);
-                border-radius: 50px;
-                background-color: #000;
-                border:1px solid #000;
-                box-sizing: content-box;
-                transition: left .1s ease-in-out;  
-        
-            }
-            &.active0:before {
-                left:0;
-                width: calc(100% / 3); 
-            }
-            &.active1:before {
-                left:calc(100% / 3); 
+            background-color: #000;
+            border:1px solid #000;
+            box-sizing: content-box;
+            transition: left .1s ease-in-out;  
+    
+        }
+        &.active0:before {
+            left:0;
+            width: calc(100% / 3); 
+        }
+        &.active1:before {
+            left:calc(100% / 3); 
 
+        }
+        &.active2:before {
+            left:calc((100% / 3 ) * 2);
+            width: calc(100% / 3); 
             }
-            &.active2:before {
-                left:calc((100% / 3 ) * 2);
-                width: calc(100% / 3); 
-             }
-            & + .ctg_top_wrap {
-                padding:0;
+        & + .ctg_top_wrap {
+            padding-top:0;
 
-                .ctg_top_swiper {
-                    padding-top:0;
+            .ctg_top_swiper {
+                padding-top:0;
+            }
+        }
+        a {
+            position:relative;
+            display:inline-block;
+            width:calc(100% / 3);
+            margin-left:-4px;
+            font-size: 13px;
+            color:#595959;
+            letter-spacing: -0.03em;    
+
+            &:first-of-type {
+                margin:0;
+            }
+            &.active {
+                color:#fff;
+                font-weight: 700;
+                .icon {
+                    width:25px;
+                    height:44px;
                 }
             }
-            a {
-                position:relative;
-                display:inline-block;
-                width:calc(100% / 3);
-                margin-left:-4px;
-                font-size: 13px;
-                color:#595959;
-                letter-spacing: -0.03em;    
- 
-                &:first-of-type {
-                    margin:0;
-                }
-                &.active {
-                    color:#fff;
-                    font-weight: 700;
-                    .icon {
-                        width:25px;
-                        height:44px;
-                    }
-                }
-            }
-            .icon {
-                display:inline-block;
-                vertical-align: middle;
-                background:url(../images/guide/muse_menu_active_icon.svg) no-repeat left center  / 20px;
-                width:0;
-                height:0;
-                //transition: width .2s, height .2s;
-            }
-            .txt {
-                display:inline-block;
-                vertical-align: middle;
-                line-height: 44px;
-            }
+        }
+        .icon {
+            display:inline-block;
+            vertical-align: middle;
+            background:url(../images/guide/muse_menu_active_icon.svg) no-repeat left center  / 20px;
+            width:0;
+            height:0;
+            //transition: width .2s, height .2s;
+        }
+        .txt {
+            display:inline-block;
+            vertical-align: middle;
+            line-height: 44px;
         }
     }
 }   
@@ -301,16 +299,17 @@
 }
 /*==================================== HTR-M-MUS-ETC-000.html(팬사인회)====================================*/
 #content {
-    padding-bottom: 60px;
+    padding-bottom:50px;
 }
 .pdb30{ padding-bottom:30px;}
-.banner_basic02 ul.mgt30{margin-left:10px; margin-right:10px; width : auto; }
-.banner_basic02 ul.mgt30 li{height: 80px; margin-top:20px; width : 100%; border-bottom:1px solid #E6E6E6; overflow: hidden;}
+.banner_basic02 ul.mgt30{margin-left:10px; margin-right:10px; width : auto;border-top:1px solid #e5e5e5;}
+.banner_basic02 ul.mgt30 li{height: 80px; margin-top:20px; width : 100%; border-bottom:1px solid #e5e5e5; overflow: hidden;}
+
 .banner_basic02 ul.mgt30 a {width: 100%; float :left;}
-.banner_basic02 ul.mgt30 a span{display:block;margin-left:160px;  text-align:left; width : auto; font-size: 12px;}
+.banner_basic02 ul.mgt30 a span{display:block;margin-left:170px;  text-align:left; width : auto; font-size: 12px;}
 .banner_basic02 div.bannerIcon img{vertical-align: middle;  position: absolute; left: 125px; z-index: 30; width: 35px;}
 
-.banner_basic02 {position:relative;overflow:hidden;margin:10px 0 25px; }
+.banner_basic02 {position:relative;overflow:hidden;margin:0 10px 0 10px; }
 .banner_basic02 li { background-color:#fff;text-align:center; }
 .banner_basic02 li + li { margin-top:20px;padding-bottom:10px; }
 .banner_basic02 a { background-color:#fff;max-width:100%;text-align:center;padding-bottom:10px; }

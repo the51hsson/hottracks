@@ -31,12 +31,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
 <!-- // font css -->
 
-
 <!-- ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
 <link rel="stylesheet" href="../../css/ht_css_mok.css">
 <link rel="stylesheet" href="../../css/ht_template_mok.css">
 <!--// ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
-
 
 
 <!-- Plug-In javascript -->
@@ -59,24 +57,25 @@
 <script src="../../js/ht_lib.js"></script>
 <script src="../../js/ht_template.js"></script>
 <!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
-
 </head>
+
 <body>
+<!-- SkipNav -->
 <div class="skip_nav_wrap">
     <a href="#headerWrapper">메뉴 바로가기</a>
     <a href="#containerWrapper">본문 바로가기</a>
 </div>
+<!-- //SkipNav -->
+
 <!-- wrapper -->
-<!--DESC : 에러페이지인 경우 [error] 클래스 추가 -->
-<!-- ht_ Hottracks ht_ 클래스 추가 -->
-<div class="wrapper ht_">
-    <!--DESC : 하단 라인있는경우, [ has_line ] class 추가 / 버튼 컬러 흰색인경우, [ type_white ] class 추가 -->
+<div class="ht_ wrapper">
+    <!-- header -->
     <header id="headerWrapper" class="ht_ header_wrapper">
         <div class="header_left">
             <a href="#" class="btn_header_back"><span class="hidden">뒤로</span></a>
         </div>
         <div class="header_center">
-            <div class="page_title prod_detail">팬사인회</div>
+            <div class="page_title prod_detail"></div>
         </div>
         <div class="header_right">
             <!-- DESC : 상품정보 부터 검색버튼 비활성화 -->
@@ -88,10 +87,14 @@
             </a>
         </div>
     </header>
-    <!-- // 헤더 -->
+    <!-- //header -->
 
-    <!-- 컨텐츠 -->
-    <section class="cont_wrap">
+
+    <!-- cont_wrap -->
+    <section class="cont_wrap"><!-- 22.02 : class="cont_wrap" 통일 -->
+        <h3 class="tit">팬사인회</h3>
+
+        <!-- 데이터 호출영역 -->
         <div id="content">   
             <div class="banner_basic02">
                 <ul class="mgt30">              
@@ -378,14 +381,22 @@
                 </ul>
             </div>
         </div>
-    </section >
-    <!-- // 컨텐츠 -->
-    <!-- 푸터 -->
+        <!-- //데이터 호출영역 -->
+    </section>
+    <!-- //cont_wrap -->
+
+
+    <!-- footer -->
     <footer class="footer_wrapper">
+        <div class="notice_wrap">
+            <span class="notice_text">공지사항</span>
+            <a href="#" class="notice_link">교보문고 개인정보 처리방침 개정안내</a>
+        </div>
+
         <div class="footer_body">
             <div class="logo_box">
                 <a href="#" class="logo_link">
-                    <img src="../../images/guide/ico_logo.svg" alt="">
+                    <img src="../../images/guide/ico_logo.svg" alt="핫트랙스">
                 </a>
             </div>
 
@@ -423,10 +434,9 @@
                 </div>
             </div>
         </div>
-
     </footer>
-    <!-- // 푸터 -->
+    <!-- //footer -->
 </div>
-<!-- // wrapper -->
+<!-- //wrapper -->
 </body>
 </html>

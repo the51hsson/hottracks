@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+<meta name="Author" content="SEO 기획 정의 내용 반영" />
+<meta name="keywords" content="SEO 기획 정의 내용 반영"/>
+<meta name="description" content="SEO 기획 정의 내용 반영" />
+<meta name="subject" content="SEO 기획 정의 내용 반영" />
+<!-- DESC : 성인컨텐츠인 경우 추가하는 meta tag -->
+<!--<meta name="rating" content="adult" />-->
+
+<meta name="Robots" content="noindex, nofollow" />
+<meta name="msapplication-TileColor" content="#000000">
+<meta property="og:title" content="핫트랙스">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../../images/guide/sns.jpg">
+<link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
+<title>음반베스트</title>
+
+<!-- Plug-In css -->
+<link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+<link rel="stylesheet" href="../../vendors/lib/swiper-7.2.0/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../../vendors/lib/star-rating/css/star-rating.min.css" />
+<!-- // Plug-In css -->
+
+<!-- font css -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
+<!-- // font css -->
+
+<!-- ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
+<link rel="stylesheet" href="../../css/ht_css_mok.css">
+<link rel="stylesheet" href="../../css/ht_template_mok.css">
+<!--// ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
+
+
+<!-- Plug-In javascript -->
+<script src="../../vendors/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="../../vendors/lib/jquery-ui-1.12.1/jquery.ui.spinner.js"></script>
+<script src="../../vendors/lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+<script src="../../vendors/lib/swiper-7.2.0/js/swiper-bundle.min.js"></script>
+<script src="../../vendors/lib/star-rating/js/star-rating.min.js"></script>
+<script src="../../vendors/lib/star-rating/themes/krajee-gly/theme.min.js"></script>
+<script src="../../vendors/lib/star-rating/js/locales/ko.js"></script>
+<script src="../../vendors/lib/scrollpos-styler/scrollPosStyler.min.js"></script>
+<script src="../../vendors/lib/css-element-queries/ResizeSensor.js"></script>
+<script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
+<!-- // Plug-In javascript -->
+
+<!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
+<script src="../../js/front_bak.js"></script>
+<script src="../../js/mok.ui.js"></script>
+<script src="../../js/ht_lib.js"></script>
+<script src="../../js/ht_template.js"></script>
+<!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
+
+<script>
+$(function(){
+     //[2022-02-24] chartPerio 매개변수 2022년, 10월, 3주, 13일 (텍스트값)=> 2022, 10, 3, 13 data-val 값으로 변경
+    //차트 선택 팝업 스왑
+    chartPeriod('2022', '10', '3', '13');
+
+    function chartPeriod(yy ,mm ,wk ,dd){
+        if(! $('.vertical_swap_content').length) return;
+
+        //초기 설정 날짜 인덱스 값
+        var initNum = null;
+        var initYear = yy;
+        var initMonth = mm;
+        var initWeek = wk;
+        var initDay = dd; 
+
+        $('.swiper.chart_date_swap').each(function(i, ele) {
+            var year =  $(ele).parents('.dialog_contents').find('.swiper.chart_date_swap.year');
+            var month = $(ele).parents('.dialog_contents').find('.swiper.chart_date_swap.month');
+            var week =  $(ele).parents('.dialog_contents').find('.swiper.chart_date_swap.week');
+            var day =  $(ele).parents('.dialog_contents').find('.swiper.chart_date_swap.day');
+
+            if(year.length){
+                $(year).find('.swiper-slide').each(function(index, item){
+                if($(item).data('val') == initYear){
+                    initNum  =  index; 
+                };
+                });
+            }
+            if(month.length){
+                $(ele).find('.swiper-slide').each(function(index, item){
+                if($(item).data('val') == initMonth){
+                    initNum  =  index;
+            
+                };
+                });
+            }
+            if(week.length){
+                $(ele).find('.swiper-slide').each(function(index, item){
+                if($(item).data('val') == initWeek){
+                    initNum  =  index;
+
+                };
+                });
+            }
+            if(day.length){
+                $(ele).find('.swiper-slide').each(function(index, item){
+                if($(item).data('val') == initDay){
+                    initNum  =  index;
+                };
+                });
+            }
+
+            var chartSwiper = new Swiper(this, {
+                direction: "vertical",
+                loop:true,
+                slidesPerView: 5,
+                initialSlide: initNum,
+                centeredSlides: true,
+                centeredSlidesBounds: true,
+                observer: true,
+                observeParents: true,
+                on:{
+                    observerUpdate:setTitle,
+                    slideChangeTransitionEnd:setTitle,
+                    }
+            });
+            function setTitle() {        
+                //해당 팝업 안의 날짜 선택 스왑 개수      
+                var yearTxt, yearTarget, monthTxt, monthTarget, weekTarget, weekTxt, dayTarget, dayTxt;  
+                if(year.length) {
+                    yearTxt = year.find('.swiper-slide.swiper-slide-active').text();
+                    yearTarget  = $(ele).parents('.dialog_wrap').find('.dialog_header .year');
+                    yearTarget.text(yearTxt);
+                }
+                if(month.length) {
+                    monthTxt = month.find('.swiper-slide.swiper-slide-active').text();
+                    monthTarget  = $(ele).parents('.dialog_wrap').find('.dialog_header .month');
+                    monthTarget.text(monthTxt);
+                    }
+                if(day.length) {
+                    dayTxt = day.find('.swiper-slide.swiper-slide-active').text();
+                    dayTarget  = $(ele).closest('.dialog_wrap').find('.dialog_header .day');
+                    dayTarget.text(dayTxt);
+                }
+                if(week.length) {
+                    weekTxt = week.find('.swiper-slide.swiper-slide-active').text();
+                    weekTarget  = $(ele).closest('.dialog_wrap').find('.dialog_header .week');
+                    weekTarget.text(weekTxt);
+                }
+            
+                            
+            }
+        });
+    }
+});
+</script>
+</head>
+
+<body>
+<div class="ht_ wrapper">
+	<p style="margin:50px 0;">
+		<button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#ClickCksClose" style="width:100%;"><span class="text">온라인 / #ClickCksClose</span></button>
+        <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#ClickCksClose_day" style="width:100%;margin-top:12px"><span class="text">일간 / #ClickCksClose_day</span></button>
+        <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#ClickCksClose_week" style="width:100%;margin-top:12px"><span class="text">주간 / #ClickCksClose_week</span></button>
+        <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#ClickCksClose_month" style="width:100%;margin-top:12px"><span class="text">월간 / #ClickCksClose_month</span></button>
+        <button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#ClickCksClose_year" style="width:100%;margin-top:12px"><span class="text">연간 / #ClickCksClose_year</span></button>
+	</p>
+</div>
+<script>
+$(function(){
+	$('#ClickCksClose_day').dialog({
+		autoOpen: true
+	});
+});
+</script>
+
+
+<!-- 팝업 (ctg_floating_menues 온라인) -->
+<div id="ClickCksClose" class="dialog_wrap has_btn checkbox_btm" data-class="dialog_bottom">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+    <!-- dialog_header -->
+    <div class="dialog_header bd_none">
+        <div class="dialog_title">분류 기준</div>
+    </div>
+    <!-- //dialog_header -->
+    <!-- dialog_contents -->
+    <div class="dialog_contents checkbox_type">
+        <ul class="cks_list"> 
+            <li>
+                <label class="ck_label_wrap">
+                    <input type="radio"  name="test"class="checkbox_cm">
+                    <span class="label_for_radio">온라인</span>
+                </label>
+            </li>
+            <li>
+                <label class="ck_label_wrap">
+                    <input type="radio"  name="test"class="checkbox_cm">
+                    <span class="label_for_radio">오프라인</span>
+                </label>
+            </li>
+            <li>
+                <label class="ck_label_wrap">
+                    <input type="radio"  name="test"class="checkbox_cm">
+                    <span class="label_for_radio">온/오프라인</span>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <!-- //dialog_contents -->
+    <!-- dialog_footer -->
+    <div class="dialog_footer ctg_cks"></div>
+    <!-- //dialog_footer -->
+</div>
+<!-- //팝업 (ctg_floating_menues 온라인) -->
+
+
+
+<!-- 팝업 (ctg_floating_menues 연간) -->
+<div id="ClickCksClose_year" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+    <!-- dialog_header -->
+    <div class="dialog_header bd_none">
+        <div class="dialog_title">차트 선택</div>
+        <div class="dialog_title_sub">
+            <em class="icon_mus"></em>
+            <em class="year">2021년</em>
+            <em class="rate">연간</em>
+        </div>
+    </div>
+    <!-- //dialog_header -->
+    <!-- dialog_contents -->
+    <div class="dialog_contents vertical_swap_contents">
+        <div class="vertical_swap_area">
+            <div class="swiper chart_date_swap year">
+                <ul class="swiper-wrapper ck_list">
+                    <li class="swiper-slide" data-val="2017">2017년</li>
+                    <li class="swiper-slide" data-val="2018">2018년</li>
+                    <li class="swiper-slide" data-val="2019">2019년</li>
+                    <li class="swiper-slide" data-val="2020">2020년</li>
+                    <li class="swiper-slide" data-val="2021">2021년</li>
+                    <li class="swiper-slide" data-val="2022">2022년</li>
+                    <li class="swiper-slide" data-val="2023">2023년</li>
+                </ul>
+            </div>    
+        </div>
+    <!-- //dialog_contents -->
+    <!-- dialog_footer -->
+    <div class="dialog_footer ctg_cks">
+        <button type="button" class="btn_ip btn_black" data-dialog-close><span class="text">확인</span></button>
+    </div>
+    <!-- //dialog_footer -->
+    </div>
+</div>  
+<!-- //팝업 (ctg_floating_menues 연간) -->
+
+
+
+<!-- 팝업 (ctg_floating_menues 월간) -->
+<div id="ClickCksClose_month" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+    <!-- dialog_header -->
+    <div class="dialog_header bd_none">
+        <div class="dialog_title">차트 선택</div>
+        <div class="dialog_title_sub">
+            <em class="icon_mus"></em>
+            <em class="year">2021년</em>
+            <em class="month">11월</em>
+            <em class="rate">월간</em>
+        </div>
+    </div>
+    <!-- //dialog_header -->
+    <!-- dialog_contents -->
+    <div class="dialog_contents vertical_swap_contents">
+        <div class="vertical_swap_area type_month">
+            <div class="swiper chart_date_swap year">
+                <ul class="swiper-wrapper ck_list">
+                    <li class="swiper-slide" data-val="2017">2017년</li>
+                    <li class="swiper-slide" data-val="2018">2018년</li>
+                    <li class="swiper-slide" data-val="2019">2019년</li>
+                    <li class="swiper-slide" data-val="2020">2020년</li>
+                    <li class="swiper-slide" data-val="2021">2021년</li>
+                    <li class="swiper-slide" data-val="2022">2022년</li>
+                    <li class="swiper-slide" data-val="2023">2023년</li>
+                </ul>
+            </div>  
+            <div class="swiper chart_date_swap month">
+                <ul class="swiper-wrapper ck_list">
+                    <li class="swiper-slide" data-val="01">01월</li>
+                    <li class="swiper-slide" data-val="02">02월</li>
+                    <li class="swiper-slide" data-val="03">03월</li>
+                    <li class="swiper-slide" data-val="04">04월</li>
+                    <li class="swiper-slide" data-val="05">05월</li>
+                    <li class="swiper-slide" data-val="06">06월</li>
+                    <li class="swiper-slide" data-val="07">07월</li>
+                    <li class="swiper-slide" data-val="08">08월</li>
+                    <li class="swiper-slide" data-val="09">09월</li>
+                    <li class="swiper-slide" data-val="10">10월</li>
+                    <li class="swiper-slide" data-val="11">11월</li>
+                    <li class="swiper-slide" data-val="12">12월</li>
+                </ul>
+            </div>   
+        </div>
+        <!-- //dialog_contents -->
+        <!-- dialog_footer -->
+        <div class="dialog_footer ctg_cks">
+            <button type="button" class="btn_ip btn_black" data-dialog-close><span class="text">확인</span></button>
+        </div>
+    <!-- //dialog_footer -->
+    </div>
+</div>  
+<!-- 팝업 (ctg_floating_menues 월간) -->
+
+
+
+<!-- 팝업 (ctg_floating_menues 주간) -->
+<div id="ClickCksClose_week" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+    <!-- dialog_header -->
+    <div class="dialog_header bd_none">
+        <div class="dialog_title">차트 선택</div>
+        <div class="dialog_title_sub">
+            <em class="icon_mus"></em>
+            <em class="year">2021년</em>
+            <em class="month">11월</em>
+            <em class="week">4주</em>
+            <em class="rate">주간</em>
+        </div>
+    </div>
+    <!-- //dialog_header -->
+    <!-- dialog_contents -->
+    <div class="dialog_contents vertical_swap_contents">
+        <div class="vertical_swap_area type_week">
+            <div class="swiper chart_date_swap year">
+                <ul class="swiper-wrapper ck_list">
+                    <li class="swiper-slide" data-val="2017">2017년</li>
+                    <li class="swiper-slide" data-val="2018">2018년</li>
+                    <li class="swiper-slide" data-val="2019">2019년</li>
+                    <li class="swiper-slide" data-val="2020">2020년</li>
+                    <li class="swiper-slide" data-val="2021">2021년</li>
+                    <li class="swiper-slide" data-val="2022">2022년</li>
+                    <li class="swiper-slide" data-val="2023">2023년</li>
+                </ul>
+            </div>  
+            <div class="swiper chart_date_swap month">
+                <ul class="swiper-wrapper ck_list">
+                    <li class="swiper-slide" data-val="01">01월</li>
+                    <li class="swiper-slide" data-val="02">02월</li>
+                    <li class="swiper-slide" data-val="03">03월</li>
+                    <li class="swiper-slide" data-val="04">04월</li>
+                    <li class="swiper-slide" data-val="05">05월</li>
+                    <li class="swiper-slide" data-val="06">06월</li>
+                    <li class="swiper-slide" data-val="07">07월</li>
+                    <li class="swiper-slide" data-val="08">08월</li>
+                    <li class="swiper-slide" data-val="09">09월</li>
+                    <li class="swiper-slide" data-val="10">10월</li>
+                    <li class="swiper-slide" data-val="11">11월</li>
+                    <li class="swiper-slide" data-val="12">12월</li>
+                </ul>
+            </div> 
+            <div class="swiper chart_date_swap week">
+                <ul class="swiper-wrapper ck_list">
+                    <li class="swiper-slide" data-val="1">1주</li>
+                    <li class="swiper-slide" data-val="2">2주</li>
+                    <li class="swiper-slide" data-val="3">3주</li>
+                    <li class="swiper-slide" data-val="4">4주</li>
+                    <li class="swiper-slide" data-val="5">5주</li>
+                </ul>
+            </div>   
+        </div>
+        <!-- //dialog_contents -->
+        <!-- dialog_footer -->
+        <div class="dialog_footer ctg_cks">
+            <button type="button" class="btn_ip btn_black" data-dialog-close><span class="text">확인</span></button>
+        </div>
+    <!-- //dialog_footer -->
+    </div>
+</div>  
+<!-- 팝업 (ctg_floating_menues 주간) -->
+
+
+
+<!-- 팝업 (ctg_floating_menues  일간) -->
+<div id="ClickCksClose_day" class="dialog_wrap has_btn vertical_swap_content" data-class="dialog_bottom">
+    <button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+    <!-- dialog_header -->
+    <!--[2022-02-24] div.dialog_header - bd_none 추가 -->
+    <div class="dialog_header bd_none">
+        <div class="dialog_title">차트 선택</div>
+        <div class="dialog_title_sub">
+            <em class="icon_mus"></em>
+            <em class="year">2022년</em>
+            <em class="month">11월</em>
+            <em class="day">11일</em>
+            <em class="rate">일간</em>
+        </div>
+    </div>
+    <!-- //dialog_header -->
+    <!-- dialog_contents -->
+    <div class="dialog_contents vertical_swap_contents">
+        <div class="vertical_swap_area type_week">
+            <div class="swiper chart_date_swap year">
+                <ul class="swiper-wrapper ck_list">
+                    <li class="swiper-slide" data-val="2017">2017년</li>
+                    <li class="swiper-slide" data-val="2018">2018년</li>
+                    <li class="swiper-slide" data-val="2019">2019년</li>
+                    <li class="swiper-slide" data-val="2020">2020년</li>
+                    <li class="swiper-slide" data-val="2021">2021년</li>
+                    <li class="swiper-slide" data-val="2022">2022년</li>
+                    <li class="swiper-slide" data-val="2023">2023년</li>
+                </ul>
+            </div>  
+            <div class="swiper chart_date_swap month">
+                <ul class="swiper-wrapper ck_list">
+                    <li class="swiper-slide" data-val="01">01월</li>
+                    <li class="swiper-slide" data-val="02">02월</li>
+                    <li class="swiper-slide" data-val="03">03월</li>
+                    <li class="swiper-slide" data-val="04">04월</li>
+                    <li class="swiper-slide" data-val="05">05월</li>
+                    <li class="swiper-slide" data-val="06">06월</li>
+                    <li class="swiper-slide" data-val="07">07월</li>
+                    <li class="swiper-slide" data-val="08">08월</li>
+                    <li class="swiper-slide" data-val="09">09월</li>
+                    <li class="swiper-slide" data-val="10">10월</li>
+                    <li class="swiper-slide" data-val="11">11월</li>
+                    <li class="swiper-slide" data-val="12">12월</li>
+                </ul>
+            </div> 
+            <div class="swiper chart_date_swap day">
+                <ul class="swiper-wrapper ck_list">
+                    <li class="swiper-slide" data-val="01">01일</li>
+                    <li class="swiper-slide" data-val="02">02일</li>
+                    <li class="swiper-slide" data-val="03">03일</li>
+                    <li class="swiper-slide" data-val="04">04일</li>
+                    <li class="swiper-slide" data-val="05">05일</li>
+                    <li class="swiper-slide" data-val="11">11일</li>
+                    <li class="swiper-slide" data-val="12">12일</li>
+                    <li class="swiper-slide" data-val="13">13일</li>
+                    <li class="swiper-slide" data-val="14">14일</li>
+                    <li class="swiper-slide" data-val="15">15일</li>
+                </ul>
+            </div>   
+        </div>
+        <!-- //dialog_contents -->
+        <!-- dialog_footer -->
+        <div class="dialog_footer ctg_cks">
+            <button type="button" class="btn_ip btn_black" data-dialog-close><span class="text">확인</span></button>
+        </div>
+    <!-- //dialog_footer -->
+    </div>
+</div> 
+<!-- //팝업 (ctg_floating_menues 일간) -->
+</body>
+</html>

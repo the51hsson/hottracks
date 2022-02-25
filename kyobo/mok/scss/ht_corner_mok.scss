@@ -616,8 +616,8 @@
 //스티키 메뉴(스터디 플래너 전체)
 .ctg_floating_line{
 	position: sticky;
-	padding:0 0 10px 20px;
-	top:60px;
+	padding:10px 0 10px 20px;
+	top:50px;
 	left:0;
 	z-index:20;
 	background-color: #fff;
@@ -648,6 +648,7 @@
     &.sub_mn { // 음반 리스트 확장 
         margin:0;
         background-color: #F7F7F7;
+        padding-top:0;
         padding-bottom:20px;
     }
 }

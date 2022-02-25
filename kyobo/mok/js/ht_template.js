@@ -145,9 +145,12 @@ function welLive(){
         on: {
             activeIndexChange: function () {
                 $('.wel_live_good_ani').removeClass('on');
+                $('.wel_live_cont .swiper-slide').removeClass('act');
+                $('.wel_live_cont .swiper-slide').eq(this.realIndex).addClass('act');
             }
         }
     };
+    $('.wel_live_cont .swiper-slide').eq(0).addClass('act');
     welLiveSwiper = new Swiper($target.get(), slideOption);
 }
 

@@ -746,8 +746,8 @@
 .ctg_floating_line {
   position: -webkit-sticky;
   position: sticky;
-  padding: 0 0 10px 20px;
-  top: 60px;
+  padding: 10px 0 10px 20px;
+  top: 50px;
   left: 0;
   z-index: 20;
   background-color: #fff;
@@ -791,6 +791,7 @@
 .ctg_floating_line.sub_mn {
   margin: 0;
   background-color: #F7F7F7;
+  padding-top: 0;
   padding-bottom: 20px;
 }
 

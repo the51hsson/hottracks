@@ -415,6 +415,10 @@
   margin-right: 4px;
 }
 
+.prod_resp {
+  width: 100% !important;
+}
+
 .nonswipe {
   padding-right: 0px !important;
 }
@@ -529,6 +533,7 @@
 
 .type_sm .product_pic {
   padding-top: 140px;
+  margin-bottom: 5px;
 }
 
 .type_sm .title {

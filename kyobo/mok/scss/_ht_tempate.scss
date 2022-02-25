@@ -793,7 +793,7 @@
         position:relative;top:0;z-index:0;
     }
     &.include_sub {
-        position:relative;top:0;z-index:0;
+        /*position:relative;top:0;z-index:0;*/
         & .inner_wrap {
             padding-bottom:12px;
         }
