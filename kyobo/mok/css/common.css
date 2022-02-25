@@ -5772,6 +5772,10 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
   margin-right: 4px;
 }
 
+.prod_resp {
+  width: 100% !important;
+}
+
 .nonswipe {
   padding-right: 0px !important;
 }
@@ -5886,6 +5890,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 
 .type_sm .product_pic {
   padding-top: 140px;
+  margin-bottom: 5px;
 }
 
 .type_sm .title {
@@ -8345,9 +8350,7 @@ button.btn_text_link:active .text, button.btn_text_link:focus .text {
 }
 
 .ctg_topMenu.include_sub {
-  position: relative;
-  top: 0;
-  z-index: 0;
+  /*position:relative;top:0;z-index:0;*/
 }
 
 .ctg_topMenu.include_sub .inner_wrap {

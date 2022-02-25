@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*=================================== 음반 리스트  ====================================*/
-.main_cont_wrap.music .main_tab_menu {
+.main_cont_wrap .main_tab_menu {
   position: relative;
   width: 75%;
   max-width: 480px;
@@ -13,7 +13,7 @@
   border: 1px solid #D5D5D5;
 }
 
-.main_cont_wrap.music .main_tab_menu:before {
+.main_cont_wrap .main_tab_menu:before {
   content: "";
   position: absolute;
   left: 0;
@@ -29,29 +29,29 @@
   transition: left .1s ease-in-out;
 }
 
-.main_cont_wrap.music .main_tab_menu.active0:before {
+.main_cont_wrap .main_tab_menu.active0:before {
   left: 0;
   width: calc(100% / 3);
 }
 
-.main_cont_wrap.music .main_tab_menu.active1:before {
+.main_cont_wrap .main_tab_menu.active1:before {
   left: calc(100% / 3);
 }
 
-.main_cont_wrap.music .main_tab_menu.active2:before {
+.main_cont_wrap .main_tab_menu.active2:before {
   left: calc((100% / 3 ) * 2);
   width: calc(100% / 3);
 }
 
-.main_cont_wrap.music .main_tab_menu + .ctg_top_wrap {
-  padding: 0;
-}
-
-.main_cont_wrap.music .main_tab_menu + .ctg_top_wrap .ctg_top_swiper {
+.main_cont_wrap .main_tab_menu + .ctg_top_wrap {
   padding-top: 0;
 }
 
-.main_cont_wrap.music .main_tab_menu a {
+.main_cont_wrap .main_tab_menu + .ctg_top_wrap .ctg_top_swiper {
+  padding-top: 0;
+}
+
+.main_cont_wrap .main_tab_menu a {
   position: relative;
   display: inline-block;
   width: calc(100% / 3);
@@ -61,21 +61,21 @@
   letter-spacing: -0.03em;
 }
 
-.main_cont_wrap.music .main_tab_menu a:first-of-type {
+.main_cont_wrap .main_tab_menu a:first-of-type {
   margin: 0;
 }
 
-.main_cont_wrap.music .main_tab_menu a.active {
+.main_cont_wrap .main_tab_menu a.active {
   color: #fff;
   font-weight: 700;
 }
 
-.main_cont_wrap.music .main_tab_menu a.active .icon {
+.main_cont_wrap .main_tab_menu a.active .icon {
   width: 25px;
   height: 44px;
 }
 
-.main_cont_wrap.music .main_tab_menu .icon {
+.main_cont_wrap .main_tab_menu .icon {
   display: inline-block;
   vertical-align: middle;
   background: url(../images/guide/muse_menu_active_icon.svg) no-repeat left center/20px;
@@ -83,7 +83,7 @@
   height: 0;
 }
 
-.main_cont_wrap.music .main_tab_menu .txt {
+.main_cont_wrap .main_tab_menu .txt {
   display: inline-block;
   vertical-align: middle;
   line-height: 44px;
@@ -452,7 +452,7 @@
 
 /*==================================== HTR-M-MUS-ETC-000.html(팬사인회)====================================*/
 #content {
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 .pdb30 {
@@ -463,13 +463,14 @@
   margin-left: 10px;
   margin-right: 10px;
   width: auto;
+  border-top: 1px solid #e5e5e5;
 }
 
 .banner_basic02 ul.mgt30 li {
   height: 80px;
   margin-top: 20px;
   width: 100%;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
 }
 
@@ -480,7 +481,7 @@
 
 .banner_basic02 ul.mgt30 a span {
   display: block;
-  margin-left: 160px;
+  margin-left: 170px;
   text-align: left;
   width: auto;
   font-size: 12px;
@@ -497,7 +498,7 @@
 .banner_basic02 {
   position: relative;
   overflow: hidden;
-  margin: 10px 0 25px;
+  margin: 0 10px 0 10px;
 }
 
 .banner_basic02 li {

@@ -10669,6 +10669,18 @@ body:before {
   width: 100%;
 }
 
+.prod_solo_banner {
+  margin: 32px 0 8px 0;
+}
+
+.prod_solo_banner img {
+  width: 100%;
+}
+
+.row_dir .prod_solo_banner {
+  margin-bottom: 32px;
+}
+
 .belt_banner {
   margin-top: 60px;
 }
@@ -11092,6 +11104,10 @@ body:before {
   margin-right: 4px;
 }
 
+.prod_resp {
+  width: 100% !important;
+}
+
 .nonswipe {
   padding-right: 0px !important;
 }
@@ -11206,6 +11222,7 @@ body:before {
 
 .type_sm .product_pic {
   padding-top: 140px;
+  margin-bottom: 5px;
 }
 
 .type_sm .title {
@@ -13665,9 +13682,7 @@ body:before {
 }
 
 .ctg_topMenu.include_sub {
-  position: relative;
-  top: 0;
-  z-index: 0;
+  /*position:relative;top:0;z-index:0;*/
 }
 
 .ctg_topMenu.include_sub .inner_wrap {

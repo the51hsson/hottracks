@@ -337,6 +337,13 @@
 		}
 	}
 }
+
+
+.prod_resp {
+	width:100% !important;
+}
+
+
 //스왑 기능 없을때(1:1)
 .nonswipe {
 	padding-right: 0px !important;
@@ -436,6 +443,7 @@
 	}
 	.product_pic {
 		padding-top:140px;
+		margin-bottom:5px;;
 	}			
 	.title {
 		margin-bottom:8px;
