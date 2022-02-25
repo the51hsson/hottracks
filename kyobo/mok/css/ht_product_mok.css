@@ -206,6 +206,12 @@
   margin-left: 3px;
 }
 
+.ht_ .notice_area_alarm .account_notice .txt_tit img.ico_live {
+  margin-left: 8px;
+  width: 34px;
+  height: 22px;
+}
+
 .ht_ .notice_area_alarm .account_notice .txt_desc {
   font-size: 13px;
   line-height: 19px;
@@ -1695,7 +1701,7 @@
   margin-top: 20px;
 }
 
-.all_review_wrap .all_review_list .all_review_item.reply .review_reply .byte_check_wrap.active {
+.all_review_wrap .all_review_list .all_review_item.reply .review_reply .byte_check_wrap.show {
   display: block;
 }
 

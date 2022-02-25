@@ -220,7 +220,7 @@
         margin-top: 20px;
         .byte_check_wrap {
             display: none;
-            &.active {
+            &.show {
                 display: block;
             }
             .form_textarea {

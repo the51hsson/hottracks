@@ -259,7 +259,7 @@
   display: none;
 }
 
-.all_review_wrap .review_reply .byte_check_wrap.active {
+.all_review_wrap .review_reply .byte_check_wrap.show {
   display: block;
 }
 

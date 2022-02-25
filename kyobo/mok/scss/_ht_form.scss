@@ -800,11 +800,14 @@ input[type=number] {
         line-height: 21px;
         height:63px !important;
         border: none;
+        &:disabled { 
+            background-color: #fff;
+        }
         &[aria-disabled] + .byte_chack_footer,
         &[disabled] + .byte_chack_footer,
         &[readonly] + .byte_chack_footer {
             color: #767676;
-            background-color: #f7f7f7;
+            background-color: #fff;
         }
     }
     .byte_chack_footer {

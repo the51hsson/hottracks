@@ -1361,7 +1361,6 @@
             display: inline-block;
             width: 50%;
             padding: 0 10px;
-            float: left;
             margin-bottom: 24px;
             .figure {
                 position: relative;
@@ -1416,9 +1415,6 @@
                         font-family: Roboto;
                         font-weight: 700;
                         font-weight: $font-weight-bold;
-                    }
-                    .txt_unit {
-                    
                     }
                 }
             }
@@ -1624,7 +1620,6 @@
                     width: 140px;
                     margin-right: 16px;
                     display: inline-block;
-                    float: left;
                     a {
                         display: block;
                         .figure {
@@ -1681,9 +1676,6 @@
                                     font-family: Roboto;
                                     font-weight: 700;
                                     font-weight: $font-weight-bold
-                                }
-                                .txt_unit {
-                                
                                 }
                             }
                         }

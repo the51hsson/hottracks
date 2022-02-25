@@ -5962,11 +5962,15 @@ input[type=number] {
   border: none;
 }
 
+.byte_check_wrap .form_textarea:disabled {
+  background-color: #fff;
+}
+
 .byte_check_wrap .form_textarea[aria-disabled] + .byte_chack_footer,
 .byte_check_wrap .form_textarea[disabled] + .byte_chack_footer,
 .byte_check_wrap .form_textarea[readonly] + .byte_chack_footer {
   color: #767676;
-  background-color: #f7f7f7;
+  background-color: #fff;
 }
 
 .byte_check_wrap .byte_chack_footer {
