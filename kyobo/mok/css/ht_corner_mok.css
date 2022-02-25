@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.devide_hr,
+.divide_hr,
 .devide_underline_thin {
   display: block;
   width: 100%;
@@ -8,6 +8,10 @@
   border: none;
   background-color: #f7f7f7;
   margin: 0;
+}
+
+.divide_hr {
+  margin-top: 32px;
 }
 
 .devide_hr {
