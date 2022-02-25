@@ -345,7 +345,7 @@
             .live_box {
                 padding-left:10px;color:#fff;text-align:left
             }
-            &.swiper-slide-active {
+            &.act {
                 opacity:1;
                 .tit_wel_live, .wel_live_box {
                     opacity:1;transition-delay:0.4s;
@@ -370,7 +370,7 @@
                 }
             }
             &.on {
-                &.swiper-slide-active {
+                &.act {
                     .wel_live_good_ani {
                         display:block;
                     }

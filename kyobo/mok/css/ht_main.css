@@ -741,53 +741,53 @@
   text-align: left;
 }
 
-.ht_ .wel_live_cont .swiper-slide.swiper-slide-active {
+.ht_ .wel_live_cont .swiper-slide.act {
   opacity: 1;
 }
 
-.ht_ .wel_live_cont .swiper-slide.swiper-slide-active .tit_wel_live, .ht_ .wel_live_cont .swiper-slide.swiper-slide-active .wel_live_box {
-  opacity: 1;
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-}
-
-.ht_ .wel_live_cont .swiper-slide.swiper-slide-active .live_btn {
-  opacity: 1;
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
-}
-
-.ht_ .wel_live_cont .swiper-slide.swiper-slide-active .wel_live_time {
-  opacity: 1;
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
-}
-
-.ht_ .wel_live_cont .swiper-slide.swiper-slide-active .wel_live_box .img, .ht_ .wel_live_cont .swiper-slide.swiper-slide-active .wel_live_box .txt {
-  opacity: 1;
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
-}
-
-.ht_ .wel_live_cont .swiper-slide.swiper-slide-active .eye_wel_live {
+.ht_ .wel_live_cont .swiper-slide.act .tit_wel_live, .ht_ .wel_live_cont .swiper-slide.act .wel_live_box {
   opacity: 1;
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
 
-.ht_ .wel_live_cont .swiper-slide.swiper-slide-active .eye_wel_live + .tit_wel_live {
+.ht_ .wel_live_cont .swiper-slide.act .live_btn {
   opacity: 1;
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
 }
 
-.ht_ .wel_live_cont .swiper-slide.swiper-slide-active .txt_wel_live {
+.ht_ .wel_live_cont .swiper-slide.act .wel_live_time {
+  opacity: 1;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.ht_ .wel_live_cont .swiper-slide.act .wel_live_box .img, .ht_ .wel_live_cont .swiper-slide.act .wel_live_box .txt {
+  opacity: 1;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.ht_ .wel_live_cont .swiper-slide.act .eye_wel_live {
+  opacity: 1;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.ht_ .wel_live_cont .swiper-slide.act .eye_wel_live + .tit_wel_live {
+  opacity: 1;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.ht_ .wel_live_cont .swiper-slide.act .txt_wel_live {
   opacity: 1;
   -webkit-transition-delay: 0.8s;
           transition-delay: 0.8s;
 }
 
-.ht_ .wel_live_cont .swiper-slide.on.swiper-slide-active .wel_live_good_ani {
+.ht_ .wel_live_cont .swiper-slide.on.act .wel_live_good_ani {
   display: block;
 }
 
