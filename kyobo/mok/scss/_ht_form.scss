@@ -791,7 +791,7 @@ input[type=number] {
     font-size: 0;
     background: #fff;
     padding:12px 16px 0;
-    &.active {
+    &.focus {
         border: 1px solid #000;
         transition: border-color 0.2s ease-out;
     }
@@ -800,11 +800,14 @@ input[type=number] {
         line-height: 21px;
         height:63px !important;
         border: none;
+        &:disabled { 
+            background-color: #fff;
+        }
         &[aria-disabled] + .byte_chack_footer,
         &[disabled] + .byte_chack_footer,
         &[readonly] + .byte_chack_footer {
             color: #767676;
-            background-color: #f7f7f7;
+            background-color: #fff;
         }
     }
     .byte_chack_footer {

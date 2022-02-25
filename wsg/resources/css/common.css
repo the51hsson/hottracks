@@ -204,7 +204,7 @@ a:hover {
 .btn_aside:before, .btn_aside:after, .btn_aside span {display: block; position: absolute; left: 50%; top: 50%; width: 20px; height: 2px; overflow: hidden; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%);}
 .btn_aside:before {margin-top: -6px;}
 .btn_aside:after {margin-top: 6px;}
-.g_breadcrumb {display: inline-block; float: left;}
+.g_breadcrumb {display: inline-block;}
 .g_breadcrumb p {padding: 0 20px; font-size: 18px; line-height: 40px; color: transparent;}
 
 /* Aside */
@@ -485,16 +485,13 @@ a.g_top {display: block; position: fixed; right: 20px; bottom: 20px; width: 50px
 
 }
 .ex_form_check > input:checked + .ex_check {text-indent: 0;}
-.ex_form_check > input:checked + .ex_check .fa_check {
-
-}
 .ex_form_check + .ex_form_check {margin-left: 20px;}
 
 /* S:check box */
 .form_chk { position: relative; display: inline-block; vertical-align: top; }
 .form_chk .ip_chk { position: absolute; top: 2px; left: 1px; margin: 0; }
 .form_chk .ip_chk:checked + .ip_chk_lb:before { content: ""; display: block; position: absolute; z-index: 10; top: 2px; left: 2px; width: 12px; height: 12px;background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAlElEQVQ4T6WTXQ2AMAwGDwdIQAISQAEWsIQCQAkWkIAEJJCSNCljP7Dtdblb26+rKDxVIU+uoAY2YMoRKNwC61/BAwbGP4IXLPP7KvDCVtAARyCRIKyCBRiAHtgdSRRWwQjMwOlIkrBtwZVIO5LzHZVMO7RwdohWIoIk7EtBJXIXfVkr8sUoki5Wtm3n6x4E/1yx4AI+qiERKNFzCwAAAABJRU5ErkJggg==") no-repeat 0 0;background-size: 12px;}
-.form_chk.only_ip {}
+
 
 .form_chk .ip_chk:disabled + .ip_chk_lb:after { background-color: #dae0e0; }
 .form_chk .ip_chk:checked:disabled + .ip_chk_lb:before {opacity: 0.5;}
@@ -511,7 +508,7 @@ a.g_top {display: block; position: fixed; right: 20px; bottom: 20px; width: 50px
 .form_rdo { position: relative; display: inline-block; vertical-align: top; }
 .form_rdo .ip_rdo { position: absolute; top: 2px; left: 1px; margin: 0; }
 .form_rdo .ip_rdo:checked + .ip_rdo_lb:before { content: ""; display: block; position: absolute; z-index: 10; top: 5px; left: 5px; width: 6px; height: 6px; border-radius: 50%; background: #000; }
-.form_rdo.only_ip {}
+
 
 .form_rdo .ip_rdo:disabled + .ip_rdo_lb:after { background-color: #dae0e0; }
 .form_rdo .ip_rdo:checked:disabled + .ip_rdo_lb:before {opacity: 0.5;}

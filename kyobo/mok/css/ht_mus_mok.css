@@ -36,6 +36,7 @@
 
 .main_cont_wrap .main_tab_menu.active1:before {
   left: calc(100% / 3);
+  width: calc(100% / 3);
 }
 
 .main_cont_wrap .main_tab_menu.active2:before {

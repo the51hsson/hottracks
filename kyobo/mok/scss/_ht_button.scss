@@ -768,6 +768,7 @@ button.btn_text_link {
         background-size: 18px 18px;
         vertical-align: top;
         transition: background .2s ease-out;
+
     }
     &.active .ico_wish {
         background-image: url(../images/guide/ico_heart_active.svg);
@@ -799,6 +800,21 @@ button.btn_text_link {
             background-size: 14px 14px;
         }
     }
+    .ico_heart {
+        display: inline-block;
+        background: url(../images/ico/ico_heart.png) no-repeat 0 0;
+        background-size: 20px 20px;  
+        width: 20px;        
+        height: 20px;
+    }            
+    &.active {
+        .ico_heart {
+            background: url(../images/ico/ico_heart_active.png) no-repeat 0 0;
+            background-size: 20px 20px;  
+            width: 20px;        
+            height: 20px;
+        }
+    } 
 }
 
 .btn_gift {

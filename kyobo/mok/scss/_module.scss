@@ -1,4 +1,3 @@
-
 /* tab */
 .ht_tab_wrap {
     padding: 0;
@@ -30,7 +29,7 @@
                     &.active {
                         .tab_link {
                             .tab_txt {
-                                font-weight: $font-weight-bold;
+                                font-weight: 700;
                             }
                             
                             &:after {
