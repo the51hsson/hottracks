@@ -4157,7 +4157,7 @@
 
 /* mus_tab_box */
 .mus_tab_box {
-    display:flex;width:calc(100% + 40px);margin:-4px -20px 24px -20px;padding:0 20px;overflow-x:auto;opacity:1;animation:none !important;
+    display:flex;width:calc(100% + 40px);margin:-4px -20px 24px -20px;padding:0 20px;overflow-x:auto;opacity:1 !important;animation:none !important;
     a {
         display:block;position:relative;height:42px;padding:0 15px;box-sizing:border-box;color:#fff;font-size:13px;font-weight:700;line-height:42px;white-space:nowrap;transition:all 0.4s;;
         &:before {
