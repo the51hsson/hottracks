@@ -1,18 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-    <defs>
-        <style>
-            .cls-4{fill:none}
-        </style>
-    </defs>
-    <g id="icon_info" transform="translate(9288.6 17400)">
-        <g id="그룹_109428" data-name="그룹 109428" transform="translate(9.4 -2)">
-            <g id="타원_271" data-name="타원 271" transform="translate(-9296 -17397)" style="stroke-miterlimit:10;stroke:#000;fill:none">
-                <circle cx="7.13" cy="7.13" r="7.13" style="stroke:none"/>
-                <circle class="cls-4" cx="7.13" cy="7.13" r="6.63"/>
-            </g>
-            <path id="패스_36301" data-name="패스 36301" d="m196.906-10393.822-2.6-2.6a.459.459 0 0 1 0-.65.458.458 0 0 1 .652 0l1.948 1.949 3.61-3.609a.46.46 0 0 1 .652 0 .46.46 0 0 1 0 .651z" transform="translate(-9486.592 -6993.365)" style="fill:#da2128"/>
-            <path id="선_138" data-name="선 138" transform="translate(-9284.713 -17384.242)" style="stroke-linecap:round;stroke:#000;fill:none" d="m0 0 3.135 3.243"/>
-        </g>
-        <path id="사각형_3528" data-name="사각형 3528" class="cls-4" transform="translate(-9288.6 -17400)" d="M0 0h18v18H0z"/>
+  <g id="icon_info" transform="translate(9288.6 17400)">
+    <g id="그룹_109428" data-name="그룹 109428" transform="translate(9.4 -2)">
+      <g id="타원_271" data-name="타원 271" transform="translate(-9296 -17397)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1">
+        <circle cx="7.13" cy="7.13" r="7.13" stroke="none"/>
+        <circle cx="7.13" cy="7.13" r="6.63" fill="none"/>
+      </g>
+      <path id="패스_36301" data-name="패스 36301" d="M196.906-10393.822l-2.6-2.6a.459.459,0,0,1,0-.65.458.458,0,0,1,.652,0l1.948,1.949,3.61-3.609a.46.46,0,0,1,.652,0,.46.46,0,0,1,0,.651Z" transform="translate(-9486.592 -6993.365)" fill="#474c98"/>
+      <line id="선_138" data-name="선 138" x2="3.135" y2="3.243" transform="translate(-9284.713 -17384.242)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
     </g>
+    <rect id="사각형_3528" data-name="사각형 3528" width="18" height="18" transform="translate(-9288.6 -17400)" fill="none"/>
+  </g>
 </svg>

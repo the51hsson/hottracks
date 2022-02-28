@@ -267,7 +267,7 @@ a.btn_md, button.btn_md {
   line-height: 23px;
   letter-spacing: -.01em;
   font-family: "Noto Sans KR",sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 a.btn_md.btn_pill, button.btn_md.btn_pill {
@@ -3796,7 +3796,7 @@ body.dialog_open {
   overflow-y: auto;
   overflow-x: hidden;
   background: #fff;
-  margin: 30px 20px 34px;
+  margin: 32px 20px;
   -webkit-overflow-scrolling: touch;
 }
 
