@@ -60,8 +60,40 @@
     <script src="../../js/ht_lib.js"></script>
     <script src="../../js/ht_template.js"></script>
     <!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
-    <script src="../../js/ui_product_mok.js"></script>
+    <script src="../../js/pinch-zoom.umd.js"></script>
+    <style>
   
+.pinch-zoom-parent {
+  width: 100%;
+}
+.pinch-zoom-container {
+    width: 100% ;
+    height:auto ;
+    border:2px solid blue;
+}
+.pinch-zoom-parent>img {
+  min-width:100%;
+  height:50vh;
+}
+
+div.pinch-zoom div.description h1 {
+  font-size: 40px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+div.pinch-zoom div.description p {
+  margin-bottom: 1em;
+}
+
+
+    </style>
+    <script>
+        $(function(){
+            var el = document.querySelector('div.pinch-zoom');
+            new PinchZoom.default(el, {});
+        })
+    </script>
 </head>
 
 <body>
@@ -323,7 +355,20 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="panzoom-parent" style="overflow: hidden; user-select: none; touch-action: none;"><div class="panzoom" style="cursor: move; user-select: none; touch-action: none; transform-origin: 50% 50%; transition: none 0s ease 0s; transform: scale(0.8) translate(0px, 0px);"><img width="450" height="450" src="../../images/temp/@product_detail.png"></div></div>
+                                    <!--연습용-->
+                                    <div class="page pinch-zoom-parent" >
+                                        <div class="pinch-zoom">
+                                            <div class="description">
+                                                <h1>Pinchzoom.js</h1>
+                                                <p>
+                                                    Multi-touch zoom in Javascript
+                                                </p>
+                                            </div>
+                                            <img src="../../images/temp/@product_detail.png"/>
+                                        </div>
+                                    </div>
+                                    <!--연습용-->
+
                                     <div class="msg_zoomin_area">
                                         <p class="txt_dec">
                                             <!--[2022-02-16] 폰트 스타일 변경 span class="txt_primary" => strong-->
