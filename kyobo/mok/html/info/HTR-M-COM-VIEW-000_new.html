@@ -68,7 +68,7 @@
 }
 .pinch-zoom-container {
     width: 100% ;
-    height:auto ;
+    height:30vh ;
     border:2px solid blue;
 }
 .pinch-zoom-parent>img {
@@ -91,6 +91,7 @@ div.pinch-zoom div.description p {
     <script>
         $(function(){
             var el = document.querySelector('div.pinch-zoom');
+            console.log(el);
             new PinchZoom.default(el, {});
         })
     </script>
