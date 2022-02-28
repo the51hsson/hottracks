@@ -12347,6 +12347,17 @@ body:before {
           animation: none !important;
 }
 
+.mc_txt02 {
+  margin-top: 5px;
+  color: #000;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.mc_txt02.center {
+  text-align: center;
+}
+
 .txt_swiper {
   margin: -10px -20px 10px -20px;
   padding: 0 20px;

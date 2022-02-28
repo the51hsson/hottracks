@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+<meta name="Author" content="SEO 기획 정의 내용 반영" />
+<meta name="keywords" content="SEO 기획 정의 내용 반영"/>
+<meta name="description" content="SEO 기획 정의 내용 반영" />
+<meta name="subject" content="SEO 기획 정의 내용 반영" />
+<!-- DESC : 성인컨텐츠인 경우 추가하는 meta tag -->
+<!--<meta name="rating" content="adult" />-->
+
+<meta name="Robots" content="noindex, nofollow" />
+<meta name="msapplication-TileColor" content="#000000">
+<meta property="og:title" content="핫트랙스">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../../images/guide/sns.jpg">
+<link rel="shortcut icon" href="../../images/guide/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/guide/apple-touch-icon.png">
+<title>음반메인</title>
+
+<!-- Plug-In css -->
+<link rel="stylesheet" href="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+<link rel="stylesheet" href="../../vendors/lib/swiper-7.2.0/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../../vendors/lib/star-rating/css/star-rating.min.css" />
+<!-- // Plug-In css -->
+
+<!-- font css -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
+<!-- // font css -->
+
+<!-- ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
+<link rel="stylesheet" href="../../css/ht_css_mok.css">
+<link rel="stylesheet" href="../../css/ht_template_mok.css">
+<!--// ht_ Hottracks css : 공통작업 --><!-- 22.02 -->
+
+
+<!-- Plug-In javascript -->
+<script src="../../vendors/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="../../vendors/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="../../vendors/lib/jquery-ui-1.12.1/jquery.ui.spinner.js"></script>
+<script src="../../vendors/lib/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+<script src="../../vendors/lib/swiper-7.2.0/js/swiper-bundle.min.js"></script>
+<script src="../../vendors/lib/star-rating/js/star-rating.min.js"></script>
+<script src="../../vendors/lib/star-rating/themes/krajee-gly/theme.min.js"></script>
+<script src="../../vendors/lib/star-rating/js/locales/ko.js"></script>
+<script src="../../vendors/lib/scrollpos-styler/scrollPosStyler.min.js"></script>
+<script src="../../vendors/lib/css-element-queries/ResizeSensor.js"></script>
+<script src="../../vendors/lib/vanillajs-scrollspy/vanillajs-scrollspy.min.js"></script>
+<!-- // Plug-In javascript -->
+
+<!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
+<script src="../../js/front_bak.js"></script>
+<script src="../../js/mok.ui.js"></script>
+<script src="../../js/ht_lib.js"></script>
+<script src="../../js/ht_template.js"></script>
+<!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
+</head>
+
+<body>
+<div class="ht_ wrapper">
+	<p style="margin:50px 0;">
+		<button type="button" class="btn_sm btn_primary" data-role="btn-dialog" data-target="#popMusFansign" style="width:100%;"><span class="text">영통팬사 준비물 모아보기 / #popMusFansign</span></button>
+	</p>
+</div>
+<script>
+$(function(){
+	$('#popMusFansign').dialog({
+		autoOpen: true
+	});
+});
+</script>
+
+
+<!-- 영통팬사 준비물 모아보기 : popMusFansign -->
+<div id="popMusFansign" class="dialog_wrap" data-class="dialog_full">
+	<button type="button" class="btn_dialog_close" data-dialog-close><span class="ico_dialog_close"></span><span class="hidden">닫기</span></button>
+
+	<!-- dialog_header -->
+	<div class="dialog_header">
+		<div class="dialog_title">영통팬사 준비물 모아보기</div>
+	</div>
+	<!-- //dialog_header -->
+	
+	<!-- dialog_contents -->
+	<div class="dialog_contents">
+		<h3 class="mc_txt02">내방에서 만나는 내 아이돌 제대로 보기</h3>
+		<!-- 상품 리스트 -->
+		<ul class="prod-wrapper evt_products"><!-- row_dir : row type -->
+			<!-- prod_item 반복 -->
+			<li class="prod_item">
+				<div class="product_pic">
+					<button class="evt_good_count">
+						<div class="icon"></div>
+						<div class="txt">80</div>
+					</button>
+					<a href="javascript:alert('제품상세');"><img src="../../images/guide/@tod_prod_sample1.svg" class="bd_img" alt=""></a>
+				</div>
+				<div class="product_info">
+					<div class="company">dretec</div>
+					<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+					<div class="price_line">
+						<span class="discount_rate">15%</span>
+						<span class="final_price">9,234,000</span>
+						<span class="price_origin">9,200,000</span>
+					</div>
+					<!--<div class="badge_line">
+						<span class="badge rounded badge_primary_evt">쿠폰</span>
+						<span class="badge rounded badge_default_evt">사은품</span>
+						<span class="badge rounded badge_default_evt">무료배송</span>
+					</div>-->
+				</div>
+			</li>
+			<!-- //prod_item 반복 -->
+
+			<!-- prod_item : 대체 상품 -->
+			<li class="prod_item sold_out replace_prod"><!-- 품절 : class="sold_out" / 대체 상품 : class="replace_prod" -->
+				<div class="product_pic">
+					<span class="show_replace">
+						<div>아쉽지만!<br>품절이예요</div>
+						<button type="button" class="replace_prod_btn">대체상품</button>
+					</span>
+					<!--
+						<button class="evt_good_count">
+							<div class="icon"></div>
+							<div class="txt">80</div>
+						</button>
+					-->
+					<a href="javascript:alert('제품상세');"><img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img" alt=""></a>
+				</div>
+				<div class="product_info">
+					<div class="company">dretec</div>
+					<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+					<div class="price_line">
+						<span class="discount_rate">15%</span>
+						<span class="final_price">9,234,000</span>
+						<span class="price_origin">9,200,000</span>
+					</div>
+				</div>
+
+				<!-- 대체 상품 컨텐츠 : replace_prod_swap -->
+				<article class="replace_prod_swap">
+					<h4 class="tit">
+						<em class="txt">하필 딱! 품절이지만 괜찮아요</em>
+						<em class="replace_icon"></em>
+					</h4>
+					<div class="sub_title">찾으시는 상품과 비슷한 상품이 여기 있어요!</div>
+					<!-- swiper -->
+					<div class="swiper mySwiper">
+						<ul class="swiper-wrapper prod-wrapper type_sm">
+							<!-- li.prod_item 반복 -->
+							<li class="swiper-slide prod_item">
+								<div class="product_pic">
+									<button class="evt_good_count">
+										<div class="icon"></div>
+										<div class="txt">80</div>
+									</button>
+									<a href="#"><img src="../../images/guide/@tod_prod_sample3.svg" class="bd_img" alt=""></a>
+								</div>
+								<div class="company">dretec</div>
+								<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+								<div class="price_line">
+									<span class="discount_rate">15%</span>
+									<span class="final_price">9,234,000</span>
+									<span class="price_origin">9,200,000</span>
+								</div>
+							</li>
+							<!-- //li.prod_item 반복 -->
+
+							<li class="swiper-slide prod_item">
+								<div class="product_pic">
+									<button class="evt_good_count">
+										<div class="icon"></div>
+										<!-- <div class="txt">80</div> -->
+									</button>
+									<a href="#"><img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img" alt=""></a>
+								</div>
+								<div class="company">dretec</div>
+								<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+								<div class="price_line">
+									<span class="discount_rate">15%</span>
+									<span class="final_price">9,234,000</span>
+									<span class="price_origin">9,200,000</span>
+								</div>
+							</li>
+							<li class="swiper-slide prod_item">
+								<div class="product_pic">
+									<img src="../../images/guide/@tod_prod_sample1.svg" class="bd_img">
+								</div>
+								<div class="company">dretec</div>
+								<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+								<div class="price_line">
+									<span class="discount_rate">15%</span>
+									<span class="final_price">9,234,000</span>
+									<span class="price_origin">9,200,000</span>
+								</div>
+							</li>
+							<li class="swiper-slide prod_item">
+								<div class="product_pic">
+									<a href="#"><img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img" alt=""></a>
+								</div>
+								<div class="company">dretec</div>
+								<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+								<div class="price_line">
+									<span class="discount_rate">15%</span>
+									<span class="final_price">9,234,000</span>
+									<span class="price_origin">9,200,000</span>
+								</div>
+							</li>
+							<li class="swiper-slide prod_item">
+								<div class="product_pic">
+									<a href="#"><img src="../../images/guide/@tod_prod_sample2.svg" class="bd_img" alt=""></a>
+								</div>
+								<div class="company">dretec</div>
+								<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+								<div class="price_line">
+									<span class="discount_rate">15%</span>
+									<span class="final_price">9,234,000</span>
+									<span class="price_origin">9,200,000</span>
+								</div>
+							</li>
+						</ul>
+						<!-- //swiper -->
+					</div>
+					<!--닫기 버튼-->	
+					<button type="button" class="close_swap"></button>	
+				</article>
+				<!-- //대체 상품 컨텐츠 : replace_prod_swap -->
+			</li>
+			<!-- //prod_item : 대체 상품 -->
+
+			<!-- prod_item : 대체 상품 (품절) -->
+			<li class="prod_item sold_out replace_prod"><!-- 품절 : class="sold_out" -->
+				<div class="product_pic">
+					<span class="show_replace">
+						<div>아쉽지만!<br>품절이예요</div>
+						<!-- <button type="button" class="replace_prod_btn">대체상품</button> -->
+					</span>
+					<!--
+					<button class="evt_good_count">
+						<div class="icon"></div>
+						<div class="txt">80</div>
+					</button> 
+					-->
+					<a href="javascript:alert('제품상세');"><img src="../../images/guide/@tod_prod_sample1.svg" class="bd_img" alt=""></a>
+				</div>
+				<div class="product_info">
+					<div class="company">dretec</div>
+					<div class="title">[HBAF] 바프 시즈닝 아몬드 10종 1+1골라담기 말줄임 테스트</div>
+					<div class="price_line">
+						<span class="discount_rate">15%</span>
+						<!--할인 적용 없는 경우 no_discount Class추가-->
+						<!-- <span class="final_price">9,234,000</span> -->
+						<span class="price_origin no_discount">9,200,000</span>
+					</div>
+				</div>
+			</li>		
+			<!-- //prod_item : 대체 상품 (품절) -->
+
+			<li class="prod_item">
+				<div class="product_pic">
+					<button class="evt_good_count">
+						<div class="icon"></div>
+						<div class="txt">+999</div>
+					</button>
+					<a href="javascript:alert('제품상세');"><img src="../../images/guide/@tod_prod_sample4.svg" class="bd_img" alt=""></a>
+				</div>
+				<div class="company">dretec</div>
+				<div class="title">[웰스데이] 원데이 홍삼액 캐리어(50ml*30포)</div>
+				<div class="price_line">
+					<span class="discount_rate">15%</span>
+					<span class="final_price">99,000</span>
+					<span class="price_origin">120,000</span>
+				</div>
+			</li>
+		</ul>
+		<!-- //상품 리스트-->
+
+		<!-- 더보기 버튼 more_btn에 hidden Class  추가하면 버튼 안보임 -->
+		<div class="btn_more_div">
+			<button class="more_btn">
+				<span class="txt">더보기</span>
+				<span class="btn_more_icon"></span>
+			</button>
+		</div>
+		<!-- //더보기 -->
+	</div>
+	<!-- //dialog_contents -->
+</div>
+<!-- //영통팬사 준비물 모아보기 : popMusFansign -->	
+</body>
+</html>
