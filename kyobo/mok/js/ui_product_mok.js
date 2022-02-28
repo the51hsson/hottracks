@@ -197,11 +197,12 @@ $(function(){
     footTabCustom();
 
 	$('button[data-foot-btn]').click(function(){
-		footTabCustom( true);
+		footTabCustom(true);
 	});
 	$(document).on('click','.dialog_header .close', function(){
 		footTabCustom();
 	});
+
 	function footTabCustom( bool){
 		if(bool){
 			//Class:footer_wrap fixed_foot에 btm_pop_upper_foot 추가 시 팝업 위로 장바구니 버튼 노출
@@ -213,10 +214,12 @@ $(function(){
 			$('.btn_go_back,.btn_go_top').css('opacity', '1');
 		} 
 	}
+
 	//장바구니 팝업 상세 내용 닫기
 	$(document).on('click', '.buy_info .close', function(){
 		$(this).closest('.buy_info').css('display', 'none');
 	});
+	
     //쿠폰 다운 받기 토스트 메시지
 	$(document).on('click', '.dialog_wrap .dialog_contents .buy_info .cpon',  toastBtn);
 	function toastBtn(){
