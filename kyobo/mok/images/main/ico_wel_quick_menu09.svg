@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Rectangle_20438-2_00000163754064435186181320000001067286991031619513_);}
+	.st1{fill:url(#Ellipse_690-2_00000129917989364180739570000016979876632375092620_);}
+	.st2{fill:url(#Ellipse_691_00000029737131173405027520000008444833330546963074_);}
+	.st3{fill:#FFFFFF;}
+</style>
+<g id="Group_112020" transform="translate(10438 7214)">
+	<g transform="matrix(1, 0, 0, 1, -10438, -7214)">
+		
+			<linearGradient id="Rectangle_20438-2_00000168836706559806609080000016064173172252887207_" gradientUnits="userSpaceOnUse" x1="-259.0253" y1="434.3938" x2="-258.0253" y2="433.4378" gradientTransform="matrix(28 0 0 -28 7267 12177.9199)">
+			<stop  offset="0" style="stop-color:#FFAFC4"/>
+			<stop  offset="1" style="stop-color:#F6467D"/>
+		</linearGradient>
+		<path id="Rectangle_20438-2" style="fill:url(#Rectangle_20438-2_00000168836706559806609080000016064173172252887207_);" d="
+			M16,14h24c1.1,0,2,0.9,2,2v24c0,1.1-0.9,2-2,2H16c-1.1,0-2-0.9-2-2V16C14,14.9,14.9,14,16,14z"/>
+	</g>
+	<g id="Group_112018" transform="translate(-1.002 -74.457)">
+		<g transform="matrix(1, 0, 0, 1, -10437, -7139.54)">
+			
+				<linearGradient id="Ellipse_690-2_00000106118301058058739540000013517101911203911862_" gradientUnits="userSpaceOnUse" x1="-253.3066" y1="426.2919" x2="-252.6846" y2="425.4759" gradientTransform="matrix(18 0 0 -18 4581.9639 7693.9668)">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#FFC3E3"/>
+			</linearGradient>
+			
+				<circle id="Ellipse_690-2" style="fill:url(#Ellipse_690-2_00000106118301058058739540000013517101911203911862_);" cx="28" cy="28" r="9"/>
+		</g>
+		
+			<linearGradient id="Ellipse_691_00000110464614980612509650000013325599264671519645_" gradientUnits="userSpaceOnUse" x1="-10667.8682" y1="-6745.8203" x2="-10667.2461" y2="-6746.6362" gradientTransform="matrix(7.354 0 0 -7.354 68040.2344 -56723.2812)">
+			<stop  offset="0" style="stop-color:#F89EB7"/>
+			<stop  offset="1" style="stop-color:#F85084"/>
+		</linearGradient>
+		
+			<circle id="Ellipse_691" style="fill:url(#Ellipse_691_00000110464614980612509650000013325599264671519645_);" cx="-10409" cy="-7111.5" r="3.7"/>
+	</g>
+	<path id="Path_37338" class="st3" d="M-10400-7175.5v0.9c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5c0,0,0,0,0,0v-0.9
+		c0-0.3-0.2-0.5-0.5-0.5C-10399.7-7176-10400-7175.8-10400-7175.5C-10400-7175.5-10400-7175.5-10400-7175.5 M-10401.2-7174.5v-0.9
+		c0-0.3-0.2-0.5-0.5-0.5c-0.3,0-0.5,0.2-0.5,0.5l0,0v0.9c0,0.3,0.2,0.5,0.5,0.5C-10401.4-7174-10401.2-7174.2-10401.2-7174.5
+		 M-10403.5-7174.5v-0.9c0-0.3-0.2-0.5-0.5-0.5c-0.3,0-0.5,0.2-0.5,0.5l0,0v0.9c0,0.3,0.2,0.5,0.5,0.5
+		C-10403.7-7174-10403.5-7174.2-10403.5-7174.5"/>
+</g>
+</svg>

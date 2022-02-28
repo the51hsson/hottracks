@@ -284,7 +284,6 @@ function welCuration(){
     });
     curationImg.controller.control = curationThumb;
     curationThumb.controller.control = curationImg;
-
 }
 
 function welCurationSize() {

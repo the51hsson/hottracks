@@ -434,6 +434,30 @@
   letter-spacing: -0.1px;
 }
 
+.ht_ .wel_quick_menu_cont li .marker {
+  position: relative;
+}
+
+.ht_ .wel_quick_menu_cont li .marker:after {
+  position: absolute;
+  right: -5px;
+  top: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #da2128;
+  content: "";
+}
+
+.ht_ .wel_quick_menu_cont.ty02 li {
+  width: 33.3%;
+  margin-top: 22px;
+}
+
+.ht_ .wel_quick_menu_cont.ty02 li:nth-child(-n + 3) {
+  margin-top: 0;
+}
+
 .ht_ .wel_today {
   padding: 35px 0 45px 0;
   background: #ffeb01;
@@ -7425,6 +7449,10 @@
 
 .ht_ .gft_question_end .gft_question_box:before {
   border: 1px solid #eaeaea;
+}
+
+.ht_ .gft_question_end .gft_question_chk li .num {
+  display: block;
 }
 
 .ht_ .gft_question_msg {

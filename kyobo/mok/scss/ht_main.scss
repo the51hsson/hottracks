@@ -200,6 +200,20 @@
             .txt {
                 display:inline-block;position:relative;margin-top:6px;color:#000;font-size:13px;letter-spacing:-0.1px;
             }
+            .marker {
+                position:relative;
+                &:after {
+                    position:absolute;right:-5px;top:0;width:4px;height:4px;border-radius:50%;background:#da2128;content:"";
+                }
+            }
+        }
+        &.ty02 {
+            li {
+                width:33.3%;margin-top:22px;
+                &:nth-child(-n + 3) {
+                    margin-top:0;
+                }  
+            }
         }
     }
 
@@ -3293,6 +3307,9 @@
             &:before {
                 border:1px solid #eaeaea;
             }
+        }
+        .gft_question_chk li .num {
+            display:block;
         }
     }
     .gft_question_msg {
