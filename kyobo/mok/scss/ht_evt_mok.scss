@@ -732,7 +732,8 @@
 /*======================     모듈 014 영역   =======================*/
 .cmt_wrap {
    padding:40px 20px;
-   &>.tit {
+   &>.tit,
+   &> h2 {
     margin-bottom:16px;
     line-height: 25px;
     font-size: 16px;

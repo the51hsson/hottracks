@@ -52,7 +52,7 @@
     <!-- // Plug-In javascript -->
 
     <!--[2022-02-28] 플러그인js 추가-->
-    <script src="../../js/panzoom.min.js"></script>
+    <script defer="defer" src="../../js/panzoom.min.js"></script>
 
     <!-- ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
     <script src="../../js/front_bak.js"></script>
@@ -60,41 +60,48 @@
     <script src="../../js/ht_lib.js"></script>
     <script src="../../js/ht_template.js"></script>
     <!-- //ht_ Hottracks UI JavaScript : 공통작업 --><!-- 22.02 -->
-    <script src="../../js/pinch-zoom.umd.js"></script>
+
     <style>
-  
-.pinch-zoom-parent {
+body, html {
+  position: fixed;
   width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
-.pinch-zoom-container {
-    width: 100% ;
-    height:30vh ;
-    border:2px solid blue;
+svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.pinch-zoom-parent>img {
-  min-width:100%;
-  height:50vh;
+.header, .footer{
+  position: absolute;
+  padding: 10px;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.4);
+}
+.header {
+  color: rgba(0, 0, 0, 0.82);
+}
+a {
+  color: #FF4081;
+  text-decoration: none;
 }
 
-div.pinch-zoom div.description h1 {
-  font-size: 40px;
-  margin: 0px;
-  margin-bottom: 10px;
-}
-
-div.pinch-zoom div.description p {
-  margin-bottom: 1em;
-}
+.footer {
+  bottom: 10px;
+  color: rgba(0, 0, 0, 0.52);
+}   .panzoom-parent, .panzoom, .panzoom>img{
+    width:100%;
+   }
+   .panzoom-parent{
+       border:1px solid blue;
+   }
 
 
     </style>
-    <script>
-        $(function(){
-            var el = document.querySelector('div.pinch-zoom');
-            console.log(el);
-            new PinchZoom.default(el, {});
-        })
-    </script>
 </head>
 
 <body>
@@ -357,14 +364,8 @@ div.pinch-zoom div.description p {
                                         </div>
                                     </div>
                                     <!--연습용-->
-                                    <div class="page pinch-zoom-parent" >
-                                        <div class="pinch-zoom">
-                                            <div class="description">
-                                                <h1>Pinchzoom.js</h1>
-                                                <p>
-                                                    Multi-touch zoom in Javascript
-                                                </p>
-                                            </div>
+                                    <div class="panzoom-parent" >
+                                        <div class="panzoom">
                                             <img src="../../images/temp/@product_detail.png"/>
                                         </div>
                                     </div>
@@ -2970,3 +2971,15 @@ div.pinch-zoom div.description p {
 </body>
 
 </html>
+<script>
+    // $(function(){
+         // for(var pinch=0; pinch< document.querySelectorAll('.panzoom').length; pinch++){
+         //     var ele_pinch = document.querySelectorAll('.panzoom')[pinch];
+         //     var panzoom  = Panzoom(ele_pinch, {
+         //         maxScale: 5
+         //         })
+         // }
+         var area = document.getElementById('zoomable')
+         window.pz = panzoom(area, {autocenter: true, bounds: true})
+     //})
+ </script>
