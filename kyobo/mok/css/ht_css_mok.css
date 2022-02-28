@@ -13392,6 +13392,7 @@ body:before {
 .ico_marker_area .ico_marker.on {
   background: #fff4f1;
   color: #da2128;
+  font-weight: 700;
 }
 
 .prod_like_count {
