@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-  <g id="icon_plus_h12" transform="translate(296.211 -67.391)">
-    <g id="사각형_3079" data-name="사각형 3079" transform="translate(-296.211 67.391)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
-      <rect width="12" height="12" stroke="none"/>
-      <rect x="0.5" y="0.5" width="11" height="11" fill="none"/>
-    </g>
-    <path id="패스_36335" data-name="패스 36335" d="M.916,0,0,.943,4.327,5.388,0,9.833l.916.944L6.16,5.388Z" transform="translate(-293.84 68.425)" fill="#161615"/>
-  </g>
-</svg>
